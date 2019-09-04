@@ -1,0 +1,38 @@
+Base: Run-Time system. = 0b36903d
+
+Token:	0B3C0CCA	=	57C8D
+	0B3C0D84	=	57D47?
+	0B3E16D4	=	78697
+
+	--
+	0B3C3F68
+	0B3D01FF
+
+--------------
+
+Crystal
+	x =	0B3C0C42 //Just Crystal
+		0B3C0D34 = 1
+
+	x + 0B3E172C //Not working Pistol
+
+	//0B3C0D34
+
+----
+
+Lazer pistol
+
+0b3dec51
+0b3e172c
+0b3c0c42
+
+------------
+
+Needs more exploration
+
+Involves following addresses: 
+	0B3C0C42
+	0B3C0D34 1>3
+	0BA82849
+	0BA82859
+	0BA82871

@@ -1,0 +1,718 @@
+--------------------------------------------------------------------------------
+                    L I T T L E   B I G   A D V E N T U R E   2
+                               LBA2 Saved Game Format
+                                     revision 1
+
+Author:   Alexandre Fontoura [alexfont]
+Email:    alexandrefontoura@oninetspeed.pt
+
+Last Modification: 26.09.2004
+
+
+[#] [ INFORMATION ] ------------------------------------------------------------
+
+This document describes the format in which the LBA2\Twinsen Odyssey saved game
+are stored in.
+If you find any errors in this document please email me the details, also if you
+find new stuff please notify me. This information is provided AS IS.
+
+
+[#] [ FORMAT ] -----------------------------------------------------------------
+
+s16 = signed short (16bit)
+byte (8bit)
+string : get all bytes till found 0x00
+
+--------------------------------------------------------------------------------
+
+00:	byte	Savegame identify, 0xA4 (compressed) or 0x24 (not compressed)
+01:     byte	Scenes Code (see further)	
+02:             unused
+03:             unused
+04:             unused
+05:     string  Title
+                * = from the end of the title, (after the 0x00)
+
+If the identify flag its 0xA4 the next data is compressed in mode 1
+You need to decompressed first after editing it.
+
+*00:	s16	Decompressed size
+*02:	        unused
+*03:		unused
+*04...*end:	Data to decompress
+
+After decompress or if the identify flag its 0x24 the next data is an 160x120 Raw Image.
+
+*00...*19199	Image data
+		 + = after the 19200 image bytes
+
+
+Var game: 
+ In normal cases we just use 0x01 to set the flag. In the inventory, if the item use amount you can set till 0XFFFF.
+
++00:	s16	Holomap
++02:	s16	Magic ball
++04:	s16	Darts
++06:	s16	Sendell's ball
++08:	s16	Tunic and Sendell's medallion
++0A:	s16	Incandescent pearl
++0C:	s16	Pyramid shaped key
++0E:	s16	Part for the car
++10:	s16	Kashes
++12:	s16	Pisto-Laser
++14:	s16	Emperor's sword
++16:	s16	Wannie's glove
++18:	s16	Proto-Pack
++1A:	s16	Ferry Ticket
++1C:	s16	Nitro-Meca-Penguin
++1E:	s16	Can of GazoGem
++20:	s16	Dissidents' Ring
++22:	s16	Gallic acid
++24:	s16	Ferryman's song
++28:	s16	Ring of lightning
++2A:	s16	Customer's umbrella
++2C:	s16	Gems
++2E:	s16	Horn of the Blue Triton
++30:	s16	Blowgun
++32:	s16	Itinerary token
++34:	s16	Slice of tart
++36:	s16	Portable radio
++38:	s16	Garden Balsam
++3A:	s16	Magic slate
++3C:	s16	Translator
++3E:	s16	Wizard's diploma
++40:	s16	Fragment of the Francos
++42:	s16	Fragment of the Sups
++44:	s16	Fragment of the Mosquibees
++46:	s16	Fragment of the Wannies
++48:	s16	Key for the passage to CX
++4A:	s16	Pick-ax
++4C:	s16	Franco Burgermaster's key
++4E:	s16	Franco Burgermaster's notes
++50:	s16	Protective spell
++52:	s16	Green magic ball
++54:	s16	Red magic ball
++56:	s16	Fire magic ball
++58:	s16	Zlitos
++5A:	s16	Dark Monk's key
++5C:	s16	Memory viewer
++5E:	s16	Blowtron
++60:	s16	Wizard's parade tunic
++62:	s16	Super Jet-Pack
++64:	s16	Piece of the Crystal of Celebration
++66:	s16	Pisto-Laser in working condition
++68:	s16	Green Ring of Lightning
++6A:	s16	Red Ring of Lightning
++6C:	s16	Ring of Lightning, level Fire
++6E:	s16	Lucky clover leaf
++70:	s16	Darts
++72:	s16	Piece of wall
++74:	s16	Laser
++76:	s16	Laser collision
++78:	s16	Powerfull laser
++7A:	s16	Big black lump
++7C:	s16	Small black lump
++7E:	s16	Flat black lump
++80:	s16	Small black lump
++82:	s16	Eye-like green-turquoise thing
++84:	s16	Green transparent rhombus
++86:	s16	Red transparent rhombus
++88:	s16	Red transparent cube
++8A:	s16	Flat black rhombus
++8C:	s16	Crab
++8E:	s16	White ball
++90:	s16	Red ball
++92:	s16	Green piece of wall
++94:	s16	Green piece of wall - zigzag
++96:	s16	Green piece of wall - stick
++98:	s16	Green piece of wall - zigzag small
++9A:	s16	Franco soldier
++A0:	s16	Franco soldier
++A2:	s16	Green folded flat thing 1
++A4:	s16	Green folded flat thing 2
++A6:	s16	Green folded flat thing 3
++A8:	s16	Green folded flat thing 4
++AA:	s16	Green folded flat thing 5
++AC:	s16	Green folded flat thing 6
++AE:	s16	Green folded flat thing 7
++B0:	s16	Green folded flat thing 8
++B2:	s16	Propellant
++B4:	s16	Box
++B6:	s16	Stick
++B8:	s16	Flat piece 1
++BA:	s16	Flat piece 2
++BC:	s16	Flat piece 3
++BE:	s16	Flat piece 4
++C0:	s16	Yellow-blue pillar
++C2:	s16	Green-sandy flat piece
++C4:	s16	Yellow-turquoise stick
++C6:	s16	Yellow-turquoise thin lump
++C8:	s16	Eye-like brown thing
++CA:	s16	Missile
+
+...
+
++1F6:	s16	Clover leafs
++1F8:	s16	???
++1FA:	s16	Rain flag. If set 0x01 it's raining otherwise no. // could have other things
++1FC:	s16	??? If set he fill the inventory with lots of Holomaps
++1FD:	byte	??? 
++1FE:	byte	??? If set 0x01 you can talk, otherwise no.
+
+...
+
++250:	byte	Behavior
+		  00: Normal
+		  01: Athletic
+		  02: Agressive
+		  03: Discrete
+		  04: Twinsen with Protopack 
+		  05: Twinsen and Zoé
+		  06: Twinsen with Horn of Blue Triton
+		  07: Twinsen with space suit
+		  08: Twinsen with Super jetpack
+		  09: Twinsen with space suit (Athletic mode)
+		  0A: Twinsen with space suit (Normal mode)
+		  0B: Twinsen with space suit (Athletic mode)
+		  0C: Twinsen with car
+		  0D: Twinsen X-Rayed
+		   > will crashed the game
+
++251:	s16	Kashes, maximun value = 65535
++253:	s16	Zlitos, maximun value = 65535 
++255:	byte	Magic level
+		  00: Without Magic Ball
+		  01: Yellow Magic Ball
+		  02: Green Magic Ball
+		  03: Red Magic Ball
+		  04: Fire Magic Ball
+		   > the game will not handle this right
+
++256:	byte	Magicpower, maximum values = 80 (20 * magic level)
++257:	byte	Keys
++258:	s16	Clover boxes
++25A:
+
+...
+
+	Holomap (follows the area code)
+	Format:
+                ........  bitfield
+                |||||||\_ activation bit
+                ||||||\__ if the location has been asked about or not
+                |||||\___ inside/outside mode (for outside scenes)
+                ||||\____ unused
+                |||\_____ unused
+                ||\______ unused
+                |\_______ unused
+                \________ unused
+
++2AC:	byte	Citadel Island, Twinsen's house (room #2)
++2AD:	byte	Citadel Island, Twinsen's house Secret scene (room #3)
++2AE:	byte	Citadel Island, Tralu 1st scene (room #4)
++2AF:	byte	Citadel Island, Tavern (room #5)
++2B0:	byte	Citadel Island, Cellar of the Tavern (room #6)
++2B1:	byte	Citadel Island, Baggage claim building, 1st scene (room #7)
++2B2:	byte	Citadel Island, Baggage claim building, 2st scene (room #8)
++2B3:	byte	Citadel Island, Mr. Paul House (room #9)
++2B4:	byte	Citadel Island, Ticket office (room #10)
++2B5:	byte	Citadel Island, Neighbor's house (room #11)
++2B6:	byte	White Leaf Desert, Temple of Bú, 1st scene (room #12)
++2B7:	byte	White Leaf Desert, Temple of Bú, 2nd scene (room #13)
++2B8:	byte	White Leaf Desert, Esmer Base (room #14)
++2B9:	byte	Emerald Moon, Outside Baldino's cell(room #15)
++2BA:	byte	Citadel Island, Shop (room #16)
++2BB:	byte	Citadel Island, Miss Bloop's Private Museum (room #17)
++2BC:	byte	Citadel Island, Baggage claim building Secret scene, 3st scene (room #18)
++2BD:	byte	Citadel Island, Sewer (below Downtown) (room #19)
++2BE:	byte	Citadel Island, Sewer Secret scene (room #20)
++2BF:	byte	Citadel Island, Tralu 2nd scene (room #21)
++2C0:	byte	Citadel Island, Tralu 3rd scene (room #22)
++2C1:	byte	Citadel Island, Tent of the Weather Wizard (room #23)
++2C2:	byte	Citadel Island, Downtown Pharmacy (room #24)
++2C3:	byte	Emerald Moon, next to outside Baldino's cell (room #25)
++2C4:	byte	White Leaf Desert, Hacienda, 1st scene (room #26)
++2C5:	byte	White Leaf Desert, Turkish bath (women) (room #27)
++2C6:	byte	Citadel Island, Dome of the Slate (room #28)
++2C7:	byte	White Leaf Desert, School of Magic, 2nd scene (room #29)
++2C8:	byte	White Leaf Desert, School of Magic, 1st scene (room #30)
++2C9:	byte	White Leaf Desert, Hacienda, 2st scene (room #31)
++2CA:	byte	White Leaf Desert, Turkish bath (men) (room #32)
++2CB:	byte	Emerald Moon, entrance diamond shape building (room #33)
++2CC:	byte	White Leaf Desert, Secret passage in Turkish bath (mans) (room #34)
++2CD:	byte	White Leaf Desert, School of Magic training room (room #35)
++2CE:	byte	Citadel Island, Sendell's ball room (room #36)
++2CF:	byte	White Leaf Desert, House of Ker'aooc the Healer (room #37)
++2D0:	byte	White Leaf Desert, Bazaar (room #38)
++2D1:	byte	Citadel Island, School (room #39)
++2D2:	byte	White Leaf Desert, J. Baldino's House (room #40)
++2D3:	byte	White Leaf Desert, Bar (room #41)
++2D4:	byte	White Leaf Desert, Ticket office (room #42)
++2D5:	byte	White Leaf Desert, Esmer Shuttle (room #43)
++2D6:	byte	Citadel Island, near Tavern
++2D7:	byte	Citadel Island, near the Harbor
++2D8:	byte	Citadel Island, outside the Dome of the Slate
++2D9:	byte	Citadel Island, near the tent of the Weather Wizard
++2DA:	byte	Citadel Island, near Lighthouse
++2DB:	byte	Citadel Island, at the Sendell's sign
++2DC:	byte	Citadel Island, downstairs the sewer grid
++2DD:	byte	Citadel Island, near Dino-Fly
++2DE:	byte	Citadel Island, at the Cliffs of the Woodbridge
++2DF:	byte	Citadel Island, Spider Cave (room #44)
++2E0:	byte	Emerald Moon, entrance circle symbol building (room #45)
++2E0:	byte	Emerald Moon, entrance X symbol building (room #46)
++2E1:	byte	Emerald Moon, Baldino's cell (room #47) 
++2E2:	byte	White Leaf Desert, near Dino-fly
++2E3:	byte	White Leaf Desert, near the Camel
++2E4:	byte	White Leaf Desert, at the Von Kournil tour
++2E5:	byte	White Leaf Desert, near Von Kournil tour
++2E6:	byte	White Leaf Desert, near Lighthouse
++2E7:	byte	White Leaf Desert, near J. Baldino's House
++2E8:	byte	White Leaf Desert, at the School of Magic
++2E9:	byte	White Leaf Desert, near car jump
++2EA:	byte	White Leaf Desert, near Temple of Bù
++2EB:	byte	White Leaf Desert, at the Bell
++2EC:	byte	White Leaf Desert, near Esmer Shuttle
++2ED:	byte	White Leaf Desert, near Bald Mountain
++2EF:	byte	White Leaf Desert, at the Temple of Bù
++2F0:	byte	White Leaf Desert, near Temple of Bù
++2F1:	byte	White Leaf Desert, near to the Perl of Incandescence entrance
++2F2:	byte	White Leaf Desert, near Esmer Shuttle
++2F3:	byte	White Leaf Desert, near Bald Mountain
++2F4:	byte	White Leaf Desert, near Bald Mountain
++2F5:	byte	White Leaf Desert, at the island across from the Hacienda
++2F6:	byte	Emerald Moon, somewhere in Emerald Moon
++2F7:	byte	Emerald Moon, near circle entrance
++2F8:	byte	Emerald Moon, somewhere in Emerald Moon
++2F9:	byte	Emerald Moon, near square entrance
++2FA:	byte	Otringal, Emperor's palace departure room (room #48)
++2FB:	byte	Otringal, Emperor's palace 1st room (room #49)
++2FC:	byte	Otringal, Emperor's palace last room (room #50)
++2FD:	byte	Otringal, the Imperial Hotel (room #51)
++2FE:	byte	Otringal, the elevators to the Lower City (room #52)
++2FF:	byte	Otringal, Prison entrance (room #53)
++300:	byte	Otringal Prison (room #54)
++301:	byte	Otringal, control tower entrance (room #55)
++302:	byte	Otringal, the space port (room #56)
++303:	byte	Otringal, near Harbor
++304:	byte	Otringal, the Upper City scene
++305:	byte	Otringal, the Lower City scene
++306:	byte	Otringal, the Prison Exit scene
++307:	byte	Otringal, the scene outside the Emperor's palace
++308:	byte	Otringal, the space port scene
++309:	byte	Celebration Island, inside the temple (room #57)
++30A:	byte	Empty water outside scene
++30B:	byte	Celebration Island, the only outside scene
++30C:	byte	Wannies Island, the city outside scene
++30D:	byte	Wannies Island, the ferryman landing place scene
++30E:	byte	Wannies Island, the scene near the Elevator
++30F:	byte	Wannies Island, the scene near the entrance of the mine
++310:	byte	Wannies Island, the mine, 2nd room (room #58)
++311:	byte	Wannies Island, the house of the firefly tart-giving family (room #59)
++312:	byte	Mosquibees Island, the scene on the bridge
++313:	byte	Mosquibees Island, the scene on top of the mountain
++314:	byte	Mosquibees Island, the Mosquibee Queen's throne (room #60)
++315:	byte	Mosquibees Island, the arrival scene
++316:	byte	Mosquibees Island, the maze (room #61)
++317:	byte	Francos Island, the platform scene
++318:	byte	Francos Island, the scene outside the factory
++319:	byte	Francos Island, the village scene
++31A:	byte	Francos Island, the arrival scene
++31B:	byte	Wannies Island, the mine, 3rd room (room #62)
++31C:	byte	Wannies Island, near the temple on the main (room #63)
++31D:	byte	White Leaf Desert, Pearl of Incandescence room (room #64)
++31E:	byte	White Leaf Desert, Esmer shuttle (room #65)
++31F:	byte	Emerald Moon, Esmer shuttle (room #66)
++320:	byte	Wannies Island, the monk house (room #67)
++321:	byte	Wannies Island, mine temple (room #68)
++322:	byte	Wannies Island, the city (room #69)
++323:	byte	Wannies Island, the way to the city temple (room #70)
++324:	byte	The Elevator Platform Island, the only scene
++325:	byte	Wannies Island, the city temple (room #71)
++326:	byte	Wannies Island, the mine, 1st room (room #72)
++327:	byte	Wannies Island, inside the elevator (room #73)
++328:	byte	Wannies Island, the box transport building (room #74)
++329:	byte	Wannies Island, Building Company (room #75)
++32A:	byte	Wannies Island, Warehouse (room #76)
++32B:	byte	White Leaf Desert, Temple of Bù Secret passage (room #77)
++32C:	byte	Mosquibees Island, Bee test room (room #78)
++32D:	byte	Island Under Celebration, the hide out (room #79)
++32E:	byte	Island Under Celebration, the hide out scene
++32F:	byte	Island Under Celebration, the upper scene
++330:	byte	Island Under Celebration, the arrival scene
++331:	byte	Otringal, Casino jackpot room (room #80)
++332:	byte	Otringal, Bar backstage (room #81)
++333:	byte	Otringal, Casino entrance (room #82)
++334:	byte	Otringal, Bar entrance (room #83)
++335:	byte	Otringal, Bar - Rick's room (room #84)
++336:	byte	Otringal, the Twinsen and Baldino crash site
++337:	byte	Otringal, the lowest elevators (room #85)
++338:	byte	Francos gazogem factory, 1st room (room #86)
++339:	byte	Francos gazogem factory, 2nd room (room #87)
++33A:	byte	Francos gazogem factory, 3rd room (room #88)
++33B:	byte	Francos gazogem factory, 4th room (room #89)
++33C:	byte	Francos Island, the guard post near the platform entrance
++33D:	byte	Francos gazogem factory, 1st secret room (room #91)
++33E:	byte	Francos gazogem factory, 2nd secret room (room #92)
++33F:	byte	Otringal, the Twinsunian souvenir shop (room #93)
++340:	byte	Otringal, the Dissidents' hide out (room #94)
++341:	byte	Mosquibees Island, the passage to the fragment (room #95)
++342:	byte	Otringal, the elevator to the Upper City (room #96)
++343:	byte	Otringal, One of the rooms in the Emperor's palace (room #97)
++344:	byte	Otringal, One of the rooms in the Emperor's palace (room #98)
++345:	byte	Otringal, One of the rooms in the Emperor's palace (room #99)
++346:	byte	Otringal, One of the rooms in the Emperor's palace (room #100)
++347:	byte	Otringal, One of the rooms in the Emperor's palace (room #101)
++348:	byte	Otringal, One of the rooms in the Emperor's palace (room #102)
++349:	byte	Otringal, One of the rooms in the Emperor's palace (room #103)
++34A:	byte	Otringal, One of the rooms in the Emperor's palace (room #104)
++34B:	byte	Otringal, One of the rooms in the Emperor's palace (room #105)
++34C:	byte	Otringal, One of the rooms in the Emperor's palace (room #106)
++34D:	byte	Otringal, One of the rooms in the Emperor's palace (room #107)
++34E:	byte	Otringal, One of the rooms in the Emperor's palace (room #108)
++34F:	byte	Otringal, One of the rooms in the Emperor's palace (room #109)
++350:	byte	Otringal, One of the rooms in the Emperor's palace (room #110)
++351:	byte	Otringal, One of the rooms in the Emperor's palace (room #111)
++352:	byte	Otringal, One of the rooms in the Emperor's palace (room #112)
++353:	byte	Emerald Moon, entrance triangle symbol room (room #113)
++354:	byte	Emerald Moon, entrance square symbol room (room #114)
++355:	byte	Otringal, Bathroom in the Imperial Hotel (room #115)
++356:	byte	Otringal, Imperial Hotel, 2nd room (room #116)
++357:	byte	Francos Island, Shop (room #117)
++358:	byte	Francos Island, Tavern (room #118)
++359:	byte	Francos Island, Scientist's house (room #119)
++35A:	byte	Francos Island, Nursery (room #120)
++35B:	byte	Francos Island, Burgermaster's house (room #121)
++35C:	byte	Mosquibees Island, the passage to Island CX (room #122)
++35D:	byte	Island CX, Stairs in the control tower (room #123)
++35E:	byte	Island CX, Control tower (room #124)
++35F:	byte	Island CX, the only outside scene
++360:	byte	Island CX, Secret passage (room #126)
++361:	byte	Island CX, Room in the emperor (room #127)
++362:	byte	Island CX, Esmer Shuttle (room #128)
++363:	byte	The protection spell cave, 1st scene (room #129)
++364:	byte	The protection spell cave, 2nd scene (room #130)
++365:	byte	The Dark Monk statue, the wizards, 1st scene (room #131)
++366:	byte	The Dark Monk statue, the top, 2nd scene (room #132)
++367:	byte	The Dark Monk statue, 3rd scene (room #133)
++368:	byte	The Dark Monk statue, 4th scene (last) (room #134)
++369:	byte	Otringal, Esmer shuttle (room #137)
++36A:	byte	Empty lava outside scene
++36B:	byte	White Leaf Desert, Esmer shuttle (room #137)
++36C:	byte	The Dark Monk statue Secret scene (room #138)
++36D:	byte	Demo Scene - Citadel Island, Twinsen's House (room #139)
++36E:	byte	Demo Scene - Citadel Island, Twinsen's house Secret room (room #140)
++36F:	byte	Demo Scene - Citadel Island, near Dino-Fly
++370:	byte	Demo Scene - Citadel Island, Twinsen & Zoé walking to Lighthouse.
++371:	byte	Demo Scene - Citadel Island, Harbor
++372:	byte	Demo Scene - White Leaf Desert, near Lighhouse
++373:	byte	Demo Scene - White Leaf Desert, Harbor
++374:	byte	Demo Scene - White Leaf Desert, city center 1 
++375:	byte	Demo Scene - White Leaf Desert, city center 2 
++376:	byte	Demo Scene - White Leaf Desert, School of Magic
++377:	byte	Demo Scene - Citadel Island, Dome of the Slate (room #141)
++378:	byte	Demo Scene - White Leaf Desert, arrived with Dino-Fly
++379:	byte	Demo Scene - Franco Island, harbor 
++37A:	byte	Demo Scene - Desert Island, near temple park 
++37B:	byte	Demo Scene - Emerald Moon
++37C:	byte	Demo Scene - White Leaf Desert, Temple of Bù (room #142)
++37D:	byte	Demo Scene - Otringal, harbor
++37E:	byte	Demo Scene - Otringal, Casino (room #143)
++37F:	byte	Demo Scene - Otringal, religion preaching 
++380:	byte	Demo Scene - Franco Island, arrival 
++381:	byte	Demo Scene - Wannies Island, elevators
++382:	byte	Demo Scene - Wannies Island, the mine (room #144)
++383:	byte	Demo Scene - Mosquibees Island, the Mosquibee Queen's throne (room #145)
++384:	byte	Demo Scene - Mosquibees Island, the bridge 
++385:	byte	Demo Scene - Otringal, Emperor's palace room (room #146)
++386:	byte	Demo Scene - The Dark Monk statue (last) (room #147)
++387:	byte	Demo Scene - Island Under Celebration
++388:	byte	Demo Scene - White Leaf Desert, Esmer Base (room #148)
++389:	byte	Demo Scene - Otringal (room #149)
+
+...
+
++656:	s16	Twinsen West<->East position in the scene
++658:	s16	unused
++65A:	s16	Twinsen Height in the scene
++65C:	s16	unused
++65E:	s16	Twinsen North<->South position in the scene
++660:	s16	unused
++662:	s16	unused
++664:	s16	unused
++666:	s16	Angle of facing, Min = 0 (SW) (counter clock wise)
+
+...
+
+
+
+[#] [ SCENES CODES ] -----------------------------------------------------------
+
+---[Celebration Island]---
+
+5D: Inside the temple (room #57)
+5F: The only outside scene
+B9: The Dark Monk statue, the wizards, 1st scene (room #131)
+BA: The Dark Monk statue, the top, 2nd scene (room #132)
+BB: The Dark Monk statue, 3rd scene (room #133)
+BC: The Dark Monk statue, 4th scene (last) (room #134)
+C0: The Dark Monk statue, Secret scene (room #138)
+DB: Demo Scene - The Dark Monk statue (last) (room #147)
+
+
+---[Citadel Island]---
+
+00: Twinsen's house (room #2)
+01: Twinsen's house Secret scene (room #3)
+02: Tralu 1st scene (room #4)
+03: Tavern (room #5)
+04: Cellar of the Tavern (room #6)
+05: Baggage claim building, 1st scene (room #7)
+06: Baggage claim building, 2st scene (room #8)
+07: Mr. Paul House (room #9)
+08: Ticket office (room #10)
+09: Neighbor's house (room #11)
+0E: Shop (room #16)
+0F: Miss Bloop's Private Museum (room #17)
+10: Baggage claim building Secret scene, 3st scene (room #18)
+11: Sewer (below Downtown) (room #19)
+12: Sewer Secret scene (room #20)
+13: Tralu 2nd scene (room #21)
+14: Tralu 3rd scene (room #22)
+15: Tent of the Weather Wizard (room #23)
+16: Downtown Pharmacy (room #24)
+1A: Dome of the Slate (room #28)
+22: Sendell's ball room (room #36)
+25: School (room #39) 
+2A: Near Tavern
+2B: Near the Harbor
+2C: Outside the Dome of the Slate
+2D: Near the tent of the Weather Wizard
+2E: Near Lighthouse
+2F: At the Sendell's sign
+30: Downstairs the sewer grid
+31: Near Dino-Fly 
+32: At the Cliffs of the Woodbridge
+33: Spider Cave (room #44)
+C1: Demo Scene - Twinsen's House (room #139)
+C2: Demo Scene - Twinsen's house Secret room (room #140)
+C3: Demo Scene - Near Dino-Fly
+C4: Demo Scene - Twinsen & Zoé walking to Lighthouse.
+C5: Demo Scene - Harbor
+CB: Demo Scene - Dome of the Slate (room #141)
+
+
+---[Emerald Moon]---
+
+0D: Outside Baldino's cell(room #15)
+17: Next to outside Baldino's cell (room #25)
+1F: Entrance diamond shape building (room #33)
+34: Entrance circle symbol building (room #45)
+35: Entrance X symbol building (room #46)
+36: Baldino's cell (room #47) 
+4A: Somewhere in Emerald Moon
+4B: Near circle entrance
+4C: Somewhere in Emerald Moon
+4D: Near square entrance
+73: Esmer shuttle (room #66)
+A7: Entrance triangle symbol room (room #113)
+A8: Entrance square symbol room (room #114)
+CF: Demo Scene
+
+
+---[Francos Island]---
+
+6B: The platform scene
+6C: The scene outside the factory
+6D: The village scene
+6E: The arrival scene
+8C: Francos gazogem factory, 1st room (room #86)
+8D: Francos gazogem factory, 2nd room (room #87)
+8E: Francos gazogem factory, 3rd room (room #88)
+8F: Francos gazogem factory, 4th room (room #89)
+90: The guard post near the platform entrance
+91: Francos gazogem factory, 1st secret room (room #91)
+92: Francos gazogem factory, 2nd secret room (room #92)
+AB: Shop (room #117)
+AC: Tavern (room #118)
+AD: Scientist's house (room #119)
+AE: Nursery (room #120)
+AF: Burgermaster's house (room #121)
+CD: Demo Scene - Harbor 
+D5: Demo Scene - Arrival
+
+
+---[Island CX]---
+
+B1: Stairs in the control tower (room #123)
+B2: Control tower (room #124)
+B3: Outside scene
+B4: Secret passage (room #126)
+B5: Room in the emperor (room #127)
+B6: Esmer Shuttle (room #128)
+
+
+---[Island Under Celebration]---
+
+81: The hide out (room #79)
+82: The hide out scene
+83: The upper scene
+84: The arrival scene
+DC: Demo Scene
+
+
+---[Mosquibees Island]---
+
+66: The scene on the bridge
+67: The scene on top of the mountain
+68: The Mosquibee Queen's throne (room #60)
+69: The arrival scene
+6A: The maze (room #61)
+80: Bee test room (room #78)
+95: The passage to the fragment (room #95)
+B0: The passage to Island CX (room #122)
+D8: Demo Scene - The Mosquibee Queen's throne (room #145)
+D9: Demo Scene - The bridge 
+
+
+---[Otringal]---
+
+4E: Emperor's palace departure room (room #48)
+4F: Emperor's palace 1st room (room #49)
+50: Emperor's palace last room (room #50)
+51: The Imperial Hotel (room #51)
+52: The elevators to the Lower City (room #52)
+53: Prison entrance (room #53)
+54: Prison (room #54)
+55: Control tower entrance (room #55)
+56: The space port (room #56)
+57: Near Harbor
+58: The Upper City scene
+59: The Lower City scene
+5A: The Prison Exit scene
+5B: The scene outside the Emperor's palace
+5C: The space port scene
+85: Casino jackpot room (room #80)
+86: Bar backstage (room #81)
+87: Casino entrance (room #82)
+88: Bar entrance (room #83)
+89: Bar - Rick's room (room #84)
+8A: the Twinsen and Baldino crash site
+8B: The lowest elevators (room #85)
+93: The Twinsunian souvenir shop (room #93)
+94: The Dissidents' hide out (room #94)
+96: The elevator to the Upper City (room #96)
+97: One of the rooms in the Emperor's palace (room #97)
+98: One of the rooms in the Emperor's palace (room #98)
+99: One of the rooms in the Emperor's palace (room #99)
+9A: One of the rooms in the Emperor's palace (room #100)
+9B: One of the rooms in the Emperor's palace (room #101)
+9C: One of the rooms in the Emperor's palace (room #102)
+9D: One of the rooms in the Emperor's palace (room #103)
+9E: One of the rooms in the Emperor's palace (room #104)
+9F: One of the rooms in the Emperor's palace (room #105)
+A0: One of the rooms in the Emperor's palace (room #106)
+A1: One of the rooms in the Emperor's palace (room #107)
+A2: One of the rooms in the Emperor's palace (room #108)
+A3: One of the rooms in the Emperor's palace (room #109)
+A4: One of the rooms in the Emperor's palace (room #110)
+A5: One of the rooms in the Emperor's palace (room #111)
+A6: One of the rooms in the Emperor's palace (room #112)
+A9: Bathroom in the Imperial Hotel (room #115)
+AA: Imperial Hotel, 2nd room (room #116)
+BD: Esmer shuttle (room #137)
+D2: Demo Scene - Harbor
+D3: Demo Scene - Casino (room #143)
+D4: Demo Scene - Religion preaching 
+DA: Demo Scene - Emperor's palace room (room #146)
+DF: Demo Scene - (room #149)
+
+
+---[The Elevator Platform Island]---
+
+78: The only scene
+
+
+---[Wannies Island]---
+
+60: The city outside scene
+61: The ferryman landing place scene
+62: The scene near the Elevator
+63: The scene near the entrance of the mine
+64: The mine, 2nd room (room #58)
+65: The house of the firefly tart-giving family (room #59)
+6F: The mine, 3rd room (room #62)
+70: Near the temple on the main (room #63)
+74: The monk house (room #67)
+75: Mine temple (room #68)
+76: The city (room #69)
+77: The way to the city temple (room #70)
+79: The city temple (room #71)
+7A: The mine, 1st room (room #72)
+7B: Inside the elevator (room #73)
+7C: The box transport building (room #74)
+7D: Building Company (room #75)
+7E: Warehouse (room #76)
+D6: Demo Scene - Elevators
+D7: Demo Scene - The mine (room #144)
+
+
+---[White Leaf Desert]---
+
+0A: Temple of Bú, 1st scene (room #12)
+0B: Temple of Bú, 2nd scene (room #13)
+0C: Esmer Base (room #14)
+18: Hacienda, 1st scene (room #26)
+19: Turkish bath (women) (room #27)
+1B: School of Magic, 2nd scene (room #29)
+1C: School of Magic, 1st scene (room #30)
+1D: Hacienda, 2st scene (room #31)
+1E: Turkish bath (men) (room #32)
+20: Secret passage in Turkish bath (mans) (room #34)
+21: School of Magic training room (room #35)
+23: House of Ker'aooc the Healer (room #37)
+24: Bazaar (room #38)
+26: J. Baldino's House (room #40)	
+27: Bar (room #41) 	
+28: Ticket office (room #42) 
+29: Esmer Shuttle (room #43) 
+37: Near Dino-fly 
+38: Near the Camel
+39: At the Von Kournil tour
+3A: Near Von Kournil tour
+3B: Near Lighthouse
+3C: Near J. Baldino's House
+3D: At the School of Magic
+3E: Near car jump
+3F: Near Temple of Bù
+40: At the Bell
+41: Near Esmer Shuttle
+42: Near Bald Mountain
+43: At the Temple of Bù
+44: Near Temple of Bù
+45: Near to the Perl of Incandescence entrance
+46: Near Esmer Shuttle
+47: Near Bald Mountain
+48: Near Bald Mountain
+49: At the island across from the Hacienda
+71: Pearl of Incandescence room (room #64)
+72: Esmer shuttle (room #65)
+7F: Temple of Bù Secret passage (room #77)
+B7: The protection spell cave, 1st scene (room #129)
+B8: The protection spell cave, 2nd scene (room #130)
+BF: Esmer shuttle (room #137)
+C6: Demo Scene - Near Lighhouse
+C7: Demo Scene - Harbor
+C8: Demo Scene - City center 1 
+C9: Demo Scene - City center 2 
+CA: Demo Scene - School of Magic
+CC: Demo Scene - Arrived with Dino-Fly
+CE: Demo Scene - Near temple park 
+D1: Demo Scene - Temple of Bù (room #142)
+DD: Demo Scene - Esmer Base (room #148)
+
+
+---[Unknown]----
+
+5E: Empty water outside scene
+BE: Empty lava outside scene

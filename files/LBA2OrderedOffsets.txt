@@ -1,0 +1,51 @@
+Clover Boxes		3D691
+
+Holomap			57BF3
+Magic Ball		57BF5
+Darts			57BF7
+Sendalls Ball		57BF9
+Tunic			57BFB
+Pearl			57BFD
+Pyramid Key		57BFF
+Steering Wheel		57C01
+Money In inventory	57C03
+Crystal			57C05
+Funfrock's Sabre	57C07
+Wannies Glove		57C09
+Proto Pack		57C0B
+Ferry Ticket		57C0D
+Meca Penguin's		57C0F
+Gazogem			57C11
+Dissidents Ring		57C13
+Gallic Acid		57C15
+Ferry Song		57C17
+Lightening Spell	57C19
+Umbrella		57C1B
+Gems			57C1D
+Horn Triton		57C1F
+Blowgun			57C21
+Memory Viewer		57C23
+Firefly Tart		57C25
+Walkie Talkie		57C27
+Flower Balsam		57C29
+Slate			57C2B
+Translator		57C2D
+Wizards Diploma		57C2F
+Franco's Fragment	57C31
+Sup's Fragment		57C33
+Mosquibee's Fragment	57C35
+Wannie's Fragment	57C37
+Throne Key		57C39
+Pick Axe		57C3B
+Burger Master's Key	57C3D
+Burger Master's Notes	57C3F
+Protection Spell	57C41
+
+Clovers			57DE9
+Zilitos			57DFB //4 Bytes
+Magic Points		57E00
+Keys			57E01
+
+Kashers			57DF7
+Magic Level		57DFF
+Health			57F29

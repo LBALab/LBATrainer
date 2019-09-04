@@ -1,0 +1,14 @@
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\lba1MemoryLocations.xml
+R:\Users\User\source\repos\LBATrainer\bin\Release\LBATrainer.exe.config
+R:\Users\User\source\repos\LBATrainer\bin\Release\LBATrainer.exe
+R:\Users\User\source\repos\LBATrainer\bin\Release\LBATrainer.pdb
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csprojAssemblyReference.cache
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.frmTrainer.resources
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.Properties.Resources.resources
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.GenerateResource.cache
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.CoreCompileInputs.cache
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.exe
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.pdb
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\lba2MemoryLocations.xml
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\lba1MovieOffsets.xml
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\lba1QuestOffsets.xml
