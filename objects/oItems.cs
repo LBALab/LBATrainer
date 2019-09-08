@@ -67,7 +67,7 @@ namespace LBATrainer
 
             item.name = xn.SelectSingleNode("name").InnerText.Trim();
             string s = xn.SelectSingleNode("memoryOffset").InnerText.Trim();
-            item.memoryOffset = int.Parse(s, System.Globalization.NumberStyles.HexNumber);
+            item.memoryOffset = uint.Parse(s, System.Globalization.NumberStyles.HexNumber);
             string maxVal = xn.SelectSingleNode("maxVal").InnerText.Trim();
             item.maxVal = ushort.Parse(xn.SelectSingleNode("maxVal").InnerText.Trim());
             item.minVal = ushort.Parse(xn.SelectSingleNode("minVal").InnerText.Trim());

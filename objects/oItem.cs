@@ -11,7 +11,7 @@ namespace LBATrainer
         public const ushort TYPE_BITFLAG = 0;
         public const ushort TYPE_VALUE = 1;
         public string name;
-        public int memoryOffset;
+        public uint memoryOffset;
         public ushort maxVal;
         public ushort minVal;
         public ushort size; //Number of bytes needed to store value

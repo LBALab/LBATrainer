@@ -59,16 +59,13 @@ namespace LBATrainer
             }
             return 0;
         }
-
-
+        #region writeMemory
         private int writeProcess(uint addressToWrite, byte[] buffer, ushort size)
         {
             int bytesWritten = 0;
             WriteProcessMemory((int)processHandle, addressToWrite, buffer, size, ref bytesWritten);
             return bytesWritten;
         }
-
-
         public bool writeAddress(uint LBAVer, Item item, byte[] bytes)
         {
             uint addressToWrite = (uint)item.memoryOffset;
@@ -79,13 +76,31 @@ namespace LBATrainer
                 addressToWrite += baseAddr;
             return (!(0 >= writeProcess(addressToWrite, bytes, item.size)));
         }
-
+        public bool WriteVal(uint LBAVer, Item itm, string value)
+        {
+            ushort val;
+            if (!ushort.TryParse(value, out val)) return false;
+            if (val > itm.maxVal) val = itm.maxVal;
+            if (val < itm.minVal) val = itm.minVal;
+            WriteVal(LBAVer, itm, val);
+            return true;
+        }
+        public void WriteVal(uint LBAVer, Item itm, ushort val)
+        {
+            writeAddress(LBAVer, itm, BitConverter.GetBytes(val));
+        }
+        public void WriteVal(uint LBAVer, int offset, ushort val, ushort size)
+        {
+            writeProcess((uint) (getBaseAddress(LBAVer) + offset), BitConverter.GetBytes(val), size);
+        }
+        #endregion
+        #region readMemory
         private bool readProcess(uint addressToRead, ref byte[] data)
         {
             int bytesRead = 0;
             return ReadProcessMemory((int)processHandle, addressToRead, data, data.Length, ref bytesRead);            
         }
-        public int readAddress(uint LBAVer, int offsetToRead, uint size)
+        public int readAddress(uint LBAVer, uint offsetToRead, uint size)
         {
             uint addressToRead = 0;
             byte[] bytes = new byte[size];
@@ -102,35 +117,49 @@ namespace LBATrainer
             }
             return 0;
         }
-
         public int getVal(uint LBAVer, Item itm)
         {
             if (null == itm) return 0;
             return readAddress(LBAVer, itm.memoryOffset, itm.size);
         }
-
-        public bool WriteVal(uint LBAVer, Item itm, string value)
+        public string getString(ushort LBAVer, uint startOffset)
         {
-            ushort val;
-            if (!ushort.TryParse(value, out val)) return false;
-            if (val > itm.maxVal) val = itm.maxVal;
-            if (val < itm.minVal) val = itm.minVal;
-            WriteVal(LBAVer, itm, val);
-            return true;
-        }
-        public void WriteVal(uint LBAVer, Item itm, ushort val)
-        {
-            writeAddress(LBAVer, itm, BitConverter.GetBytes(val));
+            string sVal = "";
+            int iVal;
+            for (int i = 0; 0 != (iVal = readAddress(LBAVer, startOffset++, 1)); i++)
+                if (-1 == iVal)
+                    return null;
+                else
+                    sVal += Char.ConvertFromUtf32(iVal);
+            return sVal;
         }
 
+        //This reads bytes until a null character is encountered
+        public byte[] getByteArrayNull(ushort LBAVer, uint startOffset)
+        {
+            string s;
+            if (null == (s = getString(LBAVer, startOffset))) return null;
+            byte[] t = Encoding.UTF8.GetBytes(s);
+            byte[] b = new byte[t.Length + 1];
+            for (byte i = 0; i < t.Length; i++) b[i] = t[i];
+            b[b.Length - 1] = 0;
+            return b;
+        }
+        public byte[] getByteArray(ushort LBAVer, uint startOffset, ushort size)
+        {
+            byte[] b = new byte[size];
+            readProcess(getBaseAddress(LBAVer) + startOffset, ref b);
+            return b;
+        }
+        #endregion
         //Assigns to proc and ProcessHandle
         private void OpenProcess(int access)
         {
             Process[] p;
             p = Process.GetProcessesByName("DOSBox");
             if (1 != p.Length) return;
-            proc = p[0]; ;
-            processHandle = OpenProcess(PROCESS_ALL_ACCESS, false, proc.Id); ;
+            proc = p[0];
+            processHandle = OpenProcess(access, false, proc.Id); ;
         }
     }
 }

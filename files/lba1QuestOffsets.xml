@@ -2805,9 +2805,9 @@
 			1
 		</lbaVersion>
 	</item>
-	<item><!-- Pour o clear 1 -->
+	<item>
 		<name>
-			Q123: Unknown
+			Poured Clear water onto Eclipse Stone
 		</name>
 		<memoryOffset>
 			10E09
@@ -2828,9 +2828,9 @@
 			1
 		</lbaVersion>
 	</item>
-	<item><!-- Pour o clear 2 -->
+	<item>
 		<name>
-			Q124: Unknown
+			Poured clear water onto the Marked stone
 		</name>
 		<memoryOffset>
 			10E0A

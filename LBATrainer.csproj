@@ -56,8 +56,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="mem.cs" />
+    <Compile Include="objects\oHotKey.cs" />
     <Compile Include="objects\oItem.cs" />
     <Compile Include="objects\oItems.cs" />
+    <Compile Include="objects\oOptions.cs" />
+    <Compile Include="objects\oSaveGame.cs" />
+    <Compile Include="objects\oSaveItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -97,6 +101,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="files\lba2MemoryLocations.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\options.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\saveGame.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
