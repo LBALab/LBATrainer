@@ -551,9 +551,9 @@
 			1
 		</lbaVersion>
 	</item>
-	<item><!-- Triggered: Set straight after pouring cherry syrup --><!-- Also gets set subsequently when taking any vehicle requiring gas -->
+	<item><!-- Triggered: Gets set when taking any vehicle requiring gas -->
 		<name>
-			Secret library document access
+			Toggled when taking a vehicle with gas.
 		</name>
 		<memoryOffset>
 			10DA7
@@ -691,7 +691,7 @@
 	</item>
 	<item><!-- Triggered -->
 		<name>
-			Museum heisted
+			Museum Closed
 		</name>
 		<memoryOffset>
 			10DAD
@@ -2575,9 +2575,9 @@
 			1
 		</lbaVersion>
 	</item>
-	<item><!-- ?Kroptman set off -->
+	<item><!-- Triggered: ?Kroptman set off -->
 		<name>
-			Q113: Unknown
+			Re-entering outside Hamalyi fortress door scene after already completing.
 		</name>
 		<memoryOffset>
 			10DFF

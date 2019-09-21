@@ -57,6 +57,10 @@
             this.lblLBA1Clovers = new System.Windows.Forms.Label();
             this.txtLBA1Clovers = new System.Windows.Forms.TextBox();
             this.tpLBA1Other = new System.Windows.Forms.TabPage();
+            this.btnGetChapter = new System.Windows.Forms.Button();
+            this.chkLBA1OtherChapter = new System.Windows.Forms.CheckBox();
+            this.cboLBA1OtherChapter = new System.Windows.Forms.ComboBox();
+            this.lblLBA1OtherChapter = new System.Windows.Forms.Label();
             this.chkLBA1MoviesValue = new System.Windows.Forms.CheckBox();
             this.cboLBA1Movies = new System.Windows.Forms.ComboBox();
             this.lblLBA1Movies = new System.Windows.Forms.Label();
@@ -64,6 +68,7 @@
             this.cboLBA1Quest = new System.Windows.Forms.ComboBox();
             this.lblLBA1Quest = new System.Windows.Forms.Label();
             this.tpTeleport = new System.Windows.Forms.TabPage();
+            this.chkLBA1TeleportLock = new System.Windows.Forms.CheckBox();
             this.txtLBA1TeleportRefreshInterval = new System.Windows.Forms.TextBox();
             this.lblLBA1AutoRefresh = new System.Windows.Forms.Label();
             this.btnLBA1StartStopRefresh = new System.Windows.Forms.Button();
@@ -73,11 +78,17 @@
             this.txtXPos = new System.Windows.Forms.TextBox();
             this.btnSet = new System.Windows.Forms.Button();
             this.btnLBA1TeleportScan = new System.Windows.Forms.Button();
-            this.lblYPos = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblZPos = new System.Windows.Forms.Label();
-            this.lblXPos = new System.Windows.Forms.Label();
+            this.lblLBA1TeleportYPos = new System.Windows.Forms.Label();
+            this.lblLBA1TeleportFacing = new System.Windows.Forms.Label();
+            this.lblLBA1TeleportZPos = new System.Windows.Forms.Label();
+            this.lblLBA1TeleportXPos = new System.Windows.Forms.Label();
             this.tpSaveGame = new System.Windows.Forms.TabPage();
+            this.btnLBA1SGRefresh = new System.Windows.Forms.Button();
+            this.lvLBA1SaveGames = new System.Windows.Forms.ListView();
+            this.chLBA1SGReadOnly = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chLBA1SGFileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chLBA1SGLastModified = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnLBA1SaveGameEnableDisable = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSetSaveFileDir = new System.Windows.Forms.Button();
@@ -111,9 +122,17 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lBA1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoZoomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.enabledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.godModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuGodModeEnabled = new System.Windows.Forms.ToolStripMenuItem();
+            this.maxMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMaxMagicEnabled = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
-            this.btnLBA1SaveGameEnableDisable = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tmrChapterTest = new System.Windows.Forms.Timer(this.components);
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -404,6 +423,11 @@
             // tpLBA1Other
             // 
             this.tpLBA1Other.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA1Other.Controls.Add(this.label3);
+            this.tpLBA1Other.Controls.Add(this.btnGetChapter);
+            this.tpLBA1Other.Controls.Add(this.chkLBA1OtherChapter);
+            this.tpLBA1Other.Controls.Add(this.cboLBA1OtherChapter);
+            this.tpLBA1Other.Controls.Add(this.lblLBA1OtherChapter);
             this.tpLBA1Other.Controls.Add(this.chkLBA1MoviesValue);
             this.tpLBA1Other.Controls.Add(this.cboLBA1Movies);
             this.tpLBA1Other.Controls.Add(this.lblLBA1Movies);
@@ -417,10 +441,47 @@
             this.tpLBA1Other.TabIndex = 1;
             this.tpLBA1Other.Text = "Other";
             // 
+            // btnGetChapter
+            // 
+            this.btnGetChapter.Location = new System.Drawing.Point(129, 149);
+            this.btnGetChapter.Name = "btnGetChapter";
+            this.btnGetChapter.Size = new System.Drawing.Size(75, 23);
+            this.btnGetChapter.TabIndex = 9;
+            this.btnGetChapter.Text = "Get Chapter";
+            this.btnGetChapter.UseVisualStyleBackColor = true;
+            this.btnGetChapter.Click += new System.EventHandler(this.BtnGetChapter_Click);
+            // 
+            // chkLBA1OtherChapter
+            // 
+            this.chkLBA1OtherChapter.AutoSize = true;
+            this.chkLBA1OtherChapter.Location = new System.Drawing.Point(301, 63);
+            this.chkLBA1OtherChapter.Name = "chkLBA1OtherChapter";
+            this.chkLBA1OtherChapter.Size = new System.Drawing.Size(15, 14);
+            this.chkLBA1OtherChapter.TabIndex = 8;
+            this.chkLBA1OtherChapter.UseVisualStyleBackColor = true;
+            // 
+            // cboLBA1OtherChapter
+            // 
+            this.cboLBA1OtherChapter.FormattingEnabled = true;
+            this.cboLBA1OtherChapter.Location = new System.Drawing.Point(64, 60);
+            this.cboLBA1OtherChapter.Name = "cboLBA1OtherChapter";
+            this.cboLBA1OtherChapter.Size = new System.Drawing.Size(231, 21);
+            this.cboLBA1OtherChapter.TabIndex = 7;
+            // 
+            // lblLBA1OtherChapter
+            // 
+            this.lblLBA1OtherChapter.AutoSize = true;
+            this.lblLBA1OtherChapter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA1OtherChapter.Location = new System.Drawing.Point(6, 63);
+            this.lblLBA1OtherChapter.Name = "lblLBA1OtherChapter";
+            this.lblLBA1OtherChapter.Size = new System.Drawing.Size(51, 13);
+            this.lblLBA1OtherChapter.TabIndex = 6;
+            this.lblLBA1OtherChapter.Text = "Chapter";
+            // 
             // chkLBA1MoviesValue
             // 
             this.chkLBA1MoviesValue.AutoSize = true;
-            this.chkLBA1MoviesValue.Location = new System.Drawing.Point(301, 61);
+            this.chkLBA1MoviesValue.Location = new System.Drawing.Point(301, 36);
             this.chkLBA1MoviesValue.Name = "chkLBA1MoviesValue";
             this.chkLBA1MoviesValue.Size = new System.Drawing.Size(15, 14);
             this.chkLBA1MoviesValue.TabIndex = 5;
@@ -430,7 +491,7 @@
             // cboLBA1Movies
             // 
             this.cboLBA1Movies.FormattingEnabled = true;
-            this.cboLBA1Movies.Location = new System.Drawing.Point(64, 58);
+            this.cboLBA1Movies.Location = new System.Drawing.Point(64, 33);
             this.cboLBA1Movies.Name = "cboLBA1Movies";
             this.cboLBA1Movies.Size = new System.Drawing.Size(231, 21);
             this.cboLBA1Movies.TabIndex = 4;
@@ -440,7 +501,7 @@
             // 
             this.lblLBA1Movies.AutoSize = true;
             this.lblLBA1Movies.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Movies.Location = new System.Drawing.Point(6, 61);
+            this.lblLBA1Movies.Location = new System.Drawing.Point(6, 36);
             this.lblLBA1Movies.Name = "lblLBA1Movies";
             this.lblLBA1Movies.Size = new System.Drawing.Size(47, 13);
             this.lblLBA1Movies.TabIndex = 3;
@@ -449,7 +510,7 @@
             // chkLBA1QuestValue
             // 
             this.chkLBA1QuestValue.AutoSize = true;
-            this.chkLBA1QuestValue.Location = new System.Drawing.Point(301, 24);
+            this.chkLBA1QuestValue.Location = new System.Drawing.Point(301, 9);
             this.chkLBA1QuestValue.Name = "chkLBA1QuestValue";
             this.chkLBA1QuestValue.Size = new System.Drawing.Size(15, 14);
             this.chkLBA1QuestValue.TabIndex = 2;
@@ -459,7 +520,7 @@
             // cboLBA1Quest
             // 
             this.cboLBA1Quest.FormattingEnabled = true;
-            this.cboLBA1Quest.Location = new System.Drawing.Point(64, 21);
+            this.cboLBA1Quest.Location = new System.Drawing.Point(64, 6);
             this.cboLBA1Quest.Name = "cboLBA1Quest";
             this.cboLBA1Quest.Size = new System.Drawing.Size(231, 21);
             this.cboLBA1Quest.TabIndex = 1;
@@ -469,7 +530,7 @@
             // 
             this.lblLBA1Quest.AutoSize = true;
             this.lblLBA1Quest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Quest.Location = new System.Drawing.Point(6, 24);
+            this.lblLBA1Quest.Location = new System.Drawing.Point(6, 9);
             this.lblLBA1Quest.Name = "lblLBA1Quest";
             this.lblLBA1Quest.Size = new System.Drawing.Size(40, 13);
             this.lblLBA1Quest.TabIndex = 0;
@@ -478,6 +539,7 @@
             // tpTeleport
             // 
             this.tpTeleport.BackColor = System.Drawing.Color.MistyRose;
+            this.tpTeleport.Controls.Add(this.chkLBA1TeleportLock);
             this.tpTeleport.Controls.Add(this.txtLBA1TeleportRefreshInterval);
             this.tpTeleport.Controls.Add(this.lblLBA1AutoRefresh);
             this.tpTeleport.Controls.Add(this.btnLBA1StartStopRefresh);
@@ -487,16 +549,27 @@
             this.tpTeleport.Controls.Add(this.txtXPos);
             this.tpTeleport.Controls.Add(this.btnSet);
             this.tpTeleport.Controls.Add(this.btnLBA1TeleportScan);
-            this.tpTeleport.Controls.Add(this.lblYPos);
-            this.tpTeleport.Controls.Add(this.label3);
-            this.tpTeleport.Controls.Add(this.lblZPos);
-            this.tpTeleport.Controls.Add(this.lblXPos);
+            this.tpTeleport.Controls.Add(this.lblLBA1TeleportYPos);
+            this.tpTeleport.Controls.Add(this.lblLBA1TeleportFacing);
+            this.tpTeleport.Controls.Add(this.lblLBA1TeleportZPos);
+            this.tpTeleport.Controls.Add(this.lblLBA1TeleportXPos);
             this.tpTeleport.Location = new System.Drawing.Point(4, 22);
             this.tpTeleport.Name = "tpTeleport";
             this.tpTeleport.Padding = new System.Windows.Forms.Padding(3);
             this.tpTeleport.Size = new System.Drawing.Size(334, 178);
             this.tpTeleport.TabIndex = 2;
             this.tpTeleport.Text = "Teleport";
+            // 
+            // chkLBA1TeleportLock
+            // 
+            this.chkLBA1TeleportLock.AutoSize = true;
+            this.chkLBA1TeleportLock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLBA1TeleportLock.Location = new System.Drawing.Point(248, 66);
+            this.chkLBA1TeleportLock.Name = "chkLBA1TeleportLock";
+            this.chkLBA1TeleportLock.Size = new System.Drawing.Size(54, 17);
+            this.chkLBA1TeleportLock.TabIndex = 29;
+            this.chkLBA1TeleportLock.Text = "Lock";
+            this.chkLBA1TeleportLock.UseVisualStyleBackColor = true;
             // 
             // txtLBA1TeleportRefreshInterval
             // 
@@ -573,49 +646,51 @@
             this.btnLBA1TeleportScan.UseVisualStyleBackColor = true;
             this.btnLBA1TeleportScan.Click += new System.EventHandler(this.BtnLBA1TeleportScan_Click);
             // 
-            // lblYPos
+            // lblLBA1TeleportYPos
             // 
-            this.lblYPos.AutoSize = true;
-            this.lblYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYPos.Location = new System.Drawing.Point(7, 40);
-            this.lblYPos.Name = "lblYPos";
-            this.lblYPos.Size = new System.Drawing.Size(36, 13);
-            this.lblYPos.TabIndex = 15;
-            this.lblYPos.Text = "YPos";
+            this.lblLBA1TeleportYPos.AutoSize = true;
+            this.lblLBA1TeleportYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA1TeleportYPos.Location = new System.Drawing.Point(7, 40);
+            this.lblLBA1TeleportYPos.Name = "lblLBA1TeleportYPos";
+            this.lblLBA1TeleportYPos.Size = new System.Drawing.Size(36, 13);
+            this.lblLBA1TeleportYPos.TabIndex = 15;
+            this.lblLBA1TeleportYPos.Text = "YPos";
             // 
-            // label3
+            // lblLBA1TeleportFacing
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 92);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Facing";
+            this.lblLBA1TeleportFacing.AutoSize = true;
+            this.lblLBA1TeleportFacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA1TeleportFacing.Location = new System.Drawing.Point(7, 92);
+            this.lblLBA1TeleportFacing.Name = "lblLBA1TeleportFacing";
+            this.lblLBA1TeleportFacing.Size = new System.Drawing.Size(45, 13);
+            this.lblLBA1TeleportFacing.TabIndex = 14;
+            this.lblLBA1TeleportFacing.Text = "Facing";
             // 
-            // lblZPos
+            // lblLBA1TeleportZPos
             // 
-            this.lblZPos.AutoSize = true;
-            this.lblZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZPos.Location = new System.Drawing.Point(7, 66);
-            this.lblZPos.Name = "lblZPos";
-            this.lblZPos.Size = new System.Drawing.Size(44, 13);
-            this.lblZPos.TabIndex = 13;
-            this.lblZPos.Text = "Height";
+            this.lblLBA1TeleportZPos.AutoSize = true;
+            this.lblLBA1TeleportZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA1TeleportZPos.Location = new System.Drawing.Point(7, 66);
+            this.lblLBA1TeleportZPos.Name = "lblLBA1TeleportZPos";
+            this.lblLBA1TeleportZPos.Size = new System.Drawing.Size(44, 13);
+            this.lblLBA1TeleportZPos.TabIndex = 13;
+            this.lblLBA1TeleportZPos.Text = "Height";
             // 
-            // lblXPos
+            // lblLBA1TeleportXPos
             // 
-            this.lblXPos.AutoSize = true;
-            this.lblXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXPos.Location = new System.Drawing.Point(7, 14);
-            this.lblXPos.Name = "lblXPos";
-            this.lblXPos.Size = new System.Drawing.Size(36, 13);
-            this.lblXPos.TabIndex = 12;
-            this.lblXPos.Text = "XPos";
+            this.lblLBA1TeleportXPos.AutoSize = true;
+            this.lblLBA1TeleportXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA1TeleportXPos.Location = new System.Drawing.Point(7, 14);
+            this.lblLBA1TeleportXPos.Name = "lblLBA1TeleportXPos";
+            this.lblLBA1TeleportXPos.Size = new System.Drawing.Size(36, 13);
+            this.lblLBA1TeleportXPos.TabIndex = 12;
+            this.lblLBA1TeleportXPos.Text = "XPos";
             // 
             // tpSaveGame
             // 
             this.tpSaveGame.BackColor = System.Drawing.Color.MistyRose;
+            this.tpSaveGame.Controls.Add(this.btnLBA1SGRefresh);
+            this.tpSaveGame.Controls.Add(this.lvLBA1SaveGames);
             this.tpSaveGame.Controls.Add(this.btnLBA1SaveGameEnableDisable);
             this.tpSaveGame.Controls.Add(this.label2);
             this.tpSaveGame.Controls.Add(this.label1);
@@ -629,31 +704,81 @@
             this.tpSaveGame.TabIndex = 3;
             this.tpSaveGame.Text = "SaveGame";
             // 
+            // btnLBA1SGRefresh
+            // 
+            this.btnLBA1SGRefresh.Location = new System.Drawing.Point(222, 149);
+            this.btnLBA1SGRefresh.Name = "btnLBA1SGRefresh";
+            this.btnLBA1SGRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA1SGRefresh.TabIndex = 9;
+            this.btnLBA1SGRefresh.Text = "Refresh";
+            this.btnLBA1SGRefresh.UseVisualStyleBackColor = true;
+            this.btnLBA1SGRefresh.Click += new System.EventHandler(this.BtnLBA1SGRefresh_Click);
+            // 
+            // lvLBA1SaveGames
+            // 
+            this.lvLBA1SaveGames.CheckBoxes = true;
+            this.lvLBA1SaveGames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chLBA1SGReadOnly,
+            this.chLBA1SGFileName,
+            this.chLBA1SGLastModified});
+            this.lvLBA1SaveGames.HideSelection = false;
+            this.lvLBA1SaveGames.Location = new System.Drawing.Point(9, 32);
+            this.lvLBA1SaveGames.Name = "lvLBA1SaveGames";
+            this.lvLBA1SaveGames.Size = new System.Drawing.Size(322, 106);
+            this.lvLBA1SaveGames.TabIndex = 8;
+            this.lvLBA1SaveGames.UseCompatibleStateImageBehavior = false;
+            this.lvLBA1SaveGames.View = System.Windows.Forms.View.Details;
+            // 
+            // chLBA1SGReadOnly
+            // 
+            this.chLBA1SGReadOnly.Text = "Read Only";
+            this.chLBA1SGReadOnly.Width = 62;
+            // 
+            // chLBA1SGFileName
+            // 
+            this.chLBA1SGFileName.Text = "Name";
+            this.chLBA1SGFileName.Width = 104;
+            // 
+            // chLBA1SGLastModified
+            // 
+            this.chLBA1SGLastModified.Text = "Modified";
+            this.chLBA1SGLastModified.Width = 122;
+            // 
+            // btnLBA1SaveGameEnableDisable
+            // 
+            this.btnLBA1SaveGameEnableDisable.Location = new System.Drawing.Point(141, 149);
+            this.btnLBA1SaveGameEnableDisable.Name = "btnLBA1SaveGameEnableDisable";
+            this.btnLBA1SaveGameEnableDisable.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA1SaveGameEnableDisable.TabIndex = 7;
+            this.btnLBA1SaveGameEnableDisable.Text = "Enable";
+            this.btnLBA1SaveGameEnableDisable.UseVisualStyleBackColor = true;
+            this.btnLBA1SaveGameEnableDisable.Click += new System.EventHandler(this.BtnLBA1SaveGameEnableDisable_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 69);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(269, 26);
+            this.label2.Size = new System.Drawing.Size(132, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Press F9 if you need a key";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 43);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 26);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Press F7 to save";
             // 
             // btnSetSaveFileDir
             // 
-            this.btnSetSaveFileDir.Location = new System.Drawing.Point(299, 9);
+            this.btnSetSaveFileDir.Location = new System.Drawing.Point(299, 6);
             this.btnSetSaveFileDir.Name = "btnSetSaveFileDir";
-            this.btnSetSaveFileDir.Size = new System.Drawing.Size(32, 23);
+            this.btnSetSaveFileDir.Size = new System.Drawing.Size(32, 20);
             this.btnSetSaveFileDir.TabIndex = 2;
             this.btnSetSaveFileDir.Text = "Set";
             this.btnSetSaveFileDir.UseVisualStyleBackColor = true;
@@ -661,7 +786,7 @@
             // 
             // txtLBA1SaveFileDirectory
             // 
-            this.txtLBA1SaveFileDirectory.Location = new System.Drawing.Point(124, 11);
+            this.txtLBA1SaveFileDirectory.Location = new System.Drawing.Point(124, 6);
             this.txtLBA1SaveFileDirectory.Name = "txtLBA1SaveFileDirectory";
             this.txtLBA1SaveFileDirectory.Size = new System.Drawing.Size(169, 20);
             this.txtLBA1SaveFileDirectory.TabIndex = 1;
@@ -670,7 +795,7 @@
             // 
             this.lblLBA1SaveFileDirectory.AutoSize = true;
             this.lblLBA1SaveFileDirectory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1SaveFileDirectory.Location = new System.Drawing.Point(6, 14);
+            this.lblLBA1SaveFileDirectory.Location = new System.Drawing.Point(6, 9);
             this.lblLBA1SaveFileDirectory.Name = "lblLBA1SaveFileDirectory";
             this.lblLBA1SaveFileDirectory.Size = new System.Drawing.Size(112, 13);
             this.lblLBA1SaveFileDirectory.TabIndex = 0;
@@ -938,7 +1063,8 @@
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.refreshToolStripMenuItem});
+            this.refreshToolStripMenuItem,
+            this.lBA1ToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "&Options";
@@ -950,6 +1076,63 @@
             this.refreshToolStripMenuItem.Text = "&Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
+            // lBA1ToolStripMenuItem
+            // 
+            this.lBA1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.autoZoomToolStripMenuItem1,
+            this.godModeToolStripMenuItem,
+            this.maxMagicToolStripMenuItem});
+            this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
+            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.lBA1ToolStripMenuItem.Text = "LBA1";
+            // 
+            // autoZoomToolStripMenuItem1
+            // 
+            this.autoZoomToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.enabledToolStripMenuItem});
+            this.autoZoomToolStripMenuItem1.Name = "autoZoomToolStripMenuItem1";
+            this.autoZoomToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.autoZoomToolStripMenuItem1.Text = "Auto-Zoom";
+            // 
+            // enabledToolStripMenuItem
+            // 
+            this.enabledToolStripMenuItem.Checked = true;
+            this.enabledToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.enabledToolStripMenuItem.Name = "enabledToolStripMenuItem";
+            this.enabledToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.enabledToolStripMenuItem.Text = "Enabled";
+            this.enabledToolStripMenuItem.Click += new System.EventHandler(this.EnabledToolStripMenuItem_Click);
+            // 
+            // godModeToolStripMenuItem
+            // 
+            this.godModeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuGodModeEnabled});
+            this.godModeToolStripMenuItem.Name = "godModeToolStripMenuItem";
+            this.godModeToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.godModeToolStripMenuItem.Text = "God Mode";
+            // 
+            // mnuGodModeEnabled
+            // 
+            this.mnuGodModeEnabled.Name = "mnuGodModeEnabled";
+            this.mnuGodModeEnabled.Size = new System.Drawing.Size(116, 22);
+            this.mnuGodModeEnabled.Text = "Enabled";
+            this.mnuGodModeEnabled.Click += new System.EventHandler(this.MnuGodModeEnabled_Click);
+            // 
+            // maxMagicToolStripMenuItem
+            // 
+            this.maxMagicToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMaxMagicEnabled});
+            this.maxMagicToolStripMenuItem.Name = "maxMagicToolStripMenuItem";
+            this.maxMagicToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.maxMagicToolStripMenuItem.Text = "Max Magic";
+            // 
+            // mnuMaxMagicEnabled
+            // 
+            this.mnuMaxMagicEnabled.Name = "mnuMaxMagicEnabled";
+            this.mnuMaxMagicEnabled.Size = new System.Drawing.Size(116, 22);
+            this.mnuMaxMagicEnabled.Text = "Enabled";
+            this.mnuMaxMagicEnabled.Click += new System.EventHandler(this.MnuMaxMagicEnabled_Click);
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
@@ -960,15 +1143,19 @@
             // 
             this.tmrLBA1TeleportTabRefresh.Tick += new System.EventHandler(this.TmrLBA1TeleportTabRefresh_Tick);
             // 
-            // btnLBA1SaveGameEnableDisable
+            // label3
             // 
-            this.btnLBA1SaveGameEnableDisable.Location = new System.Drawing.Point(106, 118);
-            this.btnLBA1SaveGameEnableDisable.Name = "btnLBA1SaveGameEnableDisable";
-            this.btnLBA1SaveGameEnableDisable.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA1SaveGameEnableDisable.TabIndex = 7;
-            this.btnLBA1SaveGameEnableDisable.Text = "Enable";
-            this.btnLBA1SaveGameEnableDisable.UseVisualStyleBackColor = true;
-            this.btnLBA1SaveGameEnableDisable.Click += new System.EventHandler(this.BtnLBA1SaveGameEnableDisable_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(49, 92);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 54);
+            this.label3.TabIndex = 10;
+            // 
+            // tmrChapterTest
+            // 
+            this.tmrChapterTest.Interval = 50;
+            this.tmrChapterTest.Tick += new System.EventHandler(this.TmrChapterTest_Tick);
             // 
             // frmTrainer
             // 
@@ -1072,10 +1259,10 @@
         private System.Windows.Forms.TextBox txtXPos;
         private System.Windows.Forms.Button btnSet;
         private System.Windows.Forms.Button btnLBA1TeleportScan;
-        private System.Windows.Forms.Label lblYPos;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblZPos;
-        private System.Windows.Forms.Label lblXPos;
+        private System.Windows.Forms.Label lblLBA1TeleportYPos;
+        private System.Windows.Forms.Label lblLBA1TeleportFacing;
+        private System.Windows.Forms.Label lblLBA1TeleportZPos;
+        private System.Windows.Forms.Label lblLBA1TeleportXPos;
         private System.Windows.Forms.TabPage tpSaveGame;
         private System.Windows.Forms.Button btnSetSaveFileDir;
         private System.Windows.Forms.TextBox txtLBA1SaveFileDirectory;
@@ -1091,6 +1278,25 @@
         private System.Windows.Forms.Button btnLBA1StartStopRefresh;
         private System.Windows.Forms.Timer tmrLBA1TeleportTabRefresh;
         private System.Windows.Forms.Button btnLBA1SaveGameEnableDisable;
+        private System.Windows.Forms.ToolStripMenuItem lBA1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autoZoomToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem enabledToolStripMenuItem;
+        private System.Windows.Forms.ListView lvLBA1SaveGames;
+        private System.Windows.Forms.ColumnHeader chLBA1SGFileName;
+        private System.Windows.Forms.ColumnHeader chLBA1SGLastModified;
+        private System.Windows.Forms.ColumnHeader chLBA1SGReadOnly;
+        private System.Windows.Forms.Button btnLBA1SGRefresh;
+        private System.Windows.Forms.ToolStripMenuItem godModeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuGodModeEnabled;
+        private System.Windows.Forms.ToolStripMenuItem maxMagicToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuMaxMagicEnabled;
+        private System.Windows.Forms.CheckBox chkLBA1TeleportLock;
+        private System.Windows.Forms.Button btnGetChapter;
+        private System.Windows.Forms.CheckBox chkLBA1OtherChapter;
+        private System.Windows.Forms.ComboBox cboLBA1OtherChapter;
+        private System.Windows.Forms.Label lblLBA1OtherChapter;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer tmrChapterTest;
     }
 }
 
