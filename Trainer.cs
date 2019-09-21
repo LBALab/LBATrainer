@@ -63,16 +63,14 @@ namespace LBATrainer
 
         private void BtnGetChapter_Click(object sender, EventArgs e)
         {
-            if (tmrChapterTest.Enabled)
-                tmrChapterTest.Stop();
+            if (tmrHeightLock.Enabled)
+                tmrHeightLock.Stop();
             else
-                tmrChapterTest.Start();
+                tmrHeightLock.Start();
         }
 
-        private void TmrChapterTest_Tick(object sender, EventArgs e)
-        {
-            label3.Text = "Chapter: " + memRoutines.readAddress(LBA_ONE, 0xE28, 1).ToString();
-        }
+
+
 
         /*
         private string[] getReadonlySaves()

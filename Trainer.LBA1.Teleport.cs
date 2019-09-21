@@ -118,5 +118,19 @@ namespace LBATrainer
                 btnLBA1StartStopRefresh.Text = "Start";
             }
         }
+
+
+        private void ChkLBA1TeleportLock_CheckedChanged(object sender, EventArgs e)
+        {
+            if (tmrHeightLock.Enabled = chkLBA1TeleportLock.Checked)
+                tmrHeightLock.Start();
+            else
+                tmrHeightLock.Stop();
+        }
+
+        private void TmrHeightLock_Tick(object sender, EventArgs e)
+        {
+            setZPos((ushort)getInt(txtZPos.Text));
+        }
     }
 }

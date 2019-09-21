@@ -57,7 +57,6 @@
             this.lblLBA1Clovers = new System.Windows.Forms.Label();
             this.txtLBA1Clovers = new System.Windows.Forms.TextBox();
             this.tpLBA1Other = new System.Windows.Forms.TabPage();
-            this.btnGetChapter = new System.Windows.Forms.Button();
             this.chkLBA1OtherChapter = new System.Windows.Forms.CheckBox();
             this.cboLBA1OtherChapter = new System.Windows.Forms.ComboBox();
             this.lblLBA1OtherChapter = new System.Windows.Forms.Label();
@@ -131,8 +130,7 @@
             this.mnuMaxMagicEnabled = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.tmrChapterTest = new System.Windows.Forms.Timer(this.components);
+            this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -423,8 +421,6 @@
             // tpLBA1Other
             // 
             this.tpLBA1Other.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA1Other.Controls.Add(this.label3);
-            this.tpLBA1Other.Controls.Add(this.btnGetChapter);
             this.tpLBA1Other.Controls.Add(this.chkLBA1OtherChapter);
             this.tpLBA1Other.Controls.Add(this.cboLBA1OtherChapter);
             this.tpLBA1Other.Controls.Add(this.lblLBA1OtherChapter);
@@ -440,16 +436,6 @@
             this.tpLBA1Other.Size = new System.Drawing.Size(334, 178);
             this.tpLBA1Other.TabIndex = 1;
             this.tpLBA1Other.Text = "Other";
-            // 
-            // btnGetChapter
-            // 
-            this.btnGetChapter.Location = new System.Drawing.Point(129, 149);
-            this.btnGetChapter.Name = "btnGetChapter";
-            this.btnGetChapter.Size = new System.Drawing.Size(75, 23);
-            this.btnGetChapter.TabIndex = 9;
-            this.btnGetChapter.Text = "Get Chapter";
-            this.btnGetChapter.UseVisualStyleBackColor = true;
-            this.btnGetChapter.Click += new System.EventHandler(this.BtnGetChapter_Click);
             // 
             // chkLBA1OtherChapter
             // 
@@ -570,6 +556,7 @@
             this.chkLBA1TeleportLock.TabIndex = 29;
             this.chkLBA1TeleportLock.Text = "Lock";
             this.chkLBA1TeleportLock.UseVisualStyleBackColor = true;
+            this.chkLBA1TeleportLock.CheckedChanged += new System.EventHandler(this.ChkLBA1TeleportLock_CheckedChanged);
             // 
             // txtLBA1TeleportRefreshInterval
             // 
@@ -1143,19 +1130,10 @@
             // 
             this.tmrLBA1TeleportTabRefresh.Tick += new System.EventHandler(this.TmrLBA1TeleportTabRefresh_Tick);
             // 
-            // label3
+            // tmrHeightLock
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 92);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 54);
-            this.label3.TabIndex = 10;
-            // 
-            // tmrChapterTest
-            // 
-            this.tmrChapterTest.Interval = 50;
-            this.tmrChapterTest.Tick += new System.EventHandler(this.TmrChapterTest_Tick);
+            this.tmrHeightLock.Interval = 50;
+            this.tmrHeightLock.Tick += new System.EventHandler(this.TmrHeightLock_Tick);
             // 
             // frmTrainer
             // 
@@ -1291,12 +1269,10 @@
         private System.Windows.Forms.ToolStripMenuItem maxMagicToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuMaxMagicEnabled;
         private System.Windows.Forms.CheckBox chkLBA1TeleportLock;
-        private System.Windows.Forms.Button btnGetChapter;
         private System.Windows.Forms.CheckBox chkLBA1OtherChapter;
         private System.Windows.Forms.ComboBox cboLBA1OtherChapter;
         private System.Windows.Forms.Label lblLBA1OtherChapter;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Timer tmrChapterTest;
+        private System.Windows.Forms.Timer tmrHeightLock;
     }
 }
 
