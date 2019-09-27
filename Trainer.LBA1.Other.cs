@@ -48,5 +48,9 @@ namespace LBATrainer
             if (-1 == cboLBA1Movies.SelectedIndex) return;
             memRoutines.WriteVal(LBA_ONE, (Item)cboLBA1Movies.SelectedItem, val);
         }
+        private void CboLBA1OtherChapter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            memRoutines.WriteVal(1, 0xE28, (ushort)getInt(cboLBA1OtherChapter.SelectedItem.ToString()), 1);
+        }
     }
 }

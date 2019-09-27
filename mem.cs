@@ -97,8 +97,13 @@ namespace LBATrainer
         #region readMemory
         private bool readProcess(uint addressToRead, ref byte[] data)
         {
-            int bytesRead = 0;
-            return ReadProcessMemory((int)processHandle, addressToRead, data, data.Length, ref bytesRead);            
+            try
+            {
+                int bytesRead = 0;
+                return ReadProcessMemory((int)processHandle, addressToRead, data, data.Length, ref bytesRead);
+            }
+            catch { }
+            return false;
         }
         public int readAddress(uint LBAVer, uint offsetToRead, uint size)
         {

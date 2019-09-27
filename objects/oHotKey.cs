@@ -34,6 +34,11 @@ namespace LBATrainer
             RegisterHotKey(hWnd, id, modifiers, keys);
         }
 
+        public void RegisterHotKeys(uint key)
+        {
+            RegisterHotKeys((int)key, 0, key);
+        }
+
         public void RegisterHotKeys(int id, uint keys)
         {
             RegisterHotKeys(id, 0, keys);

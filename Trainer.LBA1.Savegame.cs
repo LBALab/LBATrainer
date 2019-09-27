@@ -23,7 +23,7 @@ namespace LBATrainer
         }
         private void Savegame_FormClosed(object sender, FormClosedEventArgs e)
         {
-            unregisterHotkeys();
+            unregisterHotkeysSavegame();
         }
         private void LBA1SGLoadSaves()
         {
@@ -56,34 +56,29 @@ namespace LBATrainer
 
             if (null == hotkeyF7 || null == hotkeyF9)
             {
-                registerHotKeys();
+                registerHotKeysSavegame();
                 btnLBA1SaveGameEnableDisable.Text = "Disable";
             }
             else
             {
-                unregisterHotkeys();
+                unregisterHotkeysSavegame();
                 btnLBA1SaveGameEnableDisable.Text = "Enable";
             }
 
         }
-        protected override void WndProc(ref Message keyPressed)
+        private void processHotkeySavegame(Keys k)
         {
-            if (keyPressed.Msg == 0x0312)
+            if (Keys.F7 == k)
+                MessageBox.Show("Hi");
+            if (Keys.F7 == k)
             {
-                if (118 == (int)keyPressed.WParam)
-                {
-                    SaveGame sg = new SaveGame();
-                    if (!sg.save(txtLBA1SaveFileDirectory.Text)) MessageBox.Show("Unable to save game, is DOSBox running?");
-                }
-                /*if (119 == (int)keyPressed.WParam)
-                    MessageBox.Show("F8");*/
-                //Add a key :-)
-                if (120 == (int)keyPressed.WParam)
-                    memRoutines.WriteVal(LBA_ONE, LBA1_Offset_Key, 1, 1);
+                SaveGame sg = new SaveGame();
+                if (!sg.save(txtLBA1SaveFileDirectory.Text)) MessageBox.Show("Unable to save game, is DOSBox running?");
             }
-            base.WndProc(ref keyPressed);
+            //Add a key :-)
+            if (Keys.F9 == k)
+                memRoutines.WriteVal(LBA_ONE, LBA1_Offset_Key, 1, 1);
         }
-
         //changes the status of the file pointed to by filePath and returns the new status
         private bool toggleReadOnly(string filePath)
         {
@@ -126,8 +121,7 @@ namespace LBATrainer
             opt.LBADir = txtLBA1SaveFileDirectory.Text;
             opt.save();
         }
-
-        private void unregisterHotkeys()
+        private void unregisterHotkeysSavegame()
         {
             try
             {
@@ -145,8 +139,7 @@ namespace LBATrainer
             }
             catch { };
         }
-
-        private void registerHotKeys()
+        private void registerHotKeysSavegame()
         {
             hotkeyF7 = new HotKey(this.Handle);
             hotkeyF7.RegisterHotKeys((int)Keys.F7, (uint)Keys.F7);
@@ -155,6 +148,26 @@ namespace LBATrainer
             hotkeyF8.RegisterHotKeys((int)Keys.F8, (uint)Keys.F8);*/
             hotkeyF9 = new HotKey(this.Handle);
             hotkeyF9.RegisterHotKeys((int)Keys.F9, (uint)Keys.F9);
+        }
+
+        private void BtnSGDeleteSaves_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.OK == (MessageBox.Show("This will delete all non-readonly save files", "Delete Saves", MessageBoxButtons.OKCancel)))
+                SavegameDeleteSaves();
+        }
+        private void SavegameDeleteSaves()
+        {
+            DirectoryInfo di = new DirectoryInfo(txtLBA1SaveFileDirectory.Text);
+            FileInfo[] files = di.GetFiles("*.LBA")
+                                 .Where(p => p.Extension == ".LBA").ToArray();
+            foreach (FileInfo file in files)
+                try
+                {
+                    //file.Attributes = FileAttributes.Normal;
+                    File.Delete(file.FullName);
+                }
+                catch { }
+            LBA1SGLoadSaves();
         }
     }
 }

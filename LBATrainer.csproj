@@ -58,6 +58,12 @@
     <Compile Include="Trainer.LBA.Twinsen.Shared.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Trainer.LBA1.Flying.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainer.LBA1.FlyingTeleport.Shared.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Trainer.LBA1.MenuFunctions.cs">
       <SubType>Form</SubType>
     </Compile>

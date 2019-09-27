@@ -12,6 +12,9 @@ using System.Windows.Forms;
 
 namespace LBATrainer
 {
+    /**
+     * Shared stuff goes in here
+     */
     public partial class frmTrainer : Form
     {
         const ushort LBA_ONE = 1;
@@ -44,55 +47,66 @@ namespace LBATrainer
         {
             scan((uint)tcLBAVersion.SelectedIndex + 1);
         }
-
         #endregion
-
 
         private void FrmTrainer_FormClosed(object sender, FormClosedEventArgs e)
         {
             Savegame_FormClosed(sender, e);
             Teleport_FormClosed(sender, e);
+            Flying_FormClosed(sender, e);
         }
         private void FrmTrainer_Load(object sender, EventArgs e)
         {
             Options opt = new Options();
             Savegame_Load(sender, e, opt);
             Teleport_Load(sender, e, opt);
+            Flying_Load(sender, e, opt);
         }
-
-
-        private void BtnGetChapter_Click(object sender, EventArgs e)
+        private int getInt(string value)
         {
-            if (tmrHeightLock.Enabled)
-                tmrHeightLock.Stop();
-            else
-                tmrHeightLock.Start();
+            ushort val;
+            if (!ushort.TryParse(value, out val)) return -1;
+            return val;
         }
-
-
-
-
-        /*
-        private string[] getReadonlySaves()
+        private HotKey registerHotKey(Keys k)
         {
-
-            if (string.IsNullOrEmpty(txtLBA1SaveFileDirectory.Text)) return null;
-            if (string.IsNullOrWhiteSpace(txtLBA1SaveFileDirectory.Text)) return null;
-            if (!System.IO.Directory.Exists(txtLBA1SaveFileDirectory.Text)) return null;
-            int readOnlyCount = 0;
-            string[] filePaths = Directory.GetFiles(txtLBA1SaveFileDirectory.Text, "*.lba");
-            for (int i = 0; i < filePaths.Length; i++)
-                if (new FileInfo(filePaths[i]).IsReadOnly) readOnlyCount++;
-            string[] readOnly = new string[readOnlyCount];
-            for (int i = 0, j = 0; i < filePaths.Length; i++)
-                if (new FileInfo(filePaths[i]).IsReadOnly)
+            try
+            {
+                HotKey hk = new HotKey(this.Handle);
+                hk.RegisterHotKeys((uint)k);
+                return hk;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            return null;
+        }
+        private void unregisterHotKey(HotKey hk)
+        {
+            try
+            {
+                if (null != hk)
                 {
-                    readOnly[j] = filePaths[i];
-                    j++;
+                    hk.UnRegisterHotKeys();
+                    hk = null;
                 }
-
-            return readOnly;
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
-        */
+
+        protected override void WndProc(ref Message keyPressed)
+        {
+            if (keyPressed.Msg == 0x0312)
+            {
+                processHotkeySavegame((Keys)keyPressed.WParam);
+                processHotkeyFlying((Keys)keyPressed.WParam);
+            }
+            base.WndProc(ref keyPressed);
+        }
+
     }
 }
