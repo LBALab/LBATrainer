@@ -150,6 +150,7 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -889,6 +890,7 @@
             // tpSaveGame
             // 
             this.tpSaveGame.BackColor = System.Drawing.Color.MistyRose;
+            this.tpSaveGame.Controls.Add(this.label3);
             this.tpSaveGame.Controls.Add(this.btnSGDeleteSaves);
             this.tpSaveGame.Controls.Add(this.btnLBA1SGRefresh);
             this.tpSaveGame.Controls.Add(this.lvLBA1SaveGames);
@@ -968,22 +970,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(161, 128);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(253, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 13);
+            this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Press F9 if you need a key";
+            this.label2.Text = "F9: For key";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 128);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 128);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Press F7 to save";
+            this.label1.Text = "F7: Save";
             // 
             // btnSetSaveFileDir
             // 
@@ -1283,7 +1285,7 @@
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.refreshToolStripMenuItem.Text = "&Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
@@ -1294,7 +1296,7 @@
             this.godModeToolStripMenuItem,
             this.maxMagicToolStripMenuItem});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
-            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
             // 
             // autoZoomToolStripMenuItem1
@@ -1302,7 +1304,7 @@
             this.autoZoomToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.enabledToolStripMenuItem});
             this.autoZoomToolStripMenuItem1.Name = "autoZoomToolStripMenuItem1";
-            this.autoZoomToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.autoZoomToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.autoZoomToolStripMenuItem1.Text = "Auto-Zoom";
             // 
             // enabledToolStripMenuItem
@@ -1310,7 +1312,7 @@
             this.enabledToolStripMenuItem.Checked = true;
             this.enabledToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.enabledToolStripMenuItem.Name = "enabledToolStripMenuItem";
-            this.enabledToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.enabledToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.enabledToolStripMenuItem.Text = "Enabled";
             this.enabledToolStripMenuItem.Click += new System.EventHandler(this.EnabledToolStripMenuItem_Click);
             // 
@@ -1319,7 +1321,7 @@
             this.godModeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuGodModeEnabled});
             this.godModeToolStripMenuItem.Name = "godModeToolStripMenuItem";
-            this.godModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.godModeToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.godModeToolStripMenuItem.Text = "God Mode";
             // 
             // mnuGodModeEnabled
@@ -1334,7 +1336,7 @@
             this.maxMagicToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuMaxMagicEnabled});
             this.maxMagicToolStripMenuItem.Name = "maxMagicToolStripMenuItem";
-            this.maxMagicToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.maxMagicToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.maxMagicToolStripMenuItem.Text = "Max Magic";
             // 
             // mnuMaxMagicEnabled
@@ -1363,6 +1365,16 @@
             // 
             this.tmrFlying.Interval = 50;
             this.tmrFlying.Tick += new System.EventHandler(this.TmrFlying_Tick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(127, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "F8: SaveAs";
             // 
             // frmTrainer
             // 
@@ -1523,6 +1535,7 @@
         private System.Windows.Forms.CheckBox chkLBA1FlyingHeightLocked;
         private System.Windows.Forms.Timer tmrFlying;
         private System.Windows.Forms.Button btnSGDeleteSaves;
+        private System.Windows.Forms.Label label3;
     }
 }
 

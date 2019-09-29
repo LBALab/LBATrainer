@@ -62,6 +62,7 @@ namespace LBATrainer
         private void TmrFlying_Tick(object sender, EventArgs e)
         {
             setZPos((ushort)flyingHeight);
+            //setZPos((ushort)(getGroundHeight() + flyingHeight));
         }
         private void BtnLBA1TeleportSetMovementPixels_Click(object sender, EventArgs e)
         {

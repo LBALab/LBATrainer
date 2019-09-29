@@ -12,6 +12,7 @@ namespace LBATrainer
 {
     class SaveGame
     {
+        const int actualFileNameOffset = 0x1CAA4;
         private SaveItem[] saveGame;
 
         public SaveGame()
@@ -44,25 +45,47 @@ namespace LBATrainer
         }
         //Returns either the integer value of val, or 0 if conversion fails
         private uint getValOrZero(string val)
-        {
+        {   
             if(uint.TryParse(val, System.Globalization.NumberStyles.HexNumber, CultureInfo.InvariantCulture, out uint result)) return result;
             return 0;
         }
         public bool save(string saveFilePath)
         {
-            string s;
             mem m = new mem();
+            string fileNameDisk = m.getString(1, actualFileNameOffset);
             for(ushort i = 0; i < saveGame.Length;i++)
                 saveGame[i].data = getData(m, saveGame[i]);
-            if (null == (s = m.getString(1, 0x1CAA4))) return false;
-            saveFilePath += "\\" +  s.ToLower();
+
+            if (null == fileNameDisk) return false;
+            saveFilePath += "\\" +  fileNameDisk.ToLower();
             writeFile(saveFilePath, saveGame);
             return true;
         }
+
+        public bool saveAs(string saveFilePath, string fileNameDisk, string fileNameInternal)
+        {
+            mem m = new mem();
+            for (ushort i = 0; i < saveGame.Length; i++)
+            {
+                if (1 == i)
+                    saveGame[i].data = stringToByteArray(fileNameInternal);
+                else
+                    saveGame[i].data = getData(m, saveGame[i]);
+            }
+            return writeFile(saveFilePath += "\\" + fileNameDisk.ToLower(), saveGame);
+        }
+        private byte[] stringToByteArray(string s)
+        {
+            byte[] b = new byte[s.Length+1];
+            for (int i = 0; i < s.Length; i++)
+                b[i] = (byte)s[i];
+            b[s.Length] = 0;
+            return b;
+        }
+
         private bool writeFile(string path, SaveItem[] saveGame)
         {
-            //path = @"R:\test.lba";
-            new FileInfo(path) { IsReadOnly = false }.Refresh();
+            if(File.Exists(path))new FileInfo(path) { IsReadOnly = false }.Refresh();
             FileStream fsFile = new FileStream(path, FileMode.OpenOrCreate,
             FileAccess.Write);
 
@@ -74,7 +97,6 @@ namespace LBATrainer
             fsFile.Flush();
             fsFile.Close();
             new FileInfo(path) { IsReadOnly = true }.Refresh();
-
             return true;
         }
         private byte[] getData(mem m, SaveItem item)

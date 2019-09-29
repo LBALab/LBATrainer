@@ -25,6 +25,10 @@ namespace LBATrainer
         {
             memRoutines.WriteVal(LBA_ONE, 0xD51E, val, 2);
         }
+        private void setGroundHeight(ushort val)
+        {
+            memRoutines.WriteVal(LBA_ONE, 0xC2BA, val, 2);
+        }
         #endregion
         #region getValues
 
@@ -44,6 +48,10 @@ namespace LBATrainer
         private int getFacing()
         {
             return memRoutines.readAddress(LBA_ONE, 0xD51E, 2);
+        }
+        private int getGroundHeight()
+        {
+            return memRoutines.readAddress(LBA_ONE, 0xC2BA, 2);
         }
         #endregion
     }

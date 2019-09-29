@@ -23,6 +23,7 @@ namespace LBATrainer
         }
 
         private IntPtr hWnd;
+        private int hotkeyID;
 
         public HotKey(IntPtr hWnd)
         {
@@ -31,6 +32,7 @@ namespace LBATrainer
 
         public void RegisterHotKeys(int id, uint modifiers, uint keys)
         {
+            hotkeyID = id;
             RegisterHotKey(hWnd, id, modifiers, keys);
         }
 
@@ -46,7 +48,7 @@ namespace LBATrainer
 
         public void UnRegisterHotKeys()
         {
-            UnregisterHotKey(hWnd, 1);
+            UnregisterHotKey(hWnd, hotkeyID);
         }
 
         #region WindowsAPI

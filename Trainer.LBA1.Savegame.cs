@@ -12,7 +12,7 @@ namespace LBATrainer
     {
         const ushort LBA1_Offset_Key = 0xE26;
         private HotKey hotkeyF7;
-        //private HotKey hotkeyF8;
+        private HotKey hotkeyF8;
         private HotKey hotkeyF9;
         ItemCheckedEventHandler icehLVLBA1SGChecked;
 
@@ -54,7 +54,7 @@ namespace LBATrainer
         {
             LBA1SGLoadSaves();
 
-            if (null == hotkeyF7 || null == hotkeyF9)
+            if (null == hotkeyF7|| null == hotkeyF8 || null == hotkeyF9 )
             {
                 registerHotKeysSavegame();
                 btnLBA1SaveGameEnableDisable.Text = "Disable";
@@ -69,13 +69,24 @@ namespace LBATrainer
         private void processHotkeySavegame(Keys k)
         {
             if (Keys.F7 == k)
-                MessageBox.Show("Hi");
-            if (Keys.F7 == k)
             {
                 SaveGame sg = new SaveGame();
                 if (!sg.save(txtLBA1SaveFileDirectory.Text)) MessageBox.Show("Unable to save game, is DOSBox running?");
             }
-            //Add a key :-)
+            if (Keys.F8 == k)
+            {
+                SaveGame sg = new SaveGame();
+                getSaveFileNames getSaveFileName = new getSaveFileNames();
+                //If cancelled do nothing
+                getSaveFileName.TopMost = true;
+                if (!(getSaveFileName.ShowDialog(this) == DialogResult.Cancel))
+                {
+                    if (!sg.saveAs(txtLBA1SaveFileDirectory.Text, getSaveFileName.txtFilename.Text + ".lba", getSaveFileName.txtInGameName.Text))
+                        MessageBox.Show("Unable to save game, is DOSBox running?");
+                }
+                
+                getSaveFileName.Dispose();
+             }
             if (Keys.F9 == k)
                 memRoutines.WriteVal(LBA_ONE, LBA1_Offset_Key, 1, 1);
         }
@@ -125,29 +136,17 @@ namespace LBATrainer
         {
             try
             {
-                if (null != hotkeyF7)
-                {
-                    hotkeyF7.UnRegisterHotKeys();
-                    hotkeyF7 = null;
-                }
-                //hotkeyF8.UnRegisterHotKeys();
-                if (null != hotkeyF9)
-                {
-                    hotkeyF9.UnRegisterHotKeys();
-                    hotkeyF9 = null;
-                }
+                unregisterHotKey(hotkeyF7);
+                unregisterHotKey(hotkeyF8);
+                unregisterHotKey(hotkeyF9);
             }
             catch { };
         }
         private void registerHotKeysSavegame()
         {
-            hotkeyF7 = new HotKey(this.Handle);
-            hotkeyF7.RegisterHotKeys((int)Keys.F7, (uint)Keys.F7);
-            /*
-            hotkeyF8 = new HotKey(this.Handle);
-            hotkeyF8.RegisterHotKeys((int)Keys.F8, (uint)Keys.F8);*/
-            hotkeyF9 = new HotKey(this.Handle);
-            hotkeyF9.RegisterHotKeys((int)Keys.F9, (uint)Keys.F9);
+            hotkeyF7 = registerHotKey(Keys.F7);
+            hotkeyF8 = registerHotKey(Keys.F8);
+            hotkeyF9 = registerHotKey(Keys.F9);
         }
 
         private void BtnSGDeleteSaves_Click(object sender, EventArgs e)
