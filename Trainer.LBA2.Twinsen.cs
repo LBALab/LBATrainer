@@ -1,4 +1,6 @@
-﻿using System;
+﻿#define DEBUG
+
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -30,7 +32,10 @@ namespace LBATrainer
             items = new Items(LBA_TWO);
             memRoutines = new mem();
             val = memRoutines.getVal(LBA_TWO, items.MagicLevel);
-            if (-1 == val) return;
+            if (-1 == val)
+            {
+                return;
+            }
             txtLBA2MagicLevel.Text = val.ToString();
             txtLBA2MagicPoints.Text = memRoutines.getVal(LBA_TWO, items.MagicPoints).ToString();
             txtLBA2Kashers.Text = memRoutines.getVal(LBA_TWO, items.Kashers).ToString();

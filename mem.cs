@@ -41,12 +41,12 @@ namespace LBATrainer
             else
             {
                 baseString = "Run-Time system.";
-                readAddr = 0x0B00003D;
+                readAddr = 0x0000003D;
             }
 
             byte[] b = new byte[baseString.Length];
 
-            for (int i = 0; i <= 0xFFFF; readAddr += 0x1000, i++)
+            for (int i = 0; i <= 0xFFFFF; readAddr += 0x1000, i++)
             {
                 int bytesRead = 0;
 
@@ -124,6 +124,9 @@ namespace LBATrainer
         }
         public int getVal(uint LBAVer, Item itm)
         {
+#if DEBUG
+            MessageBox.Show("getVal: null == itm");
+#endif
             if (null == itm) return 0;
             return readAddress(LBAVer, itm.memoryOffset, itm.size);
         }

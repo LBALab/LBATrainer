@@ -1385,7 +1385,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTrainer";
-            this.Text = "LBATrainer - Birthday Build";
+            this.Text = "LBATrainer - Birthday Build - LBA2 Fix";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmTrainer_FormClosed);
             this.Load += new System.EventHandler(this.FrmTrainer_Load);
             this.tcLBAVersion.ResumeLayout(false);
