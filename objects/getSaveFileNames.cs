@@ -25,8 +25,14 @@ namespace LBATrainer
 
         private void BtnOkay_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtFilename.Text)) txtFilename.Text = txtInGameName.Text;
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void GetSaveFileNames_Load(object sender, EventArgs e)
+        {
+            this.Focus();
         }
     }
 }

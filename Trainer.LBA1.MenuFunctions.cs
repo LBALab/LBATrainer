@@ -14,6 +14,7 @@ namespace LBATrainer
         private void RefreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
             memRoutines = new mem();
+            memRoutines.WriteVal(1, 0xE0A, (ushort)(enabledToolStripMenuItem.Checked ? 1 : 0), 1);
         }
 
         private void EnabledToolStripMenuItem_Click(object sender, EventArgs e)

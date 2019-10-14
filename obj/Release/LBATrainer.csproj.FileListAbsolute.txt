@@ -14,3 +14,4 @@ R:\Users\User\source\repos\LBATrainer\bin\Release\files\lba1MovieOffsets.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\lba1QuestOffsets.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\options.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\saveGame.xml
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.getSaveFileNames.resources

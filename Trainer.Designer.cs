@@ -99,6 +99,7 @@
             this.txtLBA1TeleportFacing = new System.Windows.Forms.TextBox();
             this.lblLBA1TeleportFacing = new System.Windows.Forms.Label();
             this.tpSaveGame = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnSGDeleteSaves = new System.Windows.Forms.Button();
             this.btnLBA1SGRefresh = new System.Windows.Forms.Button();
             this.lvLBA1SaveGames = new System.Windows.Forms.ListView();
@@ -150,7 +151,6 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -472,22 +472,22 @@
             // 
             this.cboLBA1OtherChapter.FormattingEnabled = true;
             this.cboLBA1OtherChapter.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
+            "0: Still inside Citadel",
+            "1: Exited Citadel",
+            "2: Zoe Captured",
+            "3: Found Tunic",
+            "4: Boarded Ferry at Citadel Port",
+            "5: Spoke to Astronomer",
+            "6: Picked up book of BU",
+            "7: Read slate about Le Bourgne under Twinsen\'s House",
+            "8: Stole Pirates Flag",
+            "9: Picked up key from chest in museum.",
             "10",
             "11",
             "12",
-            "13",
-            "14",
-            "15"});
+            "13: Tibbet island: Spoke to Rabbi-bunny.",
+            "14: Stole FunFrocks sabre",
+            "15: Took architechs pass"});
             this.cboLBA1OtherChapter.Location = new System.Drawing.Point(64, 60);
             this.cboLBA1OtherChapter.Name = "cboLBA1OtherChapter";
             this.cboLBA1OtherChapter.Size = new System.Drawing.Size(231, 21);
@@ -907,6 +907,16 @@
             this.tpSaveGame.TabIndex = 3;
             this.tpSaveGame.Text = "SaveGame";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(127, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "F8: SaveAs";
+            // 
             // btnSGDeleteSaves
             // 
             this.btnSGDeleteSaves.Location = new System.Drawing.Point(211, 149);
@@ -1285,7 +1295,7 @@
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.refreshToolStripMenuItem.Text = "&Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
@@ -1296,7 +1306,7 @@
             this.godModeToolStripMenuItem,
             this.maxMagicToolStripMenuItem});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
-            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
             // 
             // autoZoomToolStripMenuItem1
@@ -1366,16 +1376,6 @@
             this.tmrFlying.Interval = 50;
             this.tmrFlying.Tick += new System.EventHandler(this.TmrFlying_Tick);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(127, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "F8: SaveAs";
-            // 
             // frmTrainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1385,7 +1385,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTrainer";
-            this.Text = "LBATrainer";
+            this.Text = "LBATrainer - Birthday Build";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmTrainer_FormClosed);
             this.Load += new System.EventHandler(this.FrmTrainer_Load);
             this.tcLBAVersion.ResumeLayout(false);

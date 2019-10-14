@@ -64,7 +64,6 @@ namespace LBATrainer
                 unregisterHotkeysSavegame();
                 btnLBA1SaveGameEnableDisable.Text = "Enable";
             }
-
         }
         private void processHotkeySavegame(Keys k)
         {
@@ -79,9 +78,10 @@ namespace LBATrainer
                 getSaveFileNames getSaveFileName = new getSaveFileNames();
                 //If cancelled do nothing
                 getSaveFileName.TopMost = true;
+                getSaveFileName.Focus();
                 if (!(getSaveFileName.ShowDialog(this) == DialogResult.Cancel))
                 {
-                    if (!sg.saveAs(txtLBA1SaveFileDirectory.Text, getSaveFileName.txtFilename.Text + ".lba", getSaveFileName.txtInGameName.Text))
+                    if (!sg.saveAs(txtLBA1SaveFileDirectory.Text + "\\savePack", getSaveFileName.txtFilename.Text + ".lba", getSaveFileName.txtInGameName.Text))
                         MessageBox.Show("Unable to save game, is DOSBox running?");
                 }
                 
@@ -157,8 +157,8 @@ namespace LBATrainer
         private void SavegameDeleteSaves()
         {
             DirectoryInfo di = new DirectoryInfo(txtLBA1SaveFileDirectory.Text);
-            FileInfo[] files = di.GetFiles("*.LBA")
-                                 .Where(p => p.Extension == ".LBA").ToArray();
+            FileInfo[] files = di.GetFiles("*.LBA");
+            //                                 .Where(p => p.Extension == ".LBA").ToArray();
             foreach (FileInfo file in files)
                 try
                 {

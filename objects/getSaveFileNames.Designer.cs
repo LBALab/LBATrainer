@@ -41,7 +41,7 @@
             this.btnOkay.Location = new System.Drawing.Point(77, 74);
             this.btnOkay.Name = "btnOkay";
             this.btnOkay.Size = new System.Drawing.Size(90, 23);
-            this.btnOkay.TabIndex = 0;
+            this.btnOkay.TabIndex = 3;
             this.btnOkay.Text = "Okay";
             this.btnOkay.UseVisualStyleBackColor = true;
             this.btnOkay.Click += new System.EventHandler(this.BtnOkay_Click);
@@ -51,7 +51,7 @@
             this.btnCancel.Location = new System.Drawing.Point(184, 74);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 1;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
@@ -81,14 +81,14 @@
             this.txtFilename.Location = new System.Drawing.Point(137, 45);
             this.txtFilename.Name = "txtFilename";
             this.txtFilename.Size = new System.Drawing.Size(159, 20);
-            this.txtFilename.TabIndex = 4;
+            this.txtFilename.TabIndex = 2;
             // 
             // txtInGameName
             // 
             this.txtInGameName.Location = new System.Drawing.Point(137, 16);
             this.txtInGameName.Name = "txtInGameName";
             this.txtInGameName.Size = new System.Drawing.Size(159, 20);
-            this.txtInGameName.TabIndex = 5;
+            this.txtInGameName.TabIndex = 1;
             // 
             // getSaveFileNames
             // 
@@ -105,6 +105,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "getSaveFileNames";
             this.Text = "getSaveFileNames";
+            this.Load += new System.EventHandler(this.GetSaveFileNames_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
