@@ -108,5 +108,9 @@ namespace LBATrainer
             base.WndProc(ref keyPressed);
         }
 
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new AboutBox1().ShowDialog();
+        }
     }
 }

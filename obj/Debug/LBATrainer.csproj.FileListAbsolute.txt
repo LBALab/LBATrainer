@@ -14,3 +14,4 @@ R:\Users\User\source\repos\LBATrainer\bin\Debug\files\lba1MovieOffsets.xml
 R:\Users\User\source\repos\LBATrainer\bin\Debug\files\options.xml
 R:\Users\User\source\repos\LBATrainer\bin\Debug\files\saveGame.xml
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.getSaveFileNames.resources
+R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.AboutBox1.resources
