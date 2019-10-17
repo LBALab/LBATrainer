@@ -55,6 +55,7 @@
     <Compile Include="objects\getSaveFileNames.Designer.cs">
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="objects\oTimerSetItems.cs" />
     <Compile Include="Trainer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +93,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Trainer.LBA1.Twinsen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainer.LBA2.MenuFunctions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Trainer.LBA2.Twinsen.cs">

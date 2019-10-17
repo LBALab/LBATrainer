@@ -124,9 +124,6 @@ namespace LBATrainer
         }
         public int getVal(uint LBAVer, Item itm)
         {
-#if DEBUG
-            MessageBox.Show("getVal: null == itm");
-#endif
             if (null == itm) return 0;
             return readAddress(LBAVer, itm.memoryOffset, itm.size);
         }

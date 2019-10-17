@@ -4,7 +4,6 @@ R:\Users\User\source\repos\LBATrainer\bin\Debug\LBATrainer.pdb
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.csprojAssemblyReference.cache
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.Properties.Resources.resources
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.csproj.GenerateResource.cache
-R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.csproj.CoreCompileInputs.cache
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.exe
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.pdb
 R:\Users\User\source\repos\LBATrainer\bin\Debug\files\lba1MemoryLocations.xml

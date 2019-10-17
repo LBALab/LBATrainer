@@ -1383,7 +1383,9 @@
             this.ClientSize = new System.Drawing.Size(364, 264);
             this.Controls.Add(this.tcLBAVersion);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "frmTrainer";
             this.Text = "LBATrainer - Birthday Build - LBA2 Fix";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmTrainer_FormClosed);
