@@ -120,11 +120,11 @@ namespace LBATrainer
                     return bytes[0];
                 return BitConverter.ToInt16(bytes, 0);
             }
-            return 0;
+            return -1;
         }
         public int getVal(uint LBAVer, Item itm)
         {
-            if (null == itm) return 0;
+            if (null == itm) return -1;
             return readAddress(LBAVer, itm.memoryOffset, itm.size);
         }
         public string getString(ushort LBAVer, uint startOffset)

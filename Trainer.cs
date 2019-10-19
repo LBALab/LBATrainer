@@ -112,5 +112,15 @@ namespace LBATrainer
         {
             new AboutBox1().ShowDialog();
         }
+
+        private oTimerSetItems itemToggle(oTimerSetItems tsi, uint offset, byte val, byte size, oTimerSetItems.LBAVersion LBAVer)
+        {
+            if (null == tsi) tsi = new oTimerSetItems(LBAVer);
+            if (!tsi.RemoveIfExists(offset))
+                tsi.AddItem(offset, val, size);
+            if (tsi.IsEmpty()) tsi = null;
+            return tsi;
+        }
+
     }
 }

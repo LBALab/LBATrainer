@@ -9,41 +9,102 @@ namespace LBATrainer
 {
     class oTimerSetItems
     {
-        private bool healthEnabled = false;
-        private bool magicEnabled = false;
-        byte health;
-        byte magicLevel;
         byte LBAVer;
         Timer tmr = new Timer();
         mem memory = new mem();
+        List<Item> itemList = new List<Item>();
         public enum LBAVersion
         {
-            One = 0,
-            Two = 1
+            One = 1,
+            Two = 2
         }
 
-        public enum LBAHealthOffset
-        {
-            LBA1 = 0xE10,
-            LBA2 = 0xE20
-        }
         public oTimerSetItems(LBAVersion lbaVer)
         {
-            if (lbaVer == LBAVersion.One) ;
-        }
-
-        public oTimerSetItems(LBAVersion lbaVer, int i )
-        {
             LBAVer = (byte) lbaVer;
+            tmr.Interval = 50;
+            tmr.Tick += timer_Tick;
         }
 
-        public void UpdateMagicLevel()
+        public void AddItem(Item item)
         {
-            //magicLevel = mL;
+            itemAdded(item);
         }
-        public void enableHealth()
-        {
 
+        public void AddItem(uint memoryOffset, ushort maxVal, ushort size )
+        {
+            Item item = new Item();
+            item.lbaVersion = LBAVer;
+            item.maxVal = maxVal;
+            item.minVal = maxVal;
+            item.memoryOffset = memoryOffset;
+            item.name = memoryOffset.ToString();
+            item.size = size;
+            item.type = 1;
+            itemAdded(item);
+        }
+
+        private void itemAdded(Item item)
+        {
+            //Handle event, start timer if not already active i.e. if first item added
+            itemList.Add(item);
+            if(1 == itemList.Count())
+            {
+                StartTimer();
+            }
+        }
+
+        /*public void removeItem(uint memoryOffSet)
+        {
+            for (int i = 0; i < itemList.Count; i++)
+                if (itemList[i].memoryOffset == memoryOffSet)
+                {
+                    itemList.RemoveAt(i);
+                    break;
+                }
+            if (0 == itemList.Count) StopTimer();
+        }*/
+
+        private void StartTimer()
+        {
+            tmr.Enabled = true;
+        }
+        private void StopTimer()
+        {
+            tmr.Enabled = false;
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            for(int i = 0; i < itemList.Count;i++)
+                memory.WriteVal(itemList[i].lbaVersion, itemList[i], itemList[i].maxVal);
+        }
+        
+        public bool IsEmpty()
+        {
+            return 0 == itemList.Count;
+        }
+
+        public bool Contains(uint memoryOffSet)
+        {
+            for (int i = 0; i < itemList.Count; i++)
+                if (itemList[i].memoryOffset == memoryOffSet)
+                    return true;
+            return false;
+        }
+
+        public bool RemoveIfExists(uint memoryOffset)
+        {
+            bool removed = false;
+            for (int i = 0; i < itemList.Count; i++)
+                if (itemList[i].memoryOffset == memoryOffset)
+                {
+                    itemList.RemoveAt(i);
+                    removed = true;
+                    break;
+                }
+            if (0 == itemList.Count) StopTimer();
+            return removed;
         }
     }
 }

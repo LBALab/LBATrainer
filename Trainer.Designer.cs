@@ -141,12 +141,12 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lBA1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.autoZoomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.enabledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.godModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuGodModeEnabled = new System.Windows.Forms.ToolStripMenuItem();
-            this.maxMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuMaxMagicEnabled = new System.Windows.Forms.ToolStripMenuItem();
+            this.LBA1AutoZoomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.LBA1GodModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LBA1MaxMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lBA2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LBA2GodModeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.infiniteMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
@@ -1287,7 +1287,8 @@
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.refreshToolStripMenuItem,
-            this.lBA1ToolStripMenuItem});
+            this.lBA1ToolStripMenuItem,
+            this.lBA2ToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "&Options";
@@ -1302,59 +1303,63 @@
             // lBA1ToolStripMenuItem
             // 
             this.lBA1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.autoZoomToolStripMenuItem1,
-            this.godModeToolStripMenuItem,
-            this.maxMagicToolStripMenuItem});
+            this.LBA1AutoZoomToolStripMenuItem1,
+            this.LBA1GodModeToolStripMenuItem,
+            this.LBA1MaxMagicToolStripMenuItem});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
             this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
             // 
-            // autoZoomToolStripMenuItem1
+            // LBA1AutoZoomToolStripMenuItem1
             // 
-            this.autoZoomToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.enabledToolStripMenuItem});
-            this.autoZoomToolStripMenuItem1.Name = "autoZoomToolStripMenuItem1";
-            this.autoZoomToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
-            this.autoZoomToolStripMenuItem1.Text = "Auto-Zoom";
+            this.LBA1AutoZoomToolStripMenuItem1.Checked = true;
+            this.LBA1AutoZoomToolStripMenuItem1.CheckOnClick = true;
+            this.LBA1AutoZoomToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.LBA1AutoZoomToolStripMenuItem1.Name = "LBA1AutoZoomToolStripMenuItem1";
+            this.LBA1AutoZoomToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.LBA1AutoZoomToolStripMenuItem1.Text = "Auto-Zoom";
+            this.LBA1AutoZoomToolStripMenuItem1.Click += new System.EventHandler(this.LBA1AutoZoomToolStripMenuItem1_Click);
             // 
-            // enabledToolStripMenuItem
+            // LBA1GodModeToolStripMenuItem
             // 
-            this.enabledToolStripMenuItem.Checked = true;
-            this.enabledToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.enabledToolStripMenuItem.Name = "enabledToolStripMenuItem";
-            this.enabledToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.enabledToolStripMenuItem.Text = "Enabled";
-            this.enabledToolStripMenuItem.Click += new System.EventHandler(this.EnabledToolStripMenuItem_Click);
+            this.LBA1GodModeToolStripMenuItem.CheckOnClick = true;
+            this.LBA1GodModeToolStripMenuItem.Name = "LBA1GodModeToolStripMenuItem";
+            this.LBA1GodModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.LBA1GodModeToolStripMenuItem.Text = "God Mode";
+            this.LBA1GodModeToolStripMenuItem.Click += new System.EventHandler(this.LBA1GodModeToolStripMenuItem_Click);
             // 
-            // godModeToolStripMenuItem
+            // LBA1MaxMagicToolStripMenuItem
             // 
-            this.godModeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuGodModeEnabled});
-            this.godModeToolStripMenuItem.Name = "godModeToolStripMenuItem";
-            this.godModeToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.godModeToolStripMenuItem.Text = "God Mode";
+            this.LBA1MaxMagicToolStripMenuItem.CheckOnClick = true;
+            this.LBA1MaxMagicToolStripMenuItem.Name = "LBA1MaxMagicToolStripMenuItem";
+            this.LBA1MaxMagicToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.LBA1MaxMagicToolStripMenuItem.Text = "Max Magic";
+            this.LBA1MaxMagicToolStripMenuItem.Click += new System.EventHandler(this.LBA1MaxMagicToolStripMenuItem_Click);
             // 
-            // mnuGodModeEnabled
+            // lBA2ToolStripMenuItem
             // 
-            this.mnuGodModeEnabled.Name = "mnuGodModeEnabled";
-            this.mnuGodModeEnabled.Size = new System.Drawing.Size(116, 22);
-            this.mnuGodModeEnabled.Text = "Enabled";
-            this.mnuGodModeEnabled.Click += new System.EventHandler(this.MnuGodModeEnabled_Click);
+            this.lBA2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LBA2GodModeToolStripMenuItem1,
+            this.infiniteMagicToolStripMenuItem});
+            this.lBA2ToolStripMenuItem.Name = "lBA2ToolStripMenuItem";
+            this.lBA2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lBA2ToolStripMenuItem.Text = "LBA2";
             // 
-            // maxMagicToolStripMenuItem
+            // LBA2GodModeToolStripMenuItem1
             // 
-            this.maxMagicToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuMaxMagicEnabled});
-            this.maxMagicToolStripMenuItem.Name = "maxMagicToolStripMenuItem";
-            this.maxMagicToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.maxMagicToolStripMenuItem.Text = "Max Magic";
+            this.LBA2GodModeToolStripMenuItem1.CheckOnClick = true;
+            this.LBA2GodModeToolStripMenuItem1.Name = "LBA2GodModeToolStripMenuItem1";
+            this.LBA2GodModeToolStripMenuItem1.Size = new System.Drawing.Size(147, 22);
+            this.LBA2GodModeToolStripMenuItem1.Text = "God Mode";
+            this.LBA2GodModeToolStripMenuItem1.Click += new System.EventHandler(this.LBA2GodModeToolStripMenuItem1_Click);
             // 
-            // mnuMaxMagicEnabled
+            // infiniteMagicToolStripMenuItem
             // 
-            this.mnuMaxMagicEnabled.Name = "mnuMaxMagicEnabled";
-            this.mnuMaxMagicEnabled.Size = new System.Drawing.Size(116, 22);
-            this.mnuMaxMagicEnabled.Text = "Enabled";
-            this.mnuMaxMagicEnabled.Click += new System.EventHandler(this.MnuMaxMagicEnabled_Click);
+            this.infiniteMagicToolStripMenuItem.CheckOnClick = true;
+            this.infiniteMagicToolStripMenuItem.Name = "infiniteMagicToolStripMenuItem";
+            this.infiniteMagicToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.infiniteMagicToolStripMenuItem.Text = "Infinite Magic";
+            this.infiniteMagicToolStripMenuItem.Click += new System.EventHandler(this.LBA2InfiniteMagicToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -1492,17 +1497,14 @@
         private System.Windows.Forms.Timer tmrLBA1TeleportTabRefresh;
         private System.Windows.Forms.Button btnLBA1SaveGameEnableDisable;
         private System.Windows.Forms.ToolStripMenuItem lBA1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem autoZoomToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem enabledToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LBA1AutoZoomToolStripMenuItem1;
         private System.Windows.Forms.ListView lvLBA1SaveGames;
         private System.Windows.Forms.ColumnHeader chLBA1SGFileName;
         private System.Windows.Forms.ColumnHeader chLBA1SGLastModified;
         private System.Windows.Forms.ColumnHeader chLBA1SGReadOnly;
         private System.Windows.Forms.Button btnLBA1SGRefresh;
-        private System.Windows.Forms.ToolStripMenuItem godModeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnuGodModeEnabled;
-        private System.Windows.Forms.ToolStripMenuItem maxMagicToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnuMaxMagicEnabled;
+        private System.Windows.Forms.ToolStripMenuItem LBA1GodModeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LBA1MaxMagicToolStripMenuItem;
         private System.Windows.Forms.CheckBox chkLBA1OtherChapter;
         private System.Windows.Forms.ComboBox cboLBA1OtherChapter;
         private System.Windows.Forms.Label lblLBA1OtherChapter;
@@ -1539,6 +1541,9 @@
         private System.Windows.Forms.Timer tmrFlying;
         private System.Windows.Forms.Button btnSGDeleteSaves;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem lBA2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LBA2GodModeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem infiniteMagicToolStripMenuItem;
     }
 }
 
