@@ -12,12 +12,6 @@ namespace LBATrainer
     {
         oTimerSetItems tsiLBA1;
 
-        Timer tmrGodMagic = null;
-        private void RefreshToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            memRoutines = new mem();
-            memRoutines.WriteVal(1, 0xE0A, (ushort)(LBA1AutoZoomToolStripMenuItem1.Checked ? 1 : 0), 1);
-        }
 
         private void LBA1GodModeToolStripMenuItem_Click(object sender, EventArgs e)
         {

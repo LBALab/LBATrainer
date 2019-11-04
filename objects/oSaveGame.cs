@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Windows.Forms;
 using System.Globalization;
-
+using LBAMemoryModule;
 namespace LBATrainer
 {
     class SaveGame
@@ -51,7 +51,7 @@ namespace LBATrainer
         }
         public bool save(string saveFilePath)
         {
-            mem m = new mem();
+            Mem m = new Mem();
             string fileNameDisk = m.getString(1, actualFileNameOffset);
             for(ushort i = 0; i < saveGame.Length;i++)
                 saveGame[i].data = getData(m, saveGame[i]);
@@ -64,7 +64,7 @@ namespace LBATrainer
 
         public bool saveAs(string saveFilePath, string fileNameDisk, string fileNameInternal)
         {
-            mem m = new mem();
+            Mem m = new Mem();
             for (ushort i = 0; i < saveGame.Length; i++)
             {
                 if (1 == i)
@@ -99,7 +99,7 @@ namespace LBATrainer
             new FileInfo(path) { IsReadOnly = true }.Refresh();
             return true;
         }
-        private byte[] getData(mem m, SaveItem item)
+        private byte[] getData(Mem m, SaveItem item)
         {
             //If fixedValue
             if (0 == item.memoryOffsetStart)
@@ -120,11 +120,11 @@ namespace LBATrainer
                 data[i] = item.fixedValue;
             return data;
         }
-        private byte[] getFilename(mem m, SaveItem item)
+        private byte[] getFilename(Mem m, SaveItem item)
         {
             return m.getByteArrayNull(1, item.memoryOffsetStart);            
         }
-        private byte[] getByteArray(mem m, SaveItem item)
+        private byte[] getByteArray(Mem m, SaveItem item)
         {
             byte arraySize = (byte)((item.fileOffsetEnd - item.fileOffsetStart) + 1); //(11 - 1 = 10, we need to be inclusive)
             return m.getByteArray(1, item.memoryOffsetStart, arraySize);

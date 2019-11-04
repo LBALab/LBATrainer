@@ -299,7 +299,8 @@
 			<lbaVersion>
 				2
 			</lbaVersion>
-		</item>		<item>
+		</item>
+		<item>
 			<name>
 				Meca Penguin's
 			</name>
@@ -600,7 +601,7 @@
 		</item>
 		<item>
 			<name>
-				Flower Balsam
+				Garden Balsam
 			</name>
 			<memoryOffset>
 				57C29
@@ -972,6 +973,75 @@
 			</name>
 			<memoryOffset>
 				78697
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				SuperJetPack
+			</name>
+			<memoryOffset>
+				78731
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>		
+		<item>
+			<name>
+				Combined Key Fragments
+			</name>
+			<memoryOffset>
+				788D3
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>		
+		<item>
+			<name>
+				Blowtron (Requires blowgun)
+			</name>
+			<memoryOffset>
+				78823
 			</memoryOffset>
 			<maxVal>
 				1

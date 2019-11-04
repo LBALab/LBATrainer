@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LBAMemoryModule;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace LBATrainer
         {
             int val;
             items = new Items(LBA_TWO);
-            memRoutines = new mem();
+            memRoutines = new Mem();
             val = memRoutines.getVal(LBA_TWO, items.MagicLevel);
             if (-1 == val)
             {

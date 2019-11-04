@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LBAMemoryModule;
 
 namespace LBATrainer
 {
@@ -17,11 +18,11 @@ namespace LBATrainer
      */
     public partial class frmTrainer : Form
     {
-        const ushort LBA_ONE = 1;
-        const ushort LBA_TWO = 2;
+        const byte LBA_ONE = 1;
+        const byte LBA_TWO = 2;
         private Items items;
-        private mem memRoutines;
-
+        private Mem memRoutines;
+        oTimerSetItems tsi;
         public frmTrainer()
         {
             InitializeComponent();
@@ -49,18 +50,18 @@ namespace LBATrainer
         }
         #endregion
 
-        private void FrmTrainer_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Savegame_FormClosed(sender, e);
-            Teleport_FormClosed(sender, e);
-            Flying_FormClosed(sender, e);
-        }
         private void FrmTrainer_Load(object sender, EventArgs e)
         {
             Options opt = new Options();
-            Savegame_Load(sender, e, opt);
-            Teleport_Load(sender, e, opt);
-            Flying_Load(sender, e, opt);
+            LBA1SG_Load(sender, e, opt);
+            LBA1Tel_Load(sender, e, opt);
+            LBA1Flying_Load(sender, e, opt);
+        }
+        private void FrmTrainer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LBA1SG_FormClosed(sender, e);
+            LBA1Tel_FormClosed(sender, e);
+            LBA1Flying_FormClosed(sender, e);
         }
         private int getInt(string value)
         {
@@ -102,8 +103,8 @@ namespace LBATrainer
         {
             if (keyPressed.Msg == 0x0312)
             {
-                processHotkeySavegame((Keys)keyPressed.WParam);
-                processHotkeyFlying((Keys)keyPressed.WParam);
+                LBA1SG_processHotkey((Keys)keyPressed.WParam);
+                processHotkeyLBA1Flying((Keys)keyPressed.WParam);
             }
             base.WndProc(ref keyPressed);
         }
@@ -113,7 +114,7 @@ namespace LBATrainer
             new AboutBox1().ShowDialog();
         }
 
-        private oTimerSetItems itemToggle(oTimerSetItems tsi, uint offset, byte val, byte size, oTimerSetItems.LBAVersion LBAVer)
+        private oTimerSetItems itemToggle(oTimerSetItems tsi, uint offset, ushort val, byte size, oTimerSetItems.LBAVersion LBAVer)
         {
             if (null == tsi) tsi = new oTimerSetItems(LBAVer);
             if (!tsi.RemoveIfExists(offset))
@@ -121,6 +122,35 @@ namespace LBATrainer
             if (tsi.IsEmpty()) tsi = null;
             return tsi;
         }
+        private void RefreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            memRoutines = new Mem();
+            memRoutines.WriteVal(1, 0xE0A, (ushort)(LBA1AutoZoomToolStripMenuItem1.Checked ? 1 : 0), 1);
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tsi = itemToggle(tsi, 0x57F39, (ushort)(getInt(txtLBA2LocationZPos.Text)), 2, oTimerSetItems.LBAVersion.Two);
+        }
+        private void btnLBA2LocationScan_Click(object sender, EventArgs e)
+        {
+            txtLBA2LocationXPos.Text = memRoutines.readAddress(2, 0x57F35, 2).ToString();
+            txtLBA2LocationZPos.Text = memRoutines.readAddress(2, 0x57F39, 2).ToString();
+            txtLBA2LocationYPos.Text = memRoutines.readAddress(2, 0x57F3D, 2).ToString();
+        }
+
+        private void btnLBA2LocationSet_Click(object sender, EventArgs e)
+        {
+            memRoutines.WriteVal(2, 0x57F35, (ushort)getInt(txtLBA2LocationXPos.Text), 2);
+            memRoutines.WriteVal(2, 0x57F39, (ushort)getInt(txtLBA2LocationZPos.Text), 2);
+            memRoutines.WriteVal(2, 0x57F3D, (ushort)getInt(txtLBA2LocationYPos.Text), 2);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            uint outfitAddress = 0x57F51;
+            if (!tsi.RemoveIfExists(outfitAddress))
+                tsi.AddItem(outfitAddress, (ushort)getInt(textBox1.Text), 1);
+        }
     }
 }

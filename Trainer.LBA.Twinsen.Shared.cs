@@ -9,7 +9,7 @@ namespace LBATrainer
 {
     public partial class frmTrainer
     {
-        private void maxAll(uint LBAVer)
+        private void maxAll(byte LBAVer)
         {
             for (int i = 0; i < items.Inventory.Count(); i++)
             {
@@ -21,7 +21,7 @@ namespace LBATrainer
             }
             scan(LBAVer);
         }
-        private void MinAll(uint LBAVer)
+        private void MinAll(byte LBAVer)
         {
             for (int i = 0; i < items.Inventory.Count(); i++)
             {

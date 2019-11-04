@@ -15,3 +15,6 @@ R:\Users\User\source\repos\LBATrainer\bin\Debug\files\options.xml
 R:\Users\User\source\repos\LBATrainer\bin\Debug\files\saveGame.xml
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.getSaveFileNames.resources
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.AboutBox1.resources
+R:\Users\User\source\repos\LBATrainer\bin\Debug\LBAMemoryModule.dll
+R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.csproj.CopyComplete
+R:\Users\User\source\repos\LBATrainer\bin\Debug\Flying.dll

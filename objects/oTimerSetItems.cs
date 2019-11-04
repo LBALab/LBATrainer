@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LBAMemoryModule;
 
 namespace LBATrainer
 {
@@ -11,13 +12,9 @@ namespace LBATrainer
     {
         byte LBAVer;
         Timer tmr = new Timer();
-        mem memory = new mem();
+        Mem memory = new Mem();
         List<Item> itemList = new List<Item>();
-        public enum LBAVersion
-        {
-            One = 1,
-            Two = 2
-        }
+        public enum LBAVersion {One = 1, Two = 2 }
 
         public oTimerSetItems(LBAVersion lbaVer)
         {
@@ -54,17 +51,6 @@ namespace LBATrainer
             }
         }
 
-        /*public void removeItem(uint memoryOffSet)
-        {
-            for (int i = 0; i < itemList.Count; i++)
-                if (itemList[i].memoryOffset == memoryOffSet)
-                {
-                    itemList.RemoveAt(i);
-                    break;
-                }
-            if (0 == itemList.Count) StopTimer();
-        }*/
-
         private void StartTimer()
         {
             tmr.Enabled = true;
@@ -77,7 +63,7 @@ namespace LBATrainer
         private void timer_Tick(object sender, EventArgs e)
         {
             for(int i = 0; i < itemList.Count;i++)
-                memory.WriteVal(itemList[i].lbaVersion, itemList[i], itemList[i].maxVal);
+                memory.WriteVal(itemList[i].lbaVersion, (LBAMemoryModule.Item) itemList[i], itemList[i].maxVal);
         }
         
         public bool IsEmpty()
@@ -93,6 +79,7 @@ namespace LBATrainer
             return false;
         }
 
+        /* Returns true if the item is removed, else false */
         public bool RemoveIfExists(uint memoryOffset)
         {
             bool removed = false;

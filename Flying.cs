@@ -7,31 +7,32 @@ using System.Windows.Forms;
 
 namespace LBATrainer
 {
-    public partial class frmTrainer
+    class Flying //: IDisposable
     {
         #region variables
-        HotKey hkLBA1FlyingN;
-        HotKey hkLBA1FlyingS;
-        HotKey hkLBA1FlyingE;
-        HotKey hkLBA1FlyingW;
-        HotKey hkLBA1FlyingHigher;
-        HotKey hkLBA1FlyingLower;
-        HotKey hkLBA1FlyingNW;
-        HotKey hkLBA1FlyingNE;
-        HotKey hkLBA1FlyingSW;
-        HotKey hkLBA1FlyingSE;
-        HotKey hkLBA1ToggleLock;
-        const Keys keyLBA1FlyingNW = Keys.NumPad7;
-        const Keys keyLBA1FlyingN = Keys.NumPad8;
-        const Keys keyLBA1FlyingNE = Keys.NumPad9;
-        const Keys keyLBA1FlyingW = Keys.NumPad4;
-        const Keys keyLBA1FlyingToggleLock = Keys.NumPad5;
-        const Keys keyLBA1FlyingE = Keys.NumPad6;
-        const Keys keyLBA1FlyingSW = Keys.NumPad1;
-        const Keys keyLBA1FlyingS = Keys.NumPad2;
-        const Keys keyLBA1FlyingSE = Keys.NumPad3;
-        const Keys keyLBA1FlyingHigher = Keys.Add;
-        const Keys keyLBA1FlyingLower = Keys.Subtract;
+        bool disposed = false;
+        HotKey hkFlyingN;
+        HotKey hkFlyingS;
+        HotKey hkFlyingE;
+        HotKey hkFlyingW;
+        HotKey hkFlyingHigher;
+        HotKey hkFlyingLower;
+        HotKey hkFlyingNW;
+        HotKey hkFlyingNE;
+        HotKey hkFlyingSW;
+        HotKey hkFlyingSE;
+        HotKey hkToggleLock;
+        const Keys keyFlyingNW = Keys.NumPad7;
+        const Keys keyFlyingN = Keys.NumPad8;
+        const Keys keyFlyingNE = Keys.NumPad9;
+        const Keys keyFlyingW = Keys.NumPad4;
+        const Keys keyFlyingToggleLock = Keys.NumPad5;
+        const Keys keyFlyingE = Keys.NumPad6;
+        const Keys keyFlyingSW = Keys.NumPad1;
+        const Keys keyFlyingS = Keys.NumPad2;
+        const Keys keyFlyingSE = Keys.NumPad3;
+        const Keys keyFlyingHigher = Keys.Add;
+        const Keys keyFlyingLower = Keys.Subtract;
         /*const Keys keyFlyingSW = Keys.Z;
         const Keys keyFlyingNE = Keys.E;
         const Keys keyFlyingSE = Keys.C;
@@ -48,13 +49,19 @@ namespace LBATrainer
         int flyingHeight;
         const int flyingTimerInterval = 50;
         #endregion
-        #region events
-        private void LBA1Flying_Load(object sender, EventArgs e, Options opt)
+        //#region events
+
+
+        public Flying()
         {
-            //txtLBA1TeleportRefreshInterval.Text = opt.LBA1TeleportTabRefreshInterval.ToString();
-            txtLBA1TeleportMovementPixels.Text = numberOfPixelsToMove.ToString();
-            flyingNameButtons();
+            //flyingNameButtons();
         }
+
+        public Flying(ushort pixelsToMove)
+        {
+            numberOfPixelsToMove = pixelsToMove;
+        }
+        /*
         private void LBA1Flying_FormClosed(object sender, EventArgs e)
         {
             unregisterHotkeysLBA1Flying();
@@ -223,7 +230,6 @@ namespace LBATrainer
         }
         #endregion
 
-
         private void LBA1FlyingToggleTimer()
         {
             if (!tmrFlying.Enabled)
@@ -238,5 +244,27 @@ namespace LBATrainer
                 tmrFlying.Stop();
             }
         }
+
+        public void Dispose()
+        {
+            // Dispose of unmanaged resources.
+            Dispose(true);
+        }
+
+        // Protected implementation of Dispose pattern.
+        protected virtual void Dispose(bool disposing)
+        {
+            
+            if (disposed)
+                return;
+
+            if (disposing)
+            {
+                unregisterHotkeysLBA1Flying();
+            }
+
+            
+            disposed = true;
+        }*/
     }
 }

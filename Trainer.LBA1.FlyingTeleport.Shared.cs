@@ -9,19 +9,19 @@ namespace LBATrainer
     public partial class frmTrainer
     {
         #region setValues
-        private void setXPos(ushort val)
+        private void LBA1SetXPos(ushort val)
         {
             memRoutines.WriteVal(LBA_ONE, 0xD506, val, 2);
         }
-        private void setYPos(ushort val)
+        private void LBA1SetYPos(ushort val)
         {
             memRoutines.WriteVal(LBA_ONE, 0xD50A, val, 2);
         }
-        private void setZPos(ushort val)
+        private void LBA1SetZPos(ushort val)
         {
             memRoutines.WriteVal(LBA_ONE, 0xD508, val, 2);
         }
-        private void setFacing(ushort val)
+        private void LBA1SetFacing(ushort val)
         {
             memRoutines.WriteVal(LBA_ONE, 0xD51E, val, 2);
         }

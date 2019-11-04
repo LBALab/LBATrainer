@@ -9,82 +9,82 @@ namespace LBATrainer
 {
     public partial class frmTrainer
     {
-        private void BtnLBA1TeleportScan_Click(object sender, EventArgs e)
+        private void LBA1Tel_BtnScan_Click(object sender, EventArgs e)
         {
-            teleportScan();
+            LBA1Tel_teleportScan();
         }
-        private void Teleport_Load(object sender, EventArgs e, Options opt)
+        private void LBA1Tel_Load(object sender, EventArgs e, Options opt)
         {
-            txtLBA1TeleportRefreshInterval.Text = opt.LBA1TeleportTabRefreshInterval.ToString();
+            LBA1Tel_txtRefreshInterval.Text = opt.LBA1TeleportTabRefreshInterval.ToString();
             txtLBA1TeleportMovementPixels.Text = numberOfPixelsToMove.ToString();
         }
-        private void Teleport_FormClosed(object sender, EventArgs e)
+        private void LBA1Tel_FormClosed(object sender, EventArgs e)
         {
             Options opt = new Options();
-            opt.LBA1TeleportTabRefreshInterval = getInt(txtLBA1TeleportRefreshInterval.Text);
+            opt.LBA1TeleportTabRefreshInterval = getInt(LBA1Tel_txtRefreshInterval.Text);
             opt.save();
         }
-        private void BtnLBA1TeleportSet_Click(object sender, EventArgs e)
+        private void LBA1Tel_BtntSet_Click(object sender, EventArgs e)
         {
             bool timerEnabled = tmrLBA1TeleportTabRefresh.Enabled;
-            if (timerEnabled) toggleTimer();
-            short val = (short)getInt(txtLBA1TeleportZPos.Text);
-            if (-1 != val) setZPos((ushort)val);
+            if (timerEnabled) LBA1Tel_toggleTimer();
+            short val = (short)getInt(LBA1Tel_txtZPos.Text);
+            if (-1 != val) LBA1SetZPos((ushort)val);
 
-            val = (short)getInt(txtLBA1TeleportXPos.Text);
-            if (-1 != val) setXPos((ushort)val);
+            val = (short)getInt(LBA1Tel_txtXPos.Text);
+            if (-1 != val) LBA1SetXPos((ushort)val);
 
-            val = (short)getInt(txtLBA1TeleportYPos.Text);
-            if (-1 != val) setYPos((ushort)val);
+            val = (short)getInt(LBA1Tel_txtYPos.Text);
+            if (-1 != val) LBA1SetYPos((ushort)val);
 
-            val = (short)getInt(txtLBA1TeleportFacing.Text);
-            if (-1 != val) setFacing((ushort)val);
+            val = (short)getInt(LBA1Tel_txtFacing.Text);
+            if (-1 != val) LBA1SetFacing((ushort)val);
 
-            if (timerEnabled) toggleTimer();
+            if (timerEnabled) LBA1Tel_toggleTimer();
         }
-        private void TmrLBA1TeleportTabRefresh_Tick(object sender, EventArgs e)
+        private void LBA1Tel_TmrTabRefresh_Tick(object sender, EventArgs e)
         {
-            teleportScan();
+            LBA1Tel_teleportScan();
         }
-        private void teleportScan()
+        private void LBA1Tel_teleportScan()
         {
-            txtLBA1TeleportXPos.Text = getXPos().ToString();
-            txtLBA1TeleportYPos.Text = getYPos().ToString();
-            txtLBA1TeleportZPos.Text = getZPos().ToString();
-            txtLBA1TeleportFacing.Text = getFacing().ToString();
+            LBA1Tel_txtXPos.Text = getXPos().ToString();
+            LBA1Tel_txtYPos.Text = getYPos().ToString();
+            LBA1Tel_txtZPos.Text = getZPos().ToString();
+            LBA1Tel_txtFacing.Text = getFacing().ToString();
         }
         private void BtnLBA1StartStopRefresh_Click(object sender, EventArgs e)
         {
-            toggleTimer();
+            LBA1Tel_toggleTimer();
         }
-        private void toggleTimer()
+        private void LBA1Tel_toggleTimer()
         {
             if (!tmrLBA1TeleportTabRefresh.Enabled)
             {
                 int interval;
-                if (-1 == (interval = getInt(txtLBA1TeleportRefreshInterval.Text))) return;
+                if (-1 == (interval = getInt(LBA1Tel_txtRefreshInterval.Text))) return;
                 tmrLBA1TeleportTabRefresh.Interval = interval;
                 tmrLBA1TeleportTabRefresh.Enabled = true;
-                btnLBA1TeleportStartStopRefresh.Text = "Stop";
+                LBA1Tel_btnStartStopRefresh.Text = "Stop";
             }
             else
             {
                 tmrLBA1TeleportTabRefresh.Enabled = false;
-                btnLBA1TeleportStartStopRefresh.Text = "Start";
+                LBA1Tel_btnStartStopRefresh.Text = "Start";
             }
         }
-        private void ChkLBA1TeleportLock_CheckedChanged(object sender, EventArgs e)
+        private void LBA1Tel_ChkLock_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkLBA1TeleportLock.Checked)
-                txtLBA1TeleportZPos.Text = getZPos().ToString();
-            if (tmrHeightLock.Enabled = chkLBA1TeleportLock.Checked)
+            if (LBA1Tel_chkLock.Checked)
+                LBA1Tel_txtZPos.Text = getZPos().ToString();
+            if (tmrHeightLock.Enabled = LBA1Tel_chkLock.Checked)
                 tmrHeightLock.Start();
             else
                 tmrHeightLock.Stop();
         }
-        private void TmrHeightLock_Tick(object sender, EventArgs e)
+        private void LBA1Tel_TmrHeightLock_Tick(object sender, EventArgs e)
         {
-            setZPos((ushort)getInt(txtLBA1TeleportZPos.Text));
+            LBA1SetZPos((ushort)getInt(LBA1Tel_txtZPos.Text));
         }
 
     }

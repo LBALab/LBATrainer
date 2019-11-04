@@ -33,39 +33,39 @@
             this.tpLBA1 = new System.Windows.Forms.TabPage();
             this.tcLBA1Inner = new System.Windows.Forms.TabControl();
             this.tpLBA1Twinsen = new System.Windows.Forms.TabPage();
-            this.chkLBA1InventoryValue = new System.Windows.Forms.CheckBox();
-            this.btnLBA1Set = new System.Windows.Forms.Button();
-            this.lblLBA1MagicLevel = new System.Windows.Forms.Label();
-            this.txtLBA1MagicLevel = new System.Windows.Forms.TextBox();
-            this.txtLBA1Keys = new System.Windows.Forms.TextBox();
-            this.lblKeys = new System.Windows.Forms.Label();
-            this.txtLBA1Gas = new System.Windows.Forms.TextBox();
-            this.txtLBA1Kashers = new System.Windows.Forms.TextBox();
-            this.txtLBA1MagicPoints = new System.Windows.Forms.TextBox();
-            this.btnLBA1MinAll = new System.Windows.Forms.Button();
-            this.btnLBA1Scan = new System.Windows.Forms.Button();
-            this.lblLBA1Gas = new System.Windows.Forms.Label();
-            this.txtLBA1Health = new System.Windows.Forms.TextBox();
-            this.cboLBA1Inventory = new System.Windows.Forms.ComboBox();
-            this.lblLBA1Inventory = new System.Windows.Forms.Label();
-            this.lblLBA1Kashers = new System.Windows.Forms.Label();
-            this.lblLBA1MagicPoints = new System.Windows.Forms.Label();
-            this.lblLBA1Health = new System.Windows.Forms.Label();
-            this.lblLBA1CloverBoxes = new System.Windows.Forms.Label();
-            this.txtLBA1CloverBoxes = new System.Windows.Forms.TextBox();
-            this.btnLBA1MaxAll = new System.Windows.Forms.Button();
-            this.lblLBA1Clovers = new System.Windows.Forms.Label();
-            this.txtLBA1Clovers = new System.Windows.Forms.TextBox();
+            this.LBA1Twin_chkInventoryValue = new System.Windows.Forms.CheckBox();
+            this.LBA1Twin_btnSet = new System.Windows.Forms.Button();
+            this.LBA1Twin_lblMagicLevel = new System.Windows.Forms.Label();
+            this.LBA1Twin_txtMagicLevel = new System.Windows.Forms.TextBox();
+            this.LBA1Twin_txtKeys = new System.Windows.Forms.TextBox();
+            this.LBA1Twin_lblKeys = new System.Windows.Forms.Label();
+            this.LBA1Twin_txtGas = new System.Windows.Forms.TextBox();
+            this.LBA1Twin_txtKashers = new System.Windows.Forms.TextBox();
+            this.LBA1Twin_txtMagicPoints = new System.Windows.Forms.TextBox();
+            this.LBA1Twin_btnMinAll = new System.Windows.Forms.Button();
+            this.LBA1Twin_btnScan = new System.Windows.Forms.Button();
+            this.LBA1Twin_lblGas = new System.Windows.Forms.Label();
+            this.LBA1Twin_txtHealth = new System.Windows.Forms.TextBox();
+            this.LBA1Twin_cboInventory = new System.Windows.Forms.ComboBox();
+            this.LBA1Twin_lbInventory = new System.Windows.Forms.Label();
+            this.LBA1Twin_lblKashers = new System.Windows.Forms.Label();
+            this.LBA1Twin_lblMagicPoints = new System.Windows.Forms.Label();
+            this.LBA1Twin_lblHealth = new System.Windows.Forms.Label();
+            this.LBA1Twin_lblCloverBoxes = new System.Windows.Forms.Label();
+            this.LBA1Twin_txtCloverBoxes = new System.Windows.Forms.TextBox();
+            this.LBA1Twin_btnMaxAll = new System.Windows.Forms.Button();
+            this.LBA1Twin_lblClovers = new System.Windows.Forms.Label();
+            this.LBA1Twin_txtClovers = new System.Windows.Forms.TextBox();
             this.tpLBA1Other = new System.Windows.Forms.TabPage();
-            this.chkLBA1OtherChapter = new System.Windows.Forms.CheckBox();
-            this.cboLBA1OtherChapter = new System.Windows.Forms.ComboBox();
-            this.lblLBA1OtherChapter = new System.Windows.Forms.Label();
-            this.chkLBA1MoviesValue = new System.Windows.Forms.CheckBox();
-            this.cboLBA1Movies = new System.Windows.Forms.ComboBox();
-            this.lblLBA1Movies = new System.Windows.Forms.Label();
-            this.chkLBA1QuestValue = new System.Windows.Forms.CheckBox();
-            this.cboLBA1Quest = new System.Windows.Forms.ComboBox();
-            this.lblLBA1Quest = new System.Windows.Forms.Label();
+            this.LBA1Othr_chkChapter = new System.Windows.Forms.CheckBox();
+            this.LBA1Othr_cboChapter = new System.Windows.Forms.ComboBox();
+            this.LBA1Othr_lblChapter = new System.Windows.Forms.Label();
+            this.LBA1Othr_chkMoviesValue = new System.Windows.Forms.CheckBox();
+            this.LBA1Othr_cboMovies = new System.Windows.Forms.ComboBox();
+            this.LBA1Othr_lblMovies = new System.Windows.Forms.Label();
+            this.LBA1Othr_chkQuestValue = new System.Windows.Forms.CheckBox();
+            this.LBA1Othr_cboQuest = new System.Windows.Forms.ComboBox();
+            this.LBA1Othr_lblQuest = new System.Windows.Forms.Label();
             this.tpFlying = new System.Windows.Forms.TabPage();
             this.chkLBA1FlyingHeightLocked = new System.Windows.Forms.CheckBox();
             this.btnLBA1FlyingHeightHigher = new System.Windows.Forms.Button();
@@ -84,34 +84,35 @@
             this.btnLBA1FlyingN = new System.Windows.Forms.Button();
             this.btnLBA1FlyingNW = new System.Windows.Forms.Button();
             this.tpTeleport = new System.Windows.Forms.TabPage();
-            this.txtLBA1TeleportXPos = new System.Windows.Forms.TextBox();
-            this.txtLBA1TeleportYPos = new System.Windows.Forms.TextBox();
-            this.lblLBA1TeleportXPos = new System.Windows.Forms.Label();
-            this.lblLBA1TeleportYPos = new System.Windows.Forms.Label();
-            this.btnLBA1TeleportScan = new System.Windows.Forms.Button();
-            this.chkLBA1TeleportLock = new System.Windows.Forms.CheckBox();
-            this.txtLBA1TeleportRefreshInterval = new System.Windows.Forms.TextBox();
-            this.lblLBA1TeleportAutoRefresh = new System.Windows.Forms.Label();
-            this.btnLBA1TeleportStartStopRefresh = new System.Windows.Forms.Button();
-            this.txtLBA1TeleportZPos = new System.Windows.Forms.TextBox();
-            this.btnLBA1TeleportSet = new System.Windows.Forms.Button();
-            this.lblLBA1TeleportZPos = new System.Windows.Forms.Label();
-            this.txtLBA1TeleportFacing = new System.Windows.Forms.TextBox();
-            this.lblLBA1TeleportFacing = new System.Windows.Forms.Label();
+            this.LBA1Tel_txtXPos = new System.Windows.Forms.TextBox();
+            this.LBA1Tel_txtYPos = new System.Windows.Forms.TextBox();
+            this.LBA1Tel_lblXPos = new System.Windows.Forms.Label();
+            this.LBA1Tel_lblYPos = new System.Windows.Forms.Label();
+            this.LBA1Tel_btnScan = new System.Windows.Forms.Button();
+            this.LBA1Tel_chkLock = new System.Windows.Forms.CheckBox();
+            this.LBA1Tel_txtRefreshInterval = new System.Windows.Forms.TextBox();
+            this.LBA1Tel_lblAutoRefresh = new System.Windows.Forms.Label();
+            this.LBA1Tel_btnStartStopRefresh = new System.Windows.Forms.Button();
+            this.LBA1Tel_txtZPos = new System.Windows.Forms.TextBox();
+            this.LBA1Tel_btnSet = new System.Windows.Forms.Button();
+            this.LBA1Tel_lblZPos = new System.Windows.Forms.Label();
+            this.LBA1Tel_txtFacing = new System.Windows.Forms.TextBox();
+            this.LBA1Tel_lblFacing = new System.Windows.Forms.Label();
             this.tpSaveGame = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnSGDeleteSaves = new System.Windows.Forms.Button();
-            this.btnLBA1SGRefresh = new System.Windows.Forms.Button();
-            this.lvLBA1SaveGames = new System.Windows.Forms.ListView();
+            this.LBA1SG_lblF8SaveAs = new System.Windows.Forms.Label();
+            this.LBA1SG_btnDeleteSaves = new System.Windows.Forms.Button();
+            this.LBA1SG_btnRefresh = new System.Windows.Forms.Button();
+            this.LBA1SG_lvSaveGames = new System.Windows.Forms.ListView();
             this.chLBA1SGReadOnly = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chLBA1SGFileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chLBA1SGLastModified = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnLBA1SaveGameEnableDisable = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnSetSaveFileDir = new System.Windows.Forms.Button();
-            this.txtLBA1SaveFileDirectory = new System.Windows.Forms.TextBox();
-            this.lblLBA1SaveFileDirectory = new System.Windows.Forms.Label();
+            this.LBA1SG_btnEnableDisable = new System.Windows.Forms.Button();
+            this.LBA1SG_lblF9ForKey = new System.Windows.Forms.Label();
+            this.LBA1SG_lblF7Save = new System.Windows.Forms.Label();
+            this.LBA1SG_btnSetSaveFileDir = new System.Windows.Forms.Button();
+            this.LBA1SG_txtSaveFileDirectory = new System.Windows.Forms.TextBox();
+            this.LBA1SG_lbl1SaveFileDirectory = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tbLBA2 = new System.Windows.Forms.TabPage();
             this.tcLBA2Twinsen = new System.Windows.Forms.TabControl();
             this.tpLBA2Twinsen = new System.Windows.Forms.TabPage();
@@ -137,6 +138,27 @@
             this.btnLBA2MaxAll = new System.Windows.Forms.Button();
             this.lblLBA2Clovers = new System.Windows.Forms.Label();
             this.txtLBA2Clovers = new System.Windows.Forms.TextBox();
+            this.tpLBA2Location = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnLBA2LocationSet = new System.Windows.Forms.Button();
+            this.btnLBA2LocationScan = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblLBA2LocationYPos = new System.Windows.Forms.Label();
+            this.lblLBA2LocationZPos = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtLBA2LocationZPos = new System.Windows.Forms.TextBox();
+            this.txtLBA2LocationYPos = new System.Windows.Forms.TextBox();
+            this.txtLBA2LocationXPos = new System.Windows.Forms.TextBox();
+            this.lblLBA2LocationXPos = new System.Windows.Forms.Label();
+            this.tpLBA2ShittyShot = new System.Windows.Forms.TabPage();
+            this.LBA2SS_lblInstruct = new System.Windows.Forms.Label();
+            this.LBA2SS_btnSquare = new System.Windows.Forms.Button();
+            this.LBA2SS_btnTriangle = new System.Windows.Forms.Button();
+            this.LBA2SS_btnCircle = new System.Windows.Forms.Button();
+            this.LBA2SS_btnOnOff = new System.Windows.Forms.Button();
+            this.LBA2SS_lblSquare = new System.Windows.Forms.Label();
+            this.LBA2SS_lblTriangle = new System.Windows.Forms.Label();
+            this.LBA2SS_lblCircle = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -151,6 +173,10 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.flying1 = new LBAFlying.Flying();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -159,10 +185,14 @@
             this.tpFlying.SuspendLayout();
             this.tpTeleport.SuspendLayout();
             this.tpSaveGame.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tbLBA2.SuspendLayout();
             this.tcLBA2Twinsen.SuspendLayout();
             this.tpLBA2Twinsen.SuspendLayout();
+            this.tpLBA2Location.SuspendLayout();
+            this.tpLBA2ShittyShot.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcLBAVersion
@@ -194,6 +224,7 @@
             this.tcLBA1Inner.Controls.Add(this.tpFlying);
             this.tcLBA1Inner.Controls.Add(this.tpTeleport);
             this.tcLBA1Inner.Controls.Add(this.tpSaveGame);
+            this.tcLBA1Inner.Controls.Add(this.tabPage1);
             this.tcLBA1Inner.Location = new System.Drawing.Point(6, 6);
             this.tcLBA1Inner.Name = "tcLBA1Inner";
             this.tcLBA1Inner.SelectedIndex = 0;
@@ -204,29 +235,29 @@
             // tpLBA1Twinsen
             // 
             this.tpLBA1Twinsen.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA1Twinsen.Controls.Add(this.chkLBA1InventoryValue);
-            this.tpLBA1Twinsen.Controls.Add(this.btnLBA1Set);
-            this.tpLBA1Twinsen.Controls.Add(this.lblLBA1MagicLevel);
-            this.tpLBA1Twinsen.Controls.Add(this.txtLBA1MagicLevel);
-            this.tpLBA1Twinsen.Controls.Add(this.txtLBA1Keys);
-            this.tpLBA1Twinsen.Controls.Add(this.lblKeys);
-            this.tpLBA1Twinsen.Controls.Add(this.txtLBA1Gas);
-            this.tpLBA1Twinsen.Controls.Add(this.txtLBA1Kashers);
-            this.tpLBA1Twinsen.Controls.Add(this.txtLBA1MagicPoints);
-            this.tpLBA1Twinsen.Controls.Add(this.btnLBA1MinAll);
-            this.tpLBA1Twinsen.Controls.Add(this.btnLBA1Scan);
-            this.tpLBA1Twinsen.Controls.Add(this.lblLBA1Gas);
-            this.tpLBA1Twinsen.Controls.Add(this.txtLBA1Health);
-            this.tpLBA1Twinsen.Controls.Add(this.cboLBA1Inventory);
-            this.tpLBA1Twinsen.Controls.Add(this.lblLBA1Inventory);
-            this.tpLBA1Twinsen.Controls.Add(this.lblLBA1Kashers);
-            this.tpLBA1Twinsen.Controls.Add(this.lblLBA1MagicPoints);
-            this.tpLBA1Twinsen.Controls.Add(this.lblLBA1Health);
-            this.tpLBA1Twinsen.Controls.Add(this.lblLBA1CloverBoxes);
-            this.tpLBA1Twinsen.Controls.Add(this.txtLBA1CloverBoxes);
-            this.tpLBA1Twinsen.Controls.Add(this.btnLBA1MaxAll);
-            this.tpLBA1Twinsen.Controls.Add(this.lblLBA1Clovers);
-            this.tpLBA1Twinsen.Controls.Add(this.txtLBA1Clovers);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_chkInventoryValue);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_btnSet);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lblMagicLevel);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_txtMagicLevel);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_txtKeys);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lblKeys);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_txtGas);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_txtKashers);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_txtMagicPoints);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_btnMinAll);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_btnScan);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lblGas);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_txtHealth);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_cboInventory);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lbInventory);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lblKashers);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lblMagicPoints);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lblHealth);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lblCloverBoxes);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_txtCloverBoxes);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_btnMaxAll);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_lblClovers);
+            this.tpLBA1Twinsen.Controls.Add(this.LBA1Twin_txtClovers);
             this.tpLBA1Twinsen.Location = new System.Drawing.Point(4, 22);
             this.tpLBA1Twinsen.Name = "tpLBA1Twinsen";
             this.tpLBA1Twinsen.Padding = new System.Windows.Forms.Padding(3);
@@ -234,224 +265,224 @@
             this.tpLBA1Twinsen.TabIndex = 0;
             this.tpLBA1Twinsen.Text = "Twinsen";
             // 
-            // chkLBA1InventoryValue
+            // LBA1Twin_chkInventoryValue
             // 
-            this.chkLBA1InventoryValue.AutoSize = true;
-            this.chkLBA1InventoryValue.Location = new System.Drawing.Point(284, 116);
-            this.chkLBA1InventoryValue.Name = "chkLBA1InventoryValue";
-            this.chkLBA1InventoryValue.Size = new System.Drawing.Size(15, 14);
-            this.chkLBA1InventoryValue.TabIndex = 38;
-            this.chkLBA1InventoryValue.UseVisualStyleBackColor = true;
-            this.chkLBA1InventoryValue.CheckedChanged += new System.EventHandler(this.ChkLBA1InventoryValue_CheckedChanged);
+            this.LBA1Twin_chkInventoryValue.AutoSize = true;
+            this.LBA1Twin_chkInventoryValue.Location = new System.Drawing.Point(284, 116);
+            this.LBA1Twin_chkInventoryValue.Name = "LBA1Twin_chkInventoryValue";
+            this.LBA1Twin_chkInventoryValue.Size = new System.Drawing.Size(15, 14);
+            this.LBA1Twin_chkInventoryValue.TabIndex = 38;
+            this.LBA1Twin_chkInventoryValue.UseVisualStyleBackColor = true;
+            this.LBA1Twin_chkInventoryValue.CheckedChanged += new System.EventHandler(this.ChkLBA1InventoryValue_CheckedChanged);
             // 
-            // btnLBA1Set
+            // LBA1Twin_btnSet
             // 
-            this.btnLBA1Set.Location = new System.Drawing.Point(24, 144);
-            this.btnLBA1Set.Name = "btnLBA1Set";
-            this.btnLBA1Set.Size = new System.Drawing.Size(63, 23);
-            this.btnLBA1Set.TabIndex = 11;
-            this.btnLBA1Set.Text = "Set";
-            this.btnLBA1Set.UseVisualStyleBackColor = true;
-            this.btnLBA1Set.Click += new System.EventHandler(this.BtnLBA1Set_Click);
+            this.LBA1Twin_btnSet.Location = new System.Drawing.Point(24, 144);
+            this.LBA1Twin_btnSet.Name = "LBA1Twin_btnSet";
+            this.LBA1Twin_btnSet.Size = new System.Drawing.Size(63, 23);
+            this.LBA1Twin_btnSet.TabIndex = 11;
+            this.LBA1Twin_btnSet.Text = "Set";
+            this.LBA1Twin_btnSet.UseVisualStyleBackColor = true;
+            this.LBA1Twin_btnSet.Click += new System.EventHandler(this.LBA1Twin_BtnSet_Click);
             // 
-            // lblLBA1MagicLevel
+            // LBA1Twin_lblMagicLevel
             // 
-            this.lblLBA1MagicLevel.AutoSize = true;
-            this.lblLBA1MagicLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1MagicLevel.Location = new System.Drawing.Point(6, 38);
-            this.lblLBA1MagicLevel.Name = "lblLBA1MagicLevel";
-            this.lblLBA1MagicLevel.Size = new System.Drawing.Size(76, 13);
-            this.lblLBA1MagicLevel.TabIndex = 27;
-            this.lblLBA1MagicLevel.Text = "Magic Level";
+            this.LBA1Twin_lblMagicLevel.AutoSize = true;
+            this.LBA1Twin_lblMagicLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lblMagicLevel.Location = new System.Drawing.Point(6, 38);
+            this.LBA1Twin_lblMagicLevel.Name = "LBA1Twin_lblMagicLevel";
+            this.LBA1Twin_lblMagicLevel.Size = new System.Drawing.Size(76, 13);
+            this.LBA1Twin_lblMagicLevel.TabIndex = 27;
+            this.LBA1Twin_lblMagicLevel.Text = "Magic Level";
             // 
-            // txtLBA1MagicLevel
+            // LBA1Twin_txtMagicLevel
             // 
-            this.txtLBA1MagicLevel.Location = new System.Drawing.Point(106, 35);
-            this.txtLBA1MagicLevel.Name = "txtLBA1MagicLevel";
-            this.txtLBA1MagicLevel.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA1MagicLevel.TabIndex = 3;
+            this.LBA1Twin_txtMagicLevel.Location = new System.Drawing.Point(106, 35);
+            this.LBA1Twin_txtMagicLevel.Name = "LBA1Twin_txtMagicLevel";
+            this.LBA1Twin_txtMagicLevel.Size = new System.Drawing.Size(44, 20);
+            this.LBA1Twin_txtMagicLevel.TabIndex = 3;
             // 
-            // txtLBA1Keys
+            // LBA1Twin_txtKeys
             // 
-            this.txtLBA1Keys.Location = new System.Drawing.Point(284, 61);
-            this.txtLBA1Keys.Name = "txtLBA1Keys";
-            this.txtLBA1Keys.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA1Keys.TabIndex = 6;
+            this.LBA1Twin_txtKeys.Location = new System.Drawing.Point(284, 61);
+            this.LBA1Twin_txtKeys.Name = "LBA1Twin_txtKeys";
+            this.LBA1Twin_txtKeys.Size = new System.Drawing.Size(44, 20);
+            this.LBA1Twin_txtKeys.TabIndex = 6;
             // 
-            // lblKeys
+            // LBA1Twin_lblKeys
             // 
-            this.lblKeys.AutoSize = true;
-            this.lblKeys.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKeys.Location = new System.Drawing.Point(197, 64);
-            this.lblKeys.Name = "lblKeys";
-            this.lblKeys.Size = new System.Drawing.Size(34, 13);
-            this.lblKeys.TabIndex = 37;
-            this.lblKeys.Text = "Keys";
+            this.LBA1Twin_lblKeys.AutoSize = true;
+            this.LBA1Twin_lblKeys.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lblKeys.Location = new System.Drawing.Point(197, 64);
+            this.LBA1Twin_lblKeys.Name = "LBA1Twin_lblKeys";
+            this.LBA1Twin_lblKeys.Size = new System.Drawing.Size(34, 13);
+            this.LBA1Twin_lblKeys.TabIndex = 37;
+            this.LBA1Twin_lblKeys.Text = "Keys";
             // 
-            // txtLBA1Gas
+            // LBA1Twin_txtGas
             // 
-            this.txtLBA1Gas.Location = new System.Drawing.Point(284, 88);
-            this.txtLBA1Gas.Name = "txtLBA1Gas";
-            this.txtLBA1Gas.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA1Gas.TabIndex = 8;
+            this.LBA1Twin_txtGas.Location = new System.Drawing.Point(284, 88);
+            this.LBA1Twin_txtGas.Name = "LBA1Twin_txtGas";
+            this.LBA1Twin_txtGas.Size = new System.Drawing.Size(44, 20);
+            this.LBA1Twin_txtGas.TabIndex = 8;
             // 
-            // txtLBA1Kashers
+            // LBA1Twin_txtKashers
             // 
-            this.txtLBA1Kashers.Location = new System.Drawing.Point(106, 88);
-            this.txtLBA1Kashers.Name = "txtLBA1Kashers";
-            this.txtLBA1Kashers.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA1Kashers.TabIndex = 7;
+            this.LBA1Twin_txtKashers.Location = new System.Drawing.Point(106, 88);
+            this.LBA1Twin_txtKashers.Name = "LBA1Twin_txtKashers";
+            this.LBA1Twin_txtKashers.Size = new System.Drawing.Size(44, 20);
+            this.LBA1Twin_txtKashers.TabIndex = 7;
             // 
-            // txtLBA1MagicPoints
+            // LBA1Twin_txtMagicPoints
             // 
-            this.txtLBA1MagicPoints.Location = new System.Drawing.Point(284, 35);
-            this.txtLBA1MagicPoints.Name = "txtLBA1MagicPoints";
-            this.txtLBA1MagicPoints.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA1MagicPoints.TabIndex = 4;
+            this.LBA1Twin_txtMagicPoints.Location = new System.Drawing.Point(284, 35);
+            this.LBA1Twin_txtMagicPoints.Name = "LBA1Twin_txtMagicPoints";
+            this.LBA1Twin_txtMagicPoints.Size = new System.Drawing.Size(44, 20);
+            this.LBA1Twin_txtMagicPoints.TabIndex = 4;
             // 
-            // btnLBA1MinAll
+            // LBA1Twin_btnMinAll
             // 
-            this.btnLBA1MinAll.Location = new System.Drawing.Point(231, 144);
-            this.btnLBA1MinAll.Name = "btnLBA1MinAll";
-            this.btnLBA1MinAll.Size = new System.Drawing.Size(63, 23);
-            this.btnLBA1MinAll.TabIndex = 14;
-            this.btnLBA1MinAll.Text = "Min All";
-            this.btnLBA1MinAll.UseVisualStyleBackColor = true;
-            this.btnLBA1MinAll.Click += new System.EventHandler(this.BtnLBA1MinAll_Click);
+            this.LBA1Twin_btnMinAll.Location = new System.Drawing.Point(231, 144);
+            this.LBA1Twin_btnMinAll.Name = "LBA1Twin_btnMinAll";
+            this.LBA1Twin_btnMinAll.Size = new System.Drawing.Size(63, 23);
+            this.LBA1Twin_btnMinAll.TabIndex = 14;
+            this.LBA1Twin_btnMinAll.Text = "Min All";
+            this.LBA1Twin_btnMinAll.UseVisualStyleBackColor = true;
+            this.LBA1Twin_btnMinAll.Click += new System.EventHandler(this.LBA1Twin_BtnMinAll_Click);
             // 
-            // btnLBA1Scan
+            // LBA1Twin_btnScan
             // 
-            this.btnLBA1Scan.Location = new System.Drawing.Point(93, 144);
-            this.btnLBA1Scan.Name = "btnLBA1Scan";
-            this.btnLBA1Scan.Size = new System.Drawing.Size(63, 23);
-            this.btnLBA1Scan.TabIndex = 12;
-            this.btnLBA1Scan.Text = "Scan";
-            this.btnLBA1Scan.UseVisualStyleBackColor = true;
-            this.btnLBA1Scan.Click += new System.EventHandler(this.BtnLBA1Scan_Click);
+            this.LBA1Twin_btnScan.Location = new System.Drawing.Point(93, 144);
+            this.LBA1Twin_btnScan.Name = "LBA1Twin_btnScan";
+            this.LBA1Twin_btnScan.Size = new System.Drawing.Size(63, 23);
+            this.LBA1Twin_btnScan.TabIndex = 12;
+            this.LBA1Twin_btnScan.Text = "Scan";
+            this.LBA1Twin_btnScan.UseVisualStyleBackColor = true;
+            this.LBA1Twin_btnScan.Click += new System.EventHandler(this.LBA1Twin_BtnScan_Click);
             // 
-            // lblLBA1Gas
+            // LBA1Twin_lblGas
             // 
-            this.lblLBA1Gas.AutoSize = true;
-            this.lblLBA1Gas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Gas.Location = new System.Drawing.Point(197, 91);
-            this.lblLBA1Gas.Name = "lblLBA1Gas";
-            this.lblLBA1Gas.Size = new System.Drawing.Size(29, 13);
-            this.lblLBA1Gas.TabIndex = 30;
-            this.lblLBA1Gas.Text = "Gas";
+            this.LBA1Twin_lblGas.AutoSize = true;
+            this.LBA1Twin_lblGas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lblGas.Location = new System.Drawing.Point(197, 91);
+            this.LBA1Twin_lblGas.Name = "LBA1Twin_lblGas";
+            this.LBA1Twin_lblGas.Size = new System.Drawing.Size(29, 13);
+            this.LBA1Twin_lblGas.TabIndex = 30;
+            this.LBA1Twin_lblGas.Text = "Gas";
             // 
-            // txtLBA1Health
+            // LBA1Twin_txtHealth
             // 
-            this.txtLBA1Health.Location = new System.Drawing.Point(106, 61);
-            this.txtLBA1Health.Name = "txtLBA1Health";
-            this.txtLBA1Health.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA1Health.TabIndex = 5;
+            this.LBA1Twin_txtHealth.Location = new System.Drawing.Point(106, 61);
+            this.LBA1Twin_txtHealth.Name = "LBA1Twin_txtHealth";
+            this.LBA1Twin_txtHealth.Size = new System.Drawing.Size(44, 20);
+            this.LBA1Twin_txtHealth.TabIndex = 5;
             // 
-            // cboLBA1Inventory
+            // LBA1Twin_cboInventory
             // 
-            this.cboLBA1Inventory.FormattingEnabled = true;
-            this.cboLBA1Inventory.Location = new System.Drawing.Point(106, 114);
-            this.cboLBA1Inventory.Name = "cboLBA1Inventory";
-            this.cboLBA1Inventory.Size = new System.Drawing.Size(171, 21);
-            this.cboLBA1Inventory.TabIndex = 9;
-            this.cboLBA1Inventory.SelectedIndexChanged += new System.EventHandler(this.CboLBA1Inventory_SelectedIndexChanged);
+            this.LBA1Twin_cboInventory.FormattingEnabled = true;
+            this.LBA1Twin_cboInventory.Location = new System.Drawing.Point(106, 114);
+            this.LBA1Twin_cboInventory.Name = "LBA1Twin_cboInventory";
+            this.LBA1Twin_cboInventory.Size = new System.Drawing.Size(171, 21);
+            this.LBA1Twin_cboInventory.TabIndex = 9;
+            this.LBA1Twin_cboInventory.SelectedIndexChanged += new System.EventHandler(this.LBA1Twin_CboInventory_SelectedIndexChanged);
             // 
-            // lblLBA1Inventory
+            // LBA1Twin_lbInventory
             // 
-            this.lblLBA1Inventory.AutoSize = true;
-            this.lblLBA1Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Inventory.Location = new System.Drawing.Point(6, 117);
-            this.lblLBA1Inventory.Name = "lblLBA1Inventory";
-            this.lblLBA1Inventory.Size = new System.Drawing.Size(60, 13);
-            this.lblLBA1Inventory.TabIndex = 24;
-            this.lblLBA1Inventory.Text = "Inventory";
+            this.LBA1Twin_lbInventory.AutoSize = true;
+            this.LBA1Twin_lbInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lbInventory.Location = new System.Drawing.Point(6, 117);
+            this.LBA1Twin_lbInventory.Name = "LBA1Twin_lbInventory";
+            this.LBA1Twin_lbInventory.Size = new System.Drawing.Size(60, 13);
+            this.LBA1Twin_lbInventory.TabIndex = 24;
+            this.LBA1Twin_lbInventory.Text = "Inventory";
             // 
-            // lblLBA1Kashers
+            // LBA1Twin_lblKashers
             // 
-            this.lblLBA1Kashers.AutoSize = true;
-            this.lblLBA1Kashers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Kashers.Location = new System.Drawing.Point(6, 91);
-            this.lblLBA1Kashers.Name = "lblLBA1Kashers";
-            this.lblLBA1Kashers.Size = new System.Drawing.Size(52, 13);
-            this.lblLBA1Kashers.TabIndex = 23;
-            this.lblLBA1Kashers.Text = "Kashers";
+            this.LBA1Twin_lblKashers.AutoSize = true;
+            this.LBA1Twin_lblKashers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lblKashers.Location = new System.Drawing.Point(6, 91);
+            this.LBA1Twin_lblKashers.Name = "LBA1Twin_lblKashers";
+            this.LBA1Twin_lblKashers.Size = new System.Drawing.Size(52, 13);
+            this.LBA1Twin_lblKashers.TabIndex = 23;
+            this.LBA1Twin_lblKashers.Text = "Kashers";
             // 
-            // lblLBA1MagicPoints
+            // LBA1Twin_lblMagicPoints
             // 
-            this.lblLBA1MagicPoints.AutoSize = true;
-            this.lblLBA1MagicPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1MagicPoints.Location = new System.Drawing.Point(197, 38);
-            this.lblLBA1MagicPoints.Name = "lblLBA1MagicPoints";
-            this.lblLBA1MagicPoints.Size = new System.Drawing.Size(80, 13);
-            this.lblLBA1MagicPoints.TabIndex = 22;
-            this.lblLBA1MagicPoints.Text = "Magic Points";
+            this.LBA1Twin_lblMagicPoints.AutoSize = true;
+            this.LBA1Twin_lblMagicPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lblMagicPoints.Location = new System.Drawing.Point(197, 38);
+            this.LBA1Twin_lblMagicPoints.Name = "LBA1Twin_lblMagicPoints";
+            this.LBA1Twin_lblMagicPoints.Size = new System.Drawing.Size(80, 13);
+            this.LBA1Twin_lblMagicPoints.TabIndex = 22;
+            this.LBA1Twin_lblMagicPoints.Text = "Magic Points";
             // 
-            // lblLBA1Health
+            // LBA1Twin_lblHealth
             // 
-            this.lblLBA1Health.AutoSize = true;
-            this.lblLBA1Health.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Health.Location = new System.Drawing.Point(6, 64);
-            this.lblLBA1Health.Name = "lblLBA1Health";
-            this.lblLBA1Health.Size = new System.Drawing.Size(44, 13);
-            this.lblLBA1Health.TabIndex = 21;
-            this.lblLBA1Health.Text = "Health";
+            this.LBA1Twin_lblHealth.AutoSize = true;
+            this.LBA1Twin_lblHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lblHealth.Location = new System.Drawing.Point(6, 64);
+            this.LBA1Twin_lblHealth.Name = "LBA1Twin_lblHealth";
+            this.LBA1Twin_lblHealth.Size = new System.Drawing.Size(44, 13);
+            this.LBA1Twin_lblHealth.TabIndex = 21;
+            this.LBA1Twin_lblHealth.Text = "Health";
             // 
-            // lblLBA1CloverBoxes
+            // LBA1Twin_lblCloverBoxes
             // 
-            this.lblLBA1CloverBoxes.AutoSize = true;
-            this.lblLBA1CloverBoxes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1CloverBoxes.Location = new System.Drawing.Point(6, 12);
-            this.lblLBA1CloverBoxes.Name = "lblLBA1CloverBoxes";
-            this.lblLBA1CloverBoxes.Size = new System.Drawing.Size(81, 13);
-            this.lblLBA1CloverBoxes.TabIndex = 14;
-            this.lblLBA1CloverBoxes.Text = "Clover Boxes";
+            this.LBA1Twin_lblCloverBoxes.AutoSize = true;
+            this.LBA1Twin_lblCloverBoxes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lblCloverBoxes.Location = new System.Drawing.Point(6, 12);
+            this.LBA1Twin_lblCloverBoxes.Name = "LBA1Twin_lblCloverBoxes";
+            this.LBA1Twin_lblCloverBoxes.Size = new System.Drawing.Size(81, 13);
+            this.LBA1Twin_lblCloverBoxes.TabIndex = 14;
+            this.LBA1Twin_lblCloverBoxes.Text = "Clover Boxes";
             // 
-            // txtLBA1CloverBoxes
+            // LBA1Twin_txtCloverBoxes
             // 
-            this.txtLBA1CloverBoxes.BackColor = System.Drawing.SystemColors.Window;
-            this.txtLBA1CloverBoxes.Location = new System.Drawing.Point(106, 9);
-            this.txtLBA1CloverBoxes.Name = "txtLBA1CloverBoxes";
-            this.txtLBA1CloverBoxes.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA1CloverBoxes.TabIndex = 1;
+            this.LBA1Twin_txtCloverBoxes.BackColor = System.Drawing.SystemColors.Window;
+            this.LBA1Twin_txtCloverBoxes.Location = new System.Drawing.Point(106, 9);
+            this.LBA1Twin_txtCloverBoxes.Name = "LBA1Twin_txtCloverBoxes";
+            this.LBA1Twin_txtCloverBoxes.Size = new System.Drawing.Size(44, 20);
+            this.LBA1Twin_txtCloverBoxes.TabIndex = 1;
             // 
-            // btnLBA1MaxAll
+            // LBA1Twin_btnMaxAll
             // 
-            this.btnLBA1MaxAll.Location = new System.Drawing.Point(162, 144);
-            this.btnLBA1MaxAll.Name = "btnLBA1MaxAll";
-            this.btnLBA1MaxAll.Size = new System.Drawing.Size(63, 23);
-            this.btnLBA1MaxAll.TabIndex = 13;
-            this.btnLBA1MaxAll.Text = "Max All";
-            this.btnLBA1MaxAll.UseVisualStyleBackColor = true;
-            this.btnLBA1MaxAll.Click += new System.EventHandler(this.BtnLBA1MaxAll_Click);
+            this.LBA1Twin_btnMaxAll.Location = new System.Drawing.Point(162, 144);
+            this.LBA1Twin_btnMaxAll.Name = "LBA1Twin_btnMaxAll";
+            this.LBA1Twin_btnMaxAll.Size = new System.Drawing.Size(63, 23);
+            this.LBA1Twin_btnMaxAll.TabIndex = 13;
+            this.LBA1Twin_btnMaxAll.Text = "Max All";
+            this.LBA1Twin_btnMaxAll.UseVisualStyleBackColor = true;
+            this.LBA1Twin_btnMaxAll.Click += new System.EventHandler(this.LBA1Twin_BtnMaxAll_Click);
             // 
-            // lblLBA1Clovers
+            // LBA1Twin_lblClovers
             // 
-            this.lblLBA1Clovers.AutoSize = true;
-            this.lblLBA1Clovers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Clovers.Location = new System.Drawing.Point(197, 12);
-            this.lblLBA1Clovers.Name = "lblLBA1Clovers";
-            this.lblLBA1Clovers.Size = new System.Drawing.Size(49, 13);
-            this.lblLBA1Clovers.TabIndex = 17;
-            this.lblLBA1Clovers.Text = "Clovers";
+            this.LBA1Twin_lblClovers.AutoSize = true;
+            this.LBA1Twin_lblClovers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Twin_lblClovers.Location = new System.Drawing.Point(197, 12);
+            this.LBA1Twin_lblClovers.Name = "LBA1Twin_lblClovers";
+            this.LBA1Twin_lblClovers.Size = new System.Drawing.Size(49, 13);
+            this.LBA1Twin_lblClovers.TabIndex = 17;
+            this.LBA1Twin_lblClovers.Text = "Clovers";
             // 
-            // txtLBA1Clovers
+            // LBA1Twin_txtClovers
             // 
-            this.txtLBA1Clovers.Location = new System.Drawing.Point(284, 9);
-            this.txtLBA1Clovers.Name = "txtLBA1Clovers";
-            this.txtLBA1Clovers.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA1Clovers.TabIndex = 2;
+            this.LBA1Twin_txtClovers.Location = new System.Drawing.Point(284, 9);
+            this.LBA1Twin_txtClovers.Name = "LBA1Twin_txtClovers";
+            this.LBA1Twin_txtClovers.Size = new System.Drawing.Size(44, 20);
+            this.LBA1Twin_txtClovers.TabIndex = 2;
             // 
             // tpLBA1Other
             // 
             this.tpLBA1Other.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA1Other.Controls.Add(this.chkLBA1OtherChapter);
-            this.tpLBA1Other.Controls.Add(this.cboLBA1OtherChapter);
-            this.tpLBA1Other.Controls.Add(this.lblLBA1OtherChapter);
-            this.tpLBA1Other.Controls.Add(this.chkLBA1MoviesValue);
-            this.tpLBA1Other.Controls.Add(this.cboLBA1Movies);
-            this.tpLBA1Other.Controls.Add(this.lblLBA1Movies);
-            this.tpLBA1Other.Controls.Add(this.chkLBA1QuestValue);
-            this.tpLBA1Other.Controls.Add(this.cboLBA1Quest);
-            this.tpLBA1Other.Controls.Add(this.lblLBA1Quest);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkChapter);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_cboChapter);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_lblChapter);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkMoviesValue);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_cboMovies);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_lblMovies);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkQuestValue);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_cboQuest);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_lblQuest);
             this.tpLBA1Other.Location = new System.Drawing.Point(4, 22);
             this.tpLBA1Other.Name = "tpLBA1Other";
             this.tpLBA1Other.Padding = new System.Windows.Forms.Padding(3);
@@ -459,108 +490,108 @@
             this.tpLBA1Other.TabIndex = 1;
             this.tpLBA1Other.Text = "Other";
             // 
-            // chkLBA1OtherChapter
+            // LBA1Othr_chkChapter
             // 
-            this.chkLBA1OtherChapter.AutoSize = true;
-            this.chkLBA1OtherChapter.Location = new System.Drawing.Point(301, 63);
-            this.chkLBA1OtherChapter.Name = "chkLBA1OtherChapter";
-            this.chkLBA1OtherChapter.Size = new System.Drawing.Size(15, 14);
-            this.chkLBA1OtherChapter.TabIndex = 8;
-            this.chkLBA1OtherChapter.UseVisualStyleBackColor = true;
+            this.LBA1Othr_chkChapter.AutoSize = true;
+            this.LBA1Othr_chkChapter.Location = new System.Drawing.Point(301, 63);
+            this.LBA1Othr_chkChapter.Name = "LBA1Othr_chkChapter";
+            this.LBA1Othr_chkChapter.Size = new System.Drawing.Size(15, 14);
+            this.LBA1Othr_chkChapter.TabIndex = 8;
+            this.LBA1Othr_chkChapter.UseVisualStyleBackColor = true;
             // 
-            // cboLBA1OtherChapter
+            // LBA1Othr_cboChapter
             // 
-            this.cboLBA1OtherChapter.FormattingEnabled = true;
-            this.cboLBA1OtherChapter.Items.AddRange(new object[] {
-            "0: Still inside Citadel",
-            "1: Exited Citadel",
-            "2: Zoe Captured",
-            "3: Found Tunic",
-            "4: Boarded Ferry at Citadel Port",
-            "5: Spoke to Astronomer",
-            "6: Picked up book of BU",
-            "7: Read slate about Le Bourgne under Twinsen\'s House",
-            "8: Stole Pirates Flag",
-            "9: Picked up key from chest in museum.",
+            this.LBA1Othr_cboChapter.FormattingEnabled = true;
+            this.LBA1Othr_cboChapter.Items.AddRange(new object[] {
+            "00: Still inside Citadel",
+            "01: Exited Citadel",
+            "02: Zoe Captured",
+            "03: Found Tunic",
+            "04: Boarded Ferry at Citadel Port",
+            "05: Spoke to Astronomer",
+            "06: Picked up book of BU",
+            "07: Read slate about Le Bourgne under Twinsen\'s House",
+            "08: Stole Pirates Flag",
+            "09: Picked up key from chest in museum.",
             "10",
             "11",
             "12",
             "13: Tibbet island: Spoke to Rabbi-bunny.",
             "14: Stole FunFrocks sabre",
             "15: Took architechs pass"});
-            this.cboLBA1OtherChapter.Location = new System.Drawing.Point(64, 60);
-            this.cboLBA1OtherChapter.Name = "cboLBA1OtherChapter";
-            this.cboLBA1OtherChapter.Size = new System.Drawing.Size(231, 21);
-            this.cboLBA1OtherChapter.TabIndex = 7;
-            this.cboLBA1OtherChapter.SelectedIndexChanged += new System.EventHandler(this.CboLBA1OtherChapter_SelectedIndexChanged);
+            this.LBA1Othr_cboChapter.Location = new System.Drawing.Point(64, 60);
+            this.LBA1Othr_cboChapter.Name = "LBA1Othr_cboChapter";
+            this.LBA1Othr_cboChapter.Size = new System.Drawing.Size(231, 21);
+            this.LBA1Othr_cboChapter.TabIndex = 7;
+            this.LBA1Othr_cboChapter.SelectedIndexChanged += new System.EventHandler(this.CboLBA1OtherChapter_SelectedIndexChanged);
             // 
-            // lblLBA1OtherChapter
+            // LBA1Othr_lblChapter
             // 
-            this.lblLBA1OtherChapter.AutoSize = true;
-            this.lblLBA1OtherChapter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1OtherChapter.Location = new System.Drawing.Point(6, 63);
-            this.lblLBA1OtherChapter.Name = "lblLBA1OtherChapter";
-            this.lblLBA1OtherChapter.Size = new System.Drawing.Size(51, 13);
-            this.lblLBA1OtherChapter.TabIndex = 6;
-            this.lblLBA1OtherChapter.Text = "Chapter";
+            this.LBA1Othr_lblChapter.AutoSize = true;
+            this.LBA1Othr_lblChapter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Othr_lblChapter.Location = new System.Drawing.Point(6, 63);
+            this.LBA1Othr_lblChapter.Name = "LBA1Othr_lblChapter";
+            this.LBA1Othr_lblChapter.Size = new System.Drawing.Size(51, 13);
+            this.LBA1Othr_lblChapter.TabIndex = 6;
+            this.LBA1Othr_lblChapter.Text = "Chapter";
             // 
-            // chkLBA1MoviesValue
+            // LBA1Othr_chkMoviesValue
             // 
-            this.chkLBA1MoviesValue.AutoSize = true;
-            this.chkLBA1MoviesValue.Location = new System.Drawing.Point(301, 36);
-            this.chkLBA1MoviesValue.Name = "chkLBA1MoviesValue";
-            this.chkLBA1MoviesValue.Size = new System.Drawing.Size(15, 14);
-            this.chkLBA1MoviesValue.TabIndex = 5;
-            this.chkLBA1MoviesValue.UseVisualStyleBackColor = true;
-            this.chkLBA1MoviesValue.CheckedChanged += new System.EventHandler(this.ChkLBA1MoviesValue_CheckedChanged);
+            this.LBA1Othr_chkMoviesValue.AutoSize = true;
+            this.LBA1Othr_chkMoviesValue.Location = new System.Drawing.Point(301, 36);
+            this.LBA1Othr_chkMoviesValue.Name = "LBA1Othr_chkMoviesValue";
+            this.LBA1Othr_chkMoviesValue.Size = new System.Drawing.Size(15, 14);
+            this.LBA1Othr_chkMoviesValue.TabIndex = 5;
+            this.LBA1Othr_chkMoviesValue.UseVisualStyleBackColor = true;
+            this.LBA1Othr_chkMoviesValue.CheckedChanged += new System.EventHandler(this.ChkLBA1MoviesValue_CheckedChanged);
             // 
-            // cboLBA1Movies
+            // LBA1Othr_cboMovies
             // 
-            this.cboLBA1Movies.FormattingEnabled = true;
-            this.cboLBA1Movies.Location = new System.Drawing.Point(64, 33);
-            this.cboLBA1Movies.Name = "cboLBA1Movies";
-            this.cboLBA1Movies.Size = new System.Drawing.Size(231, 21);
-            this.cboLBA1Movies.TabIndex = 4;
-            this.cboLBA1Movies.SelectedIndexChanged += new System.EventHandler(this.cboLBA1Movies_SelectedIndexChanged);
+            this.LBA1Othr_cboMovies.FormattingEnabled = true;
+            this.LBA1Othr_cboMovies.Location = new System.Drawing.Point(64, 33);
+            this.LBA1Othr_cboMovies.Name = "LBA1Othr_cboMovies";
+            this.LBA1Othr_cboMovies.Size = new System.Drawing.Size(231, 21);
+            this.LBA1Othr_cboMovies.TabIndex = 4;
+            this.LBA1Othr_cboMovies.SelectedIndexChanged += new System.EventHandler(this.cboLBA1Movies_SelectedIndexChanged);
             // 
-            // lblLBA1Movies
+            // LBA1Othr_lblMovies
             // 
-            this.lblLBA1Movies.AutoSize = true;
-            this.lblLBA1Movies.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Movies.Location = new System.Drawing.Point(6, 36);
-            this.lblLBA1Movies.Name = "lblLBA1Movies";
-            this.lblLBA1Movies.Size = new System.Drawing.Size(47, 13);
-            this.lblLBA1Movies.TabIndex = 3;
-            this.lblLBA1Movies.Text = "Movies";
+            this.LBA1Othr_lblMovies.AutoSize = true;
+            this.LBA1Othr_lblMovies.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Othr_lblMovies.Location = new System.Drawing.Point(6, 36);
+            this.LBA1Othr_lblMovies.Name = "LBA1Othr_lblMovies";
+            this.LBA1Othr_lblMovies.Size = new System.Drawing.Size(47, 13);
+            this.LBA1Othr_lblMovies.TabIndex = 3;
+            this.LBA1Othr_lblMovies.Text = "Movies";
             // 
-            // chkLBA1QuestValue
+            // LBA1Othr_chkQuestValue
             // 
-            this.chkLBA1QuestValue.AutoSize = true;
-            this.chkLBA1QuestValue.Location = new System.Drawing.Point(301, 9);
-            this.chkLBA1QuestValue.Name = "chkLBA1QuestValue";
-            this.chkLBA1QuestValue.Size = new System.Drawing.Size(15, 14);
-            this.chkLBA1QuestValue.TabIndex = 2;
-            this.chkLBA1QuestValue.UseVisualStyleBackColor = true;
-            this.chkLBA1QuestValue.CheckedChanged += new System.EventHandler(this.ChkLBA1QuestValue_CheckedChanged);
+            this.LBA1Othr_chkQuestValue.AutoSize = true;
+            this.LBA1Othr_chkQuestValue.Location = new System.Drawing.Point(301, 9);
+            this.LBA1Othr_chkQuestValue.Name = "LBA1Othr_chkQuestValue";
+            this.LBA1Othr_chkQuestValue.Size = new System.Drawing.Size(15, 14);
+            this.LBA1Othr_chkQuestValue.TabIndex = 2;
+            this.LBA1Othr_chkQuestValue.UseVisualStyleBackColor = true;
+            this.LBA1Othr_chkQuestValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_ChkQuestValue_CheckedChanged);
             // 
-            // cboLBA1Quest
+            // LBA1Othr_cboQuest
             // 
-            this.cboLBA1Quest.FormattingEnabled = true;
-            this.cboLBA1Quest.Location = new System.Drawing.Point(64, 6);
-            this.cboLBA1Quest.Name = "cboLBA1Quest";
-            this.cboLBA1Quest.Size = new System.Drawing.Size(231, 21);
-            this.cboLBA1Quest.TabIndex = 1;
-            this.cboLBA1Quest.SelectedIndexChanged += new System.EventHandler(this.CboLBA1Quest_SelectedIndexChanged);
+            this.LBA1Othr_cboQuest.FormattingEnabled = true;
+            this.LBA1Othr_cboQuest.Location = new System.Drawing.Point(64, 6);
+            this.LBA1Othr_cboQuest.Name = "LBA1Othr_cboQuest";
+            this.LBA1Othr_cboQuest.Size = new System.Drawing.Size(231, 21);
+            this.LBA1Othr_cboQuest.TabIndex = 1;
+            this.LBA1Othr_cboQuest.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_CboQuest_SelectedIndexChanged);
             // 
-            // lblLBA1Quest
+            // LBA1Othr_lblQuest
             // 
-            this.lblLBA1Quest.AutoSize = true;
-            this.lblLBA1Quest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1Quest.Location = new System.Drawing.Point(6, 9);
-            this.lblLBA1Quest.Name = "lblLBA1Quest";
-            this.lblLBA1Quest.Size = new System.Drawing.Size(40, 13);
-            this.lblLBA1Quest.TabIndex = 0;
-            this.lblLBA1Quest.Text = "Quest";
+            this.LBA1Othr_lblQuest.AutoSize = true;
+            this.LBA1Othr_lblQuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Othr_lblQuest.Location = new System.Drawing.Point(6, 9);
+            this.LBA1Othr_lblQuest.Name = "LBA1Othr_lblQuest";
+            this.LBA1Othr_lblQuest.Size = new System.Drawing.Size(40, 13);
+            this.LBA1Othr_lblQuest.TabIndex = 0;
+            this.LBA1Othr_lblQuest.Text = "Quest";
             // 
             // tpFlying
             // 
@@ -734,25 +765,24 @@
             this.btnLBA1FlyingNW.TabIndex = 0;
             this.btnLBA1FlyingNW.Text = "NW";
             this.btnLBA1FlyingNW.UseVisualStyleBackColor = true;
-            this.btnLBA1FlyingNW.Click += new System.EventHandler(this.BtnLBA1FlyingNW_Click);
             // 
             // tpTeleport
             // 
             this.tpTeleport.BackColor = System.Drawing.Color.MistyRose;
-            this.tpTeleport.Controls.Add(this.txtLBA1TeleportXPos);
-            this.tpTeleport.Controls.Add(this.txtLBA1TeleportYPos);
-            this.tpTeleport.Controls.Add(this.lblLBA1TeleportXPos);
-            this.tpTeleport.Controls.Add(this.lblLBA1TeleportYPos);
-            this.tpTeleport.Controls.Add(this.btnLBA1TeleportScan);
-            this.tpTeleport.Controls.Add(this.chkLBA1TeleportLock);
-            this.tpTeleport.Controls.Add(this.txtLBA1TeleportRefreshInterval);
-            this.tpTeleport.Controls.Add(this.lblLBA1TeleportAutoRefresh);
-            this.tpTeleport.Controls.Add(this.btnLBA1TeleportStartStopRefresh);
-            this.tpTeleport.Controls.Add(this.txtLBA1TeleportZPos);
-            this.tpTeleport.Controls.Add(this.btnLBA1TeleportSet);
-            this.tpTeleport.Controls.Add(this.lblLBA1TeleportZPos);
-            this.tpTeleport.Controls.Add(this.txtLBA1TeleportFacing);
-            this.tpTeleport.Controls.Add(this.lblLBA1TeleportFacing);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_txtXPos);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_txtYPos);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_lblXPos);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_lblYPos);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_btnScan);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_chkLock);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_txtRefreshInterval);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_lblAutoRefresh);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_btnStartStopRefresh);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_txtZPos);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_btnSet);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_lblZPos);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_txtFacing);
+            this.tpTeleport.Controls.Add(this.LBA1Tel_lblFacing);
             this.tpTeleport.Location = new System.Drawing.Point(4, 22);
             this.tpTeleport.Name = "tpTeleport";
             this.tpTeleport.Padding = new System.Windows.Forms.Padding(3);
@@ -760,146 +790,146 @@
             this.tpTeleport.TabIndex = 2;
             this.tpTeleport.Text = "Teleport";
             // 
-            // txtLBA1TeleportXPos
+            // LBA1Tel_txtXPos
             // 
-            this.txtLBA1TeleportXPos.Location = new System.Drawing.Point(115, 9);
-            this.txtLBA1TeleportXPos.Name = "txtLBA1TeleportXPos";
-            this.txtLBA1TeleportXPos.Size = new System.Drawing.Size(123, 20);
-            this.txtLBA1TeleportXPos.TabIndex = 56;
+            this.LBA1Tel_txtXPos.Location = new System.Drawing.Point(115, 9);
+            this.LBA1Tel_txtXPos.Name = "LBA1Tel_txtXPos";
+            this.LBA1Tel_txtXPos.Size = new System.Drawing.Size(123, 20);
+            this.LBA1Tel_txtXPos.TabIndex = 56;
             // 
-            // txtLBA1TeleportYPos
+            // LBA1Tel_txtYPos
             // 
-            this.txtLBA1TeleportYPos.Location = new System.Drawing.Point(115, 35);
-            this.txtLBA1TeleportYPos.Name = "txtLBA1TeleportYPos";
-            this.txtLBA1TeleportYPos.Size = new System.Drawing.Size(123, 20);
-            this.txtLBA1TeleportYPos.TabIndex = 55;
+            this.LBA1Tel_txtYPos.Location = new System.Drawing.Point(115, 35);
+            this.LBA1Tel_txtYPos.Name = "LBA1Tel_txtYPos";
+            this.LBA1Tel_txtYPos.Size = new System.Drawing.Size(123, 20);
+            this.LBA1Tel_txtYPos.TabIndex = 55;
             // 
-            // lblLBA1TeleportXPos
+            // LBA1Tel_lblXPos
             // 
-            this.lblLBA1TeleportXPos.AutoSize = true;
-            this.lblLBA1TeleportXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1TeleportXPos.Location = new System.Drawing.Point(8, 12);
-            this.lblLBA1TeleportXPos.Name = "lblLBA1TeleportXPos";
-            this.lblLBA1TeleportXPos.Size = new System.Drawing.Size(36, 13);
-            this.lblLBA1TeleportXPos.TabIndex = 54;
-            this.lblLBA1TeleportXPos.Text = "XPos";
+            this.LBA1Tel_lblXPos.AutoSize = true;
+            this.LBA1Tel_lblXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Tel_lblXPos.Location = new System.Drawing.Point(8, 12);
+            this.LBA1Tel_lblXPos.Name = "LBA1Tel_lblXPos";
+            this.LBA1Tel_lblXPos.Size = new System.Drawing.Size(36, 13);
+            this.LBA1Tel_lblXPos.TabIndex = 54;
+            this.LBA1Tel_lblXPos.Text = "XPos";
             // 
-            // lblLBA1TeleportYPos
+            // LBA1Tel_lblYPos
             // 
-            this.lblLBA1TeleportYPos.AutoSize = true;
-            this.lblLBA1TeleportYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1TeleportYPos.Location = new System.Drawing.Point(8, 38);
-            this.lblLBA1TeleportYPos.Name = "lblLBA1TeleportYPos";
-            this.lblLBA1TeleportYPos.Size = new System.Drawing.Size(36, 13);
-            this.lblLBA1TeleportYPos.TabIndex = 53;
-            this.lblLBA1TeleportYPos.Text = "YPos";
+            this.LBA1Tel_lblYPos.AutoSize = true;
+            this.LBA1Tel_lblYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Tel_lblYPos.Location = new System.Drawing.Point(8, 38);
+            this.LBA1Tel_lblYPos.Name = "LBA1Tel_lblYPos";
+            this.LBA1Tel_lblYPos.Size = new System.Drawing.Size(36, 13);
+            this.LBA1Tel_lblYPos.TabIndex = 53;
+            this.LBA1Tel_lblYPos.Text = "YPos";
             // 
-            // btnLBA1TeleportScan
+            // LBA1Tel_btnScan
             // 
-            this.btnLBA1TeleportScan.Location = new System.Drawing.Point(94, 149);
-            this.btnLBA1TeleportScan.Name = "btnLBA1TeleportScan";
-            this.btnLBA1TeleportScan.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA1TeleportScan.TabIndex = 52;
-            this.btnLBA1TeleportScan.Text = "Scan";
-            this.btnLBA1TeleportScan.UseVisualStyleBackColor = true;
-            this.btnLBA1TeleportScan.Click += new System.EventHandler(this.BtnLBA1TeleportScan_Click);
+            this.LBA1Tel_btnScan.Location = new System.Drawing.Point(94, 149);
+            this.LBA1Tel_btnScan.Name = "LBA1Tel_btnScan";
+            this.LBA1Tel_btnScan.Size = new System.Drawing.Size(75, 23);
+            this.LBA1Tel_btnScan.TabIndex = 52;
+            this.LBA1Tel_btnScan.Text = "Scan";
+            this.LBA1Tel_btnScan.UseVisualStyleBackColor = true;
+            this.LBA1Tel_btnScan.Click += new System.EventHandler(this.LBA1Tel_BtnScan_Click);
             // 
-            // chkLBA1TeleportLock
+            // LBA1Tel_chkLock
             // 
-            this.chkLBA1TeleportLock.AutoSize = true;
-            this.chkLBA1TeleportLock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLBA1TeleportLock.Location = new System.Drawing.Point(244, 65);
-            this.chkLBA1TeleportLock.Name = "chkLBA1TeleportLock";
-            this.chkLBA1TeleportLock.Size = new System.Drawing.Size(54, 17);
-            this.chkLBA1TeleportLock.TabIndex = 51;
-            this.chkLBA1TeleportLock.Text = "Lock";
-            this.chkLBA1TeleportLock.UseVisualStyleBackColor = true;
-            this.chkLBA1TeleportLock.CheckedChanged += new System.EventHandler(this.ChkLBA1TeleportLock_CheckedChanged);
+            this.LBA1Tel_chkLock.AutoSize = true;
+            this.LBA1Tel_chkLock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Tel_chkLock.Location = new System.Drawing.Point(244, 65);
+            this.LBA1Tel_chkLock.Name = "LBA1Tel_chkLock";
+            this.LBA1Tel_chkLock.Size = new System.Drawing.Size(54, 17);
+            this.LBA1Tel_chkLock.TabIndex = 51;
+            this.LBA1Tel_chkLock.Text = "Lock";
+            this.LBA1Tel_chkLock.UseVisualStyleBackColor = true;
+            this.LBA1Tel_chkLock.CheckedChanged += new System.EventHandler(this.LBA1Tel_ChkLock_CheckedChanged);
             // 
-            // txtLBA1TeleportRefreshInterval
+            // LBA1Tel_txtRefreshInterval
             // 
-            this.txtLBA1TeleportRefreshInterval.Location = new System.Drawing.Point(115, 114);
-            this.txtLBA1TeleportRefreshInterval.Name = "txtLBA1TeleportRefreshInterval";
-            this.txtLBA1TeleportRefreshInterval.Size = new System.Drawing.Size(123, 20);
-            this.txtLBA1TeleportRefreshInterval.TabIndex = 50;
+            this.LBA1Tel_txtRefreshInterval.Location = new System.Drawing.Point(115, 114);
+            this.LBA1Tel_txtRefreshInterval.Name = "LBA1Tel_txtRefreshInterval";
+            this.LBA1Tel_txtRefreshInterval.Size = new System.Drawing.Size(123, 20);
+            this.LBA1Tel_txtRefreshInterval.TabIndex = 50;
             // 
-            // lblLBA1TeleportAutoRefresh
+            // LBA1Tel_lblAutoRefresh
             // 
-            this.lblLBA1TeleportAutoRefresh.AutoSize = true;
-            this.lblLBA1TeleportAutoRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1TeleportAutoRefresh.Location = new System.Drawing.Point(8, 119);
-            this.lblLBA1TeleportAutoRefresh.Name = "lblLBA1TeleportAutoRefresh";
-            this.lblLBA1TeleportAutoRefresh.Size = new System.Drawing.Size(103, 13);
-            this.lblLBA1TeleportAutoRefresh.TabIndex = 49;
-            this.lblLBA1TeleportAutoRefresh.Text = "Auto-refresh (ms)";
+            this.LBA1Tel_lblAutoRefresh.AutoSize = true;
+            this.LBA1Tel_lblAutoRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Tel_lblAutoRefresh.Location = new System.Drawing.Point(8, 119);
+            this.LBA1Tel_lblAutoRefresh.Name = "LBA1Tel_lblAutoRefresh";
+            this.LBA1Tel_lblAutoRefresh.Size = new System.Drawing.Size(103, 13);
+            this.LBA1Tel_lblAutoRefresh.TabIndex = 49;
+            this.LBA1Tel_lblAutoRefresh.Text = "Auto-refresh (ms)";
             // 
-            // btnLBA1TeleportStartStopRefresh
+            // LBA1Tel_btnStartStopRefresh
             // 
-            this.btnLBA1TeleportStartStopRefresh.Location = new System.Drawing.Point(244, 112);
-            this.btnLBA1TeleportStartStopRefresh.Name = "btnLBA1TeleportStartStopRefresh";
-            this.btnLBA1TeleportStartStopRefresh.Size = new System.Drawing.Size(54, 23);
-            this.btnLBA1TeleportStartStopRefresh.TabIndex = 48;
-            this.btnLBA1TeleportStartStopRefresh.Text = "Start";
-            this.btnLBA1TeleportStartStopRefresh.UseVisualStyleBackColor = true;
-            this.btnLBA1TeleportStartStopRefresh.Click += new System.EventHandler(this.BtnLBA1StartStopRefresh_Click);
+            this.LBA1Tel_btnStartStopRefresh.Location = new System.Drawing.Point(244, 112);
+            this.LBA1Tel_btnStartStopRefresh.Name = "LBA1Tel_btnStartStopRefresh";
+            this.LBA1Tel_btnStartStopRefresh.Size = new System.Drawing.Size(54, 23);
+            this.LBA1Tel_btnStartStopRefresh.TabIndex = 48;
+            this.LBA1Tel_btnStartStopRefresh.Text = "Start";
+            this.LBA1Tel_btnStartStopRefresh.UseVisualStyleBackColor = true;
+            this.LBA1Tel_btnStartStopRefresh.Click += new System.EventHandler(this.BtnLBA1StartStopRefresh_Click);
             // 
-            // txtLBA1TeleportZPos
+            // LBA1Tel_txtZPos
             // 
-            this.txtLBA1TeleportZPos.Location = new System.Drawing.Point(115, 62);
-            this.txtLBA1TeleportZPos.Name = "txtLBA1TeleportZPos";
-            this.txtLBA1TeleportZPos.Size = new System.Drawing.Size(123, 20);
-            this.txtLBA1TeleportZPos.TabIndex = 47;
+            this.LBA1Tel_txtZPos.Location = new System.Drawing.Point(115, 62);
+            this.LBA1Tel_txtZPos.Name = "LBA1Tel_txtZPos";
+            this.LBA1Tel_txtZPos.Size = new System.Drawing.Size(123, 20);
+            this.LBA1Tel_txtZPos.TabIndex = 47;
             // 
-            // btnLBA1TeleportSet
+            // LBA1Tel_btnSet
             // 
-            this.btnLBA1TeleportSet.Location = new System.Drawing.Point(175, 149);
-            this.btnLBA1TeleportSet.Name = "btnLBA1TeleportSet";
-            this.btnLBA1TeleportSet.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA1TeleportSet.TabIndex = 46;
-            this.btnLBA1TeleportSet.Text = "Set";
-            this.btnLBA1TeleportSet.UseVisualStyleBackColor = true;
-            this.btnLBA1TeleportSet.Click += new System.EventHandler(this.BtnLBA1TeleportSet_Click);
+            this.LBA1Tel_btnSet.Location = new System.Drawing.Point(175, 149);
+            this.LBA1Tel_btnSet.Name = "LBA1Tel_btnSet";
+            this.LBA1Tel_btnSet.Size = new System.Drawing.Size(75, 23);
+            this.LBA1Tel_btnSet.TabIndex = 46;
+            this.LBA1Tel_btnSet.Text = "Set";
+            this.LBA1Tel_btnSet.UseVisualStyleBackColor = true;
+            this.LBA1Tel_btnSet.Click += new System.EventHandler(this.LBA1Tel_BtntSet_Click);
             // 
-            // lblLBA1TeleportZPos
+            // LBA1Tel_lblZPos
             // 
-            this.lblLBA1TeleportZPos.AutoSize = true;
-            this.lblLBA1TeleportZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1TeleportZPos.Location = new System.Drawing.Point(8, 65);
-            this.lblLBA1TeleportZPos.Name = "lblLBA1TeleportZPos";
-            this.lblLBA1TeleportZPos.Size = new System.Drawing.Size(44, 13);
-            this.lblLBA1TeleportZPos.TabIndex = 45;
-            this.lblLBA1TeleportZPos.Text = "Height";
+            this.LBA1Tel_lblZPos.AutoSize = true;
+            this.LBA1Tel_lblZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Tel_lblZPos.Location = new System.Drawing.Point(8, 65);
+            this.LBA1Tel_lblZPos.Name = "LBA1Tel_lblZPos";
+            this.LBA1Tel_lblZPos.Size = new System.Drawing.Size(44, 13);
+            this.LBA1Tel_lblZPos.TabIndex = 45;
+            this.LBA1Tel_lblZPos.Text = "Height";
             // 
-            // txtLBA1TeleportFacing
+            // LBA1Tel_txtFacing
             // 
-            this.txtLBA1TeleportFacing.Location = new System.Drawing.Point(115, 88);
-            this.txtLBA1TeleportFacing.Name = "txtLBA1TeleportFacing";
-            this.txtLBA1TeleportFacing.Size = new System.Drawing.Size(123, 20);
-            this.txtLBA1TeleportFacing.TabIndex = 25;
+            this.LBA1Tel_txtFacing.Location = new System.Drawing.Point(115, 88);
+            this.LBA1Tel_txtFacing.Name = "LBA1Tel_txtFacing";
+            this.LBA1Tel_txtFacing.Size = new System.Drawing.Size(123, 20);
+            this.LBA1Tel_txtFacing.TabIndex = 25;
             // 
-            // lblLBA1TeleportFacing
+            // LBA1Tel_lblFacing
             // 
-            this.lblLBA1TeleportFacing.AutoSize = true;
-            this.lblLBA1TeleportFacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1TeleportFacing.Location = new System.Drawing.Point(8, 91);
-            this.lblLBA1TeleportFacing.Name = "lblLBA1TeleportFacing";
-            this.lblLBA1TeleportFacing.Size = new System.Drawing.Size(45, 13);
-            this.lblLBA1TeleportFacing.TabIndex = 14;
-            this.lblLBA1TeleportFacing.Text = "Facing";
+            this.LBA1Tel_lblFacing.AutoSize = true;
+            this.LBA1Tel_lblFacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Tel_lblFacing.Location = new System.Drawing.Point(8, 91);
+            this.LBA1Tel_lblFacing.Name = "LBA1Tel_lblFacing";
+            this.LBA1Tel_lblFacing.Size = new System.Drawing.Size(45, 13);
+            this.LBA1Tel_lblFacing.TabIndex = 14;
+            this.LBA1Tel_lblFacing.Text = "Facing";
             // 
             // tpSaveGame
             // 
             this.tpSaveGame.BackColor = System.Drawing.Color.MistyRose;
-            this.tpSaveGame.Controls.Add(this.label3);
-            this.tpSaveGame.Controls.Add(this.btnSGDeleteSaves);
-            this.tpSaveGame.Controls.Add(this.btnLBA1SGRefresh);
-            this.tpSaveGame.Controls.Add(this.lvLBA1SaveGames);
-            this.tpSaveGame.Controls.Add(this.btnLBA1SaveGameEnableDisable);
-            this.tpSaveGame.Controls.Add(this.label2);
-            this.tpSaveGame.Controls.Add(this.label1);
-            this.tpSaveGame.Controls.Add(this.btnSetSaveFileDir);
-            this.tpSaveGame.Controls.Add(this.txtLBA1SaveFileDirectory);
-            this.tpSaveGame.Controls.Add(this.lblLBA1SaveFileDirectory);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_lblF8SaveAs);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_btnDeleteSaves);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_btnRefresh);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_lvSaveGames);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_btnEnableDisable);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_lblF9ForKey);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_lblF7Save);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_btnSetSaveFileDir);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_txtSaveFileDirectory);
+            this.tpSaveGame.Controls.Add(this.LBA1SG_lbl1SaveFileDirectory);
             this.tpSaveGame.Location = new System.Drawing.Point(4, 22);
             this.tpSaveGame.Name = "tpSaveGame";
             this.tpSaveGame.Padding = new System.Windows.Forms.Padding(3);
@@ -907,50 +937,50 @@
             this.tpSaveGame.TabIndex = 3;
             this.tpSaveGame.Text = "SaveGame";
             // 
-            // label3
+            // LBA1SG_lblF8SaveAs
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(127, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "F8: SaveAs";
+            this.LBA1SG_lblF8SaveAs.AutoSize = true;
+            this.LBA1SG_lblF8SaveAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1SG_lblF8SaveAs.Location = new System.Drawing.Point(127, 128);
+            this.LBA1SG_lblF8SaveAs.Name = "LBA1SG_lblF8SaveAs";
+            this.LBA1SG_lblF8SaveAs.Size = new System.Drawing.Size(72, 13);
+            this.LBA1SG_lblF8SaveAs.TabIndex = 11;
+            this.LBA1SG_lblF8SaveAs.Text = "F8: SaveAs";
             // 
-            // btnSGDeleteSaves
+            // LBA1SG_btnDeleteSaves
             // 
-            this.btnSGDeleteSaves.Location = new System.Drawing.Point(211, 149);
-            this.btnSGDeleteSaves.Name = "btnSGDeleteSaves";
-            this.btnSGDeleteSaves.Size = new System.Drawing.Size(82, 23);
-            this.btnSGDeleteSaves.TabIndex = 10;
-            this.btnSGDeleteSaves.Text = "Delete Saves";
-            this.btnSGDeleteSaves.UseVisualStyleBackColor = true;
-            this.btnSGDeleteSaves.Click += new System.EventHandler(this.BtnSGDeleteSaves_Click);
+            this.LBA1SG_btnDeleteSaves.Location = new System.Drawing.Point(211, 149);
+            this.LBA1SG_btnDeleteSaves.Name = "LBA1SG_btnDeleteSaves";
+            this.LBA1SG_btnDeleteSaves.Size = new System.Drawing.Size(82, 23);
+            this.LBA1SG_btnDeleteSaves.TabIndex = 10;
+            this.LBA1SG_btnDeleteSaves.Text = "Delete Saves";
+            this.LBA1SG_btnDeleteSaves.UseVisualStyleBackColor = true;
+            this.LBA1SG_btnDeleteSaves.Click += new System.EventHandler(this.LBA1SG_BtnDeleteSaves_Click);
             // 
-            // btnLBA1SGRefresh
+            // LBA1SG_btnRefresh
             // 
-            this.btnLBA1SGRefresh.Location = new System.Drawing.Point(130, 149);
-            this.btnLBA1SGRefresh.Name = "btnLBA1SGRefresh";
-            this.btnLBA1SGRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA1SGRefresh.TabIndex = 9;
-            this.btnLBA1SGRefresh.Text = "Refresh";
-            this.btnLBA1SGRefresh.UseVisualStyleBackColor = true;
-            this.btnLBA1SGRefresh.Click += new System.EventHandler(this.BtnLBA1SGRefresh_Click);
+            this.LBA1SG_btnRefresh.Location = new System.Drawing.Point(130, 149);
+            this.LBA1SG_btnRefresh.Name = "LBA1SG_btnRefresh";
+            this.LBA1SG_btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.LBA1SG_btnRefresh.TabIndex = 9;
+            this.LBA1SG_btnRefresh.Text = "Refresh";
+            this.LBA1SG_btnRefresh.UseVisualStyleBackColor = true;
+            this.LBA1SG_btnRefresh.Click += new System.EventHandler(this.LBA1SG_BtnRefresh_Click);
             // 
-            // lvLBA1SaveGames
+            // LBA1SG_lvSaveGames
             // 
-            this.lvLBA1SaveGames.CheckBoxes = true;
-            this.lvLBA1SaveGames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.LBA1SG_lvSaveGames.CheckBoxes = true;
+            this.LBA1SG_lvSaveGames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.chLBA1SGReadOnly,
             this.chLBA1SGFileName,
             this.chLBA1SGLastModified});
-            this.lvLBA1SaveGames.HideSelection = false;
-            this.lvLBA1SaveGames.Location = new System.Drawing.Point(9, 32);
-            this.lvLBA1SaveGames.Name = "lvLBA1SaveGames";
-            this.lvLBA1SaveGames.Size = new System.Drawing.Size(322, 93);
-            this.lvLBA1SaveGames.TabIndex = 8;
-            this.lvLBA1SaveGames.UseCompatibleStateImageBehavior = false;
-            this.lvLBA1SaveGames.View = System.Windows.Forms.View.Details;
+            this.LBA1SG_lvSaveGames.HideSelection = false;
+            this.LBA1SG_lvSaveGames.Location = new System.Drawing.Point(9, 32);
+            this.LBA1SG_lvSaveGames.Name = "LBA1SG_lvSaveGames";
+            this.LBA1SG_lvSaveGames.Size = new System.Drawing.Size(322, 93);
+            this.LBA1SG_lvSaveGames.TabIndex = 8;
+            this.LBA1SG_lvSaveGames.UseCompatibleStateImageBehavior = false;
+            this.LBA1SG_lvSaveGames.View = System.Windows.Forms.View.Details;
             // 
             // chLBA1SGReadOnly
             // 
@@ -967,62 +997,74 @@
             this.chLBA1SGLastModified.Text = "Modified";
             this.chLBA1SGLastModified.Width = 122;
             // 
-            // btnLBA1SaveGameEnableDisable
+            // LBA1SG_btnEnableDisable
             // 
-            this.btnLBA1SaveGameEnableDisable.Location = new System.Drawing.Point(49, 149);
-            this.btnLBA1SaveGameEnableDisable.Name = "btnLBA1SaveGameEnableDisable";
-            this.btnLBA1SaveGameEnableDisable.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA1SaveGameEnableDisable.TabIndex = 7;
-            this.btnLBA1SaveGameEnableDisable.Text = "Enable";
-            this.btnLBA1SaveGameEnableDisable.UseVisualStyleBackColor = true;
-            this.btnLBA1SaveGameEnableDisable.Click += new System.EventHandler(this.BtnLBA1SaveGameEnableDisable_Click);
+            this.LBA1SG_btnEnableDisable.Location = new System.Drawing.Point(49, 149);
+            this.LBA1SG_btnEnableDisable.Name = "LBA1SG_btnEnableDisable";
+            this.LBA1SG_btnEnableDisable.Size = new System.Drawing.Size(75, 23);
+            this.LBA1SG_btnEnableDisable.TabIndex = 7;
+            this.LBA1SG_btnEnableDisable.Text = "Enable";
+            this.LBA1SG_btnEnableDisable.UseVisualStyleBackColor = true;
+            this.LBA1SG_btnEnableDisable.Click += new System.EventHandler(this.BtnLBA1SaveGameEnableDisable_Click);
             // 
-            // label2
+            // LBA1SG_lblF9ForKey
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(253, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "F9: For key";
+            this.LBA1SG_lblF9ForKey.AutoSize = true;
+            this.LBA1SG_lblF9ForKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1SG_lblF9ForKey.Location = new System.Drawing.Point(253, 128);
+            this.LBA1SG_lblF9ForKey.Name = "LBA1SG_lblF9ForKey";
+            this.LBA1SG_lblF9ForKey.Size = new System.Drawing.Size(71, 13);
+            this.LBA1SG_lblF9ForKey.TabIndex = 6;
+            this.LBA1SG_lblF9ForKey.Text = "F9: For key";
             // 
-            // label1
+            // LBA1SG_lblF7Save
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 128);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "F7: Save";
+            this.LBA1SG_lblF7Save.AutoSize = true;
+            this.LBA1SG_lblF7Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1SG_lblF7Save.Location = new System.Drawing.Point(26, 128);
+            this.LBA1SG_lblF7Save.Name = "LBA1SG_lblF7Save";
+            this.LBA1SG_lblF7Save.Size = new System.Drawing.Size(58, 13);
+            this.LBA1SG_lblF7Save.TabIndex = 5;
+            this.LBA1SG_lblF7Save.Text = "F7: Save";
             // 
-            // btnSetSaveFileDir
+            // LBA1SG_btnSetSaveFileDir
             // 
-            this.btnSetSaveFileDir.Location = new System.Drawing.Point(299, 6);
-            this.btnSetSaveFileDir.Name = "btnSetSaveFileDir";
-            this.btnSetSaveFileDir.Size = new System.Drawing.Size(32, 20);
-            this.btnSetSaveFileDir.TabIndex = 2;
-            this.btnSetSaveFileDir.Text = "Set";
-            this.btnSetSaveFileDir.UseVisualStyleBackColor = true;
-            this.btnSetSaveFileDir.Click += new System.EventHandler(this.BtnSetSaveFileDir_Click);
+            this.LBA1SG_btnSetSaveFileDir.Location = new System.Drawing.Point(299, 6);
+            this.LBA1SG_btnSetSaveFileDir.Name = "LBA1SG_btnSetSaveFileDir";
+            this.LBA1SG_btnSetSaveFileDir.Size = new System.Drawing.Size(32, 20);
+            this.LBA1SG_btnSetSaveFileDir.TabIndex = 2;
+            this.LBA1SG_btnSetSaveFileDir.Text = "Set";
+            this.LBA1SG_btnSetSaveFileDir.UseVisualStyleBackColor = true;
+            this.LBA1SG_btnSetSaveFileDir.Click += new System.EventHandler(this.LBA1SG_BtnSetSaveFileDir_Click);
             // 
-            // txtLBA1SaveFileDirectory
+            // LBA1SG_txtSaveFileDirectory
             // 
-            this.txtLBA1SaveFileDirectory.Location = new System.Drawing.Point(124, 6);
-            this.txtLBA1SaveFileDirectory.Name = "txtLBA1SaveFileDirectory";
-            this.txtLBA1SaveFileDirectory.Size = new System.Drawing.Size(169, 20);
-            this.txtLBA1SaveFileDirectory.TabIndex = 1;
+            this.LBA1SG_txtSaveFileDirectory.Location = new System.Drawing.Point(124, 6);
+            this.LBA1SG_txtSaveFileDirectory.Name = "LBA1SG_txtSaveFileDirectory";
+            this.LBA1SG_txtSaveFileDirectory.Size = new System.Drawing.Size(169, 20);
+            this.LBA1SG_txtSaveFileDirectory.TabIndex = 1;
             // 
-            // lblLBA1SaveFileDirectory
+            // LBA1SG_lbl1SaveFileDirectory
             // 
-            this.lblLBA1SaveFileDirectory.AutoSize = true;
-            this.lblLBA1SaveFileDirectory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA1SaveFileDirectory.Location = new System.Drawing.Point(6, 9);
-            this.lblLBA1SaveFileDirectory.Name = "lblLBA1SaveFileDirectory";
-            this.lblLBA1SaveFileDirectory.Size = new System.Drawing.Size(112, 13);
-            this.lblLBA1SaveFileDirectory.TabIndex = 0;
-            this.lblLBA1SaveFileDirectory.Text = "Save file Directory";
+            this.LBA1SG_lbl1SaveFileDirectory.AutoSize = true;
+            this.LBA1SG_lbl1SaveFileDirectory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1SG_lbl1SaveFileDirectory.Location = new System.Drawing.Point(6, 9);
+            this.LBA1SG_lbl1SaveFileDirectory.Name = "LBA1SG_lbl1SaveFileDirectory";
+            this.LBA1SG_lbl1SaveFileDirectory.Size = new System.Drawing.Size(112, 13);
+            this.LBA1SG_lbl1SaveFileDirectory.TabIndex = 0;
+            this.LBA1SG_lbl1SaveFileDirectory.Text = "Save file Directory";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(334, 178);
+            this.tabPage1.TabIndex = 5;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tbLBA2
             // 
@@ -1038,6 +1080,9 @@
             // tcLBA2Twinsen
             // 
             this.tcLBA2Twinsen.Controls.Add(this.tpLBA2Twinsen);
+            this.tcLBA2Twinsen.Controls.Add(this.tpLBA2Location);
+            this.tcLBA2Twinsen.Controls.Add(this.tpLBA2ShittyShot);
+            this.tcLBA2Twinsen.Controls.Add(this.tabPage2);
             this.tcLBA2Twinsen.Location = new System.Drawing.Point(6, 6);
             this.tcLBA2Twinsen.Name = "tcLBA2Twinsen";
             this.tcLBA2Twinsen.SelectedIndex = 0;
@@ -1272,6 +1317,219 @@
             this.txtLBA2Clovers.Size = new System.Drawing.Size(44, 20);
             this.txtLBA2Clovers.TabIndex = 2;
             // 
+            // tpLBA2Location
+            // 
+            this.tpLBA2Location.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Location.Controls.Add(this.button1);
+            this.tpLBA2Location.Controls.Add(this.btnLBA2LocationSet);
+            this.tpLBA2Location.Controls.Add(this.btnLBA2LocationScan);
+            this.tpLBA2Location.Controls.Add(this.label4);
+            this.tpLBA2Location.Controls.Add(this.lblLBA2LocationYPos);
+            this.tpLBA2Location.Controls.Add(this.lblLBA2LocationZPos);
+            this.tpLBA2Location.Controls.Add(this.textBox3);
+            this.tpLBA2Location.Controls.Add(this.txtLBA2LocationZPos);
+            this.tpLBA2Location.Controls.Add(this.txtLBA2LocationYPos);
+            this.tpLBA2Location.Controls.Add(this.txtLBA2LocationXPos);
+            this.tpLBA2Location.Controls.Add(this.lblLBA2LocationXPos);
+            this.tpLBA2Location.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Location.Name = "tpLBA2Location";
+            this.tpLBA2Location.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLBA2Location.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Location.TabIndex = 1;
+            this.tpLBA2Location.Text = "Teleport";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(253, 124);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnLBA2LocationSet
+            // 
+            this.btnLBA2LocationSet.Location = new System.Drawing.Point(164, 124);
+            this.btnLBA2LocationSet.Name = "btnLBA2LocationSet";
+            this.btnLBA2LocationSet.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2LocationSet.TabIndex = 9;
+            this.btnLBA2LocationSet.Text = "Set";
+            this.btnLBA2LocationSet.UseVisualStyleBackColor = true;
+            this.btnLBA2LocationSet.Click += new System.EventHandler(this.btnLBA2LocationSet_Click);
+            // 
+            // btnLBA2LocationScan
+            // 
+            this.btnLBA2LocationScan.Location = new System.Drawing.Point(74, 124);
+            this.btnLBA2LocationScan.Name = "btnLBA2LocationScan";
+            this.btnLBA2LocationScan.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2LocationScan.TabIndex = 8;
+            this.btnLBA2LocationScan.Text = "Scan";
+            this.btnLBA2LocationScan.UseVisualStyleBackColor = true;
+            this.btnLBA2LocationScan.Click += new System.EventHandler(this.btnLBA2LocationScan_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(7, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Areacode";
+            // 
+            // lblLBA2LocationYPos
+            // 
+            this.lblLBA2LocationYPos.AutoSize = true;
+            this.lblLBA2LocationYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA2LocationYPos.Location = new System.Drawing.Point(161, 14);
+            this.lblLBA2LocationYPos.Name = "lblLBA2LocationYPos";
+            this.lblLBA2LocationYPos.Size = new System.Drawing.Size(36, 13);
+            this.lblLBA2LocationYPos.TabIndex = 6;
+            this.lblLBA2LocationYPos.Text = "YPos";
+            // 
+            // lblLBA2LocationZPos
+            // 
+            this.lblLBA2LocationZPos.AutoSize = true;
+            this.lblLBA2LocationZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA2LocationZPos.Location = new System.Drawing.Point(7, 40);
+            this.lblLBA2LocationZPos.Name = "lblLBA2LocationZPos";
+            this.lblLBA2LocationZPos.Size = new System.Drawing.Size(36, 13);
+            this.lblLBA2LocationZPos.TabIndex = 5;
+            this.lblLBA2LocationZPos.Text = "ZPos";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(74, 70);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 4;
+            // 
+            // txtLBA2LocationZPos
+            // 
+            this.txtLBA2LocationZPos.Location = new System.Drawing.Point(44, 37);
+            this.txtLBA2LocationZPos.Name = "txtLBA2LocationZPos";
+            this.txtLBA2LocationZPos.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2LocationZPos.TabIndex = 3;
+            // 
+            // txtLBA2LocationYPos
+            // 
+            this.txtLBA2LocationYPos.Location = new System.Drawing.Point(228, 11);
+            this.txtLBA2LocationYPos.Name = "txtLBA2LocationYPos";
+            this.txtLBA2LocationYPos.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2LocationYPos.TabIndex = 2;
+            // 
+            // txtLBA2LocationXPos
+            // 
+            this.txtLBA2LocationXPos.Location = new System.Drawing.Point(44, 11);
+            this.txtLBA2LocationXPos.Name = "txtLBA2LocationXPos";
+            this.txtLBA2LocationXPos.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2LocationXPos.TabIndex = 1;
+            // 
+            // lblLBA2LocationXPos
+            // 
+            this.lblLBA2LocationXPos.AutoSize = true;
+            this.lblLBA2LocationXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA2LocationXPos.Location = new System.Drawing.Point(6, 14);
+            this.lblLBA2LocationXPos.Name = "lblLBA2LocationXPos";
+            this.lblLBA2LocationXPos.Size = new System.Drawing.Size(36, 13);
+            this.lblLBA2LocationXPos.TabIndex = 0;
+            this.lblLBA2LocationXPos.Text = "XPos";
+            // 
+            // tpLBA2ShittyShot
+            // 
+            this.tpLBA2ShittyShot.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblInstruct);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnSquare);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnTriangle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnCircle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnOnOff);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblSquare);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblTriangle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblCircle);
+            this.tpLBA2ShittyShot.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2ShittyShot.Name = "tpLBA2ShittyShot";
+            this.tpLBA2ShittyShot.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2ShittyShot.TabIndex = 2;
+            this.tpLBA2ShittyShot.Text = "Shitty Shot";
+            // 
+            // LBA2SS_lblInstruct
+            // 
+            this.LBA2SS_lblInstruct.AutoSize = true;
+            this.LBA2SS_lblInstruct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblInstruct.Location = new System.Drawing.Point(12, 11);
+            this.LBA2SS_lblInstruct.Name = "LBA2SS_lblInstruct";
+            this.LBA2SS_lblInstruct.Size = new System.Drawing.Size(307, 26);
+            this.LBA2SS_lblInstruct.TabIndex = 19;
+            this.LBA2SS_lblInstruct.Text = "Click colour to toggle status";
+            // 
+            // LBA2SS_btnSquare
+            // 
+            this.LBA2SS_btnSquare.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnSquare.Location = new System.Drawing.Point(230, 44);
+            this.LBA2SS_btnSquare.Name = "LBA2SS_btnSquare";
+            this.LBA2SS_btnSquare.Size = new System.Drawing.Size(79, 58);
+            this.LBA2SS_btnSquare.TabIndex = 18;
+            this.LBA2SS_btnSquare.UseVisualStyleBackColor = false;
+            // 
+            // LBA2SS_btnTriangle
+            // 
+            this.LBA2SS_btnTriangle.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnTriangle.Location = new System.Drawing.Point(128, 44);
+            this.LBA2SS_btnTriangle.Name = "LBA2SS_btnTriangle";
+            this.LBA2SS_btnTriangle.Size = new System.Drawing.Size(75, 58);
+            this.LBA2SS_btnTriangle.TabIndex = 17;
+            this.LBA2SS_btnTriangle.UseVisualStyleBackColor = false;
+            // 
+            // LBA2SS_btnCircle
+            // 
+            this.LBA2SS_btnCircle.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_btnCircle.Location = new System.Drawing.Point(26, 44);
+            this.LBA2SS_btnCircle.Name = "LBA2SS_btnCircle";
+            this.LBA2SS_btnCircle.Size = new System.Drawing.Size(74, 58);
+            this.LBA2SS_btnCircle.TabIndex = 16;
+            this.LBA2SS_btnCircle.UseVisualStyleBackColor = false;
+            // 
+            // LBA2SS_btnOnOff
+            // 
+            this.LBA2SS_btnOnOff.Location = new System.Drawing.Point(128, 143);
+            this.LBA2SS_btnOnOff.Name = "LBA2SS_btnOnOff";
+            this.LBA2SS_btnOnOff.Size = new System.Drawing.Size(75, 23);
+            this.LBA2SS_btnOnOff.TabIndex = 15;
+            this.LBA2SS_btnOnOff.Text = "Off";
+            this.LBA2SS_btnOnOff.UseVisualStyleBackColor = true;
+            // 
+            // LBA2SS_lblSquare
+            // 
+            this.LBA2SS_lblSquare.AutoSize = true;
+            this.LBA2SS_lblSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblSquare.Location = new System.Drawing.Point(226, 111);
+            this.LBA2SS_lblSquare.Name = "LBA2SS_lblSquare";
+            this.LBA2SS_lblSquare.Size = new System.Drawing.Size(67, 20);
+            this.LBA2SS_lblSquare.TabIndex = 14;
+            this.LBA2SS_lblSquare.Text = "Square";
+            // 
+            // LBA2SS_lblTriangle
+            // 
+            this.LBA2SS_lblTriangle.AutoSize = true;
+            this.LBA2SS_lblTriangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblTriangle.Location = new System.Drawing.Point(124, 111);
+            this.LBA2SS_lblTriangle.Name = "LBA2SS_lblTriangle";
+            this.LBA2SS_lblTriangle.Size = new System.Drawing.Size(73, 20);
+            this.LBA2SS_lblTriangle.TabIndex = 13;
+            this.LBA2SS_lblTriangle.Text = "Triangle";
+            // 
+            // LBA2SS_lblCircle
+            // 
+            this.LBA2SS_lblCircle.AutoSize = true;
+            this.LBA2SS_lblCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblCircle.Location = new System.Drawing.Point(36, 111);
+            this.LBA2SS_lblCircle.Name = "LBA2SS_lblCircle";
+            this.LBA2SS_lblCircle.Size = new System.Drawing.Size(54, 20);
+            this.LBA2SS_lblCircle.TabIndex = 12;
+            this.LBA2SS_lblCircle.Text = "Circle";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1296,7 +1554,7 @@
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.refreshToolStripMenuItem.Text = "&Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
@@ -1307,7 +1565,7 @@
             this.LBA1GodModeToolStripMenuItem,
             this.LBA1MaxMagicToolStripMenuItem});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
-            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
             // 
             // LBA1AutoZoomToolStripMenuItem1
@@ -1316,7 +1574,7 @@
             this.LBA1AutoZoomToolStripMenuItem1.CheckOnClick = true;
             this.LBA1AutoZoomToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.LBA1AutoZoomToolStripMenuItem1.Name = "LBA1AutoZoomToolStripMenuItem1";
-            this.LBA1AutoZoomToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.LBA1AutoZoomToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.LBA1AutoZoomToolStripMenuItem1.Text = "Auto-Zoom";
             this.LBA1AutoZoomToolStripMenuItem1.Click += new System.EventHandler(this.LBA1AutoZoomToolStripMenuItem1_Click);
             // 
@@ -1324,7 +1582,7 @@
             // 
             this.LBA1GodModeToolStripMenuItem.CheckOnClick = true;
             this.LBA1GodModeToolStripMenuItem.Name = "LBA1GodModeToolStripMenuItem";
-            this.LBA1GodModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.LBA1GodModeToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.LBA1GodModeToolStripMenuItem.Text = "God Mode";
             this.LBA1GodModeToolStripMenuItem.Click += new System.EventHandler(this.LBA1GodModeToolStripMenuItem_Click);
             // 
@@ -1332,7 +1590,7 @@
             // 
             this.LBA1MaxMagicToolStripMenuItem.CheckOnClick = true;
             this.LBA1MaxMagicToolStripMenuItem.Name = "LBA1MaxMagicToolStripMenuItem";
-            this.LBA1MaxMagicToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.LBA1MaxMagicToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.LBA1MaxMagicToolStripMenuItem.Text = "Max Magic";
             this.LBA1MaxMagicToolStripMenuItem.Click += new System.EventHandler(this.LBA1MaxMagicToolStripMenuItem_Click);
             // 
@@ -1342,7 +1600,7 @@
             this.LBA2GodModeToolStripMenuItem1,
             this.infiniteMagicToolStripMenuItem});
             this.lBA2ToolStripMenuItem.Name = "lBA2ToolStripMenuItem";
-            this.lBA2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lBA2ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.lBA2ToolStripMenuItem.Text = "LBA2";
             // 
             // LBA2GodModeToolStripMenuItem1
@@ -1370,17 +1628,53 @@
             // 
             // tmrLBA1TeleportTabRefresh
             // 
-            this.tmrLBA1TeleportTabRefresh.Tick += new System.EventHandler(this.TmrLBA1TeleportTabRefresh_Tick);
+            this.tmrLBA1TeleportTabRefresh.Tick += new System.EventHandler(this.LBA1Tel_TmrTabRefresh_Tick);
             // 
             // tmrHeightLock
             // 
             this.tmrHeightLock.Interval = 50;
-            this.tmrHeightLock.Tick += new System.EventHandler(this.TmrHeightLock_Tick);
+            this.tmrHeightLock.Tick += new System.EventHandler(this.LBA1Tel_TmrHeightLock_Tick);
             // 
             // tmrFlying
             // 
             this.tmrFlying.Interval = 50;
-            this.tmrFlying.Tick += new System.EventHandler(this.TmrFlying_Tick);
+            this.tmrFlying.Tick += new System.EventHandler(this.LBA1TmrFlying_Tick);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.flying1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(334, 178);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // flying1
+            // 
+            this.flying1.BackColor = System.Drawing.Color.MistyRose;
+            this.flying1.Location = new System.Drawing.Point(0, 3);
+            this.flying1.Name = "flying1";
+            this.flying1.Size = new System.Drawing.Size(334, 178);
+            this.flying1.TabIndex = 11;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(106, 61);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(106, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
             // 
             // frmTrainer
             // 
@@ -1409,12 +1703,19 @@
             this.tpTeleport.PerformLayout();
             this.tpSaveGame.ResumeLayout(false);
             this.tpSaveGame.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tbLBA2.ResumeLayout(false);
             this.tcLBA2Twinsen.ResumeLayout(false);
             this.tpLBA2Twinsen.ResumeLayout(false);
             this.tpLBA2Twinsen.PerformLayout();
+            this.tpLBA2Location.ResumeLayout(false);
+            this.tpLBA2Location.PerformLayout();
+            this.tpLBA2ShittyShot.ResumeLayout(false);
+            this.tpLBA2ShittyShot.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1426,30 +1727,30 @@
         private System.Windows.Forms.TabPage tpLBA1;
         private System.Windows.Forms.TabControl tcLBA1Inner;
         private System.Windows.Forms.TabPage tpLBA1Twinsen;
-        private System.Windows.Forms.Label lblLBA1MagicLevel;
-        private System.Windows.Forms.CheckBox chkLBA1QuestValue;
-        private System.Windows.Forms.ComboBox cboLBA1Inventory;
-        private System.Windows.Forms.Label lblLBA1Inventory;
-        private System.Windows.Forms.Label lblLBA1Kashers;
-        private System.Windows.Forms.Label lblLBA1MagicPoints;
-        private System.Windows.Forms.Label lblLBA1Health;
-        private System.Windows.Forms.Label lblLBA1CloverBoxes;
-        private System.Windows.Forms.TextBox txtLBA1CloverBoxes;
-        private System.Windows.Forms.Button btnLBA1MaxAll;
-        private System.Windows.Forms.Label lblLBA1Clovers;
-        private System.Windows.Forms.TextBox txtLBA1Clovers;
+        private System.Windows.Forms.Label LBA1Twin_lblMagicLevel;
+        private System.Windows.Forms.CheckBox LBA1Othr_chkQuestValue;
+        private System.Windows.Forms.ComboBox LBA1Twin_cboInventory;
+        private System.Windows.Forms.Label LBA1Twin_lbInventory;
+        private System.Windows.Forms.Label LBA1Twin_lblKashers;
+        private System.Windows.Forms.Label LBA1Twin_lblMagicPoints;
+        private System.Windows.Forms.Label LBA1Twin_lblHealth;
+        private System.Windows.Forms.Label LBA1Twin_lblCloverBoxes;
+        private System.Windows.Forms.TextBox LBA1Twin_txtCloverBoxes;
+        private System.Windows.Forms.Button LBA1Twin_btnMaxAll;
+        private System.Windows.Forms.Label LBA1Twin_lblClovers;
+        private System.Windows.Forms.TextBox LBA1Twin_txtClovers;
         private System.Windows.Forms.TabPage tbLBA2;
-        private System.Windows.Forms.Label lblLBA1Gas;
-        private System.Windows.Forms.TextBox txtLBA1Health;
-        private System.Windows.Forms.Button btnLBA1Scan;
-        private System.Windows.Forms.Button btnLBA1MinAll;
-        private System.Windows.Forms.TextBox txtLBA1Gas;
-        private System.Windows.Forms.TextBox txtLBA1Kashers;
-        private System.Windows.Forms.TextBox txtLBA1MagicPoints;
-        private System.Windows.Forms.TextBox txtLBA1MagicLevel;
-        private System.Windows.Forms.TextBox txtLBA1Keys;
-        private System.Windows.Forms.Label lblKeys;
-        private System.Windows.Forms.Button btnLBA1Set;
+        private System.Windows.Forms.Label LBA1Twin_lblGas;
+        private System.Windows.Forms.TextBox LBA1Twin_txtHealth;
+        private System.Windows.Forms.Button LBA1Twin_btnScan;
+        private System.Windows.Forms.Button LBA1Twin_btnMinAll;
+        private System.Windows.Forms.TextBox LBA1Twin_txtGas;
+        private System.Windows.Forms.TextBox LBA1Twin_txtKashers;
+        private System.Windows.Forms.TextBox LBA1Twin_txtMagicPoints;
+        private System.Windows.Forms.TextBox LBA1Twin_txtMagicLevel;
+        private System.Windows.Forms.TextBox LBA1Twin_txtKeys;
+        private System.Windows.Forms.Label LBA1Twin_lblKeys;
+        private System.Windows.Forms.Button LBA1Twin_btnSet;
         private System.Windows.Forms.TabControl tcLBA2Twinsen;
         private System.Windows.Forms.TabPage tpLBA2Twinsen;
         private System.Windows.Forms.Button btnLBA2TwinsenSet;
@@ -1475,39 +1776,39 @@
         private System.Windows.Forms.ComboBox cboLBA2Inventory;
         private System.Windows.Forms.Label lblLBA2Inventory;
         private System.Windows.Forms.TabPage tpLBA1Other;
-        private System.Windows.Forms.ComboBox cboLBA1Quest;
-        private System.Windows.Forms.Label lblLBA1Quest;
-        private System.Windows.Forms.CheckBox chkLBA1InventoryValue;
-        private System.Windows.Forms.CheckBox chkLBA1MoviesValue;
-        private System.Windows.Forms.ComboBox cboLBA1Movies;
-        private System.Windows.Forms.Label lblLBA1Movies;
+        private System.Windows.Forms.ComboBox LBA1Othr_cboQuest;
+        private System.Windows.Forms.Label LBA1Othr_lblQuest;
+        private System.Windows.Forms.CheckBox LBA1Twin_chkInventoryValue;
+        private System.Windows.Forms.CheckBox LBA1Othr_chkMoviesValue;
+        private System.Windows.Forms.ComboBox LBA1Othr_cboMovies;
+        private System.Windows.Forms.Label LBA1Othr_lblMovies;
         private System.Windows.Forms.TabPage tpTeleport;
-        private System.Windows.Forms.TextBox txtLBA1TeleportFacing;
-        private System.Windows.Forms.Label lblLBA1TeleportFacing;
+        private System.Windows.Forms.TextBox LBA1Tel_txtFacing;
+        private System.Windows.Forms.Label LBA1Tel_lblFacing;
         private System.Windows.Forms.TabPage tpSaveGame;
-        private System.Windows.Forms.Button btnSetSaveFileDir;
-        private System.Windows.Forms.TextBox txtLBA1SaveFileDirectory;
-        private System.Windows.Forms.Label lblLBA1SaveFileDirectory;
+        private System.Windows.Forms.Button LBA1SG_btnSetSaveFileDir;
+        private System.Windows.Forms.TextBox LBA1SG_txtSaveFileDirectory;
+        private System.Windows.Forms.Label LBA1SG_lbl1SaveFileDirectory;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LBA1SG_lblF9ForKey;
+        private System.Windows.Forms.Label LBA1SG_lblF7Save;
         private System.Windows.Forms.Timer tmrLBA1TeleportTabRefresh;
-        private System.Windows.Forms.Button btnLBA1SaveGameEnableDisable;
+        private System.Windows.Forms.Button LBA1SG_btnEnableDisable;
         private System.Windows.Forms.ToolStripMenuItem lBA1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LBA1AutoZoomToolStripMenuItem1;
-        private System.Windows.Forms.ListView lvLBA1SaveGames;
+        private System.Windows.Forms.ListView LBA1SG_lvSaveGames;
         private System.Windows.Forms.ColumnHeader chLBA1SGFileName;
         private System.Windows.Forms.ColumnHeader chLBA1SGLastModified;
         private System.Windows.Forms.ColumnHeader chLBA1SGReadOnly;
-        private System.Windows.Forms.Button btnLBA1SGRefresh;
+        private System.Windows.Forms.Button LBA1SG_btnRefresh;
         private System.Windows.Forms.ToolStripMenuItem LBA1GodModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LBA1MaxMagicToolStripMenuItem;
-        private System.Windows.Forms.CheckBox chkLBA1OtherChapter;
-        private System.Windows.Forms.ComboBox cboLBA1OtherChapter;
-        private System.Windows.Forms.Label lblLBA1OtherChapter;
+        private System.Windows.Forms.CheckBox LBA1Othr_chkChapter;
+        private System.Windows.Forms.ComboBox LBA1Othr_cboChapter;
+        private System.Windows.Forms.Label LBA1Othr_lblChapter;
         private System.Windows.Forms.Timer tmrHeightLock;
         private System.Windows.Forms.TabPage tpFlying;
         private System.Windows.Forms.Button btnLBA1FlyingSE;
@@ -1519,31 +1820,57 @@
         private System.Windows.Forms.Button btnLBA1FlyingNE;
         private System.Windows.Forms.Button btnLBA1FlyingN;
         private System.Windows.Forms.Button btnLBA1FlyingNW;
-        private System.Windows.Forms.CheckBox chkLBA1TeleportLock;
-        private System.Windows.Forms.TextBox txtLBA1TeleportRefreshInterval;
-        private System.Windows.Forms.Label lblLBA1TeleportAutoRefresh;
-        private System.Windows.Forms.Button btnLBA1TeleportStartStopRefresh;
-        private System.Windows.Forms.TextBox txtLBA1TeleportZPos;
-        private System.Windows.Forms.Button btnLBA1TeleportSet;
-        private System.Windows.Forms.Label lblLBA1TeleportZPos;
+        private System.Windows.Forms.CheckBox LBA1Tel_chkLock;
+        private System.Windows.Forms.TextBox LBA1Tel_txtRefreshInterval;
+        private System.Windows.Forms.Label LBA1Tel_lblAutoRefresh;
+        private System.Windows.Forms.Button LBA1Tel_btnStartStopRefresh;
+        private System.Windows.Forms.TextBox LBA1Tel_txtZPos;
+        private System.Windows.Forms.Button LBA1Tel_btnSet;
+        private System.Windows.Forms.Label LBA1Tel_lblZPos;
         private System.Windows.Forms.Button btnLBA1TeleportSetMovementPixels;
         private System.Windows.Forms.TextBox txtLBA1TeleportMovementPixels;
         private System.Windows.Forms.Label lblLBA1TeleportMovPixels;
         private System.Windows.Forms.Button btnLBA1FlyingEnabled;
-        private System.Windows.Forms.TextBox txtLBA1TeleportXPos;
-        private System.Windows.Forms.TextBox txtLBA1TeleportYPos;
-        private System.Windows.Forms.Label lblLBA1TeleportXPos;
-        private System.Windows.Forms.Label lblLBA1TeleportYPos;
-        private System.Windows.Forms.Button btnLBA1TeleportScan;
+        private System.Windows.Forms.TextBox LBA1Tel_txtXPos;
+        private System.Windows.Forms.TextBox LBA1Tel_txtYPos;
+        private System.Windows.Forms.Label LBA1Tel_lblXPos;
+        private System.Windows.Forms.Label LBA1Tel_lblYPos;
+        private System.Windows.Forms.Button LBA1Tel_btnScan;
         private System.Windows.Forms.Button btnLBA1FlyingHeightHigher;
         private System.Windows.Forms.Button btnLBA1FlyingHeightLower;
         private System.Windows.Forms.CheckBox chkLBA1FlyingHeightLocked;
         private System.Windows.Forms.Timer tmrFlying;
-        private System.Windows.Forms.Button btnSGDeleteSaves;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button LBA1SG_btnDeleteSaves;
+        private System.Windows.Forms.Label LBA1SG_lblF8SaveAs;
         private System.Windows.Forms.ToolStripMenuItem lBA2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LBA2GodModeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem infiniteMagicToolStripMenuItem;
+        private System.Windows.Forms.TabPage tpLBA2Location;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblLBA2LocationYPos;
+        private System.Windows.Forms.Label lblLBA2LocationZPos;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtLBA2LocationZPos;
+        private System.Windows.Forms.TextBox txtLBA2LocationYPos;
+        private System.Windows.Forms.TextBox txtLBA2LocationXPos;
+        private System.Windows.Forms.Label lblLBA2LocationXPos;
+        private System.Windows.Forms.Button btnLBA2LocationSet;
+        private System.Windows.Forms.Button btnLBA2LocationScan;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tpLBA2ShittyShot;
+        private System.Windows.Forms.Label LBA2SS_lblInstruct;
+        private System.Windows.Forms.Button LBA2SS_btnSquare;
+        private System.Windows.Forms.Button LBA2SS_btnTriangle;
+        private System.Windows.Forms.Button LBA2SS_btnCircle;
+        private System.Windows.Forms.Button LBA2SS_btnOnOff;
+        private System.Windows.Forms.Label LBA2SS_lblSquare;
+        private System.Windows.Forms.Label LBA2SS_lblTriangle;
+        private System.Windows.Forms.Label LBA2SS_lblCircle;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TabPage tabPage2;
+        private LBAFlying.Flying flying1;
     }
 }
 

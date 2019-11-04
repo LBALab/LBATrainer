@@ -6,7 +6,6 @@ R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csprojAssemblyRefer
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.frmTrainer.resources
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.Properties.Resources.resources
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.GenerateResource.cache
-R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.CoreCompileInputs.cache
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.exe
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.pdb
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\lba2MemoryLocations.xml
@@ -15,3 +14,7 @@ R:\Users\User\source\repos\LBATrainer\bin\Release\files\lba1QuestOffsets.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\options.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\saveGame.xml
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.getSaveFileNames.resources
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.AboutBox1.resources
+R:\Users\User\source\repos\LBATrainer\bin\Release\DLLs\LBAMemoryModule.dll
+R:\Users\User\source\repos\LBATrainer\bin\Release\LBAMemoryModule.dll
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.CopyComplete

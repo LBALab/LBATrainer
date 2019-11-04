@@ -1,0 +1,85 @@
+
+A
+    Ancestral Tunic = 57BFB
+
+B
+
+    Blowgun = 57C21
+    Blowtron = 78823
+    Burgermaster's Key = 57C3D
+    Burgermaster's Notes = 57C3F
+
+C
+    Can of GazoGem = 57C11
+    Car Part = 57C01
+    Customer's Umbrella = 57C1B
+
+D
+    Dark Monk's Key = 788D3 (Requires 4 fragment pieces)
+    Darts = 57BF7
+
+E
+    Emperor's Sword = 57C07
+
+F
+    Ferry Ticket = 57C0D
+    Ferryman's Song = 57C17
+    Firefly Tart = 57C25
+    Fragment of the Francos = 57C31
+    Fragment of the Mosquibees = 57C35
+    Fragment of the Sups = 57C33
+    Fragment of the Wannies = 57C37
+
+G
+    Gallic Acid = 57C15
+    Garden Balsam = 57C29
+    Gems = 57C1D
+
+H
+    Holomap = 57BF3
+    Horn of the Blue Triton = 57C1F
+
+I
+    Itinerary Token
+
+K
+    Kashes = 57DF7
+    Key for the Passage to CX = 57C39
+
+M
+    Magic Ball = 57BF5
+    Magic Slate = 57C2B
+    Memory Viewer = 57C23
+
+N
+    Nitro-Meca-Penguin = 57C0F
+
+P
+    Pearl of Incandescence = 57BFD
+    Pick-axe = 57C3B
+    Piece of the Crystal of Celebration = 57C05
+    Pisto-Laser
+    Portable Radio = 57C27
+    Protection Spell = 57C41
+    Proto-Pack = 57C0B
+    Pyramid Shaped Key = 57BFF
+
+R
+    Ring of Lightning = 57C19
+    Ring of the Dissidents = 57C13
+
+S
+    Sendell's Ball = 57BF9
+    Super Jet-Pack = 78731 (Requires ProtoPack)
+
+T
+    Translator = 57C2D
+
+W
+    Wannie's Glove = 57C09
+    Wizard's Diploma = 57C2F
+    Wizard's Parade Tunic
+
+Z
+    Zlitos = 57DFB
+

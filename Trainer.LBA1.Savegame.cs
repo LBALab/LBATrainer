@@ -10,29 +10,29 @@ namespace LBATrainer
 {
     public partial class frmTrainer
     {
-        const ushort LBA1_Offset_Key = 0xE26;
-        private HotKey hotkeyF7;
-        private HotKey hotkeyF8;
-        private HotKey hotkeyF9;
-        ItemCheckedEventHandler icehLVLBA1SGChecked;
+        const ushort LBA1SG_Offset_Key = 0xE26;
+        private HotKey LBA1SG_hkF7;
+        private HotKey LBA1SG_hkF8;
+        private HotKey LBA1SG_hkF9;
+        ItemCheckedEventHandler LBA1SG_icehLVChecked;
 
-        private void Savegame_Load(object sender, EventArgs e, Options opt)
+        private void LBA1SG_Load(object sender, EventArgs e, Options opt)
         {
-            txtLBA1SaveFileDirectory.Text = opt.LBADir;
-            icehLVLBA1SGChecked = new System.Windows.Forms.ItemCheckedEventHandler(this.LvLBA1SaveGames_ItemChecked);
+            LBA1SG_txtSaveFileDirectory.Text = opt.LBADir;
+            LBA1SG_icehLVChecked = new System.Windows.Forms.ItemCheckedEventHandler(this.LBA1SG_LvSaveGames_ItemChecked);
         }
-        private void Savegame_FormClosed(object sender, FormClosedEventArgs e)
+        private void LBA1SG_FormClosed(object sender, FormClosedEventArgs e)
         {
-            unregisterHotkeysSavegame();
+            LBA1SG_unregisterHotkeys();
         }
-        private void LBA1SGLoadSaves()
+        private void LBA1SG_LoadSaves()
         {
-            this.lvLBA1SaveGames.ItemChecked -= icehLVLBA1SGChecked;
-            lvLBA1SaveGames.Items.Clear();
-            if (string.IsNullOrEmpty(txtLBA1SaveFileDirectory.Text)) return;
-            if (string.IsNullOrWhiteSpace(txtLBA1SaveFileDirectory.Text)) return;
-            if (!System.IO.Directory.Exists(txtLBA1SaveFileDirectory.Text)) return;
-            string[] filePaths = Directory.GetFiles(txtLBA1SaveFileDirectory.Text, "*.lba");
+            this.LBA1SG_lvSaveGames.ItemChecked -= LBA1SG_icehLVChecked;
+            LBA1SG_lvSaveGames.Items.Clear();
+            if (string.IsNullOrEmpty(LBA1SG_txtSaveFileDirectory.Text)) return;
+            if (string.IsNullOrWhiteSpace(LBA1SG_txtSaveFileDirectory.Text)) return;
+            if (!System.IO.Directory.Exists(LBA1SG_txtSaveFileDirectory.Text)) return;
+            string[] filePaths = Directory.GetFiles(LBA1SG_txtSaveFileDirectory.Text, "*.lba");
             ListViewItem lviFile;
             FileInfo fi;
             for (int i = 0; i < filePaths.Length; i++)
@@ -41,36 +41,36 @@ namespace LBATrainer
                 fi = new FileInfo(filePaths[i]);
                 fi.LastWriteTime.ToString();
                 lviFile.Checked = new FileInfo(filePaths[i]).IsReadOnly;
-                lviFile.SubItems.Add(getLBA1FriendlyFileName(filePaths[i]));
+                lviFile.SubItems.Add(LBA1SG_getFriendlyFileName(filePaths[i]));
                 lviFile.SubItems.Add(fi.LastWriteTime.ToString());
                 lviFile.Tag = filePaths[i];
-                lvLBA1SaveGames.Items.Add(lviFile);
+                LBA1SG_lvSaveGames.Items.Add(lviFile);
             }
-            this.lvLBA1SaveGames.ItemChecked += icehLVLBA1SGChecked;
-            lvLBA1SaveGames.Columns[0].Width = -2;
-            lvLBA1SaveGames.Columns[2].Width = -2;
+            this.LBA1SG_lvSaveGames.ItemChecked += LBA1SG_icehLVChecked;
+            LBA1SG_lvSaveGames.Columns[0].Width = -2;
+            LBA1SG_lvSaveGames.Columns[2].Width = -2;
         }
         private void BtnLBA1SaveGameEnableDisable_Click(object sender, EventArgs e)
         {
-            LBA1SGLoadSaves();
+            LBA1SG_LoadSaves();
 
-            if (null == hotkeyF7|| null == hotkeyF8 || null == hotkeyF9 )
+            if (null == LBA1SG_hkF7|| null == LBA1SG_hkF8 || null == LBA1SG_hkF9 )
             {
-                registerHotKeysSavegame();
-                btnLBA1SaveGameEnableDisable.Text = "Disable";
+                LBA1SG_registerHotKeys();
+                LBA1SG_btnEnableDisable.Text = "Disable";
             }
             else
             {
-                unregisterHotkeysSavegame();
-                btnLBA1SaveGameEnableDisable.Text = "Enable";
+                LBA1SG_unregisterHotkeys();
+                LBA1SG_btnEnableDisable.Text = "Enable";
             }
         }
-        private void processHotkeySavegame(Keys k)
+        private void LBA1SG_processHotkey(Keys k)
         {
             if (Keys.F7 == k)
             {
                 SaveGame sg = new SaveGame();
-                if (!sg.save(txtLBA1SaveFileDirectory.Text)) MessageBox.Show("Unable to save game, is DOSBox running?");
+                if (!sg.save(LBA1SG_txtSaveFileDirectory.Text)) MessageBox.Show("Unable to save game, is DOSBox running?");
             }
             if (Keys.F8 == k)
             {
@@ -81,33 +81,33 @@ namespace LBATrainer
                 getSaveFileName.Focus();
                 if (!(getSaveFileName.ShowDialog(this) == DialogResult.Cancel))
                 {
-                    if (!sg.saveAs(txtLBA1SaveFileDirectory.Text + "\\savePack", getSaveFileName.txtFilename.Text + ".lba", getSaveFileName.txtInGameName.Text))
+                    if (!sg.saveAs(LBA1SG_txtSaveFileDirectory.Text + "\\savePack", getSaveFileName.txtFilename.Text + ".lba", getSaveFileName.txtInGameName.Text))
                         MessageBox.Show("Unable to save game, is DOSBox running?");
                 }
                 
                 getSaveFileName.Dispose();
              }
             if (Keys.F9 == k)
-                memRoutines.WriteVal(LBA_ONE, LBA1_Offset_Key, 1, 1);
+                memRoutines.WriteVal(LBA_ONE, LBA1SG_Offset_Key, 1, 1);
         }
         //changes the status of the file pointed to by filePath and returns the new status
-        private bool toggleReadOnly(string filePath)
+        private bool LBA1SG_toggleReadOnly(string filePath)
         {
             FileInfo fi = new FileInfo(filePath);
             fi.IsReadOnly = !fi.IsReadOnly;
             fi.Refresh();
             return fi.IsReadOnly;
         }
-        private void LvLBA1SaveGames_ItemChecked(object sender, ItemCheckedEventArgs e)
+        private void LBA1SG_LvSaveGames_ItemChecked(object sender, ItemCheckedEventArgs e)
         {
-            e.Item.Checked = toggleReadOnly((string)e.Item.Tag);
+            e.Item.Checked = LBA1SG_toggleReadOnly((string)e.Item.Tag);
         }
 
-        private void BtnLBA1SGRefresh_Click(object sender, EventArgs e)
+        private void LBA1SG_BtnRefresh_Click(object sender, EventArgs e)
         {
-            LBA1SGLoadSaves();
+            LBA1SG_LoadSaves();
         }
-        private string getLBA1FriendlyFileName(string filePath)
+        private string LBA1SG_getFriendlyFileName(string filePath)
         {
             if (!File.Exists(filePath)) return null;
             FileStream fsStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
@@ -122,41 +122,41 @@ namespace LBATrainer
             fsStream.Dispose();
             return friendlyName;
         }
-        private void BtnSetSaveFileDir_Click(object sender, EventArgs e)
+        private void LBA1SG_BtnSetSaveFileDir_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbdLBADir = new FolderBrowserDialog();
             fbdLBADir.ShowDialog();
-            txtLBA1SaveFileDirectory.Text = fbdLBADir.SelectedPath;
+            LBA1SG_txtSaveFileDirectory.Text = fbdLBADir.SelectedPath;
             fbdLBADir.Dispose();
             Options opt = new Options();
-            opt.LBADir = txtLBA1SaveFileDirectory.Text;
+            opt.LBADir = LBA1SG_txtSaveFileDirectory.Text;
             opt.save();
         }
-        private void unregisterHotkeysSavegame()
+        private void LBA1SG_registerHotKeys()
+        {
+            LBA1SG_hkF7 = registerHotKey(Keys.F7);
+            LBA1SG_hkF8 = registerHotKey(Keys.F8);
+            LBA1SG_hkF9 = registerHotKey(Keys.F9);
+        }
+        private void LBA1SG_unregisterHotkeys()
         {
             try
             {
-                unregisterHotKey(hotkeyF7);
-                unregisterHotKey(hotkeyF8);
-                unregisterHotKey(hotkeyF9);
+                unregisterHotKey(LBA1SG_hkF7);
+                unregisterHotKey(LBA1SG_hkF8);
+                unregisterHotKey(LBA1SG_hkF9);
             }
             catch { };
         }
-        private void registerHotKeysSavegame()
-        {
-            hotkeyF7 = registerHotKey(Keys.F7);
-            hotkeyF8 = registerHotKey(Keys.F8);
-            hotkeyF9 = registerHotKey(Keys.F9);
-        }
 
-        private void BtnSGDeleteSaves_Click(object sender, EventArgs e)
+        private void LBA1SG_BtnDeleteSaves_Click(object sender, EventArgs e)
         {
             if (DialogResult.OK == (MessageBox.Show("This will delete all non-readonly save files", "Delete Saves", MessageBoxButtons.OKCancel)))
-                SavegameDeleteSaves();
+                LBA1SG_DeleteSaves();
         }
-        private void SavegameDeleteSaves()
+        private void LBA1SG_DeleteSaves()
         {
-            DirectoryInfo di = new DirectoryInfo(txtLBA1SaveFileDirectory.Text);
+            DirectoryInfo di = new DirectoryInfo(LBA1SG_txtSaveFileDirectory.Text);
             FileInfo[] files = di.GetFiles("*.LBA");
             //                                 .Where(p => p.Extension == ".LBA").ToArray();
             foreach (FileInfo file in files)
@@ -166,7 +166,7 @@ namespace LBATrainer
                     File.Delete(file.FullName);
                 }
                 catch { }
-            LBA1SGLoadSaves();
+            LBA1SG_LoadSaves();
         }
     }
 }

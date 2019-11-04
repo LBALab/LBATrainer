@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Windows.Forms;
+using LBAMemoryModule;
 
 namespace LBATrainer
 {
@@ -73,7 +74,7 @@ namespace LBATrainer
             item.minVal = ushort.Parse(xn.SelectSingleNode("minVal").InnerText.Trim());
             item.size = ushort.Parse(xn.SelectSingleNode("size").InnerText.Trim());
             item.type = ushort.Parse(xn.SelectSingleNode("type").InnerText.Trim());
-            item.lbaVersion = ushort.Parse(xn.SelectSingleNode("lbaVersion").InnerText.Trim());
+            item.lbaVersion = byte.Parse(xn.SelectSingleNode("lbaVersion").InnerText.Trim());
             return item;
         }
         private void loadTwinsen(ushort LBAVer, XmlNodeList nodes)

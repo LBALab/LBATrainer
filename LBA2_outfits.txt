@@ -1,0 +1,30 @@
+57F4D
+57F51 <<
+
+00: Twinsen Casual
+01: Twinsen Tunic
+02: Twinsen Sword
+03: Twinsen Blowgun
+04: Twinsen Blowtron
+05: Twinsen Wannies Glove
+06: Twinsen Lazer Pistol
+07: Wizard Tunic
+08: Wizard Blowgun
+09: Twinsen Tunic?
+10: Twinsen Pickaxe
+11: Twinsen Walkie Talkie
+12: Fire Twinsen
+13: Twinsen Ash
+14: Twinsen Tunic + Car
+15: Wizard + Car
+16: Twinsen Proto Pack
+17: Twinsen+Zoe+Umbrella
+18: Twinsen Horn Triton
+19: Wizard Horn Triton
+20: Moon Suit
+21: Twinsen SuperJetPack
+22: Twinsen Tunic + Car
+23: Wizard + Car
+24: Skeleton with shadow body
+
+
