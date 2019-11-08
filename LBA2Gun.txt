@@ -1,0 +1,15 @@
+No Pistol > Pistol
+57C05
+786EF 0 > 1
+57CF7 0 > 2
+---------
+No Crystal > Crystal
+57C05
+57CF7 - 0 > 1
+---------------
+Gun No Crystal > Gun w/Crystal
+57CF7 2 > 3
+786EF 1 > 2
+57C05 = 1
+----------
+

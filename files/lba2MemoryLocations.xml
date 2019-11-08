@@ -3,6 +3,259 @@
 	<inventory>
 		<item>
 			<name>
+				Broken Pistol
+			</name>
+			<memoryOffset>
+				57C05
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Broken Pistol
+			</name>
+			<memoryOffset>
+				786EF
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Broken Pistol
+			</name>
+			<memoryOffset>
+				57CF7
+			</memoryOffset>
+			<maxVal>
+				2
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Blowgun
+			</name>
+			<memoryOffset>
+				57C21
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Blowtron (Requires blowgun)
+			</name>
+			<memoryOffset>
+				78823
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Burger Master's Key
+			</name>
+			<memoryOffset>
+				57C3D
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Burger Master's Notes
+			</name>
+			<memoryOffset>
+				57C3F
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Crystal
+			</name>
+			<memoryOffset>
+				57C05
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Crystal
+			</name>
+			<memoryOffset>
+				57CF7
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Darts
+			</name>
+			<memoryOffset>
+				57BF7
+			</memoryOffset>
+			<maxVal>
+				99
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				1
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
+				Dissidents Ring
+			</name>
+			<memoryOffset>
+				57C13
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
+		<item>
+			<name>
 				Holomap
 			</name>
 			<memoryOffset>
@@ -42,29 +295,6 @@
 			</size>
 			<type>
 				0
-			</type>
-			<lbaVersion>
-				2
-			</lbaVersion>
-		</item>
-		<item>
-			<name>
-				Darts
-			</name>
-			<memoryOffset>
-				57BF7
-			</memoryOffset>
-			<maxVal>
-				99
-			</maxVal>
-			<minVal>
-				0
-			</minVal>
-			<size>
-				1
-			</size>
-			<type>
-				1
 			</type>
 			<lbaVersion>
 				2
@@ -168,29 +398,6 @@
 			</name>
 			<memoryOffset>
 				57C01
-			</memoryOffset>
-			<maxVal>
-				1
-			</maxVal>
-			<minVal>
-				0
-			</minVal>
-			<size>
-				1
-			</size>
-			<type>
-				0
-			</type>
-			<lbaVersion>
-				2
-			</lbaVersion>
-		</item>
-		<item>
-			<name>
-				Crystal
-			</name>
-			<memoryOffset>
-				57C05
 			</memoryOffset>
 			<maxVal>
 				1
@@ -348,29 +555,6 @@
 		</item>
 		<item>
 			<name>
-				Dissidents Ring
-			</name>
-			<memoryOffset>
-				57C13
-			</memoryOffset>
-			<maxVal>
-				1
-			</maxVal>
-			<minVal>
-				0
-			</minVal>
-			<size>
-				1
-			</size>
-			<type>
-				0
-			</type>
-			<lbaVersion>
-				2
-			</lbaVersion>
-		</item>
-		<item>
-			<name>
 				Gallic Acid
 			</name>
 			<memoryOffset>
@@ -490,29 +674,6 @@
 			</name>
 			<memoryOffset>
 				57C1F
-			</memoryOffset>
-			<maxVal>
-				1
-			</maxVal>
-			<minVal>
-				0
-			</minVal>
-			<size>
-				1
-			</size>
-			<type>
-				0
-			</type>
-			<lbaVersion>
-				2
-			</lbaVersion>
-		</item>
-		<item>
-			<name>
-				Blowgun
-			</name>
-			<memoryOffset>
-				57C21
 			</memoryOffset>
 			<maxVal>
 				1
@@ -831,79 +992,10 @@
 		</item>
 		<item>
 			<name>
-				Burger Master's Key
-			</name>
-			<memoryOffset>
-				57C3D
-			</memoryOffset>
-			<maxVal>
-				1
-			</maxVal>
-			<minVal>
-				0
-			</minVal>
-			<size>
-				1
-			</size>
-			<type>
-				0
-			</type>
-			<lbaVersion>
-				2
-			</lbaVersion>
-		</item>
-		<item>
-			<name>
-				Burger Master's Notes
-			</name>
-			<memoryOffset>
-				57C3F
-			</memoryOffset>
-			<maxVal>
-				1
-			</maxVal>
-			<minVal>
-				0
-			</minVal>
-			<size>
-				1
-			</size>
-			<type>
-				0
-			</type>
-			<lbaVersion>
-				2
-			</lbaVersion>
-		</item>
-		<item>
-			<name>
 				Protection Spell
 			</name>
 			<memoryOffset>
 				57C41
-			</memoryOffset>
-			<maxVal>
-				1
-			</maxVal>
-			<minVal>
-				0
-			</minVal>
-			<size>
-				1
-			</size>
-			<type>
-				0
-			</type>
-			<lbaVersion>
-				2
-			</lbaVersion>
-		</item>
-		<!--<item>
-			<name>
-				Itineray Token
-			</name>
-			<memoryOffset>
-				57C8D
 			</memoryOffset>
 			<maxVal>
 				1
@@ -935,7 +1027,7 @@
 				0
 			</minVal>
 			<size>
-				1
+				2
 			</size>
 			<type>
 				0
@@ -943,7 +1035,7 @@
 			<lbaVersion>
 				2
 			</lbaVersion>
-		</item>-->
+		</item>
 		<item>
 			<name>
 				Itineray Token
@@ -958,7 +1050,7 @@
 				0
 			</minVal>
 			<size>
-				1
+				2
 			</size>
 			<type>
 				0
@@ -981,7 +1073,7 @@
 				0
 			</minVal>
 			<size>
-				1
+				2
 			</size>
 			<type>
 				0
@@ -1035,13 +1127,60 @@
 			<lbaVersion>
 				2
 			</lbaVersion>
+		</item>
+		
+		<item>
+			<name>
+				Working Gun
+			</name>
+			<memoryOffset>
+				57CF7
+			</memoryOffset>
+			<maxVal>
+				3
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
 		</item>		
 		<item>
 			<name>
-				Blowtron (Requires blowgun)
+				Working Gun
 			</name>
 			<memoryOffset>
-				78823
+				786EF
+			</memoryOffset>
+			<maxVal>
+				2
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>		
+		<item>
+			<name>
+				Working Gun
+			</name>
+			<memoryOffset>
+				57C05
 			</memoryOffset>
 			<maxVal>
 				1
@@ -1207,7 +1346,7 @@
 				57F29
 			</memoryOffset>
 			<maxVal>
-				255 <!-- Don't change this to higher than 50, it crashes the game -->
+				255
 			</maxVal>
 			<minVal>
 				1

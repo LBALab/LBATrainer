@@ -93,5 +93,16 @@ namespace LBATrainer
             if (0 == itemList.Count) StopTimer();
             return removed;
         }
+
+        public bool UpdateItem(uint memoryOffset, ushort newVal)
+        {
+            for(int i = 0; i < itemList.Count;i++)
+                if(itemList[i].memoryOffset == memoryOffset)
+                {
+                    itemList[i].maxVal = newVal;
+                    return true;
+                }
+            return false;
+        }
     }
 }

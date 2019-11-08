@@ -42,6 +42,7 @@ namespace LBATrainer
             txtLBA2Clovers.Text = memRoutines.getVal(LBA_TWO, items.Clovers).ToString();
             txtLBA2CloverBoxes.Text = memRoutines.getVal(LBA_TWO, items.CloverBoxes).ToString();
             txtLBA2Health.Text = memRoutines.getVal(LBA_TWO, items.Health).ToString();
+            txtLBA2Zilitos.Text = memRoutines.getVal(LBA_TWO, items.Zilitos).ToString();
             cboLBA2Inventory.Items.Clear();
             cboLBA2Inventory.Items.AddRange(items.Inventory);
             addLBA2InventoryCheckbox(null);
@@ -58,7 +59,7 @@ namespace LBATrainer
         {
             if (tpLBA2Twinsen.Controls.Contains(chkLBA2InventoryValue))
             {
-                chkLBA2InventoryValue.Checked = 1 == memRoutines.getVal(LBA_TWO, itm);
+                chkLBA2InventoryValue.Checked = !(0 == memRoutines.getVal(LBA_TWO, itm));
                 return;
             }
             if (tpLBA2Twinsen.Controls.Contains(txtLBA2InventoryValue))
@@ -67,7 +68,7 @@ namespace LBATrainer
             chkLBA2InventoryValue.Size = new Size(15, 14);
             chkLBA2InventoryValue.Location = new Point(284, 116);
             chkLBA2InventoryValue.CheckedChanged += new System.EventHandler(this.ChkLBA2InventoryValue_CheckedChanged);
-            if (null != itm) chkLBA2InventoryValue.Checked = 1 == memRoutines.getVal(LBA_TWO, itm);
+            if (null != itm) chkLBA2InventoryValue.Checked = !(0 == memRoutines.getVal(LBA_TWO, itm));
             tpLBA2Twinsen.Controls.Add(chkLBA2InventoryValue);
         }
         private void addLBA2InventoryTextbox(Item itm)
@@ -95,11 +96,16 @@ namespace LBATrainer
         private void ChkLBA2InventoryValue_CheckedChanged(object sender, EventArgs e)
         {
             ushort val;
-            if (chkLBA2InventoryValue.Checked)
+            /*if (chkLBA2InventoryValue.Checked)
                 val = 1;
             else
-                val = 0;
+                val = 0;*/
             if (-1 == cboLBA2Inventory.SelectedIndex) return;
+            if (chkLBA2InventoryValue.Checked)
+                val = ((Item)cboLBA2Inventory.SelectedItem).maxVal;
+            else
+                val = ((Item)cboLBA2Inventory.SelectedItem).minVal;
+
             memRoutines.WriteVal(LBA_TWO, (Item)cboLBA2Inventory.SelectedItem, val);
         }
         private void BtnLBA2TwinsenSet_Click(object sender, EventArgs e)

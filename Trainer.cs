@@ -28,6 +28,7 @@ namespace LBATrainer
             InitializeComponent();
             scan(LBA_ONE);
             SetDoubleBuffered(tcLBAVersion);
+            tsi = new oTimerSetItems(oTimerSetItems.LBAVersion.One);
         }
 
         #region General
@@ -54,14 +55,10 @@ namespace LBATrainer
         {
             Options opt = new Options();
             LBA1SG_Load(sender, e, opt);
-            LBA1Tel_Load(sender, e, opt);
-            LBA1Flying_Load(sender, e, opt);
         }
         private void FrmTrainer_FormClosed(object sender, FormClosedEventArgs e)
         {
             LBA1SG_FormClosed(sender, e);
-            LBA1Tel_FormClosed(sender, e);
-            LBA1Flying_FormClosed(sender, e);
         }
         private int getInt(string value)
         {
@@ -104,7 +101,6 @@ namespace LBATrainer
             if (keyPressed.Msg == 0x0312)
             {
                 LBA1SG_processHotkey((Keys)keyPressed.WParam);
-                processHotkeyLBA1Flying((Keys)keyPressed.WParam);
             }
             base.WndProc(ref keyPressed);
         }
@@ -149,8 +145,8 @@ namespace LBATrainer
         private void button2_Click(object sender, EventArgs e)
         {
             uint outfitAddress = 0x57F51;
-            if (!tsi.RemoveIfExists(outfitAddress))
-                tsi.AddItem(outfitAddress, (ushort)getInt(textBox1.Text), 1);
+            tsi = itemToggle(tsi, outfitAddress, (ushort)getInt(textBox1.Text), 2, oTimerSetItems.LBAVersion.Two);
         }
+
     }
 }

@@ -18,6 +18,8 @@ namespace LBATrainer
 
         private void LBA2SS_btnOnOff_Click(object sender, EventArgs e)
         {
+            if (null == LBA2SS_tmrGetValues)
+                LBA2SS_tmrGetValues = new Timer();
             if (!LBA2SS_tmrGetValues.Enabled)
             {
                 LBA2SS_tmrGetValues = new Timer();
@@ -29,6 +31,7 @@ namespace LBATrainer
             else
             {
                 LBA2SS_tmrGetValues.Stop();
+                LBA2SS_tmrGetValues = null;
                 LBA2SS_btnOnOff.Text = "Off";
             }
         }

@@ -9,7 +9,7 @@ namespace LBATrainer
     public partial class frmTrainer
     {
         #region setValues
-        private void LBA1SetXPos(ushort val)
+        /*private void LBA1SetXPos(ushort val)
         {
             memRoutines.WriteVal(LBA_ONE, 0xD506, val, 2);
         }
@@ -28,12 +28,12 @@ namespace LBATrainer
         private void setGroundHeight(ushort val)
         {
             memRoutines.WriteVal(LBA_ONE, 0xC2BA, val, 2);
-        }
+        }*/
         #endregion
         #region getValues
 
 
-        private int getXPos()
+        /*private int getXPos()
         {
             return memRoutines.readAddress(LBA_ONE, 0xD506, 2);
         }
@@ -48,11 +48,7 @@ namespace LBATrainer
         private int getFacing()
         {
             return memRoutines.readAddress(LBA_ONE, 0xD51E, 2);
-        }
-        private int getGroundHeight()
-        {
-            return memRoutines.readAddress(LBA_ONE, 0xC2BA, 2);
-        }
+        }*/
         #endregion
     }
 }

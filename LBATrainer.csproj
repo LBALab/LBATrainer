@@ -84,6 +84,7 @@
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
     </Compile>
     <Compile Include="objects\oTimerSetItems.cs" />
+    <Compile Include="oTeleport.cs" />
     <Compile Include="Trainer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,9 +92,6 @@
       <DependentUpon>Trainer.cs</DependentUpon>
     </Compile>
     <Compile Include="Trainer.LBA.Twinsen.Shared.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA1.Flying.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Trainer.LBA1.FlyingTeleport.Shared.cs">

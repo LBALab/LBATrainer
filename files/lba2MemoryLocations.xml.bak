@@ -920,7 +920,7 @@
 			<lbaVersion>
 				2
 			</lbaVersion>
-		</item>
+		</item>-->
 		<item>
 			<name>
 				Itineray Token
@@ -935,7 +935,7 @@
 				0
 			</minVal>
 			<size>
-				1
+				2
 			</size>
 			<type>
 				0
@@ -943,7 +943,7 @@
 			<lbaVersion>
 				2
 			</lbaVersion>
-		</item>-->
+		</item>
 		<item>
 			<name>
 				Itineray Token
@@ -958,7 +958,7 @@
 				0
 			</minVal>
 			<size>
-				1
+				2
 			</size>
 			<type>
 				0
@@ -981,7 +981,7 @@
 				0
 			</minVal>
 			<size>
-				1
+				2
 			</size>
 			<type>
 				0
@@ -1035,6 +1035,8 @@
 			<lbaVersion>
 				2
 			</lbaVersion>
+		</item>		
+		<item>
 			<name>
 				Blowtron (Requires blowgun)
 			</name>
