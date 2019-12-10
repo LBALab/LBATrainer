@@ -1,0 +1,28 @@
+LBA2 Switches
+1 = down, 0 = up
+
+sequence = 0 1 0 1
+#1 57BA7
+#2 57BA4
+#3 57BA5
+#4 57BA6
+
+
+----------------
+
+Wizard Addresses
+
+#1 #2 #3 #4 (Wizards left to right)
+0 = Wizard Face
+1 = Black screen
+2 = static
+
+#1 57BA5
+#2 57BA6
+#3 57BA7
+#4 57BA8
+
+All correctly set	57BAA	Values 0/1
+Lever pulled		57BAB	Values 0/1
+
+Addresses are reused

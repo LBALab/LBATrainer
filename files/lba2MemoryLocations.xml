@@ -23,6 +23,52 @@
 			<lbaVersion>
 				2
 			</lbaVersion>
+			<!--<item>
+				<name>
+					Broken Pistol
+				</name>
+				<memoryOffset>
+					786EF
+				</memoryOffset>
+				<maxVal>
+					1
+				</maxVal>
+				<minVal>
+					0
+				</minVal>
+				<size>
+					1
+				</size>
+				<type>
+					0
+				</type>
+				<lbaVersion>
+					2
+				</lbaVersion>
+			</item>
+			<item>
+				<name>
+					Broken Pistol
+				</name>
+				<memoryOffset>
+					57CF7
+				</memoryOffset>
+				<maxVal>
+					2
+				</maxVal>
+				<minVal>
+					0
+				</minVal>
+				<size>
+					1
+				</size>
+				<type>
+					0
+				</type>
+				<lbaVersion>
+					2
+				</lbaVersion>
+			</item>-->
 		</item>
 		<item>
 			<name>

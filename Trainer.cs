@@ -55,6 +55,11 @@ namespace LBATrainer
         {
             Options opt = new Options();
             LBA1SG_Load(sender, e, opt);
+#if !DEBUG
+            tcLBA1Inner.TabPages.Remove(tcLBA1Inner.TabPages[tcLBA1Inner.TabPages.Count - 1]);
+            tcLBA2Inner.TabPages.Remove(tcLBA2Inner.TabPages[1]);
+            tcLBA2Inner.TabPages.Remove(tcLBA2Inner.TabPages[tcLBA2Inner.TabPages.Count - 1]);
+#endif
         }
         private void FrmTrainer_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -122,6 +127,8 @@ namespace LBATrainer
         {
             memRoutines = new Mem();
             memRoutines.WriteVal(1, 0xE0A, (ushort)(LBA1AutoZoomToolStripMenuItem1.Checked ? 1 : 0), 1);
+            flying1.RefreshConnection();
+            flying2.RefreshConnection();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -142,11 +149,42 @@ namespace LBATrainer
             memRoutines.WriteVal(2, 0x57F3D, (ushort)getInt(txtLBA2LocationYPos.Text), 2);
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
             uint outfitAddress = 0x57F51;
             tsi = itemToggle(tsi, outfitAddress, (ushort)getInt(textBox1.Text), 2, oTimerSetItems.LBAVersion.Two);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            memRoutines.WriteVal(1,  0xD580, 65535, 2);
+        }
+        Timer fruity;
+
+        private void tmrLBA2FruitMachine_Tick(object sender, EventArgs e)
+        {
+            lblFruitMachineCount.Text = memRoutines.readVal(0x57BC9, 2).ToString();
+        }
+        private void btnFruitMachineStart_Click(object sender, EventArgs e)
+        {
+            if(null == fruity)
+            {
+                fruity = new Timer();
+                fruity.Interval = 10;
+                fruity.Tick += tmrLBA2FruitMachine_Tick;
+                fruity.Start();
+            }
+            else
+            {
+                fruity.Stop();
+                fruity = null;
+            }
+        }
+
+        private void lblFruitMachineCount_Click(object sender, EventArgs e)
+        {            
+            memRoutines.WriteVal(0x57BC9,(ushort) (getInt(lblFruitMachineCount.Text) + 1), 2);
+        }
     }
 }

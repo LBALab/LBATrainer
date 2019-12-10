@@ -57,7 +57,6 @@
             this.LBA1Twin_lblClovers = new System.Windows.Forms.Label();
             this.LBA1Twin_txtClovers = new System.Windows.Forms.TextBox();
             this.tpLBA1Other = new System.Windows.Forms.TabPage();
-            this.LBA1Othr_chkChapter = new System.Windows.Forms.CheckBox();
             this.LBA1Othr_cboChapter = new System.Windows.Forms.ComboBox();
             this.LBA1Othr_lblChapter = new System.Windows.Forms.Label();
             this.LBA1Othr_chkMoviesValue = new System.Windows.Forms.CheckBox();
@@ -99,8 +98,10 @@
             this.LBA1SG_txtSaveFileDirectory = new System.Windows.Forms.TextBox();
             this.LBA1SG_lbl1SaveFileDirectory = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.tbLBA2 = new System.Windows.Forms.TabPage();
-            this.tcLBA2Twinsen = new System.Windows.Forms.TabControl();
+            this.tcLBA2Inner = new System.Windows.Forms.TabControl();
             this.tpLBA2Twinsen = new System.Windows.Forms.TabPage();
             this.cboLBA2Inventory = new System.Windows.Forms.ComboBox();
             this.lblLBA2Inventory = new System.Windows.Forms.Label();
@@ -151,6 +152,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flying1 = new LBAFlying.Flying();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lblFruitMachineCount = new System.Windows.Forms.Label();
+            this.btnFruitMachineStart = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -173,13 +176,15 @@
             this.tpFlying.SuspendLayout();
             this.tpTeleport.SuspendLayout();
             this.tpSaveGame.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tbLBA2.SuspendLayout();
-            this.tcLBA2Twinsen.SuspendLayout();
+            this.tcLBA2Inner.SuspendLayout();
             this.tpLBA2Twinsen.SuspendLayout();
             this.tpLBA2Other.SuspendLayout();
             this.tpLBA2Location.SuspendLayout();
             this.tpLBA2ShittyShot.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -462,7 +467,6 @@
             // tpLBA1Other
             // 
             this.tpLBA1Other.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkChapter);
             this.tpLBA1Other.Controls.Add(this.LBA1Othr_cboChapter);
             this.tpLBA1Other.Controls.Add(this.LBA1Othr_lblChapter);
             this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkMoviesValue);
@@ -477,15 +481,6 @@
             this.tpLBA1Other.Size = new System.Drawing.Size(334, 178);
             this.tpLBA1Other.TabIndex = 1;
             this.tpLBA1Other.Text = "Other";
-            // 
-            // LBA1Othr_chkChapter
-            // 
-            this.LBA1Othr_chkChapter.AutoSize = true;
-            this.LBA1Othr_chkChapter.Location = new System.Drawing.Point(301, 63);
-            this.LBA1Othr_chkChapter.Name = "LBA1Othr_chkChapter";
-            this.LBA1Othr_chkChapter.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Othr_chkChapter.TabIndex = 8;
-            this.LBA1Othr_chkChapter.UseVisualStyleBackColor = true;
             // 
             // LBA1Othr_cboChapter
             // 
@@ -902,6 +897,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.MistyRose;
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -909,10 +906,29 @@
             this.tabPage1.TabIndex = 5;
             this.tabPage1.Text = "tabPage1";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(67, 6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Kill Soldier";
+            // 
             // tbLBA2
             // 
             this.tbLBA2.BackColor = System.Drawing.SystemColors.Control;
-            this.tbLBA2.Controls.Add(this.tcLBA2Twinsen);
+            this.tbLBA2.Controls.Add(this.tcLBA2Inner);
             this.tbLBA2.Location = new System.Drawing.Point(4, 22);
             this.tbLBA2.Name = "tbLBA2";
             this.tbLBA2.Padding = new System.Windows.Forms.Padding(3);
@@ -920,19 +936,19 @@
             this.tbLBA2.TabIndex = 1;
             this.tbLBA2.Text = "LBA2";
             // 
-            // tcLBA2Twinsen
+            // tcLBA2Inner
             // 
-            this.tcLBA2Twinsen.Controls.Add(this.tpLBA2Twinsen);
-            this.tcLBA2Twinsen.Controls.Add(this.tpLBA2Other);
-            this.tcLBA2Twinsen.Controls.Add(this.tpLBA2Location);
-            this.tcLBA2Twinsen.Controls.Add(this.tpLBA2ShittyShot);
-            this.tcLBA2Twinsen.Controls.Add(this.tabPage2);
-            this.tcLBA2Twinsen.Controls.Add(this.tabPage3);
-            this.tcLBA2Twinsen.Location = new System.Drawing.Point(6, 6);
-            this.tcLBA2Twinsen.Name = "tcLBA2Twinsen";
-            this.tcLBA2Twinsen.SelectedIndex = 0;
-            this.tcLBA2Twinsen.Size = new System.Drawing.Size(342, 204);
-            this.tcLBA2Twinsen.TabIndex = 0;
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Twinsen);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Other);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Location);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2ShittyShot);
+            this.tcLBA2Inner.Controls.Add(this.tabPage2);
+            this.tcLBA2Inner.Controls.Add(this.tabPage3);
+            this.tcLBA2Inner.Location = new System.Drawing.Point(6, 6);
+            this.tcLBA2Inner.Name = "tcLBA2Inner";
+            this.tcLBA2Inner.SelectedIndex = 0;
+            this.tcLBA2Inner.Size = new System.Drawing.Size(342, 204);
+            this.tcLBA2Inner.TabIndex = 0;
             // 
             // tpLBA2Twinsen
             // 
@@ -1429,13 +1445,35 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.MistyRose;
+            this.tabPage3.Controls.Add(this.lblFruitMachineCount);
+            this.tabPage3.Controls.Add(this.btnFruitMachineStart);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(334, 178);
             this.tabPage3.TabIndex = 5;
             this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // lblFruitMachineCount
+            // 
+            this.lblFruitMachineCount.AutoSize = true;
+            this.lblFruitMachineCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFruitMachineCount.Location = new System.Drawing.Point(126, 44);
+            this.lblFruitMachineCount.Name = "lblFruitMachineCount";
+            this.lblFruitMachineCount.Size = new System.Drawing.Size(0, 31);
+            this.lblFruitMachineCount.TabIndex = 1;
+            this.lblFruitMachineCount.Click += new System.EventHandler(this.lblFruitMachineCount_Click);
+            // 
+            // btnFruitMachineStart
+            // 
+            this.btnFruitMachineStart.Location = new System.Drawing.Point(102, 80);
+            this.btnFruitMachineStart.Name = "btnFruitMachineStart";
+            this.btnFruitMachineStart.Size = new System.Drawing.Size(75, 23);
+            this.btnFruitMachineStart.TabIndex = 0;
+            this.btnFruitMachineStart.Text = "Start";
+            this.btnFruitMachineStart.UseVisualStyleBackColor = true;
+            this.btnFruitMachineStart.Click += new System.EventHandler(this.btnFruitMachineStart_Click);
             // 
             // menuStrip1
             // 
@@ -1568,8 +1606,10 @@
             this.tpTeleport.PerformLayout();
             this.tpSaveGame.ResumeLayout(false);
             this.tpSaveGame.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tbLBA2.ResumeLayout(false);
-            this.tcLBA2Twinsen.ResumeLayout(false);
+            this.tcLBA2Inner.ResumeLayout(false);
             this.tpLBA2Twinsen.ResumeLayout(false);
             this.tpLBA2Twinsen.PerformLayout();
             this.tpLBA2Other.ResumeLayout(false);
@@ -1579,6 +1619,8 @@
             this.tpLBA2ShittyShot.ResumeLayout(false);
             this.tpLBA2ShittyShot.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -1616,7 +1658,7 @@
         private System.Windows.Forms.TextBox LBA1Twin_txtKeys;
         private System.Windows.Forms.Label LBA1Twin_lblKeys;
         private System.Windows.Forms.Button LBA1Twin_btnSet;
-        private System.Windows.Forms.TabControl tcLBA2Twinsen;
+        private System.Windows.Forms.TabControl tcLBA2Inner;
         private System.Windows.Forms.TabPage tpLBA2Twinsen;
         private System.Windows.Forms.Button btnLBA2TwinsenSet;
         private System.Windows.Forms.TextBox txtLBA2Kashers;
@@ -1671,7 +1713,6 @@
         private System.Windows.Forms.Button LBA1SG_btnRefresh;
         private System.Windows.Forms.ToolStripMenuItem LBA1GodModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LBA1MaxMagicToolStripMenuItem;
-        private System.Windows.Forms.CheckBox LBA1Othr_chkChapter;
         private System.Windows.Forms.ComboBox LBA1Othr_cboChapter;
         private System.Windows.Forms.Label LBA1Othr_lblChapter;
         private System.Windows.Forms.Timer tmrHeightLock;
@@ -1724,6 +1765,10 @@
         private System.Windows.Forms.TabPage tabPage3;
         private LBAFlying.Flying flying2;
         private System.Windows.Forms.Button LBA1Tel_Update;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFruitMachineCount;
+        private System.Windows.Forms.Button btnFruitMachineStart;
     }
 }
 

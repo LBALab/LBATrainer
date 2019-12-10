@@ -19,7 +19,7 @@ namespace LBATrainer
 
         private void LBA2InfiniteMagicToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tsiLBA2 = itemToggle(tsiLBA2, 0x57E00, 80, 1, oTimerSetItems.LBAVersion.Two);
+            tsiLBA2 = itemToggle(tsiLBA2, 0x57E00, (ushort) (memRoutines.readVal(0x57DFF, 1)*20),1, oTimerSetItems.LBAVersion.Two);
         }
 
     }

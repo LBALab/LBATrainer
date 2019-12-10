@@ -81,7 +81,7 @@ namespace LBATrainer
                 getSaveFileName.Focus();
                 if (!(getSaveFileName.ShowDialog(this) == DialogResult.Cancel))
                 {
-                    if (!sg.saveAs(LBA1SG_txtSaveFileDirectory.Text + "\\savePack", getSaveFileName.txtFilename.Text + ".lba", getSaveFileName.txtInGameName.Text))
+                    if (!sg.saveAs(LBA1SG_txtSaveFileDirectory.Text, getSaveFileName.txtFilename.Text + ".lba", getSaveFileName.txtInGameName.Text))
                         MessageBox.Show("Unable to save game, is DOSBox running?");
                 }
                 
@@ -112,7 +112,8 @@ namespace LBATrainer
             if (!File.Exists(filePath)) return null;
             FileStream fsStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
 
-            char b = (char)fsStream.ReadByte();//Read and discard the opening byte (03)
+            char b;
+            _ = fsStream.ReadByte();//Read and discard the opening byte (03)
             string friendlyName = "";
 
             while (0 != (b = (char)fsStream.ReadByte()))

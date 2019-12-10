@@ -1,0 +1,10 @@
+Got ball? = 58107
+Umbrella Stolen = 57C65
+
+-----
+Umbrella Quest?
+192B8F
+193BD3
+
+Fetch Umbrella: 195E65
+Retrieved Umbrella: 195E66

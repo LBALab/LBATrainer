@@ -75,6 +75,7 @@ namespace LBATrainer
             item.size = ushort.Parse(xn.SelectSingleNode("size").InnerText.Trim());
             item.type = ushort.Parse(xn.SelectSingleNode("type").InnerText.Trim());
             item.lbaVersion = byte.Parse(xn.SelectSingleNode("lbaVersion").InnerText.Trim());
+            //If we adjust item to contain an arraylist of items, then for each item in item we can call getitem
             return item;
         }
         private void loadTwinsen(ushort LBAVer, XmlNodeList nodes)

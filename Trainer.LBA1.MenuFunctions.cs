@@ -24,7 +24,10 @@ namespace LBATrainer
         }
         private void LBA1AutoZoomToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            memRoutines.WriteVal(1, 0xE0A, (ushort)(LBA1AutoZoomToolStripMenuItem1.Checked ? 0 : 1), 1);
+            ushort ZoomOffset = 0xE0A;
+            byte newVal = (byte) (1 == memRoutines.readVal(ZoomOffset, 1) ? 0 : 1);
+            memRoutines.WriteVal(1, ZoomOffset, newVal, 1);
+            LBA1AutoZoomToolStripMenuItem1.Checked = 1 == newVal;
         }
     }
 }
