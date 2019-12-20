@@ -14,12 +14,26 @@ namespace LBATrainer
         Timer tmr = new Timer();
         Mem memory = new Mem();
         List<Item> itemList = new List<Item>();
+        private int interval = 50;
         public enum LBAVersion {One = 1, Two = 2 }
 
         public oTimerSetItems(LBAVersion lbaVer)
         {
-            LBAVer = (byte) lbaVer;
-            tmr.Interval = 50;
+            objectLoad(lbaVer, interval);
+            //tmr.Interval = 50;
+            //tmr.Tick += timer_Tick;
+        }
+
+        public oTimerSetItems(LBAVersion lbaver, int interval)
+        {
+            this.interval = interval;
+            objectLoad(lbaver, interval);
+        }
+
+        private void objectLoad(LBAVersion lbaVer, int interval)
+        {
+            LBAVer = (byte)lbaVer;
+            tmr.Interval = interval;
             tmr.Tick += timer_Tick;
         }
 

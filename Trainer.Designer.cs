@@ -152,8 +152,30 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flying1 = new LBAFlying.Flying();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnCarSpeed = new System.Windows.Forms.Button();
+            this.txtLBA2CarSpeed = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblFruitMachineCount = new System.Windows.Forms.Label();
             this.btnFruitMachineStart = new System.Windows.Forms.Button();
+            this.tpHyperCar = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHyperCarOnOff = new System.Windows.Forms.Button();
+            this.lblHyperCarGear5 = new System.Windows.Forms.Label();
+            this.txtHyperCarGear5 = new System.Windows.Forms.TextBox();
+            this.lblHyperCarGear4 = new System.Windows.Forms.Label();
+            this.txtHyperCarGear4 = new System.Windows.Forms.TextBox();
+            this.rbLBA2HyperCar5 = new System.Windows.Forms.RadioButton();
+            this.rbLBA2HyperCar4 = new System.Windows.Forms.RadioButton();
+            this.rbLBA2HyperCar3 = new System.Windows.Forms.RadioButton();
+            this.rbLBA2HyperCar2 = new System.Windows.Forms.RadioButton();
+            this.rbLBA2HyperCar1 = new System.Windows.Forms.RadioButton();
+            this.lblHyperCarGear3 = new System.Windows.Forms.Label();
+            this.txtHyperCarGear3 = new System.Windows.Forms.TextBox();
+            this.lblHyperCarGear2 = new System.Windows.Forms.Label();
+            this.txtHyperCarGear2 = new System.Windows.Forms.TextBox();
+            this.txtHyperCarGear1 = new System.Windows.Forms.TextBox();
+            this.lblHyperCarGear1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,6 +190,8 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
+            this.lblHyperCarSpeed = new System.Windows.Forms.Label();
+            this.lblHyperCarActualSpeed = new System.Windows.Forms.Label();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -185,6 +209,8 @@
             this.tpLBA2ShittyShot.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tpHyperCar.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -944,6 +970,7 @@
             this.tcLBA2Inner.Controls.Add(this.tpLBA2ShittyShot);
             this.tcLBA2Inner.Controls.Add(this.tabPage2);
             this.tcLBA2Inner.Controls.Add(this.tabPage3);
+            this.tcLBA2Inner.Controls.Add(this.tpHyperCar);
             this.tcLBA2Inner.Location = new System.Drawing.Point(6, 6);
             this.tcLBA2Inner.Name = "tcLBA2Inner";
             this.tcLBA2Inner.SelectedIndex = 0;
@@ -1446,6 +1473,10 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.MistyRose;
+            this.tabPage3.Controls.Add(this.btnCarSpeed);
+            this.tabPage3.Controls.Add(this.txtLBA2CarSpeed);
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.lblFruitMachineCount);
             this.tabPage3.Controls.Add(this.btnFruitMachineStart);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -1455,11 +1486,47 @@
             this.tabPage3.TabIndex = 5;
             this.tabPage3.Text = "tabPage3";
             // 
+            // btnCarSpeed
+            // 
+            this.btnCarSpeed.Location = new System.Drawing.Point(223, 79);
+            this.btnCarSpeed.Name = "btnCarSpeed";
+            this.btnCarSpeed.Size = new System.Drawing.Size(75, 23);
+            this.btnCarSpeed.TabIndex = 5;
+            this.btnCarSpeed.Text = "Car speed";
+            this.btnCarSpeed.UseVisualStyleBackColor = true;
+            this.btnCarSpeed.Click += new System.EventHandler(this.btnCarSpeed_Click);
+            // 
+            // txtLBA2CarSpeed
+            // 
+            this.txtLBA2CarSpeed.Location = new System.Drawing.Point(97, 82);
+            this.txtLBA2CarSpeed.Name = "txtLBA2CarSpeed";
+            this.txtLBA2CarSpeed.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2CarSpeed.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Car speed";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 31);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Count";
+            // 
             // lblFruitMachineCount
             // 
             this.lblFruitMachineCount.AutoSize = true;
             this.lblFruitMachineCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFruitMachineCount.Location = new System.Drawing.Point(126, 44);
+            this.lblFruitMachineCount.Location = new System.Drawing.Point(107, 21);
             this.lblFruitMachineCount.Name = "lblFruitMachineCount";
             this.lblFruitMachineCount.Size = new System.Drawing.Size(0, 31);
             this.lblFruitMachineCount.TabIndex = 1;
@@ -1467,13 +1534,195 @@
             // 
             // btnFruitMachineStart
             // 
-            this.btnFruitMachineStart.Location = new System.Drawing.Point(102, 80);
+            this.btnFruitMachineStart.Location = new System.Drawing.Point(159, 21);
             this.btnFruitMachineStart.Name = "btnFruitMachineStart";
-            this.btnFruitMachineStart.Size = new System.Drawing.Size(75, 23);
+            this.btnFruitMachineStart.Size = new System.Drawing.Size(97, 31);
             this.btnFruitMachineStart.TabIndex = 0;
             this.btnFruitMachineStart.Text = "Start";
             this.btnFruitMachineStart.UseVisualStyleBackColor = true;
             this.btnFruitMachineStart.Click += new System.EventHandler(this.btnFruitMachineStart_Click);
+            // 
+            // tpHyperCar
+            // 
+            this.tpHyperCar.BackColor = System.Drawing.Color.MistyRose;
+            this.tpHyperCar.Controls.Add(this.panel1);
+            this.tpHyperCar.Location = new System.Drawing.Point(4, 22);
+            this.tpHyperCar.Name = "tpHyperCar";
+            this.tpHyperCar.Size = new System.Drawing.Size(334, 178);
+            this.tpHyperCar.TabIndex = 6;
+            this.tpHyperCar.Text = "Hyper Car";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblHyperCarActualSpeed);
+            this.panel1.Controls.Add(this.lblHyperCarSpeed);
+            this.panel1.Controls.Add(this.btnHyperCarOnOff);
+            this.panel1.Controls.Add(this.lblHyperCarGear5);
+            this.panel1.Controls.Add(this.txtHyperCarGear5);
+            this.panel1.Controls.Add(this.lblHyperCarGear4);
+            this.panel1.Controls.Add(this.txtHyperCarGear4);
+            this.panel1.Controls.Add(this.rbLBA2HyperCar5);
+            this.panel1.Controls.Add(this.rbLBA2HyperCar4);
+            this.panel1.Controls.Add(this.rbLBA2HyperCar3);
+            this.panel1.Controls.Add(this.rbLBA2HyperCar2);
+            this.panel1.Controls.Add(this.rbLBA2HyperCar1);
+            this.panel1.Controls.Add(this.lblHyperCarGear3);
+            this.panel1.Controls.Add(this.txtHyperCarGear3);
+            this.panel1.Controls.Add(this.lblHyperCarGear2);
+            this.panel1.Controls.Add(this.txtHyperCarGear2);
+            this.panel1.Controls.Add(this.txtHyperCarGear1);
+            this.panel1.Controls.Add(this.lblHyperCarGear1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(328, 172);
+            this.panel1.TabIndex = 6;
+            // 
+            // btnHyperCarOnOff
+            // 
+            this.btnHyperCarOnOff.Location = new System.Drawing.Point(106, 138);
+            this.btnHyperCarOnOff.Name = "btnHyperCarOnOff";
+            this.btnHyperCarOnOff.Size = new System.Drawing.Size(75, 23);
+            this.btnHyperCarOnOff.TabIndex = 21;
+            this.btnHyperCarOnOff.Text = "Off";
+            this.btnHyperCarOnOff.UseVisualStyleBackColor = true;
+            this.btnHyperCarOnOff.Click += new System.EventHandler(this.LBA2btnHyperCarOnOff_Click);
+            // 
+            // lblHyperCarGear5
+            // 
+            this.lblHyperCarGear5.AutoSize = true;
+            this.lblHyperCarGear5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHyperCarGear5.Location = new System.Drawing.Point(15, 115);
+            this.lblHyperCarGear5.Name = "lblHyperCarGear5";
+            this.lblHyperCarGear5.Size = new System.Drawing.Size(45, 13);
+            this.lblHyperCarGear5.TabIndex = 20;
+            this.lblHyperCarGear5.Text = "Gear 5";
+            // 
+            // txtHyperCarGear5
+            // 
+            this.txtHyperCarGear5.Location = new System.Drawing.Point(80, 112);
+            this.txtHyperCarGear5.Name = "txtHyperCarGear5";
+            this.txtHyperCarGear5.Size = new System.Drawing.Size(56, 20);
+            this.txtHyperCarGear5.TabIndex = 19;
+            this.txtHyperCarGear5.Text = "20000";
+            // 
+            // lblHyperCarGear4
+            // 
+            this.lblHyperCarGear4.AutoSize = true;
+            this.lblHyperCarGear4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHyperCarGear4.Location = new System.Drawing.Point(15, 92);
+            this.lblHyperCarGear4.Name = "lblHyperCarGear4";
+            this.lblHyperCarGear4.Size = new System.Drawing.Size(45, 13);
+            this.lblHyperCarGear4.TabIndex = 18;
+            this.lblHyperCarGear4.Text = "Gear 4";
+            // 
+            // txtHyperCarGear4
+            // 
+            this.txtHyperCarGear4.Location = new System.Drawing.Point(80, 89);
+            this.txtHyperCarGear4.Name = "txtHyperCarGear4";
+            this.txtHyperCarGear4.Size = new System.Drawing.Size(56, 20);
+            this.txtHyperCarGear4.TabIndex = 17;
+            this.txtHyperCarGear4.Text = "10000";
+            // 
+            // rbLBA2HyperCar5
+            // 
+            this.rbLBA2HyperCar5.AutoSize = true;
+            this.rbLBA2HyperCar5.Location = new System.Drawing.Point(142, 115);
+            this.rbLBA2HyperCar5.Name = "rbLBA2HyperCar5";
+            this.rbLBA2HyperCar5.Size = new System.Drawing.Size(14, 13);
+            this.rbLBA2HyperCar5.TabIndex = 16;
+            this.rbLBA2HyperCar5.UseVisualStyleBackColor = true;
+            // 
+            // rbLBA2HyperCar4
+            // 
+            this.rbLBA2HyperCar4.AutoSize = true;
+            this.rbLBA2HyperCar4.Location = new System.Drawing.Point(142, 90);
+            this.rbLBA2HyperCar4.Name = "rbLBA2HyperCar4";
+            this.rbLBA2HyperCar4.Size = new System.Drawing.Size(14, 13);
+            this.rbLBA2HyperCar4.TabIndex = 15;
+            this.rbLBA2HyperCar4.UseVisualStyleBackColor = true;
+            // 
+            // rbLBA2HyperCar3
+            // 
+            this.rbLBA2HyperCar3.AutoSize = true;
+            this.rbLBA2HyperCar3.Location = new System.Drawing.Point(142, 65);
+            this.rbLBA2HyperCar3.Name = "rbLBA2HyperCar3";
+            this.rbLBA2HyperCar3.Size = new System.Drawing.Size(14, 13);
+            this.rbLBA2HyperCar3.TabIndex = 14;
+            this.rbLBA2HyperCar3.UseVisualStyleBackColor = true;
+            // 
+            // rbLBA2HyperCar2
+            // 
+            this.rbLBA2HyperCar2.AutoSize = true;
+            this.rbLBA2HyperCar2.Location = new System.Drawing.Point(142, 42);
+            this.rbLBA2HyperCar2.Name = "rbLBA2HyperCar2";
+            this.rbLBA2HyperCar2.Size = new System.Drawing.Size(14, 13);
+            this.rbLBA2HyperCar2.TabIndex = 13;
+            this.rbLBA2HyperCar2.UseVisualStyleBackColor = true;
+            // 
+            // rbLBA2HyperCar1
+            // 
+            this.rbLBA2HyperCar1.AutoSize = true;
+            this.rbLBA2HyperCar1.Checked = true;
+            this.rbLBA2HyperCar1.Location = new System.Drawing.Point(142, 16);
+            this.rbLBA2HyperCar1.Name = "rbLBA2HyperCar1";
+            this.rbLBA2HyperCar1.Size = new System.Drawing.Size(14, 13);
+            this.rbLBA2HyperCar1.TabIndex = 12;
+            this.rbLBA2HyperCar1.TabStop = true;
+            this.rbLBA2HyperCar1.UseVisualStyleBackColor = true;
+            // 
+            // lblHyperCarGear3
+            // 
+            this.lblHyperCarGear3.AutoSize = true;
+            this.lblHyperCarGear3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHyperCarGear3.Location = new System.Drawing.Point(15, 67);
+            this.lblHyperCarGear3.Name = "lblHyperCarGear3";
+            this.lblHyperCarGear3.Size = new System.Drawing.Size(45, 13);
+            this.lblHyperCarGear3.TabIndex = 11;
+            this.lblHyperCarGear3.Text = "Gear 3";
+            // 
+            // txtHyperCarGear3
+            // 
+            this.txtHyperCarGear3.Location = new System.Drawing.Point(80, 64);
+            this.txtHyperCarGear3.Name = "txtHyperCarGear3";
+            this.txtHyperCarGear3.Size = new System.Drawing.Size(56, 20);
+            this.txtHyperCarGear3.TabIndex = 10;
+            this.txtHyperCarGear3.Text = "8000";
+            // 
+            // lblHyperCarGear2
+            // 
+            this.lblHyperCarGear2.AutoSize = true;
+            this.lblHyperCarGear2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHyperCarGear2.Location = new System.Drawing.Point(15, 42);
+            this.lblHyperCarGear2.Name = "lblHyperCarGear2";
+            this.lblHyperCarGear2.Size = new System.Drawing.Size(45, 13);
+            this.lblHyperCarGear2.TabIndex = 9;
+            this.lblHyperCarGear2.Text = "Gear 2";
+            // 
+            // txtHyperCarGear2
+            // 
+            this.txtHyperCarGear2.Location = new System.Drawing.Point(80, 39);
+            this.txtHyperCarGear2.Name = "txtHyperCarGear2";
+            this.txtHyperCarGear2.Size = new System.Drawing.Size(56, 20);
+            this.txtHyperCarGear2.TabIndex = 8;
+            this.txtHyperCarGear2.Text = "6000";
+            // 
+            // txtHyperCarGear1
+            // 
+            this.txtHyperCarGear1.Location = new System.Drawing.Point(80, 13);
+            this.txtHyperCarGear1.Name = "txtHyperCarGear1";
+            this.txtHyperCarGear1.Size = new System.Drawing.Size(56, 20);
+            this.txtHyperCarGear1.TabIndex = 7;
+            this.txtHyperCarGear1.Text = "3800";
+            // 
+            // lblHyperCarGear1
+            // 
+            this.lblHyperCarGear1.AutoSize = true;
+            this.lblHyperCarGear1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHyperCarGear1.Location = new System.Drawing.Point(15, 16);
+            this.lblHyperCarGear1.Name = "lblHyperCarGear1";
+            this.lblHyperCarGear1.Size = new System.Drawing.Size(45, 13);
+            this.lblHyperCarGear1.TabIndex = 6;
+            this.lblHyperCarGear1.Text = "Gear 1";
             // 
             // menuStrip1
             // 
@@ -1580,6 +1829,26 @@
             this.tmrHeightLock.Interval = 50;
             this.tmrHeightLock.Tick += new System.EventHandler(this.LBA1Tel_TmrHeightLock_Tick);
             // 
+            // lblHyperCarSpeed
+            // 
+            this.lblHyperCarSpeed.AutoSize = true;
+            this.lblHyperCarSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHyperCarSpeed.Location = new System.Drawing.Point(180, 16);
+            this.lblHyperCarSpeed.Name = "lblHyperCarSpeed";
+            this.lblHyperCarSpeed.Size = new System.Drawing.Size(43, 13);
+            this.lblHyperCarSpeed.TabIndex = 22;
+            this.lblHyperCarSpeed.Text = "Speed";
+            // 
+            // lblHyperCarActualSpeed
+            // 
+            this.lblHyperCarActualSpeed.AutoSize = true;
+            this.lblHyperCarActualSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHyperCarActualSpeed.Location = new System.Drawing.Point(231, 42);
+            this.lblHyperCarActualSpeed.Name = "lblHyperCarActualSpeed";
+            this.lblHyperCarActualSpeed.Size = new System.Drawing.Size(29, 31);
+            this.lblHyperCarActualSpeed.TabIndex = 23;
+            this.lblHyperCarActualSpeed.Text = "0";
+            // 
             // frmTrainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1621,6 +1890,9 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tpHyperCar.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -1769,6 +2041,30 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblFruitMachineCount;
         private System.Windows.Forms.Button btnFruitMachineStart;
+        private System.Windows.Forms.Button btnCarSpeed;
+        private System.Windows.Forms.TextBox txtLBA2CarSpeed;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage tpHyperCar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblHyperCarGear5;
+        private System.Windows.Forms.TextBox txtHyperCarGear5;
+        private System.Windows.Forms.Label lblHyperCarGear4;
+        private System.Windows.Forms.TextBox txtHyperCarGear4;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar5;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar4;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar3;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar2;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar1;
+        private System.Windows.Forms.Label lblHyperCarGear3;
+        private System.Windows.Forms.TextBox txtHyperCarGear3;
+        private System.Windows.Forms.Label lblHyperCarGear2;
+        private System.Windows.Forms.TextBox txtHyperCarGear2;
+        private System.Windows.Forms.TextBox txtHyperCarGear1;
+        private System.Windows.Forms.Label lblHyperCarGear1;
+        private System.Windows.Forms.Button btnHyperCarOnOff;
+        private System.Windows.Forms.Label lblHyperCarActualSpeed;
+        private System.Windows.Forms.Label lblHyperCarSpeed;
     }
 }
 

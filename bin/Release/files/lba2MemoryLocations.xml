@@ -1174,7 +1174,29 @@
 				2
 			</lbaVersion>
 		</item>
-		
+		<item>
+			<name>
+				Combined Key Fragments
+			</name>
+			<memoryOffset>
+				57C61
+			</memoryOffset>
+			<maxVal>
+				1
+			</maxVal>
+			<minVal>
+				0
+			</minVal>
+			<size>
+				1
+			</size>
+			<type>
+				0
+			</type>
+			<lbaVersion>
+				2
+			</lbaVersion>
+		</item>
 		<item>
 			<name>
 				Working Gun

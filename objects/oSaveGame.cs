@@ -21,7 +21,8 @@ namespace LBATrainer
         }
         private SaveItem[] loadItems()
         {
-            string filePath = new Uri(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase)).LocalPath + "\\files\\saveGame.xml";
+            //AppDomain.CurrentDomain.BaseDirectory
+            string filePath = AppDomain.CurrentDomain.BaseDirectory  + "files\\saveGame.xml";
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
             XmlNodeList nodes = doc.DocumentElement.SelectNodes("/savegame/item");

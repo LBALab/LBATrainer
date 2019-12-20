@@ -106,6 +106,7 @@ namespace LBATrainer
             if (keyPressed.Msg == 0x0312)
             {
                 LBA1SG_processHotkey((Keys)keyPressed.WParam);
+                LBA2HyperCar_ProcessHotKey((Keys)keyPressed.WParam);
             }
             base.WndProc(ref keyPressed);
         }
@@ -186,5 +187,24 @@ namespace LBATrainer
         {            
             memRoutines.WriteVal(0x57BC9,(ushort) (getInt(lblFruitMachineCount.Text) + 1), 2);
         }
+
+        oTimerSetItems otis;
+        private void btnCarSpeed_Click(object sender, EventArgs e)
+        {
+            if (null == otis)
+            {
+                otis = new oTimerSetItems(oTimerSetItems.LBAVersion.Two, 10);
+                otis.AddItem(0x52B9B, (ushort)getInt(txtLBA2CarSpeed.Text), 2);
+                btnCarSpeed.Text = "On";
+            }
+            else
+            {
+                otis.RemoveIfExists(0x52b9b);
+                otis = null;
+                btnCarSpeed.Text = "Off";
+            }
+        }
+
+
     }
 }

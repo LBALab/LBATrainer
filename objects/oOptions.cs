@@ -26,7 +26,7 @@ namespace LBATrainer
         private void readOptionsFile()
         {
             doc = new XmlDocument();
-            path = new Uri(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase)).LocalPath + "\\files\\options.xml";
+            path = AppDomain.CurrentDomain.BaseDirectory + "files\\options.xml";
             doc.Load(path);
 
             XmlNodeList nodes = doc.DocumentElement.SelectNodes("/options/LBADir");

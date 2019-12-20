@@ -43,7 +43,7 @@ namespace LBATrainer
                 Movies = loadItems("lba1MovieOffsets.xml", "/movies/item");
             }
             XmlDocument doc = new XmlDocument();
-            doc.Load(new Uri(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase)).LocalPath + "\\files\\" + fileName);
+            doc.Load(AppDomain.CurrentDomain.BaseDirectory + "files\\" + fileName);
            
             loadTwinsen(LBAVer, doc.DocumentElement.SelectNodes("/items/Twinsen/item"));
 
@@ -52,7 +52,7 @@ namespace LBATrainer
         //Assumes all files are in .\files\ folder
         private Item[] loadItems(string fileName, string XMLQueryString)
         {
-            string filePath = new Uri(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase)).LocalPath + "\\files\\" + fileName;
+            string filePath = AppDomain.CurrentDomain.BaseDirectory + "files\\" + fileName;
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
             XmlNodeList nodes = doc.DocumentElement.SelectNodes(XMLQueryString);

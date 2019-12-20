@@ -14,9 +14,16 @@ namespace LBATrainer
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTrainer());
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new frmTrainer());
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error\n\n" + e.Message + "\n\n" +  e.StackTrace);
+            }
         }
     }
 }

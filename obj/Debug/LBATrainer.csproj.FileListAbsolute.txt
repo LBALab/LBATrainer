@@ -1,7 +1,6 @@
 R:\Users\User\source\repos\LBATrainer\bin\Debug\LBATrainer.exe.config
 R:\Users\User\source\repos\LBATrainer\bin\Debug\LBATrainer.exe
 R:\Users\User\source\repos\LBATrainer\bin\Debug\LBATrainer.pdb
-R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.csprojAssemblyReference.cache
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.Properties.Resources.resources
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.csproj.GenerateResource.cache
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.exe
@@ -19,3 +18,4 @@ R:\Users\User\source\repos\LBATrainer\bin\Debug\LBAMemoryModule.dll
 R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.csproj.CopyComplete
 R:\Users\User\source\repos\LBATrainer\bin\Debug\Flying.dll
 R:\Users\User\source\repos\LBATrainer\bin\Debug\DLLs\LBAMemoryModule.dll
+R:\Users\User\source\repos\LBATrainer\obj\Debug\LBATrainer.csprojAssemblyReference.cache

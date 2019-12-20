@@ -23,7 +23,7 @@
 			<lbaVersion>
 				2
 			</lbaVersion>
-			<item>
+			<!--<item>
 				<name>
 					Broken Pistol
 				</name>
@@ -68,7 +68,7 @@
 				<lbaVersion>
 					2
 				</lbaVersion>
-			</item>
+			</item>-->
 		</item>
 		<item>
 			<name>

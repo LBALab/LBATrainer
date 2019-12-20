@@ -1,0 +1,10 @@
+offset = FFFFFFFFFFFA7165
+
+0b0731a2
+
+Base: 0B0CC03D
+
+Speed = base - 58e9B
+
+? Current Speed = 0b11ebd8 ||
+0b11ebd0

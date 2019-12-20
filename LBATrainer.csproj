@@ -126,6 +126,9 @@
     <Compile Include="Trainer.LBA1.Twinsen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Trainer.LBA2.Hypercar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Trainer.LBA2.MenuFunctions.cs">
       <SubType>Form</SubType>
     </Compile>
