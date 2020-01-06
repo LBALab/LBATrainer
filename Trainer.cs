@@ -55,11 +55,11 @@ namespace LBATrainer
         {
             Options opt = new Options();
             LBA1SG_Load(sender, e, opt);
-#if !DEBUG
+/*#if !DEBUG
             tcLBA1Inner.TabPages.Remove(tcLBA1Inner.TabPages[tcLBA1Inner.TabPages.Count - 1]);
             tcLBA2Inner.TabPages.Remove(tcLBA2Inner.TabPages[1]);
             tcLBA2Inner.TabPages.Remove(tcLBA2Inner.TabPages[tcLBA2Inner.TabPages.Count - 1]);
-#endif
+#endif*/
         }
         private void FrmTrainer_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -67,8 +67,8 @@ namespace LBATrainer
         }
         private int getInt(string value)
         {
-            ushort val;
-            if (!ushort.TryParse(value, out val)) return -1;
+            int val;
+            if (!int.TryParse(value, out val)) return -1;
             return val;
         }
         private HotKey registerHotKey(Keys k)
@@ -150,16 +150,88 @@ namespace LBATrainer
             memRoutines.WriteVal(2, 0x57F3D, (ushort)getInt(txtLBA2LocationYPos.Text), 2);
         }
 
-
+        //Other Tab
+        int counter = 255;
         private void button2_Click(object sender, EventArgs e)
         {
             uint outfitAddress = 0x57F51;
+            //lblOtherSkin.Text = counter.ToString();
+            //MessageBox.Show("Counter: " + counter);
+            //memRoutines.WriteVal((int)outfitAddress, (ushort)counter++, 2);
             tsi = itemToggle(tsi, outfitAddress, (ushort)getInt(textBox1.Text), 2, oTimerSetItems.LBAVersion.Two);
         }
 
+        //Other Tab: Instant car
+        private void btnLBA2InstantCar_Click(object sender, EventArgs e)
+        {
+            //memRoutines.WriteVal(0x57F51, (ushort)getInt(textBox1.Text), 1);//Wizard Car
+            memRoutines.WriteVal(0x57F51, 15, 1);//Wizard Car
+            memRoutines.WriteVal(0x580EF, 13, 1);
+            //memRoutines.WriteVal(0x8DABB, 13, 1);            
+        }
+
+        private void btnLBA2InstantCarTunic_Click(object sender, EventArgs e)
+        {
+            memRoutines.WriteVal(0x57F51, 14, 1);//Tunic Car
+
+
+            /*memRoutines.WriteVal(0x3CD77, 6,    1);
+            memRoutines.WriteVal(0x3CDDB, 6,    1);
+            memRoutines.WriteVal(0x3D660, 0,    1);
+            memRoutines.WriteVal(0x3D661, 37,   1);
+
+            memRoutines.WriteVal(0x57F2F, 0,    1);
+            memRoutines.WriteVal(0x580B9, 135,  1);
+            memRoutines.WriteVal(0x580BA, 253,  1);
+            memRoutines.WriteVal(0x580BB, 121,  1);
+
+            memRoutines.WriteVal(0x580BC, 2,    1);
+            memRoutines.WriteVal(0x580BF, 172,  1);
+            memRoutines.WriteVal(0x580C0, 3,    1);
+            memRoutines.WriteVal(0x580C1, 135,  1);
+
+            memRoutines.WriteVal(0x580C2, 253,  1);
+            memRoutines.WriteVal(0x580C3, 121,  1);
+            memRoutines.WriteVal(0x580C4, 2,    1);
+            memRoutines.WriteVal(0x580EF, 13, 1);
+
+            memRoutines.WriteVal(0x5810E, 109, 1);*/
+
+            memRoutines.WriteVal(0x580EF, 13, 1);
+            //memRoutines.WriteVal(0x8DABB, 13, 1);
+        }
+        private void btnLBA2InstantCarDisabled_Click(object sender, EventArgs e)
+        {
+            memRoutines.WriteVal(0x57F51, 1, 1); //Dump outfit to 1
+
+            /*memRoutines.WriteVal(0x3CD77, 3, 1);
+            memRoutines.WriteVal(0x3CDDB, 0, 1);
+            memRoutines.WriteVal(0x3D660, 255, 1);
+            memRoutines.WriteVal(0x3D661, 36, 1);
+
+            memRoutines.WriteVal(0x57F2F, 5, 1);
+            memRoutines.WriteVal(0x580B9, 6, 1);
+            memRoutines.WriteVal(0x580BA, 255, 1);
+            memRoutines.WriteVal(0x580BB, 250, 1);
+
+            memRoutines.WriteVal(0x580BC, 0, 1);
+            memRoutines.WriteVal(0x580BF, 216, 1);
+            memRoutines.WriteVal(0x580C0, 4, 1);
+            memRoutines.WriteVal(0x580C1, 6, 1);
+
+            memRoutines.WriteVal(0x580C2, 255, 1);
+            memRoutines.WriteVal(0x580C3, 250, 1);
+            memRoutines.WriteVal(0x580C4, 0, 1);
+            memRoutines.WriteVal(0x580EF, 1, 1);
+
+            memRoutines.WriteVal(0x5810E, 0, 1);*/
+            memRoutines.WriteVal(0x580EF, 1, 1);
+            /*memRoutines.WriteVal(0x8DABB, 1, 1);*/
+        }
         private void button3_Click(object sender, EventArgs e)
         {
-            memRoutines.WriteVal(1,  0xD580, 65535, 2);
+            if (0 < cboLBA1SelectSkin.Text.Length)
+                memRoutines.WriteVal(1, 0xD4EC, (ushort)getInt(cboLBA1SelectSkin.Text[0].ToString()), 1) ;
         }
         Timer fruity;
 
@@ -204,7 +276,9 @@ namespace LBATrainer
                 btnCarSpeed.Text = "Off";
             }
         }
-
-
+        private string getLBAFilesPath(ushort LBAVer)
+        {
+            return AppDomain.CurrentDomain.BaseDirectory + "files\\lba" + LBAVer.ToString() + "\\";
+        }
     }
 }

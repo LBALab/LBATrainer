@@ -78,11 +78,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutBox1.cs">
+    <Compile Include="LBA1\Trainer.LBA1.MenuFunctions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutBox1.Designer.cs">
-      <DependentUpon>AboutBox1.cs</DependentUpon>
+    <Compile Include="LBA1\Trainer.LBA1.Other.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA1\Trainer.LBA1.Savegame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA1\Trainer.LBA1.Teleport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA1\Trainer.LBA1.Twinsen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.Hypercar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.MenuFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.ShittyShot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.Teleport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.Twinsen.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="objects\getSaveFileNames.cs">
       <SubType>Form</SubType>
@@ -91,7 +115,13 @@
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
     </Compile>
     <Compile Include="objects\oTimerSetItems.cs" />
-    <Compile Include="oTeleport.cs" />
+    <Compile Include="oTimerGetItems.cs" />
+    <Compile Include="Shared\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shared\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trainer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,15 +131,6 @@
     <Compile Include="Trainer.LBA.Twinsen.Shared.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Trainer.LBA1.FlyingTeleport.Shared.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA1.MenuFunctions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA1.Other.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="objects\oHotKey.cs" />
     <Compile Include="objects\oItems.cs" />
     <Compile Include="objects\oOptions.cs" />
@@ -117,35 +138,11 @@
     <Compile Include="objects\oSaveItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Trainer.LBA1.Savegame.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA1.Teleport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA1.Twinsen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA2.Hypercar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA2.MenuFunctions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA2.ShittyShot.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA2.Teleport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trainer.LBA2.Twinsen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <EmbeddedResource Include="AboutBox1.resx">
-      <DependentUpon>AboutBox1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="objects\getSaveFileNames.resx">
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trainer.resx">
       <DependentUpon>Trainer.cs</DependentUpon>
@@ -175,25 +172,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DLLs\LBAMemoryModule.dll">
+    <Content Include="files\LBA1\ChapterOffsets.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\lba1MemoryLocations.xml">
+    <Content Include="files\LBA1\MemoryLocations.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\lba1MovieOffsets.xml">
+    <Content Include="files\LBA1\MovieOffsets.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\lba1QuestOffsets.xml">
+    <Content Include="files\LBA1\QuestOffsets.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\lba2MemoryLocations.xml">
+    <Content Include="files\LBA1\saveGame.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\options.xml">
+    <Content Include="files\LBA2\MemoryLocations.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\saveGame.xml">
+    <Content Include="files\LBA2\Outfit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\LBA2\skins.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\Other\options.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -219,6 +222,7 @@
     <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.2.9.3\analyzers\dotnet\cs\Microsoft.NetFramework.Analyzers.dll" />
     <Analyzer Include="packages\Microsoft.NetFramework.Analyzers.2.9.3\analyzers\dotnet\cs\Microsoft.NetFramework.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

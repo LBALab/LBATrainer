@@ -69,12 +69,12 @@ namespace LBATrainer
         {
             if (Keys.F7 == k)
             {
-                SaveGame sg = new SaveGame();
+                SaveGame sg = new SaveGame(getLBAFilesPath(LBA_ONE));
                 if (!sg.save(LBA1SG_txtSaveFileDirectory.Text)) MessageBox.Show("Unable to save game, is DOSBox running?");
             }
             if (Keys.F8 == k)
             {
-                SaveGame sg = new SaveGame();
+                SaveGame sg = new SaveGame(getLBAFilesPath(LBA_ONE));
                 getSaveFileNames getSaveFileName = new getSaveFileNames();
                 //If cancelled do nothing
                 getSaveFileName.TopMost = true;

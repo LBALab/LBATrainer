@@ -1,0 +1,4 @@
+78 = Small saucer
+227 = other race car
+302 = buggy no driver
+303 = tank

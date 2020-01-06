@@ -39,7 +39,7 @@ namespace LBATrainer
         private void scanLBA1()
         {
             int val;
-            items = new Items(LBA_ONE);
+            items = new Items(getLBAFilesPath(LBA_ONE),LBA_ONE);
             memRoutines = new Mem();
             val = memRoutines.getVal(LBA_ONE, items.MagicLevel);
             if (-1 == val) return;

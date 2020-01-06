@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<hqr>
+	<offsets>
+		<offset offset="532">
+			Twinsen: Tunic and Sendell's medallion
+		</offset>
+		<offset offset="4682">
+			Twinsen: Prison uniform
+		</offset>
+		<offset offset="8980">
+			Twinsen: Nurse uniform
+		</offset>
+		<offset offset="13022">
+			Twinsen: Tunic
+		</offset>
+		<offset offset="16765">
+			Twinsen: Tunic, Sendell's medallion and saber
+		</offset>
+		<offset offset="20988">
+			Twinsen: Tunic, Sendell's medallion and Gawley's horn
+		</offset>
+		<offset offset="25212">
+			Twinsen: Tunic, Sendell's medallion and snowboard
+		</offset>
+		<offset offset="29927">
+			Twinsen: Tunic, Sendell's medallion and protopack
+		</offset>
+		<offset offset="34683">
+			Twinsen: Tunic and protopack
+		</offset>
+		<offset offset="39331">
+			Nurse: With clipboard
+		</offset>
+		<offset offset="42358">
+			Nurse: With clipboard and pistol
+		</offset>
+		<offset offset="45491">
+			Nurse: Baton in holder
+		</offset>
+		<offset offset="48468">
+			Nurse: Baton in hand
+		</offset>
+		<offset offset="51514">
+			Groboclone: Super
+		</offset>
+		<offset offset="55306">
+			Nurse Clothing (very odd)
+		</offset>
+		<offset offset="55747">
+			Meca-penguin
+		</offset>
+		<offset offset="57010">
+			Garbage truck
+		</offset>
+		<offset offset="58615">
+			Grobo: Green vest
+		</offset>
+		<offset offset="61899">
+			Soldier: Normal
+		</offset>
+		<offset offset="66377">
+			Soldier: Desert
+		</offset>
+		<offset offset="70899">
+			Soldier: Himalayan
+		</offset>
+		<offset offset="75421">
+			Rabbibunny: Orange male, yellow shirt and blue shorts
+		</offset>
+		<offset offset="80012">
+			Rabbibunny: Brown male, blue shirt and grey-blue shorts
+		</offset>
+		<offset offset="84283">
+			Rabbibunny: Orange male, yellow shirt and blue shorts, with bottle
+		</offset>
+		<offset offset="89143">
+			Rabbibunny: Orange male, green shirt and brown shorts in tatters
+		</offset>
+		<offset offset="93847">
+			Rabbibunny: Light brown male, yellow shirt and blue shorts in tatters
+		</offset>
+		<offset offset="98063">
+			Rabbibunny: Orange male, white clothes (the painter)
+		</offset>
+		<offset offset="102672">
+			Rabbibunny: Orange male, white clothes with brush (the painter)
+		</offset>
+		<offset offset="107737">
+			Weird motion-seeking tank (green &amp; yellow)
+		</offset>
+		<offset offset="109549">
+			Quetch: Salesman
+		</offset>
+		<offset offset="112541">
+			Groboclone: Yellow
+		</offset>
+		<offset offset="116540">
+			Groboclone: Green
+		</offset>
+		<offset offset="120333">
+			Groboclone: Red
+		</offset>
+		<offset offset="124126">
+			Groboclone: Yellow without mask
+		</offset>
+		<offset offset="128074">
+			Groboclone: Red without ears
+		</offset>
+		<offset offset="131934">
+			Grobo: Yellow clothes and hard hat (bulldozer operator)
+		</offset>
+		<offset offset="135890">
+			Rabbiclone: Yellow
+		</offset>
+		<offset offset="141234">
+			Yellow triangle
+		</offset>
+		<offset offset="141430">
+			Turret from automatic-spray gun thing
+		</offset>
+		<offset offset="142011">
+			Robot with 2 legs
+		</offset>
+		<offset offset="145805">
+			Robot with 2 legs, sphero in cockpit
+		</offset>
+		<offset offset="150173">
+			Tank: Normal
+		</offset>
+		<offset offset="151985">
+			Tank: Himalayan
+		</offset>
+		<offset offset="153771">
+			Tank: Desert
+		</offset>
+		<offset offset="155484">
+			Rabbibunny: Light brown female, orange dress
+		</offset>
+		<offset offset="159695">
+			Rabbibunny: Light brown female, green dress
+		</offset>
+		<offset offset="163906">
+			Rabbibunny: Brown female, yellow dress
+		</offset>
+		<offset offset="168113">
+			Rabbibunny: Brown female, orange dress in tatters
+		</offset>
+		<offset offset="172366">
+			Zoé
+		</offset>
+		<offset offset="176007">
+			Catamaran
+		</offset>
+		<offset offset="177409">
+			Catamaran with pirate flag
+		</offset>
+		<offset offset="178867">
+			Ferryboat
+		</offset>
+		<offset offset="183287">
+			Grobo: Pirate
+		</offset>
+		<offset offset="187138">
+			Rabbibunny: Orange male, blue shirt and white shorts (ferryboat captain)
+		</offset>
+		<offset offset="191853">
+			Fishing boat
+		</offset>
+		<offset offset="194880">
+			Skeleton
+		</offset>
+		<offset offset="198602">
+			Oscillating-blade thing
+		</offset>
+		<offset offset="199598">
+			Small spiked log
+		</offset>
+		<offset offset="200758">
+			Big spiked log
+		</offset>
+		<offset offset="201979">
+			Electro-plant thing
+		</offset>
+		<offset offset="202381">
+			Army boat (driver only)
+		</offset>
+		<offset offset="204362">
+			Army boat (Twinsen &amp; rebels)
+		</offset>
+		<offset offset="206718">
+			Soldier: Normal gunner
+		</offset>
+		<offset offset="211566">
+			Soldier: Desert gunner
+		</offset>
+		<offset offset="216577">
+			Soldier: Himalayan gunner
+		</offset>
+		<offset offset="221589">
+			Radio equipment
+		</offset>
+		<offset offset="222832">
+			Rabbibunny: Orange male, rebel in fatigues and mask
+		</offset>
+		<offset offset="228224">
+			Rabbibunny: Orange male, rebel in fatigues
+		</offset>
+		<offset offset="233556">
+			Sphero: Male rebel in fatigues
+		</offset>
+		<offset offset="236713">
+			Sphero: Male, green clothes
+		</offset>
+		<offset offset="239555">
+			Sphero: Male, yellow clothes
+		</offset>
+		<offset offset="242413">
+			Rabbiclone: Green
+		</offset>
+		<offset offset="247772">
+			Car with Twinsen
+		</offset>
+		<offset offset="249921">
+			Car
+		</offset>
+		<offset offset="251962">
+			Praying mantis
+		</offset>
+		<offset offset="254541">
+			Spheroclone, blue-coloured
+		</offset>
+		<offset offset="257573">
+			Spheroclone, red &amp; yellow
+		</offset>
+		<offset offset="260600">
+			Spheroclone, green &amp; grey
+		</offset>
+		<offset offset="263540">
+			ID card
+		</offset>
+		<offset offset="264454">
+			Gawley's horn
+		</offset>
+		<offset offset="265526">
+			Sendell's medallion
+		</offset>
+		<offset offset="267802">
+			Rabbibunny: Orange male, white shirt and blue shorts (fisherman)
+		</offset>
+		<offset offset="272852">
+			Motorcycle
+		</offset>
+		<offset offset="274334">
+			Horse ridden by Twinsen
+		</offset>
+		<offset offset="276864">
+			Horse
+		</offset>
+		<offset offset="278992">
+			Rabbibunny: Old orange male, with space guitar
+		</offset>
+		<offset offset="284803">
+			Rabbibunny: Old orange Male, with flute
+		</offset>
+		<offset offset="289919">
+			Joe the Elf
+		</offset>
+		<offset offset="293005">
+			Raymond the Elf
+		</offset>
+		<offset offset="296095">
+			Kestrel
+		</offset>
+		<offset offset="297072">
+			Mutant: Eye
+		</offset>
+		<offset offset="297915">
+			Mutant: Egg
+		</offset>
+		<offset offset="298779">
+			Boulder
+		</offset>
+		<offset offset="299740">
+			Book of Bù
+		</offset>
+		<offset offset="300438">
+			Rabbiclone: Red
+		</offset>
+		<offset offset="306197">
+			Pirate flag
+		</offset>
+		<offset offset="307659">
+			Sewer-snake
+		</offset>
+		<offset offset="309436">
+			Proto-pack
+		</offset>
+		<offset offset="310828">
+			4-Beamed tank: Normal
+		</offset>
+		<offset offset="311842">
+			4-Beamed tank: Himalayan
+		</offset>
+		<offset offset="312856">
+			Mutant: Crab
+		</offset>
+		<offset offset="315783">
+			Mutant: Crab without legs
+		</offset>
+		<offset offset="317468">
+			Mutant: Crab, front pincers
+		</offset>
+		<offset offset="318974">
+			Hydroglider with Twinsen
+		</offset>
+		<offset offset="320509">
+			Hydroglider
+		</offset>
+		<offset offset="321913">
+			Rabbibunny: Orange male, hipster
+		</offset>
+		<offset offset="327132">
+			Grobo: Female bartender
+		</offset>
+		<offset offset="330997">
+			Grobo: Male hipster
+		</offset>
+		<offset offset="334760">
+			Mutant: Slime blob
+		</offset>
+		<offset offset="335792">
+			Dino-fly with Twinsen
+		</offset>
+		<offset offset="339575">
+			Dino-fly
+		</offset>
+		<offset offset="343075">
+			Rabbibunny: Guitar player with space guitar
+		</offset>
+		<offset offset="348549">
+			Rabbibunny: Guitar player
+		</offset>
+		<offset offset="353553">
+			Sphero: At drum set
+		</offset>
+		<offset offset="355652">
+			Mutant: Twinsen
+		</offset>
+		<offset offset="359653">
+			Big orange monster-thing
+		</offset>
+		<offset offset="362410">
+			FunFrock
+		</offset>
+		<offset offset="365519">
+			Grobo: Insane flying machine-gun dude
+		</offset>
+		<offset offset="370129">
+			Shark fin, on post
+		</offset>
+		<offset offset="371930">
+			Shark fin
+		</offset>
+		<offset offset="372643">
+			Snowboard
+		</offset>
+		<offset offset="374017">
+			Flag: Red
+		</offset>
+		<offset offset="374610">
+			Flag: Green
+		</offset>
+		<offset offset="375175">
+			Flag: Blue
+		</offset>
+		<offset offset="375740">
+			Flag: Dark blue
+		</offset>
+		<offset offset="376326">
+			Computer
+		</offset>
+		<offset offset="377770">
+			Dump truck
+		</offset>
+		<offset offset="380364">
+			Constuction worker 1
+		</offset>
+		<offset offset="383744">
+			Constuction worker 2
+		</offset>
+		<offset offset="387501">
+			Constuction worker 3
+		</offset>
+		<offset offset="391800">
+			Bulldozer
+		</offset>
+		<offset offset="394034">
+			Sphero: weirdo
+		</offset>
+	</offsets>
+</hqr>

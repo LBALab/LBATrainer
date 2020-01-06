@@ -14,15 +14,17 @@ namespace LBATrainer
     {
         const int actualFileNameOffset = 0x1CAA4;
         private SaveItem[] saveGame;
+        private string LBAFilesPath;
 
-        public SaveGame()
+        public SaveGame(string LBAFilesPath)
         {
+            this.LBAFilesPath = LBAFilesPath;
             saveGame = loadItems();
         }
         private SaveItem[] loadItems()
         {
             //AppDomain.CurrentDomain.BaseDirectory
-            string filePath = AppDomain.CurrentDomain.BaseDirectory  + "files\\saveGame.xml";
+            string filePath = LBAFilesPath + "saveGame.xml";
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
             XmlNodeList nodes = doc.DocumentElement.SelectNodes("/savegame/item");

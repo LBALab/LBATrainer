@@ -28,7 +28,7 @@ namespace LBATrainer
         private void scanLBA2()
         {
             int val;
-            items = new Items(LBA_TWO);
+            items = new Items(getLBAFilesPath(LBA_TWO), LBA_TWO);
             memRoutines = new Mem();
             val = memRoutines.getVal(LBA_TWO, items.MagicLevel);
             if (-1 == val)

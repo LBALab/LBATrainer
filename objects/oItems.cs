@@ -28,31 +28,32 @@ namespace LBATrainer
         public Item Darts;
         public Item Gems;
         public Item Zilitos;
-        //private XmlDocument doc;
+        private string LBAFilesPath;
 
-        public Items(ushort LBAVer)
+        public Items(string LBAFilesPath, ushort LBAVer)
         {
+            this.LBAFilesPath = LBAFilesPath;
             string fileName;
-            fileName = "lba" + LBAVer.ToString() + "MemoryLocations.xml";
+            fileName = "MemoryLocations.xml";
             
-            Inventory = loadItems(fileName, "/items/inventory/item");
-            Twinsen = loadItems(fileName, "/items/Twinsen/item");
+            Inventory = loadItems(LBAVer, fileName, "/items/inventory/item");
+            Twinsen = loadItems(LBAVer, fileName, "/items/Twinsen/item");
             if (1 == LBAVer)
             {
-                Quest = loadItems("lba1QuestOffsets.xml", "/quests/item");
-                Movies = loadItems("lba1MovieOffsets.xml", "/movies/item");
+                Quest = loadItems(LBAVer, "QuestOffsets.xml", "/quests/item");
+                Movies = loadItems(LBAVer, "MovieOffsets.xml", "/movies/item");
             }
             XmlDocument doc = new XmlDocument();
-            doc.Load(AppDomain.CurrentDomain.BaseDirectory + "files\\" + fileName);
+            doc.Load(LBAFilesPath + fileName);
            
             loadTwinsen(LBAVer, doc.DocumentElement.SelectNodes("/items/Twinsen/item"));
 
         }
 
         //Assumes all files are in .\files\ folder
-        private Item[] loadItems(string fileName, string XMLQueryString)
+        private Item[] loadItems(ushort LBAVer, string fileName, string XMLQueryString)
         {
-            string filePath = AppDomain.CurrentDomain.BaseDirectory + "files\\" + fileName;
+            string filePath = LBAFilesPath + fileName;
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
             XmlNodeList nodes = doc.DocumentElement.SelectNodes(XMLQueryString);

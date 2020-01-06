@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Skins>
+	<skin id="0">
+		Twinsen without tunic model
+	</skin>
+	<skin id="1">
+		Twinsen with tunic model
+	</skin>
+	<skin id="2">
+		Twinsen with tunic and sword model
+	</skin>
+	<skin id="3">
+		Twinsen with tunic and blowgun model
+	</skin>
+	<skin id="4">
+		Twinsen with tunic and blowtron model
+	</skin>
+	<skin id="5">
+		Twinsen with tunic and wannie glove model
+	</skin>
+	<skin id="6">
+		Twinsen with tunic and laser pistol model
+	</skin>
+	<skin id="7">
+		Twinsen with wizard's tunic model
+	</skin>
+	<skin id="8">
+		Twinsen with wizard's tunic and blowgun model
+	</skin>
+	<skin id="9">
+		Twinsen with tunic (darker shading) model
+	</skin>
+	<skin id="10">
+		Twinsen with tunic (darker shading) and pick-axe model
+	</skin>
+	<skin id="11">
+		Twinsen with tunic (darker shading) and portable radio model
+	</skin>
+	<skin id="12">
+		Twinsen burning model
+	</skin>
+	<skin id="13">
+		Twinsen falling in Dome of the Slate model
+	</skin>
+	<skin id="14">
+		Twinsen with tunic and car closed model
+	</skin>
+	<skin id="15">
+		Twinsen with wizard's tunic and car closed model
+	</skin>
+	<skin id="16">
+		Twinsen with tunic and protopack model
+	</skin>
+	<skin id="17">
+		Twinsen with tunic and Zoé model
+	</skin>
+	<skin id="18">
+		Twinsen with tunic and Horn of Blue Triton model
+	</skin>
+	<skin id="19">
+		Twinsen with wizard's tunic and Horn of Blue Triton model
+	</skin>
+	<skin id="20">
+		Twinsen with space suit model
+	</skin>
+	<skin id="21">
+		Twinsen with tunic and super jetpack model
+	</skin>
+	<skin id="22">
+		Twinsen with tunic and car open model
+	</skin>
+	<skin id="23">
+		Twinsen with wizard's tunic and car open model
+	</skin>
+	<skin id="24">
+		Twinsen X-Rayed model
+	</skin>
+	<skin id="25">
+		Nitro-meca-penguin model
+	</skin>
+	<skin id="26">
+		Zoé model
+	</skin>
+	<skin id="27">
+		Zoé with umbrella model
+	</skin>
+	<skin id="28">
+		Piece of flying saucer model
+	</skin>
+	<skin id="29">
+		Dot model
+	</skin>
+	<skin id="30">
+		Holomap model
+	</skin>
+	<skin id="31">
+		Three darts model
+	</skin>
+	<skin id="32">
+		Raph, the lighthouse keeper model
+	</skin>
+	<skin id="33">
+		The Tralu model
+	</skin>
+	<skin id="34">
+		Snake model
+	</skin>
+	<skin id="35">
+		Rabbibunny skeleton model
+	</skin>
+	<skin id="36">
+		The flying rat model
+	</skin>
+	<skin id="37">
+		The quetch not being from Citadel Island model
+	</skin>
+	<skin id="38">
+		Drunk rabbibunny in Luc's bar model
+	</skin>
+	<skin id="39">
+		Luc, the boss model
+	</skin>
+	<skin id="40">
+		Tim, waiter model
+	</skin>
+	<skin id="41">
+		A sphero (Raph's friend) model
+	</skin>
+	<skin id="42">
+		Another sphero model
+	</skin>
+	<skin id="43">
+		A third sphero model
+	</skin>
+	<skin id="44">
+		Quetch girl, Raph's friend model
+	</skin>
+	<skin id="45">
+		Quetch girl, Raph's friend model
+	</skin>
+	<skin id="46">
+		Sup in light green dressing model
+	</skin>
+	<skin id="47">
+		Sup in light green dressing with gun model
+	</skin>
+	<skin id="48">
+		Sup in light green dressing with newspaper model
+	</skin>
+	<skin id="49">
+		Yellow franco with green pistol model
+	</skin>
+	<skin id="50">
+		Yellow franco with red pistol model
+	</skin>
+	<skin id="51">
+		Gray esmer dog without mouth protection model
+	</skin>
+	<skin id="52">
+		Gray esmer dog with mouth protection model
+	</skin>
+	<skin id="53">
+		Brown esmer dog without mouth protection model
+	</skin>
+	<skin id="54">
+		Grobo in the baggage claim model
+	</skin>
+	<skin id="55">
+		Propeller of the crate-moving apparatus model
+	</skin>
+	<skin id="56">
+		Rabbibunny in the baggage claim model
+	</skin>
+	<skin id="57">
+		Crate-pushing apparatus model
+	</skin>
+	<skin id="58">
+		Quetch in the baggage claim model
+	</skin>
+	<skin id="59">
+		Mr. Paul model
+	</skin>
+	<skin id="60">
+		Grobo no. 1 in Temple of Bů model
+	</skin>
+	<skin id="61">
+		Quetch in the Inter-Islands Ferry (Cit. Island) model
+	</skin>
+	<skin id="62">
+		Mrs. Brune (Inter-Islands rabbibunny) model
+	</skin>
+	<skin id="63">
+		Neighbor without gallic acid model
+	</skin>
+	<skin id="64">
+		Neighbor with gallic acid model
+	</skin>
+	<skin id="65">
+		Cart in Temple of Bů model
+	</skin>
+	<skin id="66">
+		Arrow in Temple of Bů model
+	</skin>
+	<skin id="67">
+		Painter from Citadel Island sewers model
+	</skin>
+	<skin id="68">
+		Rabbibunny in blue-white dressing model
+	</skin>
+	<skin id="69">
+		Nitro-Meca-Penguin model
+	</skin>
+	<skin id="70">
+		Flying saucer (UFO) with closed door and lights off model
+	</skin>
+	<skin id="71">
+		Flying saucer (UFO) with quarter-open door model
+	</skin>
+	<skin id="72">
+		Flying saucer (UFO) with closed door and lights on model
+	</skin>
+	<skin id="73">
+		Flying saucer (UFO) with closed door, lights on, and feet out model
+	</skin>
+	<skin id="74">
+		Royal saucer (UFO) with quarter-open door model
+	</skin>
+	<skin id="75">
+		Royal saucer (UFO) with closed door model
+	</skin>
+	<skin id="76">
+		Royal saucer (UFO) with closed door and feet in model
+	</skin>
+	<skin id="77">
+		Royal saucer (UFO) with closed door and feet out model
+	</skin>
+	<skin id="78">
+		Small flying saucer (UFO) model
+	</skin>
+	<skin id="79">
+		Boat is Esmers' secret base model
+	</skin>
+	<skin id="80">
+		Franco guard with spike model
+	</skin>
+	<skin id="81">
+		Franco guard with spike model
+	</skin>
+	<skin id="82">
+		Franco guard with spike model
+	</skin>
+	<skin id="83">
+		Franco guard with spike model
+	</skin>
+	<skin id="84">
+		Sup in dark green dressing (clone of Johnny Rocket) model
+	</skin>
+	<skin id="85">
+		Sup in red dressing model
+	</skin>
+	<skin id="86">
+		Franco policeman with red helmet and gun model
+	</skin>
+	<skin id="87">
+		Franco policeman with black hat and gun model
+	</skin>
+	<skin id="88">
+		X-rayed franco red-helmet policeman model
+	</skin>
+	<skin id="89">
+		Franco policeman with green hat and stick model
+	</skin>
+	<skin id="90">
+		Franco survivor from Island CX model
+	</skin>
+	<skin id="91">
+		Yellow-red franco guard dressing (from secret base) model
+	</skin>
+	<skin id="92">
+		Baldino with space suit without helmet model
+	</skin>
+	<skin id="93">
+		Baldino with space suit with helmet in hand model
+	</skin>
+	<skin id="94">
+		Baldino with space suit with helmet model
+	</skin>
+	<skin id="95">
+		Light gray franco guard model
+	</skin>
+	<skin id="96">
+		Franco dissident model
+	</skin>
+	<skin id="97">
+		Light gray franco guard with gun model
+	</skin>
+	<skin id="98">
+		Light gray franco guard with tool model
+	</skin>
+	<skin id="99">
+		Mr. Bazoo (grobo in shop on Citadel Island) model
+	</skin>
+	<skin id="100">
+		Clerk in Mrs. Bloop's museum model
+	</skin>
+	<skin id="101">
+		Quetch guard of Temple Park model
+	</skin>
+	<skin id="102">
+		Quetch visitor of Mrs. Bloop's museum model
+	</skin>
+	<skin id="103">
+		Quetch guard of Temple Park with umbrella model
+	</skin>
+	<skin id="104">
+		Mrs. Bloop model
+	</skin>
+	<skin id="105">
+		Container in museum with Tunic model
+	</skin>
+	<skin id="106">
+		Container in museum without Tunic model
+	</skin>
+	<skin id="107">
+		Trunk in the sewers model
+	</skin>
+	<skin id="108">
+		Bird on Citadel Island model
+	</skin>
+	<skin id="109">
+		Little Tralu model
+	</skin>
+	<skin id="110">
+		Joe the Elf model
+	</skin>
+	<skin id="111">
+		Weather wizard model
+	</skin>
+	<skin id="112">
+		Creature in weather wizard's stove model
+	</skin>
+	<skin id="113">
+		Pharmacist model
+	</skin>
+	<skin id="114">
+		Sphero customer of pharmacy model
+	</skin>
+	<skin id="115">
+		Sphero customer of pharmacy with vacuum cleaner model
+	</skin>
+	<skin id="116">
+		Sphero customer of pharmacy with umbrella model
+	</skin>
+	<skin id="117">
+		The Citadel Island thief model
+	</skin>
+	<skin id="118">
+		The Citadel Island thief with customer's umbrella model
+	</skin>
+	<skin id="119">
+		Nomad grobo from Desert Island model
+	</skin>
+	<skin id="120">
+		A quetch model
+	</skin>
+	<skin id="121">
+		Female rabbibunny in swimming costume (in Hacienda bath) model
+	</skin>
+	<skin id="122">
+		Female grobo in Hacienda bath model
+	</skin>
+	<skin id="123">
+		Dean of the School of Magic model
+	</skin>
+	<skin id="124">
+		Female rabbibunny in the School of Magic model
+	</skin>
+	<skin id="125">
+		Ghost in the School of Magic model
+	</skin>
+	<skin id="126">
+		Sad grobo student in the School of Magic model
+	</skin>
+	<skin id="127">
+		Black nomad sphero from Desert Island model
+	</skin>
+	<skin id="128">
+		Male grobo in Hacienda bath model
+	</skin>
+	<skin id="129">
+		Empty space suit model
+	</skin>
+	<skin id="130">
+		Blowgun test magic symbol in the School of Magic model
+	</skin>
+	<skin id="131">
+		Hourglass (blowgun test) model
+	</skin>
+	<skin id="132">
+		Flask of gallic acid model
+	</skin>
+	<skin id="133">
+		Rabbibunny in shop on Desert Island model
+	</skin>
+	<skin id="134">
+		Rabbibunny child model
+	</skin>
+	<skin id="135">
+		Teacher of the kindergarten on Citadel Island model
+	</skin>
+	<skin id="136">
+		Grobo child model
+	</skin>
+	<skin id="137">
+		Quetch child 1 model
+	</skin>
+	<skin id="138">
+		Quetch child 2 with rope model
+	</skin>
+	<skin id="139">
+		Jerome Baldino model
+	</skin>
+	<skin id="140">
+		Memory viewer model
+	</skin>
+	<skin id="141">
+		Notes model
+	</skin>
+	<skin id="142">
+		Grobo in the hotel on Desert Island model
+	</skin>
+	<skin id="143">
+		Sub in blue dressing in the flying saucer model
+	</skin>
+	<skin id="144">
+		Female sup in the flying saucer model
+	</skin>
+	<skin id="145">
+		Female sup in the flying saucer with pull bell model
+	</skin>
+	<skin id="146">
+		Female sup in the flying saucer with pull bell and safety jacket model
+	</skin>
+	<skin id="147">
+		The translator model
+	</skin>
+	<skin id="148">
+		Rabbibunny with motorbike model
+	</skin>
+	<skin id="149">
+		Rabbibunny with motorbike and Twinsen with Tunic model
+	</skin>
+	<skin id="150">
+		Rabbibunny with motorbike and Twinsen with Wizard's Tunic model
+	</skin>
+	<skin id="151">
+		Bob with covered head model
+	</skin>
+	<skin id="152">
+		Bob with uncovered head model
+	</skin>
+	<skin id="153">
+		Sup in dark green dressing (clone of Johnny Rocket) model
+	</skin>
+	<skin id="154">
+		Johnny Rocket model
+	</skin>
+	<skin id="155">
+		Johnny Rocket in pyjamas model
+	</skin>
+	<skin id="156">
+		Elevator (big) model
+	</skin>
+	<skin id="157">
+		Robot on Otringal (prison guard) model
+	</skin>
+	<skin id="158">
+		Robot on Desert Island model
+	</skin>
+	<skin id="159">
+		Robot on Citadel Island model
+	</skin>
+	<skin id="160">
+		Felix with covered head model
+	</skin>
+	<skin id="161">
+		Felix with uncovered head model
+	</skin>
+	<skin id="162">
+		Crab model
+	</skin>
+	<skin id="163">
+		Top of giant crab model
+	</skin>
+	<skin id="164">
+		Front scissors (or feet) of giant crab model
+	</skin>
+	<skin id="165">
+		Ferry (you can call it hovercraft) model
+	</skin>
+	<skin id="166">
+		Dino-Fly with Twinsen with Tunic model
+	</skin>
+	<skin id="167">
+		Dino-Fly model
+	</skin>
+	<skin id="168">
+		Dino-Fly with Twinsen with Wizard's Tunic model
+	</skin>
+	<skin id="169">
+		Zed model
+	</skin>
+	<skin id="170">
+		Quetch, in love with the pharmacist model
+	</skin>
+	<skin id="171">
+		Mushroom model
+	</skin>
+	<skin id="172">
+		Raph's fiance model
+	</skin>
+	<skin id="173">
+		Piece of giant crab's scissor (or foot) model
+	</skin>
+	<skin id="174">
+		Light from a lighthouse model
+	</skin>
+	<skin id="175">
+		Twinsen and Zoé with the umbrella down model
+	</skin>
+	<skin id="176">
+		Quetch child 2 without rope model
+	</skin>
+	<skin id="177">
+		Rosa the cow model
+	</skin>
+	<skin id="178">
+		Quetch child 3 (on top of the pharmacy) model
+	</skin>
+	<skin id="179">
+		Quetch child 3 without his head model
+	</skin>
+	<skin id="180">
+		Quetch in black dressing (Quetch child 1's big brother) model
+	</skin>
+	<skin id="181">
+		Trash can (hidden Esmer) 1 model
+	</skin>
+	<skin id="182">
+		Trash can (hidden Esmer) 2 model
+	</skin>
+	<skin id="183">
+		The Citadel Island thies with his sister (Rabbibunny child) model
+	</skin>
+	<skin id="184">
+		The teacher of the kindergarten with Quetch child 2 model
+	</skin>
+	<skin id="185">
+		Luc, the boss, with his brother (Grobo child) model
+	</skin>
+	<skin id="186">
+		Franco guy with plates model
+	</skin>
+	<skin id="187">
+		Franco guy with glass model
+	</skin>
+	<skin id="188">
+		Sphero wizard (Ker'aooc) model
+	</skin>
+	<skin id="189">
+		Female quetch wizard (Tabata)
+	</skin>
+	<skin id="190">
+		Grobo wizard model
+	</skin>
+	<skin id="191">
+		The usually drunk franco guy model
+	</skin>
+	<skin id="192">
+		Mosquibee guy 1 model
+	</skin>
+	<skin id="193">
+		Mosquibee guy 2 model
+	</skin>
+	<skin id="194">
+		Wannie guy 1 model
+	</skin>
+	<skin id="195">
+		Wannie guy 2 model
+	</skin>
+	<skin id="196">
+		Queen of the Mosquibees model
+	</skin>
+	<skin id="197">
+		Mosquibee Queen's ventilation guy model
+	</skin>
+	<skin id="198">
+		Quetch child #3 with plate with piece of cake model
+	</skin>
+	<skin id="199">
+		Female rabbibunny in the School of Magic model
+	</skin>
+	<skin id="200">
+		Sup sailor with glass model
+	</skin>
+	<skin id="201">
+		Twinsen with Tunic with piece of cake model
+	</skin>
+	<skin id="202">
+		Mosquibee guy with containe full of liquid model
+	</skin>
+	<skin id="203">
+		Zoé not pregnant anymore with child-carry thing 1 model
+	</skin>
+	<skin id="204">
+		Zoé not pregnant anymore with child-carry thing 2 model
+	</skin>
+	<skin id="205">
+		Franco nurse with franco child 1 model
+	</skin>
+	<skin id="206">
+		Franco child 2 model
+	</skin>
+	<skin id="207">
+		Wannie child 1 model
+	</skin>
+	<skin id="208">
+		Zed on the beach model
+	</skin>
+	<skin id="209">
+		Control-wheel for the woodbridge model
+	</skin>
+	<skin id="210">
+		Woodbridge transport wood model
+	</skin>
+	<skin id="211">
+		Giand spider (Citadel Island cliffs) model
+	</skin>
+	<skin id="212">
+		Moya the turtle model
+	</skin>
+	<skin id="213">
+		Silhuette of the turtle model
+	</skin>
+	<skin id="214">
+		The turtle slightly rising model
+	</skin>
+	<skin id="215">
+		The turtle greatly rising model
+	</skin>
+	<skin id="216">
+		The turtle almost out model
+	</skin>
+	<skin id="217">
+		Cactus (hidden Esmer) model
+	</skin>
+	<skin id="218">
+		The turtle-calling bell model
+	</skin>
+	<skin id="219">
+		Empty car model
+	</skin>
+	<skin id="220">
+		Clover box model
+	</skin>
+	<skin id="221">
+		One of the many desert flowers model
+	</skin>
+	<skin id="222">
+		Desert sphero 1 model
+	</skin>
+	<skin id="223">
+		Desert sphero 1 with guitar model
+	</skin>
+	<skin id="224">
+		Desert sphero 2 model
+	</skin>
+	<skin id="225">
+		Camel 1 model
+	</skin>
+	<skin id="226">
+		Camel 2 model
+	</skin>
+	<skin id="227">
+		Car with racer model
+	</skin>
+	<skin id="228">
+		Sphero bowl player model
+	</skin>
+	<skin id="229">
+		Quetch bowl player model
+	</skin>
+	<skin id="230">
+		Ball 1 (big gray ball) model
+	</skin>
+	<skin id="231">
+		Ball 2 (small red ball) model
+	</skin>
+	<skin id="232">
+		Quetch girl in swimming costume with book model
+	</skin>
+	<skin id="233">
+		Franco guy with beard (bowl player) model
+	</skin>
+	<skin id="234">
+		Sup in light green dressing (bowl player) model
+	</skin>
+	<skin id="235">
+		Quetch guard of Temple Park model
+	</skin>
+	<skin id="236">
+		Sup guy in swimming costume (Imerial Hotel) model
+	</skin>
+	<skin id="237">
+		Green shell (Joe the Elf imprisoned) model
+	</skin>
+	<skin id="238">
+		The Eye 1 of the School of Magic model
+	</skin>
+	<skin id="239">
+		The Eye 2 of the School of Magic model
+	</skin>
+	<skin id="240">
+		Chedil Amiradoo model
+	</skin>
+	<skin id="241">
+		The balsam flower model
+	</skin>
+	<skin id="242">
+		Piece of a plant model
+	</skin>
+	<skin id="243">
+		The sphero near Port-Ludo model
+	</skin>
+	<skin id="245">
+		Grobo policeman, guard of Temple Park model
+	</skin>
+	<skin id="246">
+		Rabbibunny, don't know, where he appears model
+	</skin>
+	<skin id="247">
+		Small yellow duck model
+	</skin>
+	<skin id="248">
+		Twinsen with Tunic and balloons model
+	</skin>
+	<skin id="249">
+		Twinsen with Wizard's Tunic and balloons model
+	</skin>
+	<skin id="250">
+		The balloons model
+	</skin>
+	<skin id="251">
+		Desert grobo model
+	</skin>
+	<skin id="252">
+		Old rabbibunny with guitar model
+	</skin>
+	<skin id="253">
+		Old rabbibunny with magic flute model
+	</skin>
+	<skin id="254">
+		The chest with old rabbibunny's domestic snake model
+	</skin>
+	<skin id="255">
+		The chest empty model
+	</skin>
+	<skin id="256">
+		Sup in space suit model
+	</skin>
+	<skin id="257">
+		Giraffe guy with camera on Zeelich model
+	</skin>
+	<skin id="258">
+		Ant guy with backpack on Zeelich model
+	</skin>
+	<skin id="259">
+		Ant guy 2 on Zeelich model
+	</skin>
+	<skin id="260">
+		Two-headed monster in Emperor's palace model
+	</skin>
+	<skin id="261">
+		Emperor's sup soldier 1 model
+	</skin>
+	<skin id="262">
+		Emperor's sup soldier 2 model
+	</skin>
+	<skin id="263">
+		Sup in swimming costume in water model
+	</skin>
+	<skin id="264">
+		Old sup lady in Imperial Hotel model
+	</skin>
+	<skin id="265">
+		Franco guard in Imperial Hotel model
+	</skin>
+	<skin id="266">
+		Franco policeman with stick down model
+	</skin>
+	<skin id="267">
+		Franco policeman with stick in hand model
+	</skin>
+	<skin id="268">
+		Female franco model
+	</skin>
+	<skin id="269">
+		Narrow electric barrier model
+	</skin>
+	<skin id="270">
+		Wider electric barrier model
+	</skin>
+	<skin id="271">
+		Mosquibee dissident model
+	</skin>
+	<skin id="272">
+		Sup guard of Emperor's palace model
+	</skin>
+	<skin id="273">
+		Sup guard of Emperor's palace with sword out model
+	</skin>
+	<skin id="274">
+		Leontine (zeppelin-boat of the old franco) model
+	</skin>
+	<skin id="275">
+		Leontine with the old franco aboard model
+	</skin>
+	<skin id="276">
+		Leontine with the old franco and Twinsen aboard model
+	</skin>
+	<skin id="277">
+		The old franco model
+	</skin>
+	<skin id="278">
+		Driver 1 of the motor-flyer model
+	</skin>
+	<skin id="279">
+		Driver 2 of the motor-flyer model
+	</skin>
+	<skin id="280">
+		The motor-flyer model
+	</skin>
+	<skin id="281">
+		Motor-flyer with driver 1 aboard model
+	</skin>
+	<skin id="282">
+		Motor-flyer with driver 1 and Twinsen aboard model
+	</skin>
+	<skin id="283">
+		Motor-flyer with driver 2 aboard model
+	</skin>
+	<skin id="284">
+		Motor-flyer with driver 2 and Twinsen aboard model
+	</skin>
+	<skin id="285">
+		Open crate in the undergas center model
+	</skin>
+	<skin id="286">
+		Closed crate in the undergas center model
+	</skin>
+	<skin id="287">
+		Open crate in the undergas center with Twinsen inside model
+	</skin>
+	<skin id="288">
+		Small closed crate model
+	</skin>
+	<skin id="289">
+		Franco policeman with red hat and gun on the car model
+	</skin>
+	<skin id="290">
+		Shotgun model
+	</skin>
+	<skin id="291">
+		Franco trooper model
+	</skin>
+	<skin id="292">
+		Franco trooper with UZI model
+	</skin>
+	<skin id="293">
+		Sup priest model
+	</skin>
+	<skin id="294">
+		Franco at the gas station on Otringal with gas-piston model
+	</skin>
+	<skin id="295">
+		Franco at the gas station on Otringal with hammer model
+	</skin>
+	<skin id="296">
+		Green gloom (alligator) model
+	</skin>
+	<skin id="297">
+		Green gloom (alligator) with tie model
+	</skin>
+	<skin id="298">
+		Gray gloom (alligator) model
+	</skin>
+	<skin id="299">
+		Small gloom (alligator), casino exit guard model
+	</skin>
+	<skin id="300">
+		Big gray gloom (alligator), holding Twinsen model
+	</skin>
+	<skin id="301">
+		Big gray gloom (alligator) model
+	</skin>
+	<skin id="302">
+		Franco with drum model
+	</skin>
+	<skin id="303">
+		Car at the gas station on Otringal model
+	</skin>
+	<skin id="304">
+		Zeelichian car without the gun model
+	</skin>
+	<skin id="305">
+		The gun of the car model
+	</skin>
+	<skin id="306">
+		Dark Monk's key model
+	</skin>
+	<skin id="307">
+		Fire ball model
+	</skin>
+	<skin id="308">
+		Franco survivor from Island CX model
+	</skin>
+	<skin id="309">
+		Kangaroo 1 model
+	</skin>
+	<skin id="310">
+		Kangaroo 2 model
+	</skin>
+	<skin id="311">
+		Franco priest model
+	</skin>
+	<skin id="312">
+		Dark Monk (hidden FunFrock) model
+	</skin>
+	<skin id="313">
+		FunFrock unihidding himself model
+	</skin>
+	<skin id="314">
+		Unhidden FunFrock model
+	</skin>
+	<skin id="315">
+		Unhidden FunFrock with sword out model
+	</skin>
+	<skin id="316">
+		Teleporting FunFrock model
+	</skin>
+	<skin id="317">
+		Standing stone 1 (for lava) model
+	</skin>
+	<skin id="318">
+		Standing stone 2 (for lava) model
+	</skin>
+	<skin id="319">
+		Mosquibee guy with beard model
+	</skin>
+	<skin id="320">
+		Wannie priest model
+	</skin>
+	<skin id="321">
+		Gas monster 1 model
+	</skin>
+	<skin id="322">
+		Silhuette of gas monster's head 1 model
+	</skin>
+	<skin id="323">
+		Gas monster 2 model
+	</skin>
+	<skin id="324">
+		Wannie guy 1 model
+	</skin>
+	<skin id="325">
+		Wannie guy 2 model
+	</skin>
+	<skin id="326">
+		Wannie guy 3 model
+	</skin>
+	<skin id="327">
+		Wannie guy 4 model
+	</skin>
+	<skin id="328">
+		Wannie child model
+	</skin>
+	<skin id="329">
+		Wannie child with red ball model
+	</skin>
+	<skin id="330">
+		Wannie grandma model
+	</skin>
+	<skin id="331">
+		Wannie grandma with plate with piece of tart model
+	</skin>
+	<skin id="332">
+		Wannie child capturing fireflies model
+	</skin>
+	<skin id="333">
+		Firefly model
+	</skin>
+	<skin id="334">
+		Frog model
+	</skin>
+	<skin id="335">
+		Ferryman with boat model
+	</skin>
+	<skin id="336">
+		Ferryman with boat with Twinsen aboard model
+	</skin>
+	<skin id="337">
+		Wannie guy 5 model
+	</skin>
+	<skin id="338">
+		Gem model
+	</skin>
+	<skin id="339">
+		Elevator to the undergas model
+	</skin>
+	<skin id="340">
+		Elevator to the undergas with Twinsen inside model
+	</skin>
+	<skin id="341">
+		Small gas monster 1 (blue) model
+	</skin>
+	<skin id="342">
+		Small gas monster 2 (gray) model
+	</skin>
+	<skin id="343">
+		Wannie guy with pick-axe model
+	</skin>
+	<skin id="344">
+		Undergas bulldozer model
+	</skin>
+	<skin id="345">
+		Undergas bulldozer pick-thing part 1 model
+	</skin>
+	<skin id="346">
+		Undergas bulldozer pick-thing part 2 model
+	</skin>
+	<skin id="347">
+		Little yellow pig model
+	</skin>
+	<skin id="348">
+		Main train wagon with wannie inside model
+	</skin>
+	<skin id="349">
+		Train wagon model
+	</skin>
+	<skin id="350">
+		Train wagon with stones model
+	</skin>
+	<skin id="351">
+		100% Firefly tart model
+	</skin>
+	<skin id="352">
+		5/6 Firefly tart model
+	</skin>
+	<skin id="353">
+		3/4 Firefly tart model
+	</skin>
+	<skin id="354">
+		2/3 Firefly tart model
+	</skin>
+	<skin id="355">
+		Wannie child's red ball model
+	</skin>
+	<skin id="356">
+		Wannie's glove model
+	</skin>
+	<skin id="357">
+		Gas monster 3 (gray) model
+	</skin>
+	<skin id="358">
+		Glass plate model
+	</skin>
+	<skin id="359">
+		Cover of the box with the mosquibees key fragment model
+	</skin>
+	<skin id="360">
+		Green mosquibee guy model
+	</skin>
+	<skin id="361">
+		Franco trooper with explosive box model
+	</skin>
+	<skin id="362">
+		Green mosquibee guy with flag model
+	</skin>
+	<skin id="363">
+		Mosquibee guy with Twinsen model
+	</skin>
+	<skin id="364">
+		Monkey monster with sword model
+	</skin>
+	<skin id="365">
+		Franco trooper with parachute model
+	</skin>
+	<skin id="366">
+		Mosquibee flag model
+	</skin>
+	<skin id="367">
+		Emperor's flag model
+	</skin>
+	<skin id="368">
+		Rope to get into the mosquibee fortress model
+	</skin>
+	<skin id="369">
+		Rope to get into the mosquibee fortress with Twinsen model
+	</skin>
+	<skin id="370">
+		Franco trooper with UZI and explosive ball model
+	</skin>
+	<skin id="371">
+		The two-zeppelin transport method to the elevator model
+	</skin>
+	<skin id="372">
+		Female dog on the Island of the Francos model
+	</skin>
+	<skin id="373">
+		Franco worker on the Island of the Francos model
+	</skin>
+	<skin id="374">
+		Franco with metal-detector on the Island of the Francos model
+	</skin>
+	<skin id="375">
+		Franco worker with red hat on the Island of the Francos model
+	</skin>
+	<skin id="376">
+		Mechanic owl model
+	</skin>
+	<skin id="377">
+		Gas monster 4 model
+	</skin>
+	<skin id="378">
+		Rocket-shooter on Island CX model
+	</skin>
+	<skin id="379">
+		Wannie guy with one glove model
+	</skin>
+	<skin id="380">
+		Sup in orange dressing (in Imperial Hotel and saucer) model
+	</skin>
+	<skin id="381">
+		Sup getting in garbage can in saucer model
+	</skin>
+	<skin id="382">
+		Sup getting in cactus in saucer model
+	</skin>
+	<skin id="383">
+		Wannie guy digging model
+	</skin>
+	<skin id="384">
+		Wannie child #1's toys model
+	</skin>
+	<skin id="385">
+		The wannies key fragment model
+	</skin>
+	<skin id="386">
+		Spider net model
+	</skin>
+	<skin id="387">
+		Old wannie model
+	</skin>
+	<skin id="388">
+		Old wannie with piece of tart model
+	</skin>
+	<skin id="389">
+		Monkey monster model
+	</skin>
+	<skin id="390">
+		Monkey monster with wooden box model
+	</skin>
+	<skin id="391">
+		Wannie child with captured firefly model
+	</skin>
+	<skin id="392">
+		\"Feet\" for something 1 model
+	</skin>
+	<skin id="393">
+		\"Feet\" for something 2 model
+	</skin>
+	<skin id="394">
+		Sup 1 with cigar in the undergas agency model
+	</skin>
+	<skin id="395">
+		Sup 2 sitting down with papers in the undergas agency model
+	</skin>
+	<skin id="396">
+		Gray ball model
+	</skin>
+	<skin id="397">
+		Fat yellow/black mosquibee guy model
+	</skin>
+	<skin id="398">
+		Blowtron model
+	</skin>
+	<skin id="399">
+		Green mosquibee guy with red flag model
+	</skin>
+	<skin id="400">
+		Lava fire ball model
+	</skin>
+	<skin id="401">
+		The wheel of fortune model
+	</skin>
+	<skin id="402">
+		Big gray gloom (alligator) with big stick model
+	</skin>
+	<skin id="403">
+		Female franco dancer model
+	</skin>
+	<skin id="404">
+		Franco fireman model
+	</skin>
+	<skin id="405">
+		Sup heavy metal guy in black dressing model
+	</skin>
+	<skin id="406">
+		Female franco dancer model
+	</skin>
+	<skin id="407">
+		The reptile-thing in the casino (come to papa) model
+	</skin>
+	<skin id="408">
+		Brown dog in the casino model
+	</skin>
+	<skin id="409">
+		Orange dog in the casino model
+	</skin>
+	<skin id="410">
+		Cyan dog in the casino model
+	</skin>
+	<skin id="411">
+		Yellow dog in the casino model
+	</skin>
+	<skin id="412">
+		Sup 1 in the casino model
+	</skin>
+	<skin id="413">
+		Sup 2 in the casino model
+	</skin>
+	<skin id="414">
+		Green gloom (alligator) 1 in the casino model
+	</skin>
+	<skin id="415">
+		Green gloom (alligator) 2 in the casino model
+	</skin>
+	<skin id="416">
+		Sailor (maybe pink wannie) 1 model
+	</skin>
+	<skin id="417">
+		Sailor (maybe pink wannie) 1 with gun model
+	</skin>
+	<skin id="418">
+		Glass of drink model
+	</skin>
+	<skin id="419">
+		Sailor (maybe pink wannie) 2 model
+	</skin>
+	<skin id="420">
+		Sailor (maybe pink wannie) 3 model
+	</skin>
+	<skin id="421">
+		Sailor (maybe brown wannie) model
+	</skin>
+	<skin id="422">
+		Sup sailor with glass of drink model
+	</skin>
+	<skin id="423">
+		Young wannie with stone in front of him model
+	</skin>
+	<skin id="424">
+		Half of a franco sitting down model
+	</skin>
+	<skin id="425">
+		Franco with gray hat and glass model
+	</skin>
+	<skin id="426">
+		Rick the sup model
+	</skin>
+	<skin id="427">
+		Silhuette of gas monster's head 2 model
+	</skin>
+	<skin id="428">
+		Gas monster 5 model
+	</skin>
+	<skin id="429">
+		Female franco model
+	</skin>
+	<skin id="430">
+		Can of gazogem model
+	</skin>
+	<skin id="431">
+		Sup 1 in the shop (I love Twinsun) model
+	</skin>
+	<skin id="432">
+		Sup 2 in the shop (I hate Twinsun) model
+	</skin>
+	<skin id="433">
+		Wizard's diploma model
+	</skin>
+	<skin id="434">
+		Ferry ticket model
+	</skin>
+	<skin id="435">
+		Customer's umbrella model
+	</skin>
+	<skin id="436">
+		Small spider model
+	</skin>
+	<skin id="437">
+		Pighead in red dressing with hammer (Emperor's palace) model
+	</skin>
+	<skin id="438">
+		Pighead in brown dressing with gardening tool (Emperor's palace) model
+	</skin>
+	<skin id="439">
+		Pighead in yellow dressing with broom (Emperor's palace) model
+	</skin>
+	<skin id="440">
+		Stan (from Time Commando) model
+	</skin>
+	<skin id="441">
+		Shy sup girl in Imperial Hotel model
+	</skin>
+	<skin id="442">
+		Light gray franco guard listening to music in Imperial Hotel model
+	</skin>
+	<skin id="443">
+		The above franco's tape player model
+	</skin>
+	<skin id="444">
+		Female franco in the shop on the Island of the Francos model
+	</skin>
+	<skin id="445">
+		Pick-axe model
+	</skin>
+	<skin id="446">
+		Glass-cleaning (at least I think) franco model
+	</skin>
+	<skin id="447">
+		Old franco scientist model
+	</skin>
+	<skin id="448">
+		Female franco nurse in the nursery model
+	</skin>
+	<skin id="449">
+		Franco child with red rapper hat model
+	</skin>
+	<skin id="450">
+		A small franco child modeld
+	</skin>
+	<skin id="451">
+		Brother of francos' burgermaster (De La Fontaine) model
+	</skin>
+	<skin id="452">
+		Gas monster 6 (gray) model
+	</skin>
+	<skin id="453">
+		Silhuette of gas monster's head 3 model
+	</skin>
+	<skin id="454">
+		The emperor model
+	</skin>
+	<skin id="455">
+		The emperor's wife model
+	</skin>
+	<skin id="456">
+		Spikes in the protection spell's cave model
+	</skin>
+	<skin id="457">
+		Monster guarding the protection spell model
+	</skin>
+	<skin id="458">
+		The protection spell model
+	</skin>
+	<skin id="459">
+		Vertical electric bar of teleporting machine model
+	</skin>
+	<skin id="460">
+		Gray mechanic grobo near the end model
+	</skin>
+	<skin id="461">
+		Green mechanic grobo with box of missiles near the end model
+	</skin>
+	<skin id="462">
+		Quetch child 1 model
+	</skin>
+	<skin id="463">
+		Very long and thin vertical piece of metal model
+	</skin>
+	<skin id="464">
+		Two such pieces of metal model
+	</skin>
+	<skin id="465">
+		Grobo child model
+	</skin>
+	<skin id="466">
+		Rabbibunny child model
+	</skin>
+	<skin id="467">
+		Quetch child 2 model
+	</skin>
+	<skin id="468">
+		Extremely long and thin vertical/horizontal pieces of metal model
+	</skin>
+	<skin id="469">
+		Mechanic rabbibunny near the end model
+	</skin>
+</Skins>

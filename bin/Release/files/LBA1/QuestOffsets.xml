@@ -551,9 +551,9 @@
 			1
 		</lbaVersion>
 	</item>
-	<item><!-- Triggered: Set straight after pouring cherry syrup --><!-- Also gets set subsequently when taking any vehicle requiring gas -->
+	<item><!-- Triggered: Gets set when taking any vehicle requiring gas -->
 		<name>
-			Secret library document access
+			Toggled when taking a vehicle with gas.
 		</name>
 		<memoryOffset>
 			10DA7
