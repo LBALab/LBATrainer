@@ -115,7 +115,8 @@
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
     </Compile>
     <Compile Include="objects\oTimerSetItems.cs" />
-    <Compile Include="oTimerGetItems.cs" />
+    <Compile Include="Shared\oTeleport.cs" />
+    <Compile Include="Shared\oTimerGetItems.cs" />
     <Compile Include="Shared\AboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,7 +129,7 @@
     <Compile Include="Trainer.Designer.cs">
       <DependentUpon>Trainer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Trainer.LBA.Twinsen.Shared.cs">
+    <Compile Include="Shared\Trainer.LBA.Twinsen.Shared.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="objects\oHotKey.cs" />
@@ -175,7 +176,13 @@
     <Content Include="files\LBA1\ChapterOffsets.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA1\MemoryLocations.xml">
+    <Content Include="files\LBA1\holomap.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\LBA1\Inventory.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\LBA1\InventoryUsed.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="files\LBA1\MovieOffsets.xml">
@@ -187,13 +194,19 @@
     <Content Include="files\LBA1\saveGame.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA2\MemoryLocations.xml">
+    <Content Include="files\LBA1\Twinsen.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\LBA2\Inventory.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="files\LBA2\Outfit.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="files\LBA2\skins.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\LBA2\Twinsen.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="files\Other\options.xml">

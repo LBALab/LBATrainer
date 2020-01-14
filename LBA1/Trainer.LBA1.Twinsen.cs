@@ -53,8 +53,7 @@ namespace LBATrainer
             LBA1Twin_txtHealth.Text = memRoutines.getVal(LBA_ONE, items.Health).ToString();
             LBA1Twin_cboInventory.Items.Clear();
             LBA1Twin_cboInventory.Items.AddRange(items.Inventory);
-            LBA1Othr_populateQuest();
-            LBA1Othr_populateMovies();
+            LBA1Othr_Start();
             LBA1Tel_teleportScan();
         }
         private void LBA1Twin_BtnSet_Click(object sender, EventArgs e)

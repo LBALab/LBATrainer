@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
-<movies>
+<inventory>
 	<item>
 		<name>
-			Capture
+			Holomap
 		</name>
 		<memoryOffset>
-			10E3B
+			10D73
 		</memoryOffset>
 		<maxVal>
 			1
@@ -17,18 +17,18 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
 		</lbaVersion>
-	</item>
+	</item>    
 	<item>
 		<name>
-			Capture: Band-aid
+			Magic Ball
 		</name>
 		<memoryOffset>
-			10E3C
+			10D74
 		</memoryOffset>
 		<maxVal>
 			1
@@ -40,53 +40,7 @@
 			1
 		</size>
 		<type>
-			1
-		</type>
-		<lbaVersion>
-			1
-		</lbaVersion>
-	</item>
-	<item>
-		<name>
-			Capture: Black eye
-		</name>
-		<memoryOffset>
-			10E3D
-		</memoryOffset>
-		<maxVal>
-			1
-		</maxVal>
-		<minVal>
 			0
-		</minVal>
-		<size>
-			1
-		</size>
-		<type>
-			1
-		</type>
-		<lbaVersion>
-			1
-		</lbaVersion>
-	</item>
-	<item><!-- Correct -->
-		<name>
-			Ferry #1
-		</name>
-		<memoryOffset>
-			10E3E
-		</memoryOffset>
-		<maxVal>
-			1
-		</maxVal>
-		<minVal>
-			0
-		</minVal>
-		<size>
-			1
-		</size>
-		<type>
-			1
 		</type>
 		<lbaVersion>
 			1
@@ -94,10 +48,10 @@
 	</item>
 	<item>
 		<name>
-			Temple of Bu
+			Sabre
 		</name>
 		<memoryOffset>
-			10E3F
+			10D75
 		</memoryOffset>
 		<maxVal>
 			1
@@ -109,7 +63,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -117,10 +71,10 @@
 	</item>
 	<item>
 		<name>
-			White Leaf Desert
+			Gawley's Horn
 		</name>
 		<memoryOffset>
-			10E40
+			10D76
 		</memoryOffset>
 		<maxVal>
 			1
@@ -132,7 +86,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -140,10 +94,10 @@
 	</item>
 	<item>
 		<name>
-			Hamalayi Mountains Shuttle
+			Tunic
 		</name>
 		<memoryOffset>
-			10E41
+			10D77
 		</memoryOffset>
 		<maxVal>
 			1
@@ -155,7 +109,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -163,10 +117,10 @@
 	</item>
 	<item>
 		<name>
-			Hamalayi Mountains: Snow storm
+			Book of Bu
 		</name>
 		<memoryOffset>
-			10E42
+			10D78
 		</memoryOffset>
 		<maxVal>
 			1
@@ -178,7 +132,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -186,10 +140,10 @@
 	</item>
 	<item>
 		<name>
-			Hamalayi Mountains: Ski Lift
+			Sendells Medalion
 		</name>
 		<memoryOffset>
-			10E43
+			10D79
 		</memoryOffset>
 		<maxVal>
 			1
@@ -201,7 +155,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -209,10 +163,10 @@
 	</item>
 	<item>
 		<name>
-			Ferry #2
+			Clear Water
 		</name>
 		<memoryOffset>
-			10E44
+			10D7A
 		</memoryOffset>
 		<maxVal>
 			1
@@ -224,7 +178,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -232,10 +186,10 @@
 	</item>
 	<item>
 		<name>
-			Fortress: Zoe Clone
+			Red Card
 		</name>
 		<memoryOffset>
-			10E45
+			10D7B
 		</memoryOffset>
 		<maxVal>
 			1
@@ -247,7 +201,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -255,10 +209,10 @@
 	</item>
 	<item>
 		<name>
-			Fortress Rune stone 1
+			Blue Card
 		</name>
 		<memoryOffset>
-			10E46
+			10D7C
 		</memoryOffset>
 		<maxVal>
 			1
@@ -270,7 +224,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -278,10 +232,10 @@
 	</item>
 	<item>
 		<name>
-			Fortress: Rune Stone 2
+			ID
 		</name>
 		<memoryOffset>
-			10E47
+			10D7D
 		</memoryOffset>
 		<maxVal>
 			1
@@ -293,7 +247,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -301,10 +255,10 @@
 	</item>
 	<item>
 		<name>
-			Fortress Explosion
+			Miles ID
 		</name>
 		<memoryOffset>
-			10E48
+			10D7E
 		</memoryOffset>
 		<maxVal>
 			1
@@ -316,7 +270,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -324,10 +278,10 @@
 	</item>
 	<item>
 		<name>
-			After you spoke with Sendell
+			Proto Pack
 		</name>
 		<memoryOffset>
-			10E49
+			10D7F
 		</memoryOffset>
 		<maxVal>
 			1
@@ -339,7 +293,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -347,10 +301,10 @@
 	</item>
 	<item>
 		<name>
-			Capture: Resist hit
+			Snowboard
 		</name>
 		<memoryOffset>
-			10E4A
+			10D80
 		</memoryOffset>
 		<maxVal>
 			1
@@ -362,7 +316,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -370,10 +324,10 @@
 	</item>
 	<item>
 		<name>
-			Twinsen Explosion: On Top of Well
+			Meca Penguin
 		</name>
 		<memoryOffset>
-			10E4B
+			10D81
 		</memoryOffset>
 		<maxVal>
 			1
@@ -385,7 +339,30 @@
 			1
 		</size>
 		<type>
+			0
+		</type>
+		<lbaVersion>
 			1
+		</lbaVersion>
+	</item>
+	<item> <!-- Only changes inventory flag, doesn't add actual gas -->
+		<name>
+			Gas
+		</name>
+		<memoryOffset>
+			10D82
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -393,10 +370,10 @@
 	</item>
 	<item>
 		<name>
-			Clear Water Lake
+			Pirate Flag
 		</name>
 		<memoryOffset>
-			10E4C
+			10D83
 		</memoryOffset>
 		<maxVal>
 			1
@@ -408,7 +385,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -416,10 +393,10 @@
 	</item>
 	<item>
 		<name>
-			Meeting Sendell
+			Magic Flute
 		</name>
 		<memoryOffset>
-			10E4D
+			10D84
 		</memoryOffset>
 		<maxVal>
 			1
@@ -431,7 +408,7 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
@@ -439,10 +416,10 @@
 	</item>
 	<item>
 		<name>
-			Twinsun Explosion
+			Space Guitar
 		</name>
 		<memoryOffset>
-			10E4E
+			10D85
 		</memoryOffset>
 		<maxVal>
 			1
@@ -454,10 +431,217 @@
 			1
 		</size>
 		<type>
-			1
+			0
 		</type>
 		<lbaVersion>
 			1
 		</lbaVersion>
 	</item>
-</movies>
+	<item>
+		<name>
+			Hair Dryer
+		</name>
+		<memoryOffset>
+			10D86
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Ancestral Key
+		</name>
+		<memoryOffset>
+			10D87
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Syrup
+		</name>
+		<memoryOffset>
+			10D88
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Empty Bottle
+		</name>
+		<memoryOffset>
+			10D89
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Ferry Ticket
+		</name>
+		<memoryOffset>
+			10D8A
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Keypad
+		</name>
+		<memoryOffset>
+			10D8B
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Coffee Can
+		</name>
+		<memoryOffset>
+			10D8C
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Bonus List
+		</name>
+		<memoryOffset>
+			10D8D
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Clover
+		</name>
+		<memoryOffset>
+			10D8E
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			1
+		</lbaVersion>
+	</item>
+</inventory>

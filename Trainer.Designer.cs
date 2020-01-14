@@ -57,13 +57,16 @@
             this.LBA1Twin_lblClovers = new System.Windows.Forms.Label();
             this.LBA1Twin_txtClovers = new System.Windows.Forms.TextBox();
             this.tpLBA1Other = new System.Windows.Forms.TabPage();
-            this.cboLBA1SelectSkin = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.lblLBASelectSkin = new System.Windows.Forms.Label();
-            this.LBA1Othr_chkChapterValue = new System.Windows.Forms.CheckBox();
             this.LBA1Othr_chkInvUsedValue = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.LBA1Othr_cboInvUsed = new System.Windows.Forms.ComboBox();
             this.LBA1Othr_lblInvUsed = new System.Windows.Forms.Label();
+            this.LBA1Othr_chkWeaponValue = new System.Windows.Forms.CheckBox();
+            this.LBA1Othr_cboWeapon = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LBA1Othr_chkSkinValue = new System.Windows.Forms.CheckBox();
+            this.LBA1Othr_cboLBA1Skin = new System.Windows.Forms.ComboBox();
+            this.lblLBASkin = new System.Windows.Forms.Label();
+            this.LBA1Othr_chkChapterValue = new System.Windows.Forms.CheckBox();
             this.LBA1Othr_cboChapter = new System.Windows.Forms.ComboBox();
             this.LBA1Othr_lblChapter = new System.Windows.Forms.Label();
             this.LBA1Othr_chkMoviesValue = new System.Windows.Forms.CheckBox();
@@ -72,6 +75,17 @@
             this.LBA1Othr_chkQuestValue = new System.Windows.Forms.CheckBox();
             this.LBA1Othr_cboQuest = new System.Windows.Forms.ComboBox();
             this.LBA1Othr_lblQuest = new System.Windows.Forms.Label();
+            this.tpLBA1Holomap = new System.Windows.Forms.TabPage();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.LBA1Othr_cboHolomap = new System.Windows.Forms.ComboBox();
+            this.label1LBA1Othr_lblHoloLocations = new System.Windows.Forms.Label();
             this.tpFlying = new System.Windows.Forms.TabPage();
             this.flying2 = new LBAFlying.Flying();
             this.tpTeleport = new System.Windows.Forms.TabPage();
@@ -104,7 +118,6 @@
             this.LBA1SG_btnSetSaveFileDir = new System.Windows.Forms.Button();
             this.LBA1SG_txtSaveFileDirectory = new System.Windows.Forms.TextBox();
             this.LBA1SG_lbl1SaveFileDirectory = new System.Windows.Forms.Label();
-            this.tbLBA1Skins = new System.Windows.Forms.TabPage();
             this.tbLBA2 = new System.Windows.Forms.TabPage();
             this.tcLBA2Inner = new System.Windows.Forms.TabControl();
             this.tpLBA2Twinsen = new System.Windows.Forms.TabPage();
@@ -207,14 +220,12 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
-            this.label1LBA1Othr_lblHoloLocations = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
             this.tpLBA1Twinsen.SuspendLayout();
             this.tpLBA1Other.SuspendLayout();
+            this.tpLBA1Holomap.SuspendLayout();
             this.tpFlying.SuspendLayout();
             this.tpTeleport.SuspendLayout();
             this.tpSaveGame.SuspendLayout();
@@ -257,10 +268,10 @@
             // 
             this.tcLBA1Inner.Controls.Add(this.tpLBA1Twinsen);
             this.tcLBA1Inner.Controls.Add(this.tpLBA1Other);
+            this.tcLBA1Inner.Controls.Add(this.tpLBA1Holomap);
             this.tcLBA1Inner.Controls.Add(this.tpFlying);
             this.tcLBA1Inner.Controls.Add(this.tpTeleport);
             this.tcLBA1Inner.Controls.Add(this.tpSaveGame);
-            this.tcLBA1Inner.Controls.Add(this.tbLBA1Skins);
             this.tcLBA1Inner.Location = new System.Drawing.Point(6, 6);
             this.tcLBA1Inner.Name = "tcLBA1Inner";
             this.tcLBA1Inner.SelectedIndex = 0;
@@ -510,16 +521,16 @@
             // tpLBA1Other
             // 
             this.tpLBA1Other.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA1Other.Controls.Add(this.checkBox1);
-            this.tpLBA1Other.Controls.Add(this.comboBox2);
-            this.tpLBA1Other.Controls.Add(this.label1LBA1Othr_lblHoloLocations);
-            this.tpLBA1Other.Controls.Add(this.cboLBA1SelectSkin);
-            this.tpLBA1Other.Controls.Add(this.button3);
-            this.tpLBA1Other.Controls.Add(this.lblLBASelectSkin);
-            this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkChapterValue);
             this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkInvUsedValue);
-            this.tpLBA1Other.Controls.Add(this.comboBox1);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_cboInvUsed);
             this.tpLBA1Other.Controls.Add(this.LBA1Othr_lblInvUsed);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkWeaponValue);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_cboWeapon);
+            this.tpLBA1Other.Controls.Add(this.label1);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkSkinValue);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_cboLBA1Skin);
+            this.tpLBA1Other.Controls.Add(this.lblLBASkin);
+            this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkChapterValue);
             this.tpLBA1Other.Controls.Add(this.LBA1Othr_cboChapter);
             this.tpLBA1Other.Controls.Add(this.LBA1Othr_lblChapter);
             this.tpLBA1Other.Controls.Add(this.LBA1Othr_chkMoviesValue);
@@ -535,109 +546,145 @@
             this.tpLBA1Other.TabIndex = 1;
             this.tpLBA1Other.Text = "Other";
             // 
-            // cboLBA1SelectSkin
-            // 
-            this.cboLBA1SelectSkin.FormattingEnabled = true;
-            this.cboLBA1SelectSkin.Items.AddRange(new object[] {
-            "0 Tunic + medallion",
-            "1 Tunic",
-            "2 Tunic, medallion + sword",
-            "3 Prison",
-            "4 Nurse",
-            "5 Tunic +Horn",
-            "6 Snowboard (May Crash)"});
-            this.cboLBA1SelectSkin.Location = new System.Drawing.Point(84, 116);
-            this.cboLBA1SelectSkin.Name = "cboLBA1SelectSkin";
-            this.cboLBA1SelectSkin.Size = new System.Drawing.Size(121, 21);
-            this.cboLBA1SelectSkin.TabIndex = 14;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(232, 114);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Change";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // lblLBASelectSkin
-            // 
-            this.lblLBASelectSkin.AutoSize = true;
-            this.lblLBASelectSkin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBASelectSkin.Location = new System.Drawing.Point(6, 119);
-            this.lblLBASelectSkin.Name = "lblLBASelectSkin";
-            this.lblLBASelectSkin.Size = new System.Drawing.Size(72, 13);
-            this.lblLBASelectSkin.TabIndex = 12;
-            this.lblLBASelectSkin.Text = "Select Skin";
-            // 
-            // LBA1Othr_chkChapterValue
-            // 
-            this.LBA1Othr_chkChapterValue.AutoSize = true;
-            this.LBA1Othr_chkChapterValue.Location = new System.Drawing.Point(313, 62);
-            this.LBA1Othr_chkChapterValue.Name = "LBA1Othr_chkChapterValue";
-            this.LBA1Othr_chkChapterValue.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Othr_chkChapterValue.TabIndex = 11;
-            this.LBA1Othr_chkChapterValue.UseVisualStyleBackColor = true;
-            // 
             // LBA1Othr_chkInvUsedValue
             // 
             this.LBA1Othr_chkInvUsedValue.AutoSize = true;
-            this.LBA1Othr_chkInvUsedValue.Location = new System.Drawing.Point(313, 90);
+            this.LBA1Othr_chkInvUsedValue.Location = new System.Drawing.Point(313, 145);
             this.LBA1Othr_chkInvUsedValue.Name = "LBA1Othr_chkInvUsedValue";
             this.LBA1Othr_chkInvUsedValue.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Othr_chkInvUsedValue.TabIndex = 10;
+            this.LBA1Othr_chkInvUsedValue.TabIndex = 26;
             this.LBA1Othr_chkInvUsedValue.UseVisualStyleBackColor = true;
+            this.LBA1Othr_chkInvUsedValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_chkInvUsedValue_CheckedChanged);
             // 
-            // comboBox1
+            // LBA1Othr_cboInvUsed
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(84, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(223, 21);
-            this.comboBox1.TabIndex = 9;
+            this.LBA1Othr_cboInvUsed.FormattingEnabled = true;
+            this.LBA1Othr_cboInvUsed.Location = new System.Drawing.Point(84, 142);
+            this.LBA1Othr_cboInvUsed.Name = "LBA1Othr_cboInvUsed";
+            this.LBA1Othr_cboInvUsed.Size = new System.Drawing.Size(223, 21);
+            this.LBA1Othr_cboInvUsed.TabIndex = 25;
+            this.LBA1Othr_cboInvUsed.SelectedIndexChanged += new System.EventHandler(this.cboLBA1InvUsed_SelectedIndexChanged);
             // 
             // LBA1Othr_lblInvUsed
             // 
             this.LBA1Othr_lblInvUsed.AutoSize = true;
             this.LBA1Othr_lblInvUsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Othr_lblInvUsed.Location = new System.Drawing.Point(6, 90);
+            this.LBA1Othr_lblInvUsed.Location = new System.Drawing.Point(6, 145);
             this.LBA1Othr_lblInvUsed.Name = "LBA1Othr_lblInvUsed";
             this.LBA1Othr_lblInvUsed.Size = new System.Drawing.Size(62, 13);
-            this.LBA1Othr_lblInvUsed.TabIndex = 8;
+            this.LBA1Othr_lblInvUsed.TabIndex = 24;
             this.LBA1Othr_lblInvUsed.Text = "Inv. Used";
+            // 
+            // LBA1Othr_chkWeaponValue
+            // 
+            this.LBA1Othr_chkWeaponValue.AutoSize = true;
+            this.LBA1Othr_chkWeaponValue.Location = new System.Drawing.Point(313, 36);
+            this.LBA1Othr_chkWeaponValue.Name = "LBA1Othr_chkWeaponValue";
+            this.LBA1Othr_chkWeaponValue.Size = new System.Drawing.Size(15, 14);
+            this.LBA1Othr_chkWeaponValue.TabIndex = 21;
+            this.LBA1Othr_chkWeaponValue.UseVisualStyleBackColor = true;
+            this.LBA1Othr_chkWeaponValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_chkWeaponValue_CheckedChanged);
+            // 
+            // LBA1Othr_cboWeapon
+            // 
+            this.LBA1Othr_cboWeapon.FormattingEnabled = true;
+            this.LBA1Othr_cboWeapon.Items.AddRange(new object[] {
+            "Magic Ball",
+            "Sabre"});
+            this.LBA1Othr_cboWeapon.Location = new System.Drawing.Point(84, 34);
+            this.LBA1Othr_cboWeapon.Name = "LBA1Othr_cboWeapon";
+            this.LBA1Othr_cboWeapon.Size = new System.Drawing.Size(223, 21);
+            this.LBA1Othr_cboWeapon.TabIndex = 20;
+            this.LBA1Othr_cboWeapon.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboLBA1Weapon_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Weapon";
+            // 
+            // LBA1Othr_chkSkinValue
+            // 
+            this.LBA1Othr_chkSkinValue.AutoSize = true;
+            this.LBA1Othr_chkSkinValue.Location = new System.Drawing.Point(313, 10);
+            this.LBA1Othr_chkSkinValue.Name = "LBA1Othr_chkSkinValue";
+            this.LBA1Othr_chkSkinValue.Size = new System.Drawing.Size(15, 14);
+            this.LBA1Othr_chkSkinValue.TabIndex = 18;
+            this.LBA1Othr_chkSkinValue.UseVisualStyleBackColor = true;
+            this.LBA1Othr_chkSkinValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_chkSkinValue_CheckedChanged);
+            // 
+            // LBA1Othr_cboLBA1Skin
+            // 
+            this.LBA1Othr_cboLBA1Skin.FormattingEnabled = true;
+            this.LBA1Othr_cboLBA1Skin.Items.AddRange(new object[] {
+            "Tunic + medallion",
+            "Tunic",
+            "Tunic, medallion + sword",
+            "Prison",
+            "Nurse",
+            "Tunic +Horn",
+            "Snowboard (May Crash)"});
+            this.LBA1Othr_cboLBA1Skin.Location = new System.Drawing.Point(84, 7);
+            this.LBA1Othr_cboLBA1Skin.Name = "LBA1Othr_cboLBA1Skin";
+            this.LBA1Othr_cboLBA1Skin.Size = new System.Drawing.Size(223, 21);
+            this.LBA1Othr_cboLBA1Skin.TabIndex = 14;
+            this.LBA1Othr_cboLBA1Skin.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboLBA1Skin_SelectedIndexChanged);
+            // 
+            // lblLBASkin
+            // 
+            this.lblLBASkin.AutoSize = true;
+            this.lblLBASkin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBASkin.Location = new System.Drawing.Point(6, 10);
+            this.lblLBASkin.Name = "lblLBASkin";
+            this.lblLBASkin.Size = new System.Drawing.Size(32, 13);
+            this.lblLBASkin.TabIndex = 12;
+            this.lblLBASkin.Text = "Skin";
+            // 
+            // LBA1Othr_chkChapterValue
+            // 
+            this.LBA1Othr_chkChapterValue.AutoSize = true;
+            this.LBA1Othr_chkChapterValue.Location = new System.Drawing.Point(313, 64);
+            this.LBA1Othr_chkChapterValue.Name = "LBA1Othr_chkChapterValue";
+            this.LBA1Othr_chkChapterValue.Size = new System.Drawing.Size(15, 14);
+            this.LBA1Othr_chkChapterValue.TabIndex = 11;
+            this.LBA1Othr_chkChapterValue.UseVisualStyleBackColor = true;
+            this.LBA1Othr_chkChapterValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_chkChapterValue_CheckedChanged);
             // 
             // LBA1Othr_cboChapter
             // 
             this.LBA1Othr_cboChapter.FormattingEnabled = true;
             this.LBA1Othr_cboChapter.Items.AddRange(new object[] {
-            "00: Still inside Citadel",
-            "01: Exited Citadel",
-            "02: Zoe Captured",
-            "03: Found Tunic",
-            "04: Boarded Ferry at Citadel Port",
-            "05: Spoke to Astronomer",
-            "06: Picked up book of BU",
-            "07: Read slate about Le Bourgne under Twinsen\'s House",
-            "08: Stole Pirates Flag",
-            "09: Picked up key from chest in museum.",
+            "Still inside Citadel",
+            "Exited Citadel",
+            "Zoe Captured",
+            "Found Tunic",
+            "Boarded Ferry at Citadel Port",
+            "Spoke to Astronomer",
+            "Picked up book of BU",
+            "Read slate about Le Bourgne under Twinsen\'s House",
+            "Stole Pirates Flag",
+            "Picked up key from chest in museum.",
             "10",
             "11",
             "12",
-            "13: Tibbet island: Spoke to Rabbi-bunny.",
-            "14: Stole FunFrocks sabre",
-            "15: Took architechs pass"});
-            this.LBA1Othr_cboChapter.Location = new System.Drawing.Point(84, 60);
+            "Tibbet island: Spoke to Rabbi-bunny.",
+            "Stole FunFrocks sabre",
+            "Took architechs pass"});
+            this.LBA1Othr_cboChapter.Location = new System.Drawing.Point(84, 61);
             this.LBA1Othr_cboChapter.Name = "LBA1Othr_cboChapter";
             this.LBA1Othr_cboChapter.Size = new System.Drawing.Size(223, 21);
             this.LBA1Othr_cboChapter.TabIndex = 7;
-            this.LBA1Othr_cboChapter.SelectedIndexChanged += new System.EventHandler(this.CboLBA1OtherChapter_SelectedIndexChanged);
+            this.LBA1Othr_cboChapter.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboLBA1Chapter_SelectedIndexChanged);
             // 
             // LBA1Othr_lblChapter
             // 
             this.LBA1Othr_lblChapter.AutoSize = true;
             this.LBA1Othr_lblChapter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Othr_lblChapter.Location = new System.Drawing.Point(6, 63);
+            this.LBA1Othr_lblChapter.Location = new System.Drawing.Point(6, 66);
             this.LBA1Othr_lblChapter.Name = "LBA1Othr_lblChapter";
             this.LBA1Othr_lblChapter.Size = new System.Drawing.Size(51, 13);
             this.LBA1Othr_lblChapter.TabIndex = 6;
@@ -646,7 +693,7 @@
             // LBA1Othr_chkMoviesValue
             // 
             this.LBA1Othr_chkMoviesValue.AutoSize = true;
-            this.LBA1Othr_chkMoviesValue.Location = new System.Drawing.Point(313, 36);
+            this.LBA1Othr_chkMoviesValue.Location = new System.Drawing.Point(313, 118);
             this.LBA1Othr_chkMoviesValue.Name = "LBA1Othr_chkMoviesValue";
             this.LBA1Othr_chkMoviesValue.Size = new System.Drawing.Size(15, 14);
             this.LBA1Othr_chkMoviesValue.TabIndex = 5;
@@ -656,7 +703,7 @@
             // LBA1Othr_cboMovies
             // 
             this.LBA1Othr_cboMovies.FormattingEnabled = true;
-            this.LBA1Othr_cboMovies.Location = new System.Drawing.Point(84, 33);
+            this.LBA1Othr_cboMovies.Location = new System.Drawing.Point(84, 115);
             this.LBA1Othr_cboMovies.Name = "LBA1Othr_cboMovies";
             this.LBA1Othr_cboMovies.Size = new System.Drawing.Size(223, 21);
             this.LBA1Othr_cboMovies.TabIndex = 4;
@@ -666,7 +713,7 @@
             // 
             this.LBA1Othr_lblMovies.AutoSize = true;
             this.LBA1Othr_lblMovies.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Othr_lblMovies.Location = new System.Drawing.Point(6, 36);
+            this.LBA1Othr_lblMovies.Location = new System.Drawing.Point(6, 118);
             this.LBA1Othr_lblMovies.Name = "LBA1Othr_lblMovies";
             this.LBA1Othr_lblMovies.Size = new System.Drawing.Size(47, 13);
             this.LBA1Othr_lblMovies.TabIndex = 3;
@@ -675,7 +722,7 @@
             // LBA1Othr_chkQuestValue
             // 
             this.LBA1Othr_chkQuestValue.AutoSize = true;
-            this.LBA1Othr_chkQuestValue.Location = new System.Drawing.Point(313, 8);
+            this.LBA1Othr_chkQuestValue.Location = new System.Drawing.Point(313, 91);
             this.LBA1Othr_chkQuestValue.Name = "LBA1Othr_chkQuestValue";
             this.LBA1Othr_chkQuestValue.Size = new System.Drawing.Size(15, 14);
             this.LBA1Othr_chkQuestValue.TabIndex = 2;
@@ -685,7 +732,7 @@
             // LBA1Othr_cboQuest
             // 
             this.LBA1Othr_cboQuest.FormattingEnabled = true;
-            this.LBA1Othr_cboQuest.Location = new System.Drawing.Point(84, 6);
+            this.LBA1Othr_cboQuest.Location = new System.Drawing.Point(84, 88);
             this.LBA1Othr_cboQuest.Name = "LBA1Othr_cboQuest";
             this.LBA1Othr_cboQuest.Size = new System.Drawing.Size(223, 21);
             this.LBA1Othr_cboQuest.TabIndex = 1;
@@ -695,11 +742,132 @@
             // 
             this.LBA1Othr_lblQuest.AutoSize = true;
             this.LBA1Othr_lblQuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Othr_lblQuest.Location = new System.Drawing.Point(6, 9);
+            this.LBA1Othr_lblQuest.Location = new System.Drawing.Point(6, 91);
             this.LBA1Othr_lblQuest.Name = "LBA1Othr_lblQuest";
             this.LBA1Othr_lblQuest.Size = new System.Drawing.Size(40, 13);
             this.LBA1Othr_lblQuest.TabIndex = 0;
             this.LBA1Othr_lblQuest.Text = "Quest";
+            // 
+            // tpLBA1Holomap
+            // 
+            this.tpLBA1Holomap.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA1Holomap.Controls.Add(this.checkBox8);
+            this.tpLBA1Holomap.Controls.Add(this.checkBox7);
+            this.tpLBA1Holomap.Controls.Add(this.checkBox6);
+            this.tpLBA1Holomap.Controls.Add(this.checkBox5);
+            this.tpLBA1Holomap.Controls.Add(this.checkBox4);
+            this.tpLBA1Holomap.Controls.Add(this.checkBox3);
+            this.tpLBA1Holomap.Controls.Add(this.checkBox2);
+            this.tpLBA1Holomap.Controls.Add(this.checkBox1);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Othr_cboHolomap);
+            this.tpLBA1Holomap.Controls.Add(this.label1LBA1Othr_lblHoloLocations);
+            this.tpLBA1Holomap.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA1Holomap.Name = "tpLBA1Holomap";
+            this.tpLBA1Holomap.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLBA1Holomap.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA1Holomap.TabIndex = 6;
+            this.tpLBA1Holomap.Text = "Holomap";
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox8.Location = new System.Drawing.Point(187, 115);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(58, 17);
+            this.checkBox8.TabIndex = 28;
+            this.checkBox8.Text = "Arrow";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox7.Location = new System.Drawing.Point(187, 92);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(88, 17);
+            this.checkBox7.TabIndex = 27;
+            this.checkBox7.Text = "Been there";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(187, 69);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(72, 17);
+            this.checkBox6.TabIndex = 26;
+            this.checkBox6.Text = "Unknown";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(187, 46);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(72, 17);
+            this.checkBox5.TabIndex = 25;
+            this.checkBox5.Text = "Unknown";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(72, 115);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(72, 17);
+            this.checkBox4.TabIndex = 24;
+            this.checkBox4.Text = "Unknown";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(72, 92);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(72, 17);
+            this.checkBox3.TabIndex = 23;
+            this.checkBox3.Text = "Unknown";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(72, 69);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(72, 17);
+            this.checkBox2.TabIndex = 22;
+            this.checkBox2.Text = "Unknown";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(72, 46);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(83, 17);
+            this.checkBox1.TabIndex = 21;
+            this.checkBox1.Text = "Can focus";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // LBA1Othr_cboHolomap
+            // 
+            this.LBA1Othr_cboHolomap.FormattingEnabled = true;
+            this.LBA1Othr_cboHolomap.Location = new System.Drawing.Point(81, 7);
+            this.LBA1Othr_cboHolomap.Name = "LBA1Othr_cboHolomap";
+            this.LBA1Othr_cboHolomap.Size = new System.Drawing.Size(223, 21);
+            this.LBA1Othr_cboHolomap.TabIndex = 19;
+            // 
+            // label1LBA1Othr_lblHoloLocations
+            // 
+            this.label1LBA1Othr_lblHoloLocations.AutoSize = true;
+            this.label1LBA1Othr_lblHoloLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1LBA1Othr_lblHoloLocations.Location = new System.Drawing.Point(3, 10);
+            this.label1LBA1Othr_lblHoloLocations.Name = "label1LBA1Othr_lblHoloLocations";
+            this.label1LBA1Othr_lblHoloLocations.Size = new System.Drawing.Size(56, 13);
+            this.label1LBA1Othr_lblHoloLocations.TabIndex = 18;
+            this.label1LBA1Othr_lblHoloLocations.Text = "Holomap";
             // 
             // tpFlying
             // 
@@ -1018,16 +1186,6 @@
             this.LBA1SG_lbl1SaveFileDirectory.Size = new System.Drawing.Size(112, 13);
             this.LBA1SG_lbl1SaveFileDirectory.TabIndex = 0;
             this.LBA1SG_lbl1SaveFileDirectory.Text = "Save file Directory";
-            // 
-            // tbLBA1Skins
-            // 
-            this.tbLBA1Skins.BackColor = System.Drawing.Color.MistyRose;
-            this.tbLBA1Skins.Location = new System.Drawing.Point(4, 22);
-            this.tbLBA1Skins.Name = "tbLBA1Skins";
-            this.tbLBA1Skins.Padding = new System.Windows.Forms.Padding(3);
-            this.tbLBA1Skins.Size = new System.Drawing.Size(334, 178);
-            this.tbLBA1Skins.TabIndex = 5;
-            this.tbLBA1Skins.Text = "Skins";
             // 
             // tbLBA2
             // 
@@ -2038,33 +2196,6 @@
             this.tmrHeightLock.Interval = 50;
             this.tmrHeightLock.Tick += new System.EventHandler(this.LBA1Tel_TmrHeightLock_Tick);
             // 
-            // label1LBA1Othr_lblHoloLocations
-            // 
-            this.label1LBA1Othr_lblHoloLocations.AutoSize = true;
-            this.label1LBA1Othr_lblHoloLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1LBA1Othr_lblHoloLocations.Location = new System.Drawing.Point(6, 146);
-            this.label1LBA1Othr_lblHoloLocations.Name = "label1LBA1Othr_lblHoloLocations";
-            this.label1LBA1Othr_lblHoloLocations.Size = new System.Drawing.Size(56, 13);
-            this.label1LBA1Othr_lblHoloLocations.TabIndex = 15;
-            this.label1LBA1Othr_lblHoloLocations.Text = "Holomap";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(84, 146);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(223, 21);
-            this.comboBox2.TabIndex = 16;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(313, 149);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // frmTrainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2086,6 +2217,8 @@
             this.tpLBA1Twinsen.PerformLayout();
             this.tpLBA1Other.ResumeLayout(false);
             this.tpLBA1Other.PerformLayout();
+            this.tpLBA1Holomap.ResumeLayout(false);
+            this.tpLBA1Holomap.PerformLayout();
             this.tpFlying.ResumeLayout(false);
             this.tpTeleport.ResumeLayout(false);
             this.tpTeleport.PerformLayout();
@@ -2232,7 +2365,6 @@
         private System.Windows.Forms.Button btnLBA2LocationSet;
         private System.Windows.Forms.Button btnLBA2LocationScan;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TabPage tbLBA1Skins;
         private System.Windows.Forms.TabPage tpLBA2ShittyShot;
         private System.Windows.Forms.Label LBA2SS_lblInstruct;
         private System.Windows.Forms.Button LBA2SS_btnSquare;
@@ -2286,16 +2418,27 @@
         private System.Windows.Forms.Label lblHyperCarGearReverse;
         private System.Windows.Forms.Button bPitLimit;
         private System.Windows.Forms.Label lblOtherSkin;
-        private System.Windows.Forms.ComboBox cboLBA1SelectSkin;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label lblLBASelectSkin;
+        private System.Windows.Forms.ComboBox LBA1Othr_cboLBA1Skin;
+        private System.Windows.Forms.Label lblLBASkin;
         private System.Windows.Forms.CheckBox LBA1Othr_chkChapterValue;
-        private System.Windows.Forms.CheckBox LBA1Othr_chkInvUsedValue;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label LBA1Othr_lblInvUsed;
         private System.Windows.Forms.CheckBox LBA1Othr_chkMoviesValue;
+        private System.Windows.Forms.CheckBox LBA1Othr_chkSkinValue;
+        private System.Windows.Forms.CheckBox LBA1Othr_chkInvUsedValue;
+        private System.Windows.Forms.ComboBox LBA1Othr_cboInvUsed;
+        private System.Windows.Forms.Label LBA1Othr_lblInvUsed;
+        private System.Windows.Forms.CheckBox LBA1Othr_chkWeaponValue;
+        private System.Windows.Forms.ComboBox LBA1Othr_cboWeapon;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tpLBA1Holomap;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox LBA1Othr_cboHolomap;
         private System.Windows.Forms.Label label1LBA1Othr_lblHoloLocations;
     }
 }

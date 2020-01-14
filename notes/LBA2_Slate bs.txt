@@ -1,0 +1,58 @@
+Slate
+57C77 - has slate?
+Flag: Contains data? : 558E9 - seems to be a count of maps rather than a flag -> incremented to 2 when getting second map
+Dome of slate: 
+
+Other		= 3DDC3
+Maps?		= 3D657
+CurrentMapIndex = 55BE8
+NumOfMaps	= 55BE9
+Something	= 57C77
+
+Slate but nothing else
+Maps? (1 byte)	= 255		= 0xFF		=		1111 1111
+Maps? (2 bytes)	= 65535		= 0xFFFF	= 1111 1111	1111 1111
+NumOfMaps	= 0
+Something	= 1 //May also be 0
+----------------------
+Nothing > Dome of Slate map only
+Maps? (1 byte)	= 7		= 0x07		=		0000 0111
+Maps? (2 bytes)	= 65287		= 0xFF07	= 1111 1111	0000 0111
+NumOfMaps	= 1
+Something	= 1
+--------------------------
+Nothing > Citadel sewers
+Maps? (1 byte)	= 5		= 0x05		=		0000 0101
+Maps? (2 bytes)	= 65285		= 0xFF07	= 1111 1111	0000 0101
+NumOfMaps	= 1
+Something	= 2
+------------------
+Citadel Sewers > Citadel + Dome
+Maps? (1 byte)	= 5		= 0x05		=		0000 0101
+Maps? (2 bytes)	= 1797		= 0x0705	= 0000 0111	0000 0101?
+NumOfMaps	= 2
+Something	= 2
+--------------------------
+Nothing > Emerald Moon
+Maps? (1 byte)	= 9		= 0x09		=		0000 1001
+Maps? (2 bytes)	= 65289		= 0xFF09	= 1111 1111	0000 1010
+NumOfMaps	= 1
+Something	= 0
+------------------
+Citadel Sewers > Citadel + Moon
+Maps? (1 byte)	= 5		= 0x05		=		0000 0101
+Maps? (2 bytes)	= 2309		= 0x0905	= 0000 1001	0000 0101?
+NumOfMaps	= 2
+Something	= 2
+--------------------------
+Dome > Citadel + Dome
+Maps? (1 byte)	= 5		= 0x07		=		0000 0111
+Maps? (2 bytes)	= 1287		= 0x0507	= 0000 0101	0000 0111?
+NumOfMaps	= 2
+Something	= 2
+--------------------------
+65313 = 0xFF21
+1815 =  0x0717 = 0000 0111 0001 0111
+1827 =	0x0723 = 0000 0111 0010 0011
+
+5409

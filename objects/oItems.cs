@@ -13,9 +13,11 @@ namespace LBATrainer
     class Items
     {
         public Item[] Inventory;
+        public Item[] InventoryUsed;
         public Item[] Twinsen;
         public Item[] Quest;
         public Item[] Movies;
+        public Item[] Holomap;
         public Item MagicLevel;
         public Item MagicPoints;
         public Item Kashers;
@@ -32,22 +34,34 @@ namespace LBATrainer
 
         public Items(string LBAFilesPath, ushort LBAVer)
         {
-            this.LBAFilesPath = LBAFilesPath;
+            XmlDocument doc = new XmlDocument();
             string fileName;
-            fileName = "MemoryLocations.xml";
+            this.LBAFilesPath = LBAFilesPath;
+            //fileName = "MemoryLocations.xml";
             
-            Inventory = loadItems(LBAVer, fileName, "/items/inventory/item");
-            Twinsen = loadItems(LBAVer, fileName, "/items/Twinsen/item");
+            //Inventory = loadItems(LBAVer, fileName, "/items/inventory/item");
+            
+            doc.Load(LBAFilesPath + "Twinsen.xml");
+            loadTwinsen(LBAVer, doc.DocumentElement.SelectNodes("/Twinsen/item"));
+            Twinsen = loadItems(LBAVer, "Twinsen.xml", "/Twinsen/item");
+            Inventory = loadItems(LBAVer, "Inventory.xml", "/inventory/item");            
+
             if (1 == LBAVer)
             {
+                InventoryUsed = loadItems(LBAVer, "InventoryUsed.xml", "/inventoryUsed/item");
                 Quest = loadItems(LBAVer, "QuestOffsets.xml", "/quests/item");
                 Movies = loadItems(LBAVer, "MovieOffsets.xml", "/movies/item");
+                Holomap = loadItems(LBAVer, "Holomap.xml", "/holomap/item");
             }
-            XmlDocument doc = new XmlDocument();
-            doc.Load(LBAFilesPath + fileName);
-           
-            loadTwinsen(LBAVer, doc.DocumentElement.SelectNodes("/items/Twinsen/item"));
-
+           /* else
+            {
+                Inventory = loadItems(LBAVer, "Inventory.xml", "/inventory/item");
+                Twinsen = loadItems(LBAVer, "Twinsen.xml", "/Twinsen/item"); ;
+                //doc.Load(LBAFilesPath + fileName);
+                //loadTwinsen(LBAVer, doc.DocumentElement.SelectNodes("/items/Twinsen/item"));
+            }
+            //loadTwinsen(LBAVer, doc.DocumentElement.SelectNodes("/items/Twinsen/item"));
+            */
         }
 
         //Assumes all files are in .\files\ folder

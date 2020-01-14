@@ -228,11 +228,7 @@ namespace LBATrainer
             memRoutines.WriteVal(0x580EF, 1, 1);
             /*memRoutines.WriteVal(0x8DABB, 1, 1);*/
         }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (0 < cboLBA1SelectSkin.Text.Length)
-                memRoutines.WriteVal(1, 0xD4EC, (ushort)getInt(cboLBA1SelectSkin.Text[0].ToString()), 1) ;
-        }
+
         Timer fruity;
 
         private void tmrLBA2FruitMachine_Tick(object sender, EventArgs e)
@@ -280,5 +276,6 @@ namespace LBATrainer
         {
             return AppDomain.CurrentDomain.BaseDirectory + "files\\lba" + LBAVer.ToString() + "\\";
         }
+
     }
 }
