@@ -76,16 +76,16 @@
             this.LBA1Othr_cboQuest = new System.Windows.Forms.ComboBox();
             this.LBA1Othr_lblQuest = new System.Windows.Forms.Label();
             this.tpLBA1Holomap = new System.Windows.Forms.TabPage();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.LBA1Holo_btnSet = new System.Windows.Forms.Button();
+            this.LBA1Holo_chk7 = new System.Windows.Forms.CheckBox();
+            this.LBA1Holo_chk6 = new System.Windows.Forms.CheckBox();
+            this.LBA1Holo_chk5 = new System.Windows.Forms.CheckBox();
+            this.LBA1Holo_chk4 = new System.Windows.Forms.CheckBox();
+            this.LBA1Holo_chk3 = new System.Windows.Forms.CheckBox();
+            this.LBA1Holo_chk2 = new System.Windows.Forms.CheckBox();
+            this.LBA1Holo_chk1 = new System.Windows.Forms.CheckBox();
+            this.LBA1Holo_chk0 = new System.Windows.Forms.CheckBox();
             this.LBA1Othr_cboHolomap = new System.Windows.Forms.ComboBox();
-            this.label1LBA1Othr_lblHoloLocations = new System.Windows.Forms.Label();
             this.tpFlying = new System.Windows.Forms.TabPage();
             this.flying2 = new LBAFlying.Flying();
             this.tpTeleport = new System.Windows.Forms.TabPage();
@@ -751,16 +751,16 @@
             // tpLBA1Holomap
             // 
             this.tpLBA1Holomap.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA1Holomap.Controls.Add(this.checkBox8);
-            this.tpLBA1Holomap.Controls.Add(this.checkBox7);
-            this.tpLBA1Holomap.Controls.Add(this.checkBox6);
-            this.tpLBA1Holomap.Controls.Add(this.checkBox5);
-            this.tpLBA1Holomap.Controls.Add(this.checkBox4);
-            this.tpLBA1Holomap.Controls.Add(this.checkBox3);
-            this.tpLBA1Holomap.Controls.Add(this.checkBox2);
-            this.tpLBA1Holomap.Controls.Add(this.checkBox1);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_btnSet);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_chk7);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_chk6);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_chk5);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_chk4);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_chk3);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_chk2);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_chk1);
+            this.tpLBA1Holomap.Controls.Add(this.LBA1Holo_chk0);
             this.tpLBA1Holomap.Controls.Add(this.LBA1Othr_cboHolomap);
-            this.tpLBA1Holomap.Controls.Add(this.label1LBA1Othr_lblHoloLocations);
             this.tpLBA1Holomap.Location = new System.Drawing.Point(4, 22);
             this.tpLBA1Holomap.Name = "tpLBA1Holomap";
             this.tpLBA1Holomap.Padding = new System.Windows.Forms.Padding(3);
@@ -768,106 +768,107 @@
             this.tpLBA1Holomap.TabIndex = 6;
             this.tpLBA1Holomap.Text = "Holomap";
             // 
-            // checkBox8
+            // LBA1Holo_btnSet
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(187, 115);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(58, 17);
-            this.checkBox8.TabIndex = 28;
-            this.checkBox8.Text = "Arrow";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.LBA1Holo_btnSet.Location = new System.Drawing.Point(125, 138);
+            this.LBA1Holo_btnSet.Name = "LBA1Holo_btnSet";
+            this.LBA1Holo_btnSet.Size = new System.Drawing.Size(75, 23);
+            this.LBA1Holo_btnSet.TabIndex = 29;
+            this.LBA1Holo_btnSet.Text = "Set";
+            this.LBA1Holo_btnSet.UseVisualStyleBackColor = true;
+            this.LBA1Holo_btnSet.Click += new System.EventHandler(this.LBA1Holo_btnSet_Click);
             // 
-            // checkBox7
+            // LBA1Holo_chk7
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(187, 92);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(88, 17);
-            this.checkBox7.TabIndex = 27;
-            this.checkBox7.Text = "Been there";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.LBA1Holo_chk7.AutoSize = true;
+            this.LBA1Holo_chk7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Holo_chk7.Location = new System.Drawing.Point(187, 115);
+            this.LBA1Holo_chk7.Name = "LBA1Holo_chk7";
+            this.LBA1Holo_chk7.Size = new System.Drawing.Size(58, 17);
+            this.LBA1Holo_chk7.TabIndex = 28;
+            this.LBA1Holo_chk7.Text = "Arrow";
+            this.LBA1Holo_chk7.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // LBA1Holo_chk6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(187, 69);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(72, 17);
-            this.checkBox6.TabIndex = 26;
-            this.checkBox6.Text = "Unknown";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.LBA1Holo_chk6.AutoSize = true;
+            this.LBA1Holo_chk6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Holo_chk6.Location = new System.Drawing.Point(187, 92);
+            this.LBA1Holo_chk6.Name = "LBA1Holo_chk6";
+            this.LBA1Holo_chk6.Size = new System.Drawing.Size(88, 17);
+            this.LBA1Holo_chk6.TabIndex = 27;
+            this.LBA1Holo_chk6.Text = "Been there";
+            this.LBA1Holo_chk6.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // LBA1Holo_chk5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(187, 46);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(72, 17);
-            this.checkBox5.TabIndex = 25;
-            this.checkBox5.Text = "Unknown";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.LBA1Holo_chk5.AutoSize = true;
+            this.LBA1Holo_chk5.Location = new System.Drawing.Point(187, 69);
+            this.LBA1Holo_chk5.Name = "LBA1Holo_chk5";
+            this.LBA1Holo_chk5.Size = new System.Drawing.Size(72, 17);
+            this.LBA1Holo_chk5.TabIndex = 26;
+            this.LBA1Holo_chk5.Text = "Unknown";
+            this.LBA1Holo_chk5.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // LBA1Holo_chk4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(72, 115);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(72, 17);
-            this.checkBox4.TabIndex = 24;
-            this.checkBox4.Text = "Unknown";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.LBA1Holo_chk4.AutoSize = true;
+            this.LBA1Holo_chk4.Location = new System.Drawing.Point(187, 46);
+            this.LBA1Holo_chk4.Name = "LBA1Holo_chk4";
+            this.LBA1Holo_chk4.Size = new System.Drawing.Size(72, 17);
+            this.LBA1Holo_chk4.TabIndex = 25;
+            this.LBA1Holo_chk4.Text = "Unknown";
+            this.LBA1Holo_chk4.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // LBA1Holo_chk3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(72, 92);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(72, 17);
-            this.checkBox3.TabIndex = 23;
-            this.checkBox3.Text = "Unknown";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.LBA1Holo_chk3.AutoSize = true;
+            this.LBA1Holo_chk3.Location = new System.Drawing.Point(72, 115);
+            this.LBA1Holo_chk3.Name = "LBA1Holo_chk3";
+            this.LBA1Holo_chk3.Size = new System.Drawing.Size(72, 17);
+            this.LBA1Holo_chk3.TabIndex = 24;
+            this.LBA1Holo_chk3.Text = "Unknown";
+            this.LBA1Holo_chk3.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // LBA1Holo_chk2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(72, 69);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(72, 17);
-            this.checkBox2.TabIndex = 22;
-            this.checkBox2.Text = "Unknown";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.LBA1Holo_chk2.AutoSize = true;
+            this.LBA1Holo_chk2.Location = new System.Drawing.Point(72, 92);
+            this.LBA1Holo_chk2.Name = "LBA1Holo_chk2";
+            this.LBA1Holo_chk2.Size = new System.Drawing.Size(72, 17);
+            this.LBA1Holo_chk2.TabIndex = 23;
+            this.LBA1Holo_chk2.Text = "Unknown";
+            this.LBA1Holo_chk2.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // LBA1Holo_chk1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(72, 46);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 17);
-            this.checkBox1.TabIndex = 21;
-            this.checkBox1.Text = "Can focus";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.LBA1Holo_chk1.AutoSize = true;
+            this.LBA1Holo_chk1.Location = new System.Drawing.Point(72, 69);
+            this.LBA1Holo_chk1.Name = "LBA1Holo_chk1";
+            this.LBA1Holo_chk1.Size = new System.Drawing.Size(72, 17);
+            this.LBA1Holo_chk1.TabIndex = 22;
+            this.LBA1Holo_chk1.Text = "Unknown";
+            this.LBA1Holo_chk1.UseVisualStyleBackColor = true;
+            // 
+            // LBA1Holo_chk0
+            // 
+            this.LBA1Holo_chk0.AutoSize = true;
+            this.LBA1Holo_chk0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Holo_chk0.Location = new System.Drawing.Point(72, 46);
+            this.LBA1Holo_chk0.Name = "LBA1Holo_chk0";
+            this.LBA1Holo_chk0.Size = new System.Drawing.Size(83, 17);
+            this.LBA1Holo_chk0.TabIndex = 21;
+            this.LBA1Holo_chk0.Text = "Can focus";
+            this.LBA1Holo_chk0.UseVisualStyleBackColor = true;
             // 
             // LBA1Othr_cboHolomap
             // 
             this.LBA1Othr_cboHolomap.FormattingEnabled = true;
-            this.LBA1Othr_cboHolomap.Location = new System.Drawing.Point(81, 7);
+            this.LBA1Othr_cboHolomap.Location = new System.Drawing.Point(24, 11);
             this.LBA1Othr_cboHolomap.Name = "LBA1Othr_cboHolomap";
-            this.LBA1Othr_cboHolomap.Size = new System.Drawing.Size(223, 21);
+            this.LBA1Othr_cboHolomap.Size = new System.Drawing.Size(288, 21);
             this.LBA1Othr_cboHolomap.TabIndex = 19;
-            // 
-            // label1LBA1Othr_lblHoloLocations
-            // 
-            this.label1LBA1Othr_lblHoloLocations.AutoSize = true;
-            this.label1LBA1Othr_lblHoloLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1LBA1Othr_lblHoloLocations.Location = new System.Drawing.Point(3, 10);
-            this.label1LBA1Othr_lblHoloLocations.Name = "label1LBA1Othr_lblHoloLocations";
-            this.label1LBA1Othr_lblHoloLocations.Size = new System.Drawing.Size(56, 13);
-            this.label1LBA1Othr_lblHoloLocations.TabIndex = 18;
-            this.label1LBA1Othr_lblHoloLocations.Text = "Holomap";
+            this.LBA1Othr_cboHolomap.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboHolomap_SelectedIndexChanged);
             // 
             // tpFlying
             // 
@@ -2430,16 +2431,16 @@
         private System.Windows.Forms.ComboBox LBA1Othr_cboWeapon;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tpLBA1Holomap;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox LBA1Holo_chk7;
+        private System.Windows.Forms.CheckBox LBA1Holo_chk6;
+        private System.Windows.Forms.CheckBox LBA1Holo_chk5;
+        private System.Windows.Forms.CheckBox LBA1Holo_chk4;
+        private System.Windows.Forms.CheckBox LBA1Holo_chk3;
+        private System.Windows.Forms.CheckBox LBA1Holo_chk2;
+        private System.Windows.Forms.CheckBox LBA1Holo_chk1;
+        private System.Windows.Forms.CheckBox LBA1Holo_chk0;
         private System.Windows.Forms.ComboBox LBA1Othr_cboHolomap;
-        private System.Windows.Forms.Label label1LBA1Othr_lblHoloLocations;
+        private System.Windows.Forms.Button LBA1Holo_btnSet;
     }
 }
 

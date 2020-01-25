@@ -1,9 +1,7 @@
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\ChapterOffsets.xml
-R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\MemoryLocations.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\MovieOffsets.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\QuestOffsets.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\saveGame.xml
-R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA2\MemoryLocations.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA2\Outfit.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA2\skins.xml
 R:\Users\User\source\repos\LBATrainer\bin\Release\files\Other\options.xml
@@ -21,3 +19,9 @@ R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.GenerateReso
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.CopyComplete
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.exe
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.pdb
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\holomap.xml
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\Inventory.xml
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\InventoryUsed.xml
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA1\Twinsen.xml
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA2\Inventory.xml
+R:\Users\User\source\repos\LBATrainer\bin\Release\files\LBA2\Twinsen.xml

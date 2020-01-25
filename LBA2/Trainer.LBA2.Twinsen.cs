@@ -47,6 +47,7 @@ namespace LBATrainer
             cboLBA2Inventory.Items.AddRange(items.Inventory);
             addLBA2InventoryCheckbox(null);
         }
+        #region inventory
         private void CboLBA2Inventory_SelectedIndexChanged(object sender, EventArgs e)
         {
             Item itm = (Item)cboLBA2Inventory.SelectedItem;
@@ -96,10 +97,7 @@ namespace LBATrainer
         private void ChkLBA2InventoryValue_CheckedChanged(object sender, EventArgs e)
         {
             ushort val;
-            /*if (chkLBA2InventoryValue.Checked)
-                val = 1;
-            else
-                val = 0;*/
+
             if (-1 == cboLBA2Inventory.SelectedIndex) return;
             if (chkLBA2InventoryValue.Checked)
                 val = ((Item)cboLBA2Inventory.SelectedItem).maxVal;
@@ -108,6 +106,7 @@ namespace LBATrainer
 
             memRoutines.WriteVal(LBA_TWO, (Item)cboLBA2Inventory.SelectedItem, val);
         }
+        #endregion
         private void BtnLBA2TwinsenSet_Click(object sender, EventArgs e)
         {
             memRoutines.WriteVal(LBA_TWO, items.CloverBoxes, txtLBA2CloverBoxes.Text);
