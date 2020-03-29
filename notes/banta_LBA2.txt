@@ -1,0 +1,197 @@
+GEOMETRY
+--------
+
+	Demo Mode		0x74B6B0, 0x269E00
+	Scene ID		0x74B6B0, 0x267CA0
+
+CONSUMABLES
+-----------
+
+	Kashes			0x74B6B0, 0x269E14
+	Clover			0x74B6B0, 0x269E06
+
+BEHAVIOUR
+---------
+
+	Behaviour		0x74B6B0, 0x269E10	0	Normal
+							1	Athletic
+							2	Aggressive
+							3	Discrete
+							4	Protopack
+							5	Twinsen + Zoe
+							6	Twinsen with Horn
+							7	Space Suit (Normal)
+							8	Super Jetpack
+							9	Space Suit (Athletic)
+							10	Space Suit (Normal)
+							11	Space Suit (Athletic)
+							12	Car
+							13	Twinsen Skeleton
+							14	<<Crash>>
+
+INVENTORY
+---------
+
+0	HoloMap			0x74B6B0, 0x269C10
+1	Magic Ball		0x74B6B0, 0x269C12
+2	Darts			0x74B6B0, 0x269C14
+3	Sendells Ball		0x74B6B0, 0x269C16
+4	Tunic			0x74B6B0, 0x269C18
+5	Incandescent Pearl	0x74B6B0, 0x269C1A
+6	Pyramid Key		0x74B6B0, 0x269C1C
+7	Car part		0x74B6B0, 0x269C1E
+8	Kashes			0x74B6B0, 0x269C20
+9	Pisto-Laser		0x74B6B0, 0x269C22
+10	Emperors Sword		0x74B6B0, 0x269C24
+11	Wannie Glove		0x74B6B0, 0x269C26
+12	ProtoPack		0x74B6B0, 0x269C28
+13	Ferry Ticket		0x74B6B0, 0x269C2A
+14	Meca Penguin		0x74B6B0, 0x269C2C
+15	Gazogem			0x74B6B0, 0x269C2E
+16	Dissident Ring		0x74B6B0, 0x269C30
+17	Gallic Acid		0x74B6B0, 0x269C32
+18	Ferrymans Song		0x74B6B0, 0x269C34
+19	Ring of Lightning	0x74B6B0, 0x269C36
+20	Customers Umbrella	0x74B6B0, 0x269C38
+21	Gems			0x74B6B0, 0x269C3A
+22	Horn of Triton		0x74B6B0, 0x269C3C
+23	Blowgun			0x74B6B0, 0x269C3E
+24	Itinerary Token		0x74B6B0, 0x269C40
+25	Slice of Tart		0x74B6B0, 0x269C42
+26	Portable Radio		0x74B6B0, 0x269C44
+27	Garden Balsam		0x74B6B0, 0x269C46
+28	Magic Slate		0x74B6B0, 0x269C48
+29	Translator		0x74B6B0, 0x269C4A
+30	Wizards Diploma		0x74B6B0, 0x269C4C
+31	Francos Fragment	0x74B6B0, 0x269C4E
+32	Sups Fragment		0x74B6B0, 0x269C50
+33	Mosquibees Fragment	0x74B6B0, 0x269C52
+34	Wannies Fragment	0x74B6B0, 0x269C54
+35	Island CX Key		0x74B6B0, 0x269C56
+36	Pickaxe			0x74B6B0, 0x269C58
+37	Franco Key		0x74B6B0, 0x269C5A
+38	Franco Notes		0x74B6B0, 0x269C5C
+39	Protective Spell	0x74B6B0, 0x269C5E
+
+QUESTS
+------
+
+40	Zoe walking to Dinofly?	0x74B6B0, 0x269C60	0-14	Zoe Walking?
+41	Chapter 2 WomensBath?	0x74B6B0, 0x269C62	0	?
+							1	?
+							2	?
+42	DinoFly?		0x74B6B0, 0x269C64
+43	ProtoPack Box		0x74B6B0, 0x269C66	1	Move to zone 4
+							2	Move to zone 29
+							3	Move to room 1
+							4	Grobo Opens it
+							5	Get ProtoPack
+							5	Pay man to move it (skips 1-4)
+44	Tavern Cellar hole	0x74B6B0, 0x269C68
+45	Use Meca in Shop	0x74B6B0, 0x269C6A
+46	Raid Citadel Shop Till	0x74B6B0, 0x269C6C
+47	WannieIsland/Ferryman?	0x74B6B0, 0x269C6E
+48	Use Key on Throne	0x74B6B0, 0x269C70
+49	Mosquibees?		0x74B6B0, 0x269C72
+50	Baggage Claim Secret	0x74B6B0, 0x269C74
+51	Lighthouse Keeper	0x74B6B0, 0x269C76	1	Speak to Weather Wizard
+							2	Speak to Ralph
+							3	Speak to Zoe
+52	???			0x74B6B0, 0x269C78
+53	First Tralu Door	0x74B6B0, 0x269C7A
+54	Twinsen Neighbour	0x74B6B0, 0x269C7C	1	?
+							2	Use Gallic Acid
+55	Obtain Complete Key	x074B6B0, 0x269C7E
+56	Tralu Dungeon/Ralph?	x074B6B0, 0x269C80	1	?
+							3	?
+57	Umbrella Thief		x074B6B0, 0x269C82	1	Steals Umbrella
+							2	Get it Back
+							3	Return it
+58	???			x074B6B0, 0x269C84
+59	Buy a Ferry Ticket	x074B6B0, 0x269C86
+60	Ralph?			x074B6B0, 0x269C88	1	Speak to Ralph?
+							2	Open the gate?
+							3	Use Key on gate?
+61	??? SoM ???		x074B6B0, 0x269C8A	1	?
+							2	?
+							3	Enroll in SoM
+							4	?
+							5	?
+							6	?
+							7	Wizards Diploma
+62	Return Umbrella		x074B6B0, 0x269C8C	1	Return Umbrella
+							2	Speak to Kaeroks maid
+							3	Speak to Wizards Assistant?
+63	Destroy SoM Targets	x074B6B0, 0x269C8E	1	Destroy the Training Targets
+							2	Get the Blowgun
+64	Firefly Tart		x074B6B0, 0x269C90	1	Get Firefly Tart?
+							2	Give Old Man Tart
+							3	Open Door with Key
+							4	Speak to Wannie Monk
+65	White Leaf Center?	x074B6B0, 0x269C92
+66	Twinsen Neighbour?	x074B6B0, 0x269C94	1	?
+							2	Read the Map?
+67	Wannie Box		x074B6B0, 0x269C96	1	Get in box?
+							2	Get stuck in box?
+68	DinoFly?		x074B6B0, 0x269C98
+69	Bee Test		x074B6B0, 0x269C9A	1	Pass the Bee Test
+							2	Transport to Throne Room
+							3	Bee Island Outside?
+							4	Speak to Survivor Under Celebration
+							5	Bee Carry Twinsen to Throne Room?
+70	Outside Cit Tavern?	x074B6B0, 0x269C9C
+71	Weather Wizard?		x074B6B0, 0x269C9E	1	Outside Wizard Tent?
+							2	Outside Lighthouse?
+72	Citadel School		x074B6B0, 0x269CA0	0-3	Hit Pigtails girl
+							3-6	Hit Grobo
+							7	Hit Bunny
+73	Get Bee BlowGun		x074B6B0, 0x269CA2
+74	Get the Car Part	x074B6B0, 0x269CA4	1	Get the car part
+							2	Give to Zoe?
+							3	Radio Message? Near Baldinos House
+							4	Take the car? Near Esmer Shuttle
+							5	Turn in Garden Balsam
+75	???			x074B6B0, 0x269CA6
+76	Open Wannie Temple Door	x074B6B0, 0x269CA8
+77	Citadel Sewer Grid?	x074B6B0, 0x269CAA	1	?
+							2	?
+							3	?
+							4	?
+							5	?
+78	Citadel Sewer Grid?	x074B6B0, 0x269CAC
+79	Celebration Key		x074B6B0, 0x269CAE	1	Use the key on Celebration Island
+							2	Speak to Funfrock?
+80	???			x074B6B0, 0x269CB0
+81	Wizards Diploma		x074B6B0, 0x269CB2	1	Get Wizards Diploma
+							2	Enter Esmer Base with Sup?
+							3
+82	Wannie Island Ferryman?	x074B6B0, 0x269CB4
+83	Zeelich Visit		x074B6B0, 0x269CB6	1	Enter Esmer Base with Sup?
+							2	Board Esmer Shuttle
+							3	Follow Sup into Space port?
+							4	Attacked in Space port
+							5	Otringal Prison?
+							6	White Leaf Esmer Shuttle?
+							7	Crash the Shuttle in Citadel?
+							8	Speak to Zoe
+							9	Radio Message? Near Twinsens House
+84	Bee Prisoner		x074B6B0, 0x269CB8	1	Talk with translator
+							2	Speak to Bee?
+							3
+85	???			x074B6B0, 0x269CBA	1	?
+							2	?
+							3	?
+							4	?
+							5	?
+							6	?
+							7	?
+							8	?
+							9	Escape with Baldino?
+86	Touch Shuttle Controls?	x074B6B0, 0x269CBC
+87	Prison Entrance?	x074B6B0, 0x269CBE
+88	???			x074B6B0, 0x269CC0
+89	Ride the 1st Bu Cart	x074B6B0, 0x269CC2
+90	Escape with Baldino?	x074B6B0, 0x269CC4	
+
+
+94	Game Start		0x74B6B0, 0x269CCC

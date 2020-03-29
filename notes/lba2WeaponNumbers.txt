@@ -1,0 +1,16 @@
+Weapons
+
+00: No Weapon
+01: Magic Ball
+02: Darts
+03: 
+04: 
+05:
+06
+07
+08
+09: Lazer Pistol
+10: Emporers Sword
+11: Wannies Glove
+22: Horn of triton
+23: Blowtron/Blowgun

@@ -33,7 +33,8 @@ namespace LBATrainer
         #region Weapon
         private void LBA1Othr_cboLBA1Weapon_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LBA1Othr_chkWeaponValue.Checked = LBA1Othr_cboWeapon.SelectedIndex == memRoutines.readAddress(LBA_ONE, 0xE06, 1);
+            if(-1 != LBA1Othr_cboWeapon.SelectedIndex)
+                LBA1Othr_chkWeaponValue.Checked = LBA1Othr_cboWeapon.SelectedIndex == memRoutines.readAddress(LBA_ONE, 0xE06, 1);
         }
 
         private void LBA1Othr_chkWeaponValue_CheckedChanged(object sender, EventArgs e)
@@ -161,21 +162,16 @@ namespace LBATrainer
             val += boolToInt(LBA1Holo_chk7.Checked) * 128;
             memRoutines.WriteVal(LBA_ONE, itm, (ushort)val);
         }
-        private void cboLBA1Holomap_SelectedIndexChanged(object sender, EventArgs e)
+
+
+        private void LBA1Othr_cboQuest_TextChanged(object sender, EventArgs e)
         {
-            //Item itm = (Item)LBA1Othr_cboInvUsed.SelectedItem;
-            //LBA1Othr_chkInvUsedValue.Checked = 1 == memRoutines.getVal(LBA_ONE, itm);
+            filterCBO(LBA1Othr_cboQuest, items.Quest);
         }
-        /*private void LBA1Othr_chkHolomapValue_CheckedChanged(object sender, EventArgs e)
+
+        private void LBA1Othr_cboInvUsed_TextChanged(object sender, EventArgs e)
         {
-            ushort val;
-            val = LBA1Othr_chkInvUsedValue.Checked ? (ushort)1 : (ushort)0;
-            if (LBA1Othr_chkInvUsedValue.Checked)
-                val = 1;
-            else
-                val = 0;
-            if (-1 == LBA1Othr_cboInvUsed.SelectedIndex) return;
-            memRoutines.WriteVal(LBA_ONE, (Item)LBA1Othr_cboInvUsed.SelectedItem, val);
-        }*/
+            filterCBO(LBA1Othr_cboInvUsed, items.InventoryUsed);
+        }
     }
 }

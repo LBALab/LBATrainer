@@ -58,8 +58,9 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Flying">
-      <HintPath>DLLs\Flying.dll</HintPath>
+    <Reference Include="Flying, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Flying\bin\Debug\Flying.dll</HintPath>
     </Reference>
     <Reference Include="LBAMemoryModule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -97,6 +98,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LBA2\Trainer.LBA2.MenuFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.Other.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LBA2\Trainer.LBA2.ShittyShot.cs">

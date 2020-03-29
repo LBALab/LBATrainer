@@ -2,6 +2,6 @@
 LBA2 Flying
 =============
 Values to use
-X: 57F3D
-Y: 57F35
+X: 57F35
+Y: 57F3D
 Z: 57F39

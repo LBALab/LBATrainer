@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="29">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Clovers"</Description>
+      <LastState Value="2" RealAddress="00C57460"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B27460</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>15</ID>
+      <Description>"Clover Boxes"</Description>
+      <LastState Value="3" RealAddress="00C57D08"/>
+      <VariableType>2 Bytes</VariableType>
+      <Address>ePSXe.exe+B27D08</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Kashes"</Description>
+      <LastState Value="30" RealAddress="00C581C8"/>
+      <VariableType>2 Bytes</VariableType>
+      <Address>ePSXe.exe+B281C8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>46</ID>
+      <Description>"Holomap"</Description>
+      <LastState Value="1" RealAddress="00C581D8"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281D8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>45</ID>
+      <Description>"Magic Ball"</Description>
+      <LastState Value="1" RealAddress="00C581D9"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281D9</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>31</ID>
+      <Description>"FunFrock's Sabre"</Description>
+      <LastState Value="0" RealAddress="00C581DA"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281DA</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>30</ID>
+      <Description>"Gawleys Horn"</Description>
+      <LastState Value="0" RealAddress="00C581DB"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281DB</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>29</ID>
+      <Description>"Tunic"</Description>
+      <LastState Value="1" RealAddress="00C581DC"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281DC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>28</ID>
+      <Description>"Book of Bu"</Description>
+      <LastState Value="0" RealAddress="00C581DD"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281DD</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>27</ID>
+      <Description>"Sendell Medallion"</Description>
+      <LastState Value="0" RealAddress="00C581DE"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281DE</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>26</ID>
+      <Description>"Clear water"</Description>
+      <LastState Value="0" RealAddress="00C581DF"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281DF</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>25</ID>
+      <Description>"Red Card"</Description>
+      <LastState Value="0" RealAddress="00C581E0"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>24</ID>
+      <Description>"Blue card"</Description>
+      <LastState Value="0" RealAddress="00C581E1"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E1</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>23</ID>
+      <Description>"ID Card"</Description>
+      <LastState Value="1" RealAddress="00C581E2"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E2</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>22</ID>
+      <Description>"Architect ID"</Description>
+      <LastState Value="0" RealAddress="00C581E3"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E3</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14</ID>
+      <Description>"Proto"</Description>
+      <LastState Value="0" RealAddress="00C581E4"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>21</ID>
+      <Description>"Snowboard"</Description>
+      <LastState Value="0" RealAddress="00C581E5"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E5</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"Penguin"</Description>
+      <LastState Value="0" RealAddress="00C581E6"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E6</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>32</ID>
+      <Description>"Inventory Gas"</Description>
+      <LastState Value="0" RealAddress="00C581E7"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E7</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>33</ID>
+      <Description>"Pirate Flag"</Description>
+      <LastState Value="0" RealAddress="00C581E8"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>34</ID>
+      <Description>"Flute"</Description>
+      <LastState Value="0" RealAddress="00C581E9"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281E9</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>35</ID>
+      <Description>"Guitar"</Description>
+      <LastState Value="0" RealAddress="00C581EA"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281EA</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>36</ID>
+      <Description>"Hair Dryer"</Description>
+      <LastState Value="0" RealAddress="00C581EB"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281EB</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>37</ID>
+      <Description>"Key"</Description>
+      <LastState Value="0" RealAddress="00C581EC"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281EC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>38</ID>
+      <Description>"Cherry Syrup"</Description>
+      <LastState Value="1" RealAddress="00C581ED"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281ED</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>39</ID>
+      <Description>"Empty Bottle"</Description>
+      <LastState Value="0" RealAddress="00C581EE"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281EE</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>40</ID>
+      <Description>"Ferry Ticket"</Description>
+      <LastState Value="0" RealAddress="00C581EF"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281EF</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>41</ID>
+      <Description>"Keypad"</Description>
+      <LastState Value="0" RealAddress="00C581F0"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281F0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>42</ID>
+      <Description>"Coffee Pot"</Description>
+      <LastState Value="0" RealAddress="00C581F1"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281F1</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>43</ID>
+      <Description>"Envelope List of clovers"</Description>
+      <LastState Value="1" RealAddress="00C581F2"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281F2</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>44</ID>
+      <Description>"Inventory Clover"</Description>
+      <LastState Value="1" RealAddress="00C581F3"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281F3</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>16</ID>
+      <Description>"Bu statue first"</Description>
+      <LastState Value="0" RealAddress="00C581F7"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B281f7</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"Principal Shop seal"</Description>
+      <LastState Value="0" RealAddress="00C58214"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B28214</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"Twinsen barrel room door"</Description>
+      <LastState Value="1" RealAddress="00C58215"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B28215</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"Killed Pharmacist"</Description>
+      <LastState Value="1" RealAddress="00C58216"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B28216</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"Clobbered Clone"</Description>
+      <LastState Value="0" RealAddress="00C58217"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B28217</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Locksmith passage"</Description>
+      <LastState Value="0" RealAddress="00C58218"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B28218</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"Outside locksmith"</Description>
+      <LastState Value="0" RealAddress="00C58219"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B28219</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"Gate"</Description>
+      <LastState Value="0" RealAddress="00C5821A"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B2821A</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"Keys"</Description>
+      <LastState Value="0" RealAddress="00C59AD4"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B29AD4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>18</ID>
+      <Description>"XPos"</Description>
+      <LastState Value="30068" RealAddress="00C679D4"/>
+      <VariableType>2 Bytes</VariableType>
+      <Address>ePSXe.exe+B379D4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>19</ID>
+      <Description>"Height"</Description>
+      <LastState Value="256" RealAddress="00C679D8"/>
+      <VariableType>2 Bytes</VariableType>
+      <Address>ePSXe.exe+B379D8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>20</ID>
+      <Description>"YPos"</Description>
+      <LastState Value="19821" RealAddress="00C679DC"/>
+      <VariableType>2 Bytes</VariableType>
+      <Address>ePSXe.exe+B379DC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Health"</Description>
+      <LastState Value="50" RealAddress="00C67B20"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B37B20</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>13</ID>
+      <Description>"Gas"</Description>
+      <LastState Value="0" RealAddress="00C83168"/>
+      <VariableType>2 Bytes</VariableType>
+      <Address>ePSXe.exe+B53168</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>17</ID>
+      <Description>"Magic Level"</Description>
+      <LastState Value="1" RealAddress="00C957B0"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B657B0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Magic"</Description>
+      <LastState Value="20" RealAddress="00C958AC"/>
+      <VariableType>Byte</VariableType>
+      <Address>ePSXe.exe+B658AC</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

@@ -18,6 +18,7 @@ namespace LBATrainer
         public Item[] Quest;
         public Item[] Movies;
         public Item[] Holomap;
+        public Item[] LBA2Skins;
         public Item MagicLevel;
         public Item MagicPoints;
         public Item Kashers;
@@ -44,7 +45,7 @@ namespace LBATrainer
             doc.Load(LBAFilesPath + "Twinsen.xml");
             loadTwinsen(LBAVer, doc.DocumentElement.SelectNodes("/Twinsen/item"));
             Twinsen = loadItems(LBAVer, "Twinsen.xml", "/Twinsen/item");
-            Inventory = loadItems(LBAVer, "Inventory.xml", "/inventory/item");            
+            Inventory = loadItems(LBAVer, "Inventory.xml", "/inventory/item");
 
             if (1 == LBAVer)
             {
@@ -53,6 +54,8 @@ namespace LBATrainer
                 Movies = loadItems(LBAVer, "MovieOffsets.xml", "/movies/item");
                 Holomap = loadItems(LBAVer, "Holomap.xml", "/holomap/item");
             }
+            else
+                getLBA2Skins();
            /* else
             {
                 Inventory = loadItems(LBAVer, "Inventory.xml", "/inventory/item");
@@ -92,6 +95,34 @@ namespace LBATrainer
             item.lbaVersion = byte.Parse(xn.SelectSingleNode("lbaVersion").InnerText.Trim());
             //If we adjust item to contain an arraylist of items, then for each item in item we can call getitem
             return item;
+        }
+
+        private Item[] getLBA2Skins()
+        {
+            //public Item[] LBA2Skins;;
+            string filePath = LBAFilesPath + "skins.xml";
+            XmlDocument doc = new XmlDocument();
+            doc.Load(filePath);
+            XmlNodeList nodes = doc.DocumentElement.SelectNodes("/skins/skin");
+            Item[] items = new Item[nodes.Count];
+            for (uint i = 0; i < items.Length; i++)
+                items[i] = getLBA2Skin(nodes[(int)i], (ushort)i);
+            return (LBA2Skins = items);
+
+        }
+        private Item getLBA2Skin(XmlNode xn, ushort count)
+        {
+            Item item = new Item();
+            item.name = xn.InnerText.Trim();
+
+            item.memoryOffset = 0x57F51;
+            item.maxVal = count;
+            item.minVal = count;
+            item.size = 2;
+            item.type = 2;
+            item.lbaVersion = 2;
+            
+            return item; ;
         }
         private void loadTwinsen(ushort LBAVer, XmlNodeList nodes)
         {

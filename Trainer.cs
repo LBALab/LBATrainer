@@ -29,6 +29,8 @@ namespace LBATrainer
             scan(LBA_ONE);
             SetDoubleBuffered(tcLBAVersion);
             tsi = new oTimerSetItems(oTimerSetItems.LBAVersion.One);
+            //cboLBA2Inventory.Text
+            //Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         }
 
         #region General
@@ -55,11 +57,6 @@ namespace LBATrainer
         {
             Options opt = new Options();
             LBA1SG_Load(sender, e, opt);
-/*#if !DEBUG
-            tcLBA1Inner.TabPages.Remove(tcLBA1Inner.TabPages[tcLBA1Inner.TabPages.Count - 1]);
-            tcLBA2Inner.TabPages.Remove(tcLBA2Inner.TabPages[1]);
-            tcLBA2Inner.TabPages.Remove(tcLBA2Inner.TabPages[tcLBA2Inner.TabPages.Count - 1]);
-#endif*/
         }
         private void FrmTrainer_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -71,6 +68,22 @@ namespace LBATrainer
             if (!int.TryParse(value, out val)) return -1;
             return val;
         }
+        //To be triggered from TextChanged event
+        private void filterCBO(ComboBox cb, Item[] itms)
+        {
+            //If not entering data i.e. empty field
+            if (-1 != cb.SelectedIndex) return;
+
+            cb.Items.Clear();
+            for (int i = 0; i < itms.Length; i++)
+                if (itms[i].name.ToLower().Contains(cb.Text.ToLower()))
+                    cb.Items.Add(itms[i]);
+
+            cb.SelectionStart = cb.Text.Length;
+            cb.SelectionLength = 0;
+        }
+
+        #region hotkey
         private HotKey registerHotKey(Keys k)
         {
             try
@@ -106,11 +119,12 @@ namespace LBATrainer
             if (keyPressed.Msg == 0x0312)
             {
                 LBA1SG_processHotkey((Keys)keyPressed.WParam);
+                //LBA1Menu_processHotkey((Keys)keyPressed.WParam);
                 LBA2HyperCar_ProcessHotKey((Keys)keyPressed.WParam);
             }
             base.WndProc(ref keyPressed);
         }
-
+        #endregion
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AboutBox1().ShowDialog();
@@ -141,6 +155,7 @@ namespace LBATrainer
             txtLBA2LocationXPos.Text = memRoutines.readAddress(2, 0x57F35, 2).ToString();
             txtLBA2LocationZPos.Text = memRoutines.readAddress(2, 0x57F39, 2).ToString();
             txtLBA2LocationYPos.Text = memRoutines.readAddress(2, 0x57F3D, 2).ToString();
+            txtLBA2LocationFacing.Text = memRoutines.readAddress(2, 0x57F45, 2).ToString();
         }
 
         private void btnLBA2LocationSet_Click(object sender, EventArgs e)
@@ -277,5 +292,14 @@ namespace LBATrainer
             return AppDomain.CurrentDomain.BaseDirectory + "files\\lba" + LBAVer.ToString() + "\\";
         }
 
+        private void cboLBA2Inventory_TextChanged(object sender, EventArgs e)
+        {
+            filterCBO(cboLBA2Inventory, items.Inventory);
+        }
+
+        private void LBA2Othr_btnGetAreacode_Click(object sender, EventArgs e)
+        {
+            LBA2Othr_lblAreacodeTxt.Text = memRoutines.readVal(0x55C5F, 2).ToString();
+        }
     }
 }

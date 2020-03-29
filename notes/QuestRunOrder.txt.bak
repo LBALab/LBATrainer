@@ -10,7 +10,6 @@ Entered barrel room in Twinsen house <!-- Changed from secret room -->
 <Chapter 2: Zoe captured>
 <Chapter 3: Found Tunic>
 ==================================	4
-
 ==================================
 ======= Citadel - Magic 1 ========
 ==================================
@@ -29,7 +28,7 @@ Hair Dryer salesmen on Principal spoken to - mentions colleague
 Talked to forger through bars
 Librarian complains about water
 Read legendary book in library
-<steal from library x 4>
+<steal from library x 3>
 Clobbered a clone
 Talked with lady Old Burg (Julia)
 Locksmith cousin opened house
@@ -48,9 +47,8 @@ Fisherman offers ride
 ====== White leaf - Magic 1 =======
 ===================================
 Entered White leaf desert main area (not military camp)
-Saved Elf: Joe
-<get blue card>
 Spoke with man in white leaf desert
+<Chapter 6: Picked up book of BU>
 50 Kashers from barrel, by first BU statue plinth
 Placed Statue BU first Scene
 BU second scene sub room 1 - killed Skeleton
@@ -58,13 +56,15 @@ BU second scene sub room 2 - killed skelton, unlocked door.
 BU second scene sub room 3 - bouncing eyes
 Opened gate to second BU Statue room
 Placed second BU statue
-<Chapter 6: Picked up book of BU>
-===================================	33
-
+===================================	32
 ===================================
 ====== White leaf - Magic 2 =======
-===================================
+===================================	
 Offered book to old guy
+<get mecca>
+Saved Elf: Joe
+<get blue card>
+<get mecca - death warp>
 ===================================	34
 
 ===================================
@@ -88,28 +88,29 @@ Killed grobo in closed bar
 Opened Tavern cellar
 Found clover box in bar
 Bar re-opened.
-==================================	49
+==================================	42
 
 ===================================
 ====== Principal - Magic 2 ========
 ===================================
 <Steal money from Library>
 Info about LeBourne's treasure from guy in Library
-===================================	36
+===================================	43
 
 ===================================
 ======= Proxima - Magic 2 =========
 ===================================
+<Get coffeepot>
+<buy hairdryer>
+Turned museum alarm on
+<Trade coffeepot>
 Opened Forgers house
 Baldino requested hairdryer
-<Get keypad via coffeepot>
-Museum trap door down
-Turned museum alarm on
 <Chapter 8: Stole Pirates Flag>
 <Chapter 9: Picked up key from chest in museum.>
+Museum trap door down
 Museum heisted
-Attached pirate flag to ship
-===================================	42
+===================================	48
 ===================================
 ======= Proxima - Magic 3 =========
 ===================================
@@ -117,6 +118,8 @@ Broke seal to marked stone
 Password eclipse stone
 Password for marked stone
 Freed Eclipse stone
+<?proto-deathwarp>
+Attached pirate flag to ship
 ===================================	53
 
 ===================================
@@ -167,7 +170,6 @@ Sacred carrot opening ceremony in progress
 Sacred Carrot open
 Melted clear water lake
 ===================================	81
-
 ===================================
 ======== Hamalyi - Magic 4 ========
 ===================================
@@ -175,12 +177,65 @@ Took hydroglider from Clear water lake
 ===================================	82
 
 ===================================
+======== Hamalyi - Magic 4 ========
+===================================
+<pacman to Tibbet>
+===================================	82
+
+===================================
+===== Tibbet Island - Magic 4 =====
+===================================
+Found Dinofly
+Took dinofly
+===================================	84
+
+===================================
+====== Fortress - Magic 4 =========
+===================================
+<Chapter 13: Fortress island: Spoke to Rabbi-bunny.>
+===================================	84
+--------------------------------------------------------------
+===================================
 ====== White leaf - Magic 4 =======
 ===================================
 Broke seal in white leaf desert
+<mecca penguin>
 <Trade flute for guitar>
-==================================	83
+<death warp>
+==================================	85
 
+===================================
+====== Principal - Magic 4 ========
+===================================
+Principal Island: Peg Leg Street clover box
+Poured cherry syprup into water
+Poured Clear water into water tower
+Principal Island: Broke Old Burg Sendell seal by shop
+Principal Island: 150 Kashers Old Burg sewer
+Principal Island: Speak to sailor in bar after syrup in water <!-- Syrup in water, anti-alcohol stunt -->
+Principal Island: Broke seal on destroyed building
+Opened Funfrock Safe
+<Chapter 14: Stole FunFrocks sabre>
+Principal: Escaped through grate with forger
+Principal: Forger runs off after escaping
+==================================	95
+
+==================================
+======= Citadel - Magic 4 ========
+Entered Architect house
+<Chapter 15: Took architechs pass>
+===================================	96
+
+===================================
+======= Proxima - Magic 4 =========
+===================================
+Freed Marked stone
+Poured Clear water onto Eclipse Stone
+<proto death warp>
+Poured clear water onto the Marked stone
+<?proto-death warp> - may not be quicker as involves using lives which takes time
+===================================	99
+-------------------------------------------------------------------
 ===================================
 ===== Tibbet Island - Magic 4 =====
 ===================================
@@ -188,44 +243,6 @@ Gave space guitar
 Opened door Funky Town
 Dinofly passage open
 Opened door w/key in dinofly passage
-Found Dinofly
-Took dinofly
-===================================	89
-
-===================================
-====== Fortress - Magic 4 =========
-===================================
-<Chapter 13: Fortress island: Spoke to Rabbi-bunny.>
-===================================	89
-
-===================================
-====== Principal - Magic 4 ========
-===================================
-Principal Island: Broke Old Burg Sendell seal by shop
-Principal Island: 150 Kashers Old Burg sewer
-Poured cherry syprup into water
-Poured Clear water into water tower
-Principal Island: Speak to sailor in bar after syrup in water <!-- Syrup in water, anti-alcohol stunt -->
-Opened Funfrock Safe
-<Chapter 14: Stole FunFrocks sabre>
-Principal: Escaped through grate with forger
-Principal: Forger runs off after escaping
-Principal Island: Broke seal on destroyed building
-Principal Island: Peg Leg Street clover box
-==================================	99
-
-==================================
-======= Citadel - Magic 4 ========
-Entered Architect house
-<Chapter 15: Took architechs pass>
-===================================	100
-
-===================================
-======= Proxima - Magic 4 =========
-===================================
-Freed Marked stone
-Poured Clear water onto Eclipse Stone
-Poured clear water onto the Marked stone
 ===================================	103
 
 ===================================
@@ -250,9 +267,9 @@ Fortress Island passage: Killed monster first scene
 Fortress Island Passage: Drained pool area
 Inventory Disabled
 Inside Fortress: Killed zoe, used key on gate to inventory
+Inside Fortress broke seal to access stone
 Displaying cutscene: Inside Fortress: Pouring water on stone of Septentrion
 Fortress Island: Poured water on Septentrion stone (Triggered explosion)
-Inside Fortress broke seal to access stone
 ===================================	120
 
 ===================================

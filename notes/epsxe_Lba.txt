@@ -1,0 +1,14 @@
+ePSXe.exe+B27460 = Clovers
+ePSXe.exe+B27D08 = Clover Boxes
+ePSXe.exe+B281C8 = Kashes
+ePSXe.exe+B29AD4 = Keys
+ePSXe.exe+B37B20 = Health
+ePSXe.exe+B53168 = Gas - two bytes?
+ePSXe.exe+B658AC = Magic
+
+Quests
+
+ePSXe.exe+B28217 - Clobbared clone
+
+Inventory
+ePSXe.exe+B281E6 - Penguin

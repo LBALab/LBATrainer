@@ -144,6 +144,15 @@
             this.lblLBA2Clovers = new System.Windows.Forms.Label();
             this.txtLBA2Clovers = new System.Windows.Forms.TextBox();
             this.tpLBA2Other = new System.Windows.Forms.TabPage();
+            this.LBA2Othr_btnGetAreacode = new System.Windows.Forms.Button();
+            this.LBA2Othr_lblAreacodeTxt = new System.Windows.Forms.Label();
+            this.LBA2Othr_lblAreacode = new System.Windows.Forms.Label();
+            this.LBA2Othr_chkWeapon = new System.Windows.Forms.CheckBox();
+            this.LBA2Othr_Weapon = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_lblWeapon = new System.Windows.Forms.Label();
+            this.LBA2Othr_chkSkin = new System.Windows.Forms.CheckBox();
+            this.LBA2Othr_cboSkins = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_lblSelectSkin = new System.Windows.Forms.Label();
             this.lblOtherSkin = new System.Windows.Forms.Label();
             this.btnLBA2InstantCarDisabled = new System.Windows.Forms.Button();
             this.btnLBA2InstantCarTunic = new System.Windows.Forms.Button();
@@ -220,6 +229,8 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
+            this.txtLBA2LocationFacing = new System.Windows.Forms.TextBox();
+            this.lblLBA2LocationFacing = new System.Windows.Forms.Label();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -432,6 +443,7 @@
             this.LBA1Twin_cboInventory.Size = new System.Drawing.Size(171, 21);
             this.LBA1Twin_cboInventory.TabIndex = 9;
             this.LBA1Twin_cboInventory.SelectedIndexChanged += new System.EventHandler(this.LBA1Twin_CboInventory_SelectedIndexChanged);
+            this.LBA1Twin_cboInventory.TextChanged += new System.EventHandler(this.LBA1Twin_cboInventory_TextChanged);
             // 
             // LBA1Twin_lbInventory
             // 
@@ -564,6 +576,7 @@
             this.LBA1Othr_cboInvUsed.Size = new System.Drawing.Size(223, 21);
             this.LBA1Othr_cboInvUsed.TabIndex = 25;
             this.LBA1Othr_cboInvUsed.SelectedIndexChanged += new System.EventHandler(this.cboLBA1InvUsed_SelectedIndexChanged);
+            this.LBA1Othr_cboInvUsed.TextChanged += new System.EventHandler(this.LBA1Othr_cboInvUsed_TextChanged);
             // 
             // LBA1Othr_lblInvUsed
             // 
@@ -578,7 +591,7 @@
             // LBA1Othr_chkWeaponValue
             // 
             this.LBA1Othr_chkWeaponValue.AutoSize = true;
-            this.LBA1Othr_chkWeaponValue.Location = new System.Drawing.Point(313, 36);
+            this.LBA1Othr_chkWeaponValue.Location = new System.Drawing.Point(313, 37);
             this.LBA1Othr_chkWeaponValue.Name = "LBA1Othr_chkWeaponValue";
             this.LBA1Othr_chkWeaponValue.Size = new System.Drawing.Size(15, 14);
             this.LBA1Othr_chkWeaponValue.TabIndex = 21;
@@ -601,7 +614,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 39);
+            this.label1.Location = new System.Drawing.Point(6, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 19;
@@ -737,6 +750,7 @@
             this.LBA1Othr_cboQuest.Size = new System.Drawing.Size(223, 21);
             this.LBA1Othr_cboQuest.TabIndex = 1;
             this.LBA1Othr_cboQuest.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_CboQuest_SelectedIndexChanged);
+            this.LBA1Othr_cboQuest.TextChanged += new System.EventHandler(this.LBA1Othr_cboQuest_TextChanged);
             // 
             // LBA1Othr_lblQuest
             // 
@@ -1254,6 +1268,7 @@
             this.cboLBA2Inventory.Size = new System.Drawing.Size(171, 21);
             this.cboLBA2Inventory.TabIndex = 76;
             this.cboLBA2Inventory.SelectedIndexChanged += new System.EventHandler(this.CboLBA2Inventory_SelectedIndexChanged);
+            this.cboLBA2Inventory.TextChanged += new System.EventHandler(this.cboLBA2Inventory_TextChanged);
             // 
             // lblLBA2Inventory
             // 
@@ -1445,6 +1460,15 @@
             // tpLBA2Other
             // 
             this.tpLBA2Other.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_btnGetAreacode);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblAreacodeTxt);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblAreacode);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkWeapon);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_Weapon);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblWeapon);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkSkin);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboSkins);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblSelectSkin);
             this.tpLBA2Other.Controls.Add(this.lblOtherSkin);
             this.tpLBA2Other.Controls.Add(this.btnLBA2InstantCarDisabled);
             this.tpLBA2Other.Controls.Add(this.btnLBA2InstantCarTunic);
@@ -1458,10 +1482,109 @@
             this.tpLBA2Other.TabIndex = 4;
             this.tpLBA2Other.Text = "Other";
             // 
+            // LBA2Othr_btnGetAreacode
+            // 
+            this.LBA2Othr_btnGetAreacode.Location = new System.Drawing.Point(293, 65);
+            this.LBA2Othr_btnGetAreacode.Name = "LBA2Othr_btnGetAreacode";
+            this.LBA2Othr_btnGetAreacode.Size = new System.Drawing.Size(35, 23);
+            this.LBA2Othr_btnGetAreacode.TabIndex = 27;
+            this.LBA2Othr_btnGetAreacode.Text = "Get";
+            this.LBA2Othr_btnGetAreacode.UseVisualStyleBackColor = true;
+            this.LBA2Othr_btnGetAreacode.Click += new System.EventHandler(this.LBA2Othr_btnGetAreacode_Click);
+            // 
+            // LBA2Othr_lblAreacodeTxt
+            // 
+            this.LBA2Othr_lblAreacodeTxt.AutoSize = true;
+            this.LBA2Othr_lblAreacodeTxt.BackColor = System.Drawing.Color.White;
+            this.LBA2Othr_lblAreacodeTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LBA2Othr_lblAreacodeTxt.Location = new System.Drawing.Point(84, 65);
+            this.LBA2Othr_lblAreacodeTxt.MinimumSize = new System.Drawing.Size(203, 21);
+            this.LBA2Othr_lblAreacodeTxt.Name = "LBA2Othr_lblAreacodeTxt";
+            this.LBA2Othr_lblAreacodeTxt.Size = new System.Drawing.Size(203, 21);
+            this.LBA2Othr_lblAreacodeTxt.TabIndex = 26;
+            // 
+            // LBA2Othr_lblAreacode
+            // 
+            this.LBA2Othr_lblAreacode.AutoSize = true;
+            this.LBA2Othr_lblAreacode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblAreacode.Location = new System.Drawing.Point(6, 65);
+            this.LBA2Othr_lblAreacode.Name = "LBA2Othr_lblAreacode";
+            this.LBA2Othr_lblAreacode.Size = new System.Drawing.Size(61, 13);
+            this.LBA2Othr_lblAreacode.TabIndex = 25;
+            this.LBA2Othr_lblAreacode.Text = "Areacode";
+            // 
+            // LBA2Othr_chkWeapon
+            // 
+            this.LBA2Othr_chkWeapon.AutoSize = true;
+            this.LBA2Othr_chkWeapon.Location = new System.Drawing.Point(313, 37);
+            this.LBA2Othr_chkWeapon.Name = "LBA2Othr_chkWeapon";
+            this.LBA2Othr_chkWeapon.Size = new System.Drawing.Size(15, 14);
+            this.LBA2Othr_chkWeapon.TabIndex = 24;
+            this.LBA2Othr_chkWeapon.UseVisualStyleBackColor = true;
+            this.LBA2Othr_chkWeapon.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkWeapon_CheckedChanged);
+            // 
+            // LBA2Othr_Weapon
+            // 
+            this.LBA2Othr_Weapon.FormattingEnabled = true;
+            this.LBA2Othr_Weapon.Items.AddRange(new object[] {
+            "00 No Weapon",
+            "01 Magic Ball",
+            "02 Darts",
+            "09 Lazer Pistol",
+            "10 Emporers Sword",
+            "11 Wannies Glove",
+            "22 Horn of triton",
+            "23 Blowtron/Blowgun"});
+            this.LBA2Othr_Weapon.Location = new System.Drawing.Point(84, 34);
+            this.LBA2Othr_Weapon.Name = "LBA2Othr_Weapon";
+            this.LBA2Othr_Weapon.Size = new System.Drawing.Size(223, 21);
+            this.LBA2Othr_Weapon.TabIndex = 23;
+            this.LBA2Othr_Weapon.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboWeapon_SelectedIndexChanged);
+            // 
+            // LBA2Othr_lblWeapon
+            // 
+            this.LBA2Othr_lblWeapon.AutoSize = true;
+            this.LBA2Othr_lblWeapon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblWeapon.Location = new System.Drawing.Point(6, 36);
+            this.LBA2Othr_lblWeapon.Name = "LBA2Othr_lblWeapon";
+            this.LBA2Othr_lblWeapon.Size = new System.Drawing.Size(54, 13);
+            this.LBA2Othr_lblWeapon.TabIndex = 22;
+            this.LBA2Othr_lblWeapon.Text = "Weapon";
+            // 
+            // LBA2Othr_chkSkin
+            // 
+            this.LBA2Othr_chkSkin.AutoSize = true;
+            this.LBA2Othr_chkSkin.Location = new System.Drawing.Point(313, 10);
+            this.LBA2Othr_chkSkin.Name = "LBA2Othr_chkSkin";
+            this.LBA2Othr_chkSkin.Size = new System.Drawing.Size(15, 14);
+            this.LBA2Othr_chkSkin.TabIndex = 10;
+            this.LBA2Othr_chkSkin.UseVisualStyleBackColor = true;
+            this.LBA2Othr_chkSkin.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkSkins_CheckedChanged);
+            // 
+            // LBA2Othr_cboSkins
+            // 
+            this.LBA2Othr_cboSkins.FormattingEnabled = true;
+            this.LBA2Othr_cboSkins.Location = new System.Drawing.Point(84, 7);
+            this.LBA2Othr_cboSkins.Name = "LBA2Othr_cboSkins";
+            this.LBA2Othr_cboSkins.Size = new System.Drawing.Size(223, 21);
+            this.LBA2Othr_cboSkins.TabIndex = 9;
+            this.LBA2Othr_cboSkins.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_CboSkins_SelectedIndexChanged);
+            this.LBA2Othr_cboSkins.TextChanged += new System.EventHandler(this.LBA2Othr_cboSkins_TextChanged);
+            // 
+            // LBA2Othr_lblSelectSkin
+            // 
+            this.LBA2Othr_lblSelectSkin.AutoSize = true;
+            this.LBA2Othr_lblSelectSkin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblSelectSkin.Location = new System.Drawing.Point(6, 10);
+            this.LBA2Othr_lblSelectSkin.Name = "LBA2Othr_lblSelectSkin";
+            this.LBA2Othr_lblSelectSkin.Size = new System.Drawing.Size(32, 13);
+            this.LBA2Othr_lblSelectSkin.TabIndex = 8;
+            this.LBA2Othr_lblSelectSkin.Text = "Skin";
+            // 
             // lblOtherSkin
             // 
             this.lblOtherSkin.AutoSize = true;
-            this.lblOtherSkin.Location = new System.Drawing.Point(245, 11);
+            this.lblOtherSkin.Location = new System.Drawing.Point(250, 97);
             this.lblOtherSkin.Name = "lblOtherSkin";
             this.lblOtherSkin.Size = new System.Drawing.Size(13, 13);
             this.lblOtherSkin.TabIndex = 7;
@@ -1469,7 +1592,7 @@
             // 
             // btnLBA2InstantCarDisabled
             // 
-            this.btnLBA2InstantCarDisabled.Location = new System.Drawing.Point(168, 48);
+            this.btnLBA2InstantCarDisabled.Location = new System.Drawing.Point(168, 121);
             this.btnLBA2InstantCarDisabled.Name = "btnLBA2InstantCarDisabled";
             this.btnLBA2InstantCarDisabled.Size = new System.Drawing.Size(75, 23);
             this.btnLBA2InstantCarDisabled.TabIndex = 6;
@@ -1479,7 +1602,7 @@
             // 
             // btnLBA2InstantCarTunic
             // 
-            this.btnLBA2InstantCarTunic.Location = new System.Drawing.Point(87, 48);
+            this.btnLBA2InstantCarTunic.Location = new System.Drawing.Point(87, 121);
             this.btnLBA2InstantCarTunic.Name = "btnLBA2InstantCarTunic";
             this.btnLBA2InstantCarTunic.Size = new System.Drawing.Size(75, 23);
             this.btnLBA2InstantCarTunic.TabIndex = 5;
@@ -1489,7 +1612,7 @@
             // 
             // btnLBA2InstantCarWizard
             // 
-            this.btnLBA2InstantCarWizard.Location = new System.Drawing.Point(6, 48);
+            this.btnLBA2InstantCarWizard.Location = new System.Drawing.Point(6, 121);
             this.btnLBA2InstantCarWizard.Name = "btnLBA2InstantCarWizard";
             this.btnLBA2InstantCarWizard.Size = new System.Drawing.Size(75, 23);
             this.btnLBA2InstantCarWizard.TabIndex = 4;
@@ -1499,14 +1622,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 6);
+            this.textBox1.Location = new System.Drawing.Point(9, 92);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(142, 6);
+            this.button2.Location = new System.Drawing.Point(130, 92);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -1517,6 +1640,8 @@
             // tpLBA2Location
             // 
             this.tpLBA2Location.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Location.Controls.Add(this.lblLBA2LocationFacing);
+            this.tpLBA2Location.Controls.Add(this.txtLBA2LocationFacing);
             this.tpLBA2Location.Controls.Add(this.button1);
             this.tpLBA2Location.Controls.Add(this.btnLBA2LocationSet);
             this.tpLBA2Location.Controls.Add(this.btnLBA2LocationScan);
@@ -2197,6 +2322,23 @@
             this.tmrHeightLock.Interval = 50;
             this.tmrHeightLock.Tick += new System.EventHandler(this.LBA1Tel_TmrHeightLock_Tick);
             // 
+            // txtLBA2LocationFacing
+            // 
+            this.txtLBA2LocationFacing.Location = new System.Drawing.Point(228, 40);
+            this.txtLBA2LocationFacing.Name = "txtLBA2LocationFacing";
+            this.txtLBA2LocationFacing.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2LocationFacing.TabIndex = 11;
+            // 
+            // lblLBA2LocationFacing
+            // 
+            this.lblLBA2LocationFacing.AutoSize = true;
+            this.lblLBA2LocationFacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA2LocationFacing.Location = new System.Drawing.Point(162, 43);
+            this.lblLBA2LocationFacing.Name = "lblLBA2LocationFacing";
+            this.lblLBA2LocationFacing.Size = new System.Drawing.Size(45, 13);
+            this.lblLBA2LocationFacing.TabIndex = 12;
+            this.lblLBA2LocationFacing.Text = "Facing";
+            // 
             // frmTrainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2208,7 +2350,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "frmTrainer";
-            this.Text = "LBATrainer - Birthday Build - LBA2 Fix";
+            this.Text = "LBATrainer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmTrainer_FormClosed);
             this.Load += new System.EventHandler(this.FrmTrainer_Load);
             this.tcLBAVersion.ResumeLayout(false);
@@ -2441,6 +2583,17 @@
         private System.Windows.Forms.CheckBox LBA1Holo_chk0;
         private System.Windows.Forms.ComboBox LBA1Othr_cboHolomap;
         private System.Windows.Forms.Button LBA1Holo_btnSet;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkSkin;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboSkins;
+        private System.Windows.Forms.Label LBA2Othr_lblSelectSkin;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkWeapon;
+        private System.Windows.Forms.ComboBox LBA2Othr_Weapon;
+        private System.Windows.Forms.Label LBA2Othr_lblWeapon;
+        private System.Windows.Forms.Label LBA2Othr_lblAreacode;
+        private System.Windows.Forms.Button LBA2Othr_btnGetAreacode;
+        private System.Windows.Forms.Label LBA2Othr_lblAreacodeTxt;
+        private System.Windows.Forms.Label lblLBA2LocationFacing;
+        private System.Windows.Forms.TextBox txtLBA2LocationFacing;
     }
 }
 

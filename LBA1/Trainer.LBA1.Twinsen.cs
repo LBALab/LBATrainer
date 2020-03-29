@@ -72,5 +72,10 @@ namespace LBATrainer
             if (1 == tcLBA1Inner.SelectedIndex)
                 LBA1Othr_populateQuest();
         }
+
+        private void LBA1Twin_cboInventory_TextChanged(object sender, EventArgs e)
+        {
+            filterCBO(LBA1Twin_cboInventory, items.Inventory);
+        }
     }
 }
