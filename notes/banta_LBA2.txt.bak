@@ -77,10 +77,6 @@ QUESTS
 ------
 
 40	Zoe walking to Dinofly?	0x74B6B0, 0x269C60	0-14	Zoe Walking?
-		1: Rush to pharmacy
-		2: Zoe outside door
-		3: If you talk to her "Did you find something to cure.."
-
 41	Chapter 2 WomensBath?	0x74B6B0, 0x269C62	0	?
 							1	?
 							2	?

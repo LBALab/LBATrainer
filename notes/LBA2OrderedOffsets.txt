@@ -1,59 +1,97 @@
+Forward speed cap		-0x58E9B
+Reverse speed cap		-0x58EAB
+
 Clover Boxes			3D691
-Areacode			55C5F
+
+Current car speed		52B9B
+
 Displaying cut scene bars	55B17
 
-Blowgun				57C21
-Blowtron			78823
-Burger Master's Key		57C3D
-Burger Master's Notes		57C3F
-Crystal				57C05
+Areacode			55C5F
+
+Holomap				57BF3
+Magic Ball			57BF5
 Darts				57BF7
-Dissidents Ring			57C13
-Ferry Song			57C17
-Ferry Ticket			57C0D
-Firefly Tart			57C25
-Flower Balsam			57C29
+Sendalls Ball			57BF9
+Tunic				57BFB
+Pearl				57BFD
+Pyramid Key			57BFF
+Steering Wheel			57C01
+Money In inventory		57C03
+Crystal				57C05
 Funfrock's Sabre		57C07
+Wannies Glove			57C09
+Proto Pack			57C0B
+Ferry Ticket			57C0D
+Meca Penguin's			57C0F
 Gazogem				57C11
+Dissidents Ring			57C13
 Gallic Acid			57C15
+Ferry Song			57C17
+Lightening Spell		57C19
+Umbrella			57C1B
 Gems				57C1D
 Horn Triton			57C1F
-Holomap				57BF3
-Lightening Spell		57C19
-Magic Ball			57BF5
-Meca Penguin's			57C0F
+Blowgun				57C21
 Memory Viewer			57C23
-Money In inventory		57C03
-Pearl				57BFD
-Pick Axe			57C3B
-Protection Spell		57C41
-Proto Pack			57C0B
-Pyramid Key			57BFF
-Sendalls Ball			57BF9
-Slate				57C2B
-Steering Wheel			57C01
-Throne Key			57C39
-Translator			57C2D
-Tunic				57BFB
-Umbrella			57C1B
-Wannies Glove			57C09
+Firefly Tart			57C25
 Walkie Talkie			57C27
+Flower Balsam			57C29
+Slate				57C2B
+Translator			57C2D
 Wizards Diploma			57C2F
-Mosquibee's Fragment		57C35
 Franco's Fragment		57C31
 Sup's Fragment			57C33
+Mosquibee's Fragment		57C35
 Wannie's Fragment		57C37
+Throne Key			57C39
+Pick Axe			57C3B
+Burger Master's Key		57C3D
+Burger Master's Notes		57C3F
+Protection Spell		57C41
 
+Dinofly Lift			57C59
+	0 = Newgame
+	3 = Zoe/Tralu cut scene
+	4 = After lighthouse rain scene
+
+Alien cutscene after lighthouse	57C7F //
+	0 = Not triggered
+	1 = Triggered
+
+Car status			57C87
+	0 = Newgame
+	1 = Got car part
+	2 = Gave car part to Zoe
+	3 = Zoe called on portable radio
+	4 = Zoe tells you to try the car at the race track
+
+Funfrock scene status		57C91
+	0 = Not triggered
+	1 = Triggers cut scene
+	2 = Funfrock inside, scene over
+
+Zeelich wizard trigger		57C99
+	0 = Newgame
+	1 = Accepted to go to Zeelich as wizard
+
+Yellow taxi status		57CEB
+	0 = Newgame
+	1 = Boat spawns at celebration Island after CX guy
+	2 = Can take from Otringal
+Clover box in sewers		57DD3
 Clovers				57DE9
+Rain on, rain off		57DED //If 2 stops rain
+Kashers				57DF7
 Zilitos				57DFB //4 Bytes
+Magic Level			57DFF
 Magic Points			57E00
 Keys				57E01
-
-Kashers				57DF7
-Magic Level			57DFF
 Health				57F29
 
 Selected Inv. Square		78613 0-34
 Shown Ferry Ticket		78743 //Requires ticket in inventory
+Triton horn health		78805 - Max health is 100 - handles 255 fine
+Blowtron			78823
 Protection spell On		789DB 0/1
-Zeelich wizard trigger		57C99 //If 1 when you enter the steam bath you get taken to zeelich
+

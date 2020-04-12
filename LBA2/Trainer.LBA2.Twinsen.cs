@@ -120,5 +120,9 @@ namespace LBATrainer
             memRoutines.WriteVal(LBA_TWO, items.Zilitos, txtLBA2Zilitos.Text);
         }
 
+        private void cboLBA2Inventory_TextChanged(object sender, EventArgs e)
+        {
+            filterCBO(cboLBA2Inventory, items.Inventory);
+        }
     }
 }

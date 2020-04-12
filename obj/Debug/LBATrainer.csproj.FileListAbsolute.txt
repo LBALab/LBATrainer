@@ -30,3 +30,4 @@ R:\Users\User\source\repos\LBATrainer\bin\Debug\Flying.dll
 R:\Users\User\source\repos\LBATrainer\bin\Debug\LBATeleport.dll
 R:\Users\User\source\repos\LBATrainer\bin\Debug\Flying.pdb
 R:\Users\User\source\repos\LBATrainer\bin\Debug\LBATeleport.pdb
+R:\Users\User\source\repos\LBATrainer\bin\Debug\files\LBA2\Quests.xml

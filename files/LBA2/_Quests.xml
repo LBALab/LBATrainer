@@ -1,0 +1,471 @@
+<quests>
+	<quest><!-- Zoe Position -->
+		<name>
+			Zoe Position
+		</name>
+		<memoryOffset>
+			57C43
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					New game
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Zoe talked: "Twinsen rush to Pharmacy"
+				</name>
+				<value>
+					1
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe outside door
+				</name>
+				<value>
+					2
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 1
+				</name>
+				<value>
+					3
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 2
+				</name>
+				<value>
+					4
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 3
+				</name>
+				<value>
+					5
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 4
+				</name>
+				<value>
+					6
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 5
+				</name>
+				<value>
+					7
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 6
+				</name>
+				<value>
+					8
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 7
+				</name>
+				<value>
+					9
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 8
+				</name>
+				<value>
+					10
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 9
+				</name>
+				<value>
+					11
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 10
+				</name>
+				<value>
+					12
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 11
+				</name>
+				<value>
+					13
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe walking to dinofly way point 12
+				</name>
+				<value>
+					14
+				</value>
+			</subquest>	
+		</subquests>
+	</quest>
+	<quest><!-- Entered Womens steam room -->
+		<name>
+			Entered Womens steam room
+		</name>
+		<memoryOffset>
+			57C45
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					New/Reset
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Masher says "Get out"/Entered womens steam room
+				</name>
+				<value>
+					1
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Entered womens steam room after 1 - Masher attacks
+				</name>
+				<value>
+					2
+				</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest><!-- Stopping the rain -->
+		<name>
+			Stopping the rain
+		</name>
+		<memoryOffset>
+			57C59
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					New game
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Speak to Weather Wizard
+				</name>
+				<value>
+					1
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Spoke to Ralph
+				</name>
+				<value>
+					2
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Killed Tralu and freed Ralph
+				</name>
+				<value>
+					3
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Rain cleared and aliens landed
+				</name>
+				<value>
+					4
+				</value>
+			</subquest>		
+		</subquests>
+	</quest>
+	<quest><!-- Pyramid key quest -->
+		<name>
+			Pyramid key quest
+		</name>
+		<memoryOffset>
+			57C5F
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					Not given gallic acid
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Gave gallic acid to old man
+				</name>
+				<value>
+					2
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Got pyramid key from old man
+				</name>
+				<value>
+					3
+				</value>
+			</subquest>		
+		</subquests>
+	</quest>
+	<quest><!-- Stolen Umbrella -->
+		<name>
+			Stolen Umbrella
+		</name>
+		<memoryOffset>
+			57C65
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					Before umbrella stolen
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Umbrella stolen
+				</name>
+				<value>
+					1
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Retrieved Umbrella
+				</name>
+				<value>
+					2
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Returned Umbrella on Citadel
+				</name>
+				<value>
+					3
+				</value>
+			</subquest>		
+		</subquests>
+	</quest>
+	<quest><!-- Alien cutscene after rain -->
+		<name>
+			Alien cutscene after rain
+		</name>
+		<memoryOffset>
+			57C7F
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					Not triggered
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Cut scene over
+				</name>
+				<value>
+					1
+				</value>
+			</subquest>	
+		</subquests>
+	</quest>
+	<quest><!-- Retrieving horn of Triton -->
+		<name>
+			Retrieving horn of Triton
+		</name>
+		<memoryOffset>
+			57C87
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					New game
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Got car part
+				</name>
+				<value>
+					1
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Gave car part to Zoe
+				</name>
+				<value>
+					2
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Zoe called on portable radio
+				</name>
+				<value>
+					3
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Zoe tells you to try the car at the race track
+				</name>
+				<value>
+					4
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Traded Flower for Horn of Triton
+				</name>
+				<value>
+					5
+				</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest><!-- Funfrock Pizza scene -->
+		<name>
+			Funfrock Pizza scene
+		</name>
+		<memoryOffset>
+			57C91
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					Not triggered
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Funfrock Speech
+				</name>
+				<value>
+					1
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Funfrock Inside afterwards
+				</name>
+				<value>
+					2
+				</value>
+			</subquest>		
+		</subquests>
+	</quest>
+	<quest><!-- Island CX and Yellow Taxi -->
+		<name>
+			Island CX and Yellow Taxi
+		</name>
+		<memoryOffset>
+			57CEB
+		</memoryOffset>
+		<size>
+			1
+		</size>
+		<subquests>
+			<subquest>
+				<name>
+					New game
+				</name>
+				<value>
+					0
+				</value>
+			</subquest>
+			<subquest>
+				<name>
+					Spoke to CX guy, boat spawns
+				</name>
+				<value>
+					1
+				</value>
+			</subquest>	
+			<subquest>
+				<name>
+					Can take boat from Otringal
+				</name>
+				<value>
+					2
+				</value>
+			</subquest>		
+		</subquests>
+	</quest>
+</quests>

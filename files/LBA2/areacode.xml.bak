@@ -1,0 +1,250 @@
+<areacode>
+	<island name="Celebration Island">
+		<subarea id="5D" name="Inside the temple" />
+		<subarea id="5F" name="The only outside scene" />
+		<subarea id="B9" name="The Dark Monk statue, the wizards, 1st scene (room #131)" />
+		<subarea id="BA" name="The Dark Monk statue, the top, 2nd scene (room #132)" />
+		<subarea id="BB" name="The Dark Monk statue, 3rd scene (room #133)" />
+		<subarea id="BC" name="The Dark Monk statue, 4th scene (last) (room #134)" />
+		<subarea id="C0" name="The Dark Monk statue, Secret scene (room #138)" />
+		<subarea id="DB" name="Demo Scene - The Dark Monk statue (last) (room #147)" />
+	</island>
+	<island name="Citadel Island">
+		<subarea id="00" name="Twinsen's house (room #2)" />
+		<subarea id="01" name="Twinsen's house Secret scene (room #3)" />
+		<subarea id="02" name="Tralu 1st scene (room #4)" />
+		<subarea id="03" name="Tavern (room #5)" />
+		<subarea id="04" name="Cellar of the Tavern (room #6)" />
+		<subarea id="05" name="Baggage claim building, 1st scene (room #7)" />
+		<subarea id="06" name="Baggage claim building, 2st scene (room #8)" />
+		<subarea id="07" name="Mr. Paul House (room #9)" />
+		<subarea id="08" name="Ticket office (room #10)" />
+		<subarea id="09" name="Neighbor's house (room #11)" />
+		<subarea id="0E" name="Shop (room #16)" />
+		<subarea id="0F" name="Miss Bloop's Private Museum (room #17)" />
+		<subarea id="10" name="Baggage claim building Secret scene, 3st scene (room #18)" />
+		<subarea id="11" name="Sewer (below Downtown) (room #19)" />
+		<subarea id="12" name="Sewer Secret scene (room #20)" />
+		<subarea id="13" name="Tralu 2nd scene (room #21)" />
+		<subarea id="14" name="Tralu 3rd scene (room #22)" />
+		<subarea id="15" name="Tent of the Weather Wizard (room #23)" />
+		<subarea id="16" name="Downtown Pharmacy (room #24)" />
+		<subarea id="1A" name="Dome of the Slate (room #28)" />
+		<subarea id="22" name="Sendell's ball room (room #36)" />
+		<subarea id="25" name="School (room #39) " />
+		<subarea id="2A" name="Near Tavern" />
+		<subarea id="2B" name="Near the Harbor" />
+		<subarea id="2C" name="Outside the Dome of the Slate" />
+		<subarea id="2D" name="Near the tent of the Weather Wizard" />
+		<subarea id="2E" name="Near Lighthouse" />
+		<subarea id="2F" name="At the Sendell's sign" />
+		<subarea id="30" name="Downstairs the sewer grid" />
+		<subarea id="31" name="Near Dino-Fly" />
+		<subarea id="32" name="At the Cliffs of the Woodbridge" />
+		<subarea id="33" name="Spider Cave (room #44)" />
+		<subarea id="C1" name="Demo Scene - Twinsen's House (room #139)" />
+		<subarea id="C2" name="Demo Scene - Twinsen's house Secret room (room #140)" />
+		<subarea id="C3" name="Demo Scene - Near Dino-Fly" />
+		<subarea id="C4" name="Demo Scene - Twinsen & Zoé walking to Lighthouse." />
+		<subarea id="C5" name="Demo Scene - Harbor" />
+		<subarea id="CB" name="Demo Scene - Dome of the Slate (room #141)" />
+		<subarea id="" name="" />
+	</island>
+	<island name="Emerald Moon">
+		<subarea id="0D" name="Outside Baldino's cell(room #15)" />
+		<subarea id="17" name="Next to outside Baldino's cell (room #25)" />
+		<subarea id="1F" name="Entrance diamond shape building (room #33)" />
+		<subarea id="34" name="Entrance circle symbol building (room #45)" />
+		<subarea id="35" name="Entrance X symbol building (room #46)" />
+		<subarea id="36" name="Baldino's cell (room #47) " />
+		<subarea id="4A" name="Somewhere in Emerald Moon" />
+		<subarea id="4B" name="Near circle entrance" />
+		<subarea id="4C" name="Somewhere in Emerald Moon" />
+		<subarea id="4D" name="Near square entrance" />
+		<subarea id="73" name="Esmer shuttle (room #66)" />
+		<subarea id="A7" name="Entrance triangle symbol room (room #113)" />
+		<subarea id="A8" name="Entrance square symbol room (room #114)" />
+		<subarea id="CF" name="Demo Scene" />
+	</island>
+	<island name="Francos Island">
+		<subarea id="6B" name="The platform scene" />
+		<subarea id="6C" name="The scene outside the factory" />
+		<subarea id="6D" name="The village scene" />
+		<subarea id="6E" name="The arrival scene" />
+		<subarea id="8C" name="Francos gazogem factory, 1st room (room #86)" />
+		<subarea id="8D" name="Francos gazogem factory, 2nd room (room #87)" />
+		<subarea id="8E" name="Francos gazogem factory, 3rd room (room #88)" />
+		<subarea id="8F" name="Francos gazogem factory, 4th room (room #89)" />
+		<subarea id="90" name="The guard post near the platform entrance" />
+		<subarea id="91" name="Francos gazogem factory, 1st secret room (room #91)" />
+		<subarea id="92" name="Francos gazogem factory, 2nd secret room (room #92)" />
+		<subarea id="AB" name="Shop (room #117)" />
+		<subarea id="AC" name="Tavern (room #118)" />
+		<subarea id="AD" name="Scientist's house (room #119)" />
+		<subarea id="AE" name="Nursery (room #120)" />
+		<subarea id="AF" name="Burgermaster's house (room #121)" />
+		<subarea id="CD" name="Demo Scene - Harbor " />
+		<subarea id="D5" name="Demo Scene - Arrival" />
+	</island>
+	<island name="Island CX">
+		<subarea id="B1" name="Stairs in the control tower (room #123)" />
+		<subarea id="B2" name="Control tower (room #124)" />
+		<subarea id="B3" name="Outside scene" />
+		<subarea id="B4" name="Secret passage (room #126)" />
+		<subarea id="B5" name="Room in the emperor (room #127)" />
+		<subarea id="B6" name="Esmer Shuttle (room #128)" />
+	</island>
+
+	<island name="Volcano Island">
+		<subarea id="81" name="The hide out (room #79)" />
+		<subarea id="82" name="The hide out scene" />
+		<subarea id="83" name="The upper scene" />
+		<subarea id="84" name="The arrival scene" />
+		<subarea id="DC" name="Demo Scene" />
+	</island>
+	<island name="Mosquibees Island">
+		<subarea id="66" name="The scene on the bridge" />
+		<subarea id="67" name="The scene on top of the mountain" />
+		<subarea id="68" name="The Mosquibee Queen's throne (room #60)" />
+		<subarea id="69" name="The arrival scene" />
+		<subarea id="6A" name="The maze (room #61)" />
+		<subarea id="80" name="Bee test room (room #78)" />
+		<subarea id="95" name="The passage to the fragment (room #95)" />
+		<subarea id="B0" name="The passage to Island CX (room #122)" />
+		<subarea id="D8" name="Demo Scene - The Mosquibee Queen's throne (room #145)" />
+		<subarea id="D9" name="Demo Scene - The bridge " />
+	</island>
+	<island name="Otringal">
+		<subarea id="4E" name="Emperor's palace departure room (room #48)" />
+		<subarea id="4F" name="Emperor's palace 1st room (room #49)" />
+		<subarea id="50" name="Emperor's palace last room (room #50)" />
+		<subarea id="51" name="The Imperial Hotel (room #51)" />
+		<subarea id="52" name="The elevators to the Lower City (room #52)" />
+		<subarea id="53" name="Prison entrance (room #53)" />
+		<subarea id="54" name="Prison (room #54)" />
+		<subarea id="55" name="Control tower entrance (room #55)" />
+		<subarea id="56" name="The space port (room #56)" />
+		<subarea id="57" name="Near Harbor" />
+		<subarea id="58" name="The Upper City scene" />
+		<subarea id="59" name="The Lower City scene" />
+		<subarea id="5A" name="The Prison Exit scene" />
+		<subarea id="5B" name="The scene outside the Emperor's palace" />
+		<subarea id="5C" name="The space port scene" />
+		<subarea id="85" name="Casino jackpot room (room #80)" />
+		<subarea id="86" name="Bar backstage (room #81)" />
+		<subarea id="87" name="Casino entrance (room #82)" />
+		<subarea id="88" name="Bar entrance (room #83)" />
+		<subarea id="89" name="Bar - Rick's room (room #84)" />
+		<subarea id="8A" name="the Twinsen and Baldino crash site" />
+		<subarea id="8B" name="The lowest elevators (room #85)" />
+		<subarea id="93" name="The Twinsunian souvenir shop (room #93)" />
+		<subarea id="94" name="The Dissidents' hide out (room #94)" />
+		<subarea id="96" name="The elevator to the Upper City (room #96)" />
+		<subarea id="97" name="One of the rooms in the Emperor's palace (room #97)" />
+		<subarea id="98" name="One of the rooms in the Emperor's palace (room #98)" />
+		<subarea id="99" name="One of the rooms in the Emperor's palace (room #99)" />
+		<subarea id="9A" name="One of the rooms in the Emperor's palace (room #100)" />
+		<subarea id="9B" name="One of the rooms in the Emperor's palace (room #101)" />
+		<subarea id="9C" name="One of the rooms in the Emperor's palace (room #102)" />
+		<subarea id="9D" name="One of the rooms in the Emperor's palace (room #103)" />
+		<subarea id="9E" name="One of the rooms in the Emperor's palace (room #104)" />
+		<subarea id="9F" name="One of the rooms in the Emperor's palace (room #105)" />
+		<subarea id="A0" name="One of the rooms in the Emperor's palace (room #106)" />
+		<subarea id="A1" name="One of the rooms in the Emperor's palace (room #107)" />
+		<subarea id="A2" name="One of the rooms in the Emperor's palace (room #108)" />
+		<subarea id="A3" name="One of the rooms in the Emperor's palace (room #109)" />
+		<subarea id="A4" name="One of the rooms in the Emperor's palace (room #110)" />
+		<subarea id="A5" name="One of the rooms in the Emperor's palace (room #111)" />
+		<subarea id="A6" name="One of the rooms in the Emperor's palace (room #112)" />
+		<subarea id="A9" name="Bathroom in the Imperial Hotel (room #115)" />
+		<subarea id="AA" name="Imperial Hotel, 2nd room (room #116)" />
+		<subarea id="BD" name="Esmer shuttle (room #137)" />
+		<subarea id="D2" name="Demo Scene - Harbor" />
+		<subarea id="D3" name="Demo Scene - Casino (room #143)" />
+		<subarea id="D4" name="Demo Scene - Religion preaching " />
+		<subarea id="DA" name="Demo Scene - Emperor's palace room (room #146)" />
+		<subarea id="DF" name="Demo Scene - (room #149)" />
+	</island>
+	<island name="The Elevator Platform Island">
+		<subarea id="78" name="The only scene" />
+	</island>
+	<island name="Wannies Island">
+		<subarea id="60" name="The city outside scene" />
+		<subarea id="61" name="The ferryman landing place scene" />
+		<subarea id="62" name="The scene near the Elevator" />
+		<subarea id="63" name="The scene near the entrance of the mine" />
+		<subarea id="64" name="The mine, 2nd room (room #58)" />
+		<subarea id="65" name="The house of the firefly tart-giving family (room #59)" />
+		<subarea id="6F" name="The mine, 3rd room (room #62)" />
+		<subarea id="70" name="Near the temple on the main (room #63)" />
+		<subarea id="74" name="The monk house (room #67)" />
+		<subarea id="75" name="Mine temple (room #68)" />
+		<subarea id="76" name="The city (room #69)" />
+		<subarea id="77" name="The way to the city temple (room #70)" />
+		<subarea id="79" name="The city temple (room #71)" />
+		<subarea id="7A" name="The mine, 1st room (room #72)" />
+		<subarea id="7B" name="Inside the elevator (room #73)" />
+		<subarea id="7C" name="The box transport building (room #74)" />
+		<subarea id="7D" name="Building Company (room #75)" />
+		<subarea id="7E" name="Warehouse (room #76)" />
+		<subarea id="D6" name="Demo Scene - Elevators" />
+		<subarea id="D7" name="Demo Scene - The mine (room #144)" />
+	</island>
+	<island name="White Leaf Desert">
+		<subarea id="0A" name="Temple of Bú, 1st scene (room #12)" />
+		<subarea id="0B" name="Temple of Bú, 2nd scene (room #13)" />
+		<subarea id="0C" name="Esmer Base (room #14)" />
+		<subarea id="18" name="Hacienda, 1st scene (room #26)" />
+		<subarea id="19" name="Turkish bath (women) (room #27)" />
+		<subarea id="1B" name="School of Magic, 2nd scene (room #29)" />
+		<subarea id="1C" name="School of Magic, 1st scene (room #30)" />
+		<subarea id="1D" name="Hacienda, 2st scene (room #31)" />
+		<subarea id="1E" name="Turkish bath (men) (room #32)" />
+		<subarea id="20" name="Secret passage in Turkish bath (mans) (room #34)" />
+		<subarea id="21" name="School of Magic training room (room #35)" />
+		<subarea id="23" name="House of Ker'aooc the Healer (room #37)" />
+		<subarea id="24" name="Bazaar (room #38)" />
+		<subarea id="26" name="J. Baldino's House (room #40)" />
+		<subarea id="27" name="Bar (room #41) " />
+		<subarea id="28" name="Ticket office (room #42) " />
+		<subarea id="29" name="Esmer Shuttle (room #43) " />
+		<subarea id="37" name="Near Dino-fly " />
+		<subarea id="38" name="Near the Camel" />
+		<subarea id="39" name="At the Von Kournil tour" />
+		<subarea id="3A" name="Near Von Kournil tour" />
+		<subarea id="3B" name="Near Lighthouse" />
+		<subarea id="3C" name="Near J. Baldino's House" />
+		<subarea id="3D" name="At the School of Magic" />
+		<subarea id="3E" name="Near car jump" />
+		<subarea id="3F" name="Near Temple of Bù" />
+		<subarea id="40" name="At the Bell" />
+		<subarea id="41" name="Near Esmer Shuttle" />
+		<subarea id="42" name="Near Bald Mountain" />
+		<subarea id="43" name="At the Temple of Bù" />
+		<subarea id="44" name="Near Temple of Bù" />
+		<subarea id="45" name="Near to the Perl of Incandescence entrance" />
+		<subarea id="46" name="Near Esmer Shuttle" />
+		<subarea id="47" name="Near Bald Mountain" />
+		<subarea id="48" name="Near Bald Mountain" />
+		<subarea id="49" name="At the island across from the Hacienda" />
+		<subarea id="71" name="Pearl of Incandescence room (room #64)" />
+		<subarea id="72" name="Esmer shuttle (room #65)" />
+		<subarea id="7F" name="Temple of Bù Secret passage (room #77)" />
+		<subarea id="B7" name="The protection spell cave, 1st scene (room #129)" />
+		<subarea id="B8" name="The protection spell cave, 2nd scene (room #130)" />
+		<subarea id="BF" name="Esmer shuttle (room #137)" />
+		<subarea id="C6" name="Demo Scene - Near Lighhouse" />
+		<subarea id="C7" name="Demo Scene - Harbor" />
+		<subarea id="C8" name="Demo Scene - City center 1 " />
+		<subarea id="C9" name="Demo Scene - City center 2 " />
+		<subarea id="CA" name="Demo Scene - School of Magic" />
+		<subarea id="CC" name="Demo Scene - Arrived with Dino-Fly" />
+		<subarea id="CE" name="Demo Scene - Near temple park " />
+		<subarea id="D1" name="Demo Scene - Temple of Bù (room #142)" />
+		<subarea id="DD" name="Demo Scene - Esmer Base (room #148)" />
+	</island>
+	<island name="Unknown">
+		<subarea id="5E" name="Empty water outside scene" />
+		<subarea id="BE" name="Empty lava outside scene" />
+	</island>
+</areacode>

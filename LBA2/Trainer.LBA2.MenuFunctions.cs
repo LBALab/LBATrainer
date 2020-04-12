@@ -14,12 +14,12 @@ namespace LBATrainer
 
         private void LBA2GodModeToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            tsiLBA2 = itemToggle(tsiLBA2, 0x57F29, 255, 1, oTimerSetItems.LBAVersion.Two);
+            tsiLBA2 = itemToggle(tsiLBA2, LBA2_HEALTH, 255, 1, oTimerSetItems.LBAVersion.Two);
         }
 
         private void LBA2InfiniteMagicToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tsiLBA2 = itemToggle(tsiLBA2, 0x57E00, (ushort) (memRoutines.readVal(0x57DFF, 1)*20),1, oTimerSetItems.LBAVersion.Two);
+            tsiLBA2 = itemToggle(tsiLBA2, LBA2_MAGICPOINTS, (ushort) (memRoutines.readVal(LBA2_MAGICLEVEL, 1)*20),1, oTimerSetItems.LBAVersion.Two);
         }
 
     }

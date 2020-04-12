@@ -79,6 +79,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LBA1\Trainer.LBA1.Holomap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA1\Trainer.LBA1.Offsets.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LBA1\Trainer.LBA1.MenuFunctions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,10 +100,16 @@
     <Compile Include="LBA1\Trainer.LBA1.Twinsen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LBA2\Trainer.LBA2.Hypercar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LBA2\Trainer.LBA2.MenuFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.Offsets.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LBA2\Trainer.LBA2.Other.cs">
@@ -118,6 +130,8 @@
     <Compile Include="objects\getSaveFileNames.Designer.cs">
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="objects\LBA2Quest.cs" />
+    <Compile Include="objects\LBA2Quests.cs" />
     <Compile Include="objects\oTimerSetItems.cs" />
     <Compile Include="Shared\oTeleport.cs" />
     <Compile Include="Shared\oTimerGetItems.cs" />
@@ -145,6 +159,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="objects\getSaveFileNames.resx">
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Shared\AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
@@ -205,6 +220,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="files\LBA2\Outfit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\LBA2\Quests.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="files\LBA2\skins.xml">

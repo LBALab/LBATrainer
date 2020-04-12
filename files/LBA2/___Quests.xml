@@ -1,0 +1,1908 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<quests>
+	<quest>
+		<!--Zoe Position-->
+		<name>Zoe Position</name>
+		<memoryOffset>57C43</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New game</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Zoe talked: "Twinsen rush to Pharmacy"</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Zoe outside door</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 1</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 2</name>
+				<value>4</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 3</name>
+				<value>5</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 4</name>
+				<value>6</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 5</name>
+				<value>7</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 6</name>
+				<value>8</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 7</name>
+				<value>9</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 8</name>
+				<value>10</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 9</name>
+				<value>11</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 10</name>
+				<value>12</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 11</name>
+				<value>13</value>
+			</subquest>
+			<subquest>
+				<name>Zoe walking to dinofly way point 12</name>
+				<value>14</value>
+			</subquest>
+			<subquest>
+				<name>Gave carpart to zoe and she mentions portable radio</name>
+				<value>15</value>
+			</subquest>
+			<subquest>
+				<name>Walking towards car</name>
+				<value>16</value>
+			</subquest>
+			<subquest>
+				<name>Walking towards car</name>
+				<value>17</value>
+			</subquest>
+			<subquest>
+				<name>Walking towards car</name>
+				<value>18</value>
+			</subquest>
+			<subquest>
+				<name>Walking towards car</name>
+				<value>19</value>
+			</subquest>
+			<subquest>
+				<name>Working on car</name>
+				<value>20</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Entered Womens steam room-->
+		<name>Entered Womens steam room</name>
+		<memoryOffset>57C45</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New/Reset</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Masher says "Get out"/Entered womens steam room</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Entered womens steam room after 1 - Masher attacks</name>
+				<value>2</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Cured dinofly-->
+		<name>Cured dinofly</name>
+		<memoryOffset>57C47</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Cured dinofly</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Package centre-->
+		<name>Package centre</name>
+		<memoryOffset>57C49</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Package in reception</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Package centre: Pushed package onto final conveyor</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Grobo opens box</name>
+				<value>4</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Waiter enters Tavern cellar-->
+		<name>Waiter enters Tavern cellar</name>
+		<memoryOffset>57C4B</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Waiter enters cellar - Twinsen in there</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Shop keeper ran away-->
+		<name>Shop keeper ran away</name>
+		<memoryOffset>57C4D</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Used meca in shop and grobo left</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Shop keeper returned?</name>
+				<value>2</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Stole money from shop till-->
+		<name>Stole money from shop till</name>
+		<memoryOffset>57C4F</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Stole money from till</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C51</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C53</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Package collection centre-->
+		<name>Package collection centre</name>
+		<memoryOffset>57C55</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Twinsen Unlocked door with key</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Package centre: opened money box hidden area-->
+		<name>Package centre: opened money box hidden area</name>
+		<memoryOffset>57C57</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Opened money box in hidden area</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Stopping the rain-->
+		<name>Stopping the rain</name>
+		<memoryOffset>57C59</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New game</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Speak to Weather Wizard</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Spoke to Ralph</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Killed Tralu and freed Ralph</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Rain cleared and aliens landed</name>
+				<value>4</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C5B</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Tralu: Hit switch and opened first door-->
+		<name>Tralu: Hit switch and opened first door</name>
+		<memoryOffset>57C5D</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Tralu: Hit switch and opened first door</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Pyramid key quest-->
+		<name>Pyramid key quest</name>
+		<memoryOffset>57C5F</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>Not given gallic acid</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Neighbour says he needs gallic acid but there's none left on the island</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Gave gallic acid to old man</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Got pyramid key from old man</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Used pyramid key to open door</name>
+				<value>4</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C61</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--After lighthouse keeper runs away-->
+		<name>After lighthouse keeper runs away</name>
+		<memoryOffset>57C63</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>After lighthouse keeper runs away</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>After cut scene finishes and alien cut scene starts</name>
+				<value>5</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Stolen Umbrella-->
+		<name>Stolen Umbrella</name>
+		<memoryOffset>57C65</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>Before umbrella stolen</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Umbrella stolen</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Retrieved Umbrella</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Returned Umbrella on Citadel</name>
+				<value>3</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C67</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Ferry ticket-->
+		<name>Ferry ticket</name>
+		<memoryOffset>57C69</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Purchased a ferry ticket</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Boarded Ferry</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Arrived at Desert island</name>
+				<value>4</value>
+			</subquest>
+			<subquest>
+				<name>Bought ferry ticket Desert Island</name>
+				<value>5</value>
+			</subquest>
+			<subquest>
+				<name>Entered ferry from Desert to Citadel</name>
+				<value>7</value>
+			</subquest>
+			<subquest>
+				<name>Arrived on Citadel Island</name>
+				<value>8</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Tralu Boss fight-->
+		<name>Tralu Boss fight</name>
+		<memoryOffset>57C6B</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Entered Tralu Boss area</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Defeated Tralu Boss</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Unlocked door for lighthouse keeper</name>
+				<value>3</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Paid wizard entrance fee-->
+		<name>Paid wizard entrance fee</name>
+		<memoryOffset>57C6D</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Paid wizard entrance fee</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Received horn of blue triton (Gave rector flower)</name>
+				<value>4</value>
+			</subquest>
+			<subquest>
+				<name>received magic slate</name>
+				<value>5</value>
+			</subquest>
+			<subquest>
+				<name>Received wizard diploma</name>
+				<value>7</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Cure Dinofly-->
+		<name>Cure Dinofly</name>
+		<memoryOffset>57C6F</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Mr. Paul tells you to visit the wizard Ker'roc - he knows how to cure dinofly</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Kero'oc house keeper says try school of magic</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Arrived school of magic for first time. Rector appears</name>
+				<value>3</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--School of Magic-->
+		<name>School of Magic</name>
+		<memoryOffset>57C71</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Hit all targets</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Received Blowgun</name>
+				<value>2</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C73</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Left school of magic after paying to join-->
+		<name>Left school of magic after paying to join</name>
+		<memoryOffset>57C75</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Left school of magic after paying to join - Maybe doors unlocked?</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Entered neighbours house after giving him acid-->
+		<name>Entered neighbours house after giving him acid</name>
+		<memoryOffset>57C77</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Entered neighbours house after giving him acid</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Checked the map on the table - added to slate</name>
+				<value>2</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C79</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C7B</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C7D</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Alien cutscene after rain-->
+		<name>Alien cutscene after rain</name>
+		<memoryOffset>57C7F</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>Not triggered</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Cut scene over</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Taking Taxi on Citadel-->
+		<name>Taking Taxi on Citadel</name>
+		<memoryOffset>57C81</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Wizards lane destination</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Attacked kids in school-->
+		<name>Attacked kids in school</name>
+		<memoryOffset>57C83</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Punched grobo in school</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Attacked kid sitting down</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Punched kid skipping</name>
+				<value>6</value>
+			</subquest>
+			<subquest>
+				<name>Punched kid in red top and blue shorts</name>
+				<value>7</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C85</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Retrieving horn of Triton-->
+		<name>Retrieving horn of Triton</name>
+		<memoryOffset>57C87</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New game</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Got car part</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Gave car part to Zoe</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Zoe called on portable radio</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Zoe tells you to try the car at the race track</name>
+				<value>4</value>
+			</subquest>
+			<subquest>
+				<name>Traded Flower for Horn of Triton</name>
+				<value>5</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C89</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C8B</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Left school and got beat up-->
+		<name>Left school and got beat up</name>
+		<memoryOffset>57C8D</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Got beat up</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>After getting beat up?</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Left school and got beat up</name>
+				<value>5</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Left school, after getting beat up-->
+		<name>Left school, after getting beat up</name>
+		<memoryOffset>57C8F</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Left school, after getting beat up</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Funfrock Pizza scene-->
+		<name>Funfrock Pizza scene</name>
+		<memoryOffset>57C91</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>Not triggered</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Funfrock Speech</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Funfrock Inside afterwards</name>
+				<value>2</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Arrived at desert island-->
+		<name>Arrived at desert island</name>
+		<memoryOffset>57C93</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>5</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>6</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>7</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>9</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>11</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>14</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>16</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>17</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>19</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>20</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>22</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>23</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>26</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>27</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>29</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>30</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>33</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>34</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>36</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>37</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>39</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>40</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>43</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>44</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>46</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>49</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>51</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>52</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>54</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>56</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>58</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>59</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>61</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>64</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>66</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>69</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>70</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>72</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>74</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>77</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>78</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>80</value>
+			</subquest>
+			<subquest>
+				<name>New</name>
+				<value>81</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Received Wizard diploma - wizards disapeared-->
+		<name>Received Wizard diploma - wizards disapeared</name>
+		<memoryOffset>57C95</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Received Wizard diploma - wizards disapeared</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Accepted to go to alien planet as wizard</name>
+				<value>2</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57C97</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--As wizard going to spaceship-->
+		<name>As wizard going to spaceship</name>
+		<memoryOffset>57C99</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>As wizard going to spaceship</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Leaving spaceship getting attacked</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Getting attacked leaving spaceship</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Entering spaceport as wizard - joe scene</name>
+				<value>4</value>
+			</subquest>
+			<subquest>
+				<name>Escaped cell and Joe vanished</name>
+				<value>5</value>
+			</subquest>
+			<subquest>
+				<name>Used itineray token to return home</name>
+				<value>6</value>
+			</subquest>
+			<subquest>
+				<name>Landed on Citadel: Zoe calls to say come home</name>
+				<value>7</value>
+			</subquest>
+			<subquest>
+				<name>Zoe says to go to the school of magic</name>
+				<value>8</value>
+			</subquest>
+			<subquest>
+				<name>Dinofly lands in oasis in the desert (From Island across from the hacienda)</name>
+				<value>9</value>
+			</subquest>
+			<subquest>
+				<name>Spoke to rector about lightning spell. Told to get Sendells ball. Informed about clam</name>
+				<value>10</value>
+			</subquest>
+			<subquest>
+				<name>Got pearl of incandescence</name>
+				<value>11</value>
+			</subquest>
+			<subquest>
+				<name>Used lightning spell to get sendells ball</name>
+				<value>12</value>
+			</subquest>
+			<subquest>
+				<name>Baldino called from Emerald moon and said to come</name>
+				<value>13</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unlocked mosquibee cell-->
+		<name>Unlocked mosquibee cell</name>
+		<memoryOffset>57C9B</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Unlocked mosquibee cell</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>mosquibee no longer in cells - escaped (Triggered on Twinsen re-entering)</name>
+				<value>2</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Spaceship from Desert to Emerald moon-->
+		<name>Spaceship from Desert to Emerald moon</name>
+		<memoryOffset>57C9D</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Used itineray token in spaceship from desert to emerald moon</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Landed on Emerald moon</name>
+				<value>4</value>
+			</subquest>
+			<subquest>
+				<name>Gave correct password code</name>
+				<value>6</value>
+			</subquest>
+			<subquest>
+				<name>Unlocked Baldino Cell</name>
+				<value>7</value>
+			</subquest>
+			<subquest>
+				<name>After cut scene of unlocking Baldino cell</name>
+				<value>8</value>
+			</subquest>
+			<subquest>
+				<name>Emerald moon, After cut scene with Baldino and CX guy, CX guy dead</name>
+				<value>9</value>
+			</subquest>
+			<subquest>
+				<name>Unlocked door with Baldino to Baldinos spaceship</name>
+				<value>10</value>
+			</subquest>
+			<subquest>
+				<name>Crash landed with Baldino</name>
+				<value>11</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Killed green alien on spaceship-->
+		<name>Killed green alien on spaceship</name>
+		<memoryOffset>57C9F</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Killed green alien on spaceship</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Escaping cell on Otringal Joe vanished-->
+		<name>Escaping cell on Otringal Joe vanished</name>
+		<memoryOffset>57CA1</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Escaping cell on Otringal Joe vanished</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Otringal Prison guards-->
+		<name>Otringal Prison guards</name>
+		<memoryOffset>57CA3</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Killed cell guard</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Killed other guard - above mosquibee cell</name>
+				<value>5</value>
+			</subquest>
+			<subquest>
+				<name>Killed standing guard in corner</name>
+				<value>7</value>
+			</subquest>
+			<subquest>
+				<name>Killed guard down slope in corner - killed all inner guards</name>
+				<value>15</value>
+			</subquest>
+			<subquest>
+				<name>Re-entered cell area, alarm sounds</name>
+				<value>16</value>
+			</subquest>
+			<subquest>
+				<name>Re-entered cell area - after defeating "3 guards"</name>
+				<value>17</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Moving platform in Bu-->
+		<name>Moving platform in Bu</name>
+		<memoryOffset>57CA5</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Boarded moving platform in Bu</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CA7</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CA9</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Killing people at top of tower after landing on Otringal as wizard-->
+		<name>Killing people at top of tower after landing on Otringal as wizard</name>
+		<memoryOffset>57CAB</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Killed soldier at top of tower after landing on Otringal as wizard</name>
+				<value>4</value>
+			</subquest>
+			<subquest>
+				<name>Killed scientist at top of tower after landing on Otringal as wizard</name>
+				<value>5</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Used Switch on Emerald moon unlocked yellow/black doors-->
+		<name>Used Switch on Emerald moon unlocked yellow/black doors</name>
+		<memoryOffset>57CAD</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Used Switch on Emerald moon unlocked yellow/black doors</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Took dinofly to Island of the dome of the slate-->
+		<name>Took dinofly to Island of the dome of the slate</name>
+		<memoryOffset>57CAF</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Landed at Dome of slate</name>
+				<value>2</value>
+			</subquest>
+			<subquest>
+				<name>Dinofly landed at Desert island</name>
+				<value>3</value>
+			</subquest>
+			<subquest>
+				<name>Dinofly landed at Island across from the Hacienda</name>
+				<value>4</value>
+			</subquest>
+			<subquest>
+				<name>Took dinofly to Island of the dome of the slate</name>
+				<value>5</value>
+			</subquest>
+			<subquest>
+				<name>Dinofly to Desert Island from Citadel</name>
+				<value>6</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Read wizard note about finishing spell-->
+		<name>Read wizard note about finishing spell</name>
+		<memoryOffset>57CB1</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Read wizard note about finishing spell</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CB3</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Emerald Moon Unlocked Circle door-->
+		<name>Emerald Moon Unlocked Circle door</name>
+		<memoryOffset>57CB5</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Unlocked Circle door</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Emerald moon-->
+		<name>Emerald moon</name>
+		<memoryOffset>57CB7</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Unlocked Triangle door</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Emerald moon: Unlocked Square door-->
+		<name>Emerald moon: Unlocked Square door</name>
+		<memoryOffset>57CB9</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Unlocked Square door</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Landed Emerald moon, gave correct code, spacesuit unlocked-->
+		<name>Landed Emerald moon, gave correct code, spacesuit unlocked</name>
+		<memoryOffset>57CBB</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Landed Emerald moon, gave correct code, spacesuit unlocked</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Killed robot fence blown open-->
+		<name>Killed robot fence blown open</name>
+		<memoryOffset>57CBD</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Fence panel 4 open robot dead</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Otringal fence panel 2-->
+		<name>Otringal fence panel 2</name>
+		<memoryOffset>57CBF</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Destroyed</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Otringal fence panel one destroyed-->
+		<name>Otringal fence panel one destroyed</name>
+		<memoryOffset>57CC1</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Destroyed Panel 1</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Otringal: Fence panel 5 blown up-->
+		<name>Otringal: Fence panel 5 blown up</name>
+		<memoryOffset>57CC3</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Fence panel 5 blown up</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Otringal: Fence panel 6-->
+		<name>Otringal: Fence panel 6</name>
+		<memoryOffset>57CC5</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Destroyed panel 6</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Otringal Fence Panel 3-->
+		<name>Otringal Fence Panel 3</name>
+		<memoryOffset>57CC7</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Destroyed</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CC9</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CCB</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Paid for wizard outfit-->
+		<name>Paid for wizard outfit</name>
+		<memoryOffset>57CCD</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Paid for wizard outfit</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Outside after Otringal cells-->
+		<name>Outside after Otringal cells</name>
+		<memoryOffset>57CCF</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Outside after Otringal cells</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Destination Desert Island-->
+		<name>Destination Desert Island</name>
+		<memoryOffset>57CD1</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Read poster in Ferry ticket office</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CD3</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CD5</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CD7</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CD9</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CDB</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CDD</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CDF</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Not sure - Talking to zoe - by graduating school of magic-->
+		<name>Not sure - Talking to zoe - by graduating school of magic</name>
+		<memoryOffset>57CE1</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Not sure - Talking to zoe - by graduating school of magic</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CE3</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Used telescope on hacienda roof-->
+		<name>Used telescope on hacienda roof</name>
+		<memoryOffset>57CE5</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Used telescope to look at island</name>
+				<value>1</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CE7</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CE9</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Island CX and Yellow Taxi-->
+		<name>Island CX and Yellow Taxi</name>
+		<memoryOffset>57CEB</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New game</name>
+				<value>0</value>
+			</subquest>
+			<subquest>
+				<name>Spoke to CX guy, boat spawns</name>
+				<value>1</value>
+			</subquest>
+			<subquest>
+				<name>Can take boat from Otringal</name>
+				<value>2</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CED</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CEF</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CF1</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CF3</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CF5</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CF7</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CF9</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CFB</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CFD</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57CFF</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+	<quest>
+		<!--Unknown-->
+		<name>Unknown</name>
+		<memoryOffset>57D01</memoryOffset>
+		<size>1</size>
+		<subquests>
+			<subquest>
+				<name>New</name>
+				<value>0</value>
+			</subquest>
+		</subquests>
+	</quest>
+
+</quests>

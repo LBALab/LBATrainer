@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrainer));
             this.tcLBAVersion = new System.Windows.Forms.TabControl();
             this.tpLBA1 = new System.Windows.Forms.TabPage();
             this.tcLBA1Inner = new System.Windows.Forms.TabControl();
@@ -144,53 +145,25 @@
             this.lblLBA2Clovers = new System.Windows.Forms.Label();
             this.txtLBA2Clovers = new System.Windows.Forms.TextBox();
             this.tpLBA2Other = new System.Windows.Forms.TabPage();
-            this.LBA2Othr_btnGetAreacode = new System.Windows.Forms.Button();
-            this.LBA2Othr_lblAreacodeTxt = new System.Windows.Forms.Label();
-            this.LBA2Othr_lblAreacode = new System.Windows.Forms.Label();
+            this.LBA2Othr_chkSubquest = new System.Windows.Forms.CheckBox();
+            this.LBA2Othr_cboSubquest = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LBA2Othr_cboQuest = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_chkMisc = new System.Windows.Forms.CheckBox();
+            this.LBA2Othr_cboMisc = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_lblMisc = new System.Windows.Forms.Label();
+            this.LBA2Othr_chkBehaviourValue = new System.Windows.Forms.CheckBox();
+            this.LBA2Othr_cboBehaviour = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_lblBehaviour = new System.Windows.Forms.Label();
             this.LBA2Othr_chkWeapon = new System.Windows.Forms.CheckBox();
-            this.LBA2Othr_Weapon = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_cboWeapon = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblWeapon = new System.Windows.Forms.Label();
             this.LBA2Othr_chkSkin = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboSkins = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblSelectSkin = new System.Windows.Forms.Label();
-            this.lblOtherSkin = new System.Windows.Forms.Label();
-            this.btnLBA2InstantCarDisabled = new System.Windows.Forms.Button();
-            this.btnLBA2InstantCarTunic = new System.Windows.Forms.Button();
-            this.btnLBA2InstantCarWizard = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tpLBA2Location = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnLBA2LocationSet = new System.Windows.Forms.Button();
-            this.btnLBA2LocationScan = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblLBA2LocationYPos = new System.Windows.Forms.Label();
-            this.lblLBA2LocationZPos = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtLBA2LocationZPos = new System.Windows.Forms.TextBox();
-            this.txtLBA2LocationYPos = new System.Windows.Forms.TextBox();
-            this.txtLBA2LocationXPos = new System.Windows.Forms.TextBox();
-            this.lblLBA2LocationXPos = new System.Windows.Forms.Label();
-            this.tpLBA2ShittyShot = new System.Windows.Forms.TabPage();
-            this.LBA2SS_lblInstruct = new System.Windows.Forms.Label();
-            this.LBA2SS_btnSquare = new System.Windows.Forms.Button();
-            this.LBA2SS_btnTriangle = new System.Windows.Forms.Button();
-            this.LBA2SS_btnCircle = new System.Windows.Forms.Button();
-            this.LBA2SS_btnOnOff = new System.Windows.Forms.Button();
-            this.LBA2SS_lblSquare = new System.Windows.Forms.Label();
-            this.LBA2SS_lblTriangle = new System.Windows.Forms.Label();
-            this.LBA2SS_lblCircle = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.flying1 = new LBAFlying.Flying();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.btnCarSpeed = new System.Windows.Forms.Button();
-            this.txtLBA2CarSpeed = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblFruitMachineCount = new System.Windows.Forms.Label();
-            this.btnFruitMachineStart = new System.Windows.Forms.Button();
             this.tpHyperCar = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.LBA2HyperCar_panel = new System.Windows.Forms.Panel();
             this.bPitLimit = new System.Windows.Forms.Button();
             this.txtHyperCarGearReverse = new System.Windows.Forms.TextBox();
             this.lblHyperCarGearReverse = new System.Windows.Forms.Label();
@@ -215,6 +188,60 @@
             this.txtHyperCarGear2 = new System.Windows.Forms.TextBox();
             this.txtHyperCarGear1 = new System.Windows.Forms.TextBox();
             this.lblHyperCarGear1 = new System.Windows.Forms.Label();
+            this.tpLBA2Teleport = new System.Windows.Forms.TabPage();
+            this.lblLBA2LocationFacing = new System.Windows.Forms.Label();
+            this.txtLBA2LocationFacing = new System.Windows.Forms.TextBox();
+            this.btnLBA2LocationSet = new System.Windows.Forms.Button();
+            this.btnLBA2TeleportScan = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblLBA2LocationYPos = new System.Windows.Forms.Label();
+            this.lblLBA2LocationZPos = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtLBA2LocationZPos = new System.Windows.Forms.TextBox();
+            this.txtLBA2LocationYPos = new System.Windows.Forms.TextBox();
+            this.txtLBA2LocationXPos = new System.Windows.Forms.TextBox();
+            this.lblLBA2LocationXPos = new System.Windows.Forms.Label();
+            this.LBA2Flying = new System.Windows.Forms.TabPage();
+            this.flying1 = new LBAFlying.Flying();
+            this.tpLBA2ShittyShot = new System.Windows.Forms.TabPage();
+            this.LBA2SS_lblInstruct = new System.Windows.Forms.Label();
+            this.LBA2SS_btnSquare = new System.Windows.Forms.Button();
+            this.LBA2SS_btnTriangle = new System.Windows.Forms.Button();
+            this.LBA2SS_btnCircle = new System.Windows.Forms.Button();
+            this.LBA2SS_btnOnOff = new System.Windows.Forms.Button();
+            this.LBA2SS_lblSquare = new System.Windows.Forms.Label();
+            this.LBA2SS_lblTriangle = new System.Windows.Forms.Label();
+            this.LBA2SS_lblCircle = new System.Windows.Forms.Label();
+            this.tpLBA2Debug = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnLBA2InstantCarDisabled = new System.Windows.Forms.Button();
+            this.btnLBA2InstantCarTunic = new System.Windows.Forms.Button();
+            this.btnLBA2InstantCarWizard = new System.Windows.Forms.Button();
+            this.LBA2Othr_btnGetAreacode = new System.Windows.Forms.Button();
+            this.LBA2Othr_lblAreacodeTxt = new System.Windows.Forms.Label();
+            this.LBA2Othr_lblAreacode = new System.Windows.Forms.Label();
+            this.tpLBA2Wizard = new System.Windows.Forms.TabPage();
+            this.rb95 = new System.Windows.Forms.RadioButton();
+            this.rb90 = new System.Windows.Forms.RadioButton();
+            this.rb35 = new System.Windows.Forms.RadioButton();
+            this.rb40 = new System.Windows.Forms.RadioButton();
+            this.rb45 = new System.Windows.Forms.RadioButton();
+            this.rb50 = new System.Windows.Forms.RadioButton();
+            this.rb55 = new System.Windows.Forms.RadioButton();
+            this.rb30 = new System.Windows.Forms.RadioButton();
+            this.rb85 = new System.Windows.Forms.RadioButton();
+            this.rb60 = new System.Windows.Forms.RadioButton();
+            this.rb20 = new System.Windows.Forms.RadioButton();
+            this.rb25 = new System.Windows.Forms.RadioButton();
+            this.rb0 = new System.Windows.Forms.RadioButton();
+            this.rb5 = new System.Windows.Forms.RadioButton();
+            this.rb10 = new System.Windows.Forms.RadioButton();
+            this.rb15 = new System.Windows.Forms.RadioButton();
+            this.rb70 = new System.Windows.Forms.RadioButton();
+            this.rb75 = new System.Windows.Forms.RadioButton();
+            this.rb80 = new System.Windows.Forms.RadioButton();
+            this.rb65 = new System.Windows.Forms.RadioButton();
+            this.pbWizardMap = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -229,8 +256,8 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
-            this.txtLBA2LocationFacing = new System.Windows.Forms.TextBox();
-            this.lblLBA2LocationFacing = new System.Windows.Forms.Label();
+            this.txtWizardLocation = new System.Windows.Forms.TextBox();
+            this.btnGo = new System.Windows.Forms.Button();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -244,12 +271,14 @@
             this.tcLBA2Inner.SuspendLayout();
             this.tpLBA2Twinsen.SuspendLayout();
             this.tpLBA2Other.SuspendLayout();
-            this.tpLBA2Location.SuspendLayout();
-            this.tpLBA2ShittyShot.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.tpHyperCar.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.LBA2HyperCar_panel.SuspendLayout();
+            this.tpLBA2Teleport.SuspendLayout();
+            this.LBA2Flying.SuspendLayout();
+            this.tpLBA2ShittyShot.SuspendLayout();
+            this.tpLBA2Debug.SuspendLayout();
+            this.tpLBA2Wizard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -329,7 +358,7 @@
             this.LBA1Twin_chkInventoryValue.Location = new System.Drawing.Point(284, 116);
             this.LBA1Twin_chkInventoryValue.Name = "LBA1Twin_chkInventoryValue";
             this.LBA1Twin_chkInventoryValue.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Twin_chkInventoryValue.TabIndex = 38;
+            this.LBA1Twin_chkInventoryValue.TabIndex = 10;
             this.LBA1Twin_chkInventoryValue.UseVisualStyleBackColor = true;
             this.LBA1Twin_chkInventoryValue.CheckedChanged += new System.EventHandler(this.ChkLBA1InventoryValue_CheckedChanged);
             // 
@@ -697,7 +726,7 @@
             // 
             this.LBA1Othr_lblChapter.AutoSize = true;
             this.LBA1Othr_lblChapter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Othr_lblChapter.Location = new System.Drawing.Point(6, 66);
+            this.LBA1Othr_lblChapter.Location = new System.Drawing.Point(6, 64);
             this.LBA1Othr_lblChapter.Name = "LBA1Othr_lblChapter";
             this.LBA1Othr_lblChapter.Size = new System.Drawing.Size(51, 13);
             this.LBA1Othr_lblChapter.TabIndex = 6;
@@ -1217,11 +1246,12 @@
             // 
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Twinsen);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Other);
-            this.tcLBA2Inner.Controls.Add(this.tpLBA2Location);
-            this.tcLBA2Inner.Controls.Add(this.tpLBA2ShittyShot);
-            this.tcLBA2Inner.Controls.Add(this.tabPage2);
-            this.tcLBA2Inner.Controls.Add(this.tabPage3);
             this.tcLBA2Inner.Controls.Add(this.tpHyperCar);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Teleport);
+            this.tcLBA2Inner.Controls.Add(this.LBA2Flying);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2ShittyShot);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Debug);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Wizard);
             this.tcLBA2Inner.Location = new System.Drawing.Point(6, 6);
             this.tcLBA2Inner.Name = "tcLBA2Inner";
             this.tcLBA2Inner.SelectedIndex = 0;
@@ -1460,21 +1490,23 @@
             // tpLBA2Other
             // 
             this.tpLBA2Other.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_btnGetAreacode);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblAreacodeTxt);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblAreacode);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkSubquest);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboSubquest);
+            this.tpLBA2Other.Controls.Add(this.label3);
+            this.tpLBA2Other.Controls.Add(this.label2);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboQuest);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkMisc);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboMisc);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblMisc);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkBehaviourValue);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboBehaviour);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblBehaviour);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkWeapon);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_Weapon);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboWeapon);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblWeapon);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkSkin);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboSkins);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblSelectSkin);
-            this.tpLBA2Other.Controls.Add(this.lblOtherSkin);
-            this.tpLBA2Other.Controls.Add(this.btnLBA2InstantCarDisabled);
-            this.tpLBA2Other.Controls.Add(this.btnLBA2InstantCarTunic);
-            this.tpLBA2Other.Controls.Add(this.btnLBA2InstantCarWizard);
-            this.tpLBA2Other.Controls.Add(this.textBox1);
-            this.tpLBA2Other.Controls.Add(this.button2);
             this.tpLBA2Other.Location = new System.Drawing.Point(4, 22);
             this.tpLBA2Other.Name = "tpLBA2Other";
             this.tpLBA2Other.Padding = new System.Windows.Forms.Padding(3);
@@ -1482,36 +1514,130 @@
             this.tpLBA2Other.TabIndex = 4;
             this.tpLBA2Other.Text = "Other";
             // 
-            // LBA2Othr_btnGetAreacode
+            // LBA2Othr_chkSubquest
             // 
-            this.LBA2Othr_btnGetAreacode.Location = new System.Drawing.Point(293, 65);
-            this.LBA2Othr_btnGetAreacode.Name = "LBA2Othr_btnGetAreacode";
-            this.LBA2Othr_btnGetAreacode.Size = new System.Drawing.Size(35, 23);
-            this.LBA2Othr_btnGetAreacode.TabIndex = 27;
-            this.LBA2Othr_btnGetAreacode.Text = "Get";
-            this.LBA2Othr_btnGetAreacode.UseVisualStyleBackColor = true;
-            this.LBA2Othr_btnGetAreacode.Click += new System.EventHandler(this.LBA2Othr_btnGetAreacode_Click);
+            this.LBA2Othr_chkSubquest.AutoSize = true;
+            this.LBA2Othr_chkSubquest.Location = new System.Drawing.Point(313, 118);
+            this.LBA2Othr_chkSubquest.Name = "LBA2Othr_chkSubquest";
+            this.LBA2Othr_chkSubquest.Size = new System.Drawing.Size(15, 14);
+            this.LBA2Othr_chkSubquest.TabIndex = 38;
+            this.LBA2Othr_chkSubquest.UseVisualStyleBackColor = true;
+            this.LBA2Othr_chkSubquest.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkSubquest_CheckedChanged);
             // 
-            // LBA2Othr_lblAreacodeTxt
+            // LBA2Othr_cboSubquest
             // 
-            this.LBA2Othr_lblAreacodeTxt.AutoSize = true;
-            this.LBA2Othr_lblAreacodeTxt.BackColor = System.Drawing.Color.White;
-            this.LBA2Othr_lblAreacodeTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LBA2Othr_lblAreacodeTxt.Location = new System.Drawing.Point(84, 65);
-            this.LBA2Othr_lblAreacodeTxt.MinimumSize = new System.Drawing.Size(203, 21);
-            this.LBA2Othr_lblAreacodeTxt.Name = "LBA2Othr_lblAreacodeTxt";
-            this.LBA2Othr_lblAreacodeTxt.Size = new System.Drawing.Size(203, 21);
-            this.LBA2Othr_lblAreacodeTxt.TabIndex = 26;
+            this.LBA2Othr_cboSubquest.FormattingEnabled = true;
+            this.LBA2Othr_cboSubquest.Location = new System.Drawing.Point(84, 115);
+            this.LBA2Othr_cboSubquest.Name = "LBA2Othr_cboSubquest";
+            this.LBA2Othr_cboSubquest.Size = new System.Drawing.Size(223, 21);
+            this.LBA2Othr_cboSubquest.TabIndex = 37;
+            this.LBA2Othr_cboSubquest.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboSubquest_SelectedIndexChanged);
             // 
-            // LBA2Othr_lblAreacode
+            // label3
             // 
-            this.LBA2Othr_lblAreacode.AutoSize = true;
-            this.LBA2Othr_lblAreacode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblAreacode.Location = new System.Drawing.Point(6, 65);
-            this.LBA2Othr_lblAreacode.Name = "LBA2Othr_lblAreacode";
-            this.LBA2Othr_lblAreacode.Size = new System.Drawing.Size(61, 13);
-            this.LBA2Othr_lblAreacode.TabIndex = 25;
-            this.LBA2Othr_lblAreacode.Text = "Areacode";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Sub-Quest";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Quest";
+            // 
+            // LBA2Othr_cboQuest
+            // 
+            this.LBA2Othr_cboQuest.FormattingEnabled = true;
+            this.LBA2Othr_cboQuest.Location = new System.Drawing.Point(84, 88);
+            this.LBA2Othr_cboQuest.Name = "LBA2Othr_cboQuest";
+            this.LBA2Othr_cboQuest.Size = new System.Drawing.Size(223, 21);
+            this.LBA2Othr_cboQuest.TabIndex = 34;
+            this.LBA2Othr_cboQuest.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboQuest_SelectedIndexChanged);
+            // 
+            // LBA2Othr_chkMisc
+            // 
+            this.LBA2Othr_chkMisc.AutoSize = true;
+            this.LBA2Othr_chkMisc.Location = new System.Drawing.Point(313, 145);
+            this.LBA2Othr_chkMisc.Name = "LBA2Othr_chkMisc";
+            this.LBA2Othr_chkMisc.Size = new System.Drawing.Size(15, 14);
+            this.LBA2Othr_chkMisc.TabIndex = 33;
+            this.LBA2Othr_chkMisc.UseVisualStyleBackColor = true;
+            this.LBA2Othr_chkMisc.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkMisc_CheckedChanged);
+            // 
+            // LBA2Othr_cboMisc
+            // 
+            this.LBA2Othr_cboMisc.AutoCompleteCustomSource.AddRange(new string[] {
+            "Toggle rain"});
+            this.LBA2Othr_cboMisc.FormattingEnabled = true;
+            this.LBA2Othr_cboMisc.Items.AddRange(new object[] {
+            "Rain off",
+            "Free Ferry"});
+            this.LBA2Othr_cboMisc.Location = new System.Drawing.Point(84, 142);
+            this.LBA2Othr_cboMisc.Name = "LBA2Othr_cboMisc";
+            this.LBA2Othr_cboMisc.Size = new System.Drawing.Size(223, 21);
+            this.LBA2Othr_cboMisc.TabIndex = 32;
+            // 
+            // LBA2Othr_lblMisc
+            // 
+            this.LBA2Othr_lblMisc.AutoSize = true;
+            this.LBA2Othr_lblMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblMisc.Location = new System.Drawing.Point(6, 145);
+            this.LBA2Othr_lblMisc.Name = "LBA2Othr_lblMisc";
+            this.LBA2Othr_lblMisc.Size = new System.Drawing.Size(37, 13);
+            this.LBA2Othr_lblMisc.TabIndex = 31;
+            this.LBA2Othr_lblMisc.Text = "Misc.";
+            // 
+            // LBA2Othr_chkBehaviourValue
+            // 
+            this.LBA2Othr_chkBehaviourValue.AutoSize = true;
+            this.LBA2Othr_chkBehaviourValue.Location = new System.Drawing.Point(313, 64);
+            this.LBA2Othr_chkBehaviourValue.Name = "LBA2Othr_chkBehaviourValue";
+            this.LBA2Othr_chkBehaviourValue.Size = new System.Drawing.Size(15, 14);
+            this.LBA2Othr_chkBehaviourValue.TabIndex = 30;
+            this.LBA2Othr_chkBehaviourValue.UseVisualStyleBackColor = true;
+            this.LBA2Othr_chkBehaviourValue.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkBehaviourValue_CheckedChanged);
+            // 
+            // LBA2Othr_cboBehaviour
+            // 
+            this.LBA2Othr_cboBehaviour.FormattingEnabled = true;
+            this.LBA2Othr_cboBehaviour.Items.AddRange(new object[] {
+            "Normal",
+            "Athletic",
+            "Agressive",
+            "Discrete",
+            "Twinsen with Protopack ",
+            "Twinsen and Zoé",
+            "Twinsen with Horn of Blue Triton",
+            "Twinsen with space suit",
+            "Twinsen with Super jetpack",
+            "Twinsen with space suit (Athletic mode)",
+            "Twinsen with space suit (Normal mode)",
+            "Twinsen with space suit (Athletic mode)",
+            "Twinsen with car",
+            "Twinsen X-Rayed"});
+            this.LBA2Othr_cboBehaviour.Location = new System.Drawing.Point(84, 61);
+            this.LBA2Othr_cboBehaviour.Name = "LBA2Othr_cboBehaviour";
+            this.LBA2Othr_cboBehaviour.Size = new System.Drawing.Size(223, 21);
+            this.LBA2Othr_cboBehaviour.TabIndex = 29;
+            this.LBA2Othr_cboBehaviour.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboBehaviour_SelectedIndexChanged);
+            // 
+            // LBA2Othr_lblBehaviour
+            // 
+            this.LBA2Othr_lblBehaviour.AutoSize = true;
+            this.LBA2Othr_lblBehaviour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblBehaviour.Location = new System.Drawing.Point(6, 64);
+            this.LBA2Othr_lblBehaviour.Name = "LBA2Othr_lblBehaviour";
+            this.LBA2Othr_lblBehaviour.Size = new System.Drawing.Size(64, 13);
+            this.LBA2Othr_lblBehaviour.TabIndex = 28;
+            this.LBA2Othr_lblBehaviour.Text = "Behaviour";
             // 
             // LBA2Othr_chkWeapon
             // 
@@ -1523,10 +1649,10 @@
             this.LBA2Othr_chkWeapon.UseVisualStyleBackColor = true;
             this.LBA2Othr_chkWeapon.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkWeapon_CheckedChanged);
             // 
-            // LBA2Othr_Weapon
+            // LBA2Othr_cboWeapon
             // 
-            this.LBA2Othr_Weapon.FormattingEnabled = true;
-            this.LBA2Othr_Weapon.Items.AddRange(new object[] {
+            this.LBA2Othr_cboWeapon.FormattingEnabled = true;
+            this.LBA2Othr_cboWeapon.Items.AddRange(new object[] {
             "00 No Weapon",
             "01 Magic Ball",
             "02 Darts",
@@ -1535,11 +1661,11 @@
             "11 Wannies Glove",
             "22 Horn of triton",
             "23 Blowtron/Blowgun"});
-            this.LBA2Othr_Weapon.Location = new System.Drawing.Point(84, 34);
-            this.LBA2Othr_Weapon.Name = "LBA2Othr_Weapon";
-            this.LBA2Othr_Weapon.Size = new System.Drawing.Size(223, 21);
-            this.LBA2Othr_Weapon.TabIndex = 23;
-            this.LBA2Othr_Weapon.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboWeapon_SelectedIndexChanged);
+            this.LBA2Othr_cboWeapon.Location = new System.Drawing.Point(84, 34);
+            this.LBA2Othr_cboWeapon.Name = "LBA2Othr_cboWeapon";
+            this.LBA2Othr_cboWeapon.Size = new System.Drawing.Size(223, 21);
+            this.LBA2Othr_cboWeapon.TabIndex = 23;
+            this.LBA2Othr_cboWeapon.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboWeapon_SelectedIndexChanged);
             // 
             // LBA2Othr_lblWeapon
             // 
@@ -1581,412 +1707,46 @@
             this.LBA2Othr_lblSelectSkin.TabIndex = 8;
             this.LBA2Othr_lblSelectSkin.Text = "Skin";
             // 
-            // lblOtherSkin
-            // 
-            this.lblOtherSkin.AutoSize = true;
-            this.lblOtherSkin.Location = new System.Drawing.Point(250, 97);
-            this.lblOtherSkin.Name = "lblOtherSkin";
-            this.lblOtherSkin.Size = new System.Drawing.Size(13, 13);
-            this.lblOtherSkin.TabIndex = 7;
-            this.lblOtherSkin.Text = "0";
-            // 
-            // btnLBA2InstantCarDisabled
-            // 
-            this.btnLBA2InstantCarDisabled.Location = new System.Drawing.Point(168, 121);
-            this.btnLBA2InstantCarDisabled.Name = "btnLBA2InstantCarDisabled";
-            this.btnLBA2InstantCarDisabled.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2InstantCarDisabled.TabIndex = 6;
-            this.btnLBA2InstantCarDisabled.Text = "Car: Off";
-            this.btnLBA2InstantCarDisabled.UseVisualStyleBackColor = true;
-            this.btnLBA2InstantCarDisabled.Click += new System.EventHandler(this.btnLBA2InstantCarDisabled_Click);
-            // 
-            // btnLBA2InstantCarTunic
-            // 
-            this.btnLBA2InstantCarTunic.Location = new System.Drawing.Point(87, 121);
-            this.btnLBA2InstantCarTunic.Name = "btnLBA2InstantCarTunic";
-            this.btnLBA2InstantCarTunic.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2InstantCarTunic.TabIndex = 5;
-            this.btnLBA2InstantCarTunic.Text = "Tunic Car";
-            this.btnLBA2InstantCarTunic.UseVisualStyleBackColor = true;
-            this.btnLBA2InstantCarTunic.Click += new System.EventHandler(this.btnLBA2InstantCarTunic_Click);
-            // 
-            // btnLBA2InstantCarWizard
-            // 
-            this.btnLBA2InstantCarWizard.Location = new System.Drawing.Point(6, 121);
-            this.btnLBA2InstantCarWizard.Name = "btnLBA2InstantCarWizard";
-            this.btnLBA2InstantCarWizard.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2InstantCarWizard.TabIndex = 4;
-            this.btnLBA2InstantCarWizard.Text = "Wizard Car";
-            this.btnLBA2InstantCarWizard.UseVisualStyleBackColor = true;
-            this.btnLBA2InstantCarWizard.Click += new System.EventHandler(this.btnLBA2InstantCar_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(9, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(130, 92);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // tpLBA2Location
-            // 
-            this.tpLBA2Location.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2Location.Controls.Add(this.lblLBA2LocationFacing);
-            this.tpLBA2Location.Controls.Add(this.txtLBA2LocationFacing);
-            this.tpLBA2Location.Controls.Add(this.button1);
-            this.tpLBA2Location.Controls.Add(this.btnLBA2LocationSet);
-            this.tpLBA2Location.Controls.Add(this.btnLBA2LocationScan);
-            this.tpLBA2Location.Controls.Add(this.label4);
-            this.tpLBA2Location.Controls.Add(this.lblLBA2LocationYPos);
-            this.tpLBA2Location.Controls.Add(this.lblLBA2LocationZPos);
-            this.tpLBA2Location.Controls.Add(this.textBox3);
-            this.tpLBA2Location.Controls.Add(this.txtLBA2LocationZPos);
-            this.tpLBA2Location.Controls.Add(this.txtLBA2LocationYPos);
-            this.tpLBA2Location.Controls.Add(this.txtLBA2LocationXPos);
-            this.tpLBA2Location.Controls.Add(this.lblLBA2LocationXPos);
-            this.tpLBA2Location.Location = new System.Drawing.Point(4, 22);
-            this.tpLBA2Location.Name = "tpLBA2Location";
-            this.tpLBA2Location.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLBA2Location.Size = new System.Drawing.Size(334, 178);
-            this.tpLBA2Location.TabIndex = 1;
-            this.tpLBA2Location.Text = "Teleport";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(253, 124);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnLBA2LocationSet
-            // 
-            this.btnLBA2LocationSet.Location = new System.Drawing.Point(164, 124);
-            this.btnLBA2LocationSet.Name = "btnLBA2LocationSet";
-            this.btnLBA2LocationSet.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2LocationSet.TabIndex = 9;
-            this.btnLBA2LocationSet.Text = "Set";
-            this.btnLBA2LocationSet.UseVisualStyleBackColor = true;
-            this.btnLBA2LocationSet.Click += new System.EventHandler(this.btnLBA2LocationSet_Click);
-            // 
-            // btnLBA2LocationScan
-            // 
-            this.btnLBA2LocationScan.Location = new System.Drawing.Point(74, 124);
-            this.btnLBA2LocationScan.Name = "btnLBA2LocationScan";
-            this.btnLBA2LocationScan.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2LocationScan.TabIndex = 8;
-            this.btnLBA2LocationScan.Text = "Scan";
-            this.btnLBA2LocationScan.UseVisualStyleBackColor = true;
-            this.btnLBA2LocationScan.Click += new System.EventHandler(this.btnLBA2LocationScan_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Areacode";
-            // 
-            // lblLBA2LocationYPos
-            // 
-            this.lblLBA2LocationYPos.AutoSize = true;
-            this.lblLBA2LocationYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA2LocationYPos.Location = new System.Drawing.Point(161, 14);
-            this.lblLBA2LocationYPos.Name = "lblLBA2LocationYPos";
-            this.lblLBA2LocationYPos.Size = new System.Drawing.Size(36, 13);
-            this.lblLBA2LocationYPos.TabIndex = 6;
-            this.lblLBA2LocationYPos.Text = "YPos";
-            // 
-            // lblLBA2LocationZPos
-            // 
-            this.lblLBA2LocationZPos.AutoSize = true;
-            this.lblLBA2LocationZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA2LocationZPos.Location = new System.Drawing.Point(7, 40);
-            this.lblLBA2LocationZPos.Name = "lblLBA2LocationZPos";
-            this.lblLBA2LocationZPos.Size = new System.Drawing.Size(36, 13);
-            this.lblLBA2LocationZPos.TabIndex = 5;
-            this.lblLBA2LocationZPos.Text = "ZPos";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(74, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
-            // 
-            // txtLBA2LocationZPos
-            // 
-            this.txtLBA2LocationZPos.Location = new System.Drawing.Point(44, 37);
-            this.txtLBA2LocationZPos.Name = "txtLBA2LocationZPos";
-            this.txtLBA2LocationZPos.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2LocationZPos.TabIndex = 3;
-            // 
-            // txtLBA2LocationYPos
-            // 
-            this.txtLBA2LocationYPos.Location = new System.Drawing.Point(228, 11);
-            this.txtLBA2LocationYPos.Name = "txtLBA2LocationYPos";
-            this.txtLBA2LocationYPos.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2LocationYPos.TabIndex = 2;
-            // 
-            // txtLBA2LocationXPos
-            // 
-            this.txtLBA2LocationXPos.Location = new System.Drawing.Point(44, 11);
-            this.txtLBA2LocationXPos.Name = "txtLBA2LocationXPos";
-            this.txtLBA2LocationXPos.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2LocationXPos.TabIndex = 1;
-            // 
-            // lblLBA2LocationXPos
-            // 
-            this.lblLBA2LocationXPos.AutoSize = true;
-            this.lblLBA2LocationXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA2LocationXPos.Location = new System.Drawing.Point(6, 14);
-            this.lblLBA2LocationXPos.Name = "lblLBA2LocationXPos";
-            this.lblLBA2LocationXPos.Size = new System.Drawing.Size(36, 13);
-            this.lblLBA2LocationXPos.TabIndex = 0;
-            this.lblLBA2LocationXPos.Text = "XPos";
-            // 
-            // tpLBA2ShittyShot
-            // 
-            this.tpLBA2ShittyShot.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblInstruct);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnSquare);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnTriangle);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnCircle);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnOnOff);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblSquare);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblTriangle);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblCircle);
-            this.tpLBA2ShittyShot.Location = new System.Drawing.Point(4, 22);
-            this.tpLBA2ShittyShot.Name = "tpLBA2ShittyShot";
-            this.tpLBA2ShittyShot.Size = new System.Drawing.Size(334, 178);
-            this.tpLBA2ShittyShot.TabIndex = 2;
-            this.tpLBA2ShittyShot.Text = "Shitty Shot";
-            // 
-            // LBA2SS_lblInstruct
-            // 
-            this.LBA2SS_lblInstruct.AutoSize = true;
-            this.LBA2SS_lblInstruct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_lblInstruct.Location = new System.Drawing.Point(12, 11);
-            this.LBA2SS_lblInstruct.Name = "LBA2SS_lblInstruct";
-            this.LBA2SS_lblInstruct.Size = new System.Drawing.Size(307, 26);
-            this.LBA2SS_lblInstruct.TabIndex = 19;
-            this.LBA2SS_lblInstruct.Text = "Click colour to toggle status";
-            // 
-            // LBA2SS_btnSquare
-            // 
-            this.LBA2SS_btnSquare.BackColor = System.Drawing.Color.Red;
-            this.LBA2SS_btnSquare.Location = new System.Drawing.Point(230, 44);
-            this.LBA2SS_btnSquare.Name = "LBA2SS_btnSquare";
-            this.LBA2SS_btnSquare.Size = new System.Drawing.Size(79, 58);
-            this.LBA2SS_btnSquare.TabIndex = 18;
-            this.LBA2SS_btnSquare.UseVisualStyleBackColor = false;
-            this.LBA2SS_btnSquare.Click += new System.EventHandler(this.LBA2SS_btnSquare_Click);
-            // 
-            // LBA2SS_btnTriangle
-            // 
-            this.LBA2SS_btnTriangle.BackColor = System.Drawing.Color.Red;
-            this.LBA2SS_btnTriangle.Location = new System.Drawing.Point(128, 44);
-            this.LBA2SS_btnTriangle.Name = "LBA2SS_btnTriangle";
-            this.LBA2SS_btnTriangle.Size = new System.Drawing.Size(75, 58);
-            this.LBA2SS_btnTriangle.TabIndex = 17;
-            this.LBA2SS_btnTriangle.UseVisualStyleBackColor = false;
-            this.LBA2SS_btnTriangle.Click += new System.EventHandler(this.LBA2SS_btnTriangle_Click);
-            // 
-            // LBA2SS_btnCircle
-            // 
-            this.LBA2SS_btnCircle.BackColor = System.Drawing.Color.Red;
-            this.LBA2SS_btnCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_btnCircle.Location = new System.Drawing.Point(26, 44);
-            this.LBA2SS_btnCircle.Name = "LBA2SS_btnCircle";
-            this.LBA2SS_btnCircle.Size = new System.Drawing.Size(74, 58);
-            this.LBA2SS_btnCircle.TabIndex = 16;
-            this.LBA2SS_btnCircle.UseVisualStyleBackColor = false;
-            this.LBA2SS_btnCircle.Click += new System.EventHandler(this.LBA2SS_btnCircle_Click);
-            // 
-            // LBA2SS_btnOnOff
-            // 
-            this.LBA2SS_btnOnOff.Location = new System.Drawing.Point(128, 143);
-            this.LBA2SS_btnOnOff.Name = "LBA2SS_btnOnOff";
-            this.LBA2SS_btnOnOff.Size = new System.Drawing.Size(75, 23);
-            this.LBA2SS_btnOnOff.TabIndex = 15;
-            this.LBA2SS_btnOnOff.Text = "Off";
-            this.LBA2SS_btnOnOff.UseVisualStyleBackColor = true;
-            this.LBA2SS_btnOnOff.Click += new System.EventHandler(this.LBA2SS_btnOnOff_Click);
-            // 
-            // LBA2SS_lblSquare
-            // 
-            this.LBA2SS_lblSquare.AutoSize = true;
-            this.LBA2SS_lblSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_lblSquare.Location = new System.Drawing.Point(226, 111);
-            this.LBA2SS_lblSquare.Name = "LBA2SS_lblSquare";
-            this.LBA2SS_lblSquare.Size = new System.Drawing.Size(67, 20);
-            this.LBA2SS_lblSquare.TabIndex = 14;
-            this.LBA2SS_lblSquare.Text = "Square";
-            // 
-            // LBA2SS_lblTriangle
-            // 
-            this.LBA2SS_lblTriangle.AutoSize = true;
-            this.LBA2SS_lblTriangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_lblTriangle.Location = new System.Drawing.Point(124, 111);
-            this.LBA2SS_lblTriangle.Name = "LBA2SS_lblTriangle";
-            this.LBA2SS_lblTriangle.Size = new System.Drawing.Size(73, 20);
-            this.LBA2SS_lblTriangle.TabIndex = 13;
-            this.LBA2SS_lblTriangle.Text = "Triangle";
-            // 
-            // LBA2SS_lblCircle
-            // 
-            this.LBA2SS_lblCircle.AutoSize = true;
-            this.LBA2SS_lblCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_lblCircle.Location = new System.Drawing.Point(36, 111);
-            this.LBA2SS_lblCircle.Name = "LBA2SS_lblCircle";
-            this.LBA2SS_lblCircle.Size = new System.Drawing.Size(54, 20);
-            this.LBA2SS_lblCircle.TabIndex = 12;
-            this.LBA2SS_lblCircle.Text = "Circle";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.MistyRose;
-            this.tabPage2.Controls.Add(this.flying1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(334, 178);
-            this.tabPage2.TabIndex = 3;
-            this.tabPage2.Text = "Jank Flying";
-            // 
-            // flying1
-            // 
-            this.flying1.BackColor = System.Drawing.Color.MistyRose;
-            this.flying1.Location = new System.Drawing.Point(-4, 0);
-            this.flying1.Name = "flying1";
-            this.flying1.Size = new System.Drawing.Size(334, 178);
-            this.flying1.TabIndex = 11;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.MistyRose;
-            this.tabPage3.Controls.Add(this.btnCarSpeed);
-            this.tabPage3.Controls.Add(this.txtLBA2CarSpeed);
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Controls.Add(this.lblFruitMachineCount);
-            this.tabPage3.Controls.Add(this.btnFruitMachineStart);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(334, 178);
-            this.tabPage3.TabIndex = 5;
-            this.tabPage3.Text = "tabPage3";
-            // 
-            // btnCarSpeed
-            // 
-            this.btnCarSpeed.Location = new System.Drawing.Point(223, 79);
-            this.btnCarSpeed.Name = "btnCarSpeed";
-            this.btnCarSpeed.Size = new System.Drawing.Size(75, 23);
-            this.btnCarSpeed.TabIndex = 5;
-            this.btnCarSpeed.Text = "Car speed";
-            this.btnCarSpeed.UseVisualStyleBackColor = true;
-            this.btnCarSpeed.Click += new System.EventHandler(this.btnCarSpeed_Click);
-            // 
-            // txtLBA2CarSpeed
-            // 
-            this.txtLBA2CarSpeed.Location = new System.Drawing.Point(97, 82);
-            this.txtLBA2CarSpeed.Name = "txtLBA2CarSpeed";
-            this.txtLBA2CarSpeed.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2CarSpeed.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Car speed";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 31);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Count";
-            // 
-            // lblFruitMachineCount
-            // 
-            this.lblFruitMachineCount.AutoSize = true;
-            this.lblFruitMachineCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFruitMachineCount.Location = new System.Drawing.Point(107, 21);
-            this.lblFruitMachineCount.Name = "lblFruitMachineCount";
-            this.lblFruitMachineCount.Size = new System.Drawing.Size(0, 31);
-            this.lblFruitMachineCount.TabIndex = 1;
-            this.lblFruitMachineCount.Click += new System.EventHandler(this.lblFruitMachineCount_Click);
-            // 
-            // btnFruitMachineStart
-            // 
-            this.btnFruitMachineStart.Location = new System.Drawing.Point(159, 21);
-            this.btnFruitMachineStart.Name = "btnFruitMachineStart";
-            this.btnFruitMachineStart.Size = new System.Drawing.Size(97, 31);
-            this.btnFruitMachineStart.TabIndex = 0;
-            this.btnFruitMachineStart.Text = "Start";
-            this.btnFruitMachineStart.UseVisualStyleBackColor = true;
-            this.btnFruitMachineStart.Click += new System.EventHandler(this.btnFruitMachineStart_Click);
-            // 
             // tpHyperCar
             // 
             this.tpHyperCar.BackColor = System.Drawing.Color.MistyRose;
-            this.tpHyperCar.Controls.Add(this.panel1);
+            this.tpHyperCar.Controls.Add(this.LBA2HyperCar_panel);
             this.tpHyperCar.Location = new System.Drawing.Point(4, 22);
             this.tpHyperCar.Name = "tpHyperCar";
             this.tpHyperCar.Size = new System.Drawing.Size(334, 178);
             this.tpHyperCar.TabIndex = 6;
             this.tpHyperCar.Text = "Hyper Car";
             // 
-            // panel1
+            // LBA2HyperCar_panel
             // 
-            this.panel1.Controls.Add(this.bPitLimit);
-            this.panel1.Controls.Add(this.txtHyperCarGearReverse);
-            this.panel1.Controls.Add(this.lblHyperCarGearReverse);
-            this.panel1.Controls.Add(this.lblHyperCarButtons);
-            this.panel1.Controls.Add(this.txtLBA2HyperCarTurbo);
-            this.panel1.Controls.Add(this.lblLBA2HyperCarTurbo);
-            this.panel1.Controls.Add(this.lblHyperCarActualSpeed);
-            this.panel1.Controls.Add(this.lblHyperCarSpeed);
-            this.panel1.Controls.Add(this.btnHyperCarOnOff);
-            this.panel1.Controls.Add(this.lblHyperCarGear5);
-            this.panel1.Controls.Add(this.txtHyperCarGear5);
-            this.panel1.Controls.Add(this.lblHyperCarGear4);
-            this.panel1.Controls.Add(this.txtHyperCarGear4);
-            this.panel1.Controls.Add(this.rbLBA2HyperCar5);
-            this.panel1.Controls.Add(this.rbLBA2HyperCar4);
-            this.panel1.Controls.Add(this.rbLBA2HyperCar3);
-            this.panel1.Controls.Add(this.rbLBA2HyperCar2);
-            this.panel1.Controls.Add(this.rbLBA2HyperCar1);
-            this.panel1.Controls.Add(this.lblHyperCarGear3);
-            this.panel1.Controls.Add(this.txtHyperCarGear3);
-            this.panel1.Controls.Add(this.lblHyperCarGear2);
-            this.panel1.Controls.Add(this.txtHyperCarGear2);
-            this.panel1.Controls.Add(this.txtHyperCarGear1);
-            this.panel1.Controls.Add(this.lblHyperCarGear1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(328, 172);
-            this.panel1.TabIndex = 6;
+            this.LBA2HyperCar_panel.Controls.Add(this.bPitLimit);
+            this.LBA2HyperCar_panel.Controls.Add(this.txtHyperCarGearReverse);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarGearReverse);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarButtons);
+            this.LBA2HyperCar_panel.Controls.Add(this.txtLBA2HyperCarTurbo);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblLBA2HyperCarTurbo);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarActualSpeed);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarSpeed);
+            this.LBA2HyperCar_panel.Controls.Add(this.btnHyperCarOnOff);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarGear5);
+            this.LBA2HyperCar_panel.Controls.Add(this.txtHyperCarGear5);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarGear4);
+            this.LBA2HyperCar_panel.Controls.Add(this.txtHyperCarGear4);
+            this.LBA2HyperCar_panel.Controls.Add(this.rbLBA2HyperCar5);
+            this.LBA2HyperCar_panel.Controls.Add(this.rbLBA2HyperCar4);
+            this.LBA2HyperCar_panel.Controls.Add(this.rbLBA2HyperCar3);
+            this.LBA2HyperCar_panel.Controls.Add(this.rbLBA2HyperCar2);
+            this.LBA2HyperCar_panel.Controls.Add(this.rbLBA2HyperCar1);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarGear3);
+            this.LBA2HyperCar_panel.Controls.Add(this.txtHyperCarGear3);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarGear2);
+            this.LBA2HyperCar_panel.Controls.Add(this.txtHyperCarGear2);
+            this.LBA2HyperCar_panel.Controls.Add(this.txtHyperCarGear1);
+            this.LBA2HyperCar_panel.Controls.Add(this.lblHyperCarGear1);
+            this.LBA2HyperCar_panel.Location = new System.Drawing.Point(3, 3);
+            this.LBA2HyperCar_panel.Name = "LBA2HyperCar_panel";
+            this.LBA2HyperCar_panel.Size = new System.Drawing.Size(328, 172);
+            this.LBA2HyperCar_panel.TabIndex = 6;
             // 
             // bPitLimit
             // 
@@ -2217,6 +1977,601 @@
             this.lblHyperCarGear1.TabIndex = 6;
             this.lblHyperCarGear1.Text = "Gear 1";
             // 
+            // tpLBA2Teleport
+            // 
+            this.tpLBA2Teleport.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Teleport.Controls.Add(this.lblLBA2LocationFacing);
+            this.tpLBA2Teleport.Controls.Add(this.txtLBA2LocationFacing);
+            this.tpLBA2Teleport.Controls.Add(this.btnLBA2LocationSet);
+            this.tpLBA2Teleport.Controls.Add(this.btnLBA2TeleportScan);
+            this.tpLBA2Teleport.Controls.Add(this.label4);
+            this.tpLBA2Teleport.Controls.Add(this.lblLBA2LocationYPos);
+            this.tpLBA2Teleport.Controls.Add(this.lblLBA2LocationZPos);
+            this.tpLBA2Teleport.Controls.Add(this.textBox3);
+            this.tpLBA2Teleport.Controls.Add(this.txtLBA2LocationZPos);
+            this.tpLBA2Teleport.Controls.Add(this.txtLBA2LocationYPos);
+            this.tpLBA2Teleport.Controls.Add(this.txtLBA2LocationXPos);
+            this.tpLBA2Teleport.Controls.Add(this.lblLBA2LocationXPos);
+            this.tpLBA2Teleport.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Teleport.Name = "tpLBA2Teleport";
+            this.tpLBA2Teleport.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLBA2Teleport.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Teleport.TabIndex = 1;
+            this.tpLBA2Teleport.Text = "Teleport";
+            // 
+            // lblLBA2LocationFacing
+            // 
+            this.lblLBA2LocationFacing.AutoSize = true;
+            this.lblLBA2LocationFacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA2LocationFacing.Location = new System.Drawing.Point(162, 43);
+            this.lblLBA2LocationFacing.Name = "lblLBA2LocationFacing";
+            this.lblLBA2LocationFacing.Size = new System.Drawing.Size(45, 13);
+            this.lblLBA2LocationFacing.TabIndex = 12;
+            this.lblLBA2LocationFacing.Text = "Facing";
+            // 
+            // txtLBA2LocationFacing
+            // 
+            this.txtLBA2LocationFacing.Location = new System.Drawing.Point(228, 40);
+            this.txtLBA2LocationFacing.Name = "txtLBA2LocationFacing";
+            this.txtLBA2LocationFacing.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2LocationFacing.TabIndex = 11;
+            // 
+            // btnLBA2LocationSet
+            // 
+            this.btnLBA2LocationSet.Location = new System.Drawing.Point(164, 124);
+            this.btnLBA2LocationSet.Name = "btnLBA2LocationSet";
+            this.btnLBA2LocationSet.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2LocationSet.TabIndex = 9;
+            this.btnLBA2LocationSet.Text = "Set";
+            this.btnLBA2LocationSet.UseVisualStyleBackColor = true;
+            this.btnLBA2LocationSet.Click += new System.EventHandler(this.btnLBA2LocationSet_Click);
+            // 
+            // btnLBA2TeleportScan
+            // 
+            this.btnLBA2TeleportScan.Location = new System.Drawing.Point(74, 124);
+            this.btnLBA2TeleportScan.Name = "btnLBA2TeleportScan";
+            this.btnLBA2TeleportScan.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2TeleportScan.TabIndex = 8;
+            this.btnLBA2TeleportScan.Text = "Scan";
+            this.btnLBA2TeleportScan.UseVisualStyleBackColor = true;
+            this.btnLBA2TeleportScan.Click += new System.EventHandler(this.btnLBA2LocationScan_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(7, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Areacode";
+            // 
+            // lblLBA2LocationYPos
+            // 
+            this.lblLBA2LocationYPos.AutoSize = true;
+            this.lblLBA2LocationYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA2LocationYPos.Location = new System.Drawing.Point(161, 14);
+            this.lblLBA2LocationYPos.Name = "lblLBA2LocationYPos";
+            this.lblLBA2LocationYPos.Size = new System.Drawing.Size(36, 13);
+            this.lblLBA2LocationYPos.TabIndex = 6;
+            this.lblLBA2LocationYPos.Text = "YPos";
+            // 
+            // lblLBA2LocationZPos
+            // 
+            this.lblLBA2LocationZPos.AutoSize = true;
+            this.lblLBA2LocationZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA2LocationZPos.Location = new System.Drawing.Point(7, 40);
+            this.lblLBA2LocationZPos.Name = "lblLBA2LocationZPos";
+            this.lblLBA2LocationZPos.Size = new System.Drawing.Size(36, 13);
+            this.lblLBA2LocationZPos.TabIndex = 5;
+            this.lblLBA2LocationZPos.Text = "ZPos";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(74, 70);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 4;
+            // 
+            // txtLBA2LocationZPos
+            // 
+            this.txtLBA2LocationZPos.Location = new System.Drawing.Point(44, 37);
+            this.txtLBA2LocationZPos.Name = "txtLBA2LocationZPos";
+            this.txtLBA2LocationZPos.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2LocationZPos.TabIndex = 3;
+            // 
+            // txtLBA2LocationYPos
+            // 
+            this.txtLBA2LocationYPos.Location = new System.Drawing.Point(228, 11);
+            this.txtLBA2LocationYPos.Name = "txtLBA2LocationYPos";
+            this.txtLBA2LocationYPos.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2LocationYPos.TabIndex = 2;
+            // 
+            // txtLBA2LocationXPos
+            // 
+            this.txtLBA2LocationXPos.Location = new System.Drawing.Point(44, 11);
+            this.txtLBA2LocationXPos.Name = "txtLBA2LocationXPos";
+            this.txtLBA2LocationXPos.Size = new System.Drawing.Size(100, 20);
+            this.txtLBA2LocationXPos.TabIndex = 1;
+            // 
+            // lblLBA2LocationXPos
+            // 
+            this.lblLBA2LocationXPos.AutoSize = true;
+            this.lblLBA2LocationXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLBA2LocationXPos.Location = new System.Drawing.Point(6, 14);
+            this.lblLBA2LocationXPos.Name = "lblLBA2LocationXPos";
+            this.lblLBA2LocationXPos.Size = new System.Drawing.Size(36, 13);
+            this.lblLBA2LocationXPos.TabIndex = 0;
+            this.lblLBA2LocationXPos.Text = "XPos";
+            // 
+            // LBA2Flying
+            // 
+            this.LBA2Flying.BackColor = System.Drawing.Color.MistyRose;
+            this.LBA2Flying.Controls.Add(this.flying1);
+            this.LBA2Flying.Location = new System.Drawing.Point(4, 22);
+            this.LBA2Flying.Name = "LBA2Flying";
+            this.LBA2Flying.Padding = new System.Windows.Forms.Padding(3);
+            this.LBA2Flying.Size = new System.Drawing.Size(334, 178);
+            this.LBA2Flying.TabIndex = 3;
+            this.LBA2Flying.Text = "Jank Flying";
+            // 
+            // flying1
+            // 
+            this.flying1.BackColor = System.Drawing.Color.MistyRose;
+            this.flying1.Location = new System.Drawing.Point(-4, 0);
+            this.flying1.Name = "flying1";
+            this.flying1.Size = new System.Drawing.Size(334, 178);
+            this.flying1.TabIndex = 11;
+            // 
+            // tpLBA2ShittyShot
+            // 
+            this.tpLBA2ShittyShot.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblInstruct);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnSquare);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnTriangle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnCircle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnOnOff);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblSquare);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblTriangle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblCircle);
+            this.tpLBA2ShittyShot.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2ShittyShot.Name = "tpLBA2ShittyShot";
+            this.tpLBA2ShittyShot.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2ShittyShot.TabIndex = 2;
+            this.tpLBA2ShittyShot.Text = "Shitty Shot";
+            // 
+            // LBA2SS_lblInstruct
+            // 
+            this.LBA2SS_lblInstruct.AutoSize = true;
+            this.LBA2SS_lblInstruct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblInstruct.Location = new System.Drawing.Point(12, 11);
+            this.LBA2SS_lblInstruct.Name = "LBA2SS_lblInstruct";
+            this.LBA2SS_lblInstruct.Size = new System.Drawing.Size(307, 26);
+            this.LBA2SS_lblInstruct.TabIndex = 19;
+            this.LBA2SS_lblInstruct.Text = "Click colour to toggle status";
+            // 
+            // LBA2SS_btnSquare
+            // 
+            this.LBA2SS_btnSquare.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnSquare.Location = new System.Drawing.Point(230, 44);
+            this.LBA2SS_btnSquare.Name = "LBA2SS_btnSquare";
+            this.LBA2SS_btnSquare.Size = new System.Drawing.Size(79, 58);
+            this.LBA2SS_btnSquare.TabIndex = 18;
+            this.LBA2SS_btnSquare.UseVisualStyleBackColor = false;
+            this.LBA2SS_btnSquare.Click += new System.EventHandler(this.LBA2SS_btnSquare_Click);
+            // 
+            // LBA2SS_btnTriangle
+            // 
+            this.LBA2SS_btnTriangle.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnTriangle.Location = new System.Drawing.Point(128, 44);
+            this.LBA2SS_btnTriangle.Name = "LBA2SS_btnTriangle";
+            this.LBA2SS_btnTriangle.Size = new System.Drawing.Size(75, 58);
+            this.LBA2SS_btnTriangle.TabIndex = 17;
+            this.LBA2SS_btnTriangle.UseVisualStyleBackColor = false;
+            this.LBA2SS_btnTriangle.Click += new System.EventHandler(this.LBA2SS_btnTriangle_Click);
+            // 
+            // LBA2SS_btnCircle
+            // 
+            this.LBA2SS_btnCircle.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_btnCircle.Location = new System.Drawing.Point(26, 44);
+            this.LBA2SS_btnCircle.Name = "LBA2SS_btnCircle";
+            this.LBA2SS_btnCircle.Size = new System.Drawing.Size(74, 58);
+            this.LBA2SS_btnCircle.TabIndex = 16;
+            this.LBA2SS_btnCircle.UseVisualStyleBackColor = false;
+            this.LBA2SS_btnCircle.Click += new System.EventHandler(this.LBA2SS_btnCircle_Click);
+            // 
+            // LBA2SS_btnOnOff
+            // 
+            this.LBA2SS_btnOnOff.Location = new System.Drawing.Point(128, 143);
+            this.LBA2SS_btnOnOff.Name = "LBA2SS_btnOnOff";
+            this.LBA2SS_btnOnOff.Size = new System.Drawing.Size(75, 23);
+            this.LBA2SS_btnOnOff.TabIndex = 15;
+            this.LBA2SS_btnOnOff.Text = "Off";
+            this.LBA2SS_btnOnOff.UseVisualStyleBackColor = true;
+            this.LBA2SS_btnOnOff.Click += new System.EventHandler(this.LBA2SS_btnOnOff_Click);
+            // 
+            // LBA2SS_lblSquare
+            // 
+            this.LBA2SS_lblSquare.AutoSize = true;
+            this.LBA2SS_lblSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblSquare.Location = new System.Drawing.Point(226, 111);
+            this.LBA2SS_lblSquare.Name = "LBA2SS_lblSquare";
+            this.LBA2SS_lblSquare.Size = new System.Drawing.Size(67, 20);
+            this.LBA2SS_lblSquare.TabIndex = 14;
+            this.LBA2SS_lblSquare.Text = "Square";
+            // 
+            // LBA2SS_lblTriangle
+            // 
+            this.LBA2SS_lblTriangle.AutoSize = true;
+            this.LBA2SS_lblTriangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblTriangle.Location = new System.Drawing.Point(124, 111);
+            this.LBA2SS_lblTriangle.Name = "LBA2SS_lblTriangle";
+            this.LBA2SS_lblTriangle.Size = new System.Drawing.Size(73, 20);
+            this.LBA2SS_lblTriangle.TabIndex = 13;
+            this.LBA2SS_lblTriangle.Text = "Triangle";
+            // 
+            // LBA2SS_lblCircle
+            // 
+            this.LBA2SS_lblCircle.AutoSize = true;
+            this.LBA2SS_lblCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblCircle.Location = new System.Drawing.Point(36, 111);
+            this.LBA2SS_lblCircle.Name = "LBA2SS_lblCircle";
+            this.LBA2SS_lblCircle.Size = new System.Drawing.Size(54, 20);
+            this.LBA2SS_lblCircle.TabIndex = 12;
+            this.LBA2SS_lblCircle.Text = "Circle";
+            // 
+            // tpLBA2Debug
+            // 
+            this.tpLBA2Debug.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Debug.Controls.Add(this.button1);
+            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarDisabled);
+            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarTunic);
+            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarWizard);
+            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_btnGetAreacode);
+            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_lblAreacodeTxt);
+            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_lblAreacode);
+            this.tpLBA2Debug.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Debug.Name = "tpLBA2Debug";
+            this.tpLBA2Debug.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLBA2Debug.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Debug.TabIndex = 7;
+            this.tpLBA2Debug.Text = "Debug";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(105, 56);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnLBA2InstantCarDisabled
+            // 
+            this.btnLBA2InstantCarDisabled.Location = new System.Drawing.Point(251, 149);
+            this.btnLBA2InstantCarDisabled.Name = "btnLBA2InstantCarDisabled";
+            this.btnLBA2InstantCarDisabled.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2InstantCarDisabled.TabIndex = 33;
+            this.btnLBA2InstantCarDisabled.Text = "Car: Off";
+            this.btnLBA2InstantCarDisabled.UseVisualStyleBackColor = true;
+            this.btnLBA2InstantCarDisabled.Click += new System.EventHandler(this.btnLBA2InstantCarDisabled_Click);
+            // 
+            // btnLBA2InstantCarTunic
+            // 
+            this.btnLBA2InstantCarTunic.Location = new System.Drawing.Point(129, 149);
+            this.btnLBA2InstantCarTunic.Name = "btnLBA2InstantCarTunic";
+            this.btnLBA2InstantCarTunic.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2InstantCarTunic.TabIndex = 32;
+            this.btnLBA2InstantCarTunic.Text = "Tunic Car";
+            this.btnLBA2InstantCarTunic.UseVisualStyleBackColor = true;
+            this.btnLBA2InstantCarTunic.Click += new System.EventHandler(this.btnLBA2InstantCarTunic_Click);
+            // 
+            // btnLBA2InstantCarWizard
+            // 
+            this.btnLBA2InstantCarWizard.Location = new System.Drawing.Point(9, 149);
+            this.btnLBA2InstantCarWizard.Name = "btnLBA2InstantCarWizard";
+            this.btnLBA2InstantCarWizard.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2InstantCarWizard.TabIndex = 31;
+            this.btnLBA2InstantCarWizard.Text = "Wizard Car";
+            this.btnLBA2InstantCarWizard.UseVisualStyleBackColor = true;
+            this.btnLBA2InstantCarWizard.Click += new System.EventHandler(this.btnLBA2InstantCar_Click);
+            // 
+            // LBA2Othr_btnGetAreacode
+            // 
+            this.LBA2Othr_btnGetAreacode.Location = new System.Drawing.Point(291, 3);
+            this.LBA2Othr_btnGetAreacode.Name = "LBA2Othr_btnGetAreacode";
+            this.LBA2Othr_btnGetAreacode.Size = new System.Drawing.Size(35, 23);
+            this.LBA2Othr_btnGetAreacode.TabIndex = 30;
+            this.LBA2Othr_btnGetAreacode.Text = "Get";
+            this.LBA2Othr_btnGetAreacode.UseVisualStyleBackColor = true;
+            this.LBA2Othr_btnGetAreacode.Click += new System.EventHandler(this.LBA2Debug_btnGetAreacode_Click);
+            // 
+            // LBA2Othr_lblAreacodeTxt
+            // 
+            this.LBA2Othr_lblAreacodeTxt.AutoSize = true;
+            this.LBA2Othr_lblAreacodeTxt.BackColor = System.Drawing.Color.White;
+            this.LBA2Othr_lblAreacodeTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LBA2Othr_lblAreacodeTxt.Location = new System.Drawing.Point(82, 5);
+            this.LBA2Othr_lblAreacodeTxt.MinimumSize = new System.Drawing.Size(203, 21);
+            this.LBA2Othr_lblAreacodeTxt.Name = "LBA2Othr_lblAreacodeTxt";
+            this.LBA2Othr_lblAreacodeTxt.Size = new System.Drawing.Size(203, 21);
+            this.LBA2Othr_lblAreacodeTxt.TabIndex = 29;
+            // 
+            // LBA2Othr_lblAreacode
+            // 
+            this.LBA2Othr_lblAreacode.AutoSize = true;
+            this.LBA2Othr_lblAreacode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblAreacode.Location = new System.Drawing.Point(6, 8);
+            this.LBA2Othr_lblAreacode.Name = "LBA2Othr_lblAreacode";
+            this.LBA2Othr_lblAreacode.Size = new System.Drawing.Size(61, 13);
+            this.LBA2Othr_lblAreacode.TabIndex = 28;
+            this.LBA2Othr_lblAreacode.Text = "Areacode";
+            // 
+            // tpLBA2Wizard
+            // 
+            this.tpLBA2Wizard.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Wizard.Controls.Add(this.btnGo);
+            this.tpLBA2Wizard.Controls.Add(this.txtWizardLocation);
+            this.tpLBA2Wizard.Controls.Add(this.rb95);
+            this.tpLBA2Wizard.Controls.Add(this.rb90);
+            this.tpLBA2Wizard.Controls.Add(this.rb35);
+            this.tpLBA2Wizard.Controls.Add(this.rb40);
+            this.tpLBA2Wizard.Controls.Add(this.rb45);
+            this.tpLBA2Wizard.Controls.Add(this.rb50);
+            this.tpLBA2Wizard.Controls.Add(this.rb55);
+            this.tpLBA2Wizard.Controls.Add(this.rb30);
+            this.tpLBA2Wizard.Controls.Add(this.rb85);
+            this.tpLBA2Wizard.Controls.Add(this.rb60);
+            this.tpLBA2Wizard.Controls.Add(this.rb20);
+            this.tpLBA2Wizard.Controls.Add(this.rb25);
+            this.tpLBA2Wizard.Controls.Add(this.rb0);
+            this.tpLBA2Wizard.Controls.Add(this.rb5);
+            this.tpLBA2Wizard.Controls.Add(this.rb10);
+            this.tpLBA2Wizard.Controls.Add(this.rb15);
+            this.tpLBA2Wizard.Controls.Add(this.rb70);
+            this.tpLBA2Wizard.Controls.Add(this.rb75);
+            this.tpLBA2Wizard.Controls.Add(this.rb80);
+            this.tpLBA2Wizard.Controls.Add(this.rb65);
+            this.tpLBA2Wizard.Controls.Add(this.pbWizardMap);
+            this.tpLBA2Wizard.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Wizard.Name = "tpLBA2Wizard";
+            this.tpLBA2Wizard.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Wizard.TabIndex = 8;
+            this.tpLBA2Wizard.Text = "Wizard";
+            // 
+            // rb95
+            // 
+            this.rb95.AutoSize = true;
+            this.rb95.BackColor = System.Drawing.Color.Transparent;
+            this.rb95.Location = new System.Drawing.Point(101, 111);
+            this.rb95.Name = "rb95";
+            this.rb95.Size = new System.Drawing.Size(14, 13);
+            this.rb95.TabIndex = 20;
+            this.rb95.TabStop = true;
+            this.rb95.UseVisualStyleBackColor = false;
+            // 
+            // rb90
+            // 
+            this.rb90.AutoSize = true;
+            this.rb90.BackColor = System.Drawing.Color.Transparent;
+            this.rb90.Location = new System.Drawing.Point(124, 96);
+            this.rb90.Name = "rb90";
+            this.rb90.Size = new System.Drawing.Size(14, 13);
+            this.rb90.TabIndex = 19;
+            this.rb90.TabStop = true;
+            this.rb90.UseVisualStyleBackColor = false;
+            // 
+            // rb35
+            // 
+            this.rb35.AutoSize = true;
+            this.rb35.BackColor = System.Drawing.Color.Transparent;
+            this.rb35.Location = new System.Drawing.Point(134, 157);
+            this.rb35.Name = "rb35";
+            this.rb35.Size = new System.Drawing.Size(14, 13);
+            this.rb35.TabIndex = 18;
+            this.rb35.TabStop = true;
+            this.rb35.UseVisualStyleBackColor = false;
+            // 
+            // rb40
+            // 
+            this.rb40.AutoSize = true;
+            this.rb40.BackColor = System.Drawing.Color.Transparent;
+            this.rb40.Location = new System.Drawing.Point(72, 160);
+            this.rb40.Name = "rb40";
+            this.rb40.Size = new System.Drawing.Size(14, 13);
+            this.rb40.TabIndex = 17;
+            this.rb40.TabStop = true;
+            this.rb40.UseVisualStyleBackColor = false;
+            // 
+            // rb45
+            // 
+            this.rb45.AutoSize = true;
+            this.rb45.BackColor = System.Drawing.Color.Transparent;
+            this.rb45.Location = new System.Drawing.Point(48, 135);
+            this.rb45.Name = "rb45";
+            this.rb45.Size = new System.Drawing.Size(14, 13);
+            this.rb45.TabIndex = 16;
+            this.rb45.TabStop = true;
+            this.rb45.UseVisualStyleBackColor = false;
+            // 
+            // rb50
+            // 
+            this.rb50.AutoSize = true;
+            this.rb50.BackColor = System.Drawing.Color.Transparent;
+            this.rb50.Location = new System.Drawing.Point(75, 99);
+            this.rb50.Name = "rb50";
+            this.rb50.Size = new System.Drawing.Size(14, 13);
+            this.rb50.TabIndex = 15;
+            this.rb50.TabStop = true;
+            this.rb50.UseVisualStyleBackColor = false;
+            // 
+            // rb55
+            // 
+            this.rb55.AutoSize = true;
+            this.rb55.BackColor = System.Drawing.Color.Transparent;
+            this.rb55.Location = new System.Drawing.Point(25, 73);
+            this.rb55.Name = "rb55";
+            this.rb55.Size = new System.Drawing.Size(14, 13);
+            this.rb55.TabIndex = 14;
+            this.rb55.TabStop = true;
+            this.rb55.UseVisualStyleBackColor = false;
+            // 
+            // rb30
+            // 
+            this.rb30.AutoSize = true;
+            this.rb30.BackColor = System.Drawing.Color.Transparent;
+            this.rb30.Location = new System.Drawing.Point(196, 128);
+            this.rb30.Name = "rb30";
+            this.rb30.Size = new System.Drawing.Size(14, 13);
+            this.rb30.TabIndex = 13;
+            this.rb30.TabStop = true;
+            this.rb30.UseVisualStyleBackColor = false;
+            // 
+            // rb85
+            // 
+            this.rb85.AutoSize = true;
+            this.rb85.BackColor = System.Drawing.Color.Transparent;
+            this.rb85.Location = new System.Drawing.Point(138, 71);
+            this.rb85.Name = "rb85";
+            this.rb85.Size = new System.Drawing.Size(14, 13);
+            this.rb85.TabIndex = 12;
+            this.rb85.TabStop = true;
+            this.rb85.UseVisualStyleBackColor = false;
+            // 
+            // rb60
+            // 
+            this.rb60.AutoSize = true;
+            this.rb60.BackColor = System.Drawing.Color.Transparent;
+            this.rb60.Location = new System.Drawing.Point(90, 47);
+            this.rb60.Name = "rb60";
+            this.rb60.Size = new System.Drawing.Size(14, 13);
+            this.rb60.TabIndex = 11;
+            this.rb60.TabStop = true;
+            this.rb60.UseVisualStyleBackColor = false;
+            // 
+            // rb20
+            // 
+            this.rb20.AutoSize = true;
+            this.rb20.BackColor = System.Drawing.Color.Transparent;
+            this.rb20.Location = new System.Drawing.Point(180, 70);
+            this.rb20.Name = "rb20";
+            this.rb20.Size = new System.Drawing.Size(14, 13);
+            this.rb20.TabIndex = 10;
+            this.rb20.TabStop = true;
+            this.rb20.UseVisualStyleBackColor = false;
+            // 
+            // rb25
+            // 
+            this.rb25.AutoSize = true;
+            this.rb25.BackColor = System.Drawing.Color.Transparent;
+            this.rb25.Location = new System.Drawing.Point(167, 96);
+            this.rb25.Name = "rb25";
+            this.rb25.Size = new System.Drawing.Size(14, 13);
+            this.rb25.TabIndex = 9;
+            this.rb25.TabStop = true;
+            this.rb25.UseVisualStyleBackColor = false;
+            // 
+            // rb0
+            // 
+            this.rb0.AutoSize = true;
+            this.rb0.BackColor = System.Drawing.Color.Transparent;
+            this.rb0.Location = new System.Drawing.Point(239, -1);
+            this.rb0.Name = "rb0";
+            this.rb0.Size = new System.Drawing.Size(14, 13);
+            this.rb0.TabIndex = 8;
+            this.rb0.TabStop = true;
+            this.rb0.UseVisualStyleBackColor = false;
+            // 
+            // rb5
+            // 
+            this.rb5.AutoSize = true;
+            this.rb5.BackColor = System.Drawing.Color.Transparent;
+            this.rb5.Location = new System.Drawing.Point(290, 3);
+            this.rb5.Name = "rb5";
+            this.rb5.Size = new System.Drawing.Size(14, 13);
+            this.rb5.TabIndex = 7;
+            this.rb5.TabStop = true;
+            this.rb5.UseVisualStyleBackColor = false;
+            // 
+            // rb10
+            // 
+            this.rb10.AutoSize = true;
+            this.rb10.BackColor = System.Drawing.Color.Transparent;
+            this.rb10.Location = new System.Drawing.Point(296, 44);
+            this.rb10.Name = "rb10";
+            this.rb10.Size = new System.Drawing.Size(14, 13);
+            this.rb10.TabIndex = 6;
+            this.rb10.TabStop = true;
+            this.rb10.UseVisualStyleBackColor = false;
+            // 
+            // rb15
+            // 
+            this.rb15.AutoSize = true;
+            this.rb15.BackColor = System.Drawing.Color.Transparent;
+            this.rb15.Location = new System.Drawing.Point(239, 60);
+            this.rb15.Name = "rb15";
+            this.rb15.Size = new System.Drawing.Size(14, 13);
+            this.rb15.TabIndex = 5;
+            this.rb15.TabStop = true;
+            this.rb15.UseVisualStyleBackColor = false;
+            // 
+            // rb70
+            // 
+            this.rb70.AutoSize = true;
+            this.rb70.BackColor = System.Drawing.Color.Transparent;
+            this.rb70.Location = new System.Drawing.Point(164, 24);
+            this.rb70.Name = "rb70";
+            this.rb70.Size = new System.Drawing.Size(14, 13);
+            this.rb70.TabIndex = 4;
+            this.rb70.TabStop = true;
+            this.rb70.UseVisualStyleBackColor = false;
+            // 
+            // rb75
+            // 
+            this.rb75.AutoSize = true;
+            this.rb75.BackColor = System.Drawing.Color.Transparent;
+            this.rb75.Location = new System.Drawing.Point(196, 14);
+            this.rb75.Name = "rb75";
+            this.rb75.Size = new System.Drawing.Size(14, 13);
+            this.rb75.TabIndex = 3;
+            this.rb75.TabStop = true;
+            this.rb75.UseVisualStyleBackColor = false;
+            // 
+            // rb80
+            // 
+            this.rb80.AutoSize = true;
+            this.rb80.BackColor = System.Drawing.Color.Transparent;
+            this.rb80.Location = new System.Drawing.Point(211, 0);
+            this.rb80.Name = "rb80";
+            this.rb80.Size = new System.Drawing.Size(14, 13);
+            this.rb80.TabIndex = 2;
+            this.rb80.TabStop = true;
+            this.rb80.UseVisualStyleBackColor = false;
+            // 
+            // rb65
+            // 
+            this.rb65.AutoSize = true;
+            this.rb65.BackColor = System.Drawing.Color.Transparent;
+            this.rb65.Location = new System.Drawing.Point(105, 30);
+            this.rb65.Name = "rb65";
+            this.rb65.Size = new System.Drawing.Size(14, 13);
+            this.rb65.TabIndex = 1;
+            this.rb65.TabStop = true;
+            this.rb65.UseVisualStyleBackColor = false;
+            // 
+            // pbWizardMap
+            // 
+            this.pbWizardMap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWizardMap.BackgroundImage")));
+            this.pbWizardMap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbWizardMap.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWizardMap.InitialImage")));
+            this.pbWizardMap.Location = new System.Drawing.Point(0, 0);
+            this.pbWizardMap.Name = "pbWizardMap";
+            this.pbWizardMap.Size = new System.Drawing.Size(331, 178);
+            this.pbWizardMap.TabIndex = 0;
+            this.pbWizardMap.TabStop = false;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2322,22 +2677,23 @@
             this.tmrHeightLock.Interval = 50;
             this.tmrHeightLock.Tick += new System.EventHandler(this.LBA1Tel_TmrHeightLock_Tick);
             // 
-            // txtLBA2LocationFacing
+            // txtWizardLocation
             // 
-            this.txtLBA2LocationFacing.Location = new System.Drawing.Point(228, 40);
-            this.txtLBA2LocationFacing.Name = "txtLBA2LocationFacing";
-            this.txtLBA2LocationFacing.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2LocationFacing.TabIndex = 11;
+            this.txtWizardLocation.Location = new System.Drawing.Point(0, -1);
+            this.txtWizardLocation.Name = "txtWizardLocation";
+            this.txtWizardLocation.Size = new System.Drawing.Size(39, 20);
+            this.txtWizardLocation.TabIndex = 21;
+            this.txtWizardLocation.Text = "56";
             // 
-            // lblLBA2LocationFacing
+            // btnGo
             // 
-            this.lblLBA2LocationFacing.AutoSize = true;
-            this.lblLBA2LocationFacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA2LocationFacing.Location = new System.Drawing.Point(162, 43);
-            this.lblLBA2LocationFacing.Name = "lblLBA2LocationFacing";
-            this.lblLBA2LocationFacing.Size = new System.Drawing.Size(45, 13);
-            this.lblLBA2LocationFacing.TabIndex = 12;
-            this.lblLBA2LocationFacing.Text = "Facing";
+            this.btnGo.Location = new System.Drawing.Point(0, 19);
+            this.btnGo.Name = "btnGo";
+            this.btnGo.Size = new System.Drawing.Size(39, 23);
+            this.btnGo.TabIndex = 22;
+            this.btnGo.Text = "Go";
+            this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // frmTrainer
             // 
@@ -2373,16 +2729,19 @@
             this.tpLBA2Twinsen.PerformLayout();
             this.tpLBA2Other.ResumeLayout(false);
             this.tpLBA2Other.PerformLayout();
-            this.tpLBA2Location.ResumeLayout(false);
-            this.tpLBA2Location.PerformLayout();
+            this.tpHyperCar.ResumeLayout(false);
+            this.LBA2HyperCar_panel.ResumeLayout(false);
+            this.LBA2HyperCar_panel.PerformLayout();
+            this.tpLBA2Teleport.ResumeLayout(false);
+            this.tpLBA2Teleport.PerformLayout();
+            this.LBA2Flying.ResumeLayout(false);
             this.tpLBA2ShittyShot.ResumeLayout(false);
             this.tpLBA2ShittyShot.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tpHyperCar.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.tpLBA2Debug.ResumeLayout(false);
+            this.tpLBA2Debug.PerformLayout();
+            this.tpLBA2Wizard.ResumeLayout(false);
+            this.tpLBA2Wizard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -2496,7 +2855,7 @@
         private System.Windows.Forms.ToolStripMenuItem lBA2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LBA2GodModeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem infiniteMagicToolStripMenuItem;
-        private System.Windows.Forms.TabPage tpLBA2Location;
+        private System.Windows.Forms.TabPage tpLBA2Teleport;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblLBA2LocationYPos;
         private System.Windows.Forms.Label lblLBA2LocationZPos;
@@ -2506,8 +2865,7 @@
         private System.Windows.Forms.TextBox txtLBA2LocationXPos;
         private System.Windows.Forms.Label lblLBA2LocationXPos;
         private System.Windows.Forms.Button btnLBA2LocationSet;
-        private System.Windows.Forms.Button btnLBA2LocationScan;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLBA2TeleportScan;
         private System.Windows.Forms.TabPage tpLBA2ShittyShot;
         private System.Windows.Forms.Label LBA2SS_lblInstruct;
         private System.Windows.Forms.Button LBA2SS_btnSquare;
@@ -2517,22 +2875,13 @@
         private System.Windows.Forms.Label LBA2SS_lblSquare;
         private System.Windows.Forms.Label LBA2SS_lblTriangle;
         private System.Windows.Forms.Label LBA2SS_lblCircle;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage LBA2Flying;
         private LBAFlying.Flying flying1;
         private System.Windows.Forms.TabPage tpLBA2Other;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TabPage tabPage3;
         private LBAFlying.Flying flying2;
         private System.Windows.Forms.Button LBA1Tel_Update;
-        private System.Windows.Forms.Label lblFruitMachineCount;
-        private System.Windows.Forms.Button btnFruitMachineStart;
-        private System.Windows.Forms.Button btnCarSpeed;
-        private System.Windows.Forms.TextBox txtLBA2CarSpeed;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tpHyperCar;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel LBA2HyperCar_panel;
         private System.Windows.Forms.Label lblHyperCarGear5;
         private System.Windows.Forms.TextBox txtHyperCarGear5;
         private System.Windows.Forms.Label lblHyperCarGear4;
@@ -2554,13 +2903,9 @@
         private System.Windows.Forms.TextBox txtLBA2HyperCarTurbo;
         private System.Windows.Forms.Label lblLBA2HyperCarTurbo;
         private System.Windows.Forms.Label lblHyperCarButtons;
-        private System.Windows.Forms.Button btnLBA2InstantCarWizard;
-        private System.Windows.Forms.Button btnLBA2InstantCarTunic;
-        private System.Windows.Forms.Button btnLBA2InstantCarDisabled;
         private System.Windows.Forms.TextBox txtHyperCarGearReverse;
         private System.Windows.Forms.Label lblHyperCarGearReverse;
         private System.Windows.Forms.Button bPitLimit;
-        private System.Windows.Forms.Label lblOtherSkin;
         private System.Windows.Forms.ComboBox LBA1Othr_cboLBA1Skin;
         private System.Windows.Forms.Label lblLBASkin;
         private System.Windows.Forms.CheckBox LBA1Othr_chkChapterValue;
@@ -2587,13 +2932,53 @@
         private System.Windows.Forms.ComboBox LBA2Othr_cboSkins;
         private System.Windows.Forms.Label LBA2Othr_lblSelectSkin;
         private System.Windows.Forms.CheckBox LBA2Othr_chkWeapon;
-        private System.Windows.Forms.ComboBox LBA2Othr_Weapon;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboWeapon;
         private System.Windows.Forms.Label LBA2Othr_lblWeapon;
-        private System.Windows.Forms.Label LBA2Othr_lblAreacode;
-        private System.Windows.Forms.Button LBA2Othr_btnGetAreacode;
-        private System.Windows.Forms.Label LBA2Othr_lblAreacodeTxt;
         private System.Windows.Forms.Label lblLBA2LocationFacing;
         private System.Windows.Forms.TextBox txtLBA2LocationFacing;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkBehaviourValue;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboBehaviour;
+        private System.Windows.Forms.Label LBA2Othr_lblBehaviour;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboMisc;
+        private System.Windows.Forms.Label LBA2Othr_lblMisc;
+        private System.Windows.Forms.TabPage tpLBA2Debug;
+        private System.Windows.Forms.Button LBA2Othr_btnGetAreacode;
+        private System.Windows.Forms.Label LBA2Othr_lblAreacodeTxt;
+        private System.Windows.Forms.Label LBA2Othr_lblAreacode;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkMisc;
+        private System.Windows.Forms.Button btnLBA2InstantCarDisabled;
+        private System.Windows.Forms.Button btnLBA2InstantCarTunic;
+        private System.Windows.Forms.Button btnLBA2InstantCarWizard;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkSubquest;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboSubquest;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboQuest;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage tpLBA2Wizard;
+        private System.Windows.Forms.PictureBox pbWizardMap;
+        private System.Windows.Forms.RadioButton rb0;
+        private System.Windows.Forms.RadioButton rb5;
+        private System.Windows.Forms.RadioButton rb10;
+        private System.Windows.Forms.RadioButton rb15;
+        private System.Windows.Forms.RadioButton rb20;
+        private System.Windows.Forms.RadioButton rb25;
+        private System.Windows.Forms.RadioButton rb30;
+        private System.Windows.Forms.RadioButton rb35;
+        private System.Windows.Forms.RadioButton rb40;
+        private System.Windows.Forms.RadioButton rb45;
+        private System.Windows.Forms.RadioButton rb50;
+        private System.Windows.Forms.RadioButton rb55;
+        private System.Windows.Forms.RadioButton rb60;
+        private System.Windows.Forms.RadioButton rb65;
+        private System.Windows.Forms.RadioButton rb70;
+        private System.Windows.Forms.RadioButton rb75;
+        private System.Windows.Forms.RadioButton rb80;
+        private System.Windows.Forms.RadioButton rb85;
+        private System.Windows.Forms.RadioButton rb90;
+        private System.Windows.Forms.RadioButton rb95;
+        private System.Windows.Forms.Button btnGo;
+        private System.Windows.Forms.TextBox txtWizardLocation;
     }
 }
 

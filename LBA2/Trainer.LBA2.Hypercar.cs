@@ -11,9 +11,9 @@ namespace LBATrainer
     {
         const short LBA2HCBOTTOMGEARLIMIT = 380; //3800
         const short LBA2HCTOPGEARLIMIT = 6000; //60000
-        const int LBA2HCREVERSESPEEDCAPOFFSET = -0x58EAB;
-        const int LBA2HCFORWARDSPEEDCAPOFFSET = -0x58E9B;
-        const int LBA2HCCURRENTSPEEDOFFSET = 0x52B9B;
+        //const int LBA2HCREVERSESPEEDCAPOFFSET = -0x58EAB;
+        //const int LBA2HCFORWARDSPEEDCAPOFFSET = -0x58E9B;
+        //const int LBA2HCCURRENTSPEEDOFFSET = 0x52B9B;
         private HotKey LBA2HyperCar_hkZ;
         private HotKey LBA2HyperCar_hkX;
         private HotKey LBA2HyperCar_hkC;
@@ -27,13 +27,13 @@ namespace LBATrainer
                 speed -= 500;
                 speed = 3800 <= speed ? speed : 0;
                 memRoutines.WriteVal(0x52B9B, (ushort)speed, 2);*/
-                memRoutines.WriteVal(LBA2HCCURRENTSPEEDOFFSET, 0, 2);
+                memRoutines.WriteVal(LBA2_HCCURRENTSPEEDOFFSET, 0, 2);
                 return;
             }
             if (Keys.V == k)
             {
                 int turbo = getInt(txtLBA2HyperCarTurbo.Text) <= LBA2HCTOPGEARLIMIT ? getInt(txtLBA2HyperCarTurbo.Text) : LBA2HCTOPGEARLIMIT;
-                memRoutines.WriteVal(LBA2HCCURRENTSPEEDOFFSET, (ushort)(memRoutines.readVal(LBA2HCCURRENTSPEEDOFFSET, 2) + (getInt(txtLBA2HyperCarTurbo.Text)*10)), 2);
+                memRoutines.WriteVal(LBA2_HCCURRENTSPEEDOFFSET, (ushort)(memRoutines.readVal(LBA2_HCCURRENTSPEEDOFFSET, 2) + (getInt(txtLBA2HyperCarTurbo.Text)*10)), 2);
                 return;
             }
             if (Keys.X == k)
@@ -81,7 +81,7 @@ namespace LBATrainer
             }
             if (LBA2HCBOTTOMGEARLIMIT > speed) speed = LBA2HCBOTTOMGEARLIMIT;
             if (LBA2HCTOPGEARLIMIT < speed) speed = LBA2HCTOPGEARLIMIT;
-            memRoutines.WriteVal(LBA2HCFORWARDSPEEDCAPOFFSET, (ushort)(speed*10), 2);
+            memRoutines.WriteVal(LBA2_HCFORWARDSPEEDCAPOFFSET, (ushort)(speed*10), 2);
         }
         private void LBA2HyperCar_registerHotKeys()
         {
@@ -114,7 +114,7 @@ namespace LBATrainer
                 LBA2HyperCar_registerHotKeys();
                 rbLBA2HyperCar1.Checked = true;
                 setGear(); 
-                memRoutines.WriteVal(LBA2HCREVERSESPEEDCAPOFFSET, (ushort)(getInt(txtHyperCarGearReverse.Text) * 10), 2);
+                memRoutines.WriteVal(LBA2_HCREVERSESPEEDCAP, (ushort)(getInt(txtHyperCarGearReverse.Text) * 10), 2);
             }
             else
             {
@@ -123,7 +123,7 @@ namespace LBATrainer
                 //memRoutines.WriteVal(-0x58e9B, 3800, 2);
                 gear = 1;
                 setGear();
-                memRoutines.WriteVal(LBA2HCFORWARDSPEEDCAPOFFSET, 63535, 2);
+                memRoutines.WriteVal(LBA2_HCFORWARDSPEEDCAPOFFSET, 63535, 2);
             }
 
             btnHyperCarOnOff.Text  = null == LBA2HyperCar_hkX ? "Off": "On";
@@ -157,12 +157,11 @@ namespace LBATrainer
             setGear();
         }
 
-
         Timer tmrLBA2HyperCarSpeedometer;
 
         private void tmrLBA2HyperCarSpeedometer_Tick(object sender, EventArgs e)
         {
-            lblHyperCarActualSpeed.Text = (memRoutines.readVal(0x52B9B, 2)/10).ToString();
+            lblHyperCarActualSpeed.Text = (memRoutines.readVal(LBA2_HCCURRENTSPEEDOFFSET, 2)/10).ToString();
         }
         private void toggleSpeedometer()
         {
@@ -181,7 +180,7 @@ namespace LBATrainer
         }
         private void bPitLimit_Click(object sender, EventArgs e)
         {
-            memRoutines.WriteVal(LBA2HCFORWARDSPEEDCAPOFFSET, 200, 2);
+            memRoutines.WriteVal(LBA2_HCFORWARDSPEEDCAPOFFSET, 200, 2);
         }
     }
 }
