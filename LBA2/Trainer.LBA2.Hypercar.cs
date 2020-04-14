@@ -123,7 +123,7 @@ namespace LBATrainer
                 //memRoutines.WriteVal(-0x58e9B, 3800, 2);
                 gear = 1;
                 setGear();
-                memRoutines.WriteVal(LBA2_HCFORWARDSPEEDCAPOFFSET, 63535, 2);
+                memRoutines.WriteVal(LBA2_HCFORWARDSPEEDCAPOFFSET, 3800, 2);
             }
 
             btnHyperCarOnOff.Text  = null == LBA2HyperCar_hkX ? "Off": "On";
@@ -157,25 +157,20 @@ namespace LBATrainer
             setGear();
         }
 
-        Timer tmrLBA2HyperCarSpeedometer;
-
-        private void tmrLBA2HyperCarSpeedometer_Tick(object sender, EventArgs e)
+        private void LBA2HyperCarSpeedometer(ushort val)
         {
-            lblHyperCarActualSpeed.Text = (memRoutines.readVal(LBA2_HCCURRENTSPEEDOFFSET, 2)/10).ToString();
+            lblHyperCarActualSpeed.Text = (((short)val)/10).ToString();
         }
         private void toggleSpeedometer()
         {
-            if (null == tmrLBA2HyperCarSpeedometer)
+            //If doesn't exist add, else remove
+            if (!tgi.Contains(LBA2_HCCURRENTSPEEDOFFSET))
             {
-                tmrLBA2HyperCarSpeedometer = new Timer();
-                tmrLBA2HyperCarSpeedometer.Interval = 10;
-                tmrLBA2HyperCarSpeedometer.Tick += tmrLBA2HyperCarSpeedometer_Tick;
-                tmrLBA2HyperCarSpeedometer.Start();
+                tgi.AddItem(LBA2HyperCarSpeedometer, LBA2_HCCURRENTSPEEDOFFSET, 2);
             }
             else
             {
-                tmrLBA2HyperCarSpeedometer.Stop();
-                tmrLBA2HyperCarSpeedometer = null;
+                tgi.RemoveIfExists(LBA2_HCCURRENTSPEEDOFFSET);
             }
         }
         private void bPitLimit_Click(object sender, EventArgs e)

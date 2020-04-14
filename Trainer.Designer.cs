@@ -213,7 +213,6 @@
             this.LBA2SS_lblTriangle = new System.Windows.Forms.Label();
             this.LBA2SS_lblCircle = new System.Windows.Forms.Label();
             this.tpLBA2Debug = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnLBA2InstantCarDisabled = new System.Windows.Forms.Button();
             this.btnLBA2InstantCarTunic = new System.Windows.Forms.Button();
             this.btnLBA2InstantCarWizard = new System.Windows.Forms.Button();
@@ -221,6 +220,8 @@
             this.LBA2Othr_lblAreacodeTxt = new System.Windows.Forms.Label();
             this.LBA2Othr_lblAreacode = new System.Windows.Forms.Label();
             this.tpLBA2Wizard = new System.Windows.Forms.TabPage();
+            this.btnGo = new System.Windows.Forms.Button();
+            this.txtWizardLocation = new System.Windows.Forms.TextBox();
             this.rb95 = new System.Windows.Forms.RadioButton();
             this.rb90 = new System.Windows.Forms.RadioButton();
             this.rb35 = new System.Windows.Forms.RadioButton();
@@ -256,8 +257,6 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
-            this.txtWizardLocation = new System.Windows.Forms.TextBox();
-            this.btnGo = new System.Windows.Forms.Button();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -2224,7 +2223,6 @@
             // tpLBA2Debug
             // 
             this.tpLBA2Debug.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2Debug.Controls.Add(this.button1);
             this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarDisabled);
             this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarTunic);
             this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarWizard);
@@ -2237,16 +2235,6 @@
             this.tpLBA2Debug.Size = new System.Drawing.Size(334, 178);
             this.tpLBA2Debug.TabIndex = 7;
             this.tpLBA2Debug.Text = "Debug";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(105, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnLBA2InstantCarDisabled
             // 
@@ -2340,6 +2328,24 @@
             this.tpLBA2Wizard.Size = new System.Drawing.Size(334, 178);
             this.tpLBA2Wizard.TabIndex = 8;
             this.tpLBA2Wizard.Text = "Wizard";
+            // 
+            // btnGo
+            // 
+            this.btnGo.Location = new System.Drawing.Point(0, 19);
+            this.btnGo.Name = "btnGo";
+            this.btnGo.Size = new System.Drawing.Size(39, 23);
+            this.btnGo.TabIndex = 22;
+            this.btnGo.Text = "Go";
+            this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
+            // 
+            // txtWizardLocation
+            // 
+            this.txtWizardLocation.Location = new System.Drawing.Point(0, -1);
+            this.txtWizardLocation.Name = "txtWizardLocation";
+            this.txtWizardLocation.Size = new System.Drawing.Size(39, 20);
+            this.txtWizardLocation.TabIndex = 21;
+            this.txtWizardLocation.Text = "56";
             // 
             // rb95
             // 
@@ -2565,7 +2571,6 @@
             // 
             this.pbWizardMap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWizardMap.BackgroundImage")));
             this.pbWizardMap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbWizardMap.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWizardMap.InitialImage")));
             this.pbWizardMap.Location = new System.Drawing.Point(0, 0);
             this.pbWizardMap.Name = "pbWizardMap";
             this.pbWizardMap.Size = new System.Drawing.Size(331, 178);
@@ -2676,24 +2681,6 @@
             // 
             this.tmrHeightLock.Interval = 50;
             this.tmrHeightLock.Tick += new System.EventHandler(this.LBA1Tel_TmrHeightLock_Tick);
-            // 
-            // txtWizardLocation
-            // 
-            this.txtWizardLocation.Location = new System.Drawing.Point(0, -1);
-            this.txtWizardLocation.Name = "txtWizardLocation";
-            this.txtWizardLocation.Size = new System.Drawing.Size(39, 20);
-            this.txtWizardLocation.TabIndex = 21;
-            this.txtWizardLocation.Text = "56";
-            // 
-            // btnGo
-            // 
-            this.btnGo.Location = new System.Drawing.Point(0, 19);
-            this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(39, 23);
-            this.btnGo.TabIndex = 22;
-            this.btnGo.Text = "Go";
-            this.btnGo.UseVisualStyleBackColor = true;
-            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // frmTrainer
             // 
@@ -2954,7 +2941,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox LBA2Othr_cboQuest;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage tpLBA2Wizard;
         private System.Windows.Forms.PictureBox pbWizardMap;
         private System.Windows.Forms.RadioButton rb0;

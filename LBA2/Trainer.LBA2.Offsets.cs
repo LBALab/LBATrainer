@@ -17,10 +17,9 @@ namespace LBATrainer
         const int LBA2_MAGICLEVEL = 0x57DFF;
         const int LBA2_MAGICPOINTS = 0x57E00;
         const int LBA2_HEALTH = 0x57F29;
+        const int LBA2_WIZARD_POSITION = 0x57C93;
 
-
-        const int FERRY_TICKET = 0x57C0D;
-        //const int AFTER_FERRY_TICKET = 0x57BAC;
-        const int SHOWN_FERRY_TICKET = 0x78743;
+        const int LBA2_FERRY_TICKET = 0x57C0D;
+        const int LBA2_SHOWN_FERRY_TICKET = 0x78743;
     }
 }

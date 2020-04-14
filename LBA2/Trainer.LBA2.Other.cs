@@ -149,16 +149,16 @@ namespace LBATrainer
             if (freeFerry)
             {
                 if (null == tsiLBA2) tsiLBA2 = new oTimerSetItems(oTimerSetItems.LBAVersion.Two);
-                tsiLBA2.AddItem(FERRY_TICKET, 1, 1);
+                tsiLBA2.AddItem(LBA2_FERRY_TICKET, 1, 1);
                 //tsiLBA2.AddItem(AFTER_FERRY_TICKET, 1, 1);
-                memRoutines.WriteVal(SHOWN_FERRY_TICKET, 1, 1);
+                memRoutines.WriteVal(LBA2_SHOWN_FERRY_TICKET, 1, 1);
             }
             else
             {
                 if (null == tsiLBA2) return;
-                tsiLBA2.RemoveIfExists(FERRY_TICKET);
+                tsiLBA2.RemoveIfExists(LBA2_FERRY_TICKET);
                 //tsiLBA2.RemoveIfExists(AFTER_FERRY_TICKET);
-                tsiLBA2.RemoveIfExists(SHOWN_FERRY_TICKET);
+                tsiLBA2.RemoveIfExists(LBA2_SHOWN_FERRY_TICKET);
             }
         }
         /*

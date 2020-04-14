@@ -13,52 +13,50 @@ namespace LBATrainer
         byte LBAVer;
         Timer tmr = new Timer();
         Mem memory = new Mem();
-        List<Item> itemList = new List<Item>();
+        List<ActionItem> itemList = new List<ActionItem>();
         private int interval = 50;
+
+        //Func x;
+        //Func<string, string> myFunction;
         public enum LBAVersion { One = 1, Two = 2 }
 
-        public oTimerGetItems(LBAVersion lbaVer)
+        public oTimerGetItems()
         {
-            objectLoad(lbaVer, interval);
-            //tmr.Interval = 50;
-            //tmr.Tick += timer_Tick;
+            objectLoad(interval);
         }
 
-        public oTimerGetItems(LBAVersion lbaver, int interval)
+        public oTimerGetItems(int interval)
         {
             this.interval = interval;
-            objectLoad(lbaver, interval);
+            objectLoad(interval);
         }
 
-        private void objectLoad(LBAVersion lbaVer, int interval)
+        private void objectLoad(int interval)
         {
-            LBAVer = (byte)lbaVer;
             tmr.Interval = interval;
             tmr.Tick += timer_Tick;
         }
 
-        public void AddItem(Item item)
+        public void AddItem(Action<ushort> act, Item item)
         {
-            itemAdded(item);
+            itemAdded(new ActionItem(act, item));
         }
 
-        public void AddItem(uint memoryOffset, ushort maxVal, ushort size)
+        public void AddItem(Action<ushort> act, uint memoryOffset, ushort size)
         {
-            Item item = new Item();
-            item.lbaVersion = LBAVer;
-            item.maxVal = maxVal;
-            item.minVal = maxVal;
-            item.memoryOffset = memoryOffset;
-            item.name = memoryOffset.ToString();
-            item.size = size;
-            item.type = 1;
-            itemAdded(item);
+
+            itemAdded(new ActionItem(act, new Item(memoryOffset, size)));
         }
 
-        private void itemAdded(Item item)
+        public void AddItem(ActionItem ai)
+        {
+            itemAdded(ai);
+        }
+
+        private void itemAdded(ActionItem ai)
         {
             //Handle event, start timer if not already active i.e. if first item added
-            itemList.Add(item);
+            itemList.Add(ai);
             if (1 == itemList.Count())
             {
                 StartTimer();
@@ -77,7 +75,10 @@ namespace LBATrainer
         private void timer_Tick(object sender, EventArgs e)
         {
             for (int i = 0; i < itemList.Count; i++)
-                memory.readAddress(itemList[i].lbaVersion, itemList[i].memoryOffset, itemList[i].maxVal);
+            {
+                ushort val = (ushort)memory.readVal(itemList[i].item.memoryOffset, itemList[i].item.size);
+                itemList[i].act(val);
+            }
         }
 
         public bool IsEmpty()
@@ -88,7 +89,7 @@ namespace LBATrainer
         public bool Contains(uint memoryOffSet)
         {
             for (int i = 0; i < itemList.Count; i++)
-                if (itemList[i].memoryOffset == memoryOffSet)
+                if (itemList[i].item.memoryOffset == memoryOffSet)
                     return true;
             return false;
         }
@@ -98,7 +99,7 @@ namespace LBATrainer
         {
             bool removed = false;
             for (int i = 0; i < itemList.Count; i++)
-                if (itemList[i].memoryOffset == memoryOffset)
+                if (itemList[i].item.memoryOffset == memoryOffset)
                 {
                     itemList.RemoveAt(i);
                     removed = true;
@@ -111,12 +112,24 @@ namespace LBATrainer
         public bool UpdateItem(uint memoryOffset, ushort newVal)
         {
             for (int i = 0; i < itemList.Count; i++)
-                if (itemList[i].memoryOffset == memoryOffset)
+                if (itemList[i].item.memoryOffset == memoryOffset)
                 {
-                    itemList[i].maxVal = newVal;
+                    itemList[i].item.maxVal = newVal;
                     return true;
                 }
             return false;
+        }
+
+        public class ActionItem
+        {
+            public Item item;
+            public Action<ushort> act;
+            public ActionItem() { }
+            public ActionItem(Action<ushort> act, Item item)
+            {
+                this.item = item;
+                this.act = act;
+            }
         }
     }
 }

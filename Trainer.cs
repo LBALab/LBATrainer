@@ -24,12 +24,14 @@ namespace LBATrainer
         private Items items;
         private Mem memRoutines;
         oTimerSetItems tsi;
+        oTimerGetItems tgi;
         public frmTrainer()
         {
             InitializeComponent();
             scan(LBA_ONE);
             SetDoubleBuffered(tcLBAVersion);
             tsi = new oTimerSetItems(oTimerSetItems.LBAVersion.One);
+            tgi = new oTimerGetItems();
         }
 
         #region General
@@ -157,31 +159,21 @@ namespace LBATrainer
         }
         #endregion
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            LBA2Quests lBA2Quests = new LBA2Quests(getLBAFilesPath(2));
-        }
-
-        Timer wizard;
         private void btnGo_Click(object sender, EventArgs e)
-        {   
-            //Set up Timer
-            if (null == wizard || !wizard.Enabled)
-            {
-                wizard = new Timer();
-                wizard.Interval = 500; //Tick every half a second
-                wizard.Tick += wizard_Tick;
-                wizard.Start();
-            }
+        {
+            if (null == tgi) tgi = new oTimerGetItems();
+
+            //If doesn't exist add else remove
+            if (!tgi.Contains(LBA2_WIZARD_POSITION))
+                tgi.AddItem(updateWizardPos, new Item(LBA2_WIZARD_POSITION, 1));
             else
-            {
-                wizard.Enabled = false;
-                wizard = null;
-            }
+                tgi.RemoveIfExists(LBA2_WIZARD_POSITION);
         }
 
-        private void setRadio(int pos)
+        
+        private void updateWizardPos(ushort pos)
         {
+            txtWizardLocation.Text = pos.ToString();
             if (93 <= pos) { rb95.Checked = true; return; }
             if (88 <= pos) { rb90.Checked = true; return; }
             if (82 <= pos) { rb85.Checked = true; return; }
@@ -202,13 +194,6 @@ namespace LBATrainer
             if (8 <= pos) { rb10.Checked = true; return; }
             if (3 <= pos) { rb5.Checked = true; return; }
             if (0 <= pos) { rb0.Checked = true; return; }
-        }
-        uint WIZARD_POSITION = 0x57C93;
-        private void wizard_Tick(object sender, EventArgs e)
-        {
-            int pos = memRoutines.readVal(WIZARD_POSITION, 1);
-            txtWizardLocation.Text = pos.ToString();
-            setRadio(pos);
         }
     }
 }
