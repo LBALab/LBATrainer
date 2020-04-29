@@ -30,3 +30,4 @@ R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.CoreCompileI
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csproj.CopyComplete
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.exe
 R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.pdb
+R:\Users\User\source\repos\LBATrainer\obj\Release\LBATrainer.csprojAssemblyReference.cache

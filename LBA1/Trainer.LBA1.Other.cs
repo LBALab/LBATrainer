@@ -46,6 +46,7 @@ namespace LBATrainer
         #region Quest
         private void LBA1Othr_populateQuest()
         {
+            if (null == items || null == items.Quest) items = new Items(getLBAFilesPath(1), 1);
             LBA1Othr_cboQuest.Items.Clear();
             LBA1Othr_cboQuest.Items.AddRange(items.Quest);
         }

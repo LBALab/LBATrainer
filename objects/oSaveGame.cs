@@ -54,6 +54,7 @@ namespace LBATrainer
         }
         public bool save(string saveFilePath)
         {
+            if (!isValidDirectoryPath(saveFilePath)) return false;
             Mem m = new Mem();
             string fileNameDisk = m.getString(1, actualFileNameOffset);
             for(ushort i = 0; i < saveGame.Length;i++)
@@ -67,6 +68,7 @@ namespace LBATrainer
 
         public bool saveAs(string saveFilePath, string fileNameDisk, string fileNameInternal)
         {
+            if (!isValidDirectoryPath(saveFilePath)) return false;
             Mem m = new Mem();
             for (ushort i = 0; i < saveGame.Length; i++)
             {
@@ -86,6 +88,10 @@ namespace LBATrainer
             return b;
         }
 
+        bool isValidDirectoryPath(string path)
+        {
+            return Directory.Exists(path);
+        }
         private bool writeFile(string path, SaveItem[] saveGame)
         {
             if(File.Exists(path))new FileInfo(path) { IsReadOnly = false }.Refresh();

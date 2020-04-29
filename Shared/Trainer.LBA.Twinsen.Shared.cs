@@ -37,7 +37,7 @@ namespace LBATrainer
         {
             if (1 == LBAVer)
                 scanLBA1();
-            else
+            if(2 == LBAVer)
                 scanLBA2();
         }
     }

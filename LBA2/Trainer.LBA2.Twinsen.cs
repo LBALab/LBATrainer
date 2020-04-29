@@ -46,7 +46,7 @@ namespace LBATrainer
             cboLBA2Inventory.Items.Clear();
             cboLBA2Inventory.Items.AddRange(items.Inventory);
             addLBA2InventoryCheckbox(null);
-            LBA2Othr_Start();
+            LBA2Othr_Load();
         }
         #region inventory
         private void CboLBA2Inventory_SelectedIndexChanged(object sender, EventArgs e)

@@ -87,24 +87,10 @@
             this.LBA1Holo_chk1 = new System.Windows.Forms.CheckBox();
             this.LBA1Holo_chk0 = new System.Windows.Forms.CheckBox();
             this.LBA1Othr_cboHolomap = new System.Windows.Forms.ComboBox();
-            this.tpFlying = new System.Windows.Forms.TabPage();
-            this.flying2 = new LBAFlying.Flying();
             this.tpTeleport = new System.Windows.Forms.TabPage();
-            this.LBA1Tel_Update = new System.Windows.Forms.Button();
-            this.LBA1Tel_txtXPos = new System.Windows.Forms.TextBox();
-            this.LBA1Tel_txtYPos = new System.Windows.Forms.TextBox();
-            this.LBA1Tel_lblXPos = new System.Windows.Forms.Label();
-            this.LBA1Tel_lblYPos = new System.Windows.Forms.Label();
-            this.LBA1Tel_btnScan = new System.Windows.Forms.Button();
-            this.LBA1Tel_chkLock = new System.Windows.Forms.CheckBox();
-            this.LBA1Tel_txtRefreshInterval = new System.Windows.Forms.TextBox();
-            this.LBA1Tel_lblAutoRefresh = new System.Windows.Forms.Label();
-            this.LBA1Tel_btnStartStopRefresh = new System.Windows.Forms.Button();
-            this.LBA1Tel_txtZPos = new System.Windows.Forms.TextBox();
-            this.LBA1Tel_btnSet = new System.Windows.Forms.Button();
-            this.LBA1Tel_lblZPos = new System.Windows.Forms.Label();
-            this.LBA1Tel_txtFacing = new System.Windows.Forms.TextBox();
-            this.LBA1Tel_lblFacing = new System.Windows.Forms.Label();
+            this.ucTeleportLBA1 = new LBATeleport.ucTeleport();
+            this.tpFlying = new System.Windows.Forms.TabPage();
+            this.FlyingLBA1 = new LBAFlying.Flying();
             this.tpSaveGame = new System.Windows.Forms.TabPage();
             this.LBA1SG_lblF8SaveAs = new System.Windows.Forms.Label();
             this.LBA1SG_btnDeleteSaves = new System.Windows.Forms.Button();
@@ -145,14 +131,14 @@
             this.lblLBA2Clovers = new System.Windows.Forms.Label();
             this.txtLBA2Clovers = new System.Windows.Forms.TextBox();
             this.tpLBA2Other = new System.Windows.Forms.TabPage();
+            this.LBA2Othr_lblHornHealthValue = new System.Windows.Forms.Label();
+            this.LBA2Othr_hsbHornHealth = new System.Windows.Forms.HScrollBar();
+            this.LBA2Othr_lblHornHealth = new System.Windows.Forms.Label();
             this.LBA2Othr_chkSubquest = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboSubquest = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LBA2Othr_lblSubquest = new System.Windows.Forms.Label();
+            this.LBA2Othr_lblQuest = new System.Windows.Forms.Label();
             this.LBA2Othr_cboQuest = new System.Windows.Forms.ComboBox();
-            this.LBA2Othr_chkMisc = new System.Windows.Forms.CheckBox();
-            this.LBA2Othr_cboMisc = new System.Windows.Forms.ComboBox();
-            this.LBA2Othr_lblMisc = new System.Windows.Forms.Label();
             this.LBA2Othr_chkBehaviourValue = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboBehaviour = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblBehaviour = new System.Windows.Forms.Label();
@@ -162,6 +148,22 @@
             this.LBA2Othr_chkSkin = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboSkins = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblSelectSkin = new System.Windows.Forms.Label();
+            this.tpLBA2Slate = new System.Windows.Forms.TabPage();
+            this.LBA2Slate_btnSet = new System.Windows.Forms.Button();
+            this.LBA2Slate_map4 = new System.Windows.Forms.Label();
+            this.LBA2Slate_map3 = new System.Windows.Forms.Label();
+            this.LBA2Slate_map2 = new System.Windows.Forms.Label();
+            this.LBA2Slate_map1 = new System.Windows.Forms.Label();
+            this.LBA2Slate_map0 = new System.Windows.Forms.Label();
+            this.LBA2Slate_cb4 = new System.Windows.Forms.ComboBox();
+            this.LBA2Slate_cb3 = new System.Windows.Forms.ComboBox();
+            this.LBA2Slate_cb2 = new System.Windows.Forms.ComboBox();
+            this.LBA2Slate_cb1 = new System.Windows.Forms.ComboBox();
+            this.LBA2Slate_cb0 = new System.Windows.Forms.ComboBox();
+            this.tpLBA2Misc = new System.Windows.Forms.TabPage();
+            this.LBA2Othr_chkMisc = new System.Windows.Forms.CheckBox();
+            this.LBA2Othr_cboMisc = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_lblMisc = new System.Windows.Forms.Label();
             this.tpHyperCar = new System.Windows.Forms.TabPage();
             this.LBA2HyperCar_panel = new System.Windows.Forms.Panel();
             this.bPitLimit = new System.Windows.Forms.Button();
@@ -189,38 +191,11 @@
             this.txtHyperCarGear1 = new System.Windows.Forms.TextBox();
             this.lblHyperCarGear1 = new System.Windows.Forms.Label();
             this.tpLBA2Teleport = new System.Windows.Forms.TabPage();
-            this.lblLBA2LocationFacing = new System.Windows.Forms.Label();
-            this.txtLBA2LocationFacing = new System.Windows.Forms.TextBox();
-            this.btnLBA2LocationSet = new System.Windows.Forms.Button();
-            this.btnLBA2TeleportScan = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblLBA2LocationYPos = new System.Windows.Forms.Label();
-            this.lblLBA2LocationZPos = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtLBA2LocationZPos = new System.Windows.Forms.TextBox();
-            this.txtLBA2LocationYPos = new System.Windows.Forms.TextBox();
-            this.txtLBA2LocationXPos = new System.Windows.Forms.TextBox();
-            this.lblLBA2LocationXPos = new System.Windows.Forms.Label();
-            this.LBA2Flying = new System.Windows.Forms.TabPage();
-            this.flying1 = new LBAFlying.Flying();
-            this.tpLBA2ShittyShot = new System.Windows.Forms.TabPage();
-            this.LBA2SS_lblInstruct = new System.Windows.Forms.Label();
-            this.LBA2SS_btnSquare = new System.Windows.Forms.Button();
-            this.LBA2SS_btnTriangle = new System.Windows.Forms.Button();
-            this.LBA2SS_btnCircle = new System.Windows.Forms.Button();
-            this.LBA2SS_btnOnOff = new System.Windows.Forms.Button();
-            this.LBA2SS_lblSquare = new System.Windows.Forms.Label();
-            this.LBA2SS_lblTriangle = new System.Windows.Forms.Label();
-            this.LBA2SS_lblCircle = new System.Windows.Forms.Label();
-            this.tpLBA2Debug = new System.Windows.Forms.TabPage();
-            this.btnLBA2InstantCarDisabled = new System.Windows.Forms.Button();
-            this.btnLBA2InstantCarTunic = new System.Windows.Forms.Button();
-            this.btnLBA2InstantCarWizard = new System.Windows.Forms.Button();
-            this.LBA2Othr_btnGetAreacode = new System.Windows.Forms.Button();
-            this.LBA2Othr_lblAreacodeTxt = new System.Windows.Forms.Label();
-            this.LBA2Othr_lblAreacode = new System.Windows.Forms.Label();
-            this.tpLBA2Wizard = new System.Windows.Forms.TabPage();
-            this.btnGo = new System.Windows.Forms.Button();
+            this.ucTeleportLBA2 = new LBATeleport.ucTeleport();
+            this.tpLBA2Flying = new System.Windows.Forms.TabPage();
+            this.FlyingLBA2 = new LBAFlying.Flying();
+            this.tpLBA2WizardGPS = new System.Windows.Forms.TabPage();
+            this.LBA2WizardGPS_Start = new System.Windows.Forms.Button();
             this.txtWizardLocation = new System.Windows.Forms.TextBox();
             this.rb95 = new System.Windows.Forms.RadioButton();
             this.rb90 = new System.Windows.Forms.RadioButton();
@@ -243,6 +218,22 @@
             this.rb80 = new System.Windows.Forms.RadioButton();
             this.rb65 = new System.Windows.Forms.RadioButton();
             this.pbWizardMap = new System.Windows.Forms.PictureBox();
+            this.tpLBA2ShittyShot = new System.Windows.Forms.TabPage();
+            this.LBA2SS_lblInstruct = new System.Windows.Forms.Label();
+            this.LBA2SS_btnSquare = new System.Windows.Forms.Button();
+            this.LBA2SS_btnTriangle = new System.Windows.Forms.Button();
+            this.LBA2SS_btnCircle = new System.Windows.Forms.Button();
+            this.LBA2SS_btnOnOff = new System.Windows.Forms.Button();
+            this.LBA2SS_lblSquare = new System.Windows.Forms.Label();
+            this.LBA2SS_lblTriangle = new System.Windows.Forms.Label();
+            this.LBA2SS_lblCircle = new System.Windows.Forms.Label();
+            this.tpLBA2Debug = new System.Windows.Forms.TabPage();
+            this.btnLBA2InstantCarDisabled = new System.Windows.Forms.Button();
+            this.btnLBA2InstantCarTunic = new System.Windows.Forms.Button();
+            this.btnLBA2InstantCarWizard = new System.Windows.Forms.Button();
+            this.LBA2Othr_btnGetAreacode = new System.Windows.Forms.Button();
+            this.LBA2Othr_lblAreacodeTxt = new System.Windows.Forms.Label();
+            this.LBA2Othr_lblAreacode = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -257,28 +248,37 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
+            this.LBA2Misc_gbBlowtron = new System.Windows.Forms.GroupBox();
+            this.LBA2Misc_rbBlowtron2 = new System.Windows.Forms.RadioButton();
+            this.LBA2Misc_btnBlowtron = new System.Windows.Forms.Button();
+            this.LBA2Misc_rbBlowtron1 = new System.Windows.Forms.RadioButton();
+            this.LBA2Misc_rbBlowtron0 = new System.Windows.Forms.RadioButton();
+            this.LBA2Misc_lblBlowtron = new System.Windows.Forms.Label();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
             this.tpLBA1Twinsen.SuspendLayout();
             this.tpLBA1Other.SuspendLayout();
             this.tpLBA1Holomap.SuspendLayout();
-            this.tpFlying.SuspendLayout();
             this.tpTeleport.SuspendLayout();
+            this.tpFlying.SuspendLayout();
             this.tpSaveGame.SuspendLayout();
             this.tbLBA2.SuspendLayout();
             this.tcLBA2Inner.SuspendLayout();
             this.tpLBA2Twinsen.SuspendLayout();
             this.tpLBA2Other.SuspendLayout();
+            this.tpLBA2Slate.SuspendLayout();
+            this.tpLBA2Misc.SuspendLayout();
             this.tpHyperCar.SuspendLayout();
             this.LBA2HyperCar_panel.SuspendLayout();
             this.tpLBA2Teleport.SuspendLayout();
-            this.LBA2Flying.SuspendLayout();
+            this.tpLBA2Flying.SuspendLayout();
+            this.tpLBA2WizardGPS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).BeginInit();
             this.tpLBA2ShittyShot.SuspendLayout();
             this.tpLBA2Debug.SuspendLayout();
-            this.tpLBA2Wizard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.LBA2Misc_gbBlowtron.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcLBAVersion
@@ -308,13 +308,13 @@
             this.tcLBA1Inner.Controls.Add(this.tpLBA1Twinsen);
             this.tcLBA1Inner.Controls.Add(this.tpLBA1Other);
             this.tcLBA1Inner.Controls.Add(this.tpLBA1Holomap);
-            this.tcLBA1Inner.Controls.Add(this.tpFlying);
             this.tcLBA1Inner.Controls.Add(this.tpTeleport);
+            this.tcLBA1Inner.Controls.Add(this.tpFlying);
             this.tcLBA1Inner.Controls.Add(this.tpSaveGame);
             this.tcLBA1Inner.Location = new System.Drawing.Point(6, 6);
             this.tcLBA1Inner.Name = "tcLBA1Inner";
             this.tcLBA1Inner.SelectedIndex = 0;
-            this.tcLBA1Inner.Size = new System.Drawing.Size(342, 204);
+            this.tcLBA1Inner.Size = new System.Drawing.Size(347, 204);
             this.tcLBA1Inner.TabIndex = 21;
             this.tcLBA1Inner.SelectedIndexChanged += new System.EventHandler(this.TcLBA1Inner_SelectedIndexChanged);
             // 
@@ -347,7 +347,7 @@
             this.tpLBA1Twinsen.Location = new System.Drawing.Point(4, 22);
             this.tpLBA1Twinsen.Name = "tpLBA1Twinsen";
             this.tpLBA1Twinsen.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLBA1Twinsen.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA1Twinsen.Size = new System.Drawing.Size(339, 178);
             this.tpLBA1Twinsen.TabIndex = 0;
             this.tpLBA1Twinsen.Text = "Twinsen";
             // 
@@ -582,7 +582,7 @@
             this.tpLBA1Other.Location = new System.Drawing.Point(4, 22);
             this.tpLBA1Other.Name = "tpLBA1Other";
             this.tpLBA1Other.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLBA1Other.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA1Other.Size = new System.Drawing.Size(339, 178);
             this.tpLBA1Other.TabIndex = 1;
             this.tpLBA1Other.Text = "Other";
             // 
@@ -806,7 +806,7 @@
             this.tpLBA1Holomap.Location = new System.Drawing.Point(4, 22);
             this.tpLBA1Holomap.Name = "tpLBA1Holomap";
             this.tpLBA1Holomap.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLBA1Holomap.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA1Holomap.Size = new System.Drawing.Size(339, 178);
             this.tpLBA1Holomap.TabIndex = 6;
             this.tpLBA1Holomap.Text = "Holomap";
             // 
@@ -912,186 +912,43 @@
             this.LBA1Othr_cboHolomap.TabIndex = 19;
             this.LBA1Othr_cboHolomap.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboHolomap_SelectedIndexChanged);
             // 
-            // tpFlying
-            // 
-            this.tpFlying.BackColor = System.Drawing.Color.MistyRose;
-            this.tpFlying.Controls.Add(this.flying2);
-            this.tpFlying.Location = new System.Drawing.Point(4, 22);
-            this.tpFlying.Name = "tpFlying";
-            this.tpFlying.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFlying.Size = new System.Drawing.Size(334, 178);
-            this.tpFlying.TabIndex = 4;
-            this.tpFlying.Text = "Flying";
-            // 
-            // flying2
-            // 
-            this.flying2.BackColor = System.Drawing.Color.MistyRose;
-            this.flying2.Location = new System.Drawing.Point(-4, 0);
-            this.flying2.Name = "flying2";
-            this.flying2.Size = new System.Drawing.Size(334, 178);
-            this.flying2.TabIndex = 1;
-            // 
             // tpTeleport
             // 
             this.tpTeleport.BackColor = System.Drawing.Color.MistyRose;
-            this.tpTeleport.Controls.Add(this.LBA1Tel_Update);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_txtXPos);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_txtYPos);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_lblXPos);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_lblYPos);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_btnScan);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_chkLock);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_txtRefreshInterval);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_lblAutoRefresh);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_btnStartStopRefresh);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_txtZPos);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_btnSet);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_lblZPos);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_txtFacing);
-            this.tpTeleport.Controls.Add(this.LBA1Tel_lblFacing);
+            this.tpTeleport.Controls.Add(this.ucTeleportLBA1);
             this.tpTeleport.Location = new System.Drawing.Point(4, 22);
             this.tpTeleport.Name = "tpTeleport";
             this.tpTeleport.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTeleport.Size = new System.Drawing.Size(334, 178);
+            this.tpTeleport.Size = new System.Drawing.Size(339, 178);
             this.tpTeleport.TabIndex = 2;
             this.tpTeleport.Text = "Teleport";
             // 
-            // LBA1Tel_Update
+            // ucTeleportLBA1
             // 
-            this.LBA1Tel_Update.Location = new System.Drawing.Point(244, 60);
-            this.LBA1Tel_Update.Name = "LBA1Tel_Update";
-            this.LBA1Tel_Update.Size = new System.Drawing.Size(63, 23);
-            this.LBA1Tel_Update.TabIndex = 57;
-            this.LBA1Tel_Update.Text = "Update";
-            this.LBA1Tel_Update.UseVisualStyleBackColor = true;
-            this.LBA1Tel_Update.Click += new System.EventHandler(this.LBA1Tel_Update_Click);
+            this.ucTeleportLBA1.BackColor = System.Drawing.Color.MistyRose;
+            this.ucTeleportLBA1.Location = new System.Drawing.Point(0, 0);
+            this.ucTeleportLBA1.Name = "ucTeleportLBA1";
+            this.ucTeleportLBA1.Size = new System.Drawing.Size(334, 178);
+            this.ucTeleportLBA1.TabIndex = 0;
             // 
-            // LBA1Tel_txtXPos
+            // tpFlying
             // 
-            this.LBA1Tel_txtXPos.Location = new System.Drawing.Point(115, 9);
-            this.LBA1Tel_txtXPos.Name = "LBA1Tel_txtXPos";
-            this.LBA1Tel_txtXPos.Size = new System.Drawing.Size(123, 20);
-            this.LBA1Tel_txtXPos.TabIndex = 56;
+            this.tpFlying.BackColor = System.Drawing.Color.MistyRose;
+            this.tpFlying.Controls.Add(this.FlyingLBA1);
+            this.tpFlying.Location = new System.Drawing.Point(4, 22);
+            this.tpFlying.Name = "tpFlying";
+            this.tpFlying.Padding = new System.Windows.Forms.Padding(3);
+            this.tpFlying.Size = new System.Drawing.Size(339, 178);
+            this.tpFlying.TabIndex = 4;
+            this.tpFlying.Text = "Flying";
             // 
-            // LBA1Tel_txtYPos
+            // FlyingLBA1
             // 
-            this.LBA1Tel_txtYPos.Location = new System.Drawing.Point(115, 35);
-            this.LBA1Tel_txtYPos.Name = "LBA1Tel_txtYPos";
-            this.LBA1Tel_txtYPos.Size = new System.Drawing.Size(123, 20);
-            this.LBA1Tel_txtYPos.TabIndex = 55;
-            // 
-            // LBA1Tel_lblXPos
-            // 
-            this.LBA1Tel_lblXPos.AutoSize = true;
-            this.LBA1Tel_lblXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Tel_lblXPos.Location = new System.Drawing.Point(8, 12);
-            this.LBA1Tel_lblXPos.Name = "LBA1Tel_lblXPos";
-            this.LBA1Tel_lblXPos.Size = new System.Drawing.Size(36, 13);
-            this.LBA1Tel_lblXPos.TabIndex = 54;
-            this.LBA1Tel_lblXPos.Text = "XPos";
-            // 
-            // LBA1Tel_lblYPos
-            // 
-            this.LBA1Tel_lblYPos.AutoSize = true;
-            this.LBA1Tel_lblYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Tel_lblYPos.Location = new System.Drawing.Point(8, 38);
-            this.LBA1Tel_lblYPos.Name = "LBA1Tel_lblYPos";
-            this.LBA1Tel_lblYPos.Size = new System.Drawing.Size(36, 13);
-            this.LBA1Tel_lblYPos.TabIndex = 53;
-            this.LBA1Tel_lblYPos.Text = "YPos";
-            // 
-            // LBA1Tel_btnScan
-            // 
-            this.LBA1Tel_btnScan.Location = new System.Drawing.Point(94, 149);
-            this.LBA1Tel_btnScan.Name = "LBA1Tel_btnScan";
-            this.LBA1Tel_btnScan.Size = new System.Drawing.Size(75, 23);
-            this.LBA1Tel_btnScan.TabIndex = 52;
-            this.LBA1Tel_btnScan.Text = "Scan";
-            this.LBA1Tel_btnScan.UseVisualStyleBackColor = true;
-            this.LBA1Tel_btnScan.Click += new System.EventHandler(this.LBA1Tel_BtnScan_Click);
-            // 
-            // LBA1Tel_chkLock
-            // 
-            this.LBA1Tel_chkLock.AutoSize = true;
-            this.LBA1Tel_chkLock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Tel_chkLock.Location = new System.Drawing.Point(184, 64);
-            this.LBA1Tel_chkLock.Name = "LBA1Tel_chkLock";
-            this.LBA1Tel_chkLock.Size = new System.Drawing.Size(54, 17);
-            this.LBA1Tel_chkLock.TabIndex = 51;
-            this.LBA1Tel_chkLock.Text = "Lock";
-            this.LBA1Tel_chkLock.UseVisualStyleBackColor = true;
-            this.LBA1Tel_chkLock.CheckedChanged += new System.EventHandler(this.LBA1Tel_ChkLock_CheckedChanged);
-            // 
-            // LBA1Tel_txtRefreshInterval
-            // 
-            this.LBA1Tel_txtRefreshInterval.Location = new System.Drawing.Point(115, 114);
-            this.LBA1Tel_txtRefreshInterval.Name = "LBA1Tel_txtRefreshInterval";
-            this.LBA1Tel_txtRefreshInterval.Size = new System.Drawing.Size(123, 20);
-            this.LBA1Tel_txtRefreshInterval.TabIndex = 50;
-            // 
-            // LBA1Tel_lblAutoRefresh
-            // 
-            this.LBA1Tel_lblAutoRefresh.AutoSize = true;
-            this.LBA1Tel_lblAutoRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Tel_lblAutoRefresh.Location = new System.Drawing.Point(8, 119);
-            this.LBA1Tel_lblAutoRefresh.Name = "LBA1Tel_lblAutoRefresh";
-            this.LBA1Tel_lblAutoRefresh.Size = new System.Drawing.Size(103, 13);
-            this.LBA1Tel_lblAutoRefresh.TabIndex = 49;
-            this.LBA1Tel_lblAutoRefresh.Text = "Auto-refresh (ms)";
-            // 
-            // LBA1Tel_btnStartStopRefresh
-            // 
-            this.LBA1Tel_btnStartStopRefresh.Location = new System.Drawing.Point(244, 112);
-            this.LBA1Tel_btnStartStopRefresh.Name = "LBA1Tel_btnStartStopRefresh";
-            this.LBA1Tel_btnStartStopRefresh.Size = new System.Drawing.Size(54, 23);
-            this.LBA1Tel_btnStartStopRefresh.TabIndex = 48;
-            this.LBA1Tel_btnStartStopRefresh.Text = "Start";
-            this.LBA1Tel_btnStartStopRefresh.UseVisualStyleBackColor = true;
-            this.LBA1Tel_btnStartStopRefresh.Click += new System.EventHandler(this.BtnLBA1StartStopRefresh_Click);
-            // 
-            // LBA1Tel_txtZPos
-            // 
-            this.LBA1Tel_txtZPos.Location = new System.Drawing.Point(115, 62);
-            this.LBA1Tel_txtZPos.Name = "LBA1Tel_txtZPos";
-            this.LBA1Tel_txtZPos.Size = new System.Drawing.Size(54, 20);
-            this.LBA1Tel_txtZPos.TabIndex = 47;
-            // 
-            // LBA1Tel_btnSet
-            // 
-            this.LBA1Tel_btnSet.Location = new System.Drawing.Point(175, 149);
-            this.LBA1Tel_btnSet.Name = "LBA1Tel_btnSet";
-            this.LBA1Tel_btnSet.Size = new System.Drawing.Size(75, 23);
-            this.LBA1Tel_btnSet.TabIndex = 46;
-            this.LBA1Tel_btnSet.Text = "Set";
-            this.LBA1Tel_btnSet.UseVisualStyleBackColor = true;
-            this.LBA1Tel_btnSet.Click += new System.EventHandler(this.LBA1Tel_BtntSet_Click);
-            // 
-            // LBA1Tel_lblZPos
-            // 
-            this.LBA1Tel_lblZPos.AutoSize = true;
-            this.LBA1Tel_lblZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Tel_lblZPos.Location = new System.Drawing.Point(8, 65);
-            this.LBA1Tel_lblZPos.Name = "LBA1Tel_lblZPos";
-            this.LBA1Tel_lblZPos.Size = new System.Drawing.Size(44, 13);
-            this.LBA1Tel_lblZPos.TabIndex = 45;
-            this.LBA1Tel_lblZPos.Text = "Height";
-            // 
-            // LBA1Tel_txtFacing
-            // 
-            this.LBA1Tel_txtFacing.Location = new System.Drawing.Point(115, 88);
-            this.LBA1Tel_txtFacing.Name = "LBA1Tel_txtFacing";
-            this.LBA1Tel_txtFacing.Size = new System.Drawing.Size(123, 20);
-            this.LBA1Tel_txtFacing.TabIndex = 25;
-            // 
-            // LBA1Tel_lblFacing
-            // 
-            this.LBA1Tel_lblFacing.AutoSize = true;
-            this.LBA1Tel_lblFacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA1Tel_lblFacing.Location = new System.Drawing.Point(8, 91);
-            this.LBA1Tel_lblFacing.Name = "LBA1Tel_lblFacing";
-            this.LBA1Tel_lblFacing.Size = new System.Drawing.Size(45, 13);
-            this.LBA1Tel_lblFacing.TabIndex = 14;
-            this.LBA1Tel_lblFacing.Text = "Facing";
+            this.FlyingLBA1.BackColor = System.Drawing.Color.MistyRose;
+            this.FlyingLBA1.Location = new System.Drawing.Point(0, 0);
+            this.FlyingLBA1.Name = "FlyingLBA1";
+            this.FlyingLBA1.Size = new System.Drawing.Size(334, 178);
+            this.FlyingLBA1.TabIndex = 1;
             // 
             // tpSaveGame
             // 
@@ -1109,7 +966,7 @@
             this.tpSaveGame.Location = new System.Drawing.Point(4, 22);
             this.tpSaveGame.Name = "tpSaveGame";
             this.tpSaveGame.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSaveGame.Size = new System.Drawing.Size(334, 178);
+            this.tpSaveGame.Size = new System.Drawing.Size(339, 178);
             this.tpSaveGame.TabIndex = 3;
             this.tpSaveGame.Text = "SaveGame";
             // 
@@ -1245,12 +1102,14 @@
             // 
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Twinsen);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Other);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Slate);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Misc);
             this.tcLBA2Inner.Controls.Add(this.tpHyperCar);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Teleport);
-            this.tcLBA2Inner.Controls.Add(this.LBA2Flying);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Flying);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2WizardGPS);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2ShittyShot);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Debug);
-            this.tcLBA2Inner.Controls.Add(this.tpLBA2Wizard);
             this.tcLBA2Inner.Location = new System.Drawing.Point(6, 6);
             this.tcLBA2Inner.Name = "tcLBA2Inner";
             this.tcLBA2Inner.SelectedIndex = 0;
@@ -1489,14 +1348,14 @@
             // tpLBA2Other
             // 
             this.tpLBA2Other.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblHornHealthValue);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_hsbHornHealth);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblHornHealth);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkSubquest);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboSubquest);
-            this.tpLBA2Other.Controls.Add(this.label3);
-            this.tpLBA2Other.Controls.Add(this.label2);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblSubquest);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblQuest);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboQuest);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkMisc);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboMisc);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblMisc);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkBehaviourValue);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboBehaviour);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblBehaviour);
@@ -1512,6 +1371,36 @@
             this.tpLBA2Other.Size = new System.Drawing.Size(334, 178);
             this.tpLBA2Other.TabIndex = 4;
             this.tpLBA2Other.Text = "Other";
+            // 
+            // LBA2Othr_lblHornHealthValue
+            // 
+            this.LBA2Othr_lblHornHealthValue.AutoSize = true;
+            this.LBA2Othr_lblHornHealthValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblHornHealthValue.Location = new System.Drawing.Point(300, 150);
+            this.LBA2Othr_lblHornHealthValue.Name = "LBA2Othr_lblHornHealthValue";
+            this.LBA2Othr_lblHornHealthValue.Size = new System.Drawing.Size(28, 13);
+            this.LBA2Othr_lblHornHealthValue.TabIndex = 41;
+            this.LBA2Othr_lblHornHealthValue.Text = "100";
+            this.LBA2Othr_lblHornHealthValue.Click += new System.EventHandler(this.LBA2Othr_lblHornHealthValue_Click);
+            // 
+            // LBA2Othr_hsbHornHealth
+            // 
+            this.LBA2Othr_hsbHornHealth.Location = new System.Drawing.Point(84, 147);
+            this.LBA2Othr_hsbHornHealth.Maximum = 109;
+            this.LBA2Othr_hsbHornHealth.Name = "LBA2Othr_hsbHornHealth";
+            this.LBA2Othr_hsbHornHealth.Size = new System.Drawing.Size(206, 17);
+            this.LBA2Othr_hsbHornHealth.TabIndex = 40;
+            this.LBA2Othr_hsbHornHealth.Scroll += new System.Windows.Forms.ScrollEventHandler(this.LBA2Othr_hsbHornHealth_Scroll);
+            // 
+            // LBA2Othr_lblHornHealth
+            // 
+            this.LBA2Othr_lblHornHealth.AutoSize = true;
+            this.LBA2Othr_lblHornHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblHornHealth.Location = new System.Drawing.Point(6, 147);
+            this.LBA2Othr_lblHornHealth.Name = "LBA2Othr_lblHornHealth";
+            this.LBA2Othr_lblHornHealth.Size = new System.Drawing.Size(75, 13);
+            this.LBA2Othr_lblHornHealth.TabIndex = 39;
+            this.LBA2Othr_lblHornHealth.Text = "Horn Health";
             // 
             // LBA2Othr_chkSubquest
             // 
@@ -1532,25 +1421,25 @@
             this.LBA2Othr_cboSubquest.TabIndex = 37;
             this.LBA2Othr_cboSubquest.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboSubquest_SelectedIndexChanged);
             // 
-            // label3
+            // LBA2Othr_lblSubquest
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 120);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Sub-Quest";
+            this.LBA2Othr_lblSubquest.AutoSize = true;
+            this.LBA2Othr_lblSubquest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblSubquest.Location = new System.Drawing.Point(6, 120);
+            this.LBA2Othr_lblSubquest.Name = "LBA2Othr_lblSubquest";
+            this.LBA2Othr_lblSubquest.Size = new System.Drawing.Size(66, 13);
+            this.LBA2Othr_lblSubquest.TabIndex = 36;
+            this.LBA2Othr_lblSubquest.Text = "Sub-Quest";
             // 
-            // label2
+            // LBA2Othr_lblQuest
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Quest";
+            this.LBA2Othr_lblQuest.AutoSize = true;
+            this.LBA2Othr_lblQuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblQuest.Location = new System.Drawing.Point(6, 91);
+            this.LBA2Othr_lblQuest.Name = "LBA2Othr_lblQuest";
+            this.LBA2Othr_lblQuest.Size = new System.Drawing.Size(40, 13);
+            this.LBA2Othr_lblQuest.TabIndex = 35;
+            this.LBA2Othr_lblQuest.Text = "Quest";
             // 
             // LBA2Othr_cboQuest
             // 
@@ -1560,39 +1449,7 @@
             this.LBA2Othr_cboQuest.Size = new System.Drawing.Size(223, 21);
             this.LBA2Othr_cboQuest.TabIndex = 34;
             this.LBA2Othr_cboQuest.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboQuest_SelectedIndexChanged);
-            // 
-            // LBA2Othr_chkMisc
-            // 
-            this.LBA2Othr_chkMisc.AutoSize = true;
-            this.LBA2Othr_chkMisc.Location = new System.Drawing.Point(313, 145);
-            this.LBA2Othr_chkMisc.Name = "LBA2Othr_chkMisc";
-            this.LBA2Othr_chkMisc.Size = new System.Drawing.Size(15, 14);
-            this.LBA2Othr_chkMisc.TabIndex = 33;
-            this.LBA2Othr_chkMisc.UseVisualStyleBackColor = true;
-            this.LBA2Othr_chkMisc.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkMisc_CheckedChanged);
-            // 
-            // LBA2Othr_cboMisc
-            // 
-            this.LBA2Othr_cboMisc.AutoCompleteCustomSource.AddRange(new string[] {
-            "Toggle rain"});
-            this.LBA2Othr_cboMisc.FormattingEnabled = true;
-            this.LBA2Othr_cboMisc.Items.AddRange(new object[] {
-            "Rain off",
-            "Free Ferry"});
-            this.LBA2Othr_cboMisc.Location = new System.Drawing.Point(84, 142);
-            this.LBA2Othr_cboMisc.Name = "LBA2Othr_cboMisc";
-            this.LBA2Othr_cboMisc.Size = new System.Drawing.Size(223, 21);
-            this.LBA2Othr_cboMisc.TabIndex = 32;
-            // 
-            // LBA2Othr_lblMisc
-            // 
-            this.LBA2Othr_lblMisc.AutoSize = true;
-            this.LBA2Othr_lblMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblMisc.Location = new System.Drawing.Point(6, 145);
-            this.LBA2Othr_lblMisc.Name = "LBA2Othr_lblMisc";
-            this.LBA2Othr_lblMisc.Size = new System.Drawing.Size(37, 13);
-            this.LBA2Othr_lblMisc.TabIndex = 31;
-            this.LBA2Othr_lblMisc.Text = "Misc.";
+            this.LBA2Othr_cboQuest.TextChanged += new System.EventHandler(this.LBA2Othr_cboQuest_TextChanged);
             // 
             // LBA2Othr_chkBehaviourValue
             // 
@@ -1651,15 +1508,6 @@
             // LBA2Othr_cboWeapon
             // 
             this.LBA2Othr_cboWeapon.FormattingEnabled = true;
-            this.LBA2Othr_cboWeapon.Items.AddRange(new object[] {
-            "00 No Weapon",
-            "01 Magic Ball",
-            "02 Darts",
-            "09 Lazer Pistol",
-            "10 Emporers Sword",
-            "11 Wannies Glove",
-            "22 Horn of triton",
-            "23 Blowtron/Blowgun"});
             this.LBA2Othr_cboWeapon.Location = new System.Drawing.Point(84, 34);
             this.LBA2Othr_cboWeapon.Name = "LBA2Othr_cboWeapon";
             this.LBA2Othr_cboWeapon.Size = new System.Drawing.Size(223, 21);
@@ -1705,6 +1553,172 @@
             this.LBA2Othr_lblSelectSkin.Size = new System.Drawing.Size(32, 13);
             this.LBA2Othr_lblSelectSkin.TabIndex = 8;
             this.LBA2Othr_lblSelectSkin.Text = "Skin";
+            // 
+            // tpLBA2Slate
+            // 
+            this.tpLBA2Slate.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_btnSet);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map4);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map3);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map2);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map1);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map0);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb4);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb3);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb2);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb1);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb0);
+            this.tpLBA2Slate.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Slate.Name = "tpLBA2Slate";
+            this.tpLBA2Slate.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Slate.TabIndex = 9;
+            this.tpLBA2Slate.Text = "Slate";
+            // 
+            // LBA2Slate_btnSet
+            // 
+            this.LBA2Slate_btnSet.Location = new System.Drawing.Point(127, 150);
+            this.LBA2Slate_btnSet.Name = "LBA2Slate_btnSet";
+            this.LBA2Slate_btnSet.Size = new System.Drawing.Size(75, 23);
+            this.LBA2Slate_btnSet.TabIndex = 11;
+            this.LBA2Slate_btnSet.Text = "Set";
+            this.LBA2Slate_btnSet.UseVisualStyleBackColor = true;
+            this.LBA2Slate_btnSet.Click += new System.EventHandler(this.LBA2Slate_btnSet_Click);
+            // 
+            // LBA2Slate_map4
+            // 
+            this.LBA2Slate_map4.AutoSize = true;
+            this.LBA2Slate_map4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map4.Location = new System.Drawing.Point(13, 126);
+            this.LBA2Slate_map4.Name = "LBA2Slate_map4";
+            this.LBA2Slate_map4.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map4.TabIndex = 10;
+            this.LBA2Slate_map4.Text = "Map 5";
+            // 
+            // LBA2Slate_map3
+            // 
+            this.LBA2Slate_map3.AutoSize = true;
+            this.LBA2Slate_map3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map3.Location = new System.Drawing.Point(13, 99);
+            this.LBA2Slate_map3.Name = "LBA2Slate_map3";
+            this.LBA2Slate_map3.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map3.TabIndex = 9;
+            this.LBA2Slate_map3.Text = "Map 4";
+            // 
+            // LBA2Slate_map2
+            // 
+            this.LBA2Slate_map2.AutoSize = true;
+            this.LBA2Slate_map2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map2.Location = new System.Drawing.Point(13, 72);
+            this.LBA2Slate_map2.Name = "LBA2Slate_map2";
+            this.LBA2Slate_map2.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map2.TabIndex = 8;
+            this.LBA2Slate_map2.Text = "Map 3";
+            // 
+            // LBA2Slate_map1
+            // 
+            this.LBA2Slate_map1.AutoSize = true;
+            this.LBA2Slate_map1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map1.Location = new System.Drawing.Point(13, 45);
+            this.LBA2Slate_map1.Name = "LBA2Slate_map1";
+            this.LBA2Slate_map1.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map1.TabIndex = 7;
+            this.LBA2Slate_map1.Text = "Map 2";
+            // 
+            // LBA2Slate_map0
+            // 
+            this.LBA2Slate_map0.AutoSize = true;
+            this.LBA2Slate_map0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map0.Location = new System.Drawing.Point(13, 18);
+            this.LBA2Slate_map0.Name = "LBA2Slate_map0";
+            this.LBA2Slate_map0.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map0.TabIndex = 5;
+            this.LBA2Slate_map0.Text = "Map 1";
+            // 
+            // LBA2Slate_cb4
+            // 
+            this.LBA2Slate_cb4.FormattingEnabled = true;
+            this.LBA2Slate_cb4.Location = new System.Drawing.Point(67, 123);
+            this.LBA2Slate_cb4.Name = "LBA2Slate_cb4";
+            this.LBA2Slate_cb4.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb4.TabIndex = 4;
+            // 
+            // LBA2Slate_cb3
+            // 
+            this.LBA2Slate_cb3.FormattingEnabled = true;
+            this.LBA2Slate_cb3.Location = new System.Drawing.Point(67, 96);
+            this.LBA2Slate_cb3.Name = "LBA2Slate_cb3";
+            this.LBA2Slate_cb3.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb3.TabIndex = 3;
+            // 
+            // LBA2Slate_cb2
+            // 
+            this.LBA2Slate_cb2.FormattingEnabled = true;
+            this.LBA2Slate_cb2.Location = new System.Drawing.Point(67, 69);
+            this.LBA2Slate_cb2.Name = "LBA2Slate_cb2";
+            this.LBA2Slate_cb2.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb2.TabIndex = 2;
+            // 
+            // LBA2Slate_cb1
+            // 
+            this.LBA2Slate_cb1.FormattingEnabled = true;
+            this.LBA2Slate_cb1.Location = new System.Drawing.Point(67, 42);
+            this.LBA2Slate_cb1.Name = "LBA2Slate_cb1";
+            this.LBA2Slate_cb1.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb1.TabIndex = 1;
+            // 
+            // LBA2Slate_cb0
+            // 
+            this.LBA2Slate_cb0.FormattingEnabled = true;
+            this.LBA2Slate_cb0.Location = new System.Drawing.Point(67, 15);
+            this.LBA2Slate_cb0.Name = "LBA2Slate_cb0";
+            this.LBA2Slate_cb0.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb0.TabIndex = 0;
+            // 
+            // tpLBA2Misc
+            // 
+            this.tpLBA2Misc.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Misc.Controls.Add(this.LBA2Misc_gbBlowtron);
+            this.tpLBA2Misc.Controls.Add(this.LBA2Othr_chkMisc);
+            this.tpLBA2Misc.Controls.Add(this.LBA2Othr_cboMisc);
+            this.tpLBA2Misc.Controls.Add(this.LBA2Othr_lblMisc);
+            this.tpLBA2Misc.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Misc.Name = "tpLBA2Misc";
+            this.tpLBA2Misc.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Misc.TabIndex = 10;
+            this.tpLBA2Misc.Text = "Misc";
+            // 
+            // LBA2Othr_chkMisc
+            // 
+            this.LBA2Othr_chkMisc.AutoSize = true;
+            this.LBA2Othr_chkMisc.Location = new System.Drawing.Point(316, 14);
+            this.LBA2Othr_chkMisc.Name = "LBA2Othr_chkMisc";
+            this.LBA2Othr_chkMisc.Size = new System.Drawing.Size(15, 14);
+            this.LBA2Othr_chkMisc.TabIndex = 36;
+            this.LBA2Othr_chkMisc.UseVisualStyleBackColor = true;
+            this.LBA2Othr_chkMisc.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkMisc_CheckedChanged);
+            // 
+            // LBA2Othr_cboMisc
+            // 
+            this.LBA2Othr_cboMisc.AutoCompleteCustomSource.AddRange(new string[] {
+            "Toggle rain"});
+            this.LBA2Othr_cboMisc.FormattingEnabled = true;
+            this.LBA2Othr_cboMisc.Items.AddRange(new object[] {
+            "Rain off",
+            "Free Ferry"});
+            this.LBA2Othr_cboMisc.Location = new System.Drawing.Point(73, 11);
+            this.LBA2Othr_cboMisc.Name = "LBA2Othr_cboMisc";
+            this.LBA2Othr_cboMisc.Size = new System.Drawing.Size(237, 21);
+            this.LBA2Othr_cboMisc.TabIndex = 35;
+            // 
+            // LBA2Othr_lblMisc
+            // 
+            this.LBA2Othr_lblMisc.AutoSize = true;
+            this.LBA2Othr_lblMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblMisc.Location = new System.Drawing.Point(3, 15);
+            this.LBA2Othr_lblMisc.Name = "LBA2Othr_lblMisc";
+            this.LBA2Othr_lblMisc.Size = new System.Drawing.Size(37, 13);
+            this.LBA2Othr_lblMisc.TabIndex = 34;
+            this.LBA2Othr_lblMisc.Text = "Misc.";
             // 
             // tpHyperCar
             // 
@@ -1979,18 +1993,7 @@
             // tpLBA2Teleport
             // 
             this.tpLBA2Teleport.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2Teleport.Controls.Add(this.lblLBA2LocationFacing);
-            this.tpLBA2Teleport.Controls.Add(this.txtLBA2LocationFacing);
-            this.tpLBA2Teleport.Controls.Add(this.btnLBA2LocationSet);
-            this.tpLBA2Teleport.Controls.Add(this.btnLBA2TeleportScan);
-            this.tpLBA2Teleport.Controls.Add(this.label4);
-            this.tpLBA2Teleport.Controls.Add(this.lblLBA2LocationYPos);
-            this.tpLBA2Teleport.Controls.Add(this.lblLBA2LocationZPos);
-            this.tpLBA2Teleport.Controls.Add(this.textBox3);
-            this.tpLBA2Teleport.Controls.Add(this.txtLBA2LocationZPos);
-            this.tpLBA2Teleport.Controls.Add(this.txtLBA2LocationYPos);
-            this.tpLBA2Teleport.Controls.Add(this.txtLBA2LocationXPos);
-            this.tpLBA2Teleport.Controls.Add(this.lblLBA2LocationXPos);
+            this.tpLBA2Teleport.Controls.Add(this.ucTeleportLBA2);
             this.tpLBA2Teleport.Location = new System.Drawing.Point(4, 22);
             this.tpLBA2Teleport.Name = "tpLBA2Teleport";
             this.tpLBA2Teleport.Padding = new System.Windows.Forms.Padding(3);
@@ -1998,352 +2001,80 @@
             this.tpLBA2Teleport.TabIndex = 1;
             this.tpLBA2Teleport.Text = "Teleport";
             // 
-            // lblLBA2LocationFacing
+            // ucTeleportLBA2
             // 
-            this.lblLBA2LocationFacing.AutoSize = true;
-            this.lblLBA2LocationFacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA2LocationFacing.Location = new System.Drawing.Point(162, 43);
-            this.lblLBA2LocationFacing.Name = "lblLBA2LocationFacing";
-            this.lblLBA2LocationFacing.Size = new System.Drawing.Size(45, 13);
-            this.lblLBA2LocationFacing.TabIndex = 12;
-            this.lblLBA2LocationFacing.Text = "Facing";
+            this.ucTeleportLBA2.BackColor = System.Drawing.Color.MistyRose;
+            this.ucTeleportLBA2.Location = new System.Drawing.Point(0, 0);
+            this.ucTeleportLBA2.Name = "ucTeleportLBA2";
+            this.ucTeleportLBA2.Size = new System.Drawing.Size(344, 178);
+            this.ucTeleportLBA2.TabIndex = 0;
             // 
-            // txtLBA2LocationFacing
+            // tpLBA2Flying
             // 
-            this.txtLBA2LocationFacing.Location = new System.Drawing.Point(228, 40);
-            this.txtLBA2LocationFacing.Name = "txtLBA2LocationFacing";
-            this.txtLBA2LocationFacing.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2LocationFacing.TabIndex = 11;
+            this.tpLBA2Flying.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Flying.Controls.Add(this.FlyingLBA2);
+            this.tpLBA2Flying.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Flying.Name = "tpLBA2Flying";
+            this.tpLBA2Flying.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLBA2Flying.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Flying.TabIndex = 3;
+            this.tpLBA2Flying.Text = "Jank Flying";
             // 
-            // btnLBA2LocationSet
+            // FlyingLBA2
             // 
-            this.btnLBA2LocationSet.Location = new System.Drawing.Point(164, 124);
-            this.btnLBA2LocationSet.Name = "btnLBA2LocationSet";
-            this.btnLBA2LocationSet.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2LocationSet.TabIndex = 9;
-            this.btnLBA2LocationSet.Text = "Set";
-            this.btnLBA2LocationSet.UseVisualStyleBackColor = true;
-            this.btnLBA2LocationSet.Click += new System.EventHandler(this.btnLBA2LocationSet_Click);
+            this.FlyingLBA2.BackColor = System.Drawing.Color.MistyRose;
+            this.FlyingLBA2.Location = new System.Drawing.Point(0, 0);
+            this.FlyingLBA2.Name = "FlyingLBA2";
+            this.FlyingLBA2.Size = new System.Drawing.Size(334, 178);
+            this.FlyingLBA2.TabIndex = 11;
             // 
-            // btnLBA2TeleportScan
+            // tpLBA2WizardGPS
             // 
-            this.btnLBA2TeleportScan.Location = new System.Drawing.Point(74, 124);
-            this.btnLBA2TeleportScan.Name = "btnLBA2TeleportScan";
-            this.btnLBA2TeleportScan.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2TeleportScan.TabIndex = 8;
-            this.btnLBA2TeleportScan.Text = "Scan";
-            this.btnLBA2TeleportScan.UseVisualStyleBackColor = true;
-            this.btnLBA2TeleportScan.Click += new System.EventHandler(this.btnLBA2LocationScan_Click);
+            this.tpLBA2WizardGPS.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2WizardGPS.Controls.Add(this.LBA2WizardGPS_Start);
+            this.tpLBA2WizardGPS.Controls.Add(this.txtWizardLocation);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb95);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb90);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb35);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb40);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb45);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb50);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb55);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb30);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb85);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb60);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb20);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb25);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb0);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb5);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb10);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb15);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb70);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb75);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb80);
+            this.tpLBA2WizardGPS.Controls.Add(this.rb65);
+            this.tpLBA2WizardGPS.Controls.Add(this.pbWizardMap);
+            this.tpLBA2WizardGPS.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2WizardGPS.Name = "tpLBA2WizardGPS";
+            this.tpLBA2WizardGPS.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2WizardGPS.TabIndex = 8;
+            this.tpLBA2WizardGPS.Text = "Wizard";
             // 
-            // label4
+            // LBA2WizardGPS_Start
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Areacode";
-            // 
-            // lblLBA2LocationYPos
-            // 
-            this.lblLBA2LocationYPos.AutoSize = true;
-            this.lblLBA2LocationYPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA2LocationYPos.Location = new System.Drawing.Point(161, 14);
-            this.lblLBA2LocationYPos.Name = "lblLBA2LocationYPos";
-            this.lblLBA2LocationYPos.Size = new System.Drawing.Size(36, 13);
-            this.lblLBA2LocationYPos.TabIndex = 6;
-            this.lblLBA2LocationYPos.Text = "YPos";
-            // 
-            // lblLBA2LocationZPos
-            // 
-            this.lblLBA2LocationZPos.AutoSize = true;
-            this.lblLBA2LocationZPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA2LocationZPos.Location = new System.Drawing.Point(7, 40);
-            this.lblLBA2LocationZPos.Name = "lblLBA2LocationZPos";
-            this.lblLBA2LocationZPos.Size = new System.Drawing.Size(36, 13);
-            this.lblLBA2LocationZPos.TabIndex = 5;
-            this.lblLBA2LocationZPos.Text = "ZPos";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(74, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
-            // 
-            // txtLBA2LocationZPos
-            // 
-            this.txtLBA2LocationZPos.Location = new System.Drawing.Point(44, 37);
-            this.txtLBA2LocationZPos.Name = "txtLBA2LocationZPos";
-            this.txtLBA2LocationZPos.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2LocationZPos.TabIndex = 3;
-            // 
-            // txtLBA2LocationYPos
-            // 
-            this.txtLBA2LocationYPos.Location = new System.Drawing.Point(228, 11);
-            this.txtLBA2LocationYPos.Name = "txtLBA2LocationYPos";
-            this.txtLBA2LocationYPos.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2LocationYPos.TabIndex = 2;
-            // 
-            // txtLBA2LocationXPos
-            // 
-            this.txtLBA2LocationXPos.Location = new System.Drawing.Point(44, 11);
-            this.txtLBA2LocationXPos.Name = "txtLBA2LocationXPos";
-            this.txtLBA2LocationXPos.Size = new System.Drawing.Size(100, 20);
-            this.txtLBA2LocationXPos.TabIndex = 1;
-            // 
-            // lblLBA2LocationXPos
-            // 
-            this.lblLBA2LocationXPos.AutoSize = true;
-            this.lblLBA2LocationXPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLBA2LocationXPos.Location = new System.Drawing.Point(6, 14);
-            this.lblLBA2LocationXPos.Name = "lblLBA2LocationXPos";
-            this.lblLBA2LocationXPos.Size = new System.Drawing.Size(36, 13);
-            this.lblLBA2LocationXPos.TabIndex = 0;
-            this.lblLBA2LocationXPos.Text = "XPos";
-            // 
-            // LBA2Flying
-            // 
-            this.LBA2Flying.BackColor = System.Drawing.Color.MistyRose;
-            this.LBA2Flying.Controls.Add(this.flying1);
-            this.LBA2Flying.Location = new System.Drawing.Point(4, 22);
-            this.LBA2Flying.Name = "LBA2Flying";
-            this.LBA2Flying.Padding = new System.Windows.Forms.Padding(3);
-            this.LBA2Flying.Size = new System.Drawing.Size(334, 178);
-            this.LBA2Flying.TabIndex = 3;
-            this.LBA2Flying.Text = "Jank Flying";
-            // 
-            // flying1
-            // 
-            this.flying1.BackColor = System.Drawing.Color.MistyRose;
-            this.flying1.Location = new System.Drawing.Point(-4, 0);
-            this.flying1.Name = "flying1";
-            this.flying1.Size = new System.Drawing.Size(334, 178);
-            this.flying1.TabIndex = 11;
-            // 
-            // tpLBA2ShittyShot
-            // 
-            this.tpLBA2ShittyShot.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblInstruct);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnSquare);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnTriangle);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnCircle);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnOnOff);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblSquare);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblTriangle);
-            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblCircle);
-            this.tpLBA2ShittyShot.Location = new System.Drawing.Point(4, 22);
-            this.tpLBA2ShittyShot.Name = "tpLBA2ShittyShot";
-            this.tpLBA2ShittyShot.Size = new System.Drawing.Size(334, 178);
-            this.tpLBA2ShittyShot.TabIndex = 2;
-            this.tpLBA2ShittyShot.Text = "Shitty Shot";
-            // 
-            // LBA2SS_lblInstruct
-            // 
-            this.LBA2SS_lblInstruct.AutoSize = true;
-            this.LBA2SS_lblInstruct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_lblInstruct.Location = new System.Drawing.Point(12, 11);
-            this.LBA2SS_lblInstruct.Name = "LBA2SS_lblInstruct";
-            this.LBA2SS_lblInstruct.Size = new System.Drawing.Size(307, 26);
-            this.LBA2SS_lblInstruct.TabIndex = 19;
-            this.LBA2SS_lblInstruct.Text = "Click colour to toggle status";
-            // 
-            // LBA2SS_btnSquare
-            // 
-            this.LBA2SS_btnSquare.BackColor = System.Drawing.Color.Red;
-            this.LBA2SS_btnSquare.Location = new System.Drawing.Point(230, 44);
-            this.LBA2SS_btnSquare.Name = "LBA2SS_btnSquare";
-            this.LBA2SS_btnSquare.Size = new System.Drawing.Size(79, 58);
-            this.LBA2SS_btnSquare.TabIndex = 18;
-            this.LBA2SS_btnSquare.UseVisualStyleBackColor = false;
-            this.LBA2SS_btnSquare.Click += new System.EventHandler(this.LBA2SS_btnSquare_Click);
-            // 
-            // LBA2SS_btnTriangle
-            // 
-            this.LBA2SS_btnTriangle.BackColor = System.Drawing.Color.Red;
-            this.LBA2SS_btnTriangle.Location = new System.Drawing.Point(128, 44);
-            this.LBA2SS_btnTriangle.Name = "LBA2SS_btnTriangle";
-            this.LBA2SS_btnTriangle.Size = new System.Drawing.Size(75, 58);
-            this.LBA2SS_btnTriangle.TabIndex = 17;
-            this.LBA2SS_btnTriangle.UseVisualStyleBackColor = false;
-            this.LBA2SS_btnTriangle.Click += new System.EventHandler(this.LBA2SS_btnTriangle_Click);
-            // 
-            // LBA2SS_btnCircle
-            // 
-            this.LBA2SS_btnCircle.BackColor = System.Drawing.Color.Red;
-            this.LBA2SS_btnCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_btnCircle.Location = new System.Drawing.Point(26, 44);
-            this.LBA2SS_btnCircle.Name = "LBA2SS_btnCircle";
-            this.LBA2SS_btnCircle.Size = new System.Drawing.Size(74, 58);
-            this.LBA2SS_btnCircle.TabIndex = 16;
-            this.LBA2SS_btnCircle.UseVisualStyleBackColor = false;
-            this.LBA2SS_btnCircle.Click += new System.EventHandler(this.LBA2SS_btnCircle_Click);
-            // 
-            // LBA2SS_btnOnOff
-            // 
-            this.LBA2SS_btnOnOff.Location = new System.Drawing.Point(128, 143);
-            this.LBA2SS_btnOnOff.Name = "LBA2SS_btnOnOff";
-            this.LBA2SS_btnOnOff.Size = new System.Drawing.Size(75, 23);
-            this.LBA2SS_btnOnOff.TabIndex = 15;
-            this.LBA2SS_btnOnOff.Text = "Off";
-            this.LBA2SS_btnOnOff.UseVisualStyleBackColor = true;
-            this.LBA2SS_btnOnOff.Click += new System.EventHandler(this.LBA2SS_btnOnOff_Click);
-            // 
-            // LBA2SS_lblSquare
-            // 
-            this.LBA2SS_lblSquare.AutoSize = true;
-            this.LBA2SS_lblSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_lblSquare.Location = new System.Drawing.Point(226, 111);
-            this.LBA2SS_lblSquare.Name = "LBA2SS_lblSquare";
-            this.LBA2SS_lblSquare.Size = new System.Drawing.Size(67, 20);
-            this.LBA2SS_lblSquare.TabIndex = 14;
-            this.LBA2SS_lblSquare.Text = "Square";
-            // 
-            // LBA2SS_lblTriangle
-            // 
-            this.LBA2SS_lblTriangle.AutoSize = true;
-            this.LBA2SS_lblTriangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_lblTriangle.Location = new System.Drawing.Point(124, 111);
-            this.LBA2SS_lblTriangle.Name = "LBA2SS_lblTriangle";
-            this.LBA2SS_lblTriangle.Size = new System.Drawing.Size(73, 20);
-            this.LBA2SS_lblTriangle.TabIndex = 13;
-            this.LBA2SS_lblTriangle.Text = "Triangle";
-            // 
-            // LBA2SS_lblCircle
-            // 
-            this.LBA2SS_lblCircle.AutoSize = true;
-            this.LBA2SS_lblCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2SS_lblCircle.Location = new System.Drawing.Point(36, 111);
-            this.LBA2SS_lblCircle.Name = "LBA2SS_lblCircle";
-            this.LBA2SS_lblCircle.Size = new System.Drawing.Size(54, 20);
-            this.LBA2SS_lblCircle.TabIndex = 12;
-            this.LBA2SS_lblCircle.Text = "Circle";
-            // 
-            // tpLBA2Debug
-            // 
-            this.tpLBA2Debug.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarDisabled);
-            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarTunic);
-            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarWizard);
-            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_btnGetAreacode);
-            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_lblAreacodeTxt);
-            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_lblAreacode);
-            this.tpLBA2Debug.Location = new System.Drawing.Point(4, 22);
-            this.tpLBA2Debug.Name = "tpLBA2Debug";
-            this.tpLBA2Debug.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLBA2Debug.Size = new System.Drawing.Size(334, 178);
-            this.tpLBA2Debug.TabIndex = 7;
-            this.tpLBA2Debug.Text = "Debug";
-            // 
-            // btnLBA2InstantCarDisabled
-            // 
-            this.btnLBA2InstantCarDisabled.Location = new System.Drawing.Point(251, 149);
-            this.btnLBA2InstantCarDisabled.Name = "btnLBA2InstantCarDisabled";
-            this.btnLBA2InstantCarDisabled.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2InstantCarDisabled.TabIndex = 33;
-            this.btnLBA2InstantCarDisabled.Text = "Car: Off";
-            this.btnLBA2InstantCarDisabled.UseVisualStyleBackColor = true;
-            this.btnLBA2InstantCarDisabled.Click += new System.EventHandler(this.btnLBA2InstantCarDisabled_Click);
-            // 
-            // btnLBA2InstantCarTunic
-            // 
-            this.btnLBA2InstantCarTunic.Location = new System.Drawing.Point(129, 149);
-            this.btnLBA2InstantCarTunic.Name = "btnLBA2InstantCarTunic";
-            this.btnLBA2InstantCarTunic.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2InstantCarTunic.TabIndex = 32;
-            this.btnLBA2InstantCarTunic.Text = "Tunic Car";
-            this.btnLBA2InstantCarTunic.UseVisualStyleBackColor = true;
-            this.btnLBA2InstantCarTunic.Click += new System.EventHandler(this.btnLBA2InstantCarTunic_Click);
-            // 
-            // btnLBA2InstantCarWizard
-            // 
-            this.btnLBA2InstantCarWizard.Location = new System.Drawing.Point(9, 149);
-            this.btnLBA2InstantCarWizard.Name = "btnLBA2InstantCarWizard";
-            this.btnLBA2InstantCarWizard.Size = new System.Drawing.Size(75, 23);
-            this.btnLBA2InstantCarWizard.TabIndex = 31;
-            this.btnLBA2InstantCarWizard.Text = "Wizard Car";
-            this.btnLBA2InstantCarWizard.UseVisualStyleBackColor = true;
-            this.btnLBA2InstantCarWizard.Click += new System.EventHandler(this.btnLBA2InstantCar_Click);
-            // 
-            // LBA2Othr_btnGetAreacode
-            // 
-            this.LBA2Othr_btnGetAreacode.Location = new System.Drawing.Point(291, 3);
-            this.LBA2Othr_btnGetAreacode.Name = "LBA2Othr_btnGetAreacode";
-            this.LBA2Othr_btnGetAreacode.Size = new System.Drawing.Size(35, 23);
-            this.LBA2Othr_btnGetAreacode.TabIndex = 30;
-            this.LBA2Othr_btnGetAreacode.Text = "Get";
-            this.LBA2Othr_btnGetAreacode.UseVisualStyleBackColor = true;
-            this.LBA2Othr_btnGetAreacode.Click += new System.EventHandler(this.LBA2Debug_btnGetAreacode_Click);
-            // 
-            // LBA2Othr_lblAreacodeTxt
-            // 
-            this.LBA2Othr_lblAreacodeTxt.AutoSize = true;
-            this.LBA2Othr_lblAreacodeTxt.BackColor = System.Drawing.Color.White;
-            this.LBA2Othr_lblAreacodeTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LBA2Othr_lblAreacodeTxt.Location = new System.Drawing.Point(82, 5);
-            this.LBA2Othr_lblAreacodeTxt.MinimumSize = new System.Drawing.Size(203, 21);
-            this.LBA2Othr_lblAreacodeTxt.Name = "LBA2Othr_lblAreacodeTxt";
-            this.LBA2Othr_lblAreacodeTxt.Size = new System.Drawing.Size(203, 21);
-            this.LBA2Othr_lblAreacodeTxt.TabIndex = 29;
-            // 
-            // LBA2Othr_lblAreacode
-            // 
-            this.LBA2Othr_lblAreacode.AutoSize = true;
-            this.LBA2Othr_lblAreacode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblAreacode.Location = new System.Drawing.Point(6, 8);
-            this.LBA2Othr_lblAreacode.Name = "LBA2Othr_lblAreacode";
-            this.LBA2Othr_lblAreacode.Size = new System.Drawing.Size(61, 13);
-            this.LBA2Othr_lblAreacode.TabIndex = 28;
-            this.LBA2Othr_lblAreacode.Text = "Areacode";
-            // 
-            // tpLBA2Wizard
-            // 
-            this.tpLBA2Wizard.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2Wizard.Controls.Add(this.btnGo);
-            this.tpLBA2Wizard.Controls.Add(this.txtWizardLocation);
-            this.tpLBA2Wizard.Controls.Add(this.rb95);
-            this.tpLBA2Wizard.Controls.Add(this.rb90);
-            this.tpLBA2Wizard.Controls.Add(this.rb35);
-            this.tpLBA2Wizard.Controls.Add(this.rb40);
-            this.tpLBA2Wizard.Controls.Add(this.rb45);
-            this.tpLBA2Wizard.Controls.Add(this.rb50);
-            this.tpLBA2Wizard.Controls.Add(this.rb55);
-            this.tpLBA2Wizard.Controls.Add(this.rb30);
-            this.tpLBA2Wizard.Controls.Add(this.rb85);
-            this.tpLBA2Wizard.Controls.Add(this.rb60);
-            this.tpLBA2Wizard.Controls.Add(this.rb20);
-            this.tpLBA2Wizard.Controls.Add(this.rb25);
-            this.tpLBA2Wizard.Controls.Add(this.rb0);
-            this.tpLBA2Wizard.Controls.Add(this.rb5);
-            this.tpLBA2Wizard.Controls.Add(this.rb10);
-            this.tpLBA2Wizard.Controls.Add(this.rb15);
-            this.tpLBA2Wizard.Controls.Add(this.rb70);
-            this.tpLBA2Wizard.Controls.Add(this.rb75);
-            this.tpLBA2Wizard.Controls.Add(this.rb80);
-            this.tpLBA2Wizard.Controls.Add(this.rb65);
-            this.tpLBA2Wizard.Controls.Add(this.pbWizardMap);
-            this.tpLBA2Wizard.Location = new System.Drawing.Point(4, 22);
-            this.tpLBA2Wizard.Name = "tpLBA2Wizard";
-            this.tpLBA2Wizard.Size = new System.Drawing.Size(334, 178);
-            this.tpLBA2Wizard.TabIndex = 8;
-            this.tpLBA2Wizard.Text = "Wizard";
-            // 
-            // btnGo
-            // 
-            this.btnGo.Location = new System.Drawing.Point(0, 19);
-            this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(39, 23);
-            this.btnGo.TabIndex = 22;
-            this.btnGo.Text = "Go";
-            this.btnGo.UseVisualStyleBackColor = true;
-            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
+            this.LBA2WizardGPS_Start.Location = new System.Drawing.Point(0, 20);
+            this.LBA2WizardGPS_Start.Name = "LBA2WizardGPS_Start";
+            this.LBA2WizardGPS_Start.Size = new System.Drawing.Size(59, 23);
+            this.LBA2WizardGPS_Start.TabIndex = 22;
+            this.LBA2WizardGPS_Start.Text = "Start";
+            this.LBA2WizardGPS_Start.UseVisualStyleBackColor = true;
+            this.LBA2WizardGPS_Start.Click += new System.EventHandler(this.LBA2WizardGPS_Start_Click);
             // 
             // txtWizardLocation
             // 
-            this.txtWizardLocation.Location = new System.Drawing.Point(0, -1);
+            this.txtWizardLocation.Location = new System.Drawing.Point(0, 1);
             this.txtWizardLocation.Name = "txtWizardLocation";
-            this.txtWizardLocation.Size = new System.Drawing.Size(39, 20);
+            this.txtWizardLocation.Size = new System.Drawing.Size(59, 20);
             this.txtWizardLocation.TabIndex = 21;
             this.txtWizardLocation.Text = "56";
             // 
@@ -2577,6 +2308,181 @@
             this.pbWizardMap.TabIndex = 0;
             this.pbWizardMap.TabStop = false;
             // 
+            // tpLBA2ShittyShot
+            // 
+            this.tpLBA2ShittyShot.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblInstruct);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnSquare);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnTriangle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnCircle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_btnOnOff);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblSquare);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblTriangle);
+            this.tpLBA2ShittyShot.Controls.Add(this.LBA2SS_lblCircle);
+            this.tpLBA2ShittyShot.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2ShittyShot.Name = "tpLBA2ShittyShot";
+            this.tpLBA2ShittyShot.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2ShittyShot.TabIndex = 2;
+            this.tpLBA2ShittyShot.Text = "Shitty Shot";
+            // 
+            // LBA2SS_lblInstruct
+            // 
+            this.LBA2SS_lblInstruct.AutoSize = true;
+            this.LBA2SS_lblInstruct.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblInstruct.Location = new System.Drawing.Point(12, 11);
+            this.LBA2SS_lblInstruct.Name = "LBA2SS_lblInstruct";
+            this.LBA2SS_lblInstruct.Size = new System.Drawing.Size(307, 26);
+            this.LBA2SS_lblInstruct.TabIndex = 19;
+            this.LBA2SS_lblInstruct.Text = "Click colour to toggle status";
+            // 
+            // LBA2SS_btnSquare
+            // 
+            this.LBA2SS_btnSquare.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnSquare.Location = new System.Drawing.Point(230, 44);
+            this.LBA2SS_btnSquare.Name = "LBA2SS_btnSquare";
+            this.LBA2SS_btnSquare.Size = new System.Drawing.Size(79, 58);
+            this.LBA2SS_btnSquare.TabIndex = 18;
+            this.LBA2SS_btnSquare.UseVisualStyleBackColor = false;
+            this.LBA2SS_btnSquare.Click += new System.EventHandler(this.LBA2SS_btnSquare_Click);
+            // 
+            // LBA2SS_btnTriangle
+            // 
+            this.LBA2SS_btnTriangle.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnTriangle.Location = new System.Drawing.Point(128, 44);
+            this.LBA2SS_btnTriangle.Name = "LBA2SS_btnTriangle";
+            this.LBA2SS_btnTriangle.Size = new System.Drawing.Size(75, 58);
+            this.LBA2SS_btnTriangle.TabIndex = 17;
+            this.LBA2SS_btnTriangle.UseVisualStyleBackColor = false;
+            this.LBA2SS_btnTriangle.Click += new System.EventHandler(this.LBA2SS_btnTriangle_Click);
+            // 
+            // LBA2SS_btnCircle
+            // 
+            this.LBA2SS_btnCircle.BackColor = System.Drawing.Color.Red;
+            this.LBA2SS_btnCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_btnCircle.Location = new System.Drawing.Point(26, 44);
+            this.LBA2SS_btnCircle.Name = "LBA2SS_btnCircle";
+            this.LBA2SS_btnCircle.Size = new System.Drawing.Size(74, 58);
+            this.LBA2SS_btnCircle.TabIndex = 16;
+            this.LBA2SS_btnCircle.UseVisualStyleBackColor = false;
+            this.LBA2SS_btnCircle.Click += new System.EventHandler(this.LBA2SS_btnCircle_Click);
+            // 
+            // LBA2SS_btnOnOff
+            // 
+            this.LBA2SS_btnOnOff.Location = new System.Drawing.Point(128, 143);
+            this.LBA2SS_btnOnOff.Name = "LBA2SS_btnOnOff";
+            this.LBA2SS_btnOnOff.Size = new System.Drawing.Size(75, 23);
+            this.LBA2SS_btnOnOff.TabIndex = 15;
+            this.LBA2SS_btnOnOff.Text = "Off";
+            this.LBA2SS_btnOnOff.UseVisualStyleBackColor = true;
+            this.LBA2SS_btnOnOff.Click += new System.EventHandler(this.LBA2SS_btnOnOff_Click);
+            // 
+            // LBA2SS_lblSquare
+            // 
+            this.LBA2SS_lblSquare.AutoSize = true;
+            this.LBA2SS_lblSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblSquare.Location = new System.Drawing.Point(226, 111);
+            this.LBA2SS_lblSquare.Name = "LBA2SS_lblSquare";
+            this.LBA2SS_lblSquare.Size = new System.Drawing.Size(67, 20);
+            this.LBA2SS_lblSquare.TabIndex = 14;
+            this.LBA2SS_lblSquare.Text = "Square";
+            // 
+            // LBA2SS_lblTriangle
+            // 
+            this.LBA2SS_lblTriangle.AutoSize = true;
+            this.LBA2SS_lblTriangle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblTriangle.Location = new System.Drawing.Point(124, 111);
+            this.LBA2SS_lblTriangle.Name = "LBA2SS_lblTriangle";
+            this.LBA2SS_lblTriangle.Size = new System.Drawing.Size(73, 20);
+            this.LBA2SS_lblTriangle.TabIndex = 13;
+            this.LBA2SS_lblTriangle.Text = "Triangle";
+            // 
+            // LBA2SS_lblCircle
+            // 
+            this.LBA2SS_lblCircle.AutoSize = true;
+            this.LBA2SS_lblCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2SS_lblCircle.Location = new System.Drawing.Point(36, 111);
+            this.LBA2SS_lblCircle.Name = "LBA2SS_lblCircle";
+            this.LBA2SS_lblCircle.Size = new System.Drawing.Size(54, 20);
+            this.LBA2SS_lblCircle.TabIndex = 12;
+            this.LBA2SS_lblCircle.Text = "Circle";
+            // 
+            // tpLBA2Debug
+            // 
+            this.tpLBA2Debug.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarDisabled);
+            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarTunic);
+            this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarWizard);
+            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_btnGetAreacode);
+            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_lblAreacodeTxt);
+            this.tpLBA2Debug.Controls.Add(this.LBA2Othr_lblAreacode);
+            this.tpLBA2Debug.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Debug.Name = "tpLBA2Debug";
+            this.tpLBA2Debug.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLBA2Debug.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Debug.TabIndex = 7;
+            this.tpLBA2Debug.Text = "Debug";
+            // 
+            // btnLBA2InstantCarDisabled
+            // 
+            this.btnLBA2InstantCarDisabled.Location = new System.Drawing.Point(251, 149);
+            this.btnLBA2InstantCarDisabled.Name = "btnLBA2InstantCarDisabled";
+            this.btnLBA2InstantCarDisabled.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2InstantCarDisabled.TabIndex = 33;
+            this.btnLBA2InstantCarDisabled.Text = "Car: Off";
+            this.btnLBA2InstantCarDisabled.UseVisualStyleBackColor = true;
+            this.btnLBA2InstantCarDisabled.Click += new System.EventHandler(this.btnLBA2InstantCarDisabled_Click);
+            // 
+            // btnLBA2InstantCarTunic
+            // 
+            this.btnLBA2InstantCarTunic.Location = new System.Drawing.Point(129, 149);
+            this.btnLBA2InstantCarTunic.Name = "btnLBA2InstantCarTunic";
+            this.btnLBA2InstantCarTunic.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2InstantCarTunic.TabIndex = 32;
+            this.btnLBA2InstantCarTunic.Text = "Tunic Car";
+            this.btnLBA2InstantCarTunic.UseVisualStyleBackColor = true;
+            this.btnLBA2InstantCarTunic.Click += new System.EventHandler(this.btnLBA2InstantCarTunic_Click);
+            // 
+            // btnLBA2InstantCarWizard
+            // 
+            this.btnLBA2InstantCarWizard.Location = new System.Drawing.Point(9, 149);
+            this.btnLBA2InstantCarWizard.Name = "btnLBA2InstantCarWizard";
+            this.btnLBA2InstantCarWizard.Size = new System.Drawing.Size(75, 23);
+            this.btnLBA2InstantCarWizard.TabIndex = 31;
+            this.btnLBA2InstantCarWizard.Text = "Wizard Car";
+            this.btnLBA2InstantCarWizard.UseVisualStyleBackColor = true;
+            this.btnLBA2InstantCarWizard.Click += new System.EventHandler(this.btnLBA2InstantCar_Click);
+            // 
+            // LBA2Othr_btnGetAreacode
+            // 
+            this.LBA2Othr_btnGetAreacode.Location = new System.Drawing.Point(291, 3);
+            this.LBA2Othr_btnGetAreacode.Name = "LBA2Othr_btnGetAreacode";
+            this.LBA2Othr_btnGetAreacode.Size = new System.Drawing.Size(35, 23);
+            this.LBA2Othr_btnGetAreacode.TabIndex = 30;
+            this.LBA2Othr_btnGetAreacode.Text = "Get";
+            this.LBA2Othr_btnGetAreacode.UseVisualStyleBackColor = true;
+            this.LBA2Othr_btnGetAreacode.Click += new System.EventHandler(this.LBA2Debug_btnGetAreacode_Click);
+            // 
+            // LBA2Othr_lblAreacodeTxt
+            // 
+            this.LBA2Othr_lblAreacodeTxt.AutoSize = true;
+            this.LBA2Othr_lblAreacodeTxt.BackColor = System.Drawing.Color.White;
+            this.LBA2Othr_lblAreacodeTxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LBA2Othr_lblAreacodeTxt.Location = new System.Drawing.Point(82, 5);
+            this.LBA2Othr_lblAreacodeTxt.MinimumSize = new System.Drawing.Size(203, 21);
+            this.LBA2Othr_lblAreacodeTxt.Name = "LBA2Othr_lblAreacodeTxt";
+            this.LBA2Othr_lblAreacodeTxt.Size = new System.Drawing.Size(203, 21);
+            this.LBA2Othr_lblAreacodeTxt.TabIndex = 29;
+            // 
+            // LBA2Othr_lblAreacode
+            // 
+            this.LBA2Othr_lblAreacode.AutoSize = true;
+            this.LBA2Othr_lblAreacode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblAreacode.Location = new System.Drawing.Point(6, 8);
+            this.LBA2Othr_lblAreacode.Name = "LBA2Othr_lblAreacode";
+            this.LBA2Othr_lblAreacode.Size = new System.Drawing.Size(61, 13);
+            this.LBA2Othr_lblAreacode.TabIndex = 28;
+            this.LBA2Othr_lblAreacode.Text = "Areacode";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2673,14 +2579,69 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // tmrLBA1TeleportTabRefresh
+            // LBA2Misc_gbBlowtron
             // 
-            this.tmrLBA1TeleportTabRefresh.Tick += new System.EventHandler(this.LBA1Tel_TmrTabRefresh_Tick);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron2);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_btnBlowtron);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron1);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron0);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_lblBlowtron);
+            this.LBA2Misc_gbBlowtron.Location = new System.Drawing.Point(3, 35);
+            this.LBA2Misc_gbBlowtron.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.LBA2Misc_gbBlowtron.Name = "LBA2Misc_gbBlowtron";
+            this.LBA2Misc_gbBlowtron.Size = new System.Drawing.Size(328, 30);
+            this.LBA2Misc_gbBlowtron.TabIndex = 39;
+            this.LBA2Misc_gbBlowtron.TabStop = false;
             // 
-            // tmrHeightLock
+            // LBA2Misc_rbBlowtron2
             // 
-            this.tmrHeightLock.Interval = 50;
-            this.tmrHeightLock.Tick += new System.EventHandler(this.LBA1Tel_TmrHeightLock_Tick);
+            this.LBA2Misc_rbBlowtron2.AutoSize = true;
+            this.LBA2Misc_rbBlowtron2.Location = new System.Drawing.Point(223, 10);
+            this.LBA2Misc_rbBlowtron2.Name = "LBA2Misc_rbBlowtron2";
+            this.LBA2Misc_rbBlowtron2.Size = new System.Drawing.Size(14, 13);
+            this.LBA2Misc_rbBlowtron2.TabIndex = 47;
+            this.LBA2Misc_rbBlowtron2.TabStop = true;
+            this.LBA2Misc_rbBlowtron2.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Misc_btnBlowtron
+            // 
+            this.LBA2Misc_btnBlowtron.Location = new System.Drawing.Point(253, 5);
+            this.LBA2Misc_btnBlowtron.Name = "LBA2Misc_btnBlowtron";
+            this.LBA2Misc_btnBlowtron.Size = new System.Drawing.Size(75, 23);
+            this.LBA2Misc_btnBlowtron.TabIndex = 43;
+            this.LBA2Misc_btnBlowtron.Text = "Show";
+            this.LBA2Misc_btnBlowtron.UseVisualStyleBackColor = true;
+            this.LBA2Misc_btnBlowtron.Click += new System.EventHandler(this.LBA2Misc_btnBlowtron_Click);
+            // 
+            // LBA2Misc_rbBlowtron1
+            // 
+            this.LBA2Misc_rbBlowtron1.AutoSize = true;
+            this.LBA2Misc_rbBlowtron1.Location = new System.Drawing.Point(147, 10);
+            this.LBA2Misc_rbBlowtron1.Name = "LBA2Misc_rbBlowtron1";
+            this.LBA2Misc_rbBlowtron1.Size = new System.Drawing.Size(14, 13);
+            this.LBA2Misc_rbBlowtron1.TabIndex = 46;
+            this.LBA2Misc_rbBlowtron1.TabStop = true;
+            this.LBA2Misc_rbBlowtron1.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Misc_rbBlowtron0
+            // 
+            this.LBA2Misc_rbBlowtron0.AutoSize = true;
+            this.LBA2Misc_rbBlowtron0.Location = new System.Drawing.Point(70, 10);
+            this.LBA2Misc_rbBlowtron0.Name = "LBA2Misc_rbBlowtron0";
+            this.LBA2Misc_rbBlowtron0.Size = new System.Drawing.Size(14, 13);
+            this.LBA2Misc_rbBlowtron0.TabIndex = 45;
+            this.LBA2Misc_rbBlowtron0.TabStop = true;
+            this.LBA2Misc_rbBlowtron0.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Misc_lblBlowtron
+            // 
+            this.LBA2Misc_lblBlowtron.AutoSize = true;
+            this.LBA2Misc_lblBlowtron.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Misc_lblBlowtron.Location = new System.Drawing.Point(0, 10);
+            this.LBA2Misc_lblBlowtron.Name = "LBA2Misc_lblBlowtron";
+            this.LBA2Misc_lblBlowtron.Size = new System.Drawing.Size(56, 13);
+            this.LBA2Misc_lblBlowtron.TabIndex = 44;
+            this.LBA2Misc_lblBlowtron.Text = "Blowtron";
             // 
             // frmTrainer
             // 
@@ -2705,9 +2666,8 @@
             this.tpLBA1Other.PerformLayout();
             this.tpLBA1Holomap.ResumeLayout(false);
             this.tpLBA1Holomap.PerformLayout();
-            this.tpFlying.ResumeLayout(false);
             this.tpTeleport.ResumeLayout(false);
-            this.tpTeleport.PerformLayout();
+            this.tpFlying.ResumeLayout(false);
             this.tpSaveGame.ResumeLayout(false);
             this.tpSaveGame.PerformLayout();
             this.tbLBA2.ResumeLayout(false);
@@ -2716,21 +2676,26 @@
             this.tpLBA2Twinsen.PerformLayout();
             this.tpLBA2Other.ResumeLayout(false);
             this.tpLBA2Other.PerformLayout();
+            this.tpLBA2Slate.ResumeLayout(false);
+            this.tpLBA2Slate.PerformLayout();
+            this.tpLBA2Misc.ResumeLayout(false);
+            this.tpLBA2Misc.PerformLayout();
             this.tpHyperCar.ResumeLayout(false);
             this.LBA2HyperCar_panel.ResumeLayout(false);
             this.LBA2HyperCar_panel.PerformLayout();
             this.tpLBA2Teleport.ResumeLayout(false);
-            this.tpLBA2Teleport.PerformLayout();
-            this.LBA2Flying.ResumeLayout(false);
+            this.tpLBA2Flying.ResumeLayout(false);
+            this.tpLBA2WizardGPS.ResumeLayout(false);
+            this.tpLBA2WizardGPS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).EndInit();
             this.tpLBA2ShittyShot.ResumeLayout(false);
             this.tpLBA2ShittyShot.PerformLayout();
             this.tpLBA2Debug.ResumeLayout(false);
             this.tpLBA2Debug.PerformLayout();
-            this.tpLBA2Wizard.ResumeLayout(false);
-            this.tpLBA2Wizard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.LBA2Misc_gbBlowtron.ResumeLayout(false);
+            this.LBA2Misc_gbBlowtron.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2797,8 +2762,6 @@
         private System.Windows.Forms.ComboBox LBA1Othr_cboMovies;
         private System.Windows.Forms.Label LBA1Othr_lblMovies;
         private System.Windows.Forms.TabPage tpTeleport;
-        private System.Windows.Forms.TextBox LBA1Tel_txtFacing;
-        private System.Windows.Forms.Label LBA1Tel_lblFacing;
         private System.Windows.Forms.TabPage tpSaveGame;
         private System.Windows.Forms.Button LBA1SG_btnSetSaveFileDir;
         private System.Windows.Forms.TextBox LBA1SG_txtSaveFileDirectory;
@@ -2824,18 +2787,6 @@
         private System.Windows.Forms.Label LBA1Othr_lblChapter;
         private System.Windows.Forms.Timer tmrHeightLock;
         private System.Windows.Forms.TabPage tpFlying;
-        private System.Windows.Forms.CheckBox LBA1Tel_chkLock;
-        private System.Windows.Forms.TextBox LBA1Tel_txtRefreshInterval;
-        private System.Windows.Forms.Label LBA1Tel_lblAutoRefresh;
-        private System.Windows.Forms.Button LBA1Tel_btnStartStopRefresh;
-        private System.Windows.Forms.TextBox LBA1Tel_txtZPos;
-        private System.Windows.Forms.Button LBA1Tel_btnSet;
-        private System.Windows.Forms.Label LBA1Tel_lblZPos;
-        private System.Windows.Forms.TextBox LBA1Tel_txtXPos;
-        private System.Windows.Forms.TextBox LBA1Tel_txtYPos;
-        private System.Windows.Forms.Label LBA1Tel_lblXPos;
-        private System.Windows.Forms.Label LBA1Tel_lblYPos;
-        private System.Windows.Forms.Button LBA1Tel_btnScan;
         private System.Windows.Forms.Timer tmrFlying;
         private System.Windows.Forms.Button LBA1SG_btnDeleteSaves;
         private System.Windows.Forms.Label LBA1SG_lblF8SaveAs;
@@ -2843,16 +2794,6 @@
         private System.Windows.Forms.ToolStripMenuItem LBA2GodModeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem infiniteMagicToolStripMenuItem;
         private System.Windows.Forms.TabPage tpLBA2Teleport;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblLBA2LocationYPos;
-        private System.Windows.Forms.Label lblLBA2LocationZPos;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox txtLBA2LocationZPos;
-        private System.Windows.Forms.TextBox txtLBA2LocationYPos;
-        private System.Windows.Forms.TextBox txtLBA2LocationXPos;
-        private System.Windows.Forms.Label lblLBA2LocationXPos;
-        private System.Windows.Forms.Button btnLBA2LocationSet;
-        private System.Windows.Forms.Button btnLBA2TeleportScan;
         private System.Windows.Forms.TabPage tpLBA2ShittyShot;
         private System.Windows.Forms.Label LBA2SS_lblInstruct;
         private System.Windows.Forms.Button LBA2SS_btnSquare;
@@ -2862,11 +2803,9 @@
         private System.Windows.Forms.Label LBA2SS_lblSquare;
         private System.Windows.Forms.Label LBA2SS_lblTriangle;
         private System.Windows.Forms.Label LBA2SS_lblCircle;
-        private System.Windows.Forms.TabPage LBA2Flying;
-        private LBAFlying.Flying flying1;
+        private System.Windows.Forms.TabPage tpLBA2Flying;
+        private LBAFlying.Flying FlyingLBA2;
         private System.Windows.Forms.TabPage tpLBA2Other;
-        private LBAFlying.Flying flying2;
-        private System.Windows.Forms.Button LBA1Tel_Update;
         private System.Windows.Forms.TabPage tpHyperCar;
         private System.Windows.Forms.Panel LBA2HyperCar_panel;
         private System.Windows.Forms.Label lblHyperCarGear5;
@@ -2921,27 +2860,22 @@
         private System.Windows.Forms.CheckBox LBA2Othr_chkWeapon;
         private System.Windows.Forms.ComboBox LBA2Othr_cboWeapon;
         private System.Windows.Forms.Label LBA2Othr_lblWeapon;
-        private System.Windows.Forms.Label lblLBA2LocationFacing;
-        private System.Windows.Forms.TextBox txtLBA2LocationFacing;
         private System.Windows.Forms.CheckBox LBA2Othr_chkBehaviourValue;
         private System.Windows.Forms.ComboBox LBA2Othr_cboBehaviour;
         private System.Windows.Forms.Label LBA2Othr_lblBehaviour;
-        private System.Windows.Forms.ComboBox LBA2Othr_cboMisc;
-        private System.Windows.Forms.Label LBA2Othr_lblMisc;
         private System.Windows.Forms.TabPage tpLBA2Debug;
         private System.Windows.Forms.Button LBA2Othr_btnGetAreacode;
         private System.Windows.Forms.Label LBA2Othr_lblAreacodeTxt;
         private System.Windows.Forms.Label LBA2Othr_lblAreacode;
-        private System.Windows.Forms.CheckBox LBA2Othr_chkMisc;
         private System.Windows.Forms.Button btnLBA2InstantCarDisabled;
         private System.Windows.Forms.Button btnLBA2InstantCarTunic;
         private System.Windows.Forms.Button btnLBA2InstantCarWizard;
         private System.Windows.Forms.CheckBox LBA2Othr_chkSubquest;
         private System.Windows.Forms.ComboBox LBA2Othr_cboSubquest;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LBA2Othr_lblSubquest;
+        private System.Windows.Forms.Label LBA2Othr_lblQuest;
         private System.Windows.Forms.ComboBox LBA2Othr_cboQuest;
-        private System.Windows.Forms.TabPage tpLBA2Wizard;
+        private System.Windows.Forms.TabPage tpLBA2WizardGPS;
         private System.Windows.Forms.PictureBox pbWizardMap;
         private System.Windows.Forms.RadioButton rb0;
         private System.Windows.Forms.RadioButton rb5;
@@ -2963,8 +2897,36 @@
         private System.Windows.Forms.RadioButton rb85;
         private System.Windows.Forms.RadioButton rb90;
         private System.Windows.Forms.RadioButton rb95;
-        private System.Windows.Forms.Button btnGo;
+        private System.Windows.Forms.Button LBA2WizardGPS_Start;
         private System.Windows.Forms.TextBox txtWizardLocation;
+        private LBATeleport.ucTeleport ucTeleportLBA2;
+        private LBAFlying.Flying FlyingLBA1;
+        private System.Windows.Forms.TabPage tpLBA2Slate;
+        private System.Windows.Forms.Label LBA2Slate_map4;
+        private System.Windows.Forms.Label LBA2Slate_map3;
+        private System.Windows.Forms.Label LBA2Slate_map2;
+        private System.Windows.Forms.Label LBA2Slate_map1;
+        private System.Windows.Forms.Label LBA2Slate_map0;
+        private System.Windows.Forms.ComboBox LBA2Slate_cb4;
+        private System.Windows.Forms.ComboBox LBA2Slate_cb3;
+        private System.Windows.Forms.ComboBox LBA2Slate_cb2;
+        private System.Windows.Forms.ComboBox LBA2Slate_cb1;
+        private System.Windows.Forms.ComboBox LBA2Slate_cb0;
+        private System.Windows.Forms.Button LBA2Slate_btnSet;
+        private System.Windows.Forms.TabPage tpLBA2Misc;
+        private System.Windows.Forms.Label LBA2Othr_lblHornHealth;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkMisc;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboMisc;
+        private System.Windows.Forms.Label LBA2Othr_lblMisc;
+        private System.Windows.Forms.HScrollBar LBA2Othr_hsbHornHealth;
+        private System.Windows.Forms.Label LBA2Othr_lblHornHealthValue;
+        private LBATeleport.ucTeleport ucTeleportLBA1;
+        private System.Windows.Forms.GroupBox LBA2Misc_gbBlowtron;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron2;
+        private System.Windows.Forms.Button LBA2Misc_btnBlowtron;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron1;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron0;
+        private System.Windows.Forms.Label LBA2Misc_lblBlowtron;
     }
 }
 

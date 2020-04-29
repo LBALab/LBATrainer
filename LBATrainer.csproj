@@ -66,6 +66,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\LBAMemoryModule\bin\Release\netstandard2.0\LBAMemoryModule.dll</HintPath>
     </Reference>
+    <Reference Include="LBATeleport">
+      <HintPath>..\LBATeleport\bin\Release\LBATeleport.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -94,9 +97,6 @@
     <Compile Include="LBA1\Trainer.LBA1.Savegame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LBA1\Trainer.LBA1.Teleport.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LBA1\Trainer.LBA1.Twinsen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +109,9 @@
     <Compile Include="LBA2\Trainer.LBA2.MenuFunctions.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.Misc.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LBA2\Trainer.LBA2.Offsets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,10 +121,13 @@
     <Compile Include="LBA2\Trainer.LBA2.ShittyShot.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LBA2\Trainer.LBA2.Teleport.cs">
+    <Compile Include="LBA2\Trainer.LBA2.Slate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LBA2\Trainer.LBA2.Twinsen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LBA2\Trainer.LBA2.WizardGPS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="objects\getSaveFileNames.cs">

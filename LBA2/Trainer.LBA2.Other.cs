@@ -15,10 +15,12 @@ namespace LBATrainer
         LBA2Quests LBA2Other_quests;
 
         const int LBA2WEAPONADDRESS = 0x3D693;
-        private void LBA2Othr_Start()
+        private void LBA2Othr_Load()
         {
             LBA2Othr_populateSkins();
             LBA2Othr_populateQuests();
+            LBA2Othr_populateTritonHorn();
+            LBA2Othr_populateWeapons();
         }
 
         private void LBA2Othr_populateSkins()
@@ -34,6 +36,28 @@ namespace LBATrainer
             LBA2Othr_cboQuest.Items.AddRange(LBA2Other_quests.quests);
         }
 
+        private void LBA2Othr_populateTritonHorn()
+        {
+            byte  val = (byte)memRoutines.readVal(LBA2_HORN_TRITON_HEALTH, 1);
+            LBA2Othr_hsbHornHealth.Value = val;
+            LBA2Othr_lblHornHealthValue.Text = val.ToString();
+        }
+
+        private void LBA2Othr_populateWeapons()
+        {
+            LBA2Othr_cboWeapon.Items.Clear();
+            NameValue[] nv = new NameValue[8];
+            nv[0] = new NameValue(0, "No Weapon");
+            nv[1] = new NameValue(1, "Magic Ball");
+            nv[2] = new NameValue(2, "Darts");
+            nv[3] = new NameValue(9, "Lazer Pistol");
+            nv[4] = new NameValue(10, "Emporers Sword");
+            nv[5] = new NameValue(11, "Wannies Glove");
+            nv[6] = new NameValue(22, "Horn of triton");
+            nv[7] = new NameValue(23, "Blowgun/Blowtron");
+            LBA2Othr_cboWeapon.Items.AddRange(nv);
+            LBA2Othr_cboWeapon.Tag = nv;
+        }
         private void LBA2Othr_cboQuest_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (-1 == LBA2Othr_cboQuest.SelectedIndex)
@@ -43,7 +67,7 @@ namespace LBATrainer
             }
             LBA2Othr_cboSubquest.Items.Clear();
             LBA2Othr_cboSubquest.Text = "";
-            LBA2Othr_cboSubquest.Items.AddRange(LBA2Other_quests.quests[LBA2Othr_cboQuest.SelectedIndex].subquests);
+            LBA2Othr_cboSubquest.Items.AddRange(((LBA2Quest)LBA2Othr_cboQuest.SelectedItem).subquests);
         }
 
         private void LBA2Othr_cboSubquest_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,7 +126,7 @@ namespace LBATrainer
 
         private ushort LBA2Othr_getSelectedWeaponNumber()
         {
-            return (ushort)getInt(LBA2Othr_cboWeapon.Text.Substring(0, 2));
+            return ((NameValue)LBA2Othr_cboWeapon.SelectedItem).val;
         }
         private void LBA2Othr_cboWeapon_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -114,56 +138,43 @@ namespace LBATrainer
             if (LBA2Othr_chkWeapon.Checked) memRoutines.WriteVal(LBA2WEAPONADDRESS, LBA2Othr_getSelectedWeaponNumber(), 1);
         }
 
-        private void LBA2Othr_chkMisc_CheckedChanged(object sender, EventArgs e)
-        {
-            //If nothing selected do nothing
-            if (-1 == LBA2Othr_cboMisc.SelectedIndex) return;
 
-            switch (LBA2Othr_cboMisc.SelectedIndex)
-            {
-                case 0: toggleRain(LBA2Othr_chkMisc.Checked);
-                        break;
-                case 1: frictionlessFerry(LBA2Othr_chkMisc.Checked);
-                        break;
-            }
+        private void LBA2Othr_hsbHornHealth_Scroll(object sender, ScrollEventArgs e)
+        {
+            memRoutines.WriteVal(LBA2_HORN_TRITON_HEALTH, (byte)LBA2Othr_hsbHornHealth.Value, 1);
+            LBA2Othr_lblHornHealthValue.Text = LBA2Othr_hsbHornHealth.Value.ToString();
         }
 
-        private void toggleRain(bool rainOff)
+        private void LBA2Othr_lblHornHealthValue_Click(object sender, EventArgs e)
         {
-            if(rainOff)
-            {
-                memRoutines.WriteVal(LBA2_RAIN0, 4, 1);
-                memRoutines.WriteVal(LBA2_RAIN1, 1, 1);
-                memRoutines.WriteVal(LBA2_RAIN2, 2, 1);
-            }
-            else
-            {
-                memRoutines.WriteVal(LBA2_RAIN0, 0, 1);
-                memRoutines.WriteVal(LBA2_RAIN1, 0, 1);
-                memRoutines.WriteVal(LBA2_RAIN2, 0, 1);
-            }
+            memRoutines.WriteVal(LBA2_HORN_TRITON_HEALTH, 100, 1);
         }
 
-        private void frictionlessFerry(bool freeFerry)
+        private void LBA2Othr_filterQuestCBO(ComboBox cb, LBA2Quest[] quests)
         {
-            if (freeFerry)
-            {
-                if (null == tsiLBA2) tsiLBA2 = new oTimerSetItems(oTimerSetItems.LBAVersion.Two);
-                tsiLBA2.AddItem(LBA2_FERRY_TICKET, 1, 1);
-                //tsiLBA2.AddItem(AFTER_FERRY_TICKET, 1, 1);
-                memRoutines.WriteVal(LBA2_SHOWN_FERRY_TICKET, 1, 1);
-            }
-            else
-            {
-                if (null == tsiLBA2) return;
-                tsiLBA2.RemoveIfExists(LBA2_FERRY_TICKET);
-                //tsiLBA2.RemoveIfExists(AFTER_FERRY_TICKET);
-                tsiLBA2.RemoveIfExists(LBA2_SHOWN_FERRY_TICKET);
-            }
+            //If not entering data i.e. empty field
+            if (-1 != cb.SelectedIndex) return;
+
+            cb.Items.Clear();
+            LBA2Othr_cboSubquest.Items.Clear();
+            for (int i = 0; i < quests.Count(); i++)
+                if (quests[i].name.ToLower().Contains(cb.Text.ToLower()))
+                    cb.Items.Add(quests[i]);
+                else
+                    for(int j = 0; j < quests[i].subquests.Count();j++)
+                        if(quests[i].subquests[j].name.ToLower().Contains(cb.Text.ToLower()))
+                        {
+                            cb.Items.Add(quests[i]);
+                            break;
+                        }
+
+            cb.SelectionStart = cb.Text.Length;
+            cb.SelectionLength = 0;
         }
-        /*
-         const int SHOWN_FERRY_TICKET = 0x78743;
-        const int AFTER_FERRY_TICKET = 0x57BAC;
-        */
+
+        private void LBA2Othr_cboQuest_TextChanged(object sender, EventArgs e)
+        {
+            LBA2Othr_filterQuestCBO(LBA2Othr_cboQuest, LBA2Other_quests.quests);
+        }
     }
 }

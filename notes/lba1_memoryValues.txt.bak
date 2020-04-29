@@ -1,16 +1,14 @@
 ==========================
 Offsets from base (Relent)
 ==========================
-Behaviour:		E08
-Chapter Number:		E28
-Outfit:			D4EC
-Z:			D508
-Y:			D50A
-X:			D50C
-Facing:			D522
-Hamalayi Military Door	D9B0
-
-File Name:		1CB34
+Behaviour:	E08
+Chapter Number:	E28
+Outfit:		D4EC
+Z:		D508
+Y:		D50A
+X:		D50C
+Facing:		D522
+File Name:	1CB34
 ==========================
 
 Values are in reversed format i.e. ABCD is stored as DCAB

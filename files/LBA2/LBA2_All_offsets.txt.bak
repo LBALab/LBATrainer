@@ -1,0 +1,129 @@
+-58E9B	Forward Gear Speed cap //Minus offset
+-58EAB	Reverse Gear speed cap //Minus offset
+
+3D657	Slate map array base
+3D65B	Slate map array end
+3D691	Clover Boxes
+3D693	Current Weapon
+488ED	Current Movie ID
+52B9B	Current Car Speed
+55BE8	Current slate Map Index
+558E9	Number of Maps on slate
+55C5F	Areacode
+57BAA	All switches correctly set - probably reused
+57BA4	Switch on/off - reused across scenes
+57BA5	Switch on/off - reused across scenes
+57BA6	Switch on/off - reused across scenes
+57BA7	Switch on/off - reused across scenes
+57BA8	Switch on/off - reused across scenes
+57BAB	Wizard lever pulled - probably reused
+57BF3	Holomap
+57BF5	Magic Ball
+57BF7	Darts
+57BF9	Sendalls Ball
+57BFB	Tunic
+57BFD	Pearl
+57BFD	Itineray Token
+57BFF	Pyramid Key
+57C01	Steering Wheel
+57C05	Crystal
+57C05	Working Gun
+57C07	Funfrock's Sabre
+57C09	Wannies Glove
+57C0B	Proto Pack
+57C0D	Ferry Ticket
+57C0F	Meca Penguin
+57C11	Gazogem
+57C13	Dissidents Ring
+57C15	Gallic Acid
+57C17	Ferry Song
+57C19	Lightening Spell
+57C1B	Umbrella
+57C1D	Gems
+57C1F	Horn Triton
+57C21	Blowgun
+57C23	Memory Viewer
+57C25	Firefly Tart
+57C27	Walkie Talkie
+57C29	Garden Balsam
+57C2B	Slate
+57C2D	Translator
+57C2F	Wizards Diploma
+57C31	Franco's Fragment
+57C33	Sup's Fragment
+57C35	Mosquibee's Fragment
+57C37	Wannie's Fragment
+57C39	Throne Key
+57C3B	Pick Axe
+57C3D	Burger Master's Key
+57C3F	Burger Master's Notes
+57C41	Protection Spell
+57C61	Combined Key Fragments
+57C65	?Umbrella Stolen
+57C91	FunFrock cut scene:   trigger funfrock = 1; funfrock inside = 2;
+57CF7	Broken Pistol
+57CF7	Working Gun
+57D47	Itineray Token
+57DE9	Clovers
+57DF7	Kashers
+57DF9	Twinsen's mode
+57DFB	Zilitos
+57DFF	Magic Level
+57E00	Magic Points
+57E01	Keys
+57F29	Health
+57F35	Y-Location
+57F39	Z-Location
+57F3D	X-Location
+57F51	Twinsen Outfit (0 > 24)
+
+58592	Museum door 110 locked, 114 can pass through - other stuff too
+
+Holomap Values: 0 Not had, 1: Got Arrow: 2: Been there, lost arrow.
+Holomap location
+74F14	Citadel: House of Twinsen and Zoe
+74F34	Citadel: House of Twinsen and Zoe
+74F54	Citadel: Unnamed - Upper hills
+74F74	Citadel: Unnamed: Chez Luc
+74F94	Citadel: Unnamed: Chez Luc
+74FB4	Citadel: Baggage Claim Building
+74FD4	Citadel: Baggage Claim Building
+74FF4	Citadel: Mr. Paul's
+75014	Citadel: Unnamed - Ferry ticket office
+75034	Citadel: Unnamed: Twinsens Neighbour
+75054	Desert: Unnamed: Rock mountain
+75074	Desert: Unnamed: Rock mountain
+75094	Desert: Unnamed: Rock mountain
+750B4	?
+750D4	Citadel: Unnamed: Shop
+750F4	Citadel: Museum
+75114	Citadel: Baggage Claim Building
+75134	Citadel: Unnamed - Umbrella thief first point
+75154	Citadel: Unnamed - Umbrella thief first point
+75174	Citadel: Unnamed - Upper hills
+75194	Citadel: Unnamed - Upper hills
+751B4	Citadel: Tent of the Weather Wizard
+751D4	Citadel: Pharmacy
+751F4	?
+75214	Desert: Hacienda - Unnamed
+75234	Desert: Hacienda - Unnamed
+75254	Citadel: Dome of the Slate
+75274	Desert: School of Magic
+75294	Desert: School of Magic
+752B4	Desert: Hacienda - Unnamed
+752D4	Desert: Hacienda - Unnamed
+752F4	?
+75314	Desert: Hacienda - Unnamed
+75334	Desert: School of Magic
+75354	Citadel: Unnamed - Umbrella thief first point
+75374	Desert: House of Ker'aooc the Healer
+75394	Desert: Shop - Unnamed
+
+
+78697	Itineray Token
+786EF	Broken Pistol
+786EF	Working Gun
+78731	SuperJetPack
+78805	Horn of Triton Health
+78823	Blowtron (Requires blowgun)
+788D3	Combined Key Fragments

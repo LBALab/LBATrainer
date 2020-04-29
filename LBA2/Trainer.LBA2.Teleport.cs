@@ -9,7 +9,7 @@ namespace LBATrainer
         public partial class frmTrainer
         {
 
-            private void btnLBA2LocationScan_Click(object sender, EventArgs e)
+            /*private void btnLBA2LocationScan_Click(object sender, EventArgs e)
             {
                 txtLBA2LocationXPos.Text = memRoutines.readAddress(2, 0x57F35, 2).ToString();
                 txtLBA2LocationZPos.Text = memRoutines.readAddress(2, 0x57F39, 2).ToString();
@@ -22,7 +22,7 @@ namespace LBATrainer
                 memRoutines.WriteVal(2, 0x57F35, (ushort)getInt(txtLBA2LocationXPos.Text), 2);
                 memRoutines.WriteVal(2, 0x57F39, (ushort)getInt(txtLBA2LocationZPos.Text), 2);
                 memRoutines.WriteVal(2, 0x57F3D, (ushort)getInt(txtLBA2LocationYPos.Text), 2);
-            }
+            }*/
 
         /*private void BtnLBA1TeleportScan_Click(object sender, EventArgs e)
         {

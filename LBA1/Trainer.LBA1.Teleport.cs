@@ -9,7 +9,7 @@ namespace LBATrainer
 {
     public partial class frmTrainer
     {
-        oTeleport tel = new oTeleport();
+        /*oTeleport tel = new oTeleport();
         private void LBA1Tel_BtnScan_Click(object sender, EventArgs e)
         {
             LBA1Tel_teleportScan();
@@ -74,7 +74,7 @@ namespace LBATrainer
         private void LBA1Tel_Update_Click(object sender, EventArgs e)
         {
             tel.UpdateHeight((ushort)getInt(LBA1Tel_txtZPos.Text));
-        }
+        }*/
 
     }
 }

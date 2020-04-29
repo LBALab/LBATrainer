@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="29">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Clovers"</Description>
+      <LastState Value="2" RealAddress="0034AA9C"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>LBA.exe+9AA9C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"Clover Boxes"</Description>
+      <LastState Value="2" RealAddress="0034AAB4"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>LBA.exe+9AAB4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Gas"</Description>
+      <LastState Value="0" RealAddress="0034D6BC"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>LBA.exe+9D6BC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"Keys"</Description>
+      <LastState Value="0" RealAddress="0034D6CC"/>
+      <VariableType>Byte</VariableType>
+      <Address>LBA.exe+9D6CC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"Kashes"</Description>
+      <LastState Value="7" RealAddress="0034D700"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>LBA.exe+9D700</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"Magic Level"</Description>
+      <LastState Value="0" RealAddress="0034D704"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>LBA.exe+9D704</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Magic Points"</Description>
+      <LastState Value="0" RealAddress="0034D708"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>LBA.exe+9D708</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"Ferry Ticket"</Description>
+      <LastState Value="1" RealAddress="004626E0"/>
+      <VariableType>Byte</VariableType>
+      <Address>LBA.exe+1B26E0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"No description"</Description>
+      <LastState Value="0" RealAddress="004626F6"/>
+      <VariableType>Byte</VariableType>
+      <Address>LBA.exe+1B26F6</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Health"</Description>
+      <LastState Value="50" RealAddress="00462F2C"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>LBA.exe+1B2F2C</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

@@ -54,7 +54,7 @@ namespace LBATrainer
             LBA1Twin_cboInventory.Items.Clear();
             LBA1Twin_cboInventory.Items.AddRange(items.Inventory);
             LBA1Othr_Start();
-            LBA1Tel_teleportScan();
+            //LBA1Tel_teleportScan();
         }
         private void LBA1Twin_BtnSet_Click(object sender, EventArgs e)
         {
