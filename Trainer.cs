@@ -123,6 +123,7 @@ namespace LBATrainer
                 LBA1SG_processHotkey((Keys)keyPressed.WParam);
                 //LBA1Menu_processHotkey((Keys)keyPressed.WParam);
                 LBA2HyperCar_ProcessHotKey((Keys)keyPressed.WParam);
+                LBA1Behaviour_processHotkey((Keys)keyPressed.WParam);
             }
             base.WndProc(ref keyPressed);
         }
@@ -163,6 +164,7 @@ namespace LBATrainer
             {
                 memRoutines.WriteVal(1, (int)LBA1_AUTOZOOM, (ushort)(LBA1AutoZoomToolStripMenuItem1.Checked ? 1 : 0), 1);
                 LBA1SG_Load(sender, e, opt);
+                LBA1Behaviour_Load(sender, e, opt);
                 FlyingLBA1.RefreshConnection();
                 ucTeleportLBA1.RefreshConnection();
                 return;
@@ -205,6 +207,16 @@ namespace LBATrainer
             }
         }
 
+        private void LBA2Flying_chkDisableGravity_CheckedChanged(object sender, EventArgs e)
+        {
+            if (LBA2Flying_chkDisableGravity.Checked)
+                tsi.AddItem(0x580FA, 0, 2);
+            else
+            {
+                tsi.RemoveIfExists(0x580FA);
+                memRoutines.WriteVal(0x580FA, 8, 1);
+            }
+        }
     }
     public class NameValue
     {

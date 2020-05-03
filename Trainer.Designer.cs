@@ -248,6 +248,7 @@
             this.LBA1AutoZoomToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.LBA1GodModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LBA1MaxMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiLBA1BehaviourSwitchWith14 = new System.Windows.Forms.ToolStripMenuItem();
             this.lBA2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LBA2GodModeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.infiniteMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -255,7 +256,7 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
-            this.modeSwitchWith14ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LBA2Flying_chkDisableGravity = new System.Windows.Forms.CheckBox();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -2090,6 +2091,7 @@
             // tpLBA2Flying
             // 
             this.tpLBA2Flying.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Flying.Controls.Add(this.LBA2Flying_chkDisableGravity);
             this.tpLBA2Flying.Controls.Add(this.FlyingLBA2);
             this.tpLBA2Flying.Location = new System.Drawing.Point(4, 22);
             this.tpLBA2Flying.Name = "tpLBA2Flying";
@@ -2595,7 +2597,7 @@
             this.LBA1AutoZoomToolStripMenuItem1,
             this.LBA1GodModeToolStripMenuItem,
             this.LBA1MaxMagicToolStripMenuItem,
-            this.modeSwitchWith14ToolStripMenuItem});
+            this.tsmiLBA1BehaviourSwitchWith14});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
             this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
@@ -2625,6 +2627,14 @@
             this.LBA1MaxMagicToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.LBA1MaxMagicToolStripMenuItem.Text = "Max Magic";
             this.LBA1MaxMagicToolStripMenuItem.Click += new System.EventHandler(this.LBA1MaxMagicToolStripMenuItem_Click);
+            // 
+            // tsmiLBA1BehaviourSwitchWith14
+            // 
+            this.tsmiLBA1BehaviourSwitchWith14.CheckOnClick = true;
+            this.tsmiLBA1BehaviourSwitchWith14.Name = "tsmiLBA1BehaviourSwitchWith14";
+            this.tsmiLBA1BehaviourSwitchWith14.Size = new System.Drawing.Size(188, 22);
+            this.tsmiLBA1BehaviourSwitchWith14.Text = "Mode switch with 1-4";
+            this.tsmiLBA1BehaviourSwitchWith14.Click += new System.EventHandler(this.tsmiLBA1BehaviourSwitchWith14_Click);
             // 
             // lBA2ToolStripMenuItem
             // 
@@ -2658,12 +2668,16 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // modeSwitchWith14ToolStripMenuItem
+            // LBA2Flying_chkDisableGravity
             // 
-            this.modeSwitchWith14ToolStripMenuItem.Name = "modeSwitchWith14ToolStripMenuItem";
-            this.modeSwitchWith14ToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.modeSwitchWith14ToolStripMenuItem.Text = "Mode switch with 1-4";
-            this.modeSwitchWith14ToolStripMenuItem.Click += new System.EventHandler(this.LBA1ModeSwitchWith14ToolStripMenuItem_Click);
+            this.LBA2Flying_chkDisableGravity.AutoSize = true;
+            this.LBA2Flying_chkDisableGravity.Location = new System.Drawing.Point(228, 153);
+            this.LBA2Flying_chkDisableGravity.Name = "LBA2Flying_chkDisableGravity";
+            this.LBA2Flying_chkDisableGravity.Size = new System.Drawing.Size(97, 17);
+            this.LBA2Flying_chkDisableGravity.TabIndex = 12;
+            this.LBA2Flying_chkDisableGravity.Text = "Disable Gravity";
+            this.LBA2Flying_chkDisableGravity.UseVisualStyleBackColor = true;
+            this.LBA2Flying_chkDisableGravity.CheckedChanged += new System.EventHandler(this.LBA2Flying_chkDisableGravity_CheckedChanged);
             // 
             // frmTrainer
             // 
@@ -2710,6 +2724,7 @@
             this.LBA2HyperCar_panel.PerformLayout();
             this.tpLBA2Teleport.ResumeLayout(false);
             this.tpLBA2Flying.ResumeLayout(false);
+            this.tpLBA2Flying.PerformLayout();
             this.tpLBA2WizardGPS.ResumeLayout(false);
             this.tpLBA2WizardGPS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).EndInit();
@@ -2951,7 +2966,8 @@
         private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron0;
         private System.Windows.Forms.Label LBA2Misc_lblBlowtron;
         private System.Windows.Forms.CheckBox LBA1Fly_chkWalkingInAir;
-        private System.Windows.Forms.ToolStripMenuItem modeSwitchWith14ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLBA1BehaviourSwitchWith14;
+        private System.Windows.Forms.CheckBox LBA2Flying_chkDisableGravity;
     }
 }
 
