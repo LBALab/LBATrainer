@@ -90,6 +90,7 @@
             this.tpTeleport = new System.Windows.Forms.TabPage();
             this.ucTeleportLBA1 = new LBATeleport.ucTeleport();
             this.tpFlying = new System.Windows.Forms.TabPage();
+            this.LBA1Fly_chkWalkingInAir = new System.Windows.Forms.CheckBox();
             this.FlyingLBA1 = new LBAFlying.Flying();
             this.tpSaveGame = new System.Windows.Forms.TabPage();
             this.LBA1SG_lblF8SaveAs = new System.Windows.Forms.Label();
@@ -161,6 +162,12 @@
             this.LBA2Slate_cb1 = new System.Windows.Forms.ComboBox();
             this.LBA2Slate_cb0 = new System.Windows.Forms.ComboBox();
             this.tpLBA2Misc = new System.Windows.Forms.TabPage();
+            this.LBA2Misc_gbBlowtron = new System.Windows.Forms.GroupBox();
+            this.LBA2Misc_rbBlowtron2 = new System.Windows.Forms.RadioButton();
+            this.LBA2Misc_btnBlowtron = new System.Windows.Forms.Button();
+            this.LBA2Misc_rbBlowtron1 = new System.Windows.Forms.RadioButton();
+            this.LBA2Misc_rbBlowtron0 = new System.Windows.Forms.RadioButton();
+            this.LBA2Misc_lblBlowtron = new System.Windows.Forms.Label();
             this.LBA2Othr_chkMisc = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboMisc = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblMisc = new System.Windows.Forms.Label();
@@ -248,12 +255,7 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
-            this.LBA2Misc_gbBlowtron = new System.Windows.Forms.GroupBox();
-            this.LBA2Misc_rbBlowtron2 = new System.Windows.Forms.RadioButton();
-            this.LBA2Misc_btnBlowtron = new System.Windows.Forms.Button();
-            this.LBA2Misc_rbBlowtron1 = new System.Windows.Forms.RadioButton();
-            this.LBA2Misc_rbBlowtron0 = new System.Windows.Forms.RadioButton();
-            this.LBA2Misc_lblBlowtron = new System.Windows.Forms.Label();
+            this.modeSwitchWith14ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -269,6 +271,7 @@
             this.tpLBA2Other.SuspendLayout();
             this.tpLBA2Slate.SuspendLayout();
             this.tpLBA2Misc.SuspendLayout();
+            this.LBA2Misc_gbBlowtron.SuspendLayout();
             this.tpHyperCar.SuspendLayout();
             this.LBA2HyperCar_panel.SuspendLayout();
             this.tpLBA2Teleport.SuspendLayout();
@@ -278,7 +281,6 @@
             this.tpLBA2ShittyShot.SuspendLayout();
             this.tpLBA2Debug.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.LBA2Misc_gbBlowtron.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcLBAVersion
@@ -934,6 +936,7 @@
             // tpFlying
             // 
             this.tpFlying.BackColor = System.Drawing.Color.MistyRose;
+            this.tpFlying.Controls.Add(this.LBA1Fly_chkWalkingInAir);
             this.tpFlying.Controls.Add(this.FlyingLBA1);
             this.tpFlying.Location = new System.Drawing.Point(4, 22);
             this.tpFlying.Name = "tpFlying";
@@ -941,6 +944,17 @@
             this.tpFlying.Size = new System.Drawing.Size(339, 178);
             this.tpFlying.TabIndex = 4;
             this.tpFlying.Text = "Flying";
+            // 
+            // LBA1Fly_chkWalkingInAir
+            // 
+            this.LBA1Fly_chkWalkingInAir.AutoSize = true;
+            this.LBA1Fly_chkWalkingInAir.Location = new System.Drawing.Point(226, 155);
+            this.LBA1Fly_chkWalkingInAir.Name = "LBA1Fly_chkWalkingInAir";
+            this.LBA1Fly_chkWalkingInAir.Size = new System.Drawing.Size(95, 17);
+            this.LBA1Fly_chkWalkingInAir.TabIndex = 2;
+            this.LBA1Fly_chkWalkingInAir.Text = "Disable gravity";
+            this.LBA1Fly_chkWalkingInAir.UseVisualStyleBackColor = true;
+            this.LBA1Fly_chkWalkingInAir.CheckedChanged += new System.EventHandler(this.LBA1Fly_chkWalkingInAir_CheckedChanged);
             // 
             // FlyingLBA1
             // 
@@ -1686,6 +1700,70 @@
             this.tpLBA2Misc.Size = new System.Drawing.Size(334, 178);
             this.tpLBA2Misc.TabIndex = 10;
             this.tpLBA2Misc.Text = "Misc";
+            // 
+            // LBA2Misc_gbBlowtron
+            // 
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron2);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_btnBlowtron);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron1);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron0);
+            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_lblBlowtron);
+            this.LBA2Misc_gbBlowtron.Location = new System.Drawing.Point(3, 35);
+            this.LBA2Misc_gbBlowtron.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.LBA2Misc_gbBlowtron.Name = "LBA2Misc_gbBlowtron";
+            this.LBA2Misc_gbBlowtron.Size = new System.Drawing.Size(328, 30);
+            this.LBA2Misc_gbBlowtron.TabIndex = 39;
+            this.LBA2Misc_gbBlowtron.TabStop = false;
+            // 
+            // LBA2Misc_rbBlowtron2
+            // 
+            this.LBA2Misc_rbBlowtron2.AutoSize = true;
+            this.LBA2Misc_rbBlowtron2.Location = new System.Drawing.Point(223, 10);
+            this.LBA2Misc_rbBlowtron2.Name = "LBA2Misc_rbBlowtron2";
+            this.LBA2Misc_rbBlowtron2.Size = new System.Drawing.Size(14, 13);
+            this.LBA2Misc_rbBlowtron2.TabIndex = 47;
+            this.LBA2Misc_rbBlowtron2.TabStop = true;
+            this.LBA2Misc_rbBlowtron2.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Misc_btnBlowtron
+            // 
+            this.LBA2Misc_btnBlowtron.Location = new System.Drawing.Point(253, 5);
+            this.LBA2Misc_btnBlowtron.Name = "LBA2Misc_btnBlowtron";
+            this.LBA2Misc_btnBlowtron.Size = new System.Drawing.Size(75, 23);
+            this.LBA2Misc_btnBlowtron.TabIndex = 43;
+            this.LBA2Misc_btnBlowtron.Text = "Show";
+            this.LBA2Misc_btnBlowtron.UseVisualStyleBackColor = true;
+            this.LBA2Misc_btnBlowtron.Click += new System.EventHandler(this.LBA2Misc_btnBlowtron_Click);
+            // 
+            // LBA2Misc_rbBlowtron1
+            // 
+            this.LBA2Misc_rbBlowtron1.AutoSize = true;
+            this.LBA2Misc_rbBlowtron1.Location = new System.Drawing.Point(147, 10);
+            this.LBA2Misc_rbBlowtron1.Name = "LBA2Misc_rbBlowtron1";
+            this.LBA2Misc_rbBlowtron1.Size = new System.Drawing.Size(14, 13);
+            this.LBA2Misc_rbBlowtron1.TabIndex = 46;
+            this.LBA2Misc_rbBlowtron1.TabStop = true;
+            this.LBA2Misc_rbBlowtron1.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Misc_rbBlowtron0
+            // 
+            this.LBA2Misc_rbBlowtron0.AutoSize = true;
+            this.LBA2Misc_rbBlowtron0.Location = new System.Drawing.Point(70, 10);
+            this.LBA2Misc_rbBlowtron0.Name = "LBA2Misc_rbBlowtron0";
+            this.LBA2Misc_rbBlowtron0.Size = new System.Drawing.Size(14, 13);
+            this.LBA2Misc_rbBlowtron0.TabIndex = 45;
+            this.LBA2Misc_rbBlowtron0.TabStop = true;
+            this.LBA2Misc_rbBlowtron0.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Misc_lblBlowtron
+            // 
+            this.LBA2Misc_lblBlowtron.AutoSize = true;
+            this.LBA2Misc_lblBlowtron.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Misc_lblBlowtron.Location = new System.Drawing.Point(0, 10);
+            this.LBA2Misc_lblBlowtron.Name = "LBA2Misc_lblBlowtron";
+            this.LBA2Misc_lblBlowtron.Size = new System.Drawing.Size(56, 13);
+            this.LBA2Misc_lblBlowtron.TabIndex = 44;
+            this.LBA2Misc_lblBlowtron.Text = "Blowtron";
             // 
             // LBA2Othr_chkMisc
             // 
@@ -2507,7 +2585,7 @@
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.refreshToolStripMenuItem.Text = "&Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
@@ -2516,9 +2594,10 @@
             this.lBA1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LBA1AutoZoomToolStripMenuItem1,
             this.LBA1GodModeToolStripMenuItem,
-            this.LBA1MaxMagicToolStripMenuItem});
+            this.LBA1MaxMagicToolStripMenuItem,
+            this.modeSwitchWith14ToolStripMenuItem});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
-            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
             // 
             // LBA1AutoZoomToolStripMenuItem1
@@ -2527,7 +2606,7 @@
             this.LBA1AutoZoomToolStripMenuItem1.CheckOnClick = true;
             this.LBA1AutoZoomToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.LBA1AutoZoomToolStripMenuItem1.Name = "LBA1AutoZoomToolStripMenuItem1";
-            this.LBA1AutoZoomToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.LBA1AutoZoomToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
             this.LBA1AutoZoomToolStripMenuItem1.Text = "Auto-Zoom";
             this.LBA1AutoZoomToolStripMenuItem1.Click += new System.EventHandler(this.LBA1AutoZoomToolStripMenuItem1_Click);
             // 
@@ -2535,7 +2614,7 @@
             // 
             this.LBA1GodModeToolStripMenuItem.CheckOnClick = true;
             this.LBA1GodModeToolStripMenuItem.Name = "LBA1GodModeToolStripMenuItem";
-            this.LBA1GodModeToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.LBA1GodModeToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.LBA1GodModeToolStripMenuItem.Text = "God Mode";
             this.LBA1GodModeToolStripMenuItem.Click += new System.EventHandler(this.LBA1GodModeToolStripMenuItem_Click);
             // 
@@ -2543,7 +2622,7 @@
             // 
             this.LBA1MaxMagicToolStripMenuItem.CheckOnClick = true;
             this.LBA1MaxMagicToolStripMenuItem.Name = "LBA1MaxMagicToolStripMenuItem";
-            this.LBA1MaxMagicToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.LBA1MaxMagicToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.LBA1MaxMagicToolStripMenuItem.Text = "Max Magic";
             this.LBA1MaxMagicToolStripMenuItem.Click += new System.EventHandler(this.LBA1MaxMagicToolStripMenuItem_Click);
             // 
@@ -2553,7 +2632,7 @@
             this.LBA2GodModeToolStripMenuItem1,
             this.infiniteMagicToolStripMenuItem});
             this.lBA2ToolStripMenuItem.Name = "lBA2ToolStripMenuItem";
-            this.lBA2ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.lBA2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lBA2ToolStripMenuItem.Text = "LBA2";
             // 
             // LBA2GodModeToolStripMenuItem1
@@ -2579,69 +2658,12 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // LBA2Misc_gbBlowtron
+            // modeSwitchWith14ToolStripMenuItem
             // 
-            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron2);
-            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_btnBlowtron);
-            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron1);
-            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron0);
-            this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_lblBlowtron);
-            this.LBA2Misc_gbBlowtron.Location = new System.Drawing.Point(3, 35);
-            this.LBA2Misc_gbBlowtron.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.LBA2Misc_gbBlowtron.Name = "LBA2Misc_gbBlowtron";
-            this.LBA2Misc_gbBlowtron.Size = new System.Drawing.Size(328, 30);
-            this.LBA2Misc_gbBlowtron.TabIndex = 39;
-            this.LBA2Misc_gbBlowtron.TabStop = false;
-            // 
-            // LBA2Misc_rbBlowtron2
-            // 
-            this.LBA2Misc_rbBlowtron2.AutoSize = true;
-            this.LBA2Misc_rbBlowtron2.Location = new System.Drawing.Point(223, 10);
-            this.LBA2Misc_rbBlowtron2.Name = "LBA2Misc_rbBlowtron2";
-            this.LBA2Misc_rbBlowtron2.Size = new System.Drawing.Size(14, 13);
-            this.LBA2Misc_rbBlowtron2.TabIndex = 47;
-            this.LBA2Misc_rbBlowtron2.TabStop = true;
-            this.LBA2Misc_rbBlowtron2.UseVisualStyleBackColor = true;
-            // 
-            // LBA2Misc_btnBlowtron
-            // 
-            this.LBA2Misc_btnBlowtron.Location = new System.Drawing.Point(253, 5);
-            this.LBA2Misc_btnBlowtron.Name = "LBA2Misc_btnBlowtron";
-            this.LBA2Misc_btnBlowtron.Size = new System.Drawing.Size(75, 23);
-            this.LBA2Misc_btnBlowtron.TabIndex = 43;
-            this.LBA2Misc_btnBlowtron.Text = "Show";
-            this.LBA2Misc_btnBlowtron.UseVisualStyleBackColor = true;
-            this.LBA2Misc_btnBlowtron.Click += new System.EventHandler(this.LBA2Misc_btnBlowtron_Click);
-            // 
-            // LBA2Misc_rbBlowtron1
-            // 
-            this.LBA2Misc_rbBlowtron1.AutoSize = true;
-            this.LBA2Misc_rbBlowtron1.Location = new System.Drawing.Point(147, 10);
-            this.LBA2Misc_rbBlowtron1.Name = "LBA2Misc_rbBlowtron1";
-            this.LBA2Misc_rbBlowtron1.Size = new System.Drawing.Size(14, 13);
-            this.LBA2Misc_rbBlowtron1.TabIndex = 46;
-            this.LBA2Misc_rbBlowtron1.TabStop = true;
-            this.LBA2Misc_rbBlowtron1.UseVisualStyleBackColor = true;
-            // 
-            // LBA2Misc_rbBlowtron0
-            // 
-            this.LBA2Misc_rbBlowtron0.AutoSize = true;
-            this.LBA2Misc_rbBlowtron0.Location = new System.Drawing.Point(70, 10);
-            this.LBA2Misc_rbBlowtron0.Name = "LBA2Misc_rbBlowtron0";
-            this.LBA2Misc_rbBlowtron0.Size = new System.Drawing.Size(14, 13);
-            this.LBA2Misc_rbBlowtron0.TabIndex = 45;
-            this.LBA2Misc_rbBlowtron0.TabStop = true;
-            this.LBA2Misc_rbBlowtron0.UseVisualStyleBackColor = true;
-            // 
-            // LBA2Misc_lblBlowtron
-            // 
-            this.LBA2Misc_lblBlowtron.AutoSize = true;
-            this.LBA2Misc_lblBlowtron.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Misc_lblBlowtron.Location = new System.Drawing.Point(0, 10);
-            this.LBA2Misc_lblBlowtron.Name = "LBA2Misc_lblBlowtron";
-            this.LBA2Misc_lblBlowtron.Size = new System.Drawing.Size(56, 13);
-            this.LBA2Misc_lblBlowtron.TabIndex = 44;
-            this.LBA2Misc_lblBlowtron.Text = "Blowtron";
+            this.modeSwitchWith14ToolStripMenuItem.Name = "modeSwitchWith14ToolStripMenuItem";
+            this.modeSwitchWith14ToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.modeSwitchWith14ToolStripMenuItem.Text = "Mode switch with 1-4";
+            this.modeSwitchWith14ToolStripMenuItem.Click += new System.EventHandler(this.LBA1ModeSwitchWith14ToolStripMenuItem_Click);
             // 
             // frmTrainer
             // 
@@ -2668,6 +2690,7 @@
             this.tpLBA1Holomap.PerformLayout();
             this.tpTeleport.ResumeLayout(false);
             this.tpFlying.ResumeLayout(false);
+            this.tpFlying.PerformLayout();
             this.tpSaveGame.ResumeLayout(false);
             this.tpSaveGame.PerformLayout();
             this.tbLBA2.ResumeLayout(false);
@@ -2680,6 +2703,8 @@
             this.tpLBA2Slate.PerformLayout();
             this.tpLBA2Misc.ResumeLayout(false);
             this.tpLBA2Misc.PerformLayout();
+            this.LBA2Misc_gbBlowtron.ResumeLayout(false);
+            this.LBA2Misc_gbBlowtron.PerformLayout();
             this.tpHyperCar.ResumeLayout(false);
             this.LBA2HyperCar_panel.ResumeLayout(false);
             this.LBA2HyperCar_panel.PerformLayout();
@@ -2694,8 +2719,6 @@
             this.tpLBA2Debug.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.LBA2Misc_gbBlowtron.ResumeLayout(false);
-            this.LBA2Misc_gbBlowtron.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2927,6 +2950,8 @@
         private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron1;
         private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron0;
         private System.Windows.Forms.Label LBA2Misc_lblBlowtron;
+        private System.Windows.Forms.CheckBox LBA1Fly_chkWalkingInAir;
+        private System.Windows.Forms.ToolStripMenuItem modeSwitchWith14ToolStripMenuItem;
     }
 }
 

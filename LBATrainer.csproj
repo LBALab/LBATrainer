@@ -136,6 +136,7 @@
     <Compile Include="objects\getSaveFileNames.Designer.cs">
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="objects\LBA1Behaviour.cs" />
     <Compile Include="objects\LBA2Quest.cs" />
     <Compile Include="objects\LBA2Quests.cs" />
     <Compile Include="objects\oTimerSetItems.cs" />

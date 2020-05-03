@@ -1,3 +1,0 @@
-Base: 0b05f03d
-Horn Triton Health: 0b0d7842
-Twinsen Mode: 0b0b6e30

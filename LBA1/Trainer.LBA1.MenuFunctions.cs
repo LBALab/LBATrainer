@@ -16,7 +16,6 @@ namespace LBATrainer
         {
             tsiLBA1 = itemToggle(tsiLBA1, LBA1_HEALTH, 50, 1, oTimerSetItems.LBAVersion.One);
         }
-
         private void LBA1MaxMagicToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tsiLBA1 = itemToggle(tsiLBA1, LBA1_MAGICPOINTS, 80, 1, oTimerSetItems.LBAVersion.One);
@@ -27,5 +26,12 @@ namespace LBATrainer
             memRoutines.WriteVal((int)LBA1_AUTOZOOM, newVal, 1);
             LBA1AutoZoomToolStripMenuItem1.Checked = 1 == newVal;
         }
+
+        private void LBA1ModeSwitchWith14ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

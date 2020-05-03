@@ -193,6 +193,18 @@ namespace LBATrainer
             LBA2Misc_rbBlowtron1.Checked = (1 == val);
             LBA2Misc_rbBlowtron2.Checked = (2 == val);
         }
+
+        private void LBA1Fly_chkWalkingInAir_CheckedChanged(object sender, EventArgs e)
+        {
+            if (LBA1Fly_chkWalkingInAir.Checked)
+                tsi.AddItem(0xD54D, 0, 1);
+            else
+            {
+                tsi.RemoveIfExists(0xD54D);
+                memRoutines.WriteVal(0xD54D, 8, 1);
+            }
+        }
+
     }
     public class NameValue
     {
