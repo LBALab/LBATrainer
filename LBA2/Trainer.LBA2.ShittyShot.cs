@@ -13,13 +13,27 @@ namespace LBATrainer
     {
         Color LBA2SS_COLOUR_ON = Color.Green;
         Color LBA2SS_COLOUR_OFF = Color.Red;
+        const string LBA2SS_sBtnOn = "Status: On";
+        const string LBA2SS_sBtnOff = "Status: Off";
         enum LBA2SS_Offset : uint { Circle = 0x57CB5, Triangle = 0x57CB7, Square = 0x57CB9 }
 
         private void LBA2SS_btnOnOff_Click(object sender, EventArgs e)
         {
-            tgi.AddItem(LBA2SS_setCircle, (uint)LBA2SS_Offset.Circle, 1);
-            tgi.AddItem(LBA2SS_setSquare, (uint)LBA2SS_Offset.Square, 1);
-            tgi.AddItem(LBA2SS_setTriangle, (uint)LBA2SS_Offset.Triangle, 1);
+            //If already contains
+            if (tgi.Contains((uint)LBA2SS_Offset.Circle))
+            {
+                tgi.RemoveIfExists((uint)LBA2SS_Offset.Circle);
+                tgi.RemoveIfExists((uint)LBA2SS_Offset.Square);
+                tgi.RemoveIfExists((uint)LBA2SS_Offset.Triangle);
+                LBA2SS_btnOnOff.Text = LBA2SS_sBtnOff;
+            }
+            else
+            {
+                tgi.AddItem(LBA2SS_setCircle, (uint)LBA2SS_Offset.Circle, 1);
+                tgi.AddItem(LBA2SS_setSquare, (uint)LBA2SS_Offset.Square, 1);
+                tgi.AddItem(LBA2SS_setTriangle, (uint)LBA2SS_Offset.Triangle, 1);
+                LBA2SS_btnOnOff.Text = LBA2SS_sBtnOn;
+            }
         }
         private void LBA2SS_setCircle(ushort val)
         {

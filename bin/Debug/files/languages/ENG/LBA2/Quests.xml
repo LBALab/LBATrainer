@@ -4017,37 +4017,37 @@
 		</subquests>
 	</quest>
 	<quest>
-		<!--lighthouse cutscene-->
-		<name>lighthouse cutscene</name>
+		<!--Chapter-->
+		<name>Chapter</name>
 		<memoryOffset>57DED</memoryOffset>
 		<size>1</size>
 		<subquests>
 			<subquest>
-				<name>New</name>
+				<name>0: Initial</name>
 				<value>0</value>
 			</subquest>
 			<subquest>
-				<name>new game</name>
+				<name>1: New game</name>
 				<value>1</value>
 			</subquest>
 			<subquest>
-				<name>lighthouse cutscene</name>
+				<name>2: Aliens landing</name>
 				<value>2</value>
 			</subquest>
 			<subquest>
-				<name>Entering spaceship as wizard</name>
+				<name>3: Wizard to Otringal</name>
 				<value>3</value>
 			</subquest>
 			<subquest>
-				<name>Crash landed Citadel - Twinsen standing up</name>
+				<name>4: Returned to Citadel</name>
 				<value>4</value>
 			</subquest>
 			<subquest>
-				<name>Cutscene Twinsen spaceship to emerald moon</name>
+				<name>5: Going to Emerald Moon</name>
 				<value>5</value>
 			</subquest>
 			<subquest>
-				<name>Crash landed with Baldino cutscene - not movie</name>
+				<name>6: Landed with Baldino on Otringal</name>
 				<value>6</value>
 			</subquest>
 			<subquest>

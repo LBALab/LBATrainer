@@ -18,7 +18,7 @@ namespace LBATrainer
 
         private void LBA1SG_Load(object sender, EventArgs e, Options opt)
         {
-            LBA1SG_txtSaveFileDirectory.Text = opt.LBADir;
+            LBA1SG_txtSaveFileDirectory.Text = opt.SaveFileDirectory;
             LBA1SG_icehLVChecked = new System.Windows.Forms.ItemCheckedEventHandler(this.LBA1SG_LvSaveGames_ItemChecked);
         }
         private void LBA1SG_FormClosed(object sender, FormClosedEventArgs e)
@@ -63,6 +63,9 @@ namespace LBATrainer
             {
                 LBA1SG_unregisterHotkeys();
                 LBA1SG_btnEnableDisable.Text = "Enable";
+                LBA1SG_hkF7 = null;
+                LBA1SG_hkF8 = null;
+                LBA1SG_hkF9 = null;
             }
         }
         private void LBA1SG_processHotkey(Keys k)
@@ -130,7 +133,7 @@ namespace LBATrainer
             LBA1SG_txtSaveFileDirectory.Text = fbdLBADir.SelectedPath;
             fbdLBADir.Dispose();
             Options opt = new Options();
-            opt.LBADir = LBA1SG_txtSaveFileDirectory.Text;
+            opt.SaveFileDirectory = LBA1SG_txtSaveFileDirectory.Text;
             opt.save();
         }
         private void LBA1SG_registerHotKeys()

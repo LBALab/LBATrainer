@@ -1,0 +1,10 @@
+Far wall = 0
+Entrance door = 1
+Ricks Door = 2
+
+57BBA
+58107
+5AF6F
+18D298
+18D6D0
+18EE88

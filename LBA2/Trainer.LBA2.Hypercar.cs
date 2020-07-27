@@ -18,15 +18,14 @@ namespace LBATrainer
         private HotKey LBA2HyperCar_hkX;
         private HotKey LBA2HyperCar_hkC;
         private HotKey LBA2HyperCar_hkV;
+        const string strHC_Status = "Status: ";
+        const string strHC_On = "On";
+        const string strHC_Off = "Off";
         byte gear = 1;
         private void LBA2HyperCar_ProcessHotKey(Keys k)
         {
             if (Keys.C == k)
             {
-                /*int speed = memRoutines.readVal(0x52B9B, 2);
-                speed -= 500;
-                speed = 3800 <= speed ? speed : 0;
-                memRoutines.WriteVal(0x52B9B, (ushort)speed, 2);*/
                 memRoutines.WriteVal(LBA2_HCCURRENTSPEEDOFFSET, 0, 2);
                 return;
             }
@@ -126,7 +125,7 @@ namespace LBATrainer
                 memRoutines.WriteVal(LBA2_HCFORWARDSPEEDCAPOFFSET, 3800, 2);
             }
 
-            btnHyperCarOnOff.Text  = null == LBA2HyperCar_hkX ? "Off": "On";
+            btnHyperCarOnOff.Text = strHC_Status +  (null == LBA2HyperCar_hkX ? strHC_Off: strHC_On);
             toggleSpeedometer();
         }
 

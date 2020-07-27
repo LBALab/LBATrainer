@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LBAMemoryModule;
-
 namespace LBATrainer
 {
     /**
@@ -27,6 +26,7 @@ namespace LBATrainer
         public frmTrainer()
         {
             InitializeComponent();
+            //tcLBA2Inner.TabPages.Remove(tpLBA2Debug);
             memRoutines = new Mem();
             scan(memRoutines.DetectLBAVersion());
             SetDoubleBuffered(tcLBAVersion);
@@ -124,6 +124,7 @@ namespace LBATrainer
                 //LBA1Menu_processHotkey((Keys)keyPressed.WParam);
                 LBA2HyperCar_ProcessHotKey((Keys)keyPressed.WParam);
                 LBA1Behaviour_processHotkey((Keys)keyPressed.WParam);
+                LBA1DWD_processHotkey((Keys)keyPressed.WParam);
             }
             base.WndProc(ref keyPressed);
         }
@@ -140,7 +141,7 @@ namespace LBATrainer
 
         private string getLBAFilesPath(ushort LBAVer)
         {
-            return AppDomain.CurrentDomain.BaseDirectory + "files\\lba" + LBAVer.ToString() + "\\";
+            return AppDomain.CurrentDomain.BaseDirectory + "files\\languages\\ENG\\lba" + LBAVer.ToString() + "\\";
         }
 
         #region MenuItems
@@ -164,15 +165,18 @@ namespace LBATrainer
             {
                 memRoutines.WriteVal(1, (int)LBA1_AUTOZOOM, (ushort)(LBA1AutoZoomToolStripMenuItem1.Checked ? 1 : 0), 1);
                 LBA1SG_Load(sender, e, opt);
-                LBA1Behaviour_Load(sender, e, opt);
+                LBA1MenuFunctions_Load(sender, e, opt);
+                LBA1_Flags.Scan();                
                 FlyingLBA1.RefreshConnection();
                 ucTeleportLBA1.RefreshConnection();
+                LBA1Othr_Start();
                 return;
             }
             //Load only if LBA2 running
             if (2 == ver)
             {
                 LBA2Slate_Load();
+                LBA2_Flags.Scan();
                 FlyingLBA2.RefreshConnection();
                 ucTeleportLBA2.RefreshConnection();
                 LBA2Othr_Load();
@@ -196,7 +200,7 @@ namespace LBATrainer
             LBA2Misc_rbBlowtron2.Checked = (2 == val);
         }
 
-        private void LBA1Fly_chkWalkingInAir_CheckedChanged(object sender, EventArgs e)
+        /*private void LBA1Fly_chkWalkingInAir_CheckedChanged(object sender, EventArgs e)
         {
             if (LBA1Fly_chkWalkingInAir.Checked)
                 tsi.AddItem(0xD54D, 0, 1);
@@ -216,7 +220,9 @@ namespace LBATrainer
                 tsi.RemoveIfExists(0x580FA);
                 memRoutines.WriteVal(0x580FA, 8, 1);
             }
-        }
+        }*/
+
+
     }
     public class NameValue
     {

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <options>
-  <LBADir>R:\GOG Games\Little Big Adventure</LBADir>
+  <LBADir>R:\GOG Games\Little Big Adventure_Clean</LBADir>
   <LBA1TeleportTabRefreshInterval>50</LBA1TeleportTabRefreshInterval>
   <alwaysOnTop>False</alwaysOnTop>
+  <language>
+		ENG
+	</language>
 </options>

@@ -18,6 +18,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -32,8 +34,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -60,15 +60,17 @@
   <ItemGroup>
     <Reference Include="Flying, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Flying\bin\Debug\Flying.dll</HintPath>
+      <HintPath>..\Flying\bin\Release\Flying.dll</HintPath>
+    </Reference>
+    <Reference Include="LBAFlags">
+      <HintPath>..\LBAFlags\bin\Release\LBAFlags.dll</HintPath>
     </Reference>
     <Reference Include="LBAMemoryModule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\LBAMemoryModule\bin\Release\netstandard2.0\LBAMemoryModule.dll</HintPath>
     </Reference>
-    <Reference Include="LBATeleport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Flying\bin\Debug\LBATeleport.dll</HintPath>
+    <Reference Include="LBATeleport">
+      <HintPath>..\LBATeleport\bin\Release\LBATeleport.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -137,11 +139,12 @@
     <Compile Include="objects\getSaveFileNames.Designer.cs">
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="objects\LBA1Behaviour.cs" />
     <Compile Include="objects\LBA2Quest.cs" />
     <Compile Include="objects\LBA2Quests.cs" />
     <Compile Include="objects\oTimerSetItems.cs" />
+    <Compile Include="objects\oTimerGetItems.cs" />
     <Compile Include="Shared\oTeleport.cs" />
-    <Compile Include="Shared\oTimerGetItems.cs" />
     <Compile Include="Shared\AboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<options>
+	<general>
+		<alwaysOnTop>
+			False
+		</alwaysOnTop>
+		<language>
+			ENG
+		</language>
+		<DefaultRefreshInterval>
+			50
+		</DefaultRefreshInterval>
+	</general>
+	<lba1>
+		<SaveFileDirectory> <!-- used for save file location -->
+			fail
+		</SaveFileDirectory>
+		<autozoom>
+			False
+		</autozoom>
+		<GodMode>
+			False
+		</GodMode>
+		<InfMagic>
+			False
+		</InfMagic>
+		<toggleWallDamage>
+			False
+		</toggleWallDamage>
+	</lba1>
+	<lba2>
+		<GodMode>
+			False
+		</GodMode>
+		<InfMagic>
+			False
+		</InfMagic>
+	</lba2>
+</options>

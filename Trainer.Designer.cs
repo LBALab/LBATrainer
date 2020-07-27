@@ -90,7 +90,6 @@
             this.tpTeleport = new System.Windows.Forms.TabPage();
             this.ucTeleportLBA1 = new LBATeleport.ucTeleport();
             this.tpFlying = new System.Windows.Forms.TabPage();
-            this.LBA1Fly_chkWalkingInAir = new System.Windows.Forms.CheckBox();
             this.FlyingLBA1 = new LBAFlying.Flying();
             this.tpSaveGame = new System.Windows.Forms.TabPage();
             this.LBA1SG_lblF8SaveAs = new System.Windows.Forms.Label();
@@ -106,6 +105,8 @@
             this.LBA1SG_btnSetSaveFileDir = new System.Windows.Forms.Button();
             this.LBA1SG_txtSaveFileDirectory = new System.Windows.Forms.TextBox();
             this.LBA1SG_lbl1SaveFileDirectory = new System.Windows.Forms.Label();
+            this.tpLBA1Flags = new System.Windows.Forms.TabPage();
+            this.LBA1_Flags = new LBAFlags.Flags();
             this.tbLBA2 = new System.Windows.Forms.TabPage();
             this.tcLBA2Inner = new System.Windows.Forms.TabControl();
             this.tpLBA2Twinsen = new System.Windows.Forms.TabPage();
@@ -149,18 +150,6 @@
             this.LBA2Othr_chkSkin = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboSkins = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblSelectSkin = new System.Windows.Forms.Label();
-            this.tpLBA2Slate = new System.Windows.Forms.TabPage();
-            this.LBA2Slate_btnSet = new System.Windows.Forms.Button();
-            this.LBA2Slate_map4 = new System.Windows.Forms.Label();
-            this.LBA2Slate_map3 = new System.Windows.Forms.Label();
-            this.LBA2Slate_map2 = new System.Windows.Forms.Label();
-            this.LBA2Slate_map1 = new System.Windows.Forms.Label();
-            this.LBA2Slate_map0 = new System.Windows.Forms.Label();
-            this.LBA2Slate_cb4 = new System.Windows.Forms.ComboBox();
-            this.LBA2Slate_cb3 = new System.Windows.Forms.ComboBox();
-            this.LBA2Slate_cb2 = new System.Windows.Forms.ComboBox();
-            this.LBA2Slate_cb1 = new System.Windows.Forms.ComboBox();
-            this.LBA2Slate_cb0 = new System.Windows.Forms.ComboBox();
             this.tpLBA2Misc = new System.Windows.Forms.TabPage();
             this.LBA2Misc_gbBlowtron = new System.Windows.Forms.GroupBox();
             this.LBA2Misc_rbBlowtron2 = new System.Windows.Forms.RadioButton();
@@ -197,10 +186,12 @@
             this.txtHyperCarGear2 = new System.Windows.Forms.TextBox();
             this.txtHyperCarGear1 = new System.Windows.Forms.TextBox();
             this.lblHyperCarGear1 = new System.Windows.Forms.Label();
-            this.tpLBA2Teleport = new System.Windows.Forms.TabPage();
-            this.ucTeleportLBA2 = new LBATeleport.ucTeleport();
             this.tpLBA2Flying = new System.Windows.Forms.TabPage();
             this.FlyingLBA2 = new LBAFlying.Flying();
+            this.tpLBA2Flags = new System.Windows.Forms.TabPage();
+            this.LBA2_Flags = new LBAFlags.Flags();
+            this.tpLBA2Teleport = new System.Windows.Forms.TabPage();
+            this.ucTeleportLBA2 = new LBATeleport.ucTeleport();
             this.tpLBA2WizardGPS = new System.Windows.Forms.TabPage();
             this.LBA2WizardGPS_Start = new System.Windows.Forms.Button();
             this.txtWizardLocation = new System.Windows.Forms.TextBox();
@@ -225,6 +216,18 @@
             this.rb80 = new System.Windows.Forms.RadioButton();
             this.rb65 = new System.Windows.Forms.RadioButton();
             this.pbWizardMap = new System.Windows.Forms.PictureBox();
+            this.tpLBA2Slate = new System.Windows.Forms.TabPage();
+            this.LBA2Slate_btnSet = new System.Windows.Forms.Button();
+            this.LBA2Slate_map4 = new System.Windows.Forms.Label();
+            this.LBA2Slate_map3 = new System.Windows.Forms.Label();
+            this.LBA2Slate_map2 = new System.Windows.Forms.Label();
+            this.LBA2Slate_map1 = new System.Windows.Forms.Label();
+            this.LBA2Slate_map0 = new System.Windows.Forms.Label();
+            this.LBA2Slate_cb4 = new System.Windows.Forms.ComboBox();
+            this.LBA2Slate_cb3 = new System.Windows.Forms.ComboBox();
+            this.LBA2Slate_cb2 = new System.Windows.Forms.ComboBox();
+            this.LBA2Slate_cb1 = new System.Windows.Forms.ComboBox();
+            this.LBA2Slate_cb0 = new System.Windows.Forms.ComboBox();
             this.tpLBA2ShittyShot = new System.Windows.Forms.TabPage();
             this.LBA2SS_lblInstruct = new System.Windows.Forms.Label();
             this.LBA2SS_btnSquare = new System.Windows.Forms.Button();
@@ -249,6 +252,7 @@
             this.LBA1GodModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LBA1MaxMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiLBA1BehaviourSwitchWith14 = new System.Windows.Forms.ToolStripMenuItem();
+            this.LBA1Mnu_DisableWallDamage = new System.Windows.Forms.ToolStripMenuItem();
             this.lBA2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LBA2GodModeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.infiniteMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -256,7 +260,11 @@
             this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
             this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
             this.tmrFlying = new System.Windows.Forms.Timer(this.components);
-            this.LBA2Flying_chkDisableGravity = new System.Windows.Forms.CheckBox();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuLangENG = new System.Windows.Forms.ToolStripMenuItem();
+            this.fRAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eSPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dEUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -266,19 +274,21 @@
             this.tpTeleport.SuspendLayout();
             this.tpFlying.SuspendLayout();
             this.tpSaveGame.SuspendLayout();
+            this.tpLBA1Flags.SuspendLayout();
             this.tbLBA2.SuspendLayout();
             this.tcLBA2Inner.SuspendLayout();
             this.tpLBA2Twinsen.SuspendLayout();
             this.tpLBA2Other.SuspendLayout();
-            this.tpLBA2Slate.SuspendLayout();
             this.tpLBA2Misc.SuspendLayout();
             this.LBA2Misc_gbBlowtron.SuspendLayout();
             this.tpHyperCar.SuspendLayout();
             this.LBA2HyperCar_panel.SuspendLayout();
-            this.tpLBA2Teleport.SuspendLayout();
             this.tpLBA2Flying.SuspendLayout();
+            this.tpLBA2Flags.SuspendLayout();
+            this.tpLBA2Teleport.SuspendLayout();
             this.tpLBA2WizardGPS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).BeginInit();
+            this.tpLBA2Slate.SuspendLayout();
             this.tpLBA2ShittyShot.SuspendLayout();
             this.tpLBA2Debug.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -314,6 +324,7 @@
             this.tcLBA1Inner.Controls.Add(this.tpTeleport);
             this.tcLBA1Inner.Controls.Add(this.tpFlying);
             this.tcLBA1Inner.Controls.Add(this.tpSaveGame);
+            this.tcLBA1Inner.Controls.Add(this.tpLBA1Flags);
             this.tcLBA1Inner.Location = new System.Drawing.Point(6, 6);
             this.tcLBA1Inner.Name = "tcLBA1Inner";
             this.tcLBA1Inner.SelectedIndex = 0;
@@ -492,9 +503,9 @@
             this.LBA1Twin_lblKashers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBA1Twin_lblKashers.Location = new System.Drawing.Point(6, 91);
             this.LBA1Twin_lblKashers.Name = "LBA1Twin_lblKashers";
-            this.LBA1Twin_lblKashers.Size = new System.Drawing.Size(52, 13);
+            this.LBA1Twin_lblKashers.Size = new System.Drawing.Size(48, 13);
             this.LBA1Twin_lblKashers.TabIndex = 23;
-            this.LBA1Twin_lblKashers.Text = "Kashers";
+            this.LBA1Twin_lblKashers.Text = "Kashes";
             // 
             // LBA1Twin_lblMagicPoints
             // 
@@ -937,7 +948,6 @@
             // tpFlying
             // 
             this.tpFlying.BackColor = System.Drawing.Color.MistyRose;
-            this.tpFlying.Controls.Add(this.LBA1Fly_chkWalkingInAir);
             this.tpFlying.Controls.Add(this.FlyingLBA1);
             this.tpFlying.Location = new System.Drawing.Point(4, 22);
             this.tpFlying.Name = "tpFlying";
@@ -945,17 +955,6 @@
             this.tpFlying.Size = new System.Drawing.Size(339, 178);
             this.tpFlying.TabIndex = 4;
             this.tpFlying.Text = "Flying";
-            // 
-            // LBA1Fly_chkWalkingInAir
-            // 
-            this.LBA1Fly_chkWalkingInAir.AutoSize = true;
-            this.LBA1Fly_chkWalkingInAir.Location = new System.Drawing.Point(226, 155);
-            this.LBA1Fly_chkWalkingInAir.Name = "LBA1Fly_chkWalkingInAir";
-            this.LBA1Fly_chkWalkingInAir.Size = new System.Drawing.Size(95, 17);
-            this.LBA1Fly_chkWalkingInAir.TabIndex = 2;
-            this.LBA1Fly_chkWalkingInAir.Text = "Disable gravity";
-            this.LBA1Fly_chkWalkingInAir.UseVisualStyleBackColor = true;
-            this.LBA1Fly_chkWalkingInAir.CheckedChanged += new System.EventHandler(this.LBA1Fly_chkWalkingInAir_CheckedChanged);
             // 
             // FlyingLBA1
             // 
@@ -1102,6 +1101,24 @@
             this.LBA1SG_lbl1SaveFileDirectory.TabIndex = 0;
             this.LBA1SG_lbl1SaveFileDirectory.Text = "Save file Directory";
             // 
+            // tpLBA1Flags
+            // 
+            this.tpLBA1Flags.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA1Flags.Controls.Add(this.LBA1_Flags);
+            this.tpLBA1Flags.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA1Flags.Name = "tpLBA1Flags";
+            this.tpLBA1Flags.Size = new System.Drawing.Size(339, 178);
+            this.tpLBA1Flags.TabIndex = 7;
+            this.tpLBA1Flags.Text = "Flags";
+            // 
+            // LBA1_Flags
+            // 
+            this.LBA1_Flags.BackColor = System.Drawing.Color.MistyRose;
+            this.LBA1_Flags.Location = new System.Drawing.Point(0, 0);
+            this.LBA1_Flags.Name = "LBA1_Flags";
+            this.LBA1_Flags.Size = new System.Drawing.Size(339, 178);
+            this.LBA1_Flags.TabIndex = 0;
+            // 
             // tbLBA2
             // 
             this.tbLBA2.BackColor = System.Drawing.SystemColors.Control;
@@ -1117,12 +1134,13 @@
             // 
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Twinsen);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Other);
-            this.tcLBA2Inner.Controls.Add(this.tpLBA2Slate);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Misc);
             this.tcLBA2Inner.Controls.Add(this.tpHyperCar);
-            this.tcLBA2Inner.Controls.Add(this.tpLBA2Teleport);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Flying);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Flags);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Teleport);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2WizardGPS);
+            this.tcLBA2Inner.Controls.Add(this.tpLBA2Slate);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2ShittyShot);
             this.tcLBA2Inner.Controls.Add(this.tpLBA2Debug);
             this.tcLBA2Inner.Location = new System.Drawing.Point(6, 6);
@@ -1291,9 +1309,9 @@
             this.lblLBA2Kashers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLBA2Kashers.Location = new System.Drawing.Point(6, 91);
             this.lblLBA2Kashers.Name = "lblLBA2Kashers";
-            this.lblLBA2Kashers.Size = new System.Drawing.Size(52, 13);
+            this.lblLBA2Kashers.Size = new System.Drawing.Size(48, 13);
             this.lblLBA2Kashers.TabIndex = 56;
-            this.lblLBA2Kashers.Text = "Kashers";
+            this.lblLBA2Kashers.Text = "Kashes";
             // 
             // lblLBA2MagicPoints
             // 
@@ -1569,126 +1587,6 @@
             this.LBA2Othr_lblSelectSkin.TabIndex = 8;
             this.LBA2Othr_lblSelectSkin.Text = "Skin";
             // 
-            // tpLBA2Slate
-            // 
-            this.tpLBA2Slate.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_btnSet);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map4);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map3);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map2);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map1);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map0);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb4);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb3);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb2);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb1);
-            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb0);
-            this.tpLBA2Slate.Location = new System.Drawing.Point(4, 22);
-            this.tpLBA2Slate.Name = "tpLBA2Slate";
-            this.tpLBA2Slate.Size = new System.Drawing.Size(334, 178);
-            this.tpLBA2Slate.TabIndex = 9;
-            this.tpLBA2Slate.Text = "Slate";
-            // 
-            // LBA2Slate_btnSet
-            // 
-            this.LBA2Slate_btnSet.Location = new System.Drawing.Point(127, 150);
-            this.LBA2Slate_btnSet.Name = "LBA2Slate_btnSet";
-            this.LBA2Slate_btnSet.Size = new System.Drawing.Size(75, 23);
-            this.LBA2Slate_btnSet.TabIndex = 11;
-            this.LBA2Slate_btnSet.Text = "Set";
-            this.LBA2Slate_btnSet.UseVisualStyleBackColor = true;
-            this.LBA2Slate_btnSet.Click += new System.EventHandler(this.LBA2Slate_btnSet_Click);
-            // 
-            // LBA2Slate_map4
-            // 
-            this.LBA2Slate_map4.AutoSize = true;
-            this.LBA2Slate_map4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Slate_map4.Location = new System.Drawing.Point(13, 126);
-            this.LBA2Slate_map4.Name = "LBA2Slate_map4";
-            this.LBA2Slate_map4.Size = new System.Drawing.Size(42, 13);
-            this.LBA2Slate_map4.TabIndex = 10;
-            this.LBA2Slate_map4.Text = "Map 5";
-            // 
-            // LBA2Slate_map3
-            // 
-            this.LBA2Slate_map3.AutoSize = true;
-            this.LBA2Slate_map3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Slate_map3.Location = new System.Drawing.Point(13, 99);
-            this.LBA2Slate_map3.Name = "LBA2Slate_map3";
-            this.LBA2Slate_map3.Size = new System.Drawing.Size(42, 13);
-            this.LBA2Slate_map3.TabIndex = 9;
-            this.LBA2Slate_map3.Text = "Map 4";
-            // 
-            // LBA2Slate_map2
-            // 
-            this.LBA2Slate_map2.AutoSize = true;
-            this.LBA2Slate_map2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Slate_map2.Location = new System.Drawing.Point(13, 72);
-            this.LBA2Slate_map2.Name = "LBA2Slate_map2";
-            this.LBA2Slate_map2.Size = new System.Drawing.Size(42, 13);
-            this.LBA2Slate_map2.TabIndex = 8;
-            this.LBA2Slate_map2.Text = "Map 3";
-            // 
-            // LBA2Slate_map1
-            // 
-            this.LBA2Slate_map1.AutoSize = true;
-            this.LBA2Slate_map1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Slate_map1.Location = new System.Drawing.Point(13, 45);
-            this.LBA2Slate_map1.Name = "LBA2Slate_map1";
-            this.LBA2Slate_map1.Size = new System.Drawing.Size(42, 13);
-            this.LBA2Slate_map1.TabIndex = 7;
-            this.LBA2Slate_map1.Text = "Map 2";
-            // 
-            // LBA2Slate_map0
-            // 
-            this.LBA2Slate_map0.AutoSize = true;
-            this.LBA2Slate_map0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Slate_map0.Location = new System.Drawing.Point(13, 18);
-            this.LBA2Slate_map0.Name = "LBA2Slate_map0";
-            this.LBA2Slate_map0.Size = new System.Drawing.Size(42, 13);
-            this.LBA2Slate_map0.TabIndex = 5;
-            this.LBA2Slate_map0.Text = "Map 1";
-            // 
-            // LBA2Slate_cb4
-            // 
-            this.LBA2Slate_cb4.FormattingEnabled = true;
-            this.LBA2Slate_cb4.Location = new System.Drawing.Point(67, 123);
-            this.LBA2Slate_cb4.Name = "LBA2Slate_cb4";
-            this.LBA2Slate_cb4.Size = new System.Drawing.Size(256, 21);
-            this.LBA2Slate_cb4.TabIndex = 4;
-            // 
-            // LBA2Slate_cb3
-            // 
-            this.LBA2Slate_cb3.FormattingEnabled = true;
-            this.LBA2Slate_cb3.Location = new System.Drawing.Point(67, 96);
-            this.LBA2Slate_cb3.Name = "LBA2Slate_cb3";
-            this.LBA2Slate_cb3.Size = new System.Drawing.Size(256, 21);
-            this.LBA2Slate_cb3.TabIndex = 3;
-            // 
-            // LBA2Slate_cb2
-            // 
-            this.LBA2Slate_cb2.FormattingEnabled = true;
-            this.LBA2Slate_cb2.Location = new System.Drawing.Point(67, 69);
-            this.LBA2Slate_cb2.Name = "LBA2Slate_cb2";
-            this.LBA2Slate_cb2.Size = new System.Drawing.Size(256, 21);
-            this.LBA2Slate_cb2.TabIndex = 2;
-            // 
-            // LBA2Slate_cb1
-            // 
-            this.LBA2Slate_cb1.FormattingEnabled = true;
-            this.LBA2Slate_cb1.Location = new System.Drawing.Point(67, 42);
-            this.LBA2Slate_cb1.Name = "LBA2Slate_cb1";
-            this.LBA2Slate_cb1.Size = new System.Drawing.Size(256, 21);
-            this.LBA2Slate_cb1.TabIndex = 1;
-            // 
-            // LBA2Slate_cb0
-            // 
-            this.LBA2Slate_cb0.FormattingEnabled = true;
-            this.LBA2Slate_cb0.Location = new System.Drawing.Point(67, 15);
-            this.LBA2Slate_cb0.Name = "LBA2Slate_cb0";
-            this.LBA2Slate_cb0.Size = new System.Drawing.Size(256, 21);
-            this.LBA2Slate_cb0.TabIndex = 0;
-            // 
             // tpLBA2Misc
             // 
             this.tpLBA2Misc.BackColor = System.Drawing.Color.MistyRose;
@@ -1760,7 +1658,7 @@
             // 
             this.LBA2Misc_lblBlowtron.AutoSize = true;
             this.LBA2Misc_lblBlowtron.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Misc_lblBlowtron.Location = new System.Drawing.Point(0, 10);
+            this.LBA2Misc_lblBlowtron.Location = new System.Drawing.Point(3, 10);
             this.LBA2Misc_lblBlowtron.Name = "LBA2Misc_lblBlowtron";
             this.LBA2Misc_lblBlowtron.Size = new System.Drawing.Size(56, 13);
             this.LBA2Misc_lblBlowtron.TabIndex = 44;
@@ -1793,7 +1691,7 @@
             // 
             this.LBA2Othr_lblMisc.AutoSize = true;
             this.LBA2Othr_lblMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblMisc.Location = new System.Drawing.Point(3, 15);
+            this.LBA2Othr_lblMisc.Location = new System.Drawing.Point(6, 15);
             this.LBA2Othr_lblMisc.Name = "LBA2Othr_lblMisc";
             this.LBA2Othr_lblMisc.Size = new System.Drawing.Size(37, 13);
             this.LBA2Othr_lblMisc.TabIndex = 34;
@@ -2069,6 +1967,43 @@
             this.lblHyperCarGear1.TabIndex = 6;
             this.lblHyperCarGear1.Text = "Gear 1";
             // 
+            // tpLBA2Flying
+            // 
+            this.tpLBA2Flying.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Flying.Controls.Add(this.FlyingLBA2);
+            this.tpLBA2Flying.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Flying.Name = "tpLBA2Flying";
+            this.tpLBA2Flying.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLBA2Flying.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Flying.TabIndex = 3;
+            this.tpLBA2Flying.Text = "Jank Flying";
+            // 
+            // FlyingLBA2
+            // 
+            this.FlyingLBA2.BackColor = System.Drawing.Color.MistyRose;
+            this.FlyingLBA2.Location = new System.Drawing.Point(0, 0);
+            this.FlyingLBA2.Name = "FlyingLBA2";
+            this.FlyingLBA2.Size = new System.Drawing.Size(334, 178);
+            this.FlyingLBA2.TabIndex = 11;
+            // 
+            // tpLBA2Flags
+            // 
+            this.tpLBA2Flags.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Flags.Controls.Add(this.LBA2_Flags);
+            this.tpLBA2Flags.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Flags.Name = "tpLBA2Flags";
+            this.tpLBA2Flags.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Flags.TabIndex = 11;
+            this.tpLBA2Flags.Text = "Flags";
+            // 
+            // LBA2_Flags
+            // 
+            this.LBA2_Flags.BackColor = System.Drawing.Color.MistyRose;
+            this.LBA2_Flags.Location = new System.Drawing.Point(0, 0);
+            this.LBA2_Flags.Name = "LBA2_Flags";
+            this.LBA2_Flags.Size = new System.Drawing.Size(339, 178);
+            this.LBA2_Flags.TabIndex = 0;
+            // 
             // tpLBA2Teleport
             // 
             this.tpLBA2Teleport.BackColor = System.Drawing.Color.MistyRose;
@@ -2087,26 +2022,6 @@
             this.ucTeleportLBA2.Name = "ucTeleportLBA2";
             this.ucTeleportLBA2.Size = new System.Drawing.Size(344, 178);
             this.ucTeleportLBA2.TabIndex = 0;
-            // 
-            // tpLBA2Flying
-            // 
-            this.tpLBA2Flying.BackColor = System.Drawing.Color.MistyRose;
-            this.tpLBA2Flying.Controls.Add(this.LBA2Flying_chkDisableGravity);
-            this.tpLBA2Flying.Controls.Add(this.FlyingLBA2);
-            this.tpLBA2Flying.Location = new System.Drawing.Point(4, 22);
-            this.tpLBA2Flying.Name = "tpLBA2Flying";
-            this.tpLBA2Flying.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLBA2Flying.Size = new System.Drawing.Size(334, 178);
-            this.tpLBA2Flying.TabIndex = 3;
-            this.tpLBA2Flying.Text = "Jank Flying";
-            // 
-            // FlyingLBA2
-            // 
-            this.FlyingLBA2.BackColor = System.Drawing.Color.MistyRose;
-            this.FlyingLBA2.Location = new System.Drawing.Point(0, 0);
-            this.FlyingLBA2.Name = "FlyingLBA2";
-            this.FlyingLBA2.Size = new System.Drawing.Size(334, 178);
-            this.FlyingLBA2.TabIndex = 11;
             // 
             // tpLBA2WizardGPS
             // 
@@ -2388,6 +2303,126 @@
             this.pbWizardMap.TabIndex = 0;
             this.pbWizardMap.TabStop = false;
             // 
+            // tpLBA2Slate
+            // 
+            this.tpLBA2Slate.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_btnSet);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map4);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map3);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map2);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map1);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map0);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb4);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb3);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb2);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb1);
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_cb0);
+            this.tpLBA2Slate.Location = new System.Drawing.Point(4, 22);
+            this.tpLBA2Slate.Name = "tpLBA2Slate";
+            this.tpLBA2Slate.Size = new System.Drawing.Size(334, 178);
+            this.tpLBA2Slate.TabIndex = 9;
+            this.tpLBA2Slate.Text = "Slate";
+            // 
+            // LBA2Slate_btnSet
+            // 
+            this.LBA2Slate_btnSet.Location = new System.Drawing.Point(127, 150);
+            this.LBA2Slate_btnSet.Name = "LBA2Slate_btnSet";
+            this.LBA2Slate_btnSet.Size = new System.Drawing.Size(75, 23);
+            this.LBA2Slate_btnSet.TabIndex = 11;
+            this.LBA2Slate_btnSet.Text = "Set";
+            this.LBA2Slate_btnSet.UseVisualStyleBackColor = true;
+            this.LBA2Slate_btnSet.Click += new System.EventHandler(this.LBA2Slate_btnSet_Click);
+            // 
+            // LBA2Slate_map4
+            // 
+            this.LBA2Slate_map4.AutoSize = true;
+            this.LBA2Slate_map4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map4.Location = new System.Drawing.Point(13, 126);
+            this.LBA2Slate_map4.Name = "LBA2Slate_map4";
+            this.LBA2Slate_map4.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map4.TabIndex = 10;
+            this.LBA2Slate_map4.Text = "Map 5";
+            // 
+            // LBA2Slate_map3
+            // 
+            this.LBA2Slate_map3.AutoSize = true;
+            this.LBA2Slate_map3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map3.Location = new System.Drawing.Point(13, 99);
+            this.LBA2Slate_map3.Name = "LBA2Slate_map3";
+            this.LBA2Slate_map3.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map3.TabIndex = 9;
+            this.LBA2Slate_map3.Text = "Map 4";
+            // 
+            // LBA2Slate_map2
+            // 
+            this.LBA2Slate_map2.AutoSize = true;
+            this.LBA2Slate_map2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map2.Location = new System.Drawing.Point(13, 72);
+            this.LBA2Slate_map2.Name = "LBA2Slate_map2";
+            this.LBA2Slate_map2.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map2.TabIndex = 8;
+            this.LBA2Slate_map2.Text = "Map 3";
+            // 
+            // LBA2Slate_map1
+            // 
+            this.LBA2Slate_map1.AutoSize = true;
+            this.LBA2Slate_map1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map1.Location = new System.Drawing.Point(13, 45);
+            this.LBA2Slate_map1.Name = "LBA2Slate_map1";
+            this.LBA2Slate_map1.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map1.TabIndex = 7;
+            this.LBA2Slate_map1.Text = "Map 2";
+            // 
+            // LBA2Slate_map0
+            // 
+            this.LBA2Slate_map0.AutoSize = true;
+            this.LBA2Slate_map0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Slate_map0.Location = new System.Drawing.Point(13, 18);
+            this.LBA2Slate_map0.Name = "LBA2Slate_map0";
+            this.LBA2Slate_map0.Size = new System.Drawing.Size(42, 13);
+            this.LBA2Slate_map0.TabIndex = 5;
+            this.LBA2Slate_map0.Text = "Map 1";
+            // 
+            // LBA2Slate_cb4
+            // 
+            this.LBA2Slate_cb4.FormattingEnabled = true;
+            this.LBA2Slate_cb4.Location = new System.Drawing.Point(67, 123);
+            this.LBA2Slate_cb4.Name = "LBA2Slate_cb4";
+            this.LBA2Slate_cb4.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb4.TabIndex = 4;
+            // 
+            // LBA2Slate_cb3
+            // 
+            this.LBA2Slate_cb3.FormattingEnabled = true;
+            this.LBA2Slate_cb3.Location = new System.Drawing.Point(67, 96);
+            this.LBA2Slate_cb3.Name = "LBA2Slate_cb3";
+            this.LBA2Slate_cb3.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb3.TabIndex = 3;
+            // 
+            // LBA2Slate_cb2
+            // 
+            this.LBA2Slate_cb2.FormattingEnabled = true;
+            this.LBA2Slate_cb2.Location = new System.Drawing.Point(67, 69);
+            this.LBA2Slate_cb2.Name = "LBA2Slate_cb2";
+            this.LBA2Slate_cb2.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb2.TabIndex = 2;
+            // 
+            // LBA2Slate_cb1
+            // 
+            this.LBA2Slate_cb1.FormattingEnabled = true;
+            this.LBA2Slate_cb1.Location = new System.Drawing.Point(67, 42);
+            this.LBA2Slate_cb1.Name = "LBA2Slate_cb1";
+            this.LBA2Slate_cb1.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb1.TabIndex = 1;
+            // 
+            // LBA2Slate_cb0
+            // 
+            this.LBA2Slate_cb0.FormattingEnabled = true;
+            this.LBA2Slate_cb0.Location = new System.Drawing.Point(67, 15);
+            this.LBA2Slate_cb0.Name = "LBA2Slate_cb0";
+            this.LBA2Slate_cb0.Size = new System.Drawing.Size(256, 21);
+            this.LBA2Slate_cb0.TabIndex = 0;
+            // 
             // tpLBA2ShittyShot
             // 
             this.tpLBA2ShittyShot.BackColor = System.Drawing.Color.MistyRose;
@@ -2452,7 +2487,7 @@
             this.LBA2SS_btnOnOff.Name = "LBA2SS_btnOnOff";
             this.LBA2SS_btnOnOff.Size = new System.Drawing.Size(75, 23);
             this.LBA2SS_btnOnOff.TabIndex = 15;
-            this.LBA2SS_btnOnOff.Text = "Off";
+            this.LBA2SS_btnOnOff.Text = "Status: Off";
             this.LBA2SS_btnOnOff.UseVisualStyleBackColor = true;
             this.LBA2SS_btnOnOff.Click += new System.EventHandler(this.LBA2SS_btnOnOff_Click);
             // 
@@ -2579,7 +2614,8 @@
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.refreshToolStripMenuItem,
             this.lBA1ToolStripMenuItem,
-            this.lBA2ToolStripMenuItem});
+            this.lBA2ToolStripMenuItem,
+            this.languageToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "&Options";
@@ -2597,7 +2633,8 @@
             this.LBA1AutoZoomToolStripMenuItem1,
             this.LBA1GodModeToolStripMenuItem,
             this.LBA1MaxMagicToolStripMenuItem,
-            this.tsmiLBA1BehaviourSwitchWith14});
+            this.tsmiLBA1BehaviourSwitchWith14,
+            this.LBA1Mnu_DisableWallDamage});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
             this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
@@ -2634,7 +2671,17 @@
             this.tsmiLBA1BehaviourSwitchWith14.Name = "tsmiLBA1BehaviourSwitchWith14";
             this.tsmiLBA1BehaviourSwitchWith14.Size = new System.Drawing.Size(188, 22);
             this.tsmiLBA1BehaviourSwitchWith14.Text = "Mode switch with 1-4";
+            this.tsmiLBA1BehaviourSwitchWith14.Visible = false;
             this.tsmiLBA1BehaviourSwitchWith14.Click += new System.EventHandler(this.tsmiLBA1BehaviourSwitchWith14_Click);
+            // 
+            // LBA1Mnu_DisableWallDamage
+            // 
+            this.LBA1Mnu_DisableWallDamage.CheckOnClick = true;
+            this.LBA1Mnu_DisableWallDamage.Name = "LBA1Mnu_DisableWallDamage";
+            this.LBA1Mnu_DisableWallDamage.Size = new System.Drawing.Size(188, 22);
+            this.LBA1Mnu_DisableWallDamage.Text = "Disable Wall Damage";
+            this.LBA1Mnu_DisableWallDamage.Visible = false;
+            this.LBA1Mnu_DisableWallDamage.Click += new System.EventHandler(this.LBA1mnuDisableWallDamage_Click);
             // 
             // lBA2ToolStripMenuItem
             // 
@@ -2649,7 +2696,7 @@
             // 
             this.LBA2GodModeToolStripMenuItem1.CheckOnClick = true;
             this.LBA2GodModeToolStripMenuItem1.Name = "LBA2GodModeToolStripMenuItem1";
-            this.LBA2GodModeToolStripMenuItem1.Size = new System.Drawing.Size(147, 22);
+            this.LBA2GodModeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.LBA2GodModeToolStripMenuItem1.Text = "God Mode";
             this.LBA2GodModeToolStripMenuItem1.Click += new System.EventHandler(this.LBA2GodModeToolStripMenuItem1_Click);
             // 
@@ -2657,7 +2704,7 @@
             // 
             this.infiniteMagicToolStripMenuItem.CheckOnClick = true;
             this.infiniteMagicToolStripMenuItem.Name = "infiniteMagicToolStripMenuItem";
-            this.infiniteMagicToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.infiniteMagicToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.infiniteMagicToolStripMenuItem.Text = "Infinite Magic";
             this.infiniteMagicToolStripMenuItem.Click += new System.EventHandler(this.LBA2InfiniteMagicToolStripMenuItem_Click);
             // 
@@ -2668,16 +2715,41 @@
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // LBA2Flying_chkDisableGravity
+            // languageToolStripMenuItem
             // 
-            this.LBA2Flying_chkDisableGravity.AutoSize = true;
-            this.LBA2Flying_chkDisableGravity.Location = new System.Drawing.Point(228, 153);
-            this.LBA2Flying_chkDisableGravity.Name = "LBA2Flying_chkDisableGravity";
-            this.LBA2Flying_chkDisableGravity.Size = new System.Drawing.Size(97, 17);
-            this.LBA2Flying_chkDisableGravity.TabIndex = 12;
-            this.LBA2Flying_chkDisableGravity.Text = "Disable Gravity";
-            this.LBA2Flying_chkDisableGravity.UseVisualStyleBackColor = true;
-            this.LBA2Flying_chkDisableGravity.CheckedChanged += new System.EventHandler(this.LBA2Flying_chkDisableGravity_CheckedChanged);
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuLangENG,
+            this.fRAToolStripMenuItem,
+            this.eSPToolStripMenuItem,
+            this.dEUToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.languageToolStripMenuItem.Text = "Language";
+            // 
+            // mnuLangENG
+            // 
+            this.mnuLangENG.CheckOnClick = true;
+            this.mnuLangENG.Name = "mnuLangENG";
+            this.mnuLangENG.Size = new System.Drawing.Size(180, 22);
+            this.mnuLangENG.Text = "English";
+            // 
+            // fRAToolStripMenuItem
+            // 
+            this.fRAToolStripMenuItem.Name = "fRAToolStripMenuItem";
+            this.fRAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fRAToolStripMenuItem.Text = "FRA";
+            // 
+            // eSPToolStripMenuItem
+            // 
+            this.eSPToolStripMenuItem.Name = "eSPToolStripMenuItem";
+            this.eSPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eSPToolStripMenuItem.Text = "ESP";
+            // 
+            // dEUToolStripMenuItem
+            // 
+            this.dEUToolStripMenuItem.Name = "dEUToolStripMenuItem";
+            this.dEUToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dEUToolStripMenuItem.Text = "DEU";
             // 
             // frmTrainer
             // 
@@ -2704,17 +2776,15 @@
             this.tpLBA1Holomap.PerformLayout();
             this.tpTeleport.ResumeLayout(false);
             this.tpFlying.ResumeLayout(false);
-            this.tpFlying.PerformLayout();
             this.tpSaveGame.ResumeLayout(false);
             this.tpSaveGame.PerformLayout();
+            this.tpLBA1Flags.ResumeLayout(false);
             this.tbLBA2.ResumeLayout(false);
             this.tcLBA2Inner.ResumeLayout(false);
             this.tpLBA2Twinsen.ResumeLayout(false);
             this.tpLBA2Twinsen.PerformLayout();
             this.tpLBA2Other.ResumeLayout(false);
             this.tpLBA2Other.PerformLayout();
-            this.tpLBA2Slate.ResumeLayout(false);
-            this.tpLBA2Slate.PerformLayout();
             this.tpLBA2Misc.ResumeLayout(false);
             this.tpLBA2Misc.PerformLayout();
             this.LBA2Misc_gbBlowtron.ResumeLayout(false);
@@ -2722,12 +2792,14 @@
             this.tpHyperCar.ResumeLayout(false);
             this.LBA2HyperCar_panel.ResumeLayout(false);
             this.LBA2HyperCar_panel.PerformLayout();
-            this.tpLBA2Teleport.ResumeLayout(false);
             this.tpLBA2Flying.ResumeLayout(false);
-            this.tpLBA2Flying.PerformLayout();
+            this.tpLBA2Flags.ResumeLayout(false);
+            this.tpLBA2Teleport.ResumeLayout(false);
             this.tpLBA2WizardGPS.ResumeLayout(false);
             this.tpLBA2WizardGPS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbWizardMap)).EndInit();
+            this.tpLBA2Slate.ResumeLayout(false);
+            this.tpLBA2Slate.PerformLayout();
             this.tpLBA2ShittyShot.ResumeLayout(false);
             this.tpLBA2ShittyShot.PerformLayout();
             this.tpLBA2Debug.ResumeLayout(false);
@@ -2965,9 +3037,17 @@
         private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron1;
         private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron0;
         private System.Windows.Forms.Label LBA2Misc_lblBlowtron;
-        private System.Windows.Forms.CheckBox LBA1Fly_chkWalkingInAir;
         private System.Windows.Forms.ToolStripMenuItem tsmiLBA1BehaviourSwitchWith14;
-        private System.Windows.Forms.CheckBox LBA2Flying_chkDisableGravity;
+        private System.Windows.Forms.ToolStripMenuItem LBA1Mnu_DisableWallDamage;
+        private System.Windows.Forms.TabPage tpLBA1Flags;
+        private System.Windows.Forms.TabPage tpLBA2Flags;
+        private LBAFlags.Flags LBA2_Flags;
+        private LBAFlags.Flags LBA1_Flags;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuLangENG;
+        private System.Windows.Forms.ToolStripMenuItem fRAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eSPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dEUToolStripMenuItem;
     }
 }
 

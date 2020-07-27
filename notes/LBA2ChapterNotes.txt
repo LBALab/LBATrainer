@@ -1,0 +1,29 @@
+Chapter log
+1: Chapter 1 	- Actor 0 Twinsens house
+		- Actor 0: Fragment 0: Desert - Bu
+		- Actor 0: Fragment 1: Citadel Museum - safe
+		- Actor 0: Fragment 2: Baldinos Blackboard
+		- Actor 0: Fragment 3: Esmer Shuttle - closed
+3: Chapter 3 - Actor 0 WLD: Esmer Shuttle
+5: Chapter 5 - Actor 0 - WLD - Esmer Shuttle - Scene 63
+6: Chapter 6 - Actor 0 - Emerald Moon - X-Room
+
+  IF VAR_GAME 85 == 10 
+    PLAY_SMK BALDINO 
+    PLAY_SMK CRASHZEL 
+    SET_VAR_GAME 253 6 
+    CHANGE_CUBE 138 
+  ENDIF 
+
+8: Chapter 8 - Actor 0 - Mousquibee passage to CX
+  IF CHAPTER < 8 
+    SET_VAR_GAME 253 8 
+
+9: Chapter 9 - Emporer shuttle? Grid 126
+
+10: Chapter 10 - Actor 0 -Inside island Celebration temple
+
+        IF CHAPTER < 10 
+          SET_VAR_GAME 253 10 
+          SET_MAGIC_LEVEL 4 
+        ENDIF 

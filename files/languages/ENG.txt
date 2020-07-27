@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<language lang="English>
+	<generic>
+		<twinsen>Twinsen</twinsen>
+		<other>Other</other>
+		<holomap>holomap</holomap>
+		<teleport>Teleport</teleport>
+		<flying>Flying</flying>
+		<savegame>Save Game</savegame>
+		<set>Set</set>
+		<scan>Scan</scan>
+		<flags>Flags</flags>
+	</generic>
+	<twinsen>
+		<cloverBoxes>Clover Boxes</cloverBoxes>
+		<clovers>Clovers</Clovers>
+		<magicLevel>Magic Level</magicLevel>
+		<magicPoints>Magic Points</magicPoints>
+		<health>Health</health>
+		<keys>Keys</keys>
+		<inventory>Inventory</inventory>
+	</twinsen>
+	<other>
+		<skin>Skin</skin>
+		<weapon>Weapon</weapon>
+		<chapter>Chapter</chapter>
+		<quest>Quest</quest>
+		<movies>Movies</movies>
+		<invUsed>Inv. Used</invUsed>
+	</other>
+	<holomap>
+		<canFocus>Can Focus</canFocus>
+		<unknown>Unknown</unknown>
+		<beenThere>Been there</beenThere>
+		<arrow>Arrow</arrow>
+	</holomap>
+	<misc>
+	</misc>
+	<hypercar>
+	</hypercar>
+	<wizardGPS>
+	</wizardGPS>
+	<slate>
+	</slate>
+	<shittyShot>
+	</shittyShot>
+</language>
+	

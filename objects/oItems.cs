@@ -18,6 +18,7 @@ namespace LBATrainer
         public Item[] Quest;
         public Item[] Movies;
         public Item[] Holomap;
+        public Item[] LBA1Skins;
         public Item[] LBA2Skins;
         public Item MagicLevel;
         public Item MagicPoints;
@@ -106,11 +107,11 @@ namespace LBATrainer
             XmlNodeList nodes = doc.DocumentElement.SelectNodes("/skins/skin");
             Item[] items = new Item[nodes.Count];
             for (uint i = 0; i < items.Length; i++)
-                items[i] = getLBA2Skin(nodes[(int)i], (ushort)i);
+                items[i] = getLBA2Skin(nodes[(int)i], (ushort)i, 2);
             return (LBA2Skins = items);
 
         }
-        private Item getLBA2Skin(XmlNode xn, ushort count)
+        private Item getLBA2Skin(XmlNode xn, ushort count, byte LBAVer)
         {
             Item item = new Item();
             item.name = xn.InnerText.Trim();
@@ -122,7 +123,7 @@ namespace LBATrainer
             item.type = 2;
             item.lbaVersion = 2;
             
-            return item; ;
+            return item;
         }
         private void loadTwinsen(ushort LBAVer, XmlNodeList nodes)
         {

@@ -131,8 +131,6 @@ namespace LBATrainer
             LBA1Othr_cboHolomap.Items.AddRange(items.Holomap);
         }
 
-
-
         private void LBA1Othr_cboQuest_TextChanged(object sender, EventArgs e)
         {
             filterCBO(LBA1Othr_cboQuest, items.Quest);

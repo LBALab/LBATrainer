@@ -18,6 +18,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -32,8 +34,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -60,7 +60,10 @@
   <ItemGroup>
     <Reference Include="Flying, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Flying\bin\Debug\Flying.dll</HintPath>
+      <HintPath>..\Flying\bin\Release\Flying.dll</HintPath>
+    </Reference>
+    <Reference Include="LBAFlags">
+      <HintPath>..\LBAFlags\bin\Release\LBAFlags.dll</HintPath>
     </Reference>
     <Reference Include="LBAMemoryModule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -130,6 +133,12 @@
     <Compile Include="LBA2\Trainer.LBA2.WizardGPS.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="objects\frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="objects\frmOptions.Designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="objects\getSaveFileNames.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,8 +149,8 @@
     <Compile Include="objects\LBA2Quest.cs" />
     <Compile Include="objects\LBA2Quests.cs" />
     <Compile Include="objects\oTimerSetItems.cs" />
+    <Compile Include="objects\oTimerGetItems.cs" />
     <Compile Include="Shared\oTeleport.cs" />
-    <Compile Include="Shared\oTimerGetItems.cs" />
     <Compile Include="Shared\AboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +173,9 @@
     <Compile Include="objects\oSaveItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="objects\frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="objects\getSaveFileNames.resx">
       <DependentUpon>getSaveFileNames.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -199,46 +211,49 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="files\LBA1\ChapterOffsets.xml">
+    <Content Include="files\languages\ENG\LBA1\ChapterOffsets.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA1\holomap.xml">
+    <Content Include="files\languages\ENG\LBA1\holomap.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA1\Inventory.xml">
+    <Content Include="files\languages\ENG\LBA1\Inventory.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA1\InventoryUsed.xml">
+    <Content Include="files\languages\ENG\LBA1\InventoryUsed.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA1\MovieOffsets.xml">
+    <Content Include="files\languages\ENG\LBA1\MovieOffsets.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA1\QuestOffsets.xml">
+    <Content Include="files\languages\ENG\LBA1\QuestOffsets.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA1\saveGame.xml">
+    <Content Include="files\languages\ENG\LBA1\saveGame.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA1\Twinsen.xml">
+    <Content Include="files\languages\ENG\LBA1\skins.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA2\Inventory.xml">
+    <Content Include="files\languages\ENG\LBA1\Twinsen.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA2\Outfit.xml">
+    <Content Include="files\languages\ENG\LBA2\Inventory.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA2\Quests.xml">
+    <Content Include="files\languages\ENG\LBA2\Outfit.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA2\skins.xml">
+    <Content Include="files\languages\ENG\LBA2\Quests.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\LBA2\Twinsen.xml">
+    <Content Include="files\languages\ENG\LBA2\skins.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\Other\options.xml">
+    <Content Include="files\languages\ENG\LBA2\Twinsen.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\languages\ENG\Other\options.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

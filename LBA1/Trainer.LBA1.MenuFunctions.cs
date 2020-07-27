@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +17,13 @@ namespace LBATrainer
         private HotKey LBA1Behaviour_hkD3Aggressive;
         private HotKey LBA1Behaviour_hkD4Discreet;
 
-        private void LBA1Behaviour_Load(object sender, EventArgs e, Options opt)
+        //private HotKey LBA1DWD_hkF1Normal;
+        //private HotKey LBA1DWD_hkF2Athletic;
+        //private HotKey LBA1DWD_hkF3Aggressive;
+        //private HotKey LBA1DWD_hkF4Discreet;
+        private HotKey LBA1DWD_hkCapsLock;
+
+        private void LBA1MenuFunctions_Load(object sender, EventArgs e, Options opt)
         {
             ;
         }
@@ -37,6 +44,7 @@ namespace LBATrainer
             LBA1AutoZoomToolStripMenuItem1.Checked = 1 == newVal;
         }
 
+        #region Behaviour
         private void tsmiLBA1BehaviourSwitchWith14_Click(object sender, EventArgs e)
         {
             if (tsmiLBA1BehaviourSwitchWith14.Checked)
@@ -82,5 +90,89 @@ namespace LBATrainer
             }
 
         }
+        #endregion
+
+        byte LBA1DWD_selectedBehaviour;
+        byte LBA1DWD_currentAreacode;
+        private void LBA1mnuDisableWallDamage_Click(object sender, EventArgs e)
+        {
+            if (LBA1Mnu_DisableWallDamage.Checked)
+            {
+                LBA1DWDDisableWallDamage();
+                LBA1DWD_registerHotKeys();
+                /*LBA1DWD_selectedBehaviour = (byte)memRoutines.readVal(LBA1_BEHAVIOUR, 1);
+                memRoutines.WriteVal(LBA1_BEHAVIOUR, 0, 1);
+                tgi.AddItem(LBA1DWD_Areacode, LBA1_AREACODE, 1);*/
+            }
+            else
+            {
+                LBA1DWDEnableWallDamage();
+                LBA1DWD__unregisterHotkeys();
+                /*tgi.RemoveIfExists(LBA1_BEHAVIOUR);
+                memRoutines.WriteVal(LBA1_BEHAVIOUR, LBA1DWD_selectedBehaviour, 1);*/
+            }
+        }
+
+        private void LBA1DWDEnableWallDamage()
+        {
+            memRoutines.WriteVal(LBA1_BEHAVIOUR, 1, 1); ;
+        }
+
+        private void LBA1DWDDisableWallDamage()
+        {
+            memRoutines.WriteVal(LBA1_BEHAVIOUR, 0, 1);
+        }
+
+       /* private void LBA1DWD_Areacode(ushort areacode)
+        {
+            //Called by oTimerGetItem - if areacode different re-set behaviour
+            if (areacode != LBA1DWD_currentAreacode)
+            {
+                if(1 == memRoutines.readVal(LBA1_BEHAVIOUR, 1))
+                    memRoutines.WriteVal(LBA1_BEHAVIOUR, LBA1DWD_selectedBehaviour, 1);
+                Thread.Sleep(1000);
+                memRoutines.WriteVal(LBA1_BEHAVIOUR, 0, 1);
+                LBA1DWD_currentAreacode = (byte) areacode;
+            }
+        }*/
+
+        private void LBA1DWD_registerHotKeys()
+        {
+            //LBA1DWDBehaviour_hkF1Normal = registerHotKey(Keys.F1);
+            //LBA1DWDBehaviour_hkF2Athletic = registerHotKey(Keys.F2);
+            //LBA1DWDBehaviour_hkF3Aggressive = registerHotKey(Keys.F3);
+            //LBA1DWDBehaviour_hkF4Discreet = registerHotKey(Keys.F4);
+            LBA1DWD_hkCapsLock = registerHotKey(Keys.CapsLock);
+        }
+        private void LBA1DWD__unregisterHotkeys()
+        {
+            try
+            {
+                unregisterHotKey(LBA1DWD_hkCapsLock);
+                //unregisterHotKey(LBA1DWDBehaviour_hkF1Normal);
+                //unregisterHotKey(LBA1DWDBehaviour_hkF2Athletic);
+                //unregisterHotKey(LBA1DWDBehaviour_hkF3Aggressive);
+                //unregisterHotKey(LBA1DWDBehaviour_hkF4Discreet);
+            }
+            catch { };
+        }
+        private void LBA1DWD_processHotkey(Keys k)
+      {
+            /*if (Keys.F2 == k)
+            {
+                Thread.Sleep(500);
+                LBA1DWD_selectedBehaviour = (byte)memRoutines.readVal(LBA1_BEHAVIOUR, 1);
+                memRoutines.WriteVal(LBA1_BEHAVIOUR, 0, 1);
+            }*/
+
+          if(Keys.CapsLock== k)
+            {
+                if (1 == memRoutines.readVal(LBA1_BEHAVIOUR, 1))
+                    LBA1DWDDisableWallDamage();
+                else
+                    LBA1DWDEnableWallDamage();
+            }
+        }
     }
+
 }

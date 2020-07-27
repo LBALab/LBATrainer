@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("LBATrainer")]
-[assembly: AssemblyDescription("This is an about page :-)")]
+[assembly: AssemblyDescription("LBA2 2020 Event Release. Thanks to everybody in the LBA community. Various people made this possible. El Muerte and everybody who contributed to his LBA Savegame editor. Zinc and everybody that contribued to LBA Architect. Thanks to banta for initial LBA2 Quest help. Thanks to you for using this :)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Phreak Inc.")]
 [assembly: AssemblyProduct("LBATrainer")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.1.0.0")]
-[assembly: AssemblyFileVersion("2.1.0.0")]
+[assembly: AssemblyVersion("3.0.0.0")]
+[assembly: AssemblyFileVersion("3.0.0.0")]
