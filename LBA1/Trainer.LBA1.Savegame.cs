@@ -133,7 +133,7 @@ namespace LBATrainer
             LBA1SG_txtSaveFileDirectory.Text = fbdLBADir.SelectedPath;
             fbdLBADir.Dispose();
             Options opt = new Options();
-            opt.SaveFileDirectory = LBA1SG_txtSaveFileDirectory.Text;
+            opt.LBA1SaveFileDirectory = LBA1SG_txtSaveFileDirectory.Text;
             opt.save();
         }
         private void LBA1SG_registerHotKeys()

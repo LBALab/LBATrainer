@@ -760,7 +760,7 @@
 	</item>
 	<item><!-- Triggered: Changed from secret room -->
 		<name>
-			Unlocked door to barrel room in Twinsen house
+			Entered barrel room in Twinsen house
 		</name>
 		<memoryOffset>
 			10DB0
