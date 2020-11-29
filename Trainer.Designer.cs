@@ -151,6 +151,11 @@
             this.LBA2Othr_cboSkins = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblSelectSkin = new System.Windows.Forms.Label();
             this.tpLBA2Misc = new System.Windows.Forms.TabPage();
+            this.LBA2Misc_gbRicksBar = new System.Windows.Forms.GroupBox();
+            this.LBA2Misc_btnRickKeyShow = new System.Windows.Forms.Button();
+            this.LBA2Misc_rbRickKeyOffice = new System.Windows.Forms.RadioButton();
+            this.LBA2Misc_rbRickKeyMiddle = new System.Windows.Forms.RadioButton();
+            this.LBA2Misc_rbRickKeyDoor = new System.Windows.Forms.RadioButton();
             this.LBA2Misc_gbBlowtron = new System.Windows.Forms.GroupBox();
             this.LBA2Misc_rbBlowtron2 = new System.Windows.Forms.RadioButton();
             this.LBA2Misc_btnBlowtron = new System.Windows.Forms.Button();
@@ -159,7 +164,7 @@
             this.LBA2Misc_lblBlowtron = new System.Windows.Forms.Label();
             this.LBA2Othr_chkMisc = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboMisc = new System.Windows.Forms.ComboBox();
-            this.LBA2Othr_lblMisc = new System.Windows.Forms.Label();
+            this.LBA2Misc_lblMisc = new System.Windows.Forms.Label();
             this.tpHyperCar = new System.Windows.Forms.TabPage();
             this.LBA2HyperCar_panel = new System.Windows.Forms.Panel();
             this.bPitLimit = new System.Windows.Forms.Button();
@@ -256,15 +261,16 @@
             this.lBA2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LBA2GodModeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.infiniteMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
-            this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
-            this.tmrFlying = new System.Windows.Forms.Timer(this.components);
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLangENG = new System.Windows.Forms.ToolStripMenuItem();
             this.fRAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eSPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmrLBA1TeleportTabRefresh = new System.Windows.Forms.Timer(this.components);
+            this.tmrHeightLock = new System.Windows.Forms.Timer(this.components);
+            this.tmrFlying = new System.Windows.Forms.Timer(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tcLBAVersion.SuspendLayout();
             this.tpLBA1.SuspendLayout();
             this.tcLBA1Inner.SuspendLayout();
@@ -280,6 +286,7 @@
             this.tpLBA2Twinsen.SuspendLayout();
             this.tpLBA2Other.SuspendLayout();
             this.tpLBA2Misc.SuspendLayout();
+            this.LBA2Misc_gbRicksBar.SuspendLayout();
             this.LBA2Misc_gbBlowtron.SuspendLayout();
             this.tpHyperCar.SuspendLayout();
             this.LBA2HyperCar_panel.SuspendLayout();
@@ -1590,15 +1597,77 @@
             // tpLBA2Misc
             // 
             this.tpLBA2Misc.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Misc.Controls.Add(this.LBA2Misc_gbRicksBar);
             this.tpLBA2Misc.Controls.Add(this.LBA2Misc_gbBlowtron);
             this.tpLBA2Misc.Controls.Add(this.LBA2Othr_chkMisc);
             this.tpLBA2Misc.Controls.Add(this.LBA2Othr_cboMisc);
-            this.tpLBA2Misc.Controls.Add(this.LBA2Othr_lblMisc);
+            this.tpLBA2Misc.Controls.Add(this.LBA2Misc_lblMisc);
             this.tpLBA2Misc.Location = new System.Drawing.Point(4, 22);
             this.tpLBA2Misc.Name = "tpLBA2Misc";
             this.tpLBA2Misc.Size = new System.Drawing.Size(334, 178);
             this.tpLBA2Misc.TabIndex = 10;
             this.tpLBA2Misc.Text = "Misc";
+            // 
+            // LBA2Misc_gbRicksBar
+            // 
+            this.LBA2Misc_gbRicksBar.Controls.Add(this.LBA2Misc_btnRickKeyShow);
+            this.LBA2Misc_gbRicksBar.Controls.Add(this.LBA2Misc_rbRickKeyOffice);
+            this.LBA2Misc_gbRicksBar.Controls.Add(this.LBA2Misc_rbRickKeyMiddle);
+            this.LBA2Misc_gbRicksBar.Controls.Add(this.LBA2Misc_rbRickKeyDoor);
+            this.LBA2Misc_gbRicksBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Misc_gbRicksBar.Location = new System.Drawing.Point(4, 72);
+            this.LBA2Misc_gbRicksBar.Name = "LBA2Misc_gbRicksBar";
+            this.LBA2Misc_gbRicksBar.Size = new System.Drawing.Size(328, 35);
+            this.LBA2Misc_gbRicksBar.TabIndex = 40;
+            this.LBA2Misc_gbRicksBar.TabStop = false;
+            this.LBA2Misc_gbRicksBar.Text = "Ricks bar key";
+            // 
+            // LBA2Misc_btnRickKeyShow
+            // 
+            this.LBA2Misc_btnRickKeyShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Misc_btnRickKeyShow.Location = new System.Drawing.Point(252, 10);
+            this.LBA2Misc_btnRickKeyShow.Name = "LBA2Misc_btnRickKeyShow";
+            this.LBA2Misc_btnRickKeyShow.Size = new System.Drawing.Size(75, 23);
+            this.LBA2Misc_btnRickKeyShow.TabIndex = 4;
+            this.LBA2Misc_btnRickKeyShow.Text = "Show";
+            this.LBA2Misc_btnRickKeyShow.UseVisualStyleBackColor = true;
+            this.LBA2Misc_btnRickKeyShow.Click += new System.EventHandler(this.btnRickKeyShow_Click);
+            // 
+            // LBA2Misc_rbRickKeyOffice
+            // 
+            this.LBA2Misc_rbRickKeyOffice.AutoSize = true;
+            this.LBA2Misc_rbRickKeyOffice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Misc_rbRickKeyOffice.Location = new System.Drawing.Point(183, 13);
+            this.LBA2Misc_rbRickKeyOffice.Name = "LBA2Misc_rbRickKeyOffice";
+            this.LBA2Misc_rbRickKeyOffice.Size = new System.Drawing.Size(53, 17);
+            this.LBA2Misc_rbRickKeyOffice.TabIndex = 3;
+            this.LBA2Misc_rbRickKeyOffice.TabStop = true;
+            this.LBA2Misc_rbRickKeyOffice.Text = "Office";
+            this.LBA2Misc_rbRickKeyOffice.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Misc_rbRickKeyMiddle
+            // 
+            this.LBA2Misc_rbRickKeyMiddle.AutoSize = true;
+            this.LBA2Misc_rbRickKeyMiddle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Misc_rbRickKeyMiddle.Location = new System.Drawing.Point(104, 13);
+            this.LBA2Misc_rbRickKeyMiddle.Name = "LBA2Misc_rbRickKeyMiddle";
+            this.LBA2Misc_rbRickKeyMiddle.Size = new System.Drawing.Size(56, 17);
+            this.LBA2Misc_rbRickKeyMiddle.TabIndex = 2;
+            this.LBA2Misc_rbRickKeyMiddle.TabStop = true;
+            this.LBA2Misc_rbRickKeyMiddle.Text = "Middle";
+            this.LBA2Misc_rbRickKeyMiddle.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Misc_rbRickKeyDoor
+            // 
+            this.LBA2Misc_rbRickKeyDoor.AutoSize = true;
+            this.LBA2Misc_rbRickKeyDoor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Misc_rbRickKeyDoor.Location = new System.Drawing.Point(15, 13);
+            this.LBA2Misc_rbRickKeyDoor.Name = "LBA2Misc_rbRickKeyDoor";
+            this.LBA2Misc_rbRickKeyDoor.Size = new System.Drawing.Size(68, 17);
+            this.LBA2Misc_rbRickKeyDoor.TabIndex = 1;
+            this.LBA2Misc_rbRickKeyDoor.TabStop = true;
+            this.LBA2Misc_rbRickKeyDoor.Text = "Entrance";
+            this.LBA2Misc_rbRickKeyDoor.UseVisualStyleBackColor = true;
             // 
             // LBA2Misc_gbBlowtron
             // 
@@ -1687,15 +1756,15 @@
             this.LBA2Othr_cboMisc.Size = new System.Drawing.Size(237, 21);
             this.LBA2Othr_cboMisc.TabIndex = 35;
             // 
-            // LBA2Othr_lblMisc
+            // LBA2Misc_lblMisc
             // 
-            this.LBA2Othr_lblMisc.AutoSize = true;
-            this.LBA2Othr_lblMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblMisc.Location = new System.Drawing.Point(6, 15);
-            this.LBA2Othr_lblMisc.Name = "LBA2Othr_lblMisc";
-            this.LBA2Othr_lblMisc.Size = new System.Drawing.Size(37, 13);
-            this.LBA2Othr_lblMisc.TabIndex = 34;
-            this.LBA2Othr_lblMisc.Text = "Misc.";
+            this.LBA2Misc_lblMisc.AutoSize = true;
+            this.LBA2Misc_lblMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Misc_lblMisc.Location = new System.Drawing.Point(6, 15);
+            this.LBA2Misc_lblMisc.Name = "LBA2Misc_lblMisc";
+            this.LBA2Misc_lblMisc.Size = new System.Drawing.Size(37, 13);
+            this.LBA2Misc_lblMisc.TabIndex = 34;
+            this.LBA2Misc_lblMisc.Text = "Misc.";
             // 
             // tpHyperCar
             // 
@@ -2623,7 +2692,7 @@
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.refreshToolStripMenuItem.Text = "&Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
@@ -2636,7 +2705,7 @@
             this.tsmiLBA1BehaviourSwitchWith14,
             this.LBA1Mnu_DisableWallDamage});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
-            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
             // 
             // LBA1AutoZoomToolStripMenuItem1
@@ -2689,14 +2758,14 @@
             this.LBA2GodModeToolStripMenuItem1,
             this.infiniteMagicToolStripMenuItem});
             this.lBA2ToolStripMenuItem.Name = "lBA2ToolStripMenuItem";
-            this.lBA2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lBA2ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.lBA2ToolStripMenuItem.Text = "LBA2";
             // 
             // LBA2GodModeToolStripMenuItem1
             // 
             this.LBA2GodModeToolStripMenuItem1.CheckOnClick = true;
             this.LBA2GodModeToolStripMenuItem1.Name = "LBA2GodModeToolStripMenuItem1";
-            this.LBA2GodModeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.LBA2GodModeToolStripMenuItem1.Size = new System.Drawing.Size(147, 22);
             this.LBA2GodModeToolStripMenuItem1.Text = "God Mode";
             this.LBA2GodModeToolStripMenuItem1.Click += new System.EventHandler(this.LBA2GodModeToolStripMenuItem1_Click);
             // 
@@ -2704,16 +2773,9 @@
             // 
             this.infiniteMagicToolStripMenuItem.CheckOnClick = true;
             this.infiniteMagicToolStripMenuItem.Name = "infiniteMagicToolStripMenuItem";
-            this.infiniteMagicToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.infiniteMagicToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.infiniteMagicToolStripMenuItem.Text = "Infinite Magic";
             this.infiniteMagicToolStripMenuItem.Click += new System.EventHandler(this.LBA2InfiniteMagicToolStripMenuItem_Click);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "&About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
@@ -2723,33 +2785,40 @@
             this.eSPToolStripMenuItem,
             this.dEUToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.languageToolStripMenuItem.Text = "Language";
             // 
             // mnuLangENG
             // 
             this.mnuLangENG.CheckOnClick = true;
             this.mnuLangENG.Name = "mnuLangENG";
-            this.mnuLangENG.Size = new System.Drawing.Size(180, 22);
+            this.mnuLangENG.Size = new System.Drawing.Size(112, 22);
             this.mnuLangENG.Text = "English";
             // 
             // fRAToolStripMenuItem
             // 
             this.fRAToolStripMenuItem.Name = "fRAToolStripMenuItem";
-            this.fRAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fRAToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.fRAToolStripMenuItem.Text = "FRA";
             // 
             // eSPToolStripMenuItem
             // 
             this.eSPToolStripMenuItem.Name = "eSPToolStripMenuItem";
-            this.eSPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eSPToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.eSPToolStripMenuItem.Text = "ESP";
             // 
             // dEUToolStripMenuItem
             // 
             this.dEUToolStripMenuItem.Name = "dEUToolStripMenuItem";
-            this.dEUToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dEUToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.dEUToolStripMenuItem.Text = "DEU";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // frmTrainer
             // 
@@ -2787,6 +2856,8 @@
             this.tpLBA2Other.PerformLayout();
             this.tpLBA2Misc.ResumeLayout(false);
             this.tpLBA2Misc.PerformLayout();
+            this.LBA2Misc_gbRicksBar.ResumeLayout(false);
+            this.LBA2Misc_gbRicksBar.PerformLayout();
             this.LBA2Misc_gbBlowtron.ResumeLayout(false);
             this.LBA2Misc_gbBlowtron.PerformLayout();
             this.tpHyperCar.ResumeLayout(false);
@@ -3027,7 +3098,7 @@
         private System.Windows.Forms.Label LBA2Othr_lblHornHealth;
         private System.Windows.Forms.CheckBox LBA2Othr_chkMisc;
         private System.Windows.Forms.ComboBox LBA2Othr_cboMisc;
-        private System.Windows.Forms.Label LBA2Othr_lblMisc;
+        private System.Windows.Forms.Label LBA2Misc_lblMisc;
         private System.Windows.Forms.HScrollBar LBA2Othr_hsbHornHealth;
         private System.Windows.Forms.Label LBA2Othr_lblHornHealthValue;
         private LBATeleport.ucTeleport ucTeleportLBA1;
@@ -3048,6 +3119,12 @@
         private System.Windows.Forms.ToolStripMenuItem fRAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eSPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dEUToolStripMenuItem;
+        private System.Windows.Forms.GroupBox LBA2Misc_gbRicksBar;
+        private System.Windows.Forms.Button LBA2Misc_btnRickKeyShow;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyOffice;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyMiddle;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyDoor;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

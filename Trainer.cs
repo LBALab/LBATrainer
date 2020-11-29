@@ -200,6 +200,14 @@ namespace LBATrainer
             LBA2Misc_rbBlowtron2.Checked = (2 == val);
         }
 
+        private void btnRickKeyShow_Click(object sender, EventArgs e)
+        {
+            byte val = (byte)memRoutines.readVal(0x58107, 1);
+            LBA2Misc_rbRickKeyDoor.Checked = (1 == val);
+            LBA2Misc_rbRickKeyMiddle.Checked = (0 == val);
+            LBA2Misc_rbRickKeyOffice.Checked = (2 == val);
+        }
+
         /*private void LBA1Fly_chkWalkingInAir_CheckedChanged(object sender, EventArgs e)
         {
             if (LBA1Fly_chkWalkingInAir.Checked)

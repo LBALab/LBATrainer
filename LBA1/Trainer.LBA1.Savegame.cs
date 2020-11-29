@@ -18,7 +18,7 @@ namespace LBATrainer
 
         private void LBA1SG_Load(object sender, EventArgs e, Options opt)
         {
-            LBA1SG_txtSaveFileDirectory.Text = opt.SaveFileDirectory;
+            LBA1SG_txtSaveFileDirectory.Text = opt.LBA1SaveFileDirectory;
             LBA1SG_icehLVChecked = new System.Windows.Forms.ItemCheckedEventHandler(this.LBA1SG_LvSaveGames_ItemChecked);
         }
         private void LBA1SG_FormClosed(object sender, FormClosedEventArgs e)

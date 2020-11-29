@@ -3805,7 +3805,7 @@
 		</subquests>
 	</quest>
 	<quest>
-		<!--Clover box: Citadel sewers-->
+		<!--Clover box: Citadel sewers VAR_GAME 240 -->
 		<name>Clover box: Citadel sewers</name>
 		<memoryOffset>57DD3</memoryOffset>
 		<size>1</size>
@@ -3821,7 +3821,7 @@
 		</subquests>
 	</quest>
 	<quest>
-		<!--Clover box: Dome of the slate-->
+		<!--Clover box: Dome of the slate VAR_GAME 241 -->
 		<name>Clover box: Dome of the slate</name>
 		<memoryOffset>57DD5</memoryOffset>
 		<size>1</size>
@@ -3837,7 +3837,7 @@
 		</subquests>
 	</quest>
 	<quest>
-		<!--Unknown-->
+		<!--Unknown Clover box: Wannie Mine - never set VAR_GAME 242 -->
 		<name>Unknown</name>
 		<memoryOffset>57DD7</memoryOffset>
 		<size>1</size>
