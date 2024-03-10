@@ -13,6 +13,7 @@ namespace LBATrainer
     {
         Item[] skins;
         LBA2Quests LBA2Other_quests;
+        Movies movies;
 
         const int LBA2WEAPONADDRESS = 0x3D693;
         private void LBA2Othr_Load()
@@ -21,8 +22,15 @@ namespace LBATrainer
             LBA2Othr_populateQuests();
             LBA2Othr_populateTritonHorn();
             LBA2Othr_populateWeapons();
+            LBA2Othr_populateMovies();
         }
 
+        private void LBA2Othr_populateMovies()
+        {
+            movies = new Movies(getLBAFilesPath(2));
+            LBA2Othr_cboMovies.Items.Clear();
+            LBA2Othr_cboMovies.Items.AddRange(movies.movies);
+        }
         private void LBA2Othr_populateSkins()
         {
             LBA2Othr_cboSkins.Items.Clear();
@@ -175,6 +183,43 @@ namespace LBATrainer
         private void LBA2Othr_cboQuest_TextChanged(object sender, EventArgs e)
         {
             LBA2Othr_filterQuestCBO(LBA2Othr_cboQuest, LBA2Other_quests.quests);
+        }
+
+        private void LBA2Othr_cboMovies_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LBA2Othr_chkMovie.Checked = LBA2Othr_IsMovieSelected();
+        }
+
+        private bool LBA2Othr_IsMovieSelected()
+        {
+            return ((Movies.Movie)LBA2Othr_cboMovies.SelectedItem).IsEnabled();
+        }
+        private void LBA2Othr_chkMovie_CheckedChanged(object sender, EventArgs e)
+        {
+            if (-1 == LBA2Othr_cboMovies.SelectedIndex) return;
+            if (LBA2Othr_chkMovie.Checked)
+                ((Movies.Movie)LBA2Othr_cboMovies.SelectedItem).Enable();
+            else
+                ((Movies.Movie)LBA2Othr_cboMovies.SelectedItem).Disable();
+        }
+
+        private void LBA2Othr_filterMovieCBO(ComboBox cb, Movies.Movie[] movies)
+        {
+            //If not entering data i.e. empty field
+            if (-1 != cb.SelectedIndex) return;
+
+            cb.Items.Clear();
+            LBA2Othr_cboSubquest.Items.Clear();
+            for (int i = 0; i < movies.Count(); i++)
+                if (movies[i].ToString().ToLower().Contains(cb.Text.ToLower()))
+                    cb.Items.Add(movies[i]);
+
+            cb.SelectionStart = cb.Text.Length;
+            cb.SelectionLength = 0;
+        }
+        private void LBA2Othr_cboMovies_TextChanged(object sender, EventArgs e)
+        {
+            LBA2Othr_filterMovieCBO(LBA2Othr_cboMovies, movies.movies);
         }
     }
 }

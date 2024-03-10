@@ -1,0 +1,88 @@
+COMPORTE.CPP
+
+    if( Planet>=2 )    l = NbZlitosPieces     ;
+    else        l = NbGoldPieces     ;
+   
+?The reason Emerald Moon gives you Kashes instead of Ziltos
+
+----
+
+GERELIFE.CPP
+
+        case LF_NB_GOLD_PIECES:
+                if( Planet>=2  )	Value = NbZlitosPieces ;
+                else			Value = NbGoldPieces ;
+                TypeAnswer = RET_S16 ;
+                break ;
+
+----
+
+        if( num==FLAG_MONEY )
+        {
+                if( Planet>=2 )	NbGoldPieces   = ListVarGame[FLAG_MONEY] ;
+                else		NbZlitosPieces = ListVarGame[FLAG_MONEY] ;
+        }
+---------------------------------------------------------------------------------------
+EXTFUNC.CPP
+char    *IleLst[] = {
+    "citadel",
+    "sendell",
+    "desert",
+    "emeraude",
+    "otringal",
+    "celebrat",
+    "platform",
+    "mosquibe",
+    "knartas",
+    "ilotcx",
+    "ascence",
+    "souscelb",
+    } ;
+
+List of islands in the source code
+---------------------------------------------------------------------------------------
+
+FIRE.ASM
+
+Amusing comments
+
+; masturbe le feu
+
+; Wanna know why 60h? Me too.
+; This is pure experience.
+; ok but it's better with 65
+
+; My dog coded here too.
+; I helped my sister with this one.
+; Yeah! Cool a bit, please.
+
+------
+
+HOLO.H
+
+#define	P_TWINSUN	0
+#define	P_MOON		1
+#define	P_ZEELICH	2
+#define	P_SUN_0		3
+#define	P_SUN_1		4
+#define	P_SUN_Z		5
+
+-----
+
+#define	MAX_PLANET	7
+
+----
+
+#define	ZOOM_TWINSUN		8000		//9500
+#define	ZOOM_MOON		2000		//1250
+#define	ZOOM_ZEELICH		6000
+#define	ZOOM_SUN		2000
+
+-----
+
+---------------------------------------------------------------------------------------
+
+INVENT.CPP
+
+Security ( kill the cat... )
+

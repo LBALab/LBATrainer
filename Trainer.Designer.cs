@@ -107,32 +107,47 @@
             this.LBA1SG_lbl1SaveFileDirectory = new System.Windows.Forms.Label();
             this.tpLBA1Flags = new System.Windows.Forms.TabPage();
             this.LBA1_Flags = new LBAFlags.Flags();
+            this.LBA1_tpDebug = new System.Windows.Forms.TabPage();
+            this.LBA1Debug_btnSetBoth = new System.Windows.Forms.Button();
+            this.LBA1Debug_txtDebugValue2 = new System.Windows.Forms.TextBox();
+            this.LBA1Debug_lblDebugValue2 = new System.Windows.Forms.Label();
+            this.LBA1Debug_txtDebugOffset2 = new System.Windows.Forms.TextBox();
+            this.LBA1Debug_lblDebugOffset2 = new System.Windows.Forms.Label();
+            this.LBA1Debug_btnlDebugOffset2Set = new System.Windows.Forms.Button();
+            this.LBA1Debug_txtDebugValue1 = new System.Windows.Forms.TextBox();
+            this.LBA1Debug_lblDebugValue1 = new System.Windows.Forms.Label();
+            this.LBA1Debug_txtDebugOffset1 = new System.Windows.Forms.TextBox();
+            this.LBA1Debug_lblDebugOffset1 = new System.Windows.Forms.Label();
+            this.LBA1Debug_btnlDebugOffset1Set = new System.Windows.Forms.Button();
             this.tbLBA2 = new System.Windows.Forms.TabPage();
             this.tcLBA2Inner = new System.Windows.Forms.TabControl();
             this.tpLBA2Twinsen = new System.Windows.Forms.TabPage();
             this.cboLBA2Inventory = new System.Windows.Forms.ComboBox();
             this.lblLBA2Inventory = new System.Windows.Forms.Label();
             this.txtLBA2Zilitos = new System.Windows.Forms.TextBox();
-            this.lblLBA2Zilitos = new System.Windows.Forms.Label();
             this.txtLBA2Keys = new System.Windows.Forms.TextBox();
-            this.lblLBA2Keys = new System.Windows.Forms.Label();
-            this.lblLBA2MagicLevel = new System.Windows.Forms.Label();
             this.txtLBA2MagicLevel = new System.Windows.Forms.TextBox();
-            this.btnLBA2TwinsenSet = new System.Windows.Forms.Button();
             this.txtLBA2Kashers = new System.Windows.Forms.TextBox();
             this.txtLBA2MagicPoints = new System.Windows.Forms.TextBox();
+            this.txtLBA2Health = new System.Windows.Forms.TextBox();
+            this.txtLBA2CloverBoxes = new System.Windows.Forms.TextBox();
+            this.txtLBA2Clovers = new System.Windows.Forms.TextBox();
+            this.lblLBA2Zilitos = new System.Windows.Forms.Label();
+            this.lblLBA2Keys = new System.Windows.Forms.Label();
+            this.lblLBA2MagicLevel = new System.Windows.Forms.Label();
+            this.btnLBA2TwinsenSet = new System.Windows.Forms.Button();
             this.btnLBA2MinAll = new System.Windows.Forms.Button();
             this.btnLBA2Scan = new System.Windows.Forms.Button();
-            this.txtLBA2Health = new System.Windows.Forms.TextBox();
             this.lblLBA2Kashers = new System.Windows.Forms.Label();
             this.lblLBA2MagicPoints = new System.Windows.Forms.Label();
             this.lblLBA2Health = new System.Windows.Forms.Label();
             this.lblLBA2CloverBoxes = new System.Windows.Forms.Label();
-            this.txtLBA2CloverBoxes = new System.Windows.Forms.TextBox();
             this.btnLBA2MaxAll = new System.Windows.Forms.Button();
             this.lblLBA2Clovers = new System.Windows.Forms.Label();
-            this.txtLBA2Clovers = new System.Windows.Forms.TextBox();
             this.tpLBA2Other = new System.Windows.Forms.TabPage();
+            this.LBA2Othr_chkMovie = new System.Windows.Forms.CheckBox();
+            this.LBA2Othr_cboMovies = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_lblMovies = new System.Windows.Forms.Label();
             this.LBA2Othr_lblHornHealthValue = new System.Windows.Forms.Label();
             this.LBA2Othr_hsbHornHealth = new System.Windows.Forms.HScrollBar();
             this.LBA2Othr_lblHornHealth = new System.Windows.Forms.Label();
@@ -144,13 +159,13 @@
             this.LBA2Othr_chkBehaviourValue = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboBehaviour = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblBehaviour = new System.Windows.Forms.Label();
-            this.LBA2Othr_chkWeapon = new System.Windows.Forms.CheckBox();
-            this.LBA2Othr_cboWeapon = new System.Windows.Forms.ComboBox();
-            this.LBA2Othr_lblWeapon = new System.Windows.Forms.Label();
             this.LBA2Othr_chkSkin = new System.Windows.Forms.CheckBox();
             this.LBA2Othr_cboSkins = new System.Windows.Forms.ComboBox();
             this.LBA2Othr_lblSelectSkin = new System.Windows.Forms.Label();
             this.tpLBA2Misc = new System.Windows.Forms.TabPage();
+            this.LBA2Othr_chkWeapon = new System.Windows.Forms.CheckBox();
+            this.LBA2Othr_cboWeapon = new System.Windows.Forms.ComboBox();
+            this.LBA2Othr_lblWeapon = new System.Windows.Forms.Label();
             this.LBA2Misc_gbRicksBar = new System.Windows.Forms.GroupBox();
             this.LBA2Misc_btnRickKeyShow = new System.Windows.Forms.Button();
             this.LBA2Misc_rbRickKeyOffice = new System.Windows.Forms.RadioButton();
@@ -222,6 +237,7 @@
             this.rb65 = new System.Windows.Forms.RadioButton();
             this.pbWizardMap = new System.Windows.Forms.PictureBox();
             this.tpLBA2Slate = new System.Windows.Forms.TabPage();
+            this.LBA2Slate_btnScan = new System.Windows.Forms.Button();
             this.LBA2Slate_btnSet = new System.Windows.Forms.Button();
             this.LBA2Slate_map4 = new System.Windows.Forms.Label();
             this.LBA2Slate_map3 = new System.Windows.Forms.Label();
@@ -243,6 +259,8 @@
             this.LBA2SS_lblTriangle = new System.Windows.Forms.Label();
             this.LBA2SS_lblCircle = new System.Windows.Forms.Label();
             this.tpLBA2Debug = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnLBA2InstantCarDisabled = new System.Windows.Forms.Button();
             this.btnLBA2InstantCarTunic = new System.Windows.Forms.Button();
             this.btnLBA2InstantCarWizard = new System.Windows.Forms.Button();
@@ -258,6 +276,7 @@
             this.LBA1MaxMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiLBA1BehaviourSwitchWith14 = new System.Windows.Forms.ToolStripMenuItem();
             this.LBA1Mnu_DisableWallDamage = new System.Windows.Forms.ToolStripMenuItem();
+            this.manuelAggressionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lBA2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LBA2GodModeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.infiniteMagicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -281,6 +300,7 @@
             this.tpFlying.SuspendLayout();
             this.tpSaveGame.SuspendLayout();
             this.tpLBA1Flags.SuspendLayout();
+            this.LBA1_tpDebug.SuspendLayout();
             this.tbLBA2.SuspendLayout();
             this.tcLBA2Inner.SuspendLayout();
             this.tpLBA2Twinsen.SuspendLayout();
@@ -332,6 +352,7 @@
             this.tcLBA1Inner.Controls.Add(this.tpFlying);
             this.tcLBA1Inner.Controls.Add(this.tpSaveGame);
             this.tcLBA1Inner.Controls.Add(this.tpLBA1Flags);
+            this.tcLBA1Inner.Controls.Add(this.LBA1_tpDebug);
             this.tcLBA1Inner.Location = new System.Drawing.Point(6, 6);
             this.tcLBA1Inner.Name = "tcLBA1Inner";
             this.tcLBA1Inner.SelectedIndex = 0;
@@ -643,7 +664,7 @@
             this.LBA1Othr_chkWeaponValue.Location = new System.Drawing.Point(313, 37);
             this.LBA1Othr_chkWeaponValue.Name = "LBA1Othr_chkWeaponValue";
             this.LBA1Othr_chkWeaponValue.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Othr_chkWeaponValue.TabIndex = 21;
+            this.LBA1Othr_chkWeaponValue.TabIndex = 18;
             this.LBA1Othr_chkWeaponValue.UseVisualStyleBackColor = true;
             this.LBA1Othr_chkWeaponValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_chkWeaponValue_CheckedChanged);
             // 
@@ -656,7 +677,7 @@
             this.LBA1Othr_cboWeapon.Location = new System.Drawing.Point(84, 34);
             this.LBA1Othr_cboWeapon.Name = "LBA1Othr_cboWeapon";
             this.LBA1Othr_cboWeapon.Size = new System.Drawing.Size(223, 21);
-            this.LBA1Othr_cboWeapon.TabIndex = 20;
+            this.LBA1Othr_cboWeapon.TabIndex = 17;
             this.LBA1Othr_cboWeapon.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboLBA1Weapon_SelectedIndexChanged);
             // 
             // label1
@@ -675,7 +696,7 @@
             this.LBA1Othr_chkSkinValue.Location = new System.Drawing.Point(313, 10);
             this.LBA1Othr_chkSkinValue.Name = "LBA1Othr_chkSkinValue";
             this.LBA1Othr_chkSkinValue.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Othr_chkSkinValue.TabIndex = 18;
+            this.LBA1Othr_chkSkinValue.TabIndex = 16;
             this.LBA1Othr_chkSkinValue.UseVisualStyleBackColor = true;
             this.LBA1Othr_chkSkinValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_chkSkinValue_CheckedChanged);
             // 
@@ -693,7 +714,7 @@
             this.LBA1Othr_cboLBA1Skin.Location = new System.Drawing.Point(84, 7);
             this.LBA1Othr_cboLBA1Skin.Name = "LBA1Othr_cboLBA1Skin";
             this.LBA1Othr_cboLBA1Skin.Size = new System.Drawing.Size(223, 21);
-            this.LBA1Othr_cboLBA1Skin.TabIndex = 14;
+            this.LBA1Othr_cboLBA1Skin.TabIndex = 15;
             this.LBA1Othr_cboLBA1Skin.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboLBA1Skin_SelectedIndexChanged);
             // 
             // lblLBASkin
@@ -712,7 +733,7 @@
             this.LBA1Othr_chkChapterValue.Location = new System.Drawing.Point(313, 64);
             this.LBA1Othr_chkChapterValue.Name = "LBA1Othr_chkChapterValue";
             this.LBA1Othr_chkChapterValue.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Othr_chkChapterValue.TabIndex = 11;
+            this.LBA1Othr_chkChapterValue.TabIndex = 20;
             this.LBA1Othr_chkChapterValue.UseVisualStyleBackColor = true;
             this.LBA1Othr_chkChapterValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_chkChapterValue_CheckedChanged);
             // 
@@ -739,7 +760,7 @@
             this.LBA1Othr_cboChapter.Location = new System.Drawing.Point(84, 61);
             this.LBA1Othr_cboChapter.Name = "LBA1Othr_cboChapter";
             this.LBA1Othr_cboChapter.Size = new System.Drawing.Size(223, 21);
-            this.LBA1Othr_cboChapter.TabIndex = 7;
+            this.LBA1Othr_cboChapter.TabIndex = 19;
             this.LBA1Othr_cboChapter.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboLBA1Chapter_SelectedIndexChanged);
             // 
             // LBA1Othr_lblChapter
@@ -758,7 +779,7 @@
             this.LBA1Othr_chkMoviesValue.Location = new System.Drawing.Point(313, 118);
             this.LBA1Othr_chkMoviesValue.Name = "LBA1Othr_chkMoviesValue";
             this.LBA1Othr_chkMoviesValue.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Othr_chkMoviesValue.TabIndex = 5;
+            this.LBA1Othr_chkMoviesValue.TabIndex = 24;
             this.LBA1Othr_chkMoviesValue.UseVisualStyleBackColor = true;
             this.LBA1Othr_chkMoviesValue.CheckedChanged += new System.EventHandler(this.ChkLBA1MoviesValue_CheckedChanged);
             // 
@@ -768,7 +789,7 @@
             this.LBA1Othr_cboMovies.Location = new System.Drawing.Point(84, 115);
             this.LBA1Othr_cboMovies.Name = "LBA1Othr_cboMovies";
             this.LBA1Othr_cboMovies.Size = new System.Drawing.Size(223, 21);
-            this.LBA1Othr_cboMovies.TabIndex = 4;
+            this.LBA1Othr_cboMovies.TabIndex = 23;
             this.LBA1Othr_cboMovies.SelectedIndexChanged += new System.EventHandler(this.cboLBA1Movies_SelectedIndexChanged);
             // 
             // LBA1Othr_lblMovies
@@ -787,7 +808,7 @@
             this.LBA1Othr_chkQuestValue.Location = new System.Drawing.Point(313, 91);
             this.LBA1Othr_chkQuestValue.Name = "LBA1Othr_chkQuestValue";
             this.LBA1Othr_chkQuestValue.Size = new System.Drawing.Size(15, 14);
-            this.LBA1Othr_chkQuestValue.TabIndex = 2;
+            this.LBA1Othr_chkQuestValue.TabIndex = 22;
             this.LBA1Othr_chkQuestValue.UseVisualStyleBackColor = true;
             this.LBA1Othr_chkQuestValue.CheckedChanged += new System.EventHandler(this.LBA1Othr_ChkQuestValue_CheckedChanged);
             // 
@@ -797,7 +818,7 @@
             this.LBA1Othr_cboQuest.Location = new System.Drawing.Point(84, 88);
             this.LBA1Othr_cboQuest.Name = "LBA1Othr_cboQuest";
             this.LBA1Othr_cboQuest.Size = new System.Drawing.Size(223, 21);
-            this.LBA1Othr_cboQuest.TabIndex = 1;
+            this.LBA1Othr_cboQuest.TabIndex = 21;
             this.LBA1Othr_cboQuest.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_CboQuest_SelectedIndexChanged);
             this.LBA1Othr_cboQuest.TextChanged += new System.EventHandler(this.LBA1Othr_cboQuest_TextChanged);
             // 
@@ -836,7 +857,7 @@
             this.LBA1Holo_btnSet.Location = new System.Drawing.Point(125, 138);
             this.LBA1Holo_btnSet.Name = "LBA1Holo_btnSet";
             this.LBA1Holo_btnSet.Size = new System.Drawing.Size(75, 23);
-            this.LBA1Holo_btnSet.TabIndex = 29;
+            this.LBA1Holo_btnSet.TabIndex = 31;
             this.LBA1Holo_btnSet.Text = "Set";
             this.LBA1Holo_btnSet.UseVisualStyleBackColor = true;
             this.LBA1Holo_btnSet.Click += new System.EventHandler(this.LBA1Holo_btnSet_Click);
@@ -848,7 +869,7 @@
             this.LBA1Holo_chk7.Location = new System.Drawing.Point(187, 115);
             this.LBA1Holo_chk7.Name = "LBA1Holo_chk7";
             this.LBA1Holo_chk7.Size = new System.Drawing.Size(58, 17);
-            this.LBA1Holo_chk7.TabIndex = 28;
+            this.LBA1Holo_chk7.TabIndex = 30;
             this.LBA1Holo_chk7.Text = "Arrow";
             this.LBA1Holo_chk7.UseVisualStyleBackColor = true;
             // 
@@ -859,7 +880,7 @@
             this.LBA1Holo_chk6.Location = new System.Drawing.Point(187, 92);
             this.LBA1Holo_chk6.Name = "LBA1Holo_chk6";
             this.LBA1Holo_chk6.Size = new System.Drawing.Size(88, 17);
-            this.LBA1Holo_chk6.TabIndex = 27;
+            this.LBA1Holo_chk6.TabIndex = 29;
             this.LBA1Holo_chk6.Text = "Been there";
             this.LBA1Holo_chk6.UseVisualStyleBackColor = true;
             // 
@@ -920,7 +941,7 @@
             this.LBA1Holo_chk0.Location = new System.Drawing.Point(72, 46);
             this.LBA1Holo_chk0.Name = "LBA1Holo_chk0";
             this.LBA1Holo_chk0.Size = new System.Drawing.Size(83, 17);
-            this.LBA1Holo_chk0.TabIndex = 21;
+            this.LBA1Holo_chk0.TabIndex = 28;
             this.LBA1Holo_chk0.Text = "Can focus";
             this.LBA1Holo_chk0.UseVisualStyleBackColor = true;
             // 
@@ -930,7 +951,7 @@
             this.LBA1Othr_cboHolomap.Location = new System.Drawing.Point(24, 11);
             this.LBA1Othr_cboHolomap.Name = "LBA1Othr_cboHolomap";
             this.LBA1Othr_cboHolomap.Size = new System.Drawing.Size(288, 21);
-            this.LBA1Othr_cboHolomap.TabIndex = 19;
+            this.LBA1Othr_cboHolomap.TabIndex = 27;
             this.LBA1Othr_cboHolomap.SelectedIndexChanged += new System.EventHandler(this.LBA1Othr_cboHolomap_SelectedIndexChanged);
             // 
             // tpTeleport
@@ -1126,6 +1147,129 @@
             this.LBA1_Flags.Size = new System.Drawing.Size(339, 178);
             this.LBA1_Flags.TabIndex = 0;
             // 
+            // LBA1_tpDebug
+            // 
+            this.LBA1_tpDebug.BackColor = System.Drawing.Color.MistyRose;
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_btnSetBoth);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_txtDebugValue2);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_lblDebugValue2);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_txtDebugOffset2);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_lblDebugOffset2);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_btnlDebugOffset2Set);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_txtDebugValue1);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_lblDebugValue1);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_txtDebugOffset1);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_lblDebugOffset1);
+            this.LBA1_tpDebug.Controls.Add(this.LBA1Debug_btnlDebugOffset1Set);
+            this.LBA1_tpDebug.Location = new System.Drawing.Point(4, 22);
+            this.LBA1_tpDebug.Name = "LBA1_tpDebug";
+            this.LBA1_tpDebug.Padding = new System.Windows.Forms.Padding(3);
+            this.LBA1_tpDebug.Size = new System.Drawing.Size(339, 178);
+            this.LBA1_tpDebug.TabIndex = 8;
+            this.LBA1_tpDebug.Text = "tabPage1";
+            // 
+            // LBA1Debug_btnSetBoth
+            // 
+            this.LBA1Debug_btnSetBoth.Location = new System.Drawing.Point(258, 65);
+            this.LBA1Debug_btnSetBoth.Name = "LBA1Debug_btnSetBoth";
+            this.LBA1Debug_btnSetBoth.Size = new System.Drawing.Size(75, 23);
+            this.LBA1Debug_btnSetBoth.TabIndex = 10;
+            this.LBA1Debug_btnSetBoth.Text = "Both";
+            this.LBA1Debug_btnSetBoth.UseVisualStyleBackColor = true;
+            this.LBA1Debug_btnSetBoth.Click += new System.EventHandler(this.LBA1Debug_btnSetBoth_Click);
+            // 
+            // LBA1Debug_txtDebugValue2
+            // 
+            this.LBA1Debug_txtDebugValue2.Location = new System.Drawing.Point(180, 38);
+            this.LBA1Debug_txtDebugValue2.Name = "LBA1Debug_txtDebugValue2";
+            this.LBA1Debug_txtDebugValue2.Size = new System.Drawing.Size(85, 20);
+            this.LBA1Debug_txtDebugValue2.TabIndex = 9;
+            this.LBA1Debug_txtDebugValue2.Text = "2";
+            // 
+            // LBA1Debug_lblDebugValue2
+            // 
+            this.LBA1Debug_lblDebugValue2.AutoSize = true;
+            this.LBA1Debug_lblDebugValue2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Debug_lblDebugValue2.Location = new System.Drawing.Point(137, 41);
+            this.LBA1Debug_lblDebugValue2.Name = "LBA1Debug_lblDebugValue2";
+            this.LBA1Debug_lblDebugValue2.Size = new System.Drawing.Size(39, 13);
+            this.LBA1Debug_lblDebugValue2.TabIndex = 8;
+            this.LBA1Debug_lblDebugValue2.Text = "Value";
+            // 
+            // LBA1Debug_txtDebugOffset2
+            // 
+            this.LBA1Debug_txtDebugOffset2.Location = new System.Drawing.Point(54, 38);
+            this.LBA1Debug_txtDebugOffset2.Name = "LBA1Debug_txtDebugOffset2";
+            this.LBA1Debug_txtDebugOffset2.Size = new System.Drawing.Size(75, 20);
+            this.LBA1Debug_txtDebugOffset2.TabIndex = 7;
+            this.LBA1Debug_txtDebugOffset2.Text = "1278";
+            // 
+            // LBA1Debug_lblDebugOffset2
+            // 
+            this.LBA1Debug_lblDebugOffset2.AutoSize = true;
+            this.LBA1Debug_lblDebugOffset2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Debug_lblDebugOffset2.Location = new System.Drawing.Point(7, 41);
+            this.LBA1Debug_lblDebugOffset2.Name = "LBA1Debug_lblDebugOffset2";
+            this.LBA1Debug_lblDebugOffset2.Size = new System.Drawing.Size(41, 13);
+            this.LBA1Debug_lblDebugOffset2.TabIndex = 6;
+            this.LBA1Debug_lblDebugOffset2.Text = "Offset";
+            // 
+            // LBA1Debug_btnlDebugOffset2Set
+            // 
+            this.LBA1Debug_btnlDebugOffset2Set.Location = new System.Drawing.Point(281, 36);
+            this.LBA1Debug_btnlDebugOffset2Set.Name = "LBA1Debug_btnlDebugOffset2Set";
+            this.LBA1Debug_btnlDebugOffset2Set.Size = new System.Drawing.Size(52, 23);
+            this.LBA1Debug_btnlDebugOffset2Set.TabIndex = 5;
+            this.LBA1Debug_btnlDebugOffset2Set.Text = "Set";
+            this.LBA1Debug_btnlDebugOffset2Set.UseVisualStyleBackColor = true;
+            this.LBA1Debug_btnlDebugOffset2Set.Click += new System.EventHandler(this.LBA1Debug_btnlDebugOffset2Set_Click);
+            // 
+            // LBA1Debug_txtDebugValue1
+            // 
+            this.LBA1Debug_txtDebugValue1.Location = new System.Drawing.Point(182, 10);
+            this.LBA1Debug_txtDebugValue1.Name = "LBA1Debug_txtDebugValue1";
+            this.LBA1Debug_txtDebugValue1.Size = new System.Drawing.Size(85, 20);
+            this.LBA1Debug_txtDebugValue1.TabIndex = 4;
+            this.LBA1Debug_txtDebugValue1.Text = "0";
+            // 
+            // LBA1Debug_lblDebugValue1
+            // 
+            this.LBA1Debug_lblDebugValue1.AutoSize = true;
+            this.LBA1Debug_lblDebugValue1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Debug_lblDebugValue1.Location = new System.Drawing.Point(137, 13);
+            this.LBA1Debug_lblDebugValue1.Name = "LBA1Debug_lblDebugValue1";
+            this.LBA1Debug_lblDebugValue1.Size = new System.Drawing.Size(39, 13);
+            this.LBA1Debug_lblDebugValue1.TabIndex = 3;
+            this.LBA1Debug_lblDebugValue1.Text = "Value";
+            // 
+            // LBA1Debug_txtDebugOffset1
+            // 
+            this.LBA1Debug_txtDebugOffset1.Location = new System.Drawing.Point(56, 10);
+            this.LBA1Debug_txtDebugOffset1.Name = "LBA1Debug_txtDebugOffset1";
+            this.LBA1Debug_txtDebugOffset1.Size = new System.Drawing.Size(75, 20);
+            this.LBA1Debug_txtDebugOffset1.TabIndex = 2;
+            this.LBA1Debug_txtDebugOffset1.Text = "E1E";
+            // 
+            // LBA1Debug_lblDebugOffset1
+            // 
+            this.LBA1Debug_lblDebugOffset1.AutoSize = true;
+            this.LBA1Debug_lblDebugOffset1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA1Debug_lblDebugOffset1.Location = new System.Drawing.Point(9, 13);
+            this.LBA1Debug_lblDebugOffset1.Name = "LBA1Debug_lblDebugOffset1";
+            this.LBA1Debug_lblDebugOffset1.Size = new System.Drawing.Size(41, 13);
+            this.LBA1Debug_lblDebugOffset1.TabIndex = 1;
+            this.LBA1Debug_lblDebugOffset1.Text = "Offset";
+            // 
+            // LBA1Debug_btnlDebugOffset1Set
+            // 
+            this.LBA1Debug_btnlDebugOffset1Set.Location = new System.Drawing.Point(281, 8);
+            this.LBA1Debug_btnlDebugOffset1Set.Name = "LBA1Debug_btnlDebugOffset1Set";
+            this.LBA1Debug_btnlDebugOffset1Set.Size = new System.Drawing.Size(52, 23);
+            this.LBA1Debug_btnlDebugOffset1Set.TabIndex = 0;
+            this.LBA1Debug_btnlDebugOffset1Set.Text = "Set";
+            this.LBA1Debug_btnlDebugOffset1Set.UseVisualStyleBackColor = true;
+            this.LBA1Debug_btnlDebugOffset1Set.Click += new System.EventHandler(this.LBA1Debug_btnlDebugOffset1Set_Click);
+            // 
             // tbLBA2
             // 
             this.tbLBA2.BackColor = System.Drawing.SystemColors.Control;
@@ -1162,25 +1306,25 @@
             this.tpLBA2Twinsen.Controls.Add(this.cboLBA2Inventory);
             this.tpLBA2Twinsen.Controls.Add(this.lblLBA2Inventory);
             this.tpLBA2Twinsen.Controls.Add(this.txtLBA2Zilitos);
-            this.tpLBA2Twinsen.Controls.Add(this.lblLBA2Zilitos);
             this.tpLBA2Twinsen.Controls.Add(this.txtLBA2Keys);
-            this.tpLBA2Twinsen.Controls.Add(this.lblLBA2Keys);
-            this.tpLBA2Twinsen.Controls.Add(this.lblLBA2MagicLevel);
             this.tpLBA2Twinsen.Controls.Add(this.txtLBA2MagicLevel);
-            this.tpLBA2Twinsen.Controls.Add(this.btnLBA2TwinsenSet);
             this.tpLBA2Twinsen.Controls.Add(this.txtLBA2Kashers);
             this.tpLBA2Twinsen.Controls.Add(this.txtLBA2MagicPoints);
+            this.tpLBA2Twinsen.Controls.Add(this.txtLBA2Health);
+            this.tpLBA2Twinsen.Controls.Add(this.txtLBA2CloverBoxes);
+            this.tpLBA2Twinsen.Controls.Add(this.txtLBA2Clovers);
+            this.tpLBA2Twinsen.Controls.Add(this.lblLBA2Zilitos);
+            this.tpLBA2Twinsen.Controls.Add(this.lblLBA2Keys);
+            this.tpLBA2Twinsen.Controls.Add(this.lblLBA2MagicLevel);
+            this.tpLBA2Twinsen.Controls.Add(this.btnLBA2TwinsenSet);
             this.tpLBA2Twinsen.Controls.Add(this.btnLBA2MinAll);
             this.tpLBA2Twinsen.Controls.Add(this.btnLBA2Scan);
-            this.tpLBA2Twinsen.Controls.Add(this.txtLBA2Health);
             this.tpLBA2Twinsen.Controls.Add(this.lblLBA2Kashers);
             this.tpLBA2Twinsen.Controls.Add(this.lblLBA2MagicPoints);
             this.tpLBA2Twinsen.Controls.Add(this.lblLBA2Health);
             this.tpLBA2Twinsen.Controls.Add(this.lblLBA2CloverBoxes);
-            this.tpLBA2Twinsen.Controls.Add(this.txtLBA2CloverBoxes);
             this.tpLBA2Twinsen.Controls.Add(this.btnLBA2MaxAll);
             this.tpLBA2Twinsen.Controls.Add(this.lblLBA2Clovers);
-            this.tpLBA2Twinsen.Controls.Add(this.txtLBA2Clovers);
             this.tpLBA2Twinsen.Location = new System.Drawing.Point(4, 22);
             this.tpLBA2Twinsen.Name = "tpLBA2Twinsen";
             this.tpLBA2Twinsen.Padding = new System.Windows.Forms.Padding(3);
@@ -1215,6 +1359,56 @@
             this.txtLBA2Zilitos.Size = new System.Drawing.Size(44, 20);
             this.txtLBA2Zilitos.TabIndex = 75;
             // 
+            // txtLBA2Keys
+            // 
+            this.txtLBA2Keys.Location = new System.Drawing.Point(284, 61);
+            this.txtLBA2Keys.Name = "txtLBA2Keys";
+            this.txtLBA2Keys.Size = new System.Drawing.Size(44, 20);
+            this.txtLBA2Keys.TabIndex = 72;
+            // 
+            // txtLBA2MagicLevel
+            // 
+            this.txtLBA2MagicLevel.Location = new System.Drawing.Point(106, 35);
+            this.txtLBA2MagicLevel.Name = "txtLBA2MagicLevel";
+            this.txtLBA2MagicLevel.Size = new System.Drawing.Size(44, 20);
+            this.txtLBA2MagicLevel.TabIndex = 3;
+            // 
+            // txtLBA2Kashers
+            // 
+            this.txtLBA2Kashers.Location = new System.Drawing.Point(106, 88);
+            this.txtLBA2Kashers.Name = "txtLBA2Kashers";
+            this.txtLBA2Kashers.Size = new System.Drawing.Size(44, 20);
+            this.txtLBA2Kashers.TabIndex = 7;
+            // 
+            // txtLBA2MagicPoints
+            // 
+            this.txtLBA2MagicPoints.Location = new System.Drawing.Point(284, 35);
+            this.txtLBA2MagicPoints.Name = "txtLBA2MagicPoints";
+            this.txtLBA2MagicPoints.Size = new System.Drawing.Size(44, 20);
+            this.txtLBA2MagicPoints.TabIndex = 4;
+            // 
+            // txtLBA2Health
+            // 
+            this.txtLBA2Health.Location = new System.Drawing.Point(106, 61);
+            this.txtLBA2Health.Name = "txtLBA2Health";
+            this.txtLBA2Health.Size = new System.Drawing.Size(44, 20);
+            this.txtLBA2Health.TabIndex = 5;
+            // 
+            // txtLBA2CloverBoxes
+            // 
+            this.txtLBA2CloverBoxes.BackColor = System.Drawing.SystemColors.Window;
+            this.txtLBA2CloverBoxes.Location = new System.Drawing.Point(106, 9);
+            this.txtLBA2CloverBoxes.Name = "txtLBA2CloverBoxes";
+            this.txtLBA2CloverBoxes.Size = new System.Drawing.Size(44, 20);
+            this.txtLBA2CloverBoxes.TabIndex = 1;
+            // 
+            // txtLBA2Clovers
+            // 
+            this.txtLBA2Clovers.Location = new System.Drawing.Point(284, 9);
+            this.txtLBA2Clovers.Name = "txtLBA2Clovers";
+            this.txtLBA2Clovers.Size = new System.Drawing.Size(44, 20);
+            this.txtLBA2Clovers.TabIndex = 2;
+            // 
             // lblLBA2Zilitos
             // 
             this.lblLBA2Zilitos.AutoSize = true;
@@ -1224,13 +1418,6 @@
             this.lblLBA2Zilitos.Size = new System.Drawing.Size(41, 13);
             this.lblLBA2Zilitos.TabIndex = 74;
             this.lblLBA2Zilitos.Text = "Zilitos";
-            // 
-            // txtLBA2Keys
-            // 
-            this.txtLBA2Keys.Location = new System.Drawing.Point(284, 61);
-            this.txtLBA2Keys.Name = "txtLBA2Keys";
-            this.txtLBA2Keys.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA2Keys.TabIndex = 72;
             // 
             // lblLBA2Keys
             // 
@@ -1252,13 +1439,6 @@
             this.lblLBA2MagicLevel.TabIndex = 58;
             this.lblLBA2MagicLevel.Text = "Magic Level";
             // 
-            // txtLBA2MagicLevel
-            // 
-            this.txtLBA2MagicLevel.Location = new System.Drawing.Point(106, 35);
-            this.txtLBA2MagicLevel.Name = "txtLBA2MagicLevel";
-            this.txtLBA2MagicLevel.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA2MagicLevel.TabIndex = 3;
-            // 
             // btnLBA2TwinsenSet
             // 
             this.btnLBA2TwinsenSet.Location = new System.Drawing.Point(24, 144);
@@ -1268,20 +1448,6 @@
             this.btnLBA2TwinsenSet.Text = "Set";
             this.btnLBA2TwinsenSet.UseVisualStyleBackColor = true;
             this.btnLBA2TwinsenSet.Click += new System.EventHandler(this.BtnLBA2TwinsenSet_Click);
-            // 
-            // txtLBA2Kashers
-            // 
-            this.txtLBA2Kashers.Location = new System.Drawing.Point(106, 88);
-            this.txtLBA2Kashers.Name = "txtLBA2Kashers";
-            this.txtLBA2Kashers.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA2Kashers.TabIndex = 7;
-            // 
-            // txtLBA2MagicPoints
-            // 
-            this.txtLBA2MagicPoints.Location = new System.Drawing.Point(284, 35);
-            this.txtLBA2MagicPoints.Name = "txtLBA2MagicPoints";
-            this.txtLBA2MagicPoints.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA2MagicPoints.TabIndex = 4;
             // 
             // btnLBA2MinAll
             // 
@@ -1302,13 +1468,6 @@
             this.btnLBA2Scan.Text = "Scan";
             this.btnLBA2Scan.UseVisualStyleBackColor = true;
             this.btnLBA2Scan.Click += new System.EventHandler(this.BtnLBA2Scan_Click);
-            // 
-            // txtLBA2Health
-            // 
-            this.txtLBA2Health.Location = new System.Drawing.Point(106, 61);
-            this.txtLBA2Health.Name = "txtLBA2Health";
-            this.txtLBA2Health.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA2Health.TabIndex = 5;
             // 
             // lblLBA2Kashers
             // 
@@ -1350,14 +1509,6 @@
             this.lblLBA2CloverBoxes.TabIndex = 52;
             this.lblLBA2CloverBoxes.Text = "Clover Boxes";
             // 
-            // txtLBA2CloverBoxes
-            // 
-            this.txtLBA2CloverBoxes.BackColor = System.Drawing.SystemColors.Window;
-            this.txtLBA2CloverBoxes.Location = new System.Drawing.Point(106, 9);
-            this.txtLBA2CloverBoxes.Name = "txtLBA2CloverBoxes";
-            this.txtLBA2CloverBoxes.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA2CloverBoxes.TabIndex = 1;
-            // 
             // btnLBA2MaxAll
             // 
             this.btnLBA2MaxAll.Location = new System.Drawing.Point(162, 144);
@@ -1378,16 +1529,12 @@
             this.lblLBA2Clovers.TabIndex = 53;
             this.lblLBA2Clovers.Text = "Clovers";
             // 
-            // txtLBA2Clovers
-            // 
-            this.txtLBA2Clovers.Location = new System.Drawing.Point(284, 9);
-            this.txtLBA2Clovers.Name = "txtLBA2Clovers";
-            this.txtLBA2Clovers.Size = new System.Drawing.Size(44, 20);
-            this.txtLBA2Clovers.TabIndex = 2;
-            // 
             // tpLBA2Other
             // 
             this.tpLBA2Other.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkMovie);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboMovies);
+            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblMovies);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblHornHealthValue);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_hsbHornHealth);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblHornHealth);
@@ -1399,9 +1546,6 @@
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkBehaviourValue);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboBehaviour);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblBehaviour);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkWeapon);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboWeapon);
-            this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblWeapon);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_chkSkin);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_cboSkins);
             this.tpLBA2Other.Controls.Add(this.LBA2Othr_lblSelectSkin);
@@ -1412,11 +1556,41 @@
             this.tpLBA2Other.TabIndex = 4;
             this.tpLBA2Other.Text = "Other";
             // 
+            // LBA2Othr_chkMovie
+            // 
+            this.LBA2Othr_chkMovie.AutoSize = true;
+            this.LBA2Othr_chkMovie.Location = new System.Drawing.Point(313, 36);
+            this.LBA2Othr_chkMovie.Name = "LBA2Othr_chkMovie";
+            this.LBA2Othr_chkMovie.Size = new System.Drawing.Size(15, 14);
+            this.LBA2Othr_chkMovie.TabIndex = 44;
+            this.LBA2Othr_chkMovie.UseVisualStyleBackColor = true;
+            this.LBA2Othr_chkMovie.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkMovie_CheckedChanged);
+            // 
+            // LBA2Othr_cboMovies
+            // 
+            this.LBA2Othr_cboMovies.FormattingEnabled = true;
+            this.LBA2Othr_cboMovies.Location = new System.Drawing.Point(84, 34);
+            this.LBA2Othr_cboMovies.Name = "LBA2Othr_cboMovies";
+            this.LBA2Othr_cboMovies.Size = new System.Drawing.Size(223, 21);
+            this.LBA2Othr_cboMovies.TabIndex = 43;
+            this.LBA2Othr_cboMovies.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboMovies_SelectedIndexChanged);
+            this.LBA2Othr_cboMovies.TextChanged += new System.EventHandler(this.LBA2Othr_cboMovies_TextChanged);
+            // 
+            // LBA2Othr_lblMovies
+            // 
+            this.LBA2Othr_lblMovies.AutoSize = true;
+            this.LBA2Othr_lblMovies.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblMovies.Location = new System.Drawing.Point(6, 37);
+            this.LBA2Othr_lblMovies.Name = "LBA2Othr_lblMovies";
+            this.LBA2Othr_lblMovies.Size = new System.Drawing.Size(47, 13);
+            this.LBA2Othr_lblMovies.TabIndex = 42;
+            this.LBA2Othr_lblMovies.Text = "Movies";
+            // 
             // LBA2Othr_lblHornHealthValue
             // 
             this.LBA2Othr_lblHornHealthValue.AutoSize = true;
             this.LBA2Othr_lblHornHealthValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblHornHealthValue.Location = new System.Drawing.Point(300, 150);
+            this.LBA2Othr_lblHornHealthValue.Location = new System.Drawing.Point(300, 12);
             this.LBA2Othr_lblHornHealthValue.Name = "LBA2Othr_lblHornHealthValue";
             this.LBA2Othr_lblHornHealthValue.Size = new System.Drawing.Size(28, 13);
             this.LBA2Othr_lblHornHealthValue.TabIndex = 41;
@@ -1425,7 +1599,7 @@
             // 
             // LBA2Othr_hsbHornHealth
             // 
-            this.LBA2Othr_hsbHornHealth.Location = new System.Drawing.Point(84, 147);
+            this.LBA2Othr_hsbHornHealth.Location = new System.Drawing.Point(84, 9);
             this.LBA2Othr_hsbHornHealth.Maximum = 109;
             this.LBA2Othr_hsbHornHealth.Name = "LBA2Othr_hsbHornHealth";
             this.LBA2Othr_hsbHornHealth.Size = new System.Drawing.Size(206, 17);
@@ -1436,7 +1610,7 @@
             // 
             this.LBA2Othr_lblHornHealth.AutoSize = true;
             this.LBA2Othr_lblHornHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblHornHealth.Location = new System.Drawing.Point(6, 147);
+            this.LBA2Othr_lblHornHealth.Location = new System.Drawing.Point(6, 12);
             this.LBA2Othr_lblHornHealth.Name = "LBA2Othr_lblHornHealth";
             this.LBA2Othr_lblHornHealth.Size = new System.Drawing.Size(75, 13);
             this.LBA2Othr_lblHornHealth.TabIndex = 39;
@@ -1445,7 +1619,7 @@
             // LBA2Othr_chkSubquest
             // 
             this.LBA2Othr_chkSubquest.AutoSize = true;
-            this.LBA2Othr_chkSubquest.Location = new System.Drawing.Point(313, 118);
+            this.LBA2Othr_chkSubquest.Location = new System.Drawing.Point(313, 147);
             this.LBA2Othr_chkSubquest.Name = "LBA2Othr_chkSubquest";
             this.LBA2Othr_chkSubquest.Size = new System.Drawing.Size(15, 14);
             this.LBA2Othr_chkSubquest.TabIndex = 38;
@@ -1455,7 +1629,7 @@
             // LBA2Othr_cboSubquest
             // 
             this.LBA2Othr_cboSubquest.FormattingEnabled = true;
-            this.LBA2Othr_cboSubquest.Location = new System.Drawing.Point(84, 115);
+            this.LBA2Othr_cboSubquest.Location = new System.Drawing.Point(84, 142);
             this.LBA2Othr_cboSubquest.Name = "LBA2Othr_cboSubquest";
             this.LBA2Othr_cboSubquest.Size = new System.Drawing.Size(223, 21);
             this.LBA2Othr_cboSubquest.TabIndex = 37;
@@ -1465,7 +1639,7 @@
             // 
             this.LBA2Othr_lblSubquest.AutoSize = true;
             this.LBA2Othr_lblSubquest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblSubquest.Location = new System.Drawing.Point(6, 120);
+            this.LBA2Othr_lblSubquest.Location = new System.Drawing.Point(6, 147);
             this.LBA2Othr_lblSubquest.Name = "LBA2Othr_lblSubquest";
             this.LBA2Othr_lblSubquest.Size = new System.Drawing.Size(66, 13);
             this.LBA2Othr_lblSubquest.TabIndex = 36;
@@ -1475,7 +1649,7 @@
             // 
             this.LBA2Othr_lblQuest.AutoSize = true;
             this.LBA2Othr_lblQuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblQuest.Location = new System.Drawing.Point(6, 91);
+            this.LBA2Othr_lblQuest.Location = new System.Drawing.Point(6, 118);
             this.LBA2Othr_lblQuest.Name = "LBA2Othr_lblQuest";
             this.LBA2Othr_lblQuest.Size = new System.Drawing.Size(40, 13);
             this.LBA2Othr_lblQuest.TabIndex = 35;
@@ -1484,7 +1658,7 @@
             // LBA2Othr_cboQuest
             // 
             this.LBA2Othr_cboQuest.FormattingEnabled = true;
-            this.LBA2Othr_cboQuest.Location = new System.Drawing.Point(84, 88);
+            this.LBA2Othr_cboQuest.Location = new System.Drawing.Point(84, 115);
             this.LBA2Othr_cboQuest.Name = "LBA2Othr_cboQuest";
             this.LBA2Othr_cboQuest.Size = new System.Drawing.Size(223, 21);
             this.LBA2Othr_cboQuest.TabIndex = 34;
@@ -1494,7 +1668,7 @@
             // LBA2Othr_chkBehaviourValue
             // 
             this.LBA2Othr_chkBehaviourValue.AutoSize = true;
-            this.LBA2Othr_chkBehaviourValue.Location = new System.Drawing.Point(313, 64);
+            this.LBA2Othr_chkBehaviourValue.Location = new System.Drawing.Point(313, 91);
             this.LBA2Othr_chkBehaviourValue.Name = "LBA2Othr_chkBehaviourValue";
             this.LBA2Othr_chkBehaviourValue.Size = new System.Drawing.Size(15, 14);
             this.LBA2Othr_chkBehaviourValue.TabIndex = 30;
@@ -1519,7 +1693,7 @@
             "Twinsen with space suit (Athletic mode)",
             "Twinsen with car",
             "Twinsen X-Rayed"});
-            this.LBA2Othr_cboBehaviour.Location = new System.Drawing.Point(84, 61);
+            this.LBA2Othr_cboBehaviour.Location = new System.Drawing.Point(84, 88);
             this.LBA2Othr_cboBehaviour.Name = "LBA2Othr_cboBehaviour";
             this.LBA2Othr_cboBehaviour.Size = new System.Drawing.Size(223, 21);
             this.LBA2Othr_cboBehaviour.TabIndex = 29;
@@ -1529,45 +1703,16 @@
             // 
             this.LBA2Othr_lblBehaviour.AutoSize = true;
             this.LBA2Othr_lblBehaviour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblBehaviour.Location = new System.Drawing.Point(6, 64);
+            this.LBA2Othr_lblBehaviour.Location = new System.Drawing.Point(6, 91);
             this.LBA2Othr_lblBehaviour.Name = "LBA2Othr_lblBehaviour";
             this.LBA2Othr_lblBehaviour.Size = new System.Drawing.Size(64, 13);
             this.LBA2Othr_lblBehaviour.TabIndex = 28;
             this.LBA2Othr_lblBehaviour.Text = "Behaviour";
             // 
-            // LBA2Othr_chkWeapon
-            // 
-            this.LBA2Othr_chkWeapon.AutoSize = true;
-            this.LBA2Othr_chkWeapon.Location = new System.Drawing.Point(313, 37);
-            this.LBA2Othr_chkWeapon.Name = "LBA2Othr_chkWeapon";
-            this.LBA2Othr_chkWeapon.Size = new System.Drawing.Size(15, 14);
-            this.LBA2Othr_chkWeapon.TabIndex = 24;
-            this.LBA2Othr_chkWeapon.UseVisualStyleBackColor = true;
-            this.LBA2Othr_chkWeapon.CheckedChanged += new System.EventHandler(this.LBA2Othr_chkWeapon_CheckedChanged);
-            // 
-            // LBA2Othr_cboWeapon
-            // 
-            this.LBA2Othr_cboWeapon.FormattingEnabled = true;
-            this.LBA2Othr_cboWeapon.Location = new System.Drawing.Point(84, 34);
-            this.LBA2Othr_cboWeapon.Name = "LBA2Othr_cboWeapon";
-            this.LBA2Othr_cboWeapon.Size = new System.Drawing.Size(223, 21);
-            this.LBA2Othr_cboWeapon.TabIndex = 23;
-            this.LBA2Othr_cboWeapon.SelectedIndexChanged += new System.EventHandler(this.LBA2Othr_cboWeapon_SelectedIndexChanged);
-            // 
-            // LBA2Othr_lblWeapon
-            // 
-            this.LBA2Othr_lblWeapon.AutoSize = true;
-            this.LBA2Othr_lblWeapon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblWeapon.Location = new System.Drawing.Point(6, 36);
-            this.LBA2Othr_lblWeapon.Name = "LBA2Othr_lblWeapon";
-            this.LBA2Othr_lblWeapon.Size = new System.Drawing.Size(54, 13);
-            this.LBA2Othr_lblWeapon.TabIndex = 22;
-            this.LBA2Othr_lblWeapon.Text = "Weapon";
-            // 
             // LBA2Othr_chkSkin
             // 
             this.LBA2Othr_chkSkin.AutoSize = true;
-            this.LBA2Othr_chkSkin.Location = new System.Drawing.Point(313, 10);
+            this.LBA2Othr_chkSkin.Location = new System.Drawing.Point(313, 64);
             this.LBA2Othr_chkSkin.Name = "LBA2Othr_chkSkin";
             this.LBA2Othr_chkSkin.Size = new System.Drawing.Size(15, 14);
             this.LBA2Othr_chkSkin.TabIndex = 10;
@@ -1577,7 +1722,7 @@
             // LBA2Othr_cboSkins
             // 
             this.LBA2Othr_cboSkins.FormattingEnabled = true;
-            this.LBA2Othr_cboSkins.Location = new System.Drawing.Point(84, 7);
+            this.LBA2Othr_cboSkins.Location = new System.Drawing.Point(84, 61);
             this.LBA2Othr_cboSkins.Name = "LBA2Othr_cboSkins";
             this.LBA2Othr_cboSkins.Size = new System.Drawing.Size(223, 21);
             this.LBA2Othr_cboSkins.TabIndex = 9;
@@ -1588,7 +1733,7 @@
             // 
             this.LBA2Othr_lblSelectSkin.AutoSize = true;
             this.LBA2Othr_lblSelectSkin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Othr_lblSelectSkin.Location = new System.Drawing.Point(6, 10);
+            this.LBA2Othr_lblSelectSkin.Location = new System.Drawing.Point(6, 64);
             this.LBA2Othr_lblSelectSkin.Name = "LBA2Othr_lblSelectSkin";
             this.LBA2Othr_lblSelectSkin.Size = new System.Drawing.Size(32, 13);
             this.LBA2Othr_lblSelectSkin.TabIndex = 8;
@@ -1597,6 +1742,9 @@
             // tpLBA2Misc
             // 
             this.tpLBA2Misc.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Misc.Controls.Add(this.LBA2Othr_chkWeapon);
+            this.tpLBA2Misc.Controls.Add(this.LBA2Othr_cboWeapon);
+            this.tpLBA2Misc.Controls.Add(this.LBA2Othr_lblWeapon);
             this.tpLBA2Misc.Controls.Add(this.LBA2Misc_gbRicksBar);
             this.tpLBA2Misc.Controls.Add(this.LBA2Misc_gbBlowtron);
             this.tpLBA2Misc.Controls.Add(this.LBA2Othr_chkMisc);
@@ -1608,6 +1756,33 @@
             this.tpLBA2Misc.TabIndex = 10;
             this.tpLBA2Misc.Text = "Misc";
             // 
+            // LBA2Othr_chkWeapon
+            // 
+            this.LBA2Othr_chkWeapon.AutoSize = true;
+            this.LBA2Othr_chkWeapon.Location = new System.Drawing.Point(316, 12);
+            this.LBA2Othr_chkWeapon.Name = "LBA2Othr_chkWeapon";
+            this.LBA2Othr_chkWeapon.Size = new System.Drawing.Size(15, 14);
+            this.LBA2Othr_chkWeapon.TabIndex = 43;
+            this.LBA2Othr_chkWeapon.UseVisualStyleBackColor = true;
+            // 
+            // LBA2Othr_cboWeapon
+            // 
+            this.LBA2Othr_cboWeapon.FormattingEnabled = true;
+            this.LBA2Othr_cboWeapon.Location = new System.Drawing.Point(73, 9);
+            this.LBA2Othr_cboWeapon.Name = "LBA2Othr_cboWeapon";
+            this.LBA2Othr_cboWeapon.Size = new System.Drawing.Size(237, 21);
+            this.LBA2Othr_cboWeapon.TabIndex = 42;
+            // 
+            // LBA2Othr_lblWeapon
+            // 
+            this.LBA2Othr_lblWeapon.AutoSize = true;
+            this.LBA2Othr_lblWeapon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBA2Othr_lblWeapon.Location = new System.Drawing.Point(6, 11);
+            this.LBA2Othr_lblWeapon.Name = "LBA2Othr_lblWeapon";
+            this.LBA2Othr_lblWeapon.Size = new System.Drawing.Size(54, 13);
+            this.LBA2Othr_lblWeapon.TabIndex = 41;
+            this.LBA2Othr_lblWeapon.Text = "Weapon";
+            // 
             // LBA2Misc_gbRicksBar
             // 
             this.LBA2Misc_gbRicksBar.Controls.Add(this.LBA2Misc_btnRickKeyShow);
@@ -1615,7 +1790,7 @@
             this.LBA2Misc_gbRicksBar.Controls.Add(this.LBA2Misc_rbRickKeyMiddle);
             this.LBA2Misc_gbRicksBar.Controls.Add(this.LBA2Misc_rbRickKeyDoor);
             this.LBA2Misc_gbRicksBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Misc_gbRicksBar.Location = new System.Drawing.Point(4, 72);
+            this.LBA2Misc_gbRicksBar.Location = new System.Drawing.Point(4, 95);
             this.LBA2Misc_gbRicksBar.Name = "LBA2Misc_gbRicksBar";
             this.LBA2Misc_gbRicksBar.Size = new System.Drawing.Size(328, 35);
             this.LBA2Misc_gbRicksBar.TabIndex = 40;
@@ -1676,7 +1851,7 @@
             this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron1);
             this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_rbBlowtron0);
             this.LBA2Misc_gbBlowtron.Controls.Add(this.LBA2Misc_lblBlowtron);
-            this.LBA2Misc_gbBlowtron.Location = new System.Drawing.Point(3, 35);
+            this.LBA2Misc_gbBlowtron.Location = new System.Drawing.Point(4, 59);
             this.LBA2Misc_gbBlowtron.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.LBA2Misc_gbBlowtron.Name = "LBA2Misc_gbBlowtron";
             this.LBA2Misc_gbBlowtron.Size = new System.Drawing.Size(328, 30);
@@ -1736,7 +1911,7 @@
             // LBA2Othr_chkMisc
             // 
             this.LBA2Othr_chkMisc.AutoSize = true;
-            this.LBA2Othr_chkMisc.Location = new System.Drawing.Point(316, 14);
+            this.LBA2Othr_chkMisc.Location = new System.Drawing.Point(316, 38);
             this.LBA2Othr_chkMisc.Name = "LBA2Othr_chkMisc";
             this.LBA2Othr_chkMisc.Size = new System.Drawing.Size(15, 14);
             this.LBA2Othr_chkMisc.TabIndex = 36;
@@ -1751,7 +1926,7 @@
             this.LBA2Othr_cboMisc.Items.AddRange(new object[] {
             "Rain off",
             "Free Ferry"});
-            this.LBA2Othr_cboMisc.Location = new System.Drawing.Point(73, 11);
+            this.LBA2Othr_cboMisc.Location = new System.Drawing.Point(73, 35);
             this.LBA2Othr_cboMisc.Name = "LBA2Othr_cboMisc";
             this.LBA2Othr_cboMisc.Size = new System.Drawing.Size(237, 21);
             this.LBA2Othr_cboMisc.TabIndex = 35;
@@ -1760,7 +1935,7 @@
             // 
             this.LBA2Misc_lblMisc.AutoSize = true;
             this.LBA2Misc_lblMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBA2Misc_lblMisc.Location = new System.Drawing.Point(6, 15);
+            this.LBA2Misc_lblMisc.Location = new System.Drawing.Point(6, 39);
             this.LBA2Misc_lblMisc.Name = "LBA2Misc_lblMisc";
             this.LBA2Misc_lblMisc.Size = new System.Drawing.Size(37, 13);
             this.LBA2Misc_lblMisc.TabIndex = 34;
@@ -2375,6 +2550,7 @@
             // tpLBA2Slate
             // 
             this.tpLBA2Slate.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Slate.Controls.Add(this.LBA2Slate_btnScan);
             this.tpLBA2Slate.Controls.Add(this.LBA2Slate_btnSet);
             this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map4);
             this.tpLBA2Slate.Controls.Add(this.LBA2Slate_map3);
@@ -2392,9 +2568,19 @@
             this.tpLBA2Slate.TabIndex = 9;
             this.tpLBA2Slate.Text = "Slate";
             // 
+            // LBA2Slate_btnScan
+            // 
+            this.LBA2Slate_btnScan.Location = new System.Drawing.Point(99, 150);
+            this.LBA2Slate_btnScan.Name = "LBA2Slate_btnScan";
+            this.LBA2Slate_btnScan.Size = new System.Drawing.Size(75, 23);
+            this.LBA2Slate_btnScan.TabIndex = 12;
+            this.LBA2Slate_btnScan.Text = "Scan";
+            this.LBA2Slate_btnScan.UseVisualStyleBackColor = true;
+            this.LBA2Slate_btnScan.Click += new System.EventHandler(this.LBA2Slate_btnScan_Click);
+            // 
             // LBA2Slate_btnSet
             // 
-            this.LBA2Slate_btnSet.Location = new System.Drawing.Point(127, 150);
+            this.LBA2Slate_btnSet.Location = new System.Drawing.Point(180, 150);
             this.LBA2Slate_btnSet.Name = "LBA2Slate_btnSet";
             this.LBA2Slate_btnSet.Size = new System.Drawing.Size(75, 23);
             this.LBA2Slate_btnSet.TabIndex = 11;
@@ -2593,6 +2779,8 @@
             // tpLBA2Debug
             // 
             this.tpLBA2Debug.BackColor = System.Drawing.Color.MistyRose;
+            this.tpLBA2Debug.Controls.Add(this.textBox1);
+            this.tpLBA2Debug.Controls.Add(this.button2);
             this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarDisabled);
             this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarTunic);
             this.tpLBA2Debug.Controls.Add(this.btnLBA2InstantCarWizard);
@@ -2605,6 +2793,24 @@
             this.tpLBA2Debug.Size = new System.Drawing.Size(334, 178);
             this.tpLBA2Debug.TabIndex = 7;
             this.tpLBA2Debug.Text = "Debug";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(82, 66);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 35;
+            this.textBox1.Text = "15";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(223, 65);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnLBA2InstantCarDisabled
             // 
@@ -2703,7 +2909,8 @@
             this.LBA1GodModeToolStripMenuItem,
             this.LBA1MaxMagicToolStripMenuItem,
             this.tsmiLBA1BehaviourSwitchWith14,
-            this.LBA1Mnu_DisableWallDamage});
+            this.LBA1Mnu_DisableWallDamage,
+            this.manuelAggressionToolStripMenuItem});
             this.lBA1ToolStripMenuItem.Name = "lBA1ToolStripMenuItem";
             this.lBA1ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.lBA1ToolStripMenuItem.Text = "LBA1";
@@ -2751,6 +2958,13 @@
             this.LBA1Mnu_DisableWallDamage.Text = "Disable Wall Damage";
             this.LBA1Mnu_DisableWallDamage.Visible = false;
             this.LBA1Mnu_DisableWallDamage.Click += new System.EventHandler(this.LBA1mnuDisableWallDamage_Click);
+            // 
+            // manuelAggressionToolStripMenuItem
+            // 
+            this.manuelAggressionToolStripMenuItem.Name = "manuelAggressionToolStripMenuItem";
+            this.manuelAggressionToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.manuelAggressionToolStripMenuItem.Text = "Manuel Aggression";
+            this.manuelAggressionToolStripMenuItem.Click += new System.EventHandler(this.manuelAggressionToolStripMenuItem_Click);
             // 
             // lBA2ToolStripMenuItem
             // 
@@ -2828,6 +3042,7 @@
             this.Controls.Add(this.tcLBAVersion);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "frmTrainer";
@@ -2848,6 +3063,8 @@
             this.tpSaveGame.ResumeLayout(false);
             this.tpSaveGame.PerformLayout();
             this.tpLBA1Flags.ResumeLayout(false);
+            this.LBA1_tpDebug.ResumeLayout(false);
+            this.LBA1_tpDebug.PerformLayout();
             this.tbLBA2.ResumeLayout(false);
             this.tcLBA2Inner.ResumeLayout(false);
             this.tpLBA2Twinsen.ResumeLayout(false);
@@ -2912,30 +3129,6 @@
         private System.Windows.Forms.TextBox LBA1Twin_txtKeys;
         private System.Windows.Forms.Label LBA1Twin_lblKeys;
         private System.Windows.Forms.Button LBA1Twin_btnSet;
-        private System.Windows.Forms.TabControl tcLBA2Inner;
-        private System.Windows.Forms.TabPage tpLBA2Twinsen;
-        private System.Windows.Forms.Button btnLBA2TwinsenSet;
-        private System.Windows.Forms.TextBox txtLBA2Kashers;
-        private System.Windows.Forms.TextBox txtLBA2MagicPoints;
-        private System.Windows.Forms.TextBox txtLBA2MagicLevel;
-        private System.Windows.Forms.Button btnLBA2MinAll;
-        private System.Windows.Forms.Button btnLBA2Scan;
-        private System.Windows.Forms.TextBox txtLBA2Health;
-        private System.Windows.Forms.Label lblLBA2MagicLevel;
-        private System.Windows.Forms.Label lblLBA2Kashers;
-        private System.Windows.Forms.Label lblLBA2MagicPoints;
-        private System.Windows.Forms.Label lblLBA2Health;
-        private System.Windows.Forms.Label lblLBA2CloverBoxes;
-        private System.Windows.Forms.TextBox txtLBA2CloverBoxes;
-        private System.Windows.Forms.Button btnLBA2MaxAll;
-        private System.Windows.Forms.Label lblLBA2Clovers;
-        private System.Windows.Forms.TextBox txtLBA2Clovers;
-        private System.Windows.Forms.TextBox txtLBA2Keys;
-        private System.Windows.Forms.Label lblLBA2Keys;
-        private System.Windows.Forms.TextBox txtLBA2Zilitos;
-        private System.Windows.Forms.Label lblLBA2Zilitos;
-        private System.Windows.Forms.ComboBox cboLBA2Inventory;
-        private System.Windows.Forms.Label lblLBA2Inventory;
         private System.Windows.Forms.TabPage tpLBA1Other;
         private System.Windows.Forms.ComboBox LBA1Othr_cboQuest;
         private System.Windows.Forms.Label LBA1Othr_lblQuest;
@@ -2974,45 +3167,6 @@
         private System.Windows.Forms.ToolStripMenuItem lBA2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LBA2GodModeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem infiniteMagicToolStripMenuItem;
-        private System.Windows.Forms.TabPage tpLBA2Teleport;
-        private System.Windows.Forms.TabPage tpLBA2ShittyShot;
-        private System.Windows.Forms.Label LBA2SS_lblInstruct;
-        private System.Windows.Forms.Button LBA2SS_btnSquare;
-        private System.Windows.Forms.Button LBA2SS_btnTriangle;
-        private System.Windows.Forms.Button LBA2SS_btnCircle;
-        private System.Windows.Forms.Button LBA2SS_btnOnOff;
-        private System.Windows.Forms.Label LBA2SS_lblSquare;
-        private System.Windows.Forms.Label LBA2SS_lblTriangle;
-        private System.Windows.Forms.Label LBA2SS_lblCircle;
-        private System.Windows.Forms.TabPage tpLBA2Flying;
-        private LBAFlying.Flying FlyingLBA2;
-        private System.Windows.Forms.TabPage tpLBA2Other;
-        private System.Windows.Forms.TabPage tpHyperCar;
-        private System.Windows.Forms.Panel LBA2HyperCar_panel;
-        private System.Windows.Forms.Label lblHyperCarGear5;
-        private System.Windows.Forms.TextBox txtHyperCarGear5;
-        private System.Windows.Forms.Label lblHyperCarGear4;
-        private System.Windows.Forms.TextBox txtHyperCarGear4;
-        private System.Windows.Forms.RadioButton rbLBA2HyperCar5;
-        private System.Windows.Forms.RadioButton rbLBA2HyperCar4;
-        private System.Windows.Forms.RadioButton rbLBA2HyperCar3;
-        private System.Windows.Forms.RadioButton rbLBA2HyperCar2;
-        private System.Windows.Forms.RadioButton rbLBA2HyperCar1;
-        private System.Windows.Forms.Label lblHyperCarGear3;
-        private System.Windows.Forms.TextBox txtHyperCarGear3;
-        private System.Windows.Forms.Label lblHyperCarGear2;
-        private System.Windows.Forms.TextBox txtHyperCarGear2;
-        private System.Windows.Forms.TextBox txtHyperCarGear1;
-        private System.Windows.Forms.Label lblHyperCarGear1;
-        private System.Windows.Forms.Button btnHyperCarOnOff;
-        private System.Windows.Forms.Label lblHyperCarActualSpeed;
-        private System.Windows.Forms.Label lblHyperCarSpeed;
-        private System.Windows.Forms.TextBox txtLBA2HyperCarTurbo;
-        private System.Windows.Forms.Label lblLBA2HyperCarTurbo;
-        private System.Windows.Forms.Label lblHyperCarButtons;
-        private System.Windows.Forms.TextBox txtHyperCarGearReverse;
-        private System.Windows.Forms.Label lblHyperCarGearReverse;
-        private System.Windows.Forms.Button bPitLimit;
         private System.Windows.Forms.ComboBox LBA1Othr_cboLBA1Skin;
         private System.Windows.Forms.Label lblLBASkin;
         private System.Windows.Forms.CheckBox LBA1Othr_chkChapterValue;
@@ -3035,54 +3189,136 @@
         private System.Windows.Forms.CheckBox LBA1Holo_chk0;
         private System.Windows.Forms.ComboBox LBA1Othr_cboHolomap;
         private System.Windows.Forms.Button LBA1Holo_btnSet;
-        private System.Windows.Forms.CheckBox LBA2Othr_chkSkin;
-        private System.Windows.Forms.ComboBox LBA2Othr_cboSkins;
-        private System.Windows.Forms.Label LBA2Othr_lblSelectSkin;
-        private System.Windows.Forms.CheckBox LBA2Othr_chkWeapon;
-        private System.Windows.Forms.ComboBox LBA2Othr_cboWeapon;
-        private System.Windows.Forms.Label LBA2Othr_lblWeapon;
-        private System.Windows.Forms.CheckBox LBA2Othr_chkBehaviourValue;
-        private System.Windows.Forms.ComboBox LBA2Othr_cboBehaviour;
-        private System.Windows.Forms.Label LBA2Othr_lblBehaviour;
-        private System.Windows.Forms.TabPage tpLBA2Debug;
-        private System.Windows.Forms.Button LBA2Othr_btnGetAreacode;
-        private System.Windows.Forms.Label LBA2Othr_lblAreacodeTxt;
-        private System.Windows.Forms.Label LBA2Othr_lblAreacode;
-        private System.Windows.Forms.Button btnLBA2InstantCarDisabled;
-        private System.Windows.Forms.Button btnLBA2InstantCarTunic;
-        private System.Windows.Forms.Button btnLBA2InstantCarWizard;
+        private LBAFlying.Flying FlyingLBA1;
+        private LBATeleport.ucTeleport ucTeleportLBA1;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLBA1BehaviourSwitchWith14;
+        private System.Windows.Forms.ToolStripMenuItem LBA1Mnu_DisableWallDamage;
+        private System.Windows.Forms.TabPage tpLBA1Flags;
+        private LBAFlags.Flags LBA1_Flags;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuLangENG;
+        private System.Windows.Forms.ToolStripMenuItem fRAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eSPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dEUToolStripMenuItem;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.TabControl tcLBA2Inner;
+        private System.Windows.Forms.TabPage tpLBA2Twinsen;
+        private System.Windows.Forms.ComboBox cboLBA2Inventory;
+        private System.Windows.Forms.Label lblLBA2Inventory;
+        private System.Windows.Forms.TextBox txtLBA2Zilitos;
+        private System.Windows.Forms.TextBox txtLBA2Keys;
+        private System.Windows.Forms.TextBox txtLBA2MagicLevel;
+        private System.Windows.Forms.TextBox txtLBA2Kashers;
+        private System.Windows.Forms.TextBox txtLBA2MagicPoints;
+        private System.Windows.Forms.TextBox txtLBA2Health;
+        private System.Windows.Forms.TextBox txtLBA2CloverBoxes;
+        private System.Windows.Forms.TextBox txtLBA2Clovers;
+        private System.Windows.Forms.Label lblLBA2Zilitos;
+        private System.Windows.Forms.Label lblLBA2Keys;
+        private System.Windows.Forms.Label lblLBA2MagicLevel;
+        private System.Windows.Forms.Button btnLBA2TwinsenSet;
+        private System.Windows.Forms.Button btnLBA2MinAll;
+        private System.Windows.Forms.Button btnLBA2Scan;
+        private System.Windows.Forms.Label lblLBA2Kashers;
+        private System.Windows.Forms.Label lblLBA2MagicPoints;
+        private System.Windows.Forms.Label lblLBA2Health;
+        private System.Windows.Forms.Label lblLBA2CloverBoxes;
+        private System.Windows.Forms.Button btnLBA2MaxAll;
+        private System.Windows.Forms.Label lblLBA2Clovers;
+        private System.Windows.Forms.TabPage tpLBA2Other;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkMovie;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboMovies;
+        private System.Windows.Forms.Label LBA2Othr_lblMovies;
+        private System.Windows.Forms.Label LBA2Othr_lblHornHealthValue;
+        private System.Windows.Forms.HScrollBar LBA2Othr_hsbHornHealth;
+        private System.Windows.Forms.Label LBA2Othr_lblHornHealth;
         private System.Windows.Forms.CheckBox LBA2Othr_chkSubquest;
         private System.Windows.Forms.ComboBox LBA2Othr_cboSubquest;
         private System.Windows.Forms.Label LBA2Othr_lblSubquest;
         private System.Windows.Forms.Label LBA2Othr_lblQuest;
         private System.Windows.Forms.ComboBox LBA2Othr_cboQuest;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkBehaviourValue;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboBehaviour;
+        private System.Windows.Forms.Label LBA2Othr_lblBehaviour;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkSkin;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboSkins;
+        private System.Windows.Forms.Label LBA2Othr_lblSelectSkin;
+        private System.Windows.Forms.TabPage tpLBA2Misc;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkWeapon;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboWeapon;
+        private System.Windows.Forms.Label LBA2Othr_lblWeapon;
+        private System.Windows.Forms.GroupBox LBA2Misc_gbRicksBar;
+        private System.Windows.Forms.Button LBA2Misc_btnRickKeyShow;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyOffice;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyMiddle;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyDoor;
+        private System.Windows.Forms.GroupBox LBA2Misc_gbBlowtron;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron2;
+        private System.Windows.Forms.Button LBA2Misc_btnBlowtron;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron1;
+        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron0;
+        private System.Windows.Forms.Label LBA2Misc_lblBlowtron;
+        private System.Windows.Forms.CheckBox LBA2Othr_chkMisc;
+        private System.Windows.Forms.ComboBox LBA2Othr_cboMisc;
+        private System.Windows.Forms.Label LBA2Misc_lblMisc;
+        private System.Windows.Forms.TabPage tpHyperCar;
+        private System.Windows.Forms.Panel LBA2HyperCar_panel;
+        private System.Windows.Forms.Button bPitLimit;
+        private System.Windows.Forms.TextBox txtHyperCarGearReverse;
+        private System.Windows.Forms.Label lblHyperCarGearReverse;
+        private System.Windows.Forms.Label lblHyperCarButtons;
+        private System.Windows.Forms.TextBox txtLBA2HyperCarTurbo;
+        private System.Windows.Forms.Label lblLBA2HyperCarTurbo;
+        private System.Windows.Forms.Label lblHyperCarActualSpeed;
+        private System.Windows.Forms.Label lblHyperCarSpeed;
+        private System.Windows.Forms.Button btnHyperCarOnOff;
+        private System.Windows.Forms.Label lblHyperCarGear5;
+        private System.Windows.Forms.TextBox txtHyperCarGear5;
+        private System.Windows.Forms.Label lblHyperCarGear4;
+        private System.Windows.Forms.TextBox txtHyperCarGear4;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar5;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar4;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar3;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar2;
+        private System.Windows.Forms.RadioButton rbLBA2HyperCar1;
+        private System.Windows.Forms.Label lblHyperCarGear3;
+        private System.Windows.Forms.TextBox txtHyperCarGear3;
+        private System.Windows.Forms.Label lblHyperCarGear2;
+        private System.Windows.Forms.TextBox txtHyperCarGear2;
+        private System.Windows.Forms.TextBox txtHyperCarGear1;
+        private System.Windows.Forms.Label lblHyperCarGear1;
+        private System.Windows.Forms.TabPage tpLBA2Flying;
+        private LBAFlying.Flying FlyingLBA2;
+        private System.Windows.Forms.TabPage tpLBA2Flags;
+        private LBAFlags.Flags LBA2_Flags;
+        private System.Windows.Forms.TabPage tpLBA2Teleport;
+        private LBATeleport.ucTeleport ucTeleportLBA2;
         private System.Windows.Forms.TabPage tpLBA2WizardGPS;
-        private System.Windows.Forms.PictureBox pbWizardMap;
-        private System.Windows.Forms.RadioButton rb0;
-        private System.Windows.Forms.RadioButton rb5;
-        private System.Windows.Forms.RadioButton rb10;
-        private System.Windows.Forms.RadioButton rb15;
-        private System.Windows.Forms.RadioButton rb20;
-        private System.Windows.Forms.RadioButton rb25;
-        private System.Windows.Forms.RadioButton rb30;
+        private System.Windows.Forms.Button LBA2WizardGPS_Start;
+        private System.Windows.Forms.TextBox txtWizardLocation;
+        private System.Windows.Forms.RadioButton rb95;
+        private System.Windows.Forms.RadioButton rb90;
         private System.Windows.Forms.RadioButton rb35;
         private System.Windows.Forms.RadioButton rb40;
         private System.Windows.Forms.RadioButton rb45;
         private System.Windows.Forms.RadioButton rb50;
         private System.Windows.Forms.RadioButton rb55;
+        private System.Windows.Forms.RadioButton rb30;
+        private System.Windows.Forms.RadioButton rb85;
         private System.Windows.Forms.RadioButton rb60;
-        private System.Windows.Forms.RadioButton rb65;
+        private System.Windows.Forms.RadioButton rb20;
+        private System.Windows.Forms.RadioButton rb25;
+        private System.Windows.Forms.RadioButton rb0;
+        private System.Windows.Forms.RadioButton rb5;
+        private System.Windows.Forms.RadioButton rb10;
+        private System.Windows.Forms.RadioButton rb15;
         private System.Windows.Forms.RadioButton rb70;
         private System.Windows.Forms.RadioButton rb75;
         private System.Windows.Forms.RadioButton rb80;
-        private System.Windows.Forms.RadioButton rb85;
-        private System.Windows.Forms.RadioButton rb90;
-        private System.Windows.Forms.RadioButton rb95;
-        private System.Windows.Forms.Button LBA2WizardGPS_Start;
-        private System.Windows.Forms.TextBox txtWizardLocation;
-        private LBATeleport.ucTeleport ucTeleportLBA2;
-        private LBAFlying.Flying FlyingLBA1;
+        private System.Windows.Forms.RadioButton rb65;
+        private System.Windows.Forms.PictureBox pbWizardMap;
         private System.Windows.Forms.TabPage tpLBA2Slate;
+        private System.Windows.Forms.Button LBA2Slate_btnSet;
         private System.Windows.Forms.Label LBA2Slate_map4;
         private System.Windows.Forms.Label LBA2Slate_map3;
         private System.Windows.Forms.Label LBA2Slate_map2;
@@ -3093,38 +3329,38 @@
         private System.Windows.Forms.ComboBox LBA2Slate_cb2;
         private System.Windows.Forms.ComboBox LBA2Slate_cb1;
         private System.Windows.Forms.ComboBox LBA2Slate_cb0;
-        private System.Windows.Forms.Button LBA2Slate_btnSet;
-        private System.Windows.Forms.TabPage tpLBA2Misc;
-        private System.Windows.Forms.Label LBA2Othr_lblHornHealth;
-        private System.Windows.Forms.CheckBox LBA2Othr_chkMisc;
-        private System.Windows.Forms.ComboBox LBA2Othr_cboMisc;
-        private System.Windows.Forms.Label LBA2Misc_lblMisc;
-        private System.Windows.Forms.HScrollBar LBA2Othr_hsbHornHealth;
-        private System.Windows.Forms.Label LBA2Othr_lblHornHealthValue;
-        private LBATeleport.ucTeleport ucTeleportLBA1;
-        private System.Windows.Forms.GroupBox LBA2Misc_gbBlowtron;
-        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron2;
-        private System.Windows.Forms.Button LBA2Misc_btnBlowtron;
-        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron1;
-        private System.Windows.Forms.RadioButton LBA2Misc_rbBlowtron0;
-        private System.Windows.Forms.Label LBA2Misc_lblBlowtron;
-        private System.Windows.Forms.ToolStripMenuItem tsmiLBA1BehaviourSwitchWith14;
-        private System.Windows.Forms.ToolStripMenuItem LBA1Mnu_DisableWallDamage;
-        private System.Windows.Forms.TabPage tpLBA1Flags;
-        private System.Windows.Forms.TabPage tpLBA2Flags;
-        private LBAFlags.Flags LBA2_Flags;
-        private LBAFlags.Flags LBA1_Flags;
-        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnuLangENG;
-        private System.Windows.Forms.ToolStripMenuItem fRAToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eSPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dEUToolStripMenuItem;
-        private System.Windows.Forms.GroupBox LBA2Misc_gbRicksBar;
-        private System.Windows.Forms.Button LBA2Misc_btnRickKeyShow;
-        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyOffice;
-        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyMiddle;
-        private System.Windows.Forms.RadioButton LBA2Misc_rbRickKeyDoor;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.TabPage tpLBA2ShittyShot;
+        private System.Windows.Forms.Label LBA2SS_lblInstruct;
+        private System.Windows.Forms.Button LBA2SS_btnSquare;
+        private System.Windows.Forms.Button LBA2SS_btnTriangle;
+        private System.Windows.Forms.Button LBA2SS_btnCircle;
+        private System.Windows.Forms.Button LBA2SS_btnOnOff;
+        private System.Windows.Forms.Label LBA2SS_lblSquare;
+        private System.Windows.Forms.Label LBA2SS_lblTriangle;
+        private System.Windows.Forms.Label LBA2SS_lblCircle;
+        private System.Windows.Forms.TabPage tpLBA2Debug;
+        private System.Windows.Forms.Button btnLBA2InstantCarDisabled;
+        private System.Windows.Forms.Button btnLBA2InstantCarTunic;
+        private System.Windows.Forms.Button btnLBA2InstantCarWizard;
+        private System.Windows.Forms.Button LBA2Othr_btnGetAreacode;
+        private System.Windows.Forms.Label LBA2Othr_lblAreacodeTxt;
+        private System.Windows.Forms.Label LBA2Othr_lblAreacode;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button LBA2Slate_btnScan;
+        private System.Windows.Forms.ToolStripMenuItem manuelAggressionToolStripMenuItem;
+        private System.Windows.Forms.TabPage LBA1_tpDebug;
+        private System.Windows.Forms.TextBox LBA1Debug_txtDebugValue2;
+        private System.Windows.Forms.Label LBA1Debug_lblDebugValue2;
+        private System.Windows.Forms.TextBox LBA1Debug_txtDebugOffset2;
+        private System.Windows.Forms.Label LBA1Debug_lblDebugOffset2;
+        private System.Windows.Forms.Button LBA1Debug_btnlDebugOffset2Set;
+        private System.Windows.Forms.TextBox LBA1Debug_txtDebugValue1;
+        private System.Windows.Forms.Label LBA1Debug_lblDebugValue1;
+        private System.Windows.Forms.TextBox LBA1Debug_txtDebugOffset1;
+        private System.Windows.Forms.Label LBA1Debug_lblDebugOffset1;
+        private System.Windows.Forms.Button LBA1Debug_btnlDebugOffset1Set;
+        private System.Windows.Forms.Button LBA1Debug_btnSetBoth;
     }
 }
 

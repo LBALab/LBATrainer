@@ -25,5 +25,10 @@ namespace LBATrainer
         const int LBA2_HEALTH = 0x57F29;
         const int LBA2_SHOWN_FERRY_TICKET = 0x78743;
         const int LBA2_HORN_TRITON_HEALTH = 0x78805;
+        const uint LBA2_MOVIE_BYTE1 = 0x57DC9;
+        const uint LBA2_MOVIE_BYTE2 = 0x57DCA;
+        const uint LBA2_MOVIE_BYTE3 = 0x57DCB;
+        const uint LBA2_MOVIE_BYTE4 = 0x57DCC;
+        const uint LBA2_MOVIE_BYTE5 = 0x57DCD;
     }
 }

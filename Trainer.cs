@@ -208,6 +208,41 @@ namespace LBATrainer
             LBA2Misc_rbRickKeyOffice.Checked = (2 == val);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Movies m = new Movies(getLBAFilesPath(2));
+            byte val = byte.Parse(textBox1.Text);
+            m.Load();
+            if (m.movies[val].IsEnabled())
+                m.movies[val].Disable();
+            else
+                m.movies[val].Enable();
+        }
+
+        private void manuelAggressionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*Auto: 0x1278 = 4. 0xE1E = 1
+             * Manual: 0x1278 = 2. 0xE1E = 0
+             * 
+             */
+            bool manual = 0 == memRoutines.readVal(0x1278, 1);
+            if (manual)
+            {
+                memRoutines.WriteVal(0x1278, 4, 1);
+                memRoutines.WriteVal(0xE1E, 1, 1);
+            }
+            else
+            {
+                memRoutines.WriteVal(0x1278, 2, 1);
+                memRoutines.WriteVal(0xE1E, 0, 1);
+            }
+        }
+
+
+
+
+
+
         /*private void LBA1Fly_chkWalkingInAir_CheckedChanged(object sender, EventArgs e)
         {
             if (LBA1Fly_chkWalkingInAir.Checked)

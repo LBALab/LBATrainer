@@ -347,6 +347,52 @@
 	</item>
 	<item>
 		<name>
+			Wizard
+		</name>
+		<memoryOffset>
+			78681
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			2
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
+			Wizard
+		</name>
+		<memoryOffset>
+			78681
+		</memoryOffset>
+		<maxVal>
+			1
+		</maxVal>
+		<minVal>
+			0
+		</minVal>
+		<size>
+			1
+		</size>
+		<type>
+			0
+		</type>
+		<lbaVersion>
+			2
+		</lbaVersion>
+	</item>
+	<item>
+		<name>
 			Pearl
 		</name>
 		<memoryOffset>
@@ -1014,7 +1060,7 @@
 	</item>
 	<item>
 		<name>
-			Itineray Token
+			Itinerary Token
 		</name>
 		<memoryOffset>
 			57D47

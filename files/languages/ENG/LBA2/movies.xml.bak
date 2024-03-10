@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<movies>
+	<movie>
+		<name>Going down with the Elevator to the undergas</name>
+		<offset>0x57DC9</offset>
+		<bitNumber>1</bitNumber>
+	</movie>
+	<movie>
+		<name>Going up with the Elevator to the undergas</name>
+		<offset>0x57DC9</offset>
+		<bitNumber>2</bitNumber>
+	</movie>
+	<movie>
+		<name>Escaping from the Moon with Baldino</name>
+		<offset>0x57DC9</offset>
+		<bitNumber>3</bitNumber>
+	</movie>
+	<movie>
+		<name>Ferry: Fish scene</name>
+		<offset>0x57DC9</offset>
+		<bitNumber>4</bitNumber>
+	</movie>
+	<movie>
+		<name>Ferry driving by</name>
+		<offset>0x57DC9</offset>
+		<bitNumber>5</bitNumber>
+	</movie>
+	<movie>
+		<name>Ferry: drink scene</name>
+		<offset>0x57DC9</offset>
+		<bitNumber>6</bitNumber>
+	</movie>
+	<movie>
+		<name>Ferry: esmer scene</name>
+		<offset>0x57DC9</offset>
+		<bitNumber>7</bitNumber>
+	</movie>
+	<movie>
+		<name>Temple of Bù ride</name>
+		<offset>0x57DC9</offset>
+		<bitNumber>8</bitNumber>
+	</movie>
+	<movie>
+		<name>Crash land on Twinsun</name>
+		<offset>0x57DCA</offset>
+		<bitNumber>1</bitNumber>
+	</movie>
+	<movie>
+		<name>Dark Monk's statue rises from the crater</name>
+		<offset>0x57DCA</offset>
+		<bitNumber>2</bitNumber>
+	</movie>
+	<movie>
+		<name>Bad Ending</name>
+		<offset>0x57DCA</offset>
+		<bitNumber>3</bitNumber>
+	</movie>
+	<movie>
+		<name>Good Ending</name>
+		<offset>0x57DCA</offset>
+		<bitNumber>4</bitNumber>
+	</movie>
+	<movie>
+		<name>Flying across the Hamalayi with Dino-Fly</name>
+		<offset>0x57DCA</offset>
+		<bitNumber>5</bitNumber>
+	</movie>
+	<movie>
+		<name>Children's abduction</name>
+		<offset>0x57DCA</offset>
+		<bitNumber>6</bitNumber>
+	</movie>
+	<movie>
+		<name>Wannie's Fragment</name>
+		<offset>0x57DCA</offset>
+		<bitNumber>7</bitNumber>
+	</movie>
+	<movie>
+		<name>Exiting Tralü's cave with Zoe</name>
+		<offset>0x57DCA</offset>
+		<bitNumber>8</bitNumber>
+	</movie>
+	<movie>
+		<name>Intro movie doesn't work with memory viewer</name>
+		<offset>0x57DCB</offset>
+		<bitNumber>1</bitNumber>
+	</movie>
+	<movie>
+		<name>Moon approaches Twinsun</name>
+		<offset>0x57DCB</offset>
+		<bitNumber>2</bitNumber>
+	</movie>
+	<movie>
+		<name>Moon flying from the side</name>
+		<offset>0x57DCB</offset>
+		<bitNumber>3</bitNumber>
+	</movie>
+	<movie>
+		<name>Esmer shuttle starts from Bald Mountain</name>
+		<offset>0x57DCB</offset>
+		<bitNumber>4</bitNumber>
+	</movie>
+	<movie>
+		<name>Moon Landing</name>
+		<offset>0x57DCB</offset>
+		<bitNumber>5</bitNumber>
+	</movie>
+	<movie>
+		<name>Ferryman ride</name>
+		<offset>0x57DCB</offset>
+		<bitNumber>6</bitNumber>
+	</movie>
+	<movie>
+		<name>Zeelich Presentation 1: Lab</name>
+		<offset>0x57DCB</offset>
+		<bitNumber>7</bitNumber>
+	</movie>
+	<movie>
+		<name>Zeelich Presentation 2: Parade</name>
+		<offset>0x57DCB</offset>
+		<bitNumber>8</bitNumber>
+	</movie>
+	<movie>
+		<name>Zeelich Presentation 3: Disco</name>
+		<offset>0x57DCC</offset>
+		<bitNumber>1</bitNumber>
+	</movie>
+	<movie>
+		<name>Zeelich Presentation 4: Last Ceremony</name>
+		<offset>0x57DCC</offset>
+		<bitNumber>2</bitNumber>
+	</movie>
+	<movie>
+		<name>Ball of Sendell</name>
+		<offset>0x57DCC</offset>
+		<bitNumber>3</bitNumber>
+	</movie>
+	<movie>
+		<name>Weather Wizard / Esmer's arriving</name>
+		<offset>0x57DCC</offset>
+		<bitNumber>4</bitNumber>
+	</movie>
+	<movie>
+		<name>Emperor pulls the lever</name>
+		<offset>0x57DCC</offset>
+		<bitNumber>5</bitNumber>
+	</movie>
+	<movie>
+		<name>Leontine</name>
+		<offset>0x57DCC</offset>
+		<bitNumber>6</bitNumber>
+	</movie>
+	<movie>
+		<name>Yellow Taxi</name>
+		<offset>0x57DCC</offset>
+		<bitNumber>7</bitNumber>
+	</movie>
+	<movie>
+		<name>Shuttle passes by</name>
+		<offset>0x57DCC</offset>
+		<bitNumber>8</bitNumber>
+	</movie>
+	<movie>
+		<name>Otringal Landing</name>
+		<offset>0x57DCD</offset>
+		<bitNumber>1</bitNumber>
+	</movie>
+	<movie>
+		<name>Arthur</name>
+		<offset>0x57DCD</offset>
+		<bitNumber>2</bitNumber>
+	</movie>
+</movies>

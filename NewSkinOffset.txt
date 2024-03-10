@@ -1,0 +1,3 @@
+LBA2 Skin offset! 57F51
+
+New skin - 0x34 = current;

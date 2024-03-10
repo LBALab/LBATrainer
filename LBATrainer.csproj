@@ -57,6 +57,9 @@
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>zoe.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Flying, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -85,6 +88,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LBA1\Trainer.LBA1.Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LBA1\Trainer.LBA1.Holomap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,7 @@
     <Compile Include="LBA1\Trainer.LBA1.Twinsen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LBA2\Movies.cs" />
     <Compile Include="LBA2\Trainer.LBA2.Debug.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +248,9 @@
     <Content Include="files\languages\ENG\LBA2\Inventory.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="files\languages\ENG\LBA2\movies.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="files\languages\ENG\LBA2\Outfit.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -256,6 +266,7 @@
     <Content Include="files\options.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="zoe.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

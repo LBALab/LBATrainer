@@ -50,15 +50,15 @@ namespace LBATrainer
             DefaultRefreshInterval = int.Parse(doc.DocumentElement.SelectNodes("/options/general/DefaultRefreshInterval")[0].InnerText.Trim());
 
             //LBA1
-            LBA1SaveFileDirectory = doc.DocumentElement.SelectNodes("/options/LBA1/SaveFileDirectory")[0].InnerText.Trim();
-            LBA1Autozoom =  "true" == doc.DocumentElement.SelectNodes("/options/LBA1/autozoom")[0].InnerText.Trim().ToLower();
-            LBA1GodMode = "true" == doc.DocumentElement.SelectNodes("/options/LBA1/GodMode")[0].InnerText.Trim().ToLower();
-            LBA1InfMagic = "true" == doc.DocumentElement.SelectNodes("/options/LBA1/InfMagic")[0].InnerText.Trim().ToLower();
-            LBA1ToggleWallDamage = "true" == doc.DocumentElement.SelectNodes("/options/LBA1/toggleWallDamage")[0].InnerText.Trim().ToLower();
+            LBA1SaveFileDirectory = doc.DocumentElement.SelectSingleNode("/options/lba1/SaveFileDirectory").InnerText.Trim();
+            LBA1Autozoom =  "true" == doc.DocumentElement.SelectNodes("/options/lba1/autozoom")[0].InnerText.Trim().ToLower();
+            LBA1GodMode = "true" == doc.DocumentElement.SelectNodes("/options/lba1/GodMode")[0].InnerText.Trim().ToLower();
+            LBA1InfMagic = "true" == doc.DocumentElement.SelectNodes("/options/lba1/InfMagic")[0].InnerText.Trim().ToLower();
+            LBA1ToggleWallDamage = "true" == doc.DocumentElement.SelectNodes("/options/lba1/toggleWallDamage")[0].InnerText.Trim().ToLower();
 
             //LBA2
-            LBA2GodMode = "true" == doc.DocumentElement.SelectNodes("/options/LBA2/GodMode")[0].InnerText.Trim().ToLower();
-            LBA2InfMagic = "true" == doc.DocumentElement.SelectNodes("/options/LBA2/InfMagic")[0].InnerText.Trim().ToLower();
+            LBA2GodMode = "true" == doc.DocumentElement.SelectNodes("/options/lba2/GodMode")[0].InnerText.Trim().ToLower();
+            LBA2InfMagic = "true" == doc.DocumentElement.SelectNodes("/options/lba2/InfMagic")[0].InnerText.Trim().ToLower();
 
 #pragma warning restore CA1304, CA1305 // Specify CultureInfo
             //XmlNodeList nodes = doc.DocumentElement.SelectNodes("/options/LBA1/SaveFileDirectory");
